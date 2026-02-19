@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <span class="logo-main">ARCHITEK</span><span class="logo-accent">PRO</span>
+      </div>
+      <p class="sidebar-subtitle">Encyclopédie d'Architecture d'Intérieur</p>
+    </div>
+
+    <nav id="sidebar-nav">
+      <a href="#" class="nav-item active" data-view="dashboard">
+        <span class="nav-icon">◈</span>
+        <span class="nav-label">Tableau de bord</span>
+      </a>
+
+      <div class="nav-separator">Domaines</div>
+      <div id="nav-domains"></div>
+
+      <div class="nav-separator">Personnel</div>
+      <a href="#" class="nav-item" data-view="collection">
+        <span class="nav-icon">★</span>
+        <span class="nav-label">Ma Collection</span>
+      </a>
+      <a href="#" class="nav-item" data-view="conseils">
+        <span class="nav-icon">💡</span>
+        <span class="nav-label">Conseils Pratiques</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Mobile menu toggle -->
+  <button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Main Content -->
+  <main id="main">
+    <header id="topbar">
+      <div id="breadcrumb"></div>
+      <div class="search-wrapper">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
+        <kbd class="search-shortcut">/</kbd>
+      </div>
+    </header>
+    <div id="content"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="hidden" role="dialog" aria-modal="true">
+    <div id="modal-content"></div>
+  </div>
+
+  <!-- Toast notifications -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
