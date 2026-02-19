@@ -1443,6 +1443,7 @@ const APP_DATA = {
       fiches: [
         {
           id: 'phases-projet',
+          category: 'Méthodologie',
           title: 'Les Phases d\'un Projet',
           subtitle: 'Du brief à la livraison',
           summary: 'Un projet d\'architecture d\'intérieur suit un déroulement précis en phases distinctes. Les connaître et les respecter est la clé d\'un projet réussi.',
@@ -1479,7 +1480,122 @@ const APP_DATA = {
           tags: ['projet', 'phases', 'client', 'chantier', 'organisation', 'méthodologie']
         },
         {
+          id: 'brief-client',
+          category: 'Méthodologie',
+          title: 'Le Brief Client',
+          subtitle: 'L\'art de poser les bonnes questions',
+          summary: 'Le brief est le fondement de tout projet. Un brief mal fait = un projet bancal. Voici comment structurer cette étape cruciale et extraire les vraies attentes du client.',
+          sections: [
+            {
+              title: 'Avant la rencontre — Le pré-questionnaire',
+              content: 'Envoyer un questionnaire 3-5 jours avant le rendez-vous. Questions essentielles : combien de personnes vivent dans le lieu ? Animaux ? Travail à domicile ? Loisirs ? Objets à intégrer obligatoirement ? Budget global envisagé ? Inspirations (demander 10 images Pinterest/Instagram). Cela permet de préparer la rencontre et de ne pas perdre de temps sur le basique.'
+            },
+            {
+              title: 'Pendant la rencontre — Les questions profondes',
+              content: 'Au-delà du fonctionnel, creuser le mode de vie. Comment se passe votre matinée type ? Où vous installez-vous le soir ? Recevez-vous beaucoup ? Cuisinez-vous ensemble ? Quelles pièces ne fonctionnent pas actuellement et POURQUOI ? Quel hôtel/restaurant vous a marqué ? Ce sont ces réponses qui font la différence entre un projet correct et un projet exceptionnel.'
+            },
+            {
+              title: 'Le brief visuel — Moodboard collaboratif',
+              content: 'Créer un moodboard avec le client pendant ou juste après la rencontre. Pinterest partagé ou présentation physique. Identifier les récurrences : si le client choisit 8 images avec du bois chaleureux et des tons neutres, le message est clair. Attention aux contradictions (budget serré mais inspirations luxe) — les pointer avec diplomatie.'
+            },
+            {
+              title: 'La synthèse de brief',
+              content: 'Rédiger un document de synthèse de 2-3 pages maximum. Résumé des besoins fonctionnels, contraintes techniques, budget, planning, ambiance souhaitée. Faire valider et signer par le client. Ce document devient la référence en cas de désaccord. « C\'est dans le brief » est votre meilleure protection.'
+            }
+          ],
+          keyPoints: [
+            'Le brief est un document SIGNÉ, pas une discussion informelle',
+            'Les questions sur le mode de vie sont plus importantes que les questions sur le style',
+            'Un client ne sait pas toujours ce qu\'il veut — c\'est à vous de l\'aider à le formuler',
+            'Les images d\'inspiration révèlent plus que les mots',
+            'Pointer les contradictions budget/ambition dès le brief, pas en cours de projet'
+          ],
+          tips: [
+            'Enregistrer la conversation (avec accord) pour ne rien oublier',
+            'Prendre des photos du lieu existant sous tous les angles pendant la visite',
+            'Demander au client de vivre 1 semaine en notant ce qui le gêne chez lui — retours précieux'
+          ],
+          tags: ['brief', 'client', 'questionnaire', 'moodboard', 'méthodologie', 'démarrage']
+        },
+        {
+          id: 'releve-existant',
+          category: 'Méthodologie',
+          title: 'Le Relevé de l\'Existant',
+          subtitle: 'Mesurer avant de concevoir',
+          summary: 'Un relevé précis est la base technique de tout projet. Erreur de 2 cm = meuble qui ne rentre pas. Voici la méthode pour un relevé fiable.',
+          sections: [
+            {
+              title: 'Le matériel nécessaire',
+              content: 'Indispensable : télémètre laser (Bosch GLM 50 C ou Leica Disto — 100-200€), mètre ruban 5m, carnet quadrillé A3, crayon + gomme. Recommandé : niveau laser, détecteur de matériaux (pour localiser les poteaux/gaines), appareil photo. Pro : Leica BLK360 (scanner 3D) — investissement important mais gain de temps énorme sur les gros projets.'
+            },
+            {
+              title: 'Méthode de relevé étape par étape',
+              content: '1) Croquis général à main levée du plan (ne pas dessiner à l\'échelle, juste les proportions). 2) Coter toutes les longueurs de murs. 3) Coter les ouvertures (largeur, hauteur, distance au mur). 4) Coter les hauteurs sous plafond (attention aux faux-plafonds). 5) Repérer les arrivées d\'eau, évacuations, prises, interrupteurs. 6) Photographier chaque mur. 7) Vérifier les diagonales (un mur qui semble droit peut être trapézoïdal).'
+            },
+            {
+              title: 'Les pièges classiques',
+              content: 'Les murs ne sont jamais parfaitement droits ni d\'équerre — toujours vérifier. Les hauteurs sous plafond varient souvent dans un même appartement ancien. Les plans de copropriété sont souvent approximatifs — NE JAMAIS s\'y fier aveuglément. Les gaines techniques (VMC, colonnes d\'eau) créent des contraintes invisibles. Les planchers anciens ne sont jamais de niveau.'
+            },
+            {
+              title: 'Du relevé au plan numérique',
+              content: 'Retranscrire dans AutoCAD, SketchUp ou Archicad le jour même (tant que la mémoire est fraîche). Mettre le plan à l\'échelle 1:50 (standard). Indiquer le nord, les cotes, les niveaux. Ajouter une légende (existant vs projet). Conserver le croquis papier original — il peut sauver en cas de doute.'
+            }
+          ],
+          keyPoints: [
+            'Toujours vérifier les cotes en croix (diagonales) — c\'est ce qui révèle les murs pas d\'équerre',
+            'Le télémètre laser est l\'investissement n°1 pour un architecte d\'intérieur',
+            'Ne jamais se fier aux plans existants sans vérification sur site',
+            'Photographier TOUT — vous y reviendrez 10 fois depuis votre bureau',
+            'Retranscrire le relevé en numérique dans les 24h'
+          ],
+          tips: [
+            'Développer un template de relevé standardisé à imprimer (grille avec checklist)',
+            'Mesurer les épaisseurs de murs aussi — important pour la menuiserie sur-mesure',
+            'Scanner 3D : le Leica BLK360 se loue à la journée (~200€) pour les gros projets'
+          ],
+          tags: ['relevé', 'mesures', 'technique', 'plans', 'méthodologie', 'outils']
+        },
+        {
+          id: 'moodboard-pro',
+          category: 'Méthodologie',
+          title: 'Créer un Moodboard Pro',
+          subtitle: 'Communiquer une ambiance',
+          summary: 'Le moodboard est votre outil de communication n°1 avec le client. Il traduit les mots en images et permet de valider une direction avant de dessiner un seul plan.',
+          sections: [
+            {
+              title: 'Anatomie d\'un bon moodboard',
+              content: 'Un moodboard pro contient : 1 image d\'ambiance dominante (le hero shot), 3-5 images d\'espaces inspirants, 4-6 échantillons matériaux/textures, 2-3 références mobilier clé, 1 palette couleur (5 teintes max). Le tout sur un fond neutre (blanc ou gris clair). Maximum 15 éléments — au-delà, c\'est du bruit.'
+            },
+            {
+              title: 'Les erreurs à éviter',
+              content: 'Trop d\'images (le client se perd). Des images de styles contradictoires. Des images trop « magazine » que le budget ne permet pas. Pas de matériaux réels (ajouter des échantillons physiques si possible). Un moodboard qui ne raconte pas une histoire cohérente. Copier-coller Pinterest sans curation personnelle.'
+            },
+            {
+              title: 'Outils de création',
+              content: 'Adobe InDesign : le standard pro, mise en page maîtrisée. Canva Pro : rapide, templates, collaboration facile. Figma : moderne, collaboratif, précis. Keynote/PowerPoint : pour les présentations client animées. Physique : carton mousse + impressions + échantillons réels — très impactant en clientèle. Milanote : outil en ligne spécialisé moodboards créatifs.'
+            },
+            {
+              title: 'Présenter le moodboard au client',
+              content: 'Toujours présenter EN PERSONNE ou en visio — jamais envoyer par email sans explication. Raconter l\'histoire : « Imaginez que vous rentrez chez vous... ». Guider le regard du client. Demander des retours structurés : qu\'est-ce qui vous parle ? Qu\'est-ce qui vous gêne ? Valider formellement avant de passer aux plans.'
+            }
+          ],
+          keyPoints: [
+            'Un moodboard n\'est pas un collage Pinterest — c\'est un outil de communication professionnel',
+            'Maximum 15 éléments — chaque élément doit être là pour une raison',
+            'Toujours inclure des textures/matériaux, pas seulement des images d\'espaces',
+            'Présenter en personne et RACONTER l\'histoire',
+            'Le moodboard validé = le contrat moral sur la direction esthétique'
+          ],
+          tips: [
+            'Créer un template de moodboard réutilisable avec votre identité visuelle',
+            'Amener des échantillons physiques (bois, pierre, tissu) en complément — toucher > voir',
+            'Faire 2 moodboards (2 directions) pour le premier rendez-vous — le client se sent impliqué dans le choix'
+          ],
+          tags: ['moodboard', 'présentation', 'client', 'ambiance', 'communication', 'design']
+        },
+        {
           id: 'honoraires',
+          category: 'Business',
           title: 'Honoraires & Tarification',
           subtitle: 'Combien facturer',
           summary: 'La question que tout architecte d\'intérieur se pose. Tour d\'horizon des méthodes de tarification, des fourchettes de prix et des bonnes pratiques.',
@@ -1514,6 +1630,310 @@ const APP_DATA = {
             'Ne jamais commencer à travailler sans acompte — jamais'
           ],
           tags: ['honoraires', 'prix', 'business', 'contrat', 'facturation', 'métier']
+        },
+        {
+          id: 'budget-chiffrage',
+          category: 'Business',
+          title: 'Budget & Chiffrage',
+          subtitle: 'Estimer juste, livrer dans le budget',
+          summary: 'Le chiffrage est l\'exercice le plus redouté et le plus important. Un budget mal estimé détruit la confiance du client. Voici comment chiffrer avec précision.',
+          sections: [
+            {
+              title: 'Les ratios de base au m²',
+              content: 'Rénovation légère (peinture, sols, luminaires) : 400-800€/m². Rénovation moyenne (cuisine, salle de bain, redistribution légère) : 800-1500€/m². Rénovation lourde (tout casser, tout refaire) : 1500-2500€/m². Haut de gamme/luxe : 2500-5000€/m². Ultra-luxe : 5000-10000€/m². Ces ratios sont pour Paris — déduire 15-30% en province.'
+            },
+            {
+              title: 'Décomposition d\'un budget type',
+              content: 'Gros œuvre / structure : 10-20%. Plomberie : 10-15%. Électricité : 8-12%. Menuiserie sur-mesure : 15-25%. Sols (pose + matériaux) : 10-15%. Peinture / enduits : 5-10%. Mobilier : 15-30%. Luminaires : 5-10%. Décoration / accessoires : 5-10%. Honoraires architecte d\'intérieur : 8-15% du total. Imprévus : 10-15%.'
+            },
+            {
+              title: 'Construire un chiffrage détaillé',
+              content: 'Lister TOUS les postes (utiliser un template Excel/Notion). Pour chaque poste : quantité × prix unitaire. Demander 2-3 devis par corps de métier. Ajouter la marge imprévus (10% minimum, 15% en rénovation ancien). Présenter au client par tranches : « fourchette basse si on reste simple, fourchette haute si on va loin ». Toujours chiffrer TTC — c\'est ce que le client paie.'
+            },
+            {
+              title: 'Les pièges qui font exploser le budget',
+              content: 'L\'ancien cache toujours des surprises (plomberie vétuste, amiante, murs pas droits). Le client qui change d\'avis en cours de chantier — chiffrer les avenants immédiatement. Les délais de livraison mobilier/matériaux sous-estimés (container bloqué = surcoût). La TVA (10% rénovation vs 20% neuf — vérifier l\'éligibilité). Les frais de parking, benne, ascenseur pour livraison en ville.'
+            }
+          ],
+          keyPoints: [
+            'Toujours donner une FOURCHETTE, jamais un chiffre exact',
+            '10-15% d\'imprévus est un minimum, pas un luxe',
+            'Chiffrer poste par poste, pas au doigt mouillé',
+            'Faire valider le budget PAR ÉCRIT avant de lancer les travaux',
+            'Un budget dépassé de 5% est normal — au-delà, il y a eu un problème de chiffrage'
+          ],
+          tips: [
+            'Créer un fichier Excel/Notion de chiffrage type à réutiliser pour chaque projet',
+            'Constituer une base de prix (prix au m² carrelage posé, prix prise électrique, etc.) mise à jour annuellement',
+            'Demander systématiquement 3 devis — la variation peut aller du simple au triple'
+          ],
+          tags: ['budget', 'chiffrage', 'prix', 'estimation', 'coûts', 'business']
+        },
+        {
+          id: 'contrat-juridique',
+          category: 'Business',
+          title: 'Contrat & Aspects Juridiques',
+          subtitle: 'Se protéger légalement',
+          summary: 'Un contrat solide protège votre travail, votre rémunération et vos droits d\'auteur. Ne commencez JAMAIS un projet sans contrat signé.',
+          sections: [
+            {
+              title: 'Les clauses indispensables',
+              content: 'Identification des parties. Description précise de la mission (phases incluses et exclues). Honoraires et échéancier de paiement. Planning prévisionnel. Conditions de modification/avenant. Propriété intellectuelle et droits d\'auteur. Conditions de résiliation. Responsabilités (assurance RC Pro obligatoire). Clause de médiation en cas de litige.'
+            },
+            {
+              title: 'Droits d\'auteur de l\'architecte d\'intérieur',
+              content: 'Vos plans, dessins et créations sont protégés par le droit d\'auteur automatiquement. Le client achète le droit de RÉALISER le projet, pas de le reproduire ou le modifier. Interdiction de diffuser les plans sans autorisation. Droit de paternité : le client ne peut pas dire qu\'il a conçu le projet lui-même. Ces droits se négocient — certains clients (promoteurs) veulent une cession complète.'
+            },
+            {
+              title: 'L\'assurance RC Pro',
+              content: 'Obligatoire pour exercer. Couvre les erreurs de conception (un meuble qui ne passe pas, un matériau inadapté). Couvre les dommages pendant le chantier sous votre responsabilité. Coût : 800-2000€/an selon le CA. MAAF, AXA, Allianz proposent des contrats spécifiques architectes d\'intérieur. Toujours vérifier que le suivi de chantier est couvert.'
+            },
+            {
+              title: 'Les erreurs juridiques fréquentes',
+              content: 'Travailler sur un engagement oral (« on s\'était dit que... »). Ne pas faire signer les validations de phase. Modifier le projet sans avenant chiffré signé. Accepter un scope creep (le client ajoute des pièces sans surcoût). Ne pas avoir de clause de résiliation claire. Oublier de faire signer le PV de réception.'
+            }
+          ],
+          keyPoints: [
+            'PAS DE CONTRAT = PAS DE PROJET — c\'est non négociable',
+            'RC Pro obligatoire — vérifier la couverture chaque année',
+            'Les droits d\'auteur vous appartiennent par défaut — ne les cédez pas gratuitement',
+            'Chaque modification = un avenant signé + chiffré',
+            'Faire valider chaque phase par signature protège des changements d\'avis rétroactifs'
+          ],
+          tips: [
+            'Investir 500-800€ avec un avocat spécialisé pour créer votre contrat type',
+            'Rejoindre l\'UNAID ou le CFAI pour accéder à des modèles de contrats et une protection juridique',
+            'Scanner et archiver TOUS les documents signés dans un dossier cloud par projet'
+          ],
+          tags: ['contrat', 'juridique', 'droits auteur', 'assurance', 'protection', 'business']
+        },
+        {
+          id: 'relation-client',
+          category: 'Relation Client',
+          title: 'Gérer la Relation Client',
+          subtitle: 'Communication, attentes & conflits',
+          summary: 'La relation client est un art en soi. Un client bien géré = un projet fluide + des recommandations. Un client mal géré = cauchemar garanti, même sur un beau projet.',
+          sections: [
+            {
+              title: 'Les types de clients',
+              content: 'Le confiant : vous fait confiance, peu de feedback → risque qu\'il soit déçu à la fin. Le contrôlant : veut tout valider → structurer les rendez-vous et les livrables. L\'indécis : change d\'avis souvent → limiter les options (2-3 max), faire valider par écrit. Le couple en désaccord : le plus compliqué → identifier le décideur, proposer des compromis visuels. Le pressé : veut tout pour hier → être clair sur le planning dès le début.'
+            },
+            {
+              title: 'La communication projet',
+              content: 'Établir un rythme de communication dès le départ (ex: point hebdomadaire par email + visite chantier bi-mensuelle). Toujours écrire les décisions par email après un échange oral. Utiliser un outil de suivi partagé (Notion, Trello, simple dossier Google Drive). Envoyer des photos régulières du chantier — le client adore voir l\'avancement.'
+            },
+            {
+              title: 'Gérer les désaccords',
+              content: 'Le client n\'aime pas une proposition : ne pas le prendre personnellement, écouter les raisons, proposer des alternatives. Le client veut changer en cours de route : chiffrer immédiatement l\'impact (coût + délai), formaliser par avenant. Le client conteste les honoraires : revenir au contrat signé. En dernier recours : médiation (clause à prévoir au contrat).'
+            },
+            {
+              title: 'Fidéliser et obtenir des recommandations',
+              content: 'Un cadeau de livraison (bougie, livre design, plante) coûte 50€ et marque les esprits. Envoyer des photos professionnelles du projet fini. Demander un témoignage 1 mois après la livraison. Envoyer une carte/email à l\'anniversaire du projet. Un client satisfait recommande en moyenne à 3-5 personnes — c\'est votre meilleur marketing.'
+            }
+          ],
+          keyPoints: [
+            'La communication écrite protège autant qu\'un contrat',
+            'Identifier le type de client dès le brief permet d\'adapter sa posture',
+            'Un changement en cours de projet = avenant AVANT de modifier quoi que ce soit',
+            'Le cadeau de livraison est le meilleur investissement marketing',
+            '80% des nouveaux clients viennent du bouche-à-oreille'
+          ],
+          tips: [
+            'Préparer un « Welcome Kit » client (déroulement du projet, planning, contacts, FAQ)',
+            'Toujours finir un email par « N\'hésitez pas si vous avez des questions » — ça désamorce l\'anxiété',
+            'Photoshooter chaque projet fini avec un photographe pro (200-500€) — c\'est votre portfolio'
+          ],
+          tags: ['client', 'communication', 'relation', 'conflits', 'fidélisation', 'business']
+        },
+        {
+          id: 'suivi-chantier',
+          category: 'Chantier',
+          title: 'Suivi de Chantier',
+          subtitle: 'Coordonner les corps de métier',
+          summary: 'Le chantier est le moment de vérité. C\'est là que tout se concrétise — ou déraille. Le suivi rigoureux est ce qui distingue un projet amateur d\'un projet professionnel.',
+          sections: [
+            {
+              title: 'Les corps de métier à coordonner',
+              content: 'Ordre classique d\'intervention : 1) Démolition / déblaiement. 2) Maçonnerie / gros œuvre. 3) Plomberie (1er fix). 4) Électricité (1er fix). 5) Plâtrerie / cloisons. 6) Menuiserie (pose des bâtis). 7) Chape / ragréage sols. 8) Carrelage / sols. 9) Peinture / enduits. 10) Menuiserie (finitions). 11) Plomberie (2ème fix — robinetterie). 12) Électricité (2ème fix — appareillage). 13) Pose mobilier. 14) Nettoyage fin de chantier.'
+            },
+            {
+              title: 'Le planning de chantier',
+              content: 'Créer un diagramme de Gantt simple (Excel, Monday, MS Project). Identifier les dépendances (le carreleur ne peut pas poser avant la chape). Prévoir des marges entre les lots (2-3 jours). Anticiper les délais de livraison matériaux (commander 4-6 semaines à l\'avance). Partager le planning avec TOUS les intervenants. Le mettre à jour chaque semaine.'
+            },
+            {
+              title: 'La visite de chantier type',
+              content: 'Fréquence : 1-2x/semaine. Arriver avec la liste des points à vérifier. Photographier l\'avancement (un téléphone suffit). Vérifier les cotes critiques (encastrements, alignements). Vérifier les matériaux livrés (bon modèle, bonne couleur, pas de casse). Rédiger un compte-rendu dans les 24h (envoi à tous les intervenants + client). Tenir un « cahier de chantier » (historique de toutes les décisions).'
+            },
+            {
+              title: 'Les problèmes courants',
+              content: 'L\'artisan ne vient pas au jour prévu → avoir toujours un plan B et des contacts de remplacement. Le matériau livré n\'est pas le bon → TOUJOURS vérifier à réception avant pose. Les cotes ne correspondent pas aux plans → c\'est pour ça qu\'on vérifie sur place. Le client passe sur le chantier et demande des changements directement aux ouvriers → INTERDIRE cette pratique dès le début.'
+            }
+          ],
+          keyPoints: [
+            'L\'ordre d\'intervention des corps de métier est sacré — le bouleverser coûte cher',
+            'Photographier chaque visite = votre assurance en cas de litige',
+            'Le compte-rendu écrit dans les 24h est non négociable',
+            'Commander les matériaux 4-6 semaines à l\'avance minimum',
+            'Le client ne doit JAMAIS donner des instructions directement aux artisans'
+          ],
+          tips: [
+            'Créer un groupe WhatsApp par chantier (vous + tous les artisans) pour la coordination rapide',
+            'Avoir une \"shortlist\" de 2-3 artisans par corps de métier en cas de défaillance',
+            'Prendre les photos toujours du même angle pour montrer l\'évolution'
+          ],
+          tags: ['chantier', 'suivi', 'coordination', 'artisans', 'planning', 'travaux']
+        },
+        {
+          id: 'artisans-reseau',
+          category: 'Chantier',
+          title: 'Trouver & Gérer ses Artisans',
+          subtitle: 'Votre réseau est votre trésor',
+          summary: 'Un architecte d\'intérieur vaut autant que son réseau d\'artisans. Trouver les bons, les fidéliser et gérer la relation est un skill essentiel.',
+          sections: [
+            {
+              title: 'Où trouver de bons artisans',
+              content: 'Le bouche-à-oreille entre confrères architectes d\'intérieur (le meilleur canal). Les chantiers terminés : repérer un beau travail dans un restaurant/hôtel et demander qui l\'a fait. Les salons pro (Artisan & Patrimoine, Architect@Work). Les groupements d\'artisans (Compagnons du Devoir, labels RGE). Houzz Pro, Quotatis pour le premier tri. JAMAIS les plateformes low-cost (qualité aléatoire).'
+            },
+            {
+              title: 'Évaluer un artisan',
+              content: 'Demander 3 références de chantiers récents et les APPELER. Visiter un chantier en cours si possible. Vérifier les assurances (décennale, RC Pro) — demander les attestations. Vérifier l\'inscription au registre des métiers. Le devis est un indicateur : un devis détaillé et bien présenté = un artisan sérieux. Le prix le plus bas est rarement le meilleur choix.'
+            },
+            {
+              title: 'La relation au quotidien',
+              content: 'Respecter les artisans (ils ont un savoir-faire que vous n\'avez pas). Payer dans les délais prévus — un artisan payé à temps revient et vous priorise. Être précis dans les plans et les demandes (un plan flou = un résultat flou). Reconnaître le bon travail. Recommander les bons artisans à vos confrères. Ne pas les mettre en concurrence systématiquement — la loyauté paie.'
+            },
+            {
+              title: 'Gérer les litiges',
+              content: 'Le travail n\'est pas conforme aux plans : constater par écrit + photos, demander la reprise. Le chantier prend du retard : identifier la cause (artisan ? matériaux ? client ?), adapter le planning. La qualité est insuffisante : ne pas payer la dernière tranche avant correction. En dernier recours : mise en demeure, puis médiation ou tribunal de commerce.'
+            }
+          ],
+          keyPoints: [
+            'Un bon réseau d\'artisans se construit sur des années — commencer maintenant',
+            'Toujours vérifier les assurances AVANT le début du chantier',
+            'Payer à temps = fidéliser et être prioritaire',
+            'Le prix le plus bas est presque toujours un mauvais signal',
+            'Constituer un fichier artisans noté (qualité, fiabilité, prix, spécialités)'
+          ],
+          tips: [
+            'Créer un fichier Excel/Notion « Mes artisans » avec notes, contacts, retours',
+            'Offrir un café/petit déj sur le chantier de temps en temps — ça change tout',
+            'Demander aux artisans leur avis technique — ils ont souvent de meilleures solutions que ce qu\'on imagine'
+          ],
+          tags: ['artisans', 'réseau', 'chantier', 'fournisseurs', 'qualité', 'business']
+        },
+        {
+          id: 'reception-livraison',
+          category: 'Chantier',
+          title: 'Réception & Livraison',
+          subtitle: 'Conclure le projet proprement',
+          summary: 'La réception est le moment juridique où le client accepte les travaux. La livraison est le moment émotionnel où il découvre son nouveau chez-lui. Les deux comptent.',
+          sections: [
+            {
+              title: 'La pré-réception (OPR — Opérations Préalables à la Réception)',
+              content: 'Visite minutieuse SEUL avant de faire venir le client. Checklist par pièce : peinture (retouches, coulures), sols (rayures, joints), menuiserie (fermetures, alignements), plomberie (fuites, pression), électricité (tous les points fonctionnent). Lister toutes les réserves et les faire corriger AVANT la réception officielle.'
+            },
+            {
+              title: 'Le PV de réception',
+              content: 'Document juridique signé par le client et l\'architecte d\'intérieur. Peut être « sans réserve » (tout est conforme) ou « avec réserves » (liste des points à corriger + délai). À partir de la signature : début des garanties légales (garantie de parfait achèvement 1 an, garantie décennale 10 ans). Toujours faire signer un PV — c\'est votre décharge.'
+            },
+            {
+              title: 'La mise en scène de la livraison',
+              content: 'C\'est votre moment de show. Nettoyage impeccable (faire appel à une entreprise de nettoyage fin de chantier). Mise en place du mobilier, des objets déco, des luminaires allumés. Si possible : faire découvrir au client les yeux fermés puis ouvrir. Préparer un dossier de livraison : plans as-built, contacts artisans, notices d\'entretien des matériaux.'
+            },
+            {
+              title: 'L\'après-projet',
+              content: 'Visite de courtoisie 1 mois après (vérifier que tout va bien, recueillir le feedback). Séance photo professionnelle pour le portfolio. Demander un témoignage écrit. Envoyer les photos retouchées au client. Rester disponible pour les questions d\'entretien. Le projet terminé est le début de la relation long terme.'
+            }
+          ],
+          keyPoints: [
+            'Toujours faire une pré-réception seul AVANT la réception officielle',
+            'Le PV de réception est obligatoire — il protège tout le monde',
+            'La mise en scène de la livraison crée le « wow effect » et les recommandations',
+            'Le dossier de livraison (plans, contacts, notices) est un signe de professionnalisme',
+            'La photo pro du projet fini est votre meilleur investissement marketing'
+          ],
+          tips: [
+            'Préparer une checklist OPR par pièce type à imprimer',
+            'Budget livraison : 200-500€ pour le nettoyage pro + quelques fleurs/bougie',
+            'Le photographe : réserver 2-3 semaines après la livraison (le client a le temps d\'habiter le lieu)'
+          ],
+          tags: ['réception', 'livraison', 'chantier', 'PV', 'client', 'qualité']
+        },
+        {
+          id: 'outils-gestion',
+          category: 'Outils & Organisation',
+          title: 'Outils de Gestion de Projet',
+          subtitle: 'S\'organiser comme un pro',
+          summary: 'Les bons outils font gagner des heures par semaine et évitent les oublis. Voici l\'écosystème recommandé pour un architecte d\'intérieur organisé.',
+          sections: [
+            {
+              title: 'La base de données projet',
+              content: 'Notion : le couteau suisse — templates projet, bases de données matériaux, suivi client. Alternative : Airtable (plus structuré, type tableur). Créer un template de projet réutilisable avec : brief, planning, budget, contacts artisans, suivi matériaux, PV réunions. Dupliquer ce template pour chaque nouveau projet.'
+            },
+            {
+              title: 'La communication',
+              content: 'Email : communication formelle et traces écrites. WhatsApp : coordination rapide chantier (1 groupe par projet). Zoom/Google Meet : réunions client à distance. Google Drive / Dropbox : partage de documents et plans. Wetransfer : envoi de fichiers lourds (rendus 3D, photos HD).'
+            },
+            {
+              title: 'Le planning',
+              content: 'Google Calendar : rendez-vous et visites chantier. Monday.com ou Asana : planning projet avec deadlines et dépendances. Excel/Sheets : Gantt simple pour le planning chantier. L\'idéal : un outil qui combine planning + budget + to-do (Monday ou Notion).'
+            },
+            {
+              title: 'La comptabilité',
+              content: 'Factures : Henrri (gratuit), Freebe (auto-entrepreneurs), Pennylane (plus complet). Suivi des heures : Toggl ou Clockify (pour vérifier la rentabilité par projet). Devis : créer un template PDF professionnel avec votre identité visuelle. Un comptable spécialisé professions libérales est indispensable (100-200€/mois).'
+            }
+          ],
+          keyPoints: [
+            'Notion + Google Calendar + WhatsApp = le trio minimum',
+            'Un template de projet réutilisable fait gagner 1-2 jours par nouveau projet',
+            'Tracker ses heures par projet révèle la rentabilité réelle',
+            'Archiver TOUT dans le cloud — un disque dur qui lâche = catastrophe',
+            'Un comptable spécialisé vaut son pesant d\'or'
+          ],
+          tips: [
+            'Passer une demi-journée à créer ses templates (projet, devis, facture, CR chantier) = investissement à vie',
+            'Automatiser les tâches répétitives (Zapier : nouveau projet → création dossier Google Drive + planning)',
+            'Backup hebdomadaire de tous les fichiers projets sur un 2ème cloud'
+          ],
+          tags: ['outils', 'organisation', 'gestion', 'logiciels', 'productivité', 'business']
+        },
+        {
+          id: 'dossier-plans',
+          category: 'Outils & Organisation',
+          title: 'Les Plans & Livrables',
+          subtitle: 'Ce que vous devez produire',
+          summary: 'Tour d\'horizon de tous les documents et plans qu\'un architecte d\'intérieur doit produire, phase par phase, et les standards de qualité attendus.',
+          sections: [
+            {
+              title: 'Plans d\'aménagement',
+              content: 'Le plan d\'aménagement est LE document central. Échelle 1:50 (standard). Contient : murs existants/projetés, cloisons, ouvertures, mobilier positionné, cotations principales, circulation, légende. Produire obligatoirement : plan de l\'existant + plan projeté (en couleur ou en grisé de différenciation). Bonus : plan de circulation (flèches de mouvement).'
+            },
+            {
+              title: 'Élévations et coupes',
+              content: 'Les élévations montrent chaque mur en vue de face — indispensables pour la cuisine, la salle de bain, et tout mur avec du sur-mesure. Échelle 1:20 ou 1:25. Inclure : hauteurs de plan de travail (86-92 cm), crédence, meubles hauts (à 140-160 cm du sol), miroirs, niches. Les coupes traversent le projet pour montrer les rapports de hauteur.'
+            },
+            {
+              title: 'Carnet de détails',
+              content: 'Plans de détail au 1:5 ou 1:10 pour les éléments sur-mesure : profils de menuiserie, détails de niche, gorge lumineuse, plinthes, calepinage de carrelage. C\'est ce dossier qui fait la différence entre un projet « ok » et un projet « parfait ». Les artisans ont besoin de ces détails pour fabriquer correctement.'
+            },
+            {
+              title: 'Rendus & visuels 3D',
+              content: 'Outils : SketchUp + Enscape (rapide), 3ds Max + V-Ray (photoréaliste), Blender + Cycles (gratuit et puissant). 2-3 vues 3D par pièce principale suffisent. Le rendu photoréaliste aide le client à se projeter mais attention : ne pas survendre (le rendu est toujours plus beau que la réalité). Alternative : collages Photoshop (plus rapides, très tendance).'
+            }
+          ],
+          keyPoints: [
+            'Le plan d\'aménagement 1:50 est le livrable n°1',
+            'Les élévations sont obligatoires pour cuisine, SDB et murs avec sur-mesure',
+            'Les détails au 1:5 sont ce qui fait un projet soigné',
+            'Les rendus 3D sont un outil de vente, pas un livrable technique',
+            'Chaque plan doit avoir : échelle, nord, date, légende, votre nom'
+          ],
+          tips: [
+            'Numéroter et dater chaque version de plan (V1, V2, V3) — jamais de \"plan_final_final_v2\"',
+            'Utiliser un cartouche professionnel avec votre logo sur chaque plan',
+            'Apprendre SketchUp + un moteur de rendu rapide = le combo le plus rentable en temps/qualité'
+          ],
+          tags: ['plans', 'livrables', 'dessins', 'technique', 'rendus', '3D', 'organisation']
         }
       ]
     },

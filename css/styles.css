@@ -1194,6 +1194,287 @@ textarea {
   background: rgba(231, 76, 60, 0.08);
 }
 
+/* --- Sourcing Matériaux --- */
+.sourcing-header {
+  margin-bottom: 12px;
+}
+.sourcing-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.sourcing-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.sourcing-tip {
+  background: rgba(184, 149, 106, 0.06);
+  border: 1px solid rgba(184, 149, 106, 0.2);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.sourcing-tip strong { color: var(--text); }
+.sourcing-tip ol {
+  margin: 14px 0 0 18px;
+  padding: 0;
+}
+.sourcing-tip li {
+  margin-bottom: 6px;
+}
+
+.sourcing-cat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 18px;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+.sourcing-cat-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+.sourcing-cat-header {
+  padding: 22px 28px;
+  position: relative;
+}
+.sourcing-cat-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+.sourcing-cat-method {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  padding-right: 30px;
+}
+.sourcing-cat-toggle {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+}
+.sourcing-cat-body {
+  padding: 0 28px 24px;
+  transition: all 0.3s ease;
+}
+.sourcing-cat-body.collapsed {
+  display: none;
+}
+.sourcing-sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.sourcing-source {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+.sourcing-source-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.sourcing-source-header strong {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.sourcing-source-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(184, 149, 106, 0.1);
+  color: var(--accent);
+  white-space: nowrap;
+}
+.sourcing-source p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+.sourcing-source-location {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.sourcing-cat-tip {
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.sourcing-cat-tip strong { color: var(--accent); }
+
+/* Shopping List */
+.shopping-add-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-bottom: 28px;
+}
+.shopping-add-form h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 18px;
+  color: var(--text);
+}
+.shopping-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.shopping-form-grid textarea,
+.shopping-form-grid .btn-conseil-add {
+  grid-column: 1 / -1;
+}
+.shopping-stats {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+.shopping-found { color: var(--accent); }
+.shopping-pending { color: var(--text-secondary); }
+
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shopping-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  transition: all var(--transition);
+}
+.shopping-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+.shopping-item-found {
+  opacity: 0.7;
+  background: rgba(184, 149, 106, 0.04);
+}
+.shopping-item-check {
+  padding-top: 2px;
+}
+.shopping-item-check input {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.shopping-item-info {
+  flex: 1;
+}
+.shopping-item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.shopping-item-name s {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.shopping-item-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.shopping-item-cat {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(107, 122, 158, 0.1);
+  color: #6B7A9E;
+}
+.shopping-item-project {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.shopping-item-notes {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.shopping-item-ref {
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-top: 4px;
+  word-break: break-all;
+}
+.shopping-item-found-note {
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: rgba(184, 149, 106, 0.06);
+  border-radius: var(--radius-sm);
+}
+.shopping-item-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.shop-found-btn {
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.shop-found-btn:hover {
+  background: var(--accent-dark, #A07850);
+  transform: translateY(-1px);
+}
+.shop-del-btn {
+  padding: 6px 10px;
+  font-size: 0.78rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.shop-del-btn:hover {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
 /* --- Mes réf Archi d'int --- */
 .ref-header {
   margin-bottom: 12px;

@@ -180,6 +180,10 @@ function updateBreadcrumb() {
     parts.push({ label: 'Mes réf Archi d\'int', current: true });
   }
 
+  if (state.currentView === 'sourcing') {
+    parts.push({ label: 'Sourcing Matériaux', current: true });
+  }
+
   if (state.currentView === 'search') {
     parts.push({ label: `Recherche : "${state.searchQuery}"`, current: true });
   }
@@ -207,6 +211,7 @@ function render() {
     case 'collection': renderCollection(content); break;
     case 'conseils': renderConseils(content); break;
     case 'references': renderReferences(content); break;
+    case 'sourcing': renderSourcing(content); break;
     case 'search': renderSearch(content); break;
   }
 }
@@ -1024,6 +1029,392 @@ function openRefPourquoiModal(dIdx, iIdx) {
   setTimeout(() => { const f = content.querySelector('textarea'); if (f) f.focus(); }, 100);
 }
 
+// -------- Sourcing Matériaux --------
+const SOURCING_GUIDE = [
+  {
+    category: '🪨 Pierre naturelle',
+    method: 'La pierre naturelle s\'achète chez des marbriers/carriers spécialisés. Ne JAMAIS acheter en grande surface bricolage pour un projet sérieux.',
+    sources: [
+      { name: 'Carrières de pierre locales', type: 'Fournisseur direct', desc: 'Contacter les carrières de votre région. Prix imbattable, qualité contrôlable. Chercher « carrière pierre + [votre région] ».', location: 'France entière' },
+      { name: 'Paris Céramique / MDY', type: 'Showroom pro', desc: 'Showrooms parisiens avec large choix de marbres, granits, travertins. Échantillons disponibles. Sur RDV.', location: 'Paris / IDF' },
+      { name: 'Cersaie (salon)', type: 'Salon international', desc: 'Bologne, chaque septembre. LE salon mondial de la céramique et pierre. Rencontrer les carriers italiens, espagnols, portugais.', location: 'Bologne, Italie' },
+      { name: 'StonExpo / Marmomac', type: 'Salon international', desc: 'Vérone, septembre. Le plus grand salon mondial de la pierre. 1600 exposants de 56 pays.', location: 'Vérone, Italie' },
+      { name: 'Fournisseurs en ligne', type: 'Web', desc: 'StoneContact.com : marketplace mondiale de pierre. Demande de devis + échantillons. Attention aux frais de port (la pierre est lourde).', location: 'International' }
+    ],
+    tips: 'Toujours demander un échantillon RÉEL avant de commander. La photo ne rend jamais la texture et les veinures. Commander 10-15% de plus que la surface calculée (casse + coupes).'
+  },
+  {
+    category: '🪵 Bois',
+    method: 'Le bois s\'achète chez des négociants bois ou directement en scierie. Pour le parquet : chez des parqueteurs spécialisés.',
+    sources: [
+      { name: 'Scieries locales', type: 'Fournisseur direct', desc: 'Bois brut, sur-mesure, essences locales. Idéal pour les menuiseries sur-mesure. Chercher « scierie + [département] ».', location: 'France entière' },
+      { name: 'Négoces bois (Dispano, Dufour, Ducerf)', type: 'Négociant', desc: 'Large stock de panneaux, massifs et placages. Livraison chantier. Catalogue en ligne. Compte pro recommandé.', location: 'France entière' },
+      { name: 'Parquets spécialisés (Emois & Bois, Panaget)', type: 'Fabricant', desc: 'Parquets massifs et contrecollés de qualité. Showrooms à visiter. Possibilité de teintes sur-mesure.', location: 'Paris + réseau national' },
+      { name: 'Récupération / Réemploi', type: 'Circuit alternatif', desc: 'Bois de récupération : Emmaüs, Le Bon Coin, Backacia (plateforme réemploi BTP). Planches de coffrage, vieilles poutres, parquet ancien.', location: 'France entière' },
+      { name: 'Bois exotiques : Teck, Iroko', type: 'Importateur spécialisé', desc: 'Pour le teck ou bois tropicaux : exiger la certification FSC ou PEFC. Fournisseurs : Bois Tropicaux de France, Jammes.', location: 'Bordeaux, Le Havre' }
+    ],
+    tips: 'Visiter la scierie/le négoce pour choisir les lots sur place (chaque lot a des variations). Pour le sur-mesure, donner les plans cotés au menuisier qui commandera le bon volume.'
+  },
+  {
+    category: '⚙️ Métaux (laiton, acier, cuivre)',
+    method: 'Les métaux pour la déco/agencement se trouvent chez des métalliers-serruriers d\'art ou des négoces métaux spécialisés.',
+    sources: [
+      { name: 'Métalliers-serruriers d\'art', type: 'Artisan', desc: 'Pour les pièces sur-mesure (étagères, pieds de table, garde-corps, miroirs). Trouver via les Compagnons du Devoir ou Houzz Pro.', location: 'France entière' },
+      { name: 'Descours & Cabaud / KDI', type: 'Négociant métaux', desc: 'Profilés, tubes, tôles en acier, inox, alu. Découpe sur-mesure. Compte pro nécessaire.', location: 'France entière' },
+      { name: 'La Quincaillerie (laquincaillerie.com)', type: 'E-commerce spécialisé', desc: 'Poignées, boutons, crémones en laiton, cuivre, bronze. Large gamme haut de gamme. Envoi d\'échantillons.', location: 'En ligne' },
+      { name: 'Dauby, Joseph Giles, Buster + Punch', type: 'Marques design', desc: 'Quincaillerie architecturale design (poignées, interrupteurs). Dauby (Belgique) pour le laiton brut. Buster+Punch (UK) pour le style industriel chic.', location: 'International' }
+    ],
+    tips: 'Le laiton brut va patiner (oxydation naturelle) — prévenir le client et proposer un vernis si nécessaire. L\'acier brut doit être traité (vernis mat, cire, ou thermolaquage) sinon il rouille.'
+  },
+  {
+    category: '🔲 Carrelage & Céramique',
+    method: 'Le carrelage se trouve chez des carreleurs grossistes ou dans les showrooms des fabricants. Éviter les GSB pour du haut de gamme.',
+    sources: [
+      { name: 'Showrooms fabricants (Mutina, Marazzi, Porcelanosa)', type: 'Showroom', desc: 'Les grandes marques ont des showrooms avec conseil. Mutina = design italien pointu. Marazzi = large gamme. Porcelanosa = bon rapport qualité/prix.', location: 'Paris, Lyon, Marseille' },
+      { name: 'Emery & Cie', type: 'Artisanal haut de gamme', desc: 'Zelliges faits main, carreaux de ciment, peintures à la chaux. Le graal du zellige artisanal. Showroom à Bruxelles, points de vente en France.', location: 'Bruxelles + France' },
+      { name: 'Carré Sol, La Cimenterie de la Tour', type: 'Artisanal français', desc: 'Carreaux de ciment artisanaux, motifs personnalisables. Fabrication française. Délai 4-8 semaines.', location: 'Sud de la France' },
+      { name: 'Cersaie Bologne', type: 'Salon international', desc: 'Septembre à Bologne. 800 exposants céramique du monde entier. C\'est ici que vous découvrirez des fournisseurs introuvables en France.', location: 'Bologne, Italie' },
+      { name: 'Comptoir du Cérame', type: 'Grossiste', desc: 'Grossiste accessible aux pros et particuliers. Large choix, prix compétitifs. Plusieurs showrooms en France.', location: 'France (multi-sites)' }
+    ],
+    tips: 'Le zellige artisanal a des irrégularités VOULUES — bien expliquer au client. Les carreaux de ciment doivent être imperméabilisés. Toujours commander dans le même lot (les teintes varient entre lots).'
+  },
+  {
+    category: '🧵 Textiles (lin, velours, laine)',
+    method: 'Les tissus d\'ameublement se trouvent chez des éditeurs textiles spécialisés. Jamais en mercerie grand public pour un projet pro.',
+    sources: [
+      { name: 'Éditeurs textiles (Casamance, Élitis, Pierre Frey)', type: 'Éditeur', desc: 'Les grands éditeurs français de tissus d\'ameublement. Showrooms sur RDV (Paris, Saint-Germain principalement). Catalogue + échantillons gratuits sur demande avec compte pro.', location: 'Paris principalement' },
+      { name: 'Dedar, Rubelli, Kvadrat', type: 'Éditeur international', desc: 'Dedar (Milan) : luxe contemporain. Rubelli (Venise) : tradition vénitienne. Kvadrat (Danemark) : design scandinave, Raf Simons collab. Agents en France.', location: 'International + agents FR' },
+      { name: 'Le Marché Saint-Pierre / Tissus Reine', type: 'Marché', desc: 'Montmartre, Paris. Tissus en tout genre, prix intéressants. Idéal pour le sourcing rapide de tissus d\'ameublement et rideaux.', location: 'Paris 18e' },
+      { name: 'Maison Thévenon, Métissage & Matières', type: 'Made in France', desc: 'Tisseurs français, lin naturel, coton bio, chanvre. Pour les projets éco-responsables et le « Made in France ».', location: 'Lyon, Normandie' }
+    ],
+    tips: 'Toujours demander la fiche technique du tissu (test Martindale pour la résistance, classement feu M1 pour les ERP). Les éditeurs envoient des échantillons gratuitement — en demander systématiquement.'
+  },
+  {
+    category: '🏛️ Enduits & Revêtements muraux',
+    method: 'Les enduits décoratifs (tadelakt, stuc, béton ciré) se trouvent chez des fabricants spécialisés ou directement chez l\'artisan applicateur.',
+    sources: [
+      { name: 'Mercadier', type: 'Fabricant', desc: 'Béton ciré, enduits minéraux, peintures effet. Leader français. Formation applicateurs. Showroom et réseau de poseurs agréés.', location: 'France entière' },
+      { name: 'Marius Aurenti', type: 'Fabricant artisanal', desc: 'Tadelakt authentique, béton ciré, enduits chaux. Provençal, très haute qualité. Réseau d\'applicateurs formés.', location: 'Provence + national' },
+      { name: 'Ressource Peintures', type: 'Peintures premium', desc: '1200 teintes, finitions mates profondes (façon Farrow & Ball mais français). Showrooms élégants. Nuancier physique indispensable.', location: 'Paris + réseau national' },
+      { name: 'Farrow & Ball, Paint & Paper Library', type: 'Peintures anglaises', desc: 'Références mondiales en peinture haut de gamme. Teintes profondes, finis exceptionnels. Points de vente en France + en ligne.', location: 'International + FR' },
+      { name: 'Artisans stuqueurs / tadelakteurs', type: 'Artisan', desc: 'Les meilleurs enduits sont posés par des artisans spécialisés qui fournissent aussi la matière. Trouver via le réseau des Métiers d\'Art.', location: 'France entière' }
+    ],
+    tips: 'Le béton ciré et le tadelakt nécessitent un applicateur FORMÉ — ne jamais laisser un artisan non qualifié les poser. Demander des chantiers de référence. Prévoir un échantillon sur site avant la pose complète.'
+  },
+  {
+    category: '💡 Luminaires',
+    method: 'Les luminaires design se trouvent chez des éditeurs de luminaires ou des concept stores. Pour le sur-mesure : artisans luminairistes.',
+    sources: [
+      { name: 'Flos, Artemide, Louis Poulsen', type: 'Éditeur design', desc: 'Les marques iconiques du luminaire design. Disponibles via des revendeurs agréés (Silvera, Made in Design, DCW). Remise pro possible.', location: 'Revendeurs FR' },
+      { name: 'DCW Éditions, CVL Luminaires, Sammode', type: 'Made in France', desc: 'Luminaires design fabriqués en France. DCW (Gras, ISP), CVL (laiton artisanal), Sammode (industriel). Showrooms sur RDV.', location: 'Paris + ateliers' },
+      { name: 'Nedgis, Lightshop, Made in Design', type: 'E-commerce', desc: 'Boutiques en ligne avec large sélection de luminaires design. Filtres par style/designer/prix. Livraison rapide.', location: 'En ligne' },
+      { name: 'Artisans luminairistes', type: 'Sur-mesure', desc: 'Pour les suspensions, appliques et lustres uniques. Trouver via Etsy (filtrer \"fait main\"), Instagram, Ateliers d\'Art de France.', location: 'France entière' }
+    ],
+    tips: 'Penser l\'éclairage en 3 couches : général (plafonnier/spots), fonctionnel (liseuse, plan de travail), d\'ambiance (lampe, ruban LED indirect). Le luminaire est souvent le dernier choix mais devrait être le premier.'
+  },
+  {
+    category: '🛋️ Mobilier',
+    method: 'Le mobilier se source selon le positionnement : éditeurs pour le design, artisans pour le sur-mesure, vintage pour le caractère.',
+    sources: [
+      { name: 'Éditeurs (Cassina, B&B Italia, Vitra, Hay)', type: 'Éditeur design', desc: 'Le haut de gamme et le design iconique. Showrooms à Paris (Rive Gauche principalement). Remises pro sur présentation de K-bis.', location: 'Paris + revendeurs' },
+      { name: 'Silvera, Merci, The Conran Shop', type: 'Concept store', desc: 'Multi-marques premium. Idéal pour sourcer mobilier + objets + luminaires en un lieu. Silvera = le plus pro-friendly.', location: 'Paris' },
+      { name: 'Vintage : 1stDibs, Pamono, Selency', type: 'Vintage / seconde main', desc: '1stDibs : luxe vintage international. Pamono : design européen. Selency : français, plus accessible. Marché Paul Bert (Puces de Saint-Ouen) pour les trouvailles physiques.', location: 'En ligne + Saint-Ouen' },
+      { name: 'Artisans ébénistes', type: 'Sur-mesure', desc: 'Pour les meubles uniques (bibliothèque, meuble TV, dressing). Compagnons du Devoir, annuaire des Ateliers d\'Art de France, Instagram.', location: 'France entière' },
+      { name: 'Mobilier accessible (Tikamoon, AM.PM, Ethnicraft)', type: 'Milieu de gamme', desc: 'Bon rapport qualité/prix. Tikamoon = bois massif abordable. AM.PM = La Redoute premium. Ethnicraft = chêne et teck épurés.', location: 'En ligne + magasins' }
+    ],
+    tips: 'Mixer les gammes : 1-2 pièces iconiques (éditeur) + vintage + sur-mesure + accessible. C\'est le mix qui crée un intérieur unique. Toujours vérifier les DÉLAIS de livraison (4-12 semaines selon les marques).'
+  }
+];
+
+function loadShoppingList() {
+  try {
+    const raw = localStorage.getItem('architek-pro-shopping');
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  return [];
+}
+
+function saveShoppingList(list) {
+  localStorage.setItem('architek-pro-shopping', JSON.stringify(list));
+}
+
+function renderSourcing(container) {
+  // Header
+  const header = el('div', { className: 'sourcing-header' });
+  header.innerHTML = `
+    <h2>📍 Sourcing Matériaux</h2>
+    <p>Où et comment trouver les matériaux que vous voyez dans vos inspirations. Guide complet + shopping list personnelle.</p>
+  `;
+  container.appendChild(header);
+
+  // Tabs: Guide / Shopping List
+  const tabs = el('div', { className: 'collection-tabs' });
+  let activeTab = 'guide';
+
+  function renderTabContent() {
+    const existing = $('#sourcing-content');
+    if (existing) existing.remove();
+    const content = el('div', { id: 'sourcing-content' });
+
+    if (activeTab === 'guide') {
+      renderSourcingGuide(content);
+    } else {
+      renderShoppingList(content);
+    }
+    container.appendChild(content);
+  }
+
+  const tabDefs = [
+    { id: 'guide', label: '📖 Guide des fournisseurs' },
+    { id: 'shopping', label: '🛒 Ma Shopping List' }
+  ];
+
+  tabDefs.forEach(t => {
+    const tabBtn = el('button', {
+      className: `collection-tab ${t.id === activeTab ? 'active' : ''}`,
+      onClick: () => {
+        activeTab = t.id;
+        $$('.collection-tab').forEach(tb => tb.classList.remove('active'));
+        tabBtn.classList.add('active');
+        renderTabContent();
+      }
+    }, t.label);
+    tabs.appendChild(tabBtn);
+  });
+
+  container.appendChild(tabs);
+  renderTabContent();
+}
+
+function renderSourcingGuide(content) {
+  // Intro tip
+  const tip = el('div', { className: 'sourcing-tip' });
+  tip.innerHTML = `
+    <strong>💡 La méthode quand vous voyez un matériau qui vous plaît mais ne savez pas où le trouver :</strong>
+    <ol>
+      <li><strong>Identifier</strong> — Quel type de matériau est-ce ? (pierre, bois, métal, enduit…)</li>
+      <li><strong>Préciser</strong> — Quelle variété exacte ? (ex: pas juste "marbre" mais "marbre Calacatta Oro")</li>
+      <li><strong>Chercher le fabricant</strong> — Google Image inversé sur la photo, ou demander en commentaire Instagram</li>
+      <li><strong>Contacter les showrooms</strong> — Apporter la photo, ils identifient souvent le produit ou proposent un équivalent</li>
+      <li><strong>Demander des échantillons</strong> — TOUJOURS voir et toucher avant de commander</li>
+    </ol>
+  `;
+  content.appendChild(tip);
+
+  // Guide cards
+  SOURCING_GUIDE.forEach((cat, catIdx) => {
+    const card = el('div', { className: 'sourcing-cat-card' });
+    card.innerHTML = `
+      <div class="sourcing-cat-header" data-catidx="${catIdx}">
+        <h3>${cat.category}</h3>
+        <p class="sourcing-cat-method">${cat.method}</p>
+        <span class="sourcing-cat-toggle">▼</span>
+      </div>
+      <div class="sourcing-cat-body" id="sourcing-body-${catIdx}">
+        <div class="sourcing-sources">
+          ${cat.sources.map(s => `
+            <div class="sourcing-source">
+              <div class="sourcing-source-header">
+                <strong>${s.name}</strong>
+                <span class="sourcing-source-type">${s.type}</span>
+              </div>
+              <p>${s.desc}</p>
+              <span class="sourcing-source-location">📍 ${s.location}</span>
+            </div>
+          `).join('')}
+        </div>
+        <div class="sourcing-cat-tip">
+          <strong>💡 Conseil :</strong> ${cat.tips}
+        </div>
+      </div>
+    `;
+    content.appendChild(card);
+  });
+
+  // Bind toggle events
+  setTimeout(() => {
+    $$('.sourcing-cat-header').forEach(header => {
+      header.style.cursor = 'pointer';
+      header.addEventListener('click', () => {
+        const idx = header.dataset.catidx;
+        const body = $(`#sourcing-body-${idx}`);
+        const toggle = header.querySelector('.sourcing-cat-toggle');
+        if (body.classList.contains('collapsed')) {
+          body.classList.remove('collapsed');
+          toggle.textContent = '▼';
+        } else {
+          body.classList.add('collapsed');
+          toggle.textContent = '▶';
+        }
+      });
+    });
+  }, 0);
+}
+
+function renderShoppingList(content) {
+  const list = loadShoppingList();
+
+  // Add item form
+  const form = el('div', { className: 'shopping-add-form' });
+  form.innerHTML = `
+    <h3>Ajouter un matériau à trouver</h3>
+    <div class="shopping-form-grid">
+      <input type="text" id="shop-name" class="conseil-input" placeholder="Nom du matériau (ex: Zellige vert émeraude)">
+      <select id="shop-cat" class="conseil-input">
+        <option value="">Catégorie…</option>
+        <option value="Pierre">🪨 Pierre</option>
+        <option value="Bois">🪵 Bois</option>
+        <option value="Métal">⚙️ Métal</option>
+        <option value="Carrelage">🔲 Carrelage</option>
+        <option value="Textile">🧵 Textile</option>
+        <option value="Enduit">🏛️ Enduit</option>
+        <option value="Luminaire">💡 Luminaire</option>
+        <option value="Mobilier">🛋️ Mobilier</option>
+        <option value="Autre">📦 Autre</option>
+      </select>
+      <input type="text" id="shop-project" class="conseil-input" placeholder="Pour quel projet ? (optionnel)">
+      <input type="text" id="shop-ref" class="conseil-input" placeholder="Référence / lien image d'inspiration (optionnel)">
+      <textarea id="shop-notes" class="conseil-textarea" rows="2" placeholder="Notes : dimensions, quantité, couleur exacte, budget…"></textarea>
+      <button id="shop-add-btn" class="btn-conseil-add">+ Ajouter à la liste</button>
+    </div>
+  `;
+  content.appendChild(form);
+
+  // List
+  if (list.length === 0) {
+    const empty = el('div', { className: 'empty-state' });
+    empty.innerHTML = `
+      <div class="empty-state-icon">🛒</div>
+      <h3>Shopping list vide</h3>
+      <p>Ajoutez les matériaux que vous cherchez pour vos projets.</p>
+    `;
+    content.appendChild(empty);
+  } else {
+    // Stats
+    const found = list.filter(i => i.found).length;
+    const stats = el('div', { className: 'shopping-stats' });
+    stats.innerHTML = `<span>${list.length} matériau${list.length > 1 ? 'x' : ''}</span> · <span class="shopping-found">${found} trouvé${found > 1 ? 's' : ''}</span> · <span class="shopping-pending">${list.length - found} à trouver</span>`;
+    content.appendChild(stats);
+
+    const listContainer = el('div', { className: 'shopping-list' });
+    list.forEach((item, i) => {
+      const row = el('div', { className: `shopping-item ${item.found ? 'shopping-item-found' : ''}` });
+      row.innerHTML = `
+        <div class="shopping-item-check">
+          <input type="checkbox" class="shop-check" data-idx="${i}" ${item.found ? 'checked' : ''} title="Marquer comme trouvé">
+        </div>
+        <div class="shopping-item-info">
+          <div class="shopping-item-name">${item.found ? '<s>' + item.name + '</s>' : item.name}</div>
+          <div class="shopping-item-meta">
+            ${item.category ? `<span class="shopping-item-cat">${item.category}</span>` : ''}
+            ${item.project ? `<span class="shopping-item-project">📐 ${item.project}</span>` : ''}
+          </div>
+          ${item.notes ? `<div class="shopping-item-notes">${item.notes}</div>` : ''}
+          ${item.ref ? `<div class="shopping-item-ref">🔗 ${item.ref}</div>` : ''}
+          ${item.foundNote ? `<div class="shopping-item-found-note">✅ ${item.foundNote}</div>` : ''}
+        </div>
+        <div class="shopping-item-actions">
+          ${!item.found ? `<button class="shop-found-btn" data-idx="${i}" title="J'ai trouvé !">✅ Trouvé</button>` : ''}
+          <button class="shop-del-btn" data-idx="${i}" title="Supprimer">✕</button>
+        </div>
+      `;
+      listContainer.appendChild(row);
+    });
+    content.appendChild(listContainer);
+  }
+
+  // Events
+  setTimeout(() => {
+    const addBtn = $('#shop-add-btn');
+    if (addBtn) {
+      addBtn.addEventListener('click', () => {
+        const name = $('#shop-name').value.trim();
+        if (!name) { toast('Nom du matériau requis'); return; }
+        const l = loadShoppingList();
+        l.push({
+          name,
+          category: $('#shop-cat').value,
+          project: $('#shop-project').value.trim(),
+          ref: $('#shop-ref').value.trim(),
+          notes: $('#shop-notes').value.trim(),
+          found: false,
+          foundNote: '',
+          date: new Date().toISOString()
+        });
+        saveShoppingList(l);
+        toast('Matériau ajouté à la shopping list !');
+        navigate('sourcing');
+      });
+    }
+
+    $$('.shop-check').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const idx = parseInt(cb.dataset.idx);
+        const l = loadShoppingList();
+        l[idx].found = cb.checked;
+        if (!cb.checked) l[idx].foundNote = '';
+        saveShoppingList(l);
+        navigate('sourcing');
+        // Switch to shopping tab after re-render
+        setTimeout(() => {
+          const shopTab = $$('.collection-tab')[1];
+          if (shopTab) shopTab.click();
+        }, 50);
+      });
+    });
+
+    $$('.shop-found-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx);
+        const overlay = $('#modal-overlay');
+        const mc = $('#modal-content');
+        overlay.classList.remove('hidden');
+        mc.innerHTML = `
+          <div class="modal-title">🎉 Où avez-vous trouvé ce matériau ?</div>
+          <div class="modal-field">
+            <label>Fournisseur / lieu / lien</label>
+            <textarea id="found-note" placeholder="Ex: Trouvé chez MDY Paris, réf. TRAV-032, 85€/m² posé…" autofocus style="min-height:80px"></textarea>
+          </div>
+          <div class="modal-actions">
+            <button class="btn" id="found-cancel">Annuler</button>
+            <button class="btn btn-primary" id="found-save">Marquer comme trouvé ✓</button>
+          </div>
+        `;
+        $('#found-cancel').onclick = closeModal;
+        $('#found-save').onclick = () => {
+          const l = loadShoppingList();
+          l[idx].found = true;
+          l[idx].foundNote = $('#found-note').value.trim();
+          saveShoppingList(l);
+          closeModal();
+          toast('Matériau trouvé ! 🎯');
+          navigate('sourcing');
+          setTimeout(() => {
+            const shopTab = $$('.collection-tab')[1];
+            if (shopTab) shopTab.click();
+          }, 50);
+        };
+        overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+      });
+    });
+
+    $$('.shop-del-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx);
+        const l = loadShoppingList();
+        l.splice(idx, 1);
+        saveShoppingList(l);
+        toast('Matériau supprimé.');
+        navigate('sourcing');
+        setTimeout(() => {
+          const shopTab = $$('.collection-tab')[1];
+          if (shopTab) shopTab.click();
+        }, 50);
+      });
+    });
+  }, 0);
+}
+
 // -------- Search --------
 function renderSearch(container) {
   const query = state.searchQuery.toLowerCase().trim();
@@ -1296,6 +1687,12 @@ function initNavEvents() {
   const refLink = $('[data-view="references"]');
   if (refLink) {
     refLink.addEventListener('click', (e) => { e.preventDefault(); navigate('references'); closeMobileMenu(); });
+  }
+
+  // Sourcing link
+  const srcLink = $('[data-view="sourcing"]');
+  if (srcLink) {
+    srcLink.addEventListener('click', (e) => { e.preventDefault(); navigate('sourcing'); closeMobileMenu(); });
   }
 }
 
