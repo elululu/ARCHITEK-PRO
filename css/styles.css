@@ -1194,6 +1194,327 @@ textarea {
   background: rgba(231, 76, 60, 0.08);
 }
 
+/* --- Mes réf Archi d'int --- */
+.ref-header {
+  margin-bottom: 12px;
+}
+
+.ref-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.ref-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.ref-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ref-stat-sep { opacity: 0.4; }
+
+.ref-add-designer {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.ref-add-designer .conseil-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Designer folder */
+.ref-folder {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-bottom: 28px;
+  transition: all var(--transition);
+}
+
+.ref-folder:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.ref-folder-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.ref-folder-name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.ref-folder-specialty {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: rgba(184, 149, 106, 0.1);
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+.ref-folder-count {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.ref-folder-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.ref-btn-add-img {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.ref-btn-add-img:hover {
+  background: var(--accent-dark, #A07850);
+  transform: translateY(-1px);
+}
+
+.ref-btn-delete-folder {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.ref-btn-delete-folder:hover {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  background: rgba(231, 76, 60, 0.06);
+}
+
+/* Progress bar */
+.ref-folder-progress {
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.ref-folder-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* Images grid */
+.ref-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.ref-image-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.ref-image-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.ref-image-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.ref-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.ref-image-card:hover .ref-image-wrapper img {
+  transform: scale(1.03);
+}
+
+.ref-img-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.ref-image-caption {
+  padding: 10px 14px 4px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Pourquoi tags */
+.ref-pourquoi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px 14px;
+}
+
+.ref-pq-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+}
+
+.pq-proportions { background: rgba(52, 152, 219, 0.12); color: #2980b9; }
+.pq-palette { background: rgba(155, 89, 182, 0.12); color: #8e44ad; }
+.pq-materiaux { background: rgba(230, 126, 34, 0.12); color: #d35400; }
+.pq-lumiere { background: rgba(241, 196, 15, 0.15); color: #b7950b; }
+
+.ref-pourquoi-note {
+  padding: 6px 14px 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.ref-pourquoi-empty {
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  opacity: 0.7;
+  transition: all var(--transition);
+}
+
+.ref-pourquoi-empty:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.ref-image-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.ref-btn-edit-pq,
+.ref-btn-del-img {
+  background: none;
+  border: none;
+  font-size: 0.78rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all var(--transition);
+}
+
+.ref-btn-edit-pq {
+  color: var(--accent);
+}
+
+.ref-btn-edit-pq:hover {
+  background: rgba(184, 149, 106, 0.1);
+}
+
+.ref-btn-del-img {
+  color: var(--text-muted);
+}
+
+.ref-btn-del-img:hover {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.08);
+}
+
+/* Pourquoi modal checkboxes */
+.modal-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.pq-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pq-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.pq-checkbox-label:hover {
+  border-color: var(--accent);
+  background: rgba(184, 149, 106, 0.04);
+}
+
+.pq-checkbox-label input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+}
+
+.pq-cb-icon {
+  font-size: 1.1rem;
+}
+
 /* --- Search Results --- */
 .search-results-header {
   margin-bottom: 24px;

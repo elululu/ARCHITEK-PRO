@@ -176,6 +176,10 @@ function updateBreadcrumb() {
     parts.push({ label: 'Conseils Pratiques', current: true });
   }
 
+  if (state.currentView === 'references') {
+    parts.push({ label: 'Mes réf Archi d\'int', current: true });
+  }
+
   if (state.currentView === 'search') {
     parts.push({ label: `Recherche : "${state.searchQuery}"`, current: true });
   }
@@ -202,6 +206,7 @@ function render() {
     case 'fiche': renderFiche(content); break;
     case 'collection': renderCollection(content); break;
     case 'conseils': renderConseils(content); break;
+    case 'references': renderReferences(content); break;
     case 'search': renderSearch(content); break;
   }
 }
@@ -734,6 +739,291 @@ function saveConseils(arr) {
   localStorage.setItem('architek-pro-conseils', JSON.stringify(arr));
 }
 
+// -------- Mes réf Archi d'int --------
+function loadRefData() {
+  try {
+    const raw = localStorage.getItem('architek-pro-references');
+    if (raw) return JSON.parse(raw);
+  } catch (e) { /* ignore */ }
+  return { designers: [] };
+  // Structure: { designers: [{ id, name, specialty, images: [{ url, caption, pourquoi: { proportions, palette, materiaux, lumiere, autre } }] }] }
+}
+
+function saveRefData(data) {
+  localStorage.setItem('architek-pro-references', JSON.stringify(data));
+}
+
+function renderReferences(container) {
+  const data = loadRefData();
+
+  const header = el('div', { className: 'ref-header' });
+  header.innerHTML = `
+    <h2>📐 Mes réf Archi d'int</h2>
+    <p>Créez un dossier par designer, collectez vos images d'inspiration et notez ce qui vous touche.</p>
+  `;
+  container.appendChild(header);
+
+  // Stats bar
+  const totalImages = data.designers.reduce((acc, d) => acc + d.images.length, 0);
+  const statsBar = el('div', { className: 'ref-stats' });
+  statsBar.innerHTML = `
+    <span class="ref-stat">${data.designers.length} designer${data.designers.length > 1 ? 's' : ''}</span>
+    <span class="ref-stat-sep">·</span>
+    <span class="ref-stat">${totalImages} image${totalImages > 1 ? 's' : ''}</span>
+  `;
+  container.appendChild(statsBar);
+
+  // Add designer form
+  const addForm = el('div', { className: 'ref-add-designer' });
+  addForm.innerHTML = `
+    <input type="text" id="ref-designer-name" class="conseil-input" placeholder="Nom du designer / architecte…">
+    <input type="text" id="ref-designer-specialty" class="conseil-input" placeholder="Spécialité (ex: minimalisme japonais, Art Déco…)">
+    <button id="ref-add-designer-btn" class="btn-conseil-add">+ Nouveau dossier</button>
+  `;
+  container.appendChild(addForm);
+
+  // Designer folders
+  if (data.designers.length === 0) {
+    const empty = el('div', { className: 'empty-state' });
+    empty.innerHTML = `
+      <div class="empty-state-icon">📁</div>
+      <h3>Aucun dossier pour l'instant</h3>
+      <p>Créez votre premier dossier de designer ci-dessus.</p>
+    `;
+    container.appendChild(empty);
+  } else {
+    data.designers.forEach((designer, dIdx) => {
+      const folder = el('div', { className: 'ref-folder' });
+      folder.innerHTML = `
+        <div class="ref-folder-header">
+          <div class="ref-folder-info">
+            <h3 class="ref-folder-name">${designer.name}</h3>
+            ${designer.specialty ? `<span class="ref-folder-specialty">${designer.specialty}</span>` : ''}
+            <span class="ref-folder-count">${designer.images.length}/20 images</span>
+          </div>
+          <div class="ref-folder-actions">
+            <button class="ref-btn-add-img" data-didx="${dIdx}" title="Ajouter une image">+ Image</button>
+            <button class="ref-btn-delete-folder" data-didx="${dIdx}" title="Supprimer le dossier">✕</button>
+          </div>
+        </div>
+        <div class="ref-folder-progress">
+          <div class="ref-folder-progress-fill" style="width: ${Math.min(100, (designer.images.length / 20) * 100)}%"></div>
+        </div>
+      `;
+
+      // Images grid
+      if (designer.images.length > 0) {
+        const imgGrid = el('div', { className: 'ref-images-grid' });
+        designer.images.forEach((img, iIdx) => {
+          const imgCard = el('div', { className: 'ref-image-card' });
+          const hasPourquoi = img.pourquoi && Object.values(img.pourquoi).some(v => v);
+          imgCard.innerHTML = `
+            <div class="ref-image-wrapper">
+              <img src="${img.url}" alt="${img.caption || ''}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=ref-img-error>⚠️ Image inaccessible</div>'">
+            </div>
+            ${img.caption ? `<div class="ref-image-caption">${img.caption}</div>` : ''}
+            ${hasPourquoi ? `
+              <div class="ref-pourquoi-tags">
+                ${img.pourquoi.proportions ? '<span class="ref-pq-tag pq-proportions">Proportions</span>' : ''}
+                ${img.pourquoi.palette ? '<span class="ref-pq-tag pq-palette">Palette</span>' : ''}
+                ${img.pourquoi.materiaux ? '<span class="ref-pq-tag pq-materiaux">Matériaux</span>' : ''}
+                ${img.pourquoi.lumiere ? '<span class="ref-pq-tag pq-lumiere">Lumière</span>' : ''}
+              </div>
+              ${img.pourquoi.autre ? `<div class="ref-pourquoi-note">${img.pourquoi.autre}</div>` : ''}
+            ` : '<div class="ref-pourquoi-empty">Cliquez pour noter pourquoi ça vous inspire</div>'}
+            <div class="ref-image-actions">
+              <button class="ref-btn-edit-pq" data-didx="${dIdx}" data-iidx="${iIdx}">✍️ Pourquoi ?</button>
+              <button class="ref-btn-del-img" data-didx="${dIdx}" data-iidx="${iIdx}">✕</button>
+            </div>
+          `;
+          imgGrid.appendChild(imgCard);
+        });
+        folder.appendChild(imgGrid);
+      }
+
+      container.appendChild(folder);
+    });
+  }
+
+  // Bind events after DOM is ready
+  setTimeout(() => {
+    // Add designer
+    const addBtn = $('#ref-add-designer-btn');
+    if (addBtn) {
+      addBtn.addEventListener('click', () => {
+        const name = $('#ref-designer-name').value.trim();
+        if (!name) { toast('Nom du designer requis.'); return; }
+        const specialty = $('#ref-designer-specialty').value.trim();
+        const d = loadRefData();
+        d.designers.push({ id: 'designer-' + Date.now(), name, specialty, images: [] });
+        saveRefData(d);
+        toast(`Dossier "${name}" créé !`);
+        navigate('references');
+      });
+    }
+
+    // Delete folder
+    $$('.ref-btn-delete-folder').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dIdx = parseInt(btn.dataset.didx);
+        const d = loadRefData();
+        const name = d.designers[dIdx].name;
+        if (confirm(`Supprimer le dossier "${name}" et toutes ses images ?`)) {
+          d.designers.splice(dIdx, 1);
+          saveRefData(d);
+          toast(`Dossier "${name}" supprimé.`);
+          navigate('references');
+        }
+      });
+    });
+
+    // Add image
+    $$('.ref-btn-add-img').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dIdx = parseInt(btn.dataset.didx);
+        openRefImageModal(dIdx);
+      });
+    });
+
+    // Edit pourquoi
+    $$('.ref-btn-edit-pq').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dIdx = parseInt(btn.dataset.didx);
+        const iIdx = parseInt(btn.dataset.iidx);
+        openRefPourquoiModal(dIdx, iIdx);
+      });
+    });
+
+    // Delete image
+    $$('.ref-btn-del-img').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dIdx = parseInt(btn.dataset.didx);
+        const iIdx = parseInt(btn.dataset.iidx);
+        const d = loadRefData();
+        d.designers[dIdx].images.splice(iIdx, 1);
+        saveRefData(d);
+        toast('Image supprimée.');
+        navigate('references');
+      });
+    });
+
+    // Click on pourquoi-empty to open modal
+    $$('.ref-pourquoi-empty').forEach(el => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        const card = el.closest('.ref-image-card');
+        const editBtn = card.querySelector('.ref-btn-edit-pq');
+        if (editBtn) editBtn.click();
+      });
+    });
+  }, 0);
+}
+
+function openRefImageModal(dIdx) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+  content.innerHTML = `
+    <div class="modal-title">Ajouter une image d'inspiration</div>
+    <div class="modal-field">
+      <label>URL de l'image *</label>
+      <input type="url" id="ref-modal-url" placeholder="https://... (.jpg, .png, .webp)" autofocus>
+    </div>
+    <div class="modal-field">
+      <label>Légende</label>
+      <input type="text" id="ref-modal-caption" placeholder="Nom du projet, lieu, année…">
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="ref-modal-cancel">Annuler</button>
+      <button class="btn btn-primary" id="ref-modal-save">Ajouter</button>
+    </div>
+  `;
+  $('#ref-modal-cancel').onclick = closeModal;
+  $('#ref-modal-save').onclick = () => {
+    const url = $('#ref-modal-url').value.trim();
+    if (!url) { toast('URL de l\'image requise'); return; }
+    const d = loadRefData();
+    if (d.designers[dIdx].images.length >= 20) {
+      toast('Maximum 20 images par dossier. Curatez ! 🎯');
+      closeModal();
+      return;
+    }
+    d.designers[dIdx].images.push({
+      url,
+      caption: $('#ref-modal-caption').value.trim(),
+      pourquoi: { proportions: false, palette: false, materiaux: false, lumiere: false, autre: '' }
+    });
+    saveRefData(d);
+    closeModal();
+    toast('Image ajoutée ✓');
+    navigate('references');
+  };
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('input'); if (f) f.focus(); }, 100);
+}
+
+function openRefPourquoiModal(dIdx, iIdx) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+
+  const d = loadRefData();
+  const img = d.designers[dIdx].images[iIdx];
+  const pq = img.pourquoi || { proportions: false, palette: false, materiaux: false, lumiere: false, autre: '' };
+
+  content.innerHTML = `
+    <div class="modal-title">Pourquoi ce projet m'inspire ?</div>
+    ${img.caption ? `<div class="modal-subtitle">${img.caption}</div>` : ''}
+    <div class="pq-checkboxes">
+      <label class="pq-checkbox-label">
+        <input type="checkbox" id="pq-proportions" ${pq.proportions ? 'checked' : ''}>
+        <span class="pq-cb-icon">📏</span> Les proportions & l'échelle
+      </label>
+      <label class="pq-checkbox-label">
+        <input type="checkbox" id="pq-palette" ${pq.palette ? 'checked' : ''}>
+        <span class="pq-cb-icon">🎨</span> La palette de couleurs
+      </label>
+      <label class="pq-checkbox-label">
+        <input type="checkbox" id="pq-materiaux" ${pq.materiaux ? 'checked' : ''}>
+        <span class="pq-cb-icon">🪨</span> Le choix des matériaux
+      </label>
+      <label class="pq-checkbox-label">
+        <input type="checkbox" id="pq-lumiere" ${pq.lumiere ? 'checked' : ''}>
+        <span class="pq-cb-icon">💡</span> Le jeu de lumière
+      </label>
+    </div>
+    <div class="modal-field">
+      <label>Notes libres — qu'est-ce qui vous touche exactement ?</label>
+      <textarea id="pq-autre" placeholder="Le contraste entre le béton brut et le velours, la façon dont la lumière zénithale…" style="min-height:100px">${pq.autre || ''}</textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="pq-cancel">Annuler</button>
+      <button class="btn btn-primary" id="pq-save">Enregistrer</button>
+    </div>
+  `;
+  $('#pq-cancel').onclick = closeModal;
+  $('#pq-save').onclick = () => {
+    const updated = loadRefData();
+    updated.designers[dIdx].images[iIdx].pourquoi = {
+      proportions: $('#pq-proportions').checked,
+      palette: $('#pq-palette').checked,
+      materiaux: $('#pq-materiaux').checked,
+      lumiere: $('#pq-lumiere').checked,
+      autre: $('#pq-autre').value.trim()
+    };
+    saveRefData(updated);
+    closeModal();
+    toast('Analyse enregistrée ✓');
+    navigate('references');
+  };
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('textarea'); if (f) f.focus(); }, 100);
+}
+
 // -------- Search --------
 function renderSearch(container) {
   const query = state.searchQuery.toLowerCase().trim();
@@ -1000,6 +1290,12 @@ function initNavEvents() {
   const consLink = $('[data-view="conseils"]');
   if (consLink) {
     consLink.addEventListener('click', (e) => { e.preventDefault(); navigate('conseils'); closeMobileMenu(); });
+  }
+
+  // References link
+  const refLink = $('[data-view="references"]');
+  if (refLink) {
+    refLink.addEventListener('click', (e) => { e.preventDefault(); navigate('references'); closeMobileMenu(); });
   }
 }
 
