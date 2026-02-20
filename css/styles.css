@@ -3008,6 +3008,66 @@ mark {
   flex-shrink: 0;
 }
 
+/* Visitor counter */
+.visitor-counter {
+  margin-bottom: 12px;
+}
+
+.visitor-counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.02em;
+}
+
+.visitor-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.visitor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: background 0.3s ease;
+}
+
+.visitor-dot.online {
+  background: #4ade80;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.5);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.visitor-dot.away {
+  background: #fbbf24;
+  box-shadow: 0 0 4px rgba(251, 191, 36, 0.4);
+  animation: none;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(74, 222, 128, 0.5); }
+  50% { opacity: 0.6; box-shadow: 0 0 2px rgba(74, 222, 128, 0.2); }
+}
+
+.visitor-divider {
+  opacity: 0.3;
+  font-size: 0.5rem;
+}
+
+.visitor-total {
+  font-variant-numeric: tabular-nums;
+}
+
+#visitor-count {
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+}
+
 .sidebar-footer-credit {
   font-size: 0.72rem;
   color: rgba(255,255,255,0.4);

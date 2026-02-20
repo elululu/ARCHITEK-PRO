@@ -2670,6 +2670,61 @@ function initCollapsibleSidebar() {
   });
 }
 
+// ============ VISITOR COUNTER ============
+function initVisitorCounter() {
+  const countEl = $('#visitor-count');
+  const statusText = $('#visitor-status-text');
+  const statusDot = $('.visitor-dot');
+
+  // --- Session status ---
+  if (statusText) {
+    statusText.textContent = 'En ligne';
+    if (statusDot) statusDot.classList.add('online');
+  }
+
+  // Update status when tab visibility changes
+  document.addEventListener('visibilitychange', () => {
+    if (!statusText || !statusDot) return;
+    if (document.hidden) {
+      statusText.textContent = 'En pause';
+      statusDot.classList.remove('online');
+      statusDot.classList.add('away');
+    } else {
+      statusText.textContent = 'En ligne';
+      statusDot.classList.remove('away');
+      statusDot.classList.add('online');
+    }
+  });
+
+  // --- Visit counter (only once per session) ---
+  const alreadyCounted = sessionStorage.getItem('architek-pro-counted');
+
+  if (alreadyCounted) {
+    // Already counted this session, just display cached value
+    const cached = localStorage.getItem('architek-pro-visit-count');
+    if (countEl && cached) countEl.textContent = parseInt(cached).toLocaleString('fr-FR');
+    return;
+  }
+
+  // Increment counter via API
+  fetch('https://api.counterapi.dev/v1/architek-pro-elululu/visits/up')
+    .then(r => r.json())
+    .then(data => {
+      if (countEl && data.count) {
+        countEl.textContent = data.count.toLocaleString('fr-FR');
+        localStorage.setItem('architek-pro-visit-count', data.count);
+        sessionStorage.setItem('architek-pro-counted', '1');
+      }
+    })
+    .catch(() => {
+      // Fallback: localStorage counter
+      let visits = parseInt(localStorage.getItem('architek-pro-visit-count') || '0') + 1;
+      localStorage.setItem('architek-pro-visit-count', visits);
+      sessionStorage.setItem('architek-pro-counted', '1');
+      if (countEl) countEl.textContent = visits.toLocaleString('fr-FR');
+    });
+}
+
 // ============ INIT ============
 function init() {
   initDarkMode();
@@ -2679,6 +2734,7 @@ function init() {
   initMobileMenu();
   initBackToTop();
   initCollapsibleSidebar();
+  initVisitorCounter();
   navigate('dashboard');
 }
 
