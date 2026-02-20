@@ -311,6 +311,117 @@ const APP_DATA = {
             'Créer un « mur galerie » avec des cadres de tailles et styles variés mais une palette cohérente'
           ],
           tags: ['couleur', 'motifs', 'éclectique', 'personnel', 'velours', 'audace']
+        },
+        {
+          id: 'retro-contemporain',
+          title: 'Rétro-Contemporain',
+          subtitle: 'La mémoire réinventée',
+          summary: 'Mêler le charme des éléments anciens (moulures, parquet, cheminées) à une écriture contemporaine épurée. Le style roi de la rénovation parisienne, omniprésent dans les reportages Sloft.',
+          sections: [
+            {
+              title: 'Principe fondamental',
+              content: 'Le rétro-contemporain ne restaure pas à l\'identique et ne fait pas table rase. Il crée un dialogue entre l\'existant patrimonial et des interventions résolument modernes. Le contraste est le moteur : moulures XVIIIe + béton ciré, parquet point de Hongrie + cuisine en Corian, cheminée en marbre + mobilier minimaliste.'
+            },
+            {
+              title: 'Les éléments patrimoniaux à conserver',
+              content: 'Moulures et corniches (même partielles). Parquet ancien (point de Hongrie, Versailles, bâton rompu). Cheminées en marbre ou pierre. Hauteur sous plafond généreuse. Portes à panneaux et poignées d\'époque. Ferronnerie de balcon. Tomettes anciennes. Poutres apparentes. La règle : tout ce qui a de la patine et du caractère mérite d\'être conservé et mis en valeur.'
+            },
+            {
+              title: 'Les interventions contemporaines',
+              content: 'Cuisine ouverte en îlot (plan de travail en pierre naturelle ou béton ciré). Verrière d\'atelier pour séparer sans cloisonner. Salle de bain en béton ciré ou tadelakt. Éclairage architectural (spots encastrés, rubans LED indirects dans les corniches). Mobilier design (pièces signées ou sur-mesure). Enduit à la chaux ou peinture mate profonde sur les murs. Le faux plafond déposé pour retrouver la hauteur d\'origine.'
+            },
+            {
+              title: 'L\'approche Sloft : le décryptage',
+              content: 'Ce qui distingue un bon projet rétro-contemporain : 1) La lumière est repensée (faux plafonds supprimés, verrières ajoutées, menuiseries alignées). 2) La circulation est fluidifiée (ouverture cuisine/salon, suppression des couloirs inutiles). 3) Les matériaux anciens et modernes se répondent (travertin au sol + cuisine laquée, moulures + béton ciré). 4) La palette est cohérente (blanc chaud dominant + bois + pierre + un accent).'
+            }
+          ],
+          keyPoints: [
+            'Contraste ancien/moderne = ADN du style',
+            'Toujours conserver les éléments patrimoniaux (moulures, parquet, cheminées)',
+            'La verrière est devenue un classique du genre',
+            'Le blanc chaud (Farrow & Ball Pointing, Joa\'s White) est la base chromatique parfaite',
+            'C\'est le style le plus demandé en rénovation dans les grandes villes françaises'
+          ],
+          tips: [
+            'Déposer le faux plafond en premier — retrouver 20-40 cm de hauteur transforme tout',
+            'Un parquet ancien poncé mais non vitrifié (huilé mat) garde sa patine et son âme',
+            'Les moulures peintes dans la même couleur que le mur (ton-sur-ton mat) = effet contemporain immédiat'
+          ],
+          tags: ['rénovation', 'patrimoine', 'moulures', 'verrière', 'parisien', 'contraste']
+        },
+        {
+          id: 'style-mediterraneen',
+          title: 'Style Méditerranéen',
+          subtitle: 'Lumière, pierre & chaux',
+          summary: 'L\'art de vivre du Sud : enduits à la chaux, pierre naturelle, voûtes, terre cuite et lumière écrasante. Un style authentique et intemporel qui séduit bien au-delà de la Méditerranée.',
+          sections: [
+            {
+              title: 'ADN du style',
+              content: 'Le Méditerranéen est né de la contrainte climatique : murs épais en pierre pour la fraîcheur, enduits à la chaux blanche pour réfléchir la chaleur, volets pour moduler la lumière, sols en terre cuite ou pierre pour l\'inertie thermique. Ce vocabulaire fonctionnel est devenu une esthétique universellement admirée.'
+            },
+            {
+              title: 'Matériaux signature',
+              content: 'Pierre calcaire (pour les murs, sols, plans de travail). Enduit à la chaux (badigeon, tadelakt, stuc). Terre cuite (tomettes hexagonales, carreaux rectangulaires, zellige). Bois brut (chêne, olivier, pin maritime). Fer forgé (rampes, luminaires). Béton ciré (interprétation contemporaine). Céramique émaillée (vasques, crédences). Palette : blanc, ocre, terre de Sienne, bleu outremer, vert olive.'
+            },
+            {
+              title: 'Déclinaisons régionales',
+              content: 'Provence : lavande, ocre, fer forgé, tomettes. Grèce : blanc pur, bleu intense, chaux, arches. Maroc : zellige, tadelakt, bois de cèdre, moucharabieh. Italie du Sud : travertin, majolique, voûtes en berceau, terrazzo. Espagne : carreaux de ciment, arches mauresques, patios. Chaque déclinaison a ses codes mais le vocabulaire de base est commun.'
+            },
+            {
+              title: 'Application en intérieur contemporain',
+              content: 'Ne pas faire du pastiche folklorique. Intégrer le vocabulaire méditerranéen dans une écriture épurée : un mur en enduit chaux texturé + sol en pierre + mobilier contemporain bas. Une salle de bain en tadelakt monochrome. Une cuisine avec crédence en zellige + plan de travail en pierre massive. Les arches reviennent en force comme élément architectural (passage entre pièces, niche murale).'
+            }
+          ],
+          keyPoints: [
+            'Le Méditerranéen est d\'abord fonctionnel avant d\'être esthétique',
+            'La chaux (badigeon, tadelakt) est le liant universel du style',
+            'Les arches et voûtes sont les éléments architecturaux signature',
+            'Palette terreuse + bleu ou vert en accent',
+            'Très tendance en 2025-2026, porté par le retour de la terre cuite et du zellige'
+          ],
+          tips: [
+            'Un mur en badigeon de chaux (20-30€/m² en DIY) transforme n\'importe quelle pièce',
+            'Les tomettes anciennes récupérées (Provence, Italie) ont une patine impossible à reproduire',
+            'L\'arche peut se créer en plâtre sur ossature métallique — pas besoin de taille de pierre'
+          ],
+          tags: ['méditerranéen', 'chaux', 'pierre', 'zellige', 'arche', 'terre cuite']
+        },
+        {
+          id: 'style-parisien',
+          title: 'Le Style Parisien',
+          subtitle: 'L\'appartement haussmannien réinventé',
+          summary: 'Le style parisien tel que documenté par Sloft : l\'art de sublimer l\'haussmannien avec des interventions contemporaines. Moulures + verrière + parquet + pièces de design = la formule magique.',
+          sections: [
+            {
+              title: 'L\'héritage haussmannien',
+              content: 'L\'immeuble haussmannien (1853-1870) offre un cadre exceptionnel : hauteur sous plafond 2,80-3,20 m, moulures, corniches, parquet en point de Hongrie ou bâton rompu, cheminées en marbre, grandes fenêtres, enfilade de pièces. C\'est la matière première du « style parisien » que le monde entier envie et que Sloft documente inlassablement.'
+            },
+            {
+              title: 'Les codes de la rénovation parisienne',
+              content: 'Décloisonner pour créer une grande pièce de vie ouverte (salon + cuisine + salle à manger). Installer une verrière d\'atelier (acier noir + verre) entre cuisine et salon ou chambre et salon. Conserver et restaurer les moulures et corniches. Poncer et huiler le parquet ancien. Créer un îlot central en cuisine. Repenser la salle de bain (béton ciré, zellige, robinetterie design). Peindre murs ET moulures dans la même teinte (blanc chaud ou couleur sourde).'
+            },
+            {
+              title: 'Les clés de la lumière',
+              content: 'L\'enjeu n°1 dans un appartement parisien est la lumière. Les pièces en enfilade créent des espaces en « second jour » (sans fenêtre directe). Solutions Sloft : la verrière apporte la lumière au cœur du plan. Le faux plafond déposé libère de la hauteur et de la luminosité. Les menuiseries alignées (cuisine ouverte) permettent à la lumière de traverser. Le choix d\'un blanc chaud réfléchit sans éblouir.'
+            },
+            {
+              title: 'Le mobilier : le mix parfait',
+              content: 'Pièce iconique du design (Lounge Chair Eames, chaise Tulip Saarinen, canapé Togo). Luminaires design (Serge Mouille, Flos, DCW). Pièces vintage chinées (fauteuil années 50, console Art Déco). Mobilier sur-mesure en bois et métal (bibliothèque, meuble TV). Tapis berbère ou kilim. Art contemporain aux murs. La clé : le MIX des époques — jamais un intérieur « tout neuf » ou « tout ancien ».'
+            }
+          ],
+          keyPoints: [
+            'L\'haussmannien est un cadre — les interventions contemporaines le subliment',
+            'Verrière + îlot + parquet ancien = triptyque parisien par excellence',
+            'La lumière est l\'enjeu n°1 — chaque décision doit la servir',
+            'Le mix des époques (design + vintage + sur-mesure) crée l\'authenticité',
+            'Le blanc chaud (Pointing, String, Skimming Stone) est la base universelle'
+          ],
+          tips: [
+            'Photographier l\'appartement vide avant travaux — la lumière naturelle à différentes heures guide tout le projet',
+            'Un parquet point de Hongrie restauré vaut plus que n\'importe quel revêtement neuf',
+            'La verrière type « atelier » : profil acier 25-30mm, verre feuilleté, traverses horizontales — vérifier la portée avec un BET'
+          ],
+          tags: ['parisien', 'haussmannien', 'moulures', 'verrière', 'parquet', 'rénovation']
         }
       ]
     },
@@ -1092,6 +1203,154 @@ const APP_DATA = {
             'Créer un nuancier physique avec des échantillons de matériaux + peinture pour chaque projet'
           ],
           tags: ['palette', 'tendance', '2025', 'couleur', 'neutre', 'vert', 'audace']
+        },
+        {
+          id: 'lumiere-naturelle-second-jour',
+          title: 'Lumière Naturelle & Second Jour',
+          subtitle: 'L\'or de l\'architecte d\'intérieur',
+          summary: 'La lumière naturelle est le matériau le plus précieux d\'un projet. Savoir l\'analyser, la capter et la redistribuer dans les pièces aveugles est une compétence clé — c\'est le cœur de chaque reportage Sloft.',
+          sections: [
+            {
+              title: 'Analyser la lumière existante',
+              content: 'Avant tout dessin, passer du temps dans l\'espace à différentes heures. Noter : l\'orientation (nord = lumière froide constante, sud = lumière chaude directe, est = matin, ouest = soir). La course du soleil à travers les fenêtres. Les zones d\'ombre permanentes. La présence de vis-à-vis. La qualité du vitrage existant. Prendre des photos à 9h, 12h, 15h et 18h — c\'est un outil de projet.'
+            },
+            {
+              title: 'Le second jour : apporter la lumière où elle n\'est pas',
+              content: 'Le « second jour » désigne un espace éclairé indirectement par la lumière d\'une pièce voisine. Solutions : la verrière d\'atelier (la plus courante — acier ou aluminium + verre clair ou sablé). L\'imposte vitrée au-dessus d\'une porte. La cloison à mi-hauteur. La claustra (bois ou métal) qui laisse filtrer la lumière. La porte vitrée pleine hauteur. Le puits de lumière (conduit solaire tubulaire — Velux Sun Tunnel).'
+            },
+            {
+              title: 'Stratégies pour maximiser la lumière',
+              content: 'Déposer les faux plafonds (gain de hauteur = plus de surface vitrée exploitable). Aligner les ouvertures (porte + verrière + fenêtre = perspective traversante). Supprimer les couloirs sombres inutiles. Utiliser des matériaux réfléchissants : miroirs stratégiques, laque claire, sol clair (pierre, béton ciré blanc). Peindre plafond et murs dans la même teinte claire. Les menuiseries fines (aluminium) maximisent la surface vitrée.'
+            },
+            {
+              title: 'La lumière comme outil de composition',
+              content: 'La lumière naturelle crée des « événements » dans l\'espace : un rayon de soleil sur un mur texturé (enduit, pierre), une ombre portée par une claustra, un reflet sur un sol poli. Les grands architectes (Tadao Ando, Peter Zumthor, John Pawson) composent avec la lumière comme un peintre. Dans un projet Sloft, la lumière est toujours mentionnée en premier — c\'est elle qui structure le plan.'
+            }
+          ],
+          keyPoints: [
+            'La lumière naturelle est le premier matériau d\'un projet — avant tout le reste',
+            'Le second jour (verrière, imposte, cloison vitrée) est la solution n°1 en rénovation',
+            'Analyser la lumière existante AVANT de dessiner — passer du temps sur place',
+            'Aligner les ouvertures = perspective traversante = appartement qui respire',
+            'Un espace en second jour bien traité peut être aussi lumineux qu\'une pièce avec fenêtre'
+          ],
+          tips: [
+            'Proposer systématiquement une verrière quand une pièce est aveugle — le client dit oui dans 90% des cas',
+            'Le Velux Sun Tunnel (conduit solaire tubulaire) apporte de la lumière naturelle jusqu\'à 6m de la toiture — solution méconnue',
+            'Un miroir face à une fenêtre double visuellement la source de lumière'
+          ],
+          tags: ['lumière', 'verrière', 'second jour', 'orientation', 'naturelle', 'fenêtre']
+        },
+        {
+          id: 'role-du-blanc',
+          title: 'Le Blanc comme Matériau',
+          subtitle: 'Pas un seul blanc — des centaines',
+          summary: 'Le blanc est le fond de scène de 80% des projets d\'intérieur. Mais il n\'existe pas UN blanc — il en existe des centaines, et choisir le bon change tout.',
+          sections: [
+            {
+              title: 'Pourquoi le blanc domine',
+              content: 'Le blanc maximise la lumière naturelle (il réfléchit 80% de la lumière reçue). Il unifie les surfaces (murs, plafonds, moulures) pour un rendu architectural épuré. Il met en valeur les matériaux (un parquet ancien, une pierre naturelle, un meuble design ressortent sur fond blanc). Il agrandit visuellement l\'espace. Et il est intemporel — jamais « daté ». Dans les reportages Sloft, 8 projets sur 10 ont une base blanche.'
+            },
+            {
+              title: 'Choisir le bon blanc',
+              content: 'Blanc froid (bleuté) : Strong White (F&B), Blanc de Meudon. Convient aux orientations sud et ouest. Blanc chaud (jaunâtre) : Pointing (F&B), Blanc Cassé (Ressource). Convient aux orientations nord et est. Blanc grisé : Skimming Stone (F&B), Dimpse. Sophistiqué, moins clinique. Blanc rosé : Pink Ground (F&B). Doux, flattering pour la peau — parfait en chambre. Blanc verdâtre : Vert de Terre (F&B). Presque imperceptible mais très vivant.'
+            },
+            {
+              title: 'Techniques de mise en œuvre',
+              content: 'Murs + plafond + moulures dans le même blanc = enveloppement total, volume mis en avant. Murs en blanc + plafond en couleur = effet cocon (tendance forte). Blanc mat (velours) sur les murs, blanc satiné sur les boiseries — jeu de finitions subtil. Badigeon de chaux blanche = texture vivante, irrégulière, qui accroche la lumière. Le blanc à la chaux vs le blanc acrylique : deux rendus radicalement différents.'
+            },
+            {
+              title: 'Les erreurs à éviter',
+              content: 'Ne JAMAIS utiliser un blanc de grande surface (Blanc de Blanc Dulux, etc.) dans un projet pro — c\'est un blanc optique pur, froid et agressif. Toujours tester les blancs avec un échantillon A4 sur le mur, à la lumière naturelle, à différentes heures. Attention au métamérisme : un blanc peut paraître rose le matin et jaune le soir. En cas de doute : Pointing de Farrow & Ball — c\'est le blanc le plus universellement beau.'
+            }
+          ],
+          keyPoints: [
+            'Il n\'existe pas de « blanc par défaut » — chaque blanc a une personnalité',
+            'Pointing (F&B) = le blanc passe-partout le plus sûr',
+            'Orientation nord = blanc chaud, orientation sud = blanc froid',
+            'Murs + moulures + plafond même blanc = enveloppement architectural',
+            'Toujours tester sur place, jamais choisir sur nuancier papier'
+          ],
+          tips: [
+            'Commander 3-4 échantillons pots de blanc (F&B, Ressource) et les tester sur 50x50 cm sur le mur réel',
+            'Le badigeon de chaux blanche est 10x plus beau qu\'une peinture acrylique blanche — texture vivante',
+            'Pour un rendu « galerie d\'art » : blanc mat absolu (Dead Flat F&B) sur tous les murs'
+          ],
+          tags: ['blanc', 'peinture', 'lumière', 'Farrow & Ball', 'Ressource', 'technique']
+        },
+        {
+          id: 'monochrome-matiere',
+          title: 'Le Monochrome Matière',
+          subtitle: 'Quand la couleur vient du matériau',
+          summary: 'La tendance forte de 2025-2026 : la couleur n\'est plus appliquée (peinture) mais incarnée dans la matière même (pierre verte, bois teinté, béton pigmenté, zellige coloré). Un espace monochrome entièrement en pierre ou en terre — signature des projets les plus publiés.',
+          sections: [
+            {
+              title: 'Le principe',
+              content: 'Au lieu de peindre un mur en vert, on utilise une pierre naturellement verte (Verde Guatemala, Vert d\'Estours). Au lieu d\'une peinture beige, on enduit en tadelakt naturel. La couleur EST le matériau. Le résultat : une profondeur, une texture et une vibration qu\'aucune peinture ne peut reproduire. C\'est le passage du 2D (couleur plate) au 3D (couleur-matière).'
+            },
+            {
+              title: 'Les matériaux-couleurs stars',
+              content: 'Pierre verte : Verde Guatemala, Vert d\'Estours, Green Onyx — salle de bain ou crédence. Travertin (beige-miel) : sol, mur, plan de vasque — le matériau-couleur le plus populaire du moment. Zellige terracotta : crédence, douche, mur d\'accent — vibration artisanale. Béton ciré teinté : sol-mur-plafond dans la même teinte — immersion totale. Marbre rose (Rosa Portogallo, Norrvange) : salle de bain de luxe. Bois fumé (chêne fumé) : tons bruns profonds sans teinture chimique.'
+            },
+            {
+              title: 'La méthode monochrome total',
+              content: 'Un espace entièrement en un seul matériau : salle de bain tout en travertin (sol + mur + vasque + tablier de baignoire). Cuisine entièrement en marbre (plan de travail + crédence + étagères murales). Chambre tout en bois (sol + tête de lit + mur d\'accent). C\'est spectaculaire et photographique — la signature des projets les plus publiés en 2025-2026.'
+            },
+            {
+              title: 'Mise en œuvre & coûts',
+              content: 'Le monochrome matière est plus coûteux qu\'une peinture mais l\'impact est incomparable. Travertin sol+mur : 120-250€/m² posé. Zellige : 80-150€/m² posé. Pierre naturelle type Verde Guatemala : 200-500€/m². Béton ciré teinté sol+mur : 100-200€/m². L\'investissement est dans la main d\'œuvre qualifiée — un bon carreleur ou un applicateur béton ciré formé fait toute la différence.'
+            }
+          ],
+          keyPoints: [
+            'Couleur-matière > couleur-peinture — profondeur et texture incomparables',
+            'Le travertin est le matériau-couleur roi de 2025-2026',
+            'Le monochrome total (une pièce, un seul matériau) est ultra-photographique',
+            'Le coût est plus élevé mais l\'impact et la durabilité aussi',
+            'Tendance portée par Instagram et les magazines d\'architecture (Sloft, AD, Dezeen)'
+          ],
+          tips: [
+            'Pour une salle de bain monochrome travertin : reboucher les trous (aspect lisse) OU laisser les trous ouverts (aspect brut) — deux esthétiques radicalement différentes',
+            'Le zellige terracotta 10x10 posé en quinconce dans une douche = effet spectaculaire pour un budget maîtrisé',
+            'Proposer au moins UNE pièce en monochrome matière dans chaque projet — c\'est là que le client dit « wow »'
+          ],
+          tags: ['monochrome', 'matière', 'pierre', 'travertin', 'zellige', 'tendance']
+        },
+        {
+          id: 'eclairage-ambiance',
+          title: 'Éclairage en Couches',
+          subtitle: 'L\'art des 3 strates lumineuses',
+          summary: 'Un éclairage réussi se compose en couches : ambiance, fonctionnel, décoratif. Comprendre cette méthode transforme n\'importe quel espace et fait la différence entre un intérieur « éclairé » et un intérieur « mis en lumière ».',
+          sections: [
+            {
+              title: 'Les 3 couches d\'éclairage',
+              content: 'Couche 1 — Ambiance/général : lumière indirecte douce qui remplit l\'espace (rubans LED dans gorge lumineuse, spots encastrés orientables). Couche 2 — Fonctionnel : lumière ciblée pour les activités (liseuse en chambre, éclairage plan de travail en cuisine, spot orientable sur bureau). Couche 3 — Décoratif/accent : lumière qui crée l\'atmosphère et met en valeur (suspension design, lampe à poser, applique murale, bougie). Un espace bien éclairé mixe les 3.'
+            },
+            {
+              title: 'La gorge lumineuse : technique star',
+              content: 'La gorge lumineuse est un bandeau de LED dissimulé dans une retombée de plafond, un coffrage ou une corniche. La lumière rebondit sur le plafond ou le mur — jamais de source visible. Résultat : une lumière douce, enveloppante, sans ombre dure. Température recommandée : 2700K (blanc chaud) à 3000K. Intensité réglable via variateur. C\'est devenu un standard dans tout projet haut de gamme.'
+            },
+            {
+              title: 'La température de couleur',
+              content: '2200K : lumière bougie, ultra-chaud (bar, chambre). 2700K : blanc chaud, le standard résidentiel. 3000K : blanc chaud légèrement plus vif (cuisine, salle de bain). 4000K : blanc neutre (bureau, commerce). 5000-6500K : lumière du jour (atelier d\'artiste, dressing). RÈGLE : ne JAMAIS mélanger des températures différentes dans une même pièce. Prévoir un variateur (dimmer) dans chaque pièce.'
+            },
+            {
+              title: 'Plan d\'éclairage par pièce',
+              content: 'Salon : gorge lumineuse (ambiance) + lampes à poser (accent) + liseuse (fonctionnel). Cuisine : spots encastrés orientables (général) + LED sous meuble haut (fonctionnel) + suspension au-dessus de l\'îlot (décoratif). Chambre : gorge lumineuse ou appliques indirectes (ambiance) + liseuses (fonctionnel) + lampe de chevet (accent). Salle de bain : spots encastrés IP44 (général) + LED miroir (fonctionnel) + bougie (ambiance). Entrée : applique murale ou spot d\'accent + LED intégrée au meuble.'
+            }
+          ],
+          keyPoints: [
+            '3 couches minimum par pièce : ambiance + fonctionnel + décoratif',
+            '2700K = la température de référence en résidentiel',
+            'La gorge lumineuse = technique star du projet haut de gamme',
+            'JAMAIS de plafonnier central seul — c\'est l\'erreur la plus commune',
+            'Variateur dans chaque pièce = passage du jour au soir en douceur'
+          ],
+          tips: [
+            'Prévoir les encastrements et passages de câbles AVANT le plâtre — l\'éclairage se pense en phase conception',
+            'Un variateur coûte 30-50€ et transforme une pièce — le meilleur rapport investissement/impact',
+            'Les appliques Serge Mouille ou DCW sont les luminaires les plus photographiés en archi d\'intérieur'
+          ],
+          tags: ['éclairage', 'LED', 'ambiance', 'gorge lumineuse', 'variateur', 'température']
         }
       ]
     },
@@ -1216,6 +1475,228 @@ const APP_DATA = {
             'En rénovation, le premier réflexe : identifier les « murs morts » transformables en rangement'
           ],
           tags: ['rangement', 'placard', 'dressing', 'optimisation', 'petit espace', 'organisation']
+        },
+        {
+          id: 'optimiser-petit-espace',
+          title: 'Optimiser un Espace < 50 m²',
+          subtitle: 'L\'art de vivre grand dans petit',
+          summary: 'Les petites surfaces sont le cœur de métier de l\'architecte d\'intérieur en milieu urbain. Chaque mètre carré compte, chaque centimètre se négocie. C\'est dans la contrainte que naissent les projets les plus ingénieux.',
+          sections: [
+            {
+              title: 'Les principes fondamentaux',
+              content: 'Décloisonner : supprimer les murs non porteurs pour créer un espace fluide (cuisine/séjour/entrée en un seul volume). Unifier le sol : un même revêtement d\'un bout à l\'autre de l\'appartement agrandit visuellement. Maximiser la lumière : verrière, imposte, cloisons vitrées, miroirs stratégiques. Exploiter la hauteur : mezzanine de couchage (si HsP > 3,40 m), rangements en partie haute, bibliothèques pleine hauteur. Minimiser la circulation : supprimer les couloirs, regrouper les pièces d\'eau.'
+            },
+            {
+              title: 'Le plan : 3 typologies qui marchent',
+              content: 'Le studio-loft : tout est ouvert, le lit est intégré (escamotable, mezzanine ou alcôve). La fonctionnalité est dans le mobilier, pas dans les murs. Le T2 optimisé : séjour-cuisine ouvert + chambre fermée (mais avec verrière pour la lumière). La division en zones : utiliser le mobilier (bibliothèque, meuble bas, banquette) comme séparateur visuel sans cloisonner. Astuce : placer le coin nuit côté rue (on y passe moins de temps) et le séjour côté cour.'
+            },
+            {
+              title: 'Mobilier malin',
+              content: 'Le lit escamotable (Espace Loggia, Griffon) : libère 4-6 m² en journée. La table extensible (console → table 6 personnes). Le plan de travail prolongé en table à manger. La banquette dînatoire (gain de 40 cm vs chaises). Le meuble sur mesure multifonction (entrée + rangement + assise). Les portes coulissantes (gain de 1 m² par porte vs porte battante). Le dressing dans l\'entrée (souvent 2-3 m² inexploités).'
+            },
+            {
+              title: 'Les erreurs à ne pas commettre',
+              content: 'Trop de petites pièces fermées : mieux vaut 1 grand espace que 3 placards. Du mobilier trop gros : le canapé d\'angle XXL dans 35 m² → c\'est non. Négliger l\'entrée : c\'est la première impression + souvent 2-3 m² de rangement potentiel. Oublier les rangements : dans un petit espace, il faut PLUS de rangement qu\'ailleurs (minimum 10% de la surface). Multiplier les matériaux et couleurs : en petit espace, la sobriété agrandit.'
+            }
+          ],
+          keyPoints: [
+            'Décloisonner + unifier le sol + maximiser la lumière = le triptyque de base',
+            'Minimum 10% de la surface en rangement, même dans un petit espace',
+            'Le lit escamotable libère 4-6 m² en journée — game changer en studio',
+            'Portes coulissantes = gain immédiat de 1 m² par porte',
+            'Un seul sol d\'un bout à l\'autre de l\'appartement = agrandissement visuel garanti'
+          ],
+          tips: [
+            'Projets référence Sloft : 23 m² à Montreuil (cocon minimaliste), 36 m² garage métamorphosé (Paris), 48 m² restructuré par la lumière (Sacha Ekert)',
+            'Toujours démarrer par un plan coté au 1/50 avec le mobilier dessiné à l\'échelle — on voit immédiatement ce qui rentre ou pas',
+            'Le miroir pleine hauteur en bout de couloir crée un effet de profondeur spectaculaire'
+          ],
+          tags: ['petit espace', 'studio', 'optimisation', 'plan', 'décloisonnement', 'studio']
+        },
+        {
+          id: 'cuisine-ouverte-ilot',
+          title: 'La Cuisine Ouverte & l\'Îlot Central',
+          subtitle: 'Le cœur battant de l\'appartement',
+          summary: 'La cuisine ouverte avec îlot est devenue la pièce maîtresse de l\'habitat contemporain. C\'est le lieu de vie, de convivialité et de représentation. Bien la concevoir demande rigueur et méthode.',
+          sections: [
+            {
+              title: 'Le triangle d\'activité',
+              content: 'Le plan d\'une cuisine s\'organise autour du triangle d\'activité : froid (réfrigérateur) — lavage (évier) — cuisson (plaques/four). La somme des 3 côtés du triangle doit être comprise entre 3,60 m et 6,60 m. Au-delà : trop de pas. En deçà : trop serré. L\'évier est idéalement face à la lumière naturelle. Les plaques sont proches du plan de travail (préparation → cuisson). Le réfrigérateur est accessible sans traverser la zone de travail.'
+            },
+            {
+              title: 'L\'îlot central : fonctions et dimensions',
+              content: 'Fonction repas : hauteur 75 cm (table) ou 90 cm (bar) ou 110 cm (mange-debout). Prévoir 60 cm de largeur par convive. Fonction cuisson : hotte intégrée dans le plan (type Bora, Novy, Elica) ou hotte suspendue. Prévoir une amenée de gaz et/ou électricité dans le sol. Fonction rangement : tiroirs côté cuisine + façade lisse côté salon. Dimensions minimales : largeur 90 cm pour un îlot avec rangement seul, 120 cm avec cuisson, 150 cm avec cuisson + coin repas. Passage autour : minimum 90 cm (120 cm idéal).'
+            },
+            {
+              title: 'Matériaux de plan de travail',
+              content: 'Pierre naturelle (granit, marbre, quartzite) : noble, résistant (granit), sensible aux acides (marbre). Quartz reconstitué (Silestone, Caesarstone) : très résistant, large choix de couleurs. Céramique grand format (Sapienstone, Dekton) : ultra-résistant, imite tous les matériaux. Bois massif (hêtre, chêne) : chaleureux, s\'entretient (huile). Inox : professionnel, inrayable. Béton ciré : tendance mais sensible. Terrazzo : retour en force. Le Corian (résine) : réparable, thermoformable, sans joint.'
+            },
+            {
+              title: 'L\'intégration séjour-cuisine',
+              content: 'L\'îlot fait la transition : côté cuisine = fonctionnel (tiroirs, prises, évier). Côté séjour = esthétique (façade lisse, matériau noble, espace repas). Alignement des finitions : la cuisine doit « disparaître » quand on regarde depuis le canapé. Façades lisses, poignées intégrées (gorge ou push-to-open), électroménager intégré. L\'éclairage de l\'îlot (3 suspensions alignées ou rampe LED) crée un point focal.'
+            }
+          ],
+          keyPoints: [
+            'Triangle d\'activité : périmètre entre 3,60 m et 6,60 m',
+            'Passage minimum 90 cm autour de l\'îlot (120 cm idéal)',
+            'L\'îlot central = la pièce architecturale de l\'appartement moderne',
+            'Côté cuisine fonctionnel, côté salon esthétique — toujours',
+            '3 suspensions au-dessus de l\'îlot = le geste déco le plus efficace en cuisine'
+          ],
+          tips: [
+            'Toujours vérifier que l\'évacuation des eaux usées est possible dans l\'îlot AVANT de dessiner — c\'est la contrainte n°1',
+            'La hotte aspirante intégrée au plan (Bora, Novy) libère visuellement l\'espace — investissement mais résultat spectaculaire',
+            'Prévoir des prises intégrées dans l\'îlot (type prises escamotables) — on n\'en met jamais assez'
+          ],
+          tags: ['cuisine', 'îlot', 'plan de travail', 'ergonomie', 'triangle activité', 'ouvert']
+        },
+        {
+          id: 'salle-de-bain-compacte',
+          title: 'La Salle de Bain Compacte',
+          subtitle: 'Luxe et fonctionnalité en 3-6 m²',
+          summary: 'La salle de bain est la pièce la plus technique d\'un projet. En petit espace, chaque centimètre est stratégique. C\'est aussi là que le client attend le plus de « wow effect » — un projet réussi commence souvent ici.',
+          sections: [
+            {
+              title: 'Les dimensions incompressibles',
+              content: 'Douche à l\'italienne : minimum 80x80 cm (confort : 90x120 cm ou 90x140 cm). WC : emprise 60x40 cm + dégagement 60 cm devant. Lavabo : vasque posée (Ø 40-45 cm) ou meuble vasque (60-120 cm de large) + 60 cm de dégagement devant. Passage : 60 cm minimum entre deux éléments. Baignoire : si possible, 170x70 cm minimum. Attention : les portes battantes mangent de l\'espace — préférer porte coulissante ou battante inversée.'
+            },
+            {
+              title: 'Optimisations en petit espace',
+              content: 'La douche à l\'italienne (sans receveur) unifie le sol et agrandit visuellement. Les WC suspendus libèrent le sol (nettoyage + perception d\'espace). Le meuble vasque suspendu idem. La niche encastrée dans le mur (étagère dans la douche, niche à cosmétiques) = rangement qui ne prend pas de place. Le grand miroir (pleine largeur au-dessus du meuble vasque) double visuellement la pièce. Le carrelage grand format (60x60 ou 60x120) réduit les joints = plus de sérénité visuelle.'
+            },
+            {
+              title: 'Le carrelage : choix stratégique',
+              content: 'Sol : grès cérame antidérapant (R10 ou R11), grand format. Murs : tout carrelé (sol au plafond) = effet « bain turc » luxueux. Matériaux stars : zellige (artisanal, lumineux), travertin (warm luxe), terrazzo (graphique), marbre (classique luxe). Format : le grand format (30x60 minimum) agrandit l\'espace. Le zellige 10x10 en quinconce donne du caractère à une douche. Calepinage : poser les carreaux à joint continu mur-sol = impression de continuité.'
+            },
+            {
+              title: 'La robinetterie encastrée',
+              content: 'La robinetterie encastrée (mitigeur + douchette intégrés au mur) libère 15-20 cm de profondeur dans la douche. Elle donne un rendu épuré et haut de gamme. Marques de référence : Fantini, Cea Design, Axor (Hansgrohe), Dornbracht, RVB (français). Prévoir l\'encastrement AVANT le plâtre — un boîtier d\'encastrement est nécessaire. La pomme de tête encastrée au plafond = le luxe ultime de la douche.'
+            }
+          ],
+          keyPoints: [
+            'Douche à l\'italienne = standard absolu du projet contemporain',
+            'WC + meuble vasque suspendus = espace visuel et propreté',
+            'Grand format de carrelage = moins de joints = plus grand visuellement',
+            'La robinetterie encastrée libère 15-20 cm — indispensable en petit espace',
+            'Sol au plafond en carrelage = salle de bain de magazine'
+          ],
+          tips: [
+            'Vérifier l\'épaisseur de la chape et la faisabilité de la pente pour la douche italienne AVANT de promettre au client',
+            'La niche encastrée dans la douche se fait en même temps que le carrelage — la penser dès le plan',
+            'Zellige 10x10 vert d\'eau dans la douche + robinetterie laiton = combinaison la plus photographiée sur Instagram'
+          ],
+          tags: ['salle de bain', 'douche', 'carrelage', 'compact', 'robinetterie', 'zellige']
+        },
+        {
+          id: 'verriere-cloison-vitree',
+          title: 'Verrière & Cloison Vitrée',
+          subtitle: 'Séparer sans cloisonner',
+          summary: 'La verrière est devenue l\'élément signature de la rénovation contemporaine. Elle sépare les espaces tout en laissant passer la lumière et les regards — c\'est le compromis parfait entre ouverture et intimité.',
+          sections: [
+            {
+              title: 'Les typologies de verrière',
+              content: 'Verrière d\'atelier (la classique) : structure acier noir + verre clair, style industriel. La plus demandée. Verrière en aluminium : plus fine, plus contemporaine, teinte au choix (noir, blanc, laiton). Verrière bois : plus chaleureuse, esprit scandinave ou japonais (shoji). Verrière avec porte intégrée (coulissante ou battante). Verrière imposte : juste un bandeau vitré au-dessus d\'une porte ou d\'un mur bas — discret mais efficace. Verrière toiture : pour les combles et rez-de-jardin.'
+            },
+            {
+              title: 'Dimensionnement et pose',
+              content: 'Largeur des montants : 25-40 mm (acier) à 20-30 mm (aluminium). Verre : clair (4-6 mm), feuilleté (sécurité obligatoire si grande surface), sablé ou flûté (intimité partielle). Hauteur standard : du sol au plafond OU sur allège (muret de 90-110 cm + verrière au-dessus). Fixation : sur rail haut et bas, ou scellée dans le mur. Épaisseur totale : 4-6 cm. Poids : 15-25 kg/m² — vérifier que le support peut recevoir la charge. Attention acoustique : le verre simple isole peu — le feuilleté acoustique (type 33.1) améliore de 3-5 dB.'
+            },
+            {
+              title: 'Applications les plus courantes',
+              content: 'Séparation cuisine / salon : la plus classique, permet de fermer la cuisine (fumées, bruit) tout en gardant la lumière. Séparation chambre / séjour : dans un studio ou T2, avec verre sablé pour l\'intimité. Séparation entrée / pièce de vie : crée un sas d\'entrée lumineux. Douche / salle de bain : verrière ou paroi vitrée de type industriel comme paroi de douche. Bureau dans le séjour : créer un espace de travail fermé visuellement mais ouvert lumineusement.'
+            },
+            {
+              title: 'Fabricants et budget',
+              content: 'Sur mesure artisan métallier : 800-1 500 €/m² (le plus beau, délai 4-8 semaines). Industriel haut de gamme : GoodHome (Castorama), Lapeyre, Leroy Merlin — 300-600 €/m² (standard, pose rapide). Fabricants pros : Atelier du Métal, Art Métal Concept, Turpin-Longueville. Budget : verrière 2x2,5 m (cuisine/salon) = 2 000-5 000 € selon la solution. La pose représente 30-50% du budget total.'
+            }
+          ],
+          keyPoints: [
+            'La verrière = la solution n°1 pour apporter de la lumière en second jour',
+            'Acier = industriel, alu = contemporain, bois = chaleureux',
+            'Verre feuilleté obligatoire en grande surface (sécurité)',
+            'Verrière sur allège (muret) = séparation visuelle tout en laissant passer la lumière en haut',
+            'Budget : 300 €/m² (GSB) à 1 500 €/m² (sur mesure artisan)'
+          ],
+          tips: [
+            'L\'ajout d\'un verre flûté (cannelé) dans certains panneaux apporte du caractère tout en préservant l\'intimité',
+            'Toujours prévoir un joint silicone souple entre la verrière et le mur — les bâtiments anciens bougent',
+            'La verrière acier se patine naturellement — appliquer une cire pour conserver le noir profond ou laisser vieillir'
+          ],
+          tags: ['verrière', 'cloison', 'vitré', 'lumière', 'séparation', 'acier']
+        },
+        {
+          id: 'banquette-integree',
+          title: 'La Banquette Intégrée',
+          subtitle: 'Assise + rangement + signature',
+          summary: 'La banquette intégrée est la solution la plus élégante pour gagner de la place dans un coin repas, une entrée ou un salon. C\'est aussi un geste architectural fort — un élément construit qui donne du caractère à un espace.',
+          sections: [
+            {
+              title: 'Pourquoi la banquette',
+              content: 'Gain de place : une banquette contre un mur prend 40-50 cm de profondeur (vs 60-80 cm pour des chaises). Rangement caché : assise relevable ou tiroirs sous l\'assise. Confort : avec de bons coussins, c\'est plus confortable et convivial qu\'une chaise. Esthétique : un élément construit « intégré » qui donne un effet sur-mesure et architecturé. Multifonction : coin repas le jour, espace lecture le soir, lit d\'appoint avec coussins.'
+            },
+            {
+              title: 'Dimensions',
+              content: 'Profondeur d\'assise : 40-50 cm (sans dossier contre le mur) ou 55-65 cm (avec coussins de dossier). Hauteur d\'assise : 43-47 cm (standard table 75 cm). Pour un coin repas en hauteur bar : 60-65 cm (table 90 cm). Espace sous l\'assise pour le rangement : 25-35 cm de hauteur utile. Le dossier : soit le mur directement (avec coussins rapportés), soit un dossier construit à 15-20° d\'inclinaison.'
+            },
+            {
+              title: 'Types de construction',
+              content: 'Maçonnée : en béton ou brique, recouverte d\'un habillage (bois, tissu). Solide, définitive. En bois (menuiserie) : la plus courante. Contreplaqué de bouleau ou MDF, avec assise relevable sur vérin. Sur mesure intégrée : la banquette fait partie du mobilier de cuisine ou d\'un meuble bas qui court le long du mur. En L ou en U : autour d\'une table dans un angle — optimise les coins souvent perdus.'
+            },
+            {
+              title: 'Les finitions',
+              content: 'Bois apparent (chêne, bouleau, noyer) : esprit scandinave ou japonais. Tissu tendu (bouclette, velours, lin) : confort et chaleur. Cuir ou simili : entretien facile, esprit bistrot. Coussins rapportés : le plus simple et le plus modulable. Wabi-sabi : banquette en béton brut ou tadelakt + coussins en lin — signature contemporaine. Associer la banquette au même bois que le sol ou la cuisine = continuité matière.'
+            }
+          ],
+          keyPoints: [
+            '40 cm de profondeur suffisent pour une banquette (vs 80 cm chaises + recul)',
+            'Assise relevable = coffre de rangement dissimulé',
+            'La banquette dînatoire autour d\'une table = gain de 40 cm de circulation',
+            'Élément construit = signature architecturale qui valorise l\'espace',
+            'Budget : 500-2000 € sur mesure selon les finitions'
+          ],
+          tips: [
+            'Prévoir un tissu déhoussable et lavable pour l\'assise — surtout en coin repas avec enfants',
+            'La mousse HR35 (haute résilience, densité 35 kg/m³) est le minimum pour un confort durable',
+            'La banquette en L dans un angle crée un « nid » — c\'est souvent l\'endroit préféré du client'
+          ],
+          tags: ['banquette', 'assise', 'rangement', 'sur mesure', 'coin repas', 'intégré']
+        },
+        {
+          id: 'mezzanine-hauteur',
+          title: 'Mezzanine & Exploitation de la Hauteur',
+          subtitle: 'Quand le m² se gagne en altitude',
+          summary: 'Dans les petits espaces avec belle hauteur sous plafond, la mezzanine transforme un studio en duplex. C\'est l\'intervention la plus spectaculaire en rénovation — un gain de surface net de 30 à 50%.',
+          sections: [
+            {
+              title: 'Faisabilité : la hauteur minimale',
+              content: 'Hauteur sous plafond minimale : 3,60 m pour une mezzanine de couchage confortable (1,40 m en dessous + 1,80 m au-dessus + épaisseur plancher 20-30 cm). Si HsP < 3,60 m : mezzanine de couchage en « cocon » (on n\'est pas debout — c\'est un lit surélevé). Si HsP > 4 m : mezzanine à vivre (bureau, bibliothèque, salon). Si HsP > 5 m : vrai demi-étage avec circulation debout dessus et dessous. Réglementation : en dessous de 1,80 m de hauteur, la surface ne compte pas en surface habitable (mais reste utilisable).'
+            },
+            {
+              title: 'Structure : les solutions techniques',
+              content: 'Acier (IPN/IPE) : le plus courant en rénovation. Poutre acier scellée dans les murs porteurs + plancher bois ou métal dessus. Bois (solives apparentes) : plus chaleureux, esprit loft scandinave. En portée, compter des solives de 200-300 mm. Mixte acier-bois : poutre acier pour la portée + plancher bois pour la chaleur. Verre (plancher en verre feuilleté trempé) : spectaculaire, laisse passer la lumière. Portée maximum sans poteau intermédiaire : 3-4 m en bois, 5-6 m en acier (au-delà, prévoir un poteau).'
+            },
+            {
+              title: 'L\'accès : escalier ou échelle',
+              content: 'Escalier droit : emprise au sol 2-3 m², le plus confortable mais le plus gourmand en place. Escalier à pas japonais (ou pas alternés) : emprise 1-1,5 m², compact et design. Escalier hélicoïdal (colimaçon) : emprise Ø 130-160 cm, élégant mais moins pratique au quotidien. Échelle de meunier : emprise < 1 m², la plus compacte. Échelle coulissante ou rabattable : emprise 0, fixée au mur ou au plancher. Escalier-rangement : chaque marche est un tiroir — double fonction.'
+            },
+            {
+              title: 'Aménagement de la mezzanine',
+              content: 'Couchage : le plus courant. Matelas posé sur le plancher, éclairage indirect (ruban LED), prises tête de lit. Rangement intégré en périphérie (tiroirs sous pente si comble). Bureau / espace de travail : calme, en retrait, vue plongeante sur le séjour. Bibliothèque / lecture : mezzanine-nid avec coussins et étagères. Dressing : exploiter la hauteur réduite pour penderies et étagères. Garde-corps : câbles inox (discret), verre (lumineux), barreaux métal (industriel) ou mur bas (intimité). Hauteur minimale : 1 m (1,10 m si escalier donne directement dessus).'
+            }
+          ],
+          keyPoints: [
+            'HsP minimale 3,60 m pour une mezzanine de couchage confortable',
+            'Gain de surface net : 30 à 50% — l\'intervention la plus rentable au m²',
+            'L\'escalier à pas japonais = le meilleur compromis emprise/confort',
+            'Acier (IPN) scellé = la solution structurelle standard en rénovation',
+            'La mezzanine ne compte pas en surface habitable si h < 1,80 m — pas de taxe mais surface utile'
+          ],
+          tips: [
+            'Faire valider la structure par un BET (Bureau d\'Études Techniques) — obligatoire pour le scellement des IPN',
+            'Prévoir l\'éclairage sous la mezzanine dès la conception — les spots encastrés dans le plancher de la mezzanine sont du plus bel effet',
+            'Un plancher en verre (feuilleté trempé) laisse passer la lumière vers le bas — spectaculaire dans un studio sombre'
+          ],
+          tags: ['mezzanine', 'hauteur', 'studio', 'duplex', 'escalier', 'structure']
         }
       ]
     },
@@ -2058,6 +2539,117 @@ const APP_DATA = {
             'Visiter les ateliers d\'artisans et documenter le processus — les clients adorent ces histoires'
           ],
           tags: ['tendances', '2025', '2026', 'quiet luxury', 'artisanat', 'biophilic']
+        },
+        {
+          id: 'hospitalite-residentielle',
+          title: 'Hospitalité Résidentielle',
+          subtitle: 'L\'hôtel à la maison',
+          summary: 'La tendance « hospitalité résidentielle » transpose les codes de l\'hôtellerie de luxe dans l\'habitat privé : literie premium, salle de bain d\'hôtel, minibar intégré, éclairage d\'ambiance, textiles haut de gamme. Le client veut vivre chez lui comme dans un boutique-hôtel.',
+          sections: [
+            {
+              title: 'Les codes hôteliers transposables',
+              content: 'Le lit comme pièce maîtresse : tête de lit architecturale (rembourrée, boisée ou en pierre), linge de lit premium (percale 200 fils minimum, Lin Lavé), surmatelas, oreillers multiples. L\'éclairage en couches : liseuses encastrées, variateurs partout, lumière indirecte. La salle de bain « spa » : douche pluie encastrée, double vasque, serviettes épaisses, produits en distributeurs intégrés. Le minibar / bar : niche intégrée avec éclairage LED, verres à portée de main, réfrigérateur à vin encastré.'
+            },
+            {
+              title: 'La chambre parentale type « suite »',
+              content: 'Composition idéale : lit king (180x200 minimum) — tête de lit pleine largeur (mur à mur) — liseuses encastrées — tables de nuit intégrées — dressing attenant (walk-in) — salle de bain ouverte ou communicante. Le fil conducteur : tout est pensé, intégré, sans câble apparent, sans objet posé. L\'impression de flotter dans un espace conçu pour soi. Matériaux : bois chaud (noyer, chêne fumé), pierre douce (travertin), textiles (bouclette, lin, velours).'
+            },
+            {
+              title: 'Les détails qui font la différence',
+              content: 'Prises USB intégrées dans les tables de nuit. Interrupteur centralisé (scénario « bonne nuit » : tout s\'éteint d\'un geste). Store occultant motorisé (Somfy) — le noir total comme à l\'hôtel. Chauffage au sol en salle de bain (confort pieds nus). Porte-serviettes chauffant. Miroir anti-buée. Musique intégrée (Sonos encastré). Prise rasoir dans le miroir. Patères et crochets en nombre suffisant.'
+            },
+            {
+              title: 'Budget et positionnement',
+              content: 'C\'est une tendance portée par une clientèle qui voyage beaucoup et compare son intérieur aux hôtels qu\'elle fréquente. Budget chambre + SDB « suite hôtelière » : 15 000-50 000 € selon les finitions. Les marques-références : Caravane (linge de lit), Maison Sarah Lavoine (tête de lit), Axor/Dornbracht (robinetterie), Diptyque/Aesop (accessoires SDB). C\'est un argument commercial puissant : « Vivre chez vous comme dans un 5 étoiles ».'
+            }
+          ],
+          keyPoints: [
+            'Le client compare son intérieur aux hôtels qu\'il fréquente — c\'est la nouvelle référence',
+            'Tête de lit architecturale + liseuses + éclairage indirect = le triptyque de base',
+            'Salle de bain « spa » : douche pluie + chauffage au sol + serviettes-éponge + produits beaux',
+            'Tout intégré, rien de visible — câbles, prises, interrupteurs pensés en amont',
+            'Argument commercial : « Vivre comme au boutique-hôtel »'
+          ],
+          tips: [
+            'Proposer un « scénario lumière » avec domotique basique (3 ambiances : jour, soir, nuit) — coût modeste, effet spectaculaire',
+            'Le linge de lit en lin lavé (Merci, Caravane, Harmony) est LE textile le plus photographié en chambre',
+            'Un porte-serviettes chauffant en salle de bain coûte 200-500 € mais transforme le quotidien'
+          ],
+          tags: ['hospitalité', 'hôtel', 'chambre', 'suite', 'luxe', 'tendance']
+        },
+        {
+          id: 'reemploi-seconde-vie',
+          title: 'Réemploi & Seconde Vie',
+          subtitle: 'Quand la durabilité devient un style',
+          summary: 'Le réemploi n\'est plus un compromis esthétique — c\'est devenu un parti pris de projet, une démarche valorisée par les magazines et les clients les plus exigeants. Utiliser un matériau de récupération, c\'est raconter une histoire.',
+          sections: [
+            {
+              title: 'Le réemploi en architecture d\'intérieur',
+              content: 'Réemploi = réutiliser des matériaux ou éléments de construction issus de la déconstruction d\'autres bâtiments. En pratique : parquet ancien de récupération, carreaux de ciment anciens, portes, ferronneries, radiateurs en fonte, poutres apparentes, briques anciennes, sanitaires vintage, luminaires d\'époque. L\'intérêt : patine irremplaçable, qualité de matériaux anciens (chêne massif, fonte, laiton), empreinte carbone quasi nulle, unicité.'
+            },
+            {
+              title: 'Les filières de sourcing',
+              content: 'Plateformes en ligne : Cycle Up, Backacia, Minéka — marketplaces de matériaux de réemploi issus de chantiers. Ressourceries et recycleries : matériaux et mobilier à prix cassés. Emmaüs, Le Bon Coin : chasse au trésor pour pièces vintage. Antiquaires et brocanteurs spécialisés : radiateurs fonte (Le Marchand de Sable), sanitaires anciens (Maison Empereur), quincaillerie (Loquets & Ferrures). Entreprises de déconstruction sélective : récupération sur mesure de matériaux dans des bâtiments voués à la démolition.'
+            },
+            {
+              title: 'Applications concrètes',
+              content: 'Parquet ancien posé dans un appartement neuf : noblesse immédiate. Carreaux de ciment récupérés en patchwork dans une salle de bain. Porte cochère transformée en tête de lit monumentale. Briques anciennes en parement de mur d\'accent. Poutres de récupération (vieux chêne) comme étagères ou structure de mezzanine. Radiateurs fonte restaurés (décapés, repeints, remis en service). Luminaires industriels récupérés (lampes d\'atelier, appliques d\'usine).'
+            },
+            {
+              title: 'Cadre et certification',
+              content: 'Le diagnostic PEMD (Produits, Équipements, Matériaux, Déchets) est obligatoire depuis 2023 pour les chantiers > 1 000 m². Label Cradle to Cradle et certification Biosourcé valorisent la démarche. RE2020 encourage le réemploi (bilan carbone favorable). Argument commercial : le réemploi est un « plus » qui séduit les clients sensibilisés — et un facteur de différenciation pour l\'architecte d\'intérieur.'
+            }
+          ],
+          keyPoints: [
+            'Le réemploi = matériaux nobles avec patine + empreinte carbone quasi nulle',
+            'Plateformes Cycle Up, Backacia, Minéka = les « Le Bon Coin » du BTP',
+            'Un parquet ancien de récupération a plus de caractère que n\'importe quel parquet neuf',
+            'Le réemploi est un argument commercial auprès des clients sensibilisés',
+            'La RE2020 et le diagnostic PEMD poussent la filière — c\'est l\'avenir'
+          ],
+          tips: [
+            'Constituer un carnet d\'adresses de fournisseurs réemploi locaux — c\'est un avantage concurrentiel réel',
+            'Photographier et archiver les trouvailles : un lot de carreaux anciens trouvé en brocante peut devenir la pièce maîtresse d\'un projet',
+            'Anticiper : le réemploi nécessite du temps de sourcing — intégrer cette phase dès le planning projet'
+          ],
+          tags: ['réemploi', 'récupération', 'durable', 'vintage', 'matériau', 'seconde vie']
+        },
+        {
+          id: 'couleur-matiere-tendance',
+          title: 'La Couleur-Matière',
+          subtitle: 'Quand le matériau EST la couleur',
+          summary: 'La tendance forte 2025 : la couleur ne vient plus d\'une peinture mais du matériau lui-même. Zellige vert, travertin doré, terrazzo graphique, béton pigmenté, marbre veiné. C\'est une approche plus riche, plus profonde et plus durable de la couleur en architecture d\'intérieur.',
+          sections: [
+            {
+              title: 'Comprendre le shift',
+              content: 'Pendant 20 ans, le blanc-gris-noir a dominé (minimalisme). Puis la couleur est revenue via la peinture (accent wall, couleur au plafond). Maintenant, la couleur passe par le matériau : un mur en pierre verte, une douche en zellige bleu, un sol en terrazzo rose. L\'avantage : la couleur est vivante (nuances, irrégularités, jeux de lumière), durable (ne se démode pas comme une peinture tendance) et sensorielle (on la touche, on la sent).'
+            },
+            {
+              title: 'Palette des matériaux-couleurs',
+              content: 'VERTS : Verde Guatemala (marbre), zellige vert émeraude, carrelage vert forêt, tadelakt vert sauge. BLEUS : zellige bleu Majorelle, pierre bleue du Hainaut, carrelage bleu cobalt. ROSES/TERRACOTTA : marbre Rosa Portogallo, brique terracotta, zellige rose, tomette ancienne. BEIGE/DORÉ : travertin, pierre de Bourgogne, tadelakt naturel, bois de chêne clair. NOIR : ardoise, basalte, marbre Nero Marquina, granit Zimbabwe.'
+            },
+            {
+              title: 'Comment l\'intégrer en projet',
+              content: 'La règle du 60-30-10 adaptée à la matière : 60% base neutre (béton ciré blanc, bois clair), 30% matériau-couleur principal (zellige vert en crédence + salle de bain), 10% accent (laiton, détail textile). Ou la méthode « immersion » : une pièce entière dans un seul matériau-couleur (salle de bain tout en travertin, cuisine tout en terrazzo). Ne pas mélanger plus de 2 matériaux-couleurs dans un même espace — la sobriété est clé.'
+            },
+            {
+              title: 'Sourcing & références',
+              content: 'Zellige artisanal : Emery & Cie, Mosaic del Sur, Zelij (Maroc direct). Pierres naturelles : marbriers locaux + carrières (Pierre Bleue de Wallonie, Pierre de Bourgogne ROCAMAT). Travertin : Turquie (Turkey Travertine), Italie, Iran — attention à la qualité (veinage, rebouchage). Terrazzo : Agglomarbre, Huguet, Diespeker (sur mesure). Béton ciré : Marius Aurenti, Mercadier, Rouviere Collection. Tadelakt : artisans spécialisés (Maroc, Provence, Uzès).'
+            }
+          ],
+          keyPoints: [
+            'La couleur-matière remplace la couleur-peinture comme tendance majeure',
+            'La couleur incarnée dans le matériau est plus vivante, durable et sensorielle',
+            'Maximum 2 matériaux-couleurs dans un même espace',
+            'Le zellige et le travertin sont les matériaux-couleurs les plus demandés en 2025',
+            'Règle 60-30-10 : base neutre + matériau principal + accent'
+          ],
+          tips: [
+            'Toujours commander des échantillons PHYSIQUES — un zellige vert ne rend RIEN sur écran',
+            'Visiter un showroom (Emery & Cie à Bruxelles, Stone Gallery à Paris) vaut mille images Pinterest',
+            'Le travertin rebouché (lisse) et le travertin non rebouché (trous ouverts) sont deux esthétiques différentes — montrer les deux au client'
+          ],
+          tags: ['couleur', 'matière', 'zellige', 'travertin', 'terrazzo', 'tendance']
         }
       ]
     },
