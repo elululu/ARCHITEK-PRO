@@ -272,6 +272,27 @@ function renderDashboard(container) {
   randomRow.appendChild(randomBtn);
   container.appendChild(randomRow);
 
+  // Promo — Template ArchiCAD
+  const promo = el('div', { className: 'promo-card' });
+  promo.innerHTML = `
+    <div class="promo-badge">Template Archicad</div>
+    <div class="promo-body">
+      <h3>⚡ Archicad — Chiffrages & Descriptifs automatisés</h3>
+      <p>Gagnez du temps sur vos DPGF : descriptifs TCE pré-rédigés, favoris préconfigurés, bibliothèque d'objets prête à l'emploi. Concentrez-vous sur la conception, pas l'administratif.</p>
+      <div class="promo-features">
+        <span>✅ Descriptifs auto</span>
+        <span>✅ Favoris préconfigurés</span>
+        <span>✅ Bibliothèque d'objets</span>
+        <span>✅ Guide d'installation</span>
+      </div>
+      <div class="promo-cta">
+        <a href="https://atelierlo.gumroad.com/l/phrvz" target="_blank" rel="noopener" class="btn-promo">Découvrir le template — 99 €</a>
+        <span class="promo-by">par <a href="https://loatelier.com/" target="_blank" rel="noopener">AtelierLO</a></span>
+      </div>
+    </div>
+  `;
+  container.appendChild(promo);
+
   // Sloft-inspired editorial sections
   // --- Recent études de cas ---
   if (etudes.length > 0) {

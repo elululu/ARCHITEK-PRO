@@ -3099,6 +3099,142 @@ mark {
 }
 
 /* ========================================
+   SIDEBAR FOOTER / CREDIT
+   ======================================== */
+.sidebar-footer {
+  padding: 20px 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar-footer-credit {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.03em;
+}
+
+.sidebar-footer-credit a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.sidebar-footer-credit a:hover {
+  color: #d4b088;
+}
+
+.sidebar-footer-role {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.22);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 3px;
+}
+
+/* ========================================
+   PROMO CARD — TEMPLATE ARCHICAD
+   ======================================== */
+.promo-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2318 100%);
+  border: 1px solid rgba(184, 149, 106, 0.25);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 40px 0;
+  transition: all var(--transition);
+}
+
+.promo-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px rgba(184, 149, 106, 0.12);
+}
+
+.promo-badge {
+  background: var(--accent);
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 20px;
+  display: inline-block;
+}
+
+.promo-body {
+  padding: 28px 32px 32px;
+}
+
+.promo-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.promo-body > p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.promo-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+}
+
+.promo-features span {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.promo-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-promo {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: white;
+  background: var(--accent);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.btn-promo:hover {
+  background: #d4b088;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 149, 106, 0.3);
+}
+
+.promo-by {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
+}
+
+.promo-by a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.promo-by a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
    RANDOM FICHE BUTTON
    ======================================== */
 .dashboard-random {
