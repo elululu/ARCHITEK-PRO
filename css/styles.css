@@ -3387,6 +3387,312 @@ body.dark-mode .search-shortcut {
 }
 
 /* ========================================
+   QUIZ / FLASHCARDS
+   ======================================== */
+.quiz-header {
+  margin-bottom: 24px;
+}
+
+.quiz-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.quiz-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.quiz-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.quiz-filter {
+  max-width: 280px;
+}
+
+.quiz-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.quiz-score-good { color: #4ade80; }
+.quiz-score-total { color: var(--text-muted); }
+
+.quiz-card-area {
+  perspective: 1200px;
+  min-height: 340px;
+  margin-bottom: 28px;
+}
+
+.quiz-card {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 320px;
+  cursor: pointer;
+  position: relative;
+}
+
+.quiz-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.quiz-card.flipped .quiz-card-inner {
+  transform: rotateY(180deg);
+}
+
+.quiz-card-front,
+.quiz-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 320px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+}
+
+.quiz-card-front {
+  background: var(--surface);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.quiz-card-back {
+  background: var(--surface);
+  transform: rotateY(180deg);
+  overflow-y: auto;
+  max-height: 480px;
+}
+
+.quiz-card-domain {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.quiz-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.quiz-card-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.quiz-card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.quiz-card-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: auto;
+  animation: pulse-hint 2s ease-in-out infinite;
+}
+
+@keyframes pulse-hint {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.quiz-card-answer {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.quiz-card-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.quiz-card-points li {
+  padding: 6px 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+.quiz-card-points li:last-child {
+  border-bottom: none;
+}
+
+.quiz-card-points li::before {
+  content: '◆ ';
+  color: var(--accent);
+  font-size: 0.7rem;
+}
+
+.btn-quiz-open {
+  align-self: flex-start;
+  font-size: 0.82rem;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-top: auto;
+}
+
+.btn-quiz-open:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.quiz-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-quiz-knew {
+  background: #4ade80 !important;
+  color: #1a1a1a !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 12px 28px !important;
+  border-radius: var(--radius-sm) !important;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-quiz-knew:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3); }
+
+.btn-quiz-didnt {
+  background: #f87171 !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 12px 28px !important;
+  border-radius: var(--radius-sm) !important;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-quiz-didnt:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(248, 113, 113, 0.3); }
+
+.btn-quiz-skip {
+  background: var(--bg) !important;
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border) !important;
+  padding: 12px 28px !important;
+  border-radius: var(--radius-sm) !important;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-quiz-skip:hover { color: var(--text) !important; border-color: var(--text-muted) !important; }
+
+/* ========================================
+   SHARE BUTTON
+   ======================================== */
+.btn-share {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all var(--transition);
+}
+
+.btn-share:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(184, 149, 106, 0.08);
+}
+
+/* ========================================
+   GLOSSARY TOOLTIP
+   ======================================== */
+.glossary-term {
+  border-bottom: 1px dashed var(--accent);
+  cursor: help;
+  position: relative;
+  transition: color var(--transition);
+}
+
+.glossary-term:hover {
+  color: var(--accent);
+}
+
+.glossary-tooltip {
+  position: fixed;
+  z-index: 10000;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  max-width: 340px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.glossary-tooltip.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.glossary-tooltip-term {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.glossary-tooltip-def {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ========================================
    PRINT STYLES
    ======================================== */
 @media print {

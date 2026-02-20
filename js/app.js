@@ -121,6 +121,15 @@ function navigate(view, domainId = null, ficheId = null) {
   state.currentDomain = domainId;
   state.currentFiche = ficheId;
 
+  // Update URL hash for sharing
+  if (view === 'fiche' && domainId && ficheId) {
+    history.replaceState(null, '', `#${domainId}/${ficheId}`);
+  } else if (view === 'domain' && domainId) {
+    history.replaceState(null, '', `#${domainId}`);
+  } else {
+    history.replaceState(null, '', window.location.pathname);
+  }
+
   // Mark as read when opening a fiche
   if (view === 'fiche' && domainId && ficheId) {
     const key = ficheKey(domainId, ficheId);
@@ -184,6 +193,10 @@ function updateBreadcrumb() {
     parts.push({ label: 'Ma Veille', current: true });
   }
 
+  if (state.currentView === 'quiz') {
+    parts.push({ label: 'Quiz / Flashcards', current: true });
+  }
+
   if (state.currentView === 'search') {
     parts.push({ label: `Recherche : "${state.searchQuery}"`, current: true });
   }
@@ -212,8 +225,12 @@ function render() {
     case 'atelier': renderAtelier(content); break;
     case 'sourcing': renderSourcing(content); break;
     case 'veille': renderVeille(content); break;
+    case 'quiz': renderQuiz(content); break;
     case 'search': renderSearch(content); break;
   }
+
+  // Apply glossary highlights on fiche pages
+  setTimeout(() => applyGlossaryHighlights(), 50);
 }
 
 // -------- Dashboard --------
@@ -502,8 +519,22 @@ function renderFiche(container) {
   });
   masterBtn.textContent = isMastered(key) ? '◆ Maîtrisé' : '◇ Maîtriser';
 
+  const shareBtn = el('button', {
+    className: 'btn btn-share',
+    onClick: () => {
+      const url = `${window.location.origin}${window.location.pathname}#${d.id}/${f.id}`;
+      navigator.clipboard.writeText(url).then(() => {
+        toast('Lien copié ! Partagez-le à vos collègues 🔗');
+      }).catch(() => {
+        prompt('Copiez ce lien :', url);
+      });
+    }
+  });
+  shareBtn.textContent = '🔗 Partager';
+
   actions.appendChild(favBtn);
   actions.appendChild(masterBtn);
+  actions.appendChild(shareBtn);
   detail.appendChild(actions);
 
   // Header
@@ -2559,6 +2590,12 @@ function initNavEvents() {
   if (veilleLink) {
     veilleLink.addEventListener('click', (e) => { e.preventDefault(); navigate('veille'); closeMobileMenu(); });
   }
+
+  // Quiz link
+  const quizLink = $('[data-view="quiz"]');
+  if (quizLink) {
+    quizLink.addEventListener('click', (e) => { e.preventDefault(); navigate('quiz'); closeMobileMenu(); });
+  }
 }
 
 // ============ EXPORT / IMPORT DATA ============
@@ -2670,6 +2707,280 @@ function initCollapsibleSidebar() {
   });
 }
 
+// ============ QUIZ / FLASHCARDS ============
+function renderQuiz(container) {
+  const allFiches = [];
+  APP_DATA.domains.forEach(d => d.fiches.forEach(f => allFiches.push({ domain: d, fiche: f })));
+
+  // Quiz state
+  if (!state.quizState) {
+    state.quizState = { domainFilter: 'all', score: 0, total: 0, current: null, flipped: false, pool: [] };
+  }
+  const qs = state.quizState;
+
+  const header = el('div', { className: 'quiz-header' });
+  header.innerHTML = `
+    <h2>🧠 Quiz / Flashcards</h2>
+    <p>Testez vos connaissances — retournez la carte pour voir la réponse</p>
+  `;
+  container.appendChild(header);
+
+  // Filters + score
+  const controls = el('div', { className: 'quiz-controls' });
+
+  const filterSelect = el('select', { className: 'conseil-input quiz-filter' });
+  filterSelect.innerHTML = `<option value="all">Tous les domaines</option>` +
+    APP_DATA.domains.map(d => `<option value="${d.id}" ${qs.domainFilter === d.id ? 'selected' : ''}>${d.icon} ${d.name}</option>`).join('');
+  filterSelect.addEventListener('change', () => {
+    qs.domainFilter = filterSelect.value;
+    qs.pool = [];
+    qs.score = 0;
+    qs.total = 0;
+    drawCard();
+  });
+
+  const scoreEl = el('div', { className: 'quiz-score' });
+
+  controls.appendChild(filterSelect);
+  controls.appendChild(scoreEl);
+  container.appendChild(controls);
+
+  // Card area
+  const cardArea = el('div', { className: 'quiz-card-area' });
+  container.appendChild(cardArea);
+
+  // Action buttons
+  const actionsRow = el('div', { className: 'quiz-actions' });
+  container.appendChild(actionsRow);
+
+  function getPool() {
+    if (qs.domainFilter === 'all') return [...allFiches];
+    return allFiches.filter(x => x.domain.id === qs.domainFilter);
+  }
+
+  function drawCard() {
+    if (qs.pool.length === 0) qs.pool = getPool().sort(() => Math.random() - 0.5);
+    if (qs.pool.length === 0) { cardArea.innerHTML = '<p>Aucune fiche dans ce domaine.</p>'; return; }
+    qs.current = qs.pool.pop();
+    qs.flipped = false;
+    renderCard();
+  }
+
+  function renderCard() {
+    const { domain, fiche } = qs.current;
+    scoreEl.innerHTML = `<span class="quiz-score-good">✓ ${qs.score}</span> / <span class="quiz-score-total">${qs.total}</span>`;
+
+    cardArea.innerHTML = '';
+    const card = el('div', { className: `quiz-card ${qs.flipped ? 'flipped' : ''}` });
+    card.innerHTML = `
+      <div class="quiz-card-inner">
+        <div class="quiz-card-front">
+          <div class="quiz-card-domain">${domain.icon} ${domain.name}</div>
+          <h3 class="quiz-card-title">${fiche.title}</h3>
+          <p class="quiz-card-subtitle">${fiche.subtitle}</p>
+          <div class="quiz-card-tags">${fiche.tags.slice(0, 4).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+          <div class="quiz-card-hint">Cliquez pour retourner ↻</div>
+        </div>
+        <div class="quiz-card-back">
+          <div class="quiz-card-domain">${domain.icon} ${domain.name}</div>
+          <h3 class="quiz-card-title">${fiche.title}</h3>
+          <div class="quiz-card-answer">${fiche.summary}</div>
+          ${fiche.keyPoints ? `<ul class="quiz-card-points">${fiche.keyPoints.slice(0, 3).map(p => `<li>${p}</li>`).join('')}</ul>` : ''}
+          <button class="btn btn-quiz-open" data-domain="${domain.id}" data-fiche="${fiche.id}">Ouvrir la fiche →</button>
+        </div>
+      </div>
+    `;
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.btn-quiz-open')) {
+        const btn = e.target.closest('.btn-quiz-open');
+        navigate('fiche', btn.dataset.domain, btn.dataset.fiche);
+        return;
+      }
+      if (!qs.flipped) {
+        qs.flipped = true;
+        card.classList.add('flipped');
+      }
+    });
+    cardArea.appendChild(card);
+
+    // Actions
+    actionsRow.innerHTML = '';
+    if (qs.flipped) {
+      renderActions();
+    } else {
+      // Show flip hint
+    }
+  }
+
+  function renderActions() {
+    actionsRow.innerHTML = '';
+    const knewIt = el('button', { className: 'btn btn-quiz-knew', onClick: () => { qs.score++; qs.total++; drawCard(); } });
+    knewIt.textContent = '✓ Je savais';
+    const didntKnow = el('button', { className: 'btn btn-quiz-didnt', onClick: () => { qs.total++; drawCard(); } });
+    didntKnow.textContent = '✗ Je ne savais pas';
+    const skipBtn = el('button', { className: 'btn btn-quiz-skip', onClick: () => { drawCard(); } });
+    skipBtn.textContent = '→ Passer';
+    actionsRow.appendChild(knewIt);
+    actionsRow.appendChild(didntKnow);
+    actionsRow.appendChild(skipBtn);
+  }
+
+  // Watch for flip via card click
+  const observer = new MutationObserver(() => {
+    if (qs.flipped && actionsRow.children.length === 0) renderActions();
+  });
+  observer.observe(cardArea, { subtree: true, attributes: true });
+
+  drawCard();
+}
+
+// ============ HASH URL ROUTING (share links) ============
+function handleHashRoute() {
+  const hash = window.location.hash.slice(1); // remove #
+  if (!hash) return false;
+
+  const parts = hash.split('/');
+  if (parts.length === 2) {
+    // #domainId/ficheId
+    const domain = getDomain(parts[0]);
+    if (domain) {
+      const fiche = domain.fiches.find(f => f.id === parts[1]);
+      if (fiche) {
+        navigate('fiche', parts[0], parts[1]);
+        return true;
+      }
+    }
+  } else if (parts.length === 1) {
+    // #domainId
+    const domain = getDomain(parts[0]);
+    if (domain) {
+      navigate('domain', parts[0]);
+      return true;
+    }
+  }
+  return false;
+}
+
+// ============ GLOSSARY TOOLTIP ============
+function buildGlossary() {
+  const glossary = {};
+  // Find the Vocabulaire Pro domain
+  const vocabDomain = APP_DATA.domains.find(d => d.id === 'vocabulaire');
+  if (!vocabDomain) return glossary;
+
+  // Extract from Lexique Express (the A→Z fiche)
+  const lexiqueFiche = vocabDomain.fiches.find(f => f.id === 'vocab-lexique-express');
+  if (lexiqueFiche) {
+    lexiqueFiche.sections.forEach(sec => {
+      // Parse "Terme : définition" patterns
+      const entries = sec.content.split(/\.\s+(?=[A-ZÀÂÉÈÊËÎÏÔÙÛÜ])/);
+      entries.forEach(entry => {
+        const match = entry.match(/^([A-ZÀÂÉÈÊËÎÏÔÙÛÜa-zàâéèêëîïôùûü][^:]+?)\s*:\s*(.+)/);
+        if (match) {
+          const term = match[1].trim().replace(/\s*\/\s*.+/, ''); // take first variant
+          const def = match[2].trim();
+          if (term.length >= 3 && term.length <= 40) {
+            glossary[term.toLowerCase()] = { term: term, definition: def.length > 150 ? def.slice(0, 147) + '…' : def };
+          }
+        }
+      });
+    });
+  }
+
+  // Also extract key terms from Gros Œuvre / Second Œuvre
+  ['vocab-gros-oeuvre', 'vocab-second-oeuvre', 'vocab-finitions-surfaces', 'vocab-mise-en-oeuvre'].forEach(ficheId => {
+    const f = vocabDomain.fiches.find(fi => fi.id === ficheId);
+    if (!f) return;
+    f.sections.forEach(sec => {
+      const entries = sec.content.split(/\.\s+(?=[A-ZÀÂÉÈÊËÎÏÔÙÛÜ])/);
+      entries.forEach(entry => {
+        const match = entry.match(/^([A-ZÀÂÉÈÊËÎÏÔÙÛÜa-zàâéèêëîïôùûü][^:]+?)\s*:\s*(.+)/);
+        if (match) {
+          const term = match[1].trim().replace(/\s*\/\s*.+/, '');
+          const def = match[2].trim();
+          if (term.length >= 3 && term.length <= 40 && !glossary[term.toLowerCase()]) {
+            glossary[term.toLowerCase()] = { term: term, definition: def.length > 150 ? def.slice(0, 147) + '…' : def };
+          }
+        }
+      });
+    });
+  });
+
+  return glossary;
+}
+
+function initGlossary() {
+  const glossary = buildGlossary();
+  state.glossary = glossary;
+  const terms = Object.keys(glossary).sort((a, b) => b.length - a.length); // longest first
+  state.glossaryTerms = terms;
+  state.glossaryRegex = terms.length > 0
+    ? new RegExp(`\\b(${terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'gi')
+    : null;
+}
+
+function applyGlossaryHighlights() {
+  if (!state.glossaryRegex || state.currentView !== 'fiche') return;
+
+  // Target fiche content sections, summary, tips, key points
+  const targets = $$('.fiche-section p, .fiche-detail-summary, .key-points li, .practical-tips li');
+  targets.forEach(el => {
+    if (el.dataset.glossaryDone) return;
+    el.dataset.glossaryDone = '1';
+
+    const html = el.innerHTML;
+    const newHtml = html.replace(state.glossaryRegex, (match) => {
+      const entry = state.glossary[match.toLowerCase()];
+      if (!entry) return match;
+      return `<span class="glossary-term" data-term="${escapeHtml(entry.term)}" data-def="${escapeHtml(entry.definition)}">${match}</span>`;
+    });
+    if (newHtml !== html) el.innerHTML = newHtml;
+  });
+
+  // Bind tooltip events
+  $$('.glossary-term').forEach(term => {
+    if (term.dataset.bound) return;
+    term.dataset.bound = '1';
+    term.addEventListener('mouseenter', showGlossaryTooltip);
+    term.addEventListener('mouseleave', hideGlossaryTooltip);
+    term.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showGlossaryTooltip(e);
+      setTimeout(hideGlossaryTooltip, 4000);
+    });
+  });
+}
+
+function showGlossaryTooltip(e) {
+  const tooltip = $('#glossary-tooltip');
+  if (!tooltip) return;
+  const target = e.currentTarget;
+  const term = target.dataset.term;
+  const def = target.dataset.def;
+
+  tooltip.querySelector('.glossary-tooltip-term').textContent = term;
+  tooltip.querySelector('.glossary-tooltip-def').textContent = def;
+  tooltip.classList.remove('hidden');
+
+  const rect = target.getBoundingClientRect();
+  const ttRect = tooltip.getBoundingClientRect();
+  let left = rect.left + rect.width / 2 - ttRect.width / 2;
+  let top = rect.top - ttRect.height - 8;
+
+  // Keep on screen
+  if (left < 8) left = 8;
+  if (left + ttRect.width > window.innerWidth - 8) left = window.innerWidth - ttRect.width - 8;
+  if (top < 8) top = rect.bottom + 8; // flip below
+
+  tooltip.style.left = left + 'px';
+  tooltip.style.top = top + 'px';
+}
+
+function hideGlossaryTooltip() {
+  const tooltip = $('#glossary-tooltip');
+  if (tooltip) tooltip.classList.add('hidden');
+}
+
 // ============ VISITOR COUNTER ============
 function initVisitorCounter() {
   const countEl = $('#visitor-count');
@@ -2735,7 +3046,12 @@ function init() {
   initBackToTop();
   initCollapsibleSidebar();
   initVisitorCounter();
-  navigate('dashboard');
+  initGlossary();
+
+  // Try hash route first, fallback to dashboard
+  if (!handleHashRoute()) {
+    navigate('dashboard');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
