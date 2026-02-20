@@ -1,0 +1,8 @@
+# ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur
+# https://elululu.github.io/ARCHITEK-PRO/
+
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://elululu.github.io/ARCHITEK-PRO/sitemap.xml

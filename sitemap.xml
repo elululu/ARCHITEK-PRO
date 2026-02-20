@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page principale -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Domaine : Styles & Courants -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-styles-courants</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Matériaux & Textures -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-materiaux-textures</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Couleur & Lumière -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-couleur-lumiere</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Ergonomie & Agencement -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-ergonomie-agencement</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Normes & Réglementations -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-normes-reglementations</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Gestion de Projet -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-gestion-projet</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Tendances & Veille -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-tendances-veille</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Vocabulaire Pro -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-vocabulaire-pro</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Domaine : Rénovation & Solutions Techniques -->
+  <url>
+    <loc>https://elululu.github.io/ARCHITEK-PRO/#domain-renovation-solutions</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
