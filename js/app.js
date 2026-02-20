@@ -184,6 +184,14 @@ function updateBreadcrumb() {
     parts.push({ label: 'Sourcing Matériaux', current: true });
   }
 
+  if (state.currentView === 'etudes') {
+    parts.push({ label: 'Études de Cas', current: true });
+  }
+
+  if (state.currentView === 'veille') {
+    parts.push({ label: 'Ma Veille', current: true });
+  }
+
   if (state.currentView === 'search') {
     parts.push({ label: `Recherche : "${state.searchQuery}"`, current: true });
   }
@@ -212,6 +220,8 @@ function render() {
     case 'conseils': renderConseils(content); break;
     case 'references': renderReferences(content); break;
     case 'sourcing': renderSourcing(content); break;
+    case 'etudes': renderEtudes(content); break;
+    case 'veille': renderVeille(content); break;
     case 'search': renderSearch(content); break;
   }
 }
@@ -219,6 +229,8 @@ function render() {
 // -------- Dashboard --------
 function renderDashboard(container) {
   const stats = countStats();
+  const etudes = loadEtudes();
+  const veille = loadVeille();
 
   const hero = el('div', { className: 'dashboard-hero' });
   hero.innerHTML = `
@@ -232,13 +244,79 @@ function renderDashboard(container) {
     { n: stats.totalFiches, l: 'Fiches' },
     { n: stats.readCount, l: 'Lues' },
     { n: stats.masteredCount, l: 'Maîtrisées' },
-    { n: stats.favCount, l: 'Favoris' }
+    { n: stats.favCount, l: 'Favoris' },
+    { n: etudes.length, l: 'Études' },
+    { n: veille.length, l: 'Veille' }
   ];
   statItems.forEach(s => {
     const card = el('div', { className: 'stat-card' });
     card.innerHTML = `<div class="stat-number">${s.n}</div><div class="stat-label">${s.l}</div>`;
     statsRow.appendChild(card);
   });
+
+  container.appendChild(hero);
+  container.appendChild(statsRow);
+
+  // Sloft-inspired editorial sections
+  // --- Recent études de cas ---
+  if (etudes.length > 0) {
+    const recentEtudes = el('div', { className: 'dashboard-section' });
+    recentEtudes.innerHTML = `
+      <div class="dashboard-section-header">
+        <h2>🏠 Dernières Études de Cas</h2>
+        <a href="#" class="dashboard-see-all" id="dash-see-etudes">Voir tout →</a>
+      </div>
+    `;
+    const etudesRow = el('div', { className: 'dashboard-etudes-row' });
+    etudes.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4).forEach(projet => {
+      const card = el('div', { className: 'dashboard-etude-card', onClick: () => { navigate('etudes'); setTimeout(() => openEtudeDetail(projet.id), 50); } });
+      card.innerHTML = `
+        <div class="dash-etude-cover" style="background-image: url('${projet.coverUrl || ''}')">
+          ${!projet.coverUrl ? '<div class="etude-card-no-cover">🏠</div>' : ''}
+          ${projet.surface ? `<span class="dash-etude-surface">${projet.surface} m²</span>` : ''}
+        </div>
+        <div class="dash-etude-info">
+          <strong>${projet.name}</strong>
+          ${projet.architect ? `<span>par ${projet.architect}</span>` : ''}
+          ${projet.location ? `<span>📍 ${projet.location}</span>` : ''}
+        </div>
+      `;
+      etudesRow.appendChild(card);
+    });
+    recentEtudes.appendChild(etudesRow);
+    container.appendChild(recentEtudes);
+  }
+
+  // --- Recent veille ---
+  if (veille.length > 0) {
+    const recentVeille = el('div', { className: 'dashboard-section' });
+    recentVeille.innerHTML = `
+      <div class="dashboard-section-header">
+        <h2>👁 L'Œil — Dernières Découvertes</h2>
+        <a href="#" class="dashboard-see-all" id="dash-see-veille">Voir tout →</a>
+      </div>
+    `;
+    const veilleRow = el('div', { className: 'dashboard-veille-row' });
+    veille.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5).forEach(item => {
+      const card = el('div', { className: 'dashboard-veille-card' });
+      card.innerHTML = `
+        ${item.imageUrl ? `<div class="dash-veille-img" style="background-image: url('${item.imageUrl}')"></div>` : ''}
+        <div class="dash-veille-body">
+          <strong>${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</strong>
+          ${item.source ? `<span class="dash-veille-source">${escapeHtml(item.source)}</span>` : ''}
+          <span class="dash-veille-date">${new Date(item.date).toLocaleDateString('fr-FR')}</span>
+        </div>
+      `;
+      veilleRow.appendChild(card);
+    });
+    recentVeille.appendChild(veilleRow);
+    container.appendChild(recentVeille);
+  }
+
+  // Domains grid
+  const domainsTitle = el('div', { className: 'dashboard-section' });
+  domainsTitle.innerHTML = `<div class="dashboard-section-header"><h2>📚 Domaines de connaissances</h2></div>`;
+  container.appendChild(domainsTitle);
 
   const grid = el('div', { className: 'domains-grid' });
   APP_DATA.domains.forEach(d => {
@@ -257,10 +335,15 @@ function renderDashboard(container) {
     `;
     grid.appendChild(card);
   });
-
-  container.appendChild(hero);
-  container.appendChild(statsRow);
   container.appendChild(grid);
+
+  // Bind dashboard link events
+  setTimeout(() => {
+    const seeEtudes = $('#dash-see-etudes');
+    if (seeEtudes) seeEtudes.addEventListener('click', (e) => { e.preventDefault(); navigate('etudes'); });
+    const seeVeille = $('#dash-see-veille');
+    if (seeVeille) seeVeille.addEventListener('click', (e) => { e.preventDefault(); navigate('veille'); });
+  }, 0);
 }
 
 // -------- Domain --------
@@ -1415,6 +1498,784 @@ function renderShoppingList(content) {
   }, 0);
 }
 
+// -------- Études de Cas (inspiré Sloft) --------
+function loadEtudes() {
+  try {
+    const raw = localStorage.getItem('architek-pro-etudes');
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  return [];
+  // Structure: [{ id, name, architect, location, surface, style, typology, budget, coverUrl, images: [{url, caption}], decryptage: { circulation, lumiere, espace, materiaux, details, notes }, date }]
+}
+
+function saveEtudes(arr) {
+  localStorage.setItem('architek-pro-etudes', JSON.stringify(arr));
+}
+
+const ETUDES_TYPOLOGIES = ['Appartement', 'Maison', 'Studio', 'Loft', 'Duplex', 'Bureau', 'Commerce', 'Hôtel / Hospitality', 'Restaurant', 'Autre'];
+const ETUDES_STYLES = ['Minimaliste', 'Contemporain', 'Japandi', 'Art Déco', 'Industriel', 'Scandinave', 'Brutaliste', 'Wabi-Sabi', 'Classique revisité', 'Méditerranéen', 'Mid-Century', 'Organique', 'Maximaliste', 'Autre'];
+const ETUDES_BUDGETS = ['< 20k €', '20-50k €', '50-100k €', '100-200k €', '200-500k €', '> 500k €', 'Non renseigné'];
+
+function renderEtudes(container) {
+  const etudes = loadEtudes();
+
+  // Header
+  const header = el('div', { className: 'etudes-header' });
+  header.innerHTML = `
+    <div class="etudes-header-top">
+      <div>
+        <h2>🏠 Études de Cas</h2>
+        <p>Documentez et décryptez les projets qui vous inspirent. Votre bibliothèque personnelle de références architecturales.</p>
+      </div>
+      <button class="btn-etude-add" id="etude-add-btn">+ Nouveau projet</button>
+    </div>
+    <div class="etudes-stats-bar">
+      <span class="etude-stat">${etudes.length} projet${etudes.length > 1 ? 's' : ''}</span>
+      <span class="etude-stat-sep">·</span>
+      <span class="etude-stat">${etudes.reduce((a, e) => a + (e.images ? e.images.length : 0), 0)} photos</span>
+      <span class="etude-stat-sep">·</span>
+      <span class="etude-stat">${etudes.filter(e => e.decryptage && (e.decryptage.circulation || e.decryptage.lumiere || e.decryptage.espace || e.decryptage.materiaux || e.decryptage.details || e.decryptage.notes)).length} décryptés</span>
+    </div>
+  `;
+  container.appendChild(header);
+
+  // Filter bar
+  if (etudes.length > 0) {
+    const filterBar = el('div', { className: 'etudes-filters' });
+    filterBar.innerHTML = `
+      <select id="etude-filter-style" class="etude-filter-select">
+        <option value="">Tous les styles</option>
+        ${ETUDES_STYLES.map(s => `<option value="${s}">${s}</option>`).join('')}
+      </select>
+      <select id="etude-filter-typo" class="etude-filter-select">
+        <option value="">Toutes les typologies</option>
+        ${ETUDES_TYPOLOGIES.map(t => `<option value="${t}">${t}</option>`).join('')}
+      </select>
+      <select id="etude-filter-budget" class="etude-filter-select">
+        <option value="">Tous les budgets</option>
+        ${ETUDES_BUDGETS.map(b => `<option value="${b}">${b}</option>`).join('')}
+      </select>
+      <input type="text" id="etude-filter-search" class="etude-filter-search" placeholder="Rechercher un projet, un architecte, un lieu…">
+    `;
+    container.appendChild(filterBar);
+  }
+
+  // Projects grid
+  const grid = el('div', { className: 'etudes-grid', id: 'etudes-grid' });
+
+  if (etudes.length === 0) {
+    grid.innerHTML = `
+      <div class="empty-state etudes-empty">
+        <div class="empty-state-icon">🏠</div>
+        <h3>Votre bibliothèque de projets est vide</h3>
+        <p>Commencez par ajouter un projet qui vous inspire.<br>Comme sur <strong>Sloft</strong>, documentez chaque visite avec photos, données et analyse.</p>
+      </div>
+    `;
+  } else {
+    renderEtudesGrid(etudes, grid);
+  }
+
+  container.appendChild(grid);
+
+  // Events
+  setTimeout(() => {
+    const addBtn = $('#etude-add-btn');
+    if (addBtn) addBtn.addEventListener('click', openEtudeModal);
+
+    // Filter events
+    const filterStyle = $('#etude-filter-style');
+    const filterTypo = $('#etude-filter-typo');
+    const filterBudget = $('#etude-filter-budget');
+    const filterSearch = $('#etude-filter-search');
+
+    function applyFilters() {
+      const style = filterStyle ? filterStyle.value : '';
+      const typo = filterTypo ? filterTypo.value : '';
+      const budget = filterBudget ? filterBudget.value : '';
+      const search = filterSearch ? filterSearch.value.toLowerCase().trim() : '';
+
+      let filtered = loadEtudes();
+      if (style) filtered = filtered.filter(e => e.style === style);
+      if (typo) filtered = filtered.filter(e => e.typology === typo);
+      if (budget) filtered = filtered.filter(e => e.budget === budget);
+      if (search) {
+        filtered = filtered.filter(e => {
+          const searchable = [e.name, e.architect, e.location, e.style, e.typology, e.surface].join(' ').toLowerCase();
+          return searchable.includes(search);
+        });
+      }
+
+      const g = $('#etudes-grid');
+      if (g) {
+        g.innerHTML = '';
+        if (filtered.length === 0) {
+          g.innerHTML = '<div class="etudes-no-results">Aucun projet ne correspond à ces filtres.</div>';
+        } else {
+          renderEtudesGrid(filtered, g);
+        }
+      }
+    }
+
+    if (filterStyle) filterStyle.addEventListener('change', applyFilters);
+    if (filterTypo) filterTypo.addEventListener('change', applyFilters);
+    if (filterBudget) filterBudget.addEventListener('change', applyFilters);
+    if (filterSearch) {
+      let debounce;
+      filterSearch.addEventListener('input', () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(applyFilters, 250);
+      });
+    }
+  }, 0);
+}
+
+function renderEtudesGrid(etudes, grid) {
+  etudes.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  etudes.forEach((projet, idx) => {
+    const card = el('div', { className: 'etude-card' });
+    const hasDecryptage = projet.decryptage && (projet.decryptage.circulation || projet.decryptage.lumiere || projet.decryptage.espace || projet.decryptage.materiaux || projet.decryptage.details || projet.decryptage.notes);
+
+    card.innerHTML = `
+      <div class="etude-card-cover" style="background-image: url('${projet.coverUrl || ''}')">
+        ${!projet.coverUrl ? '<div class="etude-card-no-cover">🏠</div>' : ''}
+        ${hasDecryptage ? '<span class="etude-badge-decrypted">✓ Décrypté</span>' : ''}
+        <div class="etude-card-overlay">
+          <span class="etude-card-surface">${projet.surface ? projet.surface + ' m²' : ''}</span>
+          ${projet.typology ? `<span class="etude-card-typo">${projet.typology}</span>` : ''}
+        </div>
+      </div>
+      <div class="etude-card-body">
+        <h3 class="etude-card-title">${projet.name}</h3>
+        ${projet.architect ? `<div class="etude-card-architect">par ${projet.architect}</div>` : ''}
+        <div class="etude-card-meta">
+          ${projet.location ? `<span class="etude-card-location">📍 ${projet.location}</span>` : ''}
+          ${projet.style ? `<span class="etude-card-style">${projet.style}</span>` : ''}
+        </div>
+        ${projet.budget && projet.budget !== 'Non renseigné' ? `<div class="etude-card-budget">💰 ${projet.budget}</div>` : ''}
+        <div class="etude-card-photos">${projet.images ? projet.images.length : 0} photo${(projet.images && projet.images.length > 1) ? 's' : ''}</div>
+      </div>
+    `;
+
+    card.addEventListener('click', () => openEtudeDetail(projet.id));
+    grid.appendChild(card);
+  });
+}
+
+function openEtudeModal(existingProjet = null) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+
+  const isEdit = existingProjet && existingProjet.id;
+  const p = isEdit ? existingProjet : {};
+
+  content.innerHTML = `
+    <div class="modal-title">${isEdit ? 'Modifier le projet' : 'Nouveau projet — Étude de Cas'}</div>
+    <div class="etude-modal-form">
+      <div class="etude-modal-row">
+        <div class="modal-field">
+          <label>Nom du projet *</label>
+          <input type="text" id="etude-name" placeholder="Ex: Loft Marais 65m² — Restructuration complète" value="${escapeHtml(p.name || '')}">
+        </div>
+      </div>
+      <div class="etude-modal-row etude-modal-row-2">
+        <div class="modal-field">
+          <label>Architecte / Designer</label>
+          <input type="text" id="etude-architect" placeholder="Nom de l'architecte ou du studio" value="${escapeHtml(p.architect || '')}">
+        </div>
+        <div class="modal-field">
+          <label>Localisation</label>
+          <input type="text" id="etude-location" placeholder="Paris 3e, Lyon, Milan…" value="${escapeHtml(p.location || '')}">
+        </div>
+      </div>
+      <div class="etude-modal-row etude-modal-row-3">
+        <div class="modal-field">
+          <label>Surface (m²)</label>
+          <input type="text" id="etude-surface" placeholder="65" value="${escapeHtml(p.surface || '')}">
+        </div>
+        <div class="modal-field">
+          <label>Typologie</label>
+          <select id="etude-typology">
+            <option value="">Choisir…</option>
+            ${ETUDES_TYPOLOGIES.map(t => `<option value="${t}" ${p.typology === t ? 'selected' : ''}>${t}</option>`).join('')}
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Budget travaux</label>
+          <select id="etude-budget">
+            <option value="">Choisir…</option>
+            ${ETUDES_BUDGETS.map(b => `<option value="${b}" ${p.budget === b ? 'selected' : ''}>${b}</option>`).join('')}
+          </select>
+        </div>
+      </div>
+      <div class="etude-modal-row">
+        <div class="modal-field">
+          <label>Style</label>
+          <select id="etude-style">
+            <option value="">Choisir…</option>
+            ${ETUDES_STYLES.map(s => `<option value="${s}" ${p.style === s ? 'selected' : ''}>${s}</option>`).join('')}
+          </select>
+        </div>
+      </div>
+      <div class="etude-modal-row">
+        <div class="modal-field">
+          <label>Image de couverture (URL)</label>
+          <input type="url" id="etude-cover" placeholder="https://... (.jpg, .png, .webp)" value="${escapeHtml(p.coverUrl || '')}">
+        </div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="etude-modal-cancel">Annuler</button>
+      <button class="btn btn-primary" id="etude-modal-save">${isEdit ? 'Enregistrer' : 'Créer le projet'}</button>
+    </div>
+  `;
+
+  $('#etude-modal-cancel').onclick = closeModal;
+  $('#etude-modal-save').onclick = () => {
+    const name = $('#etude-name').value.trim();
+    if (!name) { toast('Nom du projet requis'); return; }
+
+    const etudes = loadEtudes();
+
+    if (isEdit) {
+      const idx = etudes.findIndex(e => e.id === p.id);
+      if (idx >= 0) {
+        etudes[idx].name = name;
+        etudes[idx].architect = $('#etude-architect').value.trim();
+        etudes[idx].location = $('#etude-location').value.trim();
+        etudes[idx].surface = $('#etude-surface').value.trim();
+        etudes[idx].typology = $('#etude-typology').value;
+        etudes[idx].budget = $('#etude-budget').value;
+        etudes[idx].style = $('#etude-style').value;
+        etudes[idx].coverUrl = $('#etude-cover').value.trim();
+      }
+    } else {
+      etudes.push({
+        id: 'etude-' + Date.now(),
+        name,
+        architect: $('#etude-architect').value.trim(),
+        location: $('#etude-location').value.trim(),
+        surface: $('#etude-surface').value.trim(),
+        typology: $('#etude-typology').value,
+        budget: $('#etude-budget').value,
+        style: $('#etude-style').value,
+        coverUrl: $('#etude-cover').value.trim(),
+        images: [],
+        decryptage: { circulation: '', lumiere: '', espace: '', materiaux: '', details: '', notes: '' },
+        date: new Date().toISOString()
+      });
+    }
+
+    saveEtudes(etudes);
+    closeModal();
+    toast(isEdit ? 'Projet mis à jour ✓' : 'Projet créé ! 📐');
+    navigate('etudes');
+  };
+
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('input'); if (f) f.focus(); }, 100);
+}
+
+function openEtudeDetail(projetId) {
+  const etudes = loadEtudes();
+  const projet = etudes.find(e => e.id === projetId);
+  if (!projet) return;
+
+  const content = $('#content');
+  content.innerHTML = '';
+
+  const detail = el('div', { className: 'etude-detail' });
+
+  // Back button
+  const back = el('button', { className: 'etude-back-btn', onClick: () => navigate('etudes') });
+  back.innerHTML = '← Retour aux études de cas';
+  detail.appendChild(back);
+
+  // Cover hero
+  if (projet.coverUrl) {
+    const hero = el('div', { className: 'etude-detail-hero' });
+    hero.style.backgroundImage = `url('${projet.coverUrl}')`;
+    detail.appendChild(hero);
+  }
+
+  // Info header
+  const infoHeader = el('div', { className: 'etude-detail-info' });
+  infoHeader.innerHTML = `
+    <h1>${projet.name}</h1>
+    ${projet.architect ? `<div class="etude-detail-architect">par <strong>${projet.architect}</strong></div>` : ''}
+    <div class="etude-detail-meta">
+      ${projet.location ? `<span class="etude-meta-item">📍 ${projet.location}</span>` : ''}
+      ${projet.surface ? `<span class="etude-meta-item">📐 ${projet.surface} m²</span>` : ''}
+      ${projet.typology ? `<span class="etude-meta-item">🏠 ${projet.typology}</span>` : ''}
+      ${projet.style ? `<span class="etude-meta-item etude-meta-style">${projet.style}</span>` : ''}
+      ${projet.budget && projet.budget !== 'Non renseigné' ? `<span class="etude-meta-item">💰 ${projet.budget}</span>` : ''}
+    </div>
+    <div class="etude-detail-actions">
+      <button class="btn btn-small" id="etude-edit-btn">✏️ Modifier</button>
+      <button class="btn btn-small etude-btn-danger" id="etude-delete-btn">Supprimer</button>
+    </div>
+  `;
+  detail.appendChild(infoHeader);
+
+  // Gallery section
+  const gallery = el('div', { className: 'etude-gallery-section' });
+  gallery.innerHTML = `
+    <div class="etude-section-header">
+      <h2>📷 Galerie du projet</h2>
+      <button class="btn btn-small" id="etude-add-photo">+ Ajouter une photo</button>
+    </div>
+  `;
+
+  if (projet.images && projet.images.length > 0) {
+    const imgGrid = el('div', { className: 'etude-gallery-grid' });
+    projet.images.forEach((img, iIdx) => {
+      const imgCard = el('div', { className: 'etude-gallery-item' });
+      imgCard.innerHTML = `
+        <div class="etude-gallery-img-wrap">
+          <img src="${img.url}" alt="${img.caption || ''}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=ref-img-error>⚠️ Image inaccessible</div>'">
+        </div>
+        ${img.caption ? `<div class="etude-gallery-caption">${img.caption}</div>` : ''}
+        <button class="etude-gallery-del" data-iidx="${iIdx}" title="Supprimer">✕</button>
+      `;
+      imgGrid.appendChild(imgCard);
+    });
+    gallery.appendChild(imgGrid);
+  } else {
+    gallery.innerHTML += '<div class="etude-gallery-empty">Aucune photo. Ajoutez des images pour documenter ce projet.</div>';
+  }
+
+  detail.appendChild(gallery);
+
+  // Décryptage section (the core Sloft feature)
+  const decryptage = el('div', { className: 'etude-decryptage-section' });
+  const dec = projet.decryptage || {};
+  const hasAnyDecryptage = dec.circulation || dec.lumiere || dec.espace || dec.materiaux || dec.details || dec.notes;
+
+  decryptage.innerHTML = `
+    <div class="etude-section-header">
+      <h2>🔍 Décryptage</h2>
+      <button class="btn btn-small" id="etude-edit-decryptage">${hasAnyDecryptage ? '✏️ Modifier' : '+ Analyser ce projet'}</button>
+    </div>
+    <p class="etude-decryptage-intro">Comme un reportage Sloft, analysez ce qui fait la qualité de ce projet.</p>
+  `;
+
+  if (hasAnyDecryptage) {
+    const decGrid = el('div', { className: 'etude-decryptage-grid' });
+    const decItems = [
+      { key: 'circulation', icon: '🚪', label: 'Circulation & flux' },
+      { key: 'lumiere', icon: '☀️', label: 'Lumière naturelle' },
+      { key: 'espace', icon: '📐', label: 'Optimisation de l\'espace' },
+      { key: 'materiaux', icon: '🪨', label: 'Matériaux & palettes' },
+      { key: 'details', icon: '✨', label: 'Détails architecturaux' }
+    ];
+
+    decItems.forEach(item => {
+      if (dec[item.key]) {
+        const card = el('div', { className: 'etude-dec-card' });
+        card.innerHTML = `
+          <div class="etude-dec-card-header">
+            <span class="etude-dec-icon">${item.icon}</span>
+            <span class="etude-dec-label">${item.label}</span>
+          </div>
+          <p>${dec[item.key]}</p>
+        `;
+        decGrid.appendChild(card);
+      }
+    });
+
+    if (dec.notes) {
+      const notesCard = el('div', { className: 'etude-dec-card etude-dec-notes' });
+      notesCard.innerHTML = `
+        <div class="etude-dec-card-header">
+          <span class="etude-dec-icon">📝</span>
+          <span class="etude-dec-label">Notes & leçons à retenir</span>
+        </div>
+        <p>${dec.notes}</p>
+      `;
+      decGrid.appendChild(notesCard);
+    }
+
+    decryptage.appendChild(decGrid);
+  } else {
+    decryptage.innerHTML += `
+      <div class="etude-decryptage-empty">
+        <div class="etude-dec-empty-grid">
+          <span>🚪 Circulation</span>
+          <span>☀️ Lumière</span>
+          <span>📐 Espace</span>
+          <span>🪨 Matériaux</span>
+          <span>✨ Détails</span>
+          <span>📝 Notes</span>
+        </div>
+        <p>Cliquez sur « Analyser ce projet » pour décrypter chaque aspect.</p>
+      </div>
+    `;
+  }
+
+  detail.appendChild(decryptage);
+
+  content.appendChild(detail);
+
+  // Event bindings
+  setTimeout(() => {
+    const editBtn = $('#etude-edit-btn');
+    if (editBtn) editBtn.addEventListener('click', () => openEtudeModal(projet));
+
+    const deleteBtn = $('#etude-delete-btn');
+    if (deleteBtn) deleteBtn.addEventListener('click', () => {
+      if (confirm(`Supprimer "${projet.name}" et toutes ses données ?`)) {
+        const e = loadEtudes();
+        const idx = e.findIndex(et => et.id === projet.id);
+        if (idx >= 0) e.splice(idx, 1);
+        saveEtudes(e);
+        toast('Projet supprimé.');
+        navigate('etudes');
+      }
+    });
+
+    const addPhotoBtn = $('#etude-add-photo');
+    if (addPhotoBtn) addPhotoBtn.addEventListener('click', () => openEtudePhotoModal(projet.id));
+
+    const editDecBtn = $('#etude-edit-decryptage');
+    if (editDecBtn) editDecBtn.addEventListener('click', () => openDecryptageModal(projet.id));
+
+    $$('.etude-gallery-del').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const iIdx = parseInt(btn.dataset.iidx);
+        const etudes = loadEtudes();
+        const p = etudes.find(et => et.id === projet.id);
+        if (p) {
+          p.images.splice(iIdx, 1);
+          saveEtudes(etudes);
+          toast('Photo supprimée.');
+          openEtudeDetail(projet.id);
+        }
+      });
+    });
+  }, 0);
+}
+
+function openEtudePhotoModal(projetId) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+
+  content.innerHTML = `
+    <div class="modal-title">Ajouter une photo au projet</div>
+    <div class="modal-field">
+      <label>URL de l'image *</label>
+      <input type="url" id="etude-photo-url" placeholder="https://... (.jpg, .png, .webp)" autofocus>
+    </div>
+    <div class="modal-field">
+      <label>Légende</label>
+      <input type="text" id="etude-photo-caption" placeholder="Vue du salon, détail cuisine, avant/après…">
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="etude-photo-cancel">Annuler</button>
+      <button class="btn btn-primary" id="etude-photo-save">Ajouter</button>
+    </div>
+  `;
+
+  $('#etude-photo-cancel').onclick = closeModal;
+  $('#etude-photo-save').onclick = () => {
+    const url = $('#etude-photo-url').value.trim();
+    if (!url) { toast('URL de l\'image requise'); return; }
+    const etudes = loadEtudes();
+    const p = etudes.find(e => e.id === projetId);
+    if (p) {
+      if (!p.images) p.images = [];
+      if (p.images.length >= 30) { toast('Maximum 30 photos par projet.'); closeModal(); return; }
+      p.images.push({ url, caption: $('#etude-photo-caption').value.trim() });
+      saveEtudes(etudes);
+      closeModal();
+      toast('Photo ajoutée ✓');
+      openEtudeDetail(projetId);
+    }
+  };
+
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('input'); if (f) f.focus(); }, 100);
+}
+
+function openDecryptageModal(projetId) {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+
+  const etudes = loadEtudes();
+  const projet = etudes.find(e => e.id === projetId);
+  if (!projet) return;
+  const dec = projet.decryptage || {};
+
+  content.innerHTML = `
+    <div class="modal-title">🔍 Décryptage — ${projet.name}</div>
+    <p class="modal-subtitle-text">Analysez ce projet comme une visite guidée Sloft. Qu'est-ce qui rend cet espace réussi ?</p>
+    <div class="decryptage-form">
+      <div class="dec-form-field">
+        <label>🚪 Circulation & flux</label>
+        <textarea id="dec-circulation" placeholder="Comment circule-t-on dans cet espace ? Les zones sont-elles bien connectées ? Y a-t-il des perspectives traversantes ?">${dec.circulation || ''}</textarea>
+      </div>
+      <div class="dec-form-field">
+        <label>☀️ Lumière naturelle</label>
+        <textarea id="dec-lumiere" placeholder="Comment la lumière entre-t-elle ? D'où vient-elle ? Comment est-elle modulée (voilages, stores, claire-voie) ?">${dec.lumiere || ''}</textarea>
+      </div>
+      <div class="dec-form-field">
+        <label>📐 Optimisation de l'espace</label>
+        <textarea id="dec-espace" placeholder="Quelles astuces pour gagner de l'espace ? Rangements intégrés, double-fonction, meubles sur-mesure ?">${dec.espace || ''}</textarea>
+      </div>
+      <div class="dec-form-field">
+        <label>🪨 Matériaux & palettes</label>
+        <textarea id="dec-materiaux" placeholder="Quels matériaux sont utilisés ? Comment sont-ils combinés ? Quelle palette de couleurs ?">${dec.materiaux || ''}</textarea>
+      </div>
+      <div class="dec-form-field">
+        <label>✨ Détails architecturaux</label>
+        <textarea id="dec-details" placeholder="Le détail qui fait la différence : joints creux, plinthe affleurante, niche éclairée, poignée sur-mesure…">${dec.details || ''}</textarea>
+      </div>
+      <div class="dec-form-field">
+        <label>📝 Notes & leçons à retenir</label>
+        <textarea id="dec-notes" placeholder="Qu'est-ce que vous retenez de ce projet ? Que réutiliseriez-vous ?" style="min-height:100px">${dec.notes || ''}</textarea>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="dec-cancel">Annuler</button>
+      <button class="btn btn-primary" id="dec-save">Enregistrer le décryptage</button>
+    </div>
+  `;
+
+  $('#dec-cancel').onclick = closeModal;
+  $('#dec-save').onclick = () => {
+    const updated = loadEtudes();
+    const p = updated.find(e => e.id === projetId);
+    if (p) {
+      p.decryptage = {
+        circulation: $('#dec-circulation').value.trim(),
+        lumiere: $('#dec-lumiere').value.trim(),
+        espace: $('#dec-espace').value.trim(),
+        materiaux: $('#dec-materiaux').value.trim(),
+        details: $('#dec-details').value.trim(),
+        notes: $('#dec-notes').value.trim()
+      };
+      saveEtudes(updated);
+      closeModal();
+      toast('Décryptage enregistré ✓');
+      openEtudeDetail(projetId);
+    }
+  };
+
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('textarea'); if (f) f.focus(); }, 100);
+}
+
+// -------- Ma Veille (inspiré L'Œil de Sloft) --------
+function loadVeille() {
+  try {
+    const raw = localStorage.getItem('architek-pro-veille');
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  return [];
+  // Structure: [{ id, title, url, source, tags:[], note, imageUrl, date }]
+}
+
+function saveVeille(arr) {
+  localStorage.setItem('architek-pro-veille', JSON.stringify(arr));
+}
+
+const VEILLE_TAGS = ['Projet', 'Matériau', 'Designer', 'Tendance', 'Produit', 'Article', 'Salon / Event', 'Technique', 'Inspiration'];
+
+function renderVeille(container) {
+  const veille = loadVeille();
+
+  // Header
+  const header = el('div', { className: 'veille-header' });
+  header.innerHTML = `
+    <div class="veille-header-top">
+      <div>
+        <h2>👁 Ma Veille</h2>
+        <p>Votre œil d'architecte — collectez articles, projets, découvertes et tendances au fil de votre veille.</p>
+      </div>
+      <button class="btn-etude-add" id="veille-add-btn">+ Nouvelle découverte</button>
+    </div>
+  `;
+  container.appendChild(header);
+
+  // Filter tags
+  if (veille.length > 0) {
+    const filterBar = el('div', { className: 'veille-filter-bar' });
+    filterBar.innerHTML = '<button class="veille-filter-tag active" data-tag="">Tout</button>';
+    const usedTags = [...new Set(veille.flatMap(v => v.tags || []))];
+    usedTags.forEach(tag => {
+      filterBar.innerHTML += `<button class="veille-filter-tag" data-tag="${tag}">${tag}</button>`;
+    });
+    container.appendChild(filterBar);
+  }
+
+  // Feed
+  const feed = el('div', { className: 'veille-feed', id: 'veille-feed' });
+
+  if (veille.length === 0) {
+    feed.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">👁</div>
+        <h3>Votre veille commence ici</h3>
+        <p>Ajoutez vos découvertes — articles, projets, matériaux, tendances.<br>Comme « L'Œil de Sloft », constituez votre propre fil éditorial.</p>
+      </div>
+    `;
+  } else {
+    renderVeilleFeed(veille, feed);
+  }
+
+  container.appendChild(feed);
+
+  // Events
+  setTimeout(() => {
+    const addBtn = $('#veille-add-btn');
+    if (addBtn) addBtn.addEventListener('click', openVeilleModal);
+
+    // Tag filters
+    $$('.veille-filter-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        $$('.veille-filter-tag').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tag = btn.dataset.tag;
+        const allVeille = loadVeille();
+        const filtered = tag ? allVeille.filter(v => v.tags && v.tags.includes(tag)) : allVeille;
+        const f = $('#veille-feed');
+        if (f) {
+          f.innerHTML = '';
+          renderVeilleFeed(filtered, f);
+        }
+      });
+    });
+  }, 0);
+}
+
+function renderVeilleFeed(items, feed) {
+  // Group by month
+  const grouped = {};
+  items.sort((a, b) => new Date(b.date) - new Date(a.date));
+  items.forEach(item => {
+    const d = new Date(item.date);
+    const monthKey = d.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+    if (!grouped[monthKey]) grouped[monthKey] = [];
+    grouped[monthKey].push(item);
+  });
+
+  Object.entries(grouped).forEach(([month, monthItems]) => {
+    const monthGroup = el('div', { className: 'veille-month-group' });
+    monthGroup.innerHTML = `<div class="veille-month-label">${month.charAt(0).toUpperCase() + month.slice(1)}</div>`;
+
+    monthItems.forEach((item, idx) => {
+      const card = el('div', { className: 'veille-card' });
+      card.innerHTML = `
+        ${item.imageUrl ? `<div class="veille-card-img" style="background-image: url('${item.imageUrl}')"></div>` : ''}
+        <div class="veille-card-body">
+          <div class="veille-card-header">
+            <h3>${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
+            <button class="veille-card-del" data-id="${item.id}" title="Supprimer">✕</button>
+          </div>
+          ${item.source ? `<div class="veille-card-source">${escapeHtml(item.source)}</div>` : ''}
+          ${item.note ? `<p class="veille-card-note">${escapeHtml(item.note)}</p>` : ''}
+          <div class="veille-card-footer">
+            <div class="veille-card-tags">${(item.tags || []).map(t => `<span class="veille-tag">${t}</span>`).join('')}</div>
+            <span class="veille-card-date">${new Date(item.date).toLocaleDateString('fr-FR')}</span>
+          </div>
+        </div>
+      `;
+      monthGroup.appendChild(card);
+    });
+
+    feed.appendChild(monthGroup);
+  });
+
+  // Bind delete events
+  setTimeout(() => {
+    $$('.veille-card-del').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
+        const veille = loadVeille();
+        const idx = veille.findIndex(v => v.id === id);
+        if (idx >= 0) {
+          veille.splice(idx, 1);
+          saveVeille(veille);
+          toast('Élément supprimé.');
+          navigate('veille');
+        }
+      });
+    });
+  }, 0);
+}
+
+function openVeilleModal() {
+  const overlay = $('#modal-overlay');
+  const content = $('#modal-content');
+  overlay.classList.remove('hidden');
+
+  content.innerHTML = `
+    <div class="modal-title">👁 Nouvelle découverte</div>
+    <div class="modal-field">
+      <label>Titre *</label>
+      <input type="text" id="veille-title" placeholder="Ex: Appartement Haussmannien revisité — AD Magazine" autofocus>
+    </div>
+    <div class="modal-field">
+      <label>URL (article, Instagram, Pinterest…)</label>
+      <input type="url" id="veille-url" placeholder="https://...">
+    </div>
+    <div class="modal-field">
+      <label>Source</label>
+      <input type="text" id="veille-source" placeholder="AD Magazine, Instagram @studio.xyz, Sloft, Pinterest…">
+    </div>
+    <div class="modal-field">
+      <label>Image (URL)</label>
+      <input type="url" id="veille-image" placeholder="https://... (optionnel, pour illustrer)">
+    </div>
+    <div class="modal-field">
+      <label>Tags</label>
+      <div class="veille-tags-selector" id="veille-tags-sel">
+        ${VEILLE_TAGS.map(t => `<label class="veille-tag-option"><input type="checkbox" value="${t}"> ${t}</label>`).join('')}
+      </div>
+    </div>
+    <div class="modal-field">
+      <label>Note personnelle</label>
+      <textarea id="veille-note" placeholder="Pourquoi ça vous a marqué ? Qu'est-ce que vous en retenez ?"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="veille-modal-cancel">Annuler</button>
+      <button class="btn btn-primary" id="veille-modal-save">Ajouter</button>
+    </div>
+  `;
+
+  $('#veille-modal-cancel').onclick = closeModal;
+  $('#veille-modal-save').onclick = () => {
+    const title = $('#veille-title').value.trim();
+    if (!title) { toast('Titre requis'); return; }
+
+    const selectedTags = [...$$('#veille-tags-sel input:checked')].map(cb => cb.value);
+
+    const veille = loadVeille();
+    veille.push({
+      id: 'veille-' + Date.now(),
+      title,
+      url: $('#veille-url').value.trim(),
+      source: $('#veille-source').value.trim(),
+      imageUrl: $('#veille-image').value.trim(),
+      tags: selectedTags,
+      note: $('#veille-note').value.trim(),
+      date: new Date().toISOString()
+    });
+
+    saveVeille(veille);
+    closeModal();
+    toast('Découverte ajoutée ! 👁');
+    navigate('veille');
+  };
+
+  overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
+  setTimeout(() => { const f = content.querySelector('input'); if (f) f.focus(); }, 100);
+}
+
 // -------- Search --------
 function renderSearch(container) {
   const query = state.searchQuery.toLowerCase().trim();
@@ -1693,6 +2554,18 @@ function initNavEvents() {
   const srcLink = $('[data-view="sourcing"]');
   if (srcLink) {
     srcLink.addEventListener('click', (e) => { e.preventDefault(); navigate('sourcing'); closeMobileMenu(); });
+  }
+
+  // Etudes de cas link
+  const etudesLink = $('[data-view="etudes"]');
+  if (etudesLink) {
+    etudesLink.addEventListener('click', (e) => { e.preventDefault(); navigate('etudes'); closeMobileMenu(); });
+  }
+
+  // Ma Veille link
+  const veilleLink = $('[data-view="veille"]');
+  if (veilleLink) {
+    veilleLink.addEventListener('click', (e) => { e.preventDefault(); navigate('veille'); closeMobileMenu(); });
   }
 }
 
