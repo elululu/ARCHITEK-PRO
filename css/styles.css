@@ -159,6 +159,21 @@ textarea {
   color: rgba(255,255,255,0.25);
   padding: 20px 24px 8px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity var(--transition);
+}
+
+.nav-separator:hover {
+  opacity: 0.8;
+}
+
+.nav-separator-arrow {
+  font-size: 0.7rem;
+  opacity: 0.5;
 }
 
 .nav-item {
@@ -2993,4 +3008,239 @@ mark {
 .dash-veille-date {
   font-size: 0.7rem;
   color: var(--text-tertiary);
+}
+
+/* ========================================
+   RELATED FICHES
+   ======================================== */
+.related-fiches {
+  margin: 40px 0 0;
+  padding: 28px 0 0;
+  border-top: 2px solid var(--border);
+}
+
+.related-fiches h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.related-fiches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.related-fiche-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.related-fiche-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.related-fiche-domain {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.related-fiche-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.related-fiche-subtitle {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ========================================
+   DOMAIN FILTER BAR
+   ======================================== */
+.domain-filter-bar {
+  margin-bottom: 24px;
+}
+
+.domain-filter-input {
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  background: var(--surface);
+  font-size: 0.85rem;
+  max-width: 400px;
+  transition: all var(--transition);
+}
+
+.domain-filter-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(184, 149, 106, 0.1);
+}
+
+.domain-filter-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* ========================================
+   RANDOM FICHE BUTTON
+   ======================================== */
+.dashboard-random {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn-random {
+  padding: 12px 32px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: var(--accent);
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.btn-random:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   BACK TO TOP BUTTON
+   ======================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text-active);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  z-index: 90;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-lg);
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+
+.back-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+  #sidebar,
+  #topbar,
+  .menu-toggle,
+  .fiche-detail-actions,
+  .personal-section,
+  .related-fiches,
+  .back-to-top,
+  #toast-container,
+  #modal-overlay {
+    display: none !important;
+  }
+
+  #main {
+    margin-left: 0 !important;
+  }
+
+  #content {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+
+  .fiche-detail {
+    max-width: 100%;
+  }
+
+  .fiche-detail h1 {
+    font-size: 24pt;
+    color: black;
+  }
+
+  .fiche-detail-subtitle {
+    color: #555;
+  }
+
+  .fiche-section h3 {
+    font-size: 14pt;
+    color: black;
+    page-break-after: avoid;
+  }
+
+  .fiche-section p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .key-points {
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    page-break-inside: avoid;
+  }
+
+  .practical-tips {
+    border: 1px solid #ccc;
+    background: #f0f8f0;
+    page-break-inside: avoid;
+  }
+
+  .tag {
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+  }
+
+  a { color: black; text-decoration: none; }
+
+  /* Show URL after links for reference */
+  .fiche-section a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #777;
+  }
 }

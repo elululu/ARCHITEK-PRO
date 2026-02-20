@@ -257,6 +257,21 @@ function renderDashboard(container) {
   container.appendChild(hero);
   container.appendChild(statsRow);
 
+  // Random fiche button
+  const randomRow = el('div', { className: 'dashboard-random' });
+  const randomBtn = el('button', {
+    className: 'btn-random',
+    onClick: () => {
+      const allFiches = [];
+      APP_DATA.domains.forEach(d => d.fiches.forEach(f => allFiches.push({ d, f })));
+      const pick = allFiches[Math.floor(Math.random() * allFiches.length)];
+      navigate('fiche', pick.d.id, pick.f.id);
+    }
+  });
+  randomBtn.innerHTML = '✦ Découvrir une fiche au hasard';
+  randomRow.appendChild(randomBtn);
+  container.appendChild(randomRow);
+
   // Sloft-inspired editorial sections
   // --- Recent études de cas ---
   if (etudes.length > 0) {
@@ -358,6 +373,29 @@ function renderDomain(container) {
     <p>${d.description}</p>
   `;
   container.appendChild(header);
+
+  // Quick filter
+  if (d.fiches.length > 6) {
+    const filterBar = el('div', { className: 'domain-filter-bar' });
+    const filterInput = el('input', {
+      type: 'text',
+      className: 'domain-filter-input',
+      placeholder: `Filtrer dans ${d.name} (${d.fiches.length} fiches)...`,
+      onInput: (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        $$('.fiche-card', container).forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = q === '' || text.includes(q) ? '' : 'none';
+        });
+        $$('.category-group', container).forEach(group => {
+          const visibleCards = $$('.fiche-card', group).filter(c => c.style.display !== 'none');
+          group.style.display = visibleCards.length === 0 && q !== '' ? 'none' : '';
+        });
+      }
+    });
+    filterBar.appendChild(filterInput);
+    container.appendChild(filterBar);
+  }
 
   // Check if fiches have categories
   const hasCategories = d.fiches.some(f => f.category);
@@ -480,6 +518,9 @@ function renderFiche(container) {
     detail.appendChild(tips);
   }
 
+  // Related fiches
+  detail.appendChild(renderRelatedFiches(d, f));
+
   // Personal section
   detail.appendChild(renderPersonalSection(key));
 
@@ -505,6 +546,49 @@ function renderFiche(container) {
   
   detail.appendChild(nav);
   container.appendChild(detail);
+}
+
+function getRelatedFiches(currentDomain, currentFiche, maxResults = 4) {
+  const currentTags = new Set(currentFiche.tags.map(t => t.toLowerCase()));
+  const scored = [];
+
+  APP_DATA.domains.forEach(d => {
+    d.fiches.forEach(f => {
+      if (d.id === currentDomain.id && f.id === currentFiche.id) return;
+      const fTags = new Set(f.tags.map(t => t.toLowerCase()));
+      let score = 0;
+      currentTags.forEach(t => { if (fTags.has(t)) score++; });
+      if (score > 0) scored.push({ domain: d, fiche: f, score });
+    });
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, maxResults);
+}
+
+function renderRelatedFiches(domain, fiche) {
+  const related = getRelatedFiches(domain, fiche);
+  if (related.length === 0) return el('div');
+
+  const section = el('div', { className: 'related-fiches' });
+  section.innerHTML = `<h3>🔗 Fiches Liées</h3>`;
+  const grid = el('div', { className: 'related-fiches-grid' });
+
+  related.forEach(r => {
+    const card = el('div', {
+      className: 'related-fiche-card',
+      onClick: () => navigate('fiche', r.domain.id, r.fiche.id)
+    });
+    card.innerHTML = `
+      <span class="related-fiche-domain">${r.domain.icon} ${r.domain.name}</span>
+      <span class="related-fiche-title">${r.fiche.title}</span>
+      <span class="related-fiche-subtitle">${r.fiche.subtitle}</span>
+    `;
+    grid.appendChild(card);
+  });
+
+  section.appendChild(grid);
+  return section;
 }
 
 function renderPersonalSection(key) {
@@ -2569,12 +2653,51 @@ function initNavEvents() {
   }
 }
 
+// ============ BACK TO TOP ============
+function initBackToTop() {
+  const btn = document.createElement('button');
+  btn.id = 'back-to-top';
+  btn.className = 'back-to-top hidden';
+  btn.innerHTML = '↑';
+  btn.title = 'Retour en haut';
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.body.appendChild(btn);
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('hidden', window.scrollY < 400);
+  });
+}
+
+// ============ COLLAPSIBLE SIDEBAR SECTIONS ============
+function initCollapsibleSidebar() {
+  $$('.nav-separator').forEach(sep => {
+    sep.style.cursor = 'pointer';
+    sep.style.userSelect = 'none';
+    const arrow = document.createElement('span');
+    arrow.className = 'nav-separator-arrow';
+    arrow.textContent = '▾';
+    sep.appendChild(arrow);
+
+    sep.addEventListener('click', () => {
+      sep.classList.toggle('collapsed');
+      arrow.textContent = sep.classList.contains('collapsed') ? '▸' : '▾';
+      let next = sep.nextElementSibling;
+      while (next && !next.classList.contains('nav-separator')) {
+        next.style.display = sep.classList.contains('collapsed') ? 'none' : '';
+        next = next.nextElementSibling;
+      }
+    });
+  });
+}
+
 // ============ INIT ============
 function init() {
   buildSidebar();
   initNavEvents();
   initSearch();
   initMobileMenu();
+  initBackToTop();
+  initCollapsibleSidebar();
   navigate('dashboard');
 }
 
