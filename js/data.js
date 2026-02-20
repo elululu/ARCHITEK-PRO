@@ -2060,6 +2060,404 @@ const APP_DATA = {
           tags: ['tendances', '2025', '2026', 'quiet luxury', 'artisanat', 'biophilic']
         }
       ]
+    },
+
+    // ====================================
+    // 9. VOCABULAIRE PRO
+    // ====================================
+    {
+      id: 'vocabulaire',
+      name: 'Vocabulaire Pro',
+      icon: '✎',
+      color: '#7B8E6E',
+      description: 'Les termes essentiels pour parler comme un pro — en présentation client et en réunion technique avec les entreprises.',
+      fiches: [
+        // --- PRÉSENTATION CLIENT ---
+        {
+          id: 'vocab-ambiance-style',
+          category: 'Présentation Client',
+          title: 'Vocabulaire d\'Ambiance & Style',
+          subtitle: 'Les mots pour décrire un univers',
+          summary: 'Le vocabulaire qui vous permet de nommer une ambiance, de qualifier un style et de communiquer votre vision au client de façon précise et séduisante.',
+          sections: [
+            {
+              title: 'Qualifier une ambiance',
+              content: 'Épuré / Dépouillé : minimum d\'éléments, tout est essentiel. Chaleureux : qui dégage une sensation d\'accueil (matériaux naturels, lumière dorée). Feutré : doux, intime, absorbant (velours, moquette, lumière tamisée). Aérien : impression de légèreté, de transparence. Cosy : confortable et enveloppant, à petite échelle. Brut : matériaux laissés dans leur état naturel (béton, bois non traité). Minéral : dominante pierre, béton, teintes grises. Organique : formes et matériaux inspirés de la nature. Monacal : simplicité extrême, presque austère, d\'inspiration monastique. Bohème : éclectique, coloré, accumulateur, voyageur.'
+            },
+            {
+              title: 'Décrire les proportions et l\'espace',
+              content: 'Généreux : grand volume, espaces amples. Intimiste : petit espace traité comme un cocon. Fluide : circulation naturelle entre les espaces, sans obstacle. Cloisonné : espaces bien séparés, chaque pièce a sa fonction. Décloisonné / Open space : suppression des séparations pour ouvrir l\'espace. Double hauteur : espace sur deux niveaux sans plancher intermédiaire. Cathédrale (plafond) : très haute hauteur sous plafond. Mansardé : sous les toits, avec rampants. En enfilade : pièces alignées qui se traversent. Traversant : logement qui donne sur deux façades opposées.'
+            },
+            {
+              title: 'Parler des couleurs au client',
+              content: 'Teinte sourde : couleur atténuée, voilée, élégante (vs. vive). Ton sur ton : camaïeu de nuances proches (ex. beige + sable + crème). Accent de couleur : touche de couleur forte dans un ensemble neutre (un coussin jaune dans un salon gris). Palette chromatique : l\'ensemble des couleurs choisies pour le projet. Neutre chaud : blanc cassé, beige, grège, sable. Neutre froid : gris, blanc bleuté, taupe. Terreux : couleurs de la terre (terracotta, ocre, brun). Poudrée : couleur douce, comme passée au filtre (rose poudré, bleu poudré).'
+            },
+            {
+              title: 'Exprimer une intention de design',
+              content: 'Signature : l\'élément distinctif d\'un espace (« la cuisine est la signature de ce projet »). Pièce maîtresse / Statement piece : le meuble ou l\'objet qui ancre tout l\'espace. Point focal : l\'endroit où le regard est attiré en premier (cheminée, œuvre d\'art, vue). Dialogue (entre matériaux) : quand deux matériaux se répondent harmonieusement (bois + métal). Respiration : espace vide volontaire qui donne de l\'air à la composition. Rythme : répétition d\'un élément (les arches, les niches, les luminaires alignés). Contraste : opposition volontaire (lisse/rugueux, clair/foncé, ancien/moderne).'
+            }
+          ],
+          keyPoints: [
+            '« Épuré » est plus séduisant que « vide » — le choix des mots change la perception',
+            'Un client ne comprend pas « zénithale » — dites « lumière qui vient du toit »',
+            'Toujours associer un mot technique à une image ou un exemple concret',
+            'Le vocabulaire d\'ambiance est votre outil de vente n°1',
+            'Adapter son vocabulaire au client : luxe (« feutré, raffiné ») vs. jeune (« clean, cozy »)'
+          ],
+          tips: [
+            'Préparer 3-4 mots clés qui définissent l\'ambiance du projet avant chaque présentation',
+            'Créer un « mood lexique » par projet : les 10 mots qui le résument',
+            'S\'entraîner à décrire des images d\'espaces à voix haute — ça se travaille'
+          ],
+          tags: ['vocabulaire', 'client', 'ambiance', 'style', 'présentation', 'communication']
+        },
+        {
+          id: 'vocab-materiaux-client',
+          category: 'Présentation Client',
+          title: 'Parler Matériaux au Client',
+          subtitle: 'Traduire la technique en émotion',
+          summary: 'Le client ne veut pas un cours de géologie. Il veut savoir ce qu\'il va RESSENTIR. Voici comment parler des matériaux de façon accessible et désirable.',
+          sections: [
+            {
+              title: 'Pierre naturelle — le vocabulaire client',
+              content: 'Veiné : la pierre a des lignes naturelles (comme le marbre de Carrare). Moucheté : petits points dans la masse (comme le granit). Flammé / Brossé / Adouci / Poli : les finitions, du plus rugueux au plus brillant. Pour le client : « un toucher satiné » (adouci) ou « un effet miroir » (poli). Patiné : qui a vieilli naturellement et en est plus beau. Monolithique : en un seul bloc, impression de solidité.'
+            },
+            {
+              title: 'Bois — le vocabulaire client',
+              content: 'Veinage : le dessin naturel du bois (serré = chêne, spectaculaire = noyer). Essence : le type de bois (pas « espèce » ni « sorte »). Massif : bois plein, pas reconstitué. Contrecollé : couche noble sur support — PAS du faux (c\'est ce qui se pose le plus en parquet). Brut / Huilé / Vernis / Ciré : les finitions, du plus naturel au plus protégé. Chaleureux, vivant, noble : les mots que le client veut entendre pour le bois.'
+            },
+            {
+              title: 'Métal — le vocabulaire client',
+              content: 'Patiné : le métal qui a pris une teinte avec le temps (le laiton qui verdit). Brossé : rayures fines qui adoucissent le reflet. Satiné : entre mat et brillant. Forgé : travaillé à la main par un artisan. Thermolaqué : peint au four (pour l\'acier, les cadres). Doré à chaud / à froid : finition dorée sur un autre métal — préciser si c\'est du vrai laiton ou un traitement de surface.'
+            },
+            {
+              title: 'Textiles & revêtements — le vocabulaire client',
+              content: 'Tombé : la façon dont un tissu retombe (un rideau avec « un beau tombé »). Main : le toucher du tissu quand on le prend en main. Drapé : quand le tissu forme des plis souples et élégants. Texturé : qui a du relief au toucher. Nubuck / Daim : cuir poncé doux (jamais « du faux cuir » → dire « similicuir » ou « cuir végan »). Mat / Satiné / Brillant : les trois niveaux de reflet pour les peintures et enduits.'
+            }
+          ],
+          keyPoints: [
+            'Le client retient les sensations (toucher, chaleur) plus que les termes techniques',
+            'Toujours apporter un échantillon — un mot + un toucher = conviction',
+            '« Contrecollé » n\'est PAS du faux bois — expliquer que c\'est le standard pro actuel',
+            'Éviter le jargon brut : pas « ragréage » mais « on reprend le sol pour qu\'il soit parfaitement plan »',
+            'Le mot « naturel » est le plus puissant en présentation client'
+          ],
+          tips: [
+            'Créer une « matériauthèque de poche » avec 10-15 échantillons à apporter en RDV client',
+            'Raconter l\'histoire du matériau : « ce marbre vient de Carrare, les mêmes carrières que Michel-Ange »',
+            'Utiliser des comparaisons : « un toucher aussi doux que du cachemire » pour le velours'
+          ],
+          tags: ['vocabulaire', 'matériaux', 'client', 'présentation', 'communication', 'sensations']
+        },
+        {
+          id: 'vocab-presenter-projet',
+          category: 'Présentation Client',
+          title: 'Pitcher son Projet',
+          subtitle: 'Les formules qui convainquent',
+          summary: 'Un projet bien présenté se vend deux fois mieux. Voici les structures de phrase, les tournures et le vocabulaire qui transforment une présentation en expérience.',
+          sections: [
+            {
+              title: 'Ouvrir la présentation',
+              content: '« L\'idée directrice de ce projet, c\'est… » — toujours commencer par le concept. « On a voulu créer un espace qui raconte votre histoire / qui vous ressemble. » « L\'intention, c\'est de… » (pas « on a fait », mais « l\'intention c\'est de » — ça élève le propos). « Imaginez que vous rentrez chez vous le soir… » — embarquer le client dans une narration. Ne JAMAIS commencer par « alors là on a mis du parquet et là on a mis de la peinture grise ».'
+            },
+            {
+              title: 'Décrire les choix',
+              content: '« On a choisi le [matériau] pour sa [qualité] et parce qu\'il dialogue avec [autre élément]. » « Cette teinte apporte de la [sérénité/chaleur/profondeur] sans alourdir l\'espace. » « Le contraste entre le [X brut] et le [Y doux] crée une tension élégante. » « C\'est un clin d\'œil à [référence architecturale/votre goût pour...]. » « On a volontairement laissé cet espace respirer pour que le regard se pose sur [point focal]. »'
+            },
+            {
+              title: 'Répondre aux objections',
+              content: '« Je comprends votre inquiétude, et c\'est justement pour ça que… » (valider puis redirectionner). « Le budget est optimisé parce que… » (pas « c\'est pas cher » mais « le budget est maîtrisé »). « C\'est un investissement dans la durée — ce matériau vieillit bien et prend de la valeur. » « On peut ajuster ce point sans compromettre l\'ensemble — voici une alternative… » « D\'expérience, les clients qui ont fait ce choix ne le regrettent jamais. »'
+            },
+            {
+              title: 'Conclure avec impact',
+              content: '« En résumé, ce projet c\'est [3 mots clés]. » « On vous propose un espace [adjectif], [adjectif], qui [bénéfice émotionnel]. » « La prochaine étape, c\'est… » — toujours finir par l\'action suivante. « Qu\'est-ce qui vous parle le plus dans ce qu\'on vient de voir ? » — ouvrir le dialogue, ne pas attendre un oui/non. Ne jamais finir par « voilà… donc… euh… vous en pensez quoi ? »'
+            }
+          ],
+          keyPoints: [
+            'Un projet se pitch en 3 mots clés maximum (« minéral, lumineux, enveloppant »)',
+            'Raconter une HISTOIRE, pas une liste de matériaux',
+            'Valider les objections avant de répondre — le client se sent écouté',
+            '« Investissement » > « dépense ». « Maîtrisé » > « pas cher ». « Ajuster » > « changer ».',
+            'Toujours finir par la prochaine étape concrète'
+          ],
+          tips: [
+            'Répéter sa présentation à voix haute avant le RDV — même 5 minutes dans la voiture',
+            'Préparer 3 formules d\'objection type et les avoir en tête',
+            'Filmer ses présentations (avec accord) pour progresser'
+          ],
+          tags: ['vocabulaire', 'pitch', 'présentation', 'client', 'communication', 'vente']
+        },
+        // --- TECHNIQUE CHANTIER ---
+        {
+          id: 'vocab-gros-oeuvre',
+          category: 'Technique Chantier',
+          title: 'Vocabulaire Gros Œuvre',
+          subtitle: 'Parler structure avec les entreprises',
+          summary: 'Les termes que maçons, charpentiers et entrepreneurs généraux utilisent. Les comprendre évite les malentendus et vous crédibilise sur le chantier.',
+          sections: [
+            {
+              title: 'Structure & murs',
+              content: 'Mur porteur : mur qui soutient la structure — on ne le touche PAS sans ingénieur structure. Mur de refend : mur porteur intérieur. Cloison : paroi non porteuse, peut être déplacée/supprimée. Cloison alvéolaire : cloison légère creuse (pas de charge, pas d\'accroche lourde). Placo / BA13 : plaques de plâtre de 13mm, la cloison standard. Ossature métallique : les rails et montants qui supportent le placo. Doublage : isolation + placo posé contre un mur existant. IPN / HEA / HEB : poutrelles métalliques pour remplacer un mur porteur (l\'ingénieur calcule la section).'
+            },
+            {
+              title: 'Sols & niveaux',
+              content: 'Dalle : la structure porteuse du sol (béton). Chape : couche de mortier coulée sur la dalle pour la mettre de niveau. Ragréage : enduit autolissant fin (3-10mm) pour rattraper les petites imperfections avant la pose du sol. Réservation : trou ou espace laissé dans la dalle/chape pour un passage technique (canalisation, gaine). Seuil : barre de transition entre deux sols ou sous une porte. Arase / Arasement : mettre à niveau, aplanir. Sous-couche : matériau posé entre la chape et le revêtement final (isolation phonique, film pare-vapeur).'
+            },
+            {
+              title: 'Ouvertures & menuiserie structure',
+              content: 'Linteau : poutre au-dessus d\'une ouverture (porte, fenêtre) qui reporte les charges. Tableau : les faces latérales d\'une ouverture dans un mur. Appui de fenêtre : la partie basse extérieure d\'une fenêtre (pente pour l\'eau). Embrasure : l\'épaisseur du mur visible au niveau de l\'ouverture. Dormant : le cadre fixe d\'une fenêtre ou porte scellé dans le mur. Ouvrant : la partie mobile (le vantail). Huisserie / Bâti : le cadre métallique ou bois scellé dans le mur pour recevoir une porte. Feuillure : l\'entaille dans le bâti où vient se loger la porte.'
+            },
+            {
+              title: 'Termes de chantier courants',
+              content: 'Démolition sélective : ne casser que ce qui doit l\'être (vs. « tout péter »). Étaiement : soutien temporaire d\'une structure pendant les travaux. Échafaudage : structure temporaire pour travailler en hauteur. Benne : conteneur pour évacuer les gravats. Gravats : déchets de démolition. Curage : enlever tout ce qui est non structurel (cloisons, sols, plafonds). Reprise en sous-œuvre : renforcer des fondations existantes (travail lourd et cher).'
+            }
+          ],
+          keyPoints: [
+            'MUR PORTEUR = danger — toujours faire vérifier par un ingénieur structure avant toute ouverture',
+            'BA13 ≠ mur solide — ne supporte pas plus de 30kg/point d\'accroche (avec chevilles spéciales)',
+            'Ragréage et chape sont DIFFÉRENTS — le ragréage est une finition, la chape une structure',
+            'Le linteau est vital — pas de linteau = le mur s\'effondre au-dessus de l\'ouverture',
+            'Connaître ces termes vous crédibilise face aux entrepreneurs'
+          ],
+          tips: [
+            'Demander le rapport de l\'ingénieur structure AVANT de signer les devis si vous ouvrez des murs porteurs',
+            'Prendre une photo de chaque mur porteur identifié et le marquer sur les plans en rouge',
+            'Le curage complet coûte 30-60€/m² — le budgeter correctement'
+          ],
+          tags: ['vocabulaire', 'technique', 'gros œuvre', 'structure', 'chantier', 'maçonnerie']
+        },
+        {
+          id: 'vocab-second-oeuvre',
+          category: 'Technique Chantier',
+          title: 'Vocabulaire Second Œuvre',
+          subtitle: 'Plomberie, électricité, finitions',
+          summary: 'Les termes techniques de la plomberie, de l\'électricité et des finitions que vous entendrez quotidiennement sur un chantier.',
+          sections: [
+            {
+              title: 'Plomberie & sanitaire',
+              content: 'Alimentation : les tuyaux qui AMÈNENT l\'eau (pression). Évacuation : les tuyaux qui ÉVACUENT l\'eau (gravité). PER : tuyau flexible en polyéthylène (standard actuel pour l\'alimentation). Cuivre : tuyau rigide, plus cher mais plus durable (ancien standard). Siphon : le coude en S/P sous l\'évier qui empêche les odeurs de remonter. Nourrice / Collecteur : le point de distribution où arrivent toutes les alimentations (comme un tableau électrique pour l\'eau). Chute : la canalisation verticale d\'évacuation de l\'immeuble. Colonne montante : l\'alimentation verticale de l\'immeuble. Vanne d\'arrêt : le robinet qui coupe l\'eau. Mitigeur : robinet avec une seule manette (chaud/froid). Mélangeur : robinet avec deux manettes séparées (chaud et froid).'
+            },
+            {
+              title: 'Électricité',
+              content: 'Tableau électrique : le « cerveau » de l\'installation, avec les disjoncteurs. Disjoncteur : l\'interrupteur de sécurité qui coupe le courant en cas de surcharge. Différentiel : le disjoncteur qui détecte les fuites de courant (protection des personnes). Circuit : une ligne électrique dédiée (ex: un circuit pour les prises cuisine, un pour l\'éclairage). Phase / Neutre / Terre : les 3 fils (marron ou rouge / bleu / vert-jaune). Gaine ICTA : le tube flexible qui protège les fils dans les murs. Encastré : les fils passent DANS le mur (standard en rénovation). Apparent : les fils passent dans des goulottes visibles (moins cher, moins esthétique). Appareillage : l\'ensemble prises + interrupteurs + sorties de câbles (Legrand, Schneider, Meljac pour le luxe).'
+            },
+            {
+              title: 'Menuiserie intérieure',
+              content: 'Bâti / Huisserie : le cadre de la porte scellé dans le mur. Bloc-porte : ensemble prêt à poser (bâti + ouvrant + quincaillerie). Vantail : le panneau mobile de la porte. Paumelle : la charnière de porte (invisible = plus esthétique). Serrure à encastrer : intégrée dans l\'épaisseur de la porte. Galandage : porte coulissante qui rentre DANS le mur (nécessite une épaisseur de cloison doublée). Coulissant en applique : porte coulissante devant le mur (type grange). Doucine / Moulure : profil décoratif (plafond, cadre de porte). Gorge lumineuse : moulure creuse qui cache un éclairage LED indirect.'
+            },
+            {
+              title: 'Revêtements & finitions',
+              content: 'Calepinage : le dessin de la pose (comment les carreaux sont disposés, les joints, les coupes). Joints de dilatation : espaces prévus pour que le matériau travaille (bois, carrelage grande surface). Pose collée : le revêtement est collé directement sur le support. Pose flottante : le revêtement est posé libre, sans colle (parquet clipsé). Pose scellée : le carrelage est posé dans un lit de mortier (ancien, plus solide). Barbotine : la colle à carrelage liquide. Primaire d\'accrochage : produit appliqué avant la colle/l\'enduit pour assurer l\'adhérence. Sous-couche : la première couche de peinture (fixe le support). Lasure : protection transparente pour le bois (laisse voir le veinage). Vitrificateur : vernis de protection pour le parquet.'
+            }
+          ],
+          keyPoints: [
+            'PER = standard actuel pour la plomberie (flexible, pas cher, facile à poser)',
+            'Toujours demander un plan du tableau électrique à jour après les travaux',
+            'Galandage = esthétique mais nécessite de doubler l\'épaisseur de cloison — à prévoir en amont',
+            'Le calepinage est le secret d\'un beau carrelage — ne pas le laisser au carreleur seul',
+            'Gorge lumineuse = le détail qui élève un espace — budget faible, effet maximal'
+          ],
+          tips: [
+            'Demander l\'appareillage électrique (Legrand Céliane, Schneider Odace) — c\'est un détail que le client voit tous les jours',
+            'Toujours vérifier le calepinage sur plan AVANT la pose — les coupes disgracieuses se prévoient',
+            'La gorge lumineuse se prévoit au moment du placo, pas après — anticiper'
+          ],
+          tags: ['vocabulaire', 'technique', 'plomberie', 'électricité', 'menuiserie', 'finitions']
+        },
+        {
+          id: 'vocab-devis-dce',
+          category: 'Technique Chantier',
+          title: 'Lire un Devis & un DCE',
+          subtitle: 'Décrypter les documents techniques',
+          summary: 'Un devis d\'entreprise ou un DCE (Dossier de Consultation des Entreprises) contient un jargon spécifique. Savoir le lire, c\'est savoir négocier et contrôler.',
+          sections: [
+            {
+              title: 'Structure d\'un devis travaux',
+              content: 'Lot : une catégorie de travaux (Lot 1 = démolition, Lot 2 = maçonnerie, etc.). Poste : un élément à l\'intérieur d\'un lot (« Poste 2.3 : ouverture mur porteur avec IPN »). Unité : comment c\'est chiffré — ml (mètre linéaire), m² (mètre carré), U (unité/pièce), Ens. (ensemble forfaitaire). Fourniture et pose (F&P) : le prix inclut le matériau ET la main d\'œuvre. Fourniture seule (FS) : juste le matériau sans la pose. Plus-value (PV) : surcoût par rapport à la prestation de base. Moins-value (MV) : économie si on retire quelque chose. Provision : somme estimée pour un poste qu\'on ne peut pas encore chiffrer exactement.'
+            },
+            {
+              title: 'Termes financiers des devis',
+              content: 'HT / TTC : hors taxes / toutes taxes comprises. TVA 10% : taux réduit pour la rénovation de logements de plus de 2 ans. TVA 20% : taux plein (neuf, ou si le logement a moins de 2 ans). Acompte : premier paiement à la commande. Situation : facture intermédiaire correspondant à l\'avancement des travaux. Retenue de garantie : 5% du montant retenu pendant 1 an après réception (protection contre les malfaçons). Avenant : modification du contrat initial (travaux supplémentaires ou changements).'
+            },
+            {
+              title: 'Le CCTP (Cahier des Clauses Techniques Particulières)',
+              content: 'Le document roi du DCE. Il décrit EXACTEMENT ce qui doit être fait, matériau par matériau, technique par technique. « Ou équivalent » : la mention qui permet au prestataire de proposer un matériau similaire — ATTENTION, toujours valider l\'équivalent. « NF » / « CE » : les normes que le matériau doit respecter. « DTU » (Document Technique Unifié) : les règles de l\'art de mise en œuvre — la référence en cas de litige.'
+            },
+            {
+              title: 'Analyser et comparer les devis',
+              content: 'Vérifier que les devis sont comparables (mêmes prestations, mêmes matériaux). Attention au « Ensemble forfaitaire » qui cache souvent un manque de détail. Demander le détail main d\'œuvre vs fourniture. Vérifier les conditions de paiement et le planning. Regarder les exclusions (ce qui N\'EST PAS inclus). Le devis le moins cher n\'est pas toujours le meilleur — méfiance si l\'écart est > 30% avec les autres.'
+            }
+          ],
+          keyPoints: [
+            'TVA 10% en rénovation = économie importante — toujours vérifier l\'éligibilité',
+            '« Ensemble forfaitaire » = demander le détail systématiquement',
+            'La retenue de garantie de 5% est votre levier en cas de malfaçon',
+            'Le CCTP est le document qui vous protège — le rédiger avec soin',
+            'Comparer des devis = comparer des prestations identiques, pas des prix'
+          ],
+          tips: [
+            'Créer un tableau comparatif poste par poste quand vous analysez 3 devis',
+            'Surligner en jaune tout ce qui dit « ensemble forfaitaire » et demander le détail',
+            'Le « ou équivalent » DOIT être validé par vous avant pose'
+          ],
+          tags: ['vocabulaire', 'devis', 'DCE', 'CCTP', 'technique', 'budget', 'chantier']
+        },
+        // --- MATÉRIAUX TECHNIQUE ---
+        {
+          id: 'vocab-finitions-surfaces',
+          category: 'Matériaux & Finitions',
+          title: 'Les Finitions de Surface',
+          subtitle: 'Poli, brossé, mat, satiné…',
+          summary: 'Les finitions changent radicalement l\'aspect et le toucher d\'un même matériau. Connaître le vocabulaire exact permet de spécifier précisément ce que vous voulez.',
+          sections: [
+            {
+              title: 'Finitions de la pierre',
+              content: 'Poli : surface lisse et brillante, effet miroir (marbre classique). Adouci : lisse mais sans brillance, toucher soyeux (le plus courant en intérieur). Brossé : surface légèrement rugueuse, griffée, toucher texturé. Flammé : surface éclatée par flamme puis brossée — très antidérapant (sol extérieur). Bouchardé : surface piquetée au marteau — aspect rustique. Clivé / Éclaté : cassure naturelle de la pierre, surface irrégulière (parement). Sablé : surface mate et douce obtenue par projection de sable. Vieilli : traitement qui simule l\'usure du temps — bords émoussés, surface patinée.'
+            },
+            {
+              title: 'Finitions du bois',
+              content: 'Brut : aucun traitement, le bois nu (doit être traité avant usage). Huilé : imprégnation d\'huile qui nourrit le bois et le protège — aspect naturel, toucher doux. Ciré : protection par cire naturelle — aspect satiné, entretien régulier. Vernis / Vitrifié : couche de protection filmogène — résistant mais aspect « plastique » si mal fait. Lasuré : teinte + protection en une couche, laisse voir le veinage. Teinté : la couleur est modifiée mais le veinage reste visible. Cérusé : les veines du bois sont blanchies — effet blanchi/vieilli. Brossé : les fibres tendres sont retirées, les veines dures ressortent — effet texturé.'
+            },
+            {
+              title: 'Finitions du métal',
+              content: 'Poli miroir : réflexion totale, comme un miroir (laiton, inox). Brossé : rayures parallèles fines, reflet atténué (inox brossé = le plus courant). Satiné : entre poli et mat, reflet doux. Mat : aucun reflet (acier noir mat, thermolaqué mat). Patiné : oxydation naturelle ou accélérée (le vert-de-gris du cuivre). Bruni : traitement chimique qui noircit le métal (acier bruni). Thermolaqué : peinture cuite au four — résistante et disponible en toutes couleurs RAL. Micro-billes : sablage fin qui donne un aspect granuleux uniforme.'
+            },
+            {
+              title: 'Finitions peinture & enduit',
+              content: 'Mat : aucun reflet, cache les défauts, ambiance feutrée. Velours : très légèrement satiné, toucher doux (le meilleur compromis intérieur). Satiné : léger reflet, lessivable, idéal pièces humides (cuisine, SDB). Brillant / Laqué : reflet fort, effet profond, amplifie les défauts (réservé aux surfaces parfaites). Effet nuagé : application volontairement irrégulière (stuc, tadelakt). Badigeon : peinture à la chaux traditionnelle, aspect vivant et mat profond. Stuqué : enduit poli qui imite le marbre (stuc vénitien). Taloché : finition à la taloche — texture fine et régulière.'
+            }
+          ],
+          keyPoints: [
+            'Adouci = le meilleur compromis pour la pierre en intérieur (pas glissant, pas brillant)',
+            'Huilé = la finition la plus naturelle pour le bois (mais entretien annuel)',
+            'Brossé = la finition la plus safe pour le métal (cache les traces de doigts)',
+            'Velours = la peinture idéale pour les murs intérieurs (mat + lessivable)',
+            'Toujours spécifier la finition dans le CCTP — « marbre poli » ≠ « marbre adouci »'
+          ],
+          tips: [
+            'Demander des échantillons de CHAQUE finition avant de choisir — la même pierre en poli et en brossé est méconnaissable',
+            'Attention au thermolaquage : demander la teinte RAL exacte et un échantillon sur métal',
+            'Le mat est magnifique mais se salit vite — préférer le velours pour les zones de passage'
+          ],
+          tags: ['vocabulaire', 'finitions', 'matériaux', 'technique', 'spécification', 'CCTP']
+        },
+        {
+          id: 'vocab-mise-en-oeuvre',
+          category: 'Matériaux & Finitions',
+          title: 'Termes de Mise en Œuvre',
+          subtitle: 'Comment c\'est posé / fabriqué',
+          summary: 'Comprendre les techniques de pose et de fabrication pour spécifier correctement et contrôler la qualité sur chantier.',
+          sections: [
+            {
+              title: 'Pose de sol',
+              content: 'Pose droite : carreaux alignés en lignes droites (classique). Pose en diagonale : carreaux à 45° — donne une impression de grandeur. Pose décalée / À joints décalés : chaque rangée est décalée d\'un demi-carreau (type parquet). Pose en chevron (à la française) : lames en V — le motif le plus élégant pour le parquet. Pose en point de Hongrie : similaire au chevron mais lames coupées à 45° (les deux bouts sont parallèles). Pose bâton rompu : lames à angle droit alternées. Pose en cabochon : petits carrés posés en diagonale aux intersections des grands carreaux. Joint mince (2mm) : aspect moderne. Joint large (5-10mm) : aspect traditionnel ou terrasse.'
+            },
+            {
+              title: 'Pose murale & plafond',
+              content: 'Parement : revêtement mural décoratif fin (pierre, brique). Soubassement : revêtement sur la partie basse du mur (80-120cm). Lambris : revêtement en lames de bois (horizontal ou vertical). Tasseaux : lattes de bois rapportées (déco tendance en claustra intérieur). Claustra : paroi ajourée qui sépare sans cloisonner. Faux-plafond : plafond rapporté sous le vrai plafond (cache les gaines, intègre les spots). Plenum : l\'espace entre le vrai plafond et le faux-plafond. Staff : plâtre renforcé de fibres pour les moulures et corniches.'
+            },
+            {
+              title: 'Menuiserie & agencement',
+              content: 'Affleurant : deux surfaces au même niveau (porte affleurante au mur = porte invisible). Filant : qui court sur toute la longueur sans interruption (un plan de travail filant). À fleur : même niveau exact (une prise à fleur du mur). Sur-mesure : fabriqué aux dimensions exactes du lieu. Standard : dimensions industrielles (60cm, 90cm pour les meubles de cuisine). Placage : fine couche de bois noble collée sur un panneau (pas du « faux bois »). MDF : panneau de fibres de bois reconstitué (support courant pour la laque). Stratifié : surface plastique imitant le bois/la pierre (Formica, Egger). HPL : stratifié haute pression, très résistant (plan de travail, crédence).'
+            },
+            {
+              title: 'Éclairage — termes techniques',
+              content: 'Encastré : le luminaire est intégré dans le plafond/mur (spot encastré). Saillie : le luminaire dépasse de la surface. Indirect : la lumière est dirigée vers le plafond/mur et se réfléchit (gorge lumineuse). Direct : la lumière est dirigée vers la zone à éclairer (spot, downlight). Température de couleur : 2700K = blanc chaud (intime), 3000K = blanc neutre chaud (le plus courant), 4000K = blanc froid (bureau, cuisine). IRC (Indice de Rendu des Couleurs) : >90 = excellent, les couleurs sont fidèles. Variateur / Dimmer : permet de régler l\'intensité — INDISPENSABLE pour créer des ambiances.'
+            }
+          ],
+          keyPoints: [
+            'Chevron ≠ Point de Hongrie — la coupe des lames est différente (90° vs 45°)',
+            '2700K = la température de lumière pour les espaces de vie (plus chaud = plus intime)',
+            'Affleurant / à fleur = le détail invisible qui fait un projet haut de gamme',
+            'HPL > stratifié standard pour les plans de travail (résiste à la chaleur et aux rayures)',
+            'Toujours spécifier le sens de pose (horizontal/vertical) pour le lambris et le carrelage'
+          ],
+          tips: [
+            'Faire un plan de calepinage pour tout carrelage >30x30 — le montrer au carreleur AVANT',
+            'Prévoir des variateurs partout (même si le client ne les demande pas) — coût +5%, impact +100%',
+            'IRC > 90 obligatoire dans les dressings et salles de bain — sinon les couleurs sont fausses'
+          ],
+          tags: ['vocabulaire', 'pose', 'mise en œuvre', 'technique', 'éclairage', 'menuiserie']
+        },
+        // --- ADMINISTRATIF & NORMES ---
+        {
+          id: 'vocab-normes-reglementation',
+          category: 'Administratif & Normes',
+          title: 'Vocabulaire Réglementaire',
+          subtitle: 'PLU, ERP, DTU, PMR…',
+          summary: 'Les acronymes et termes réglementaires que vous devez connaître pour être en conformité et comprendre ce que les administrations vous demandent.',
+          sections: [
+            {
+              title: 'Urbanisme & autorisations',
+              content: 'PLU (Plan Local d\'Urbanisme) : les règles de construction de la commune (hauteurs, matériaux, couleurs). DP (Déclaration Préalable) : autorisation légère pour travaux extérieurs mineurs (fenêtre, ravalement). PC (Permis de Construire) : autorisation pour modifications importantes de structure ou extension >20m². ABF (Architecte des Bâtiments de France) : doit valider les travaux en zone protégée/classée. MH (Monument Historique) : bâtiment classé — contraintes extrêmes de rénovation. SHON/SHAB (Surface Habitable) : la surface réglementaire (exclut les murs, cloisons, cages d\'escalier).'
+            },
+            {
+              title: 'Sécurité & ERP',
+              content: 'ERP (Établissement Recevant du Public) : restaurant, boutique, hôtel — normes spécifiques. Classement feu M0-M4 : M0 = incombustible, M4 = facilement inflammable. Euroclasses A1 à F : le nouveau classement feu européen (A1 = incombustible). Porte coupe-feu : porte résistante au feu pendant 30, 60 ou 120 minutes (CF30, CF60). Désenfumage : système d\'évacuation des fumées (obligatoire en ERP). Balisage de sécurité : éclairage de secours + signalétique de sortie. BAES : Bloc Autonome d\'Éclairage de Sécurité (le petit bloc vert « SORTIE »).'
+            },
+            {
+              title: 'Accessibilité PMR',
+              content: 'PMR (Personne à Mobilité Réduite) : pas seulement les fauteuils roulants — aussi les personnes âgées, poussettes, béquilles. Largeur de passage : 80cm minimum pour une porte, 90cm recommandé, 120cm pour un couloir PMR. Aire de rotation : cercle de 150cm de diamètre pour un fauteuil roulant. Barre d\'appui : dans les WC et douches PMR, à 70-80cm du sol. Douche à l\'italienne : douche de plain-pied, sans ressaut (obligatoire dans les logements neufs depuis 2021). Contraste visuel : les obstacles et changements de niveau doivent être visibles (personnes malvoyantes).'
+            },
+            {
+              title: 'Normes techniques courantes',
+              content: 'DTU (Document Technique Unifié) : les « règles de l\'art » — si un artisan ne respecte pas le DTU, il est en faute. NF (Norme Française) : certification de conformité. CE (Conformité Européenne) : marquage obligatoire pour commercialiser en Europe. RT 2012 / RE 2020 : réglementation thermique/environnementale des bâtiments neufs. DPE (Diagnostic de Performance Énergétique) : le classement A-G de la consommation énergétique. Amiante : matériau dangereux présent dans les bâtiments avant 1997 — diagnostic OBLIGATOIRE avant travaux.'
+            }
+          ],
+          keyPoints: [
+            'En zone ABF, le moindre changement extérieur (fenêtre, couleur) doit être validé',
+            'ERP = normes feu + accessibilité + sécurité — le triptyque obligatoire',
+            'Le DTU est la référence en cas de litige technique — le citer dans les CCTP',
+            'Amiante avant 1997 = diagnostic OBLIGATOIRE avant le moindre coup de masse',
+            'PMR : obligatoire dans les ERP et les logements neufs, recommandé partout'
+          ],
+          tips: [
+            'Vérifier le PLU de la commune AVANT de promettre quoi que ce soit au client',
+            'En ERP, se faire accompagner par un bureau de contrôle (Apave, Bureau Veritas)',
+            'Garder un aide-mémoire des normes PMR (dimensions clés) dans son carnet'
+          ],
+          tags: ['vocabulaire', 'normes', 'réglementation', 'PLU', 'ERP', 'PMR', 'DTU']
+        },
+        // --- LEXIQUE RAPIDE ---
+        {
+          id: 'vocab-lexique-express',
+          category: 'Lexique Express',
+          title: 'Lexique Express A→Z',
+          subtitle: '100+ termes en un coup d\'œil',
+          summary: 'Le glossaire de poche de l\'architecte d\'intérieur. Les termes les plus fréquents classés alphabétiquement, avec leur définition en une phrase.',
+          sections: [
+            {
+              title: 'A → D',
+              content: 'Adouci : finition pierre — lisse sans brillance. Affleurant : au même niveau que la surface adjacente. Allège : partie du mur sous la fenêtre. Aplomb : verticalité parfaite. Arête : angle vif entre deux surfaces. Badigeon : peinture à la chaux traditionnelle. Baguette de finition : profilé qui cache un joint ou une coupe. Banquette : assise intégrée, souvent maçonnée. Calepinage : plan de pose des carreaux/lames. Claustra : paroi ajourée. Corniche : moulure en saillie en haut du mur. Credence : revêtement mural entre plan de travail et meubles hauts. Cimaise : moulure à mi-hauteur de mur OU rail d\'accrochage pour tableaux. Dais : structure au-dessus d\'un lit (baldaquin). Desserte : petite table ou plan de service.'
+            },
+            {
+              title: 'E → M',
+              content: 'Embrasure : épaisseur du mur visible à l\'ouverture. En applique : fixé SUR la surface (vs. encastré). Entrevous : espace entre deux solives de plancher. Faïence : carreau de céramique émaillé pour les murs. Feuillure : entaille dans un cadre pour recevoir une vitre/porte. Filant : continu sur toute la longueur. Galandage : porte qui rentre dans le mur. Gorge (lumineuse) : creux qui cache un éclairage indirect. Habillage : revêtement qui couvre une structure technique. Imposte : partie vitrée au-dessus d\'une porte. Joue : face latérale d\'un meuble. Lambourde : support en bois pour un plancher ou une terrasse. Lé : bande de papier peint ou de tissu. Linteau : poutre au-dessus d\'une ouverture. Main courante : barre d\'appui le long d\'un escalier. Moulure : profil décoratif en relief.'
+            },
+            {
+              title: 'N → S',
+              content: 'Niche : renfoncement dans un mur (décoratif ou fonctionnel). Nez de marche : bord avant de la marche d\'escalier. Ossature : structure portante (bois ou métal). Parclose : petite baguette qui maintient un vitrage. Plinthe : bande en bas du mur qui protège la jonction mur/sol. Quart de rond : moulure convexe d\'angle. Ragréage : enduit autolissant pour aplanir un sol. Refend : mur porteur intérieur. Retour : partie perpendiculaire d\'un aménagement (le retour d\'un plan de travail). Revêtement : tout matériau qui couvre une surface. Rive : bord d\'un élément. Seuil : barre de transition entre deux sols. Soubassement : partie basse d\'un mur, traitée différemment. Sous-face : surface visible du dessous (d\'un escalier, d\'un balcon). Staff : plâtre renforcé de fibres.'
+            },
+            {
+              title: 'T → Z',
+              content: 'Tablette : plan horizontal fixé au mur (sous une fenêtre, dans une niche). Tasseau : latte de bois (structure ou décor). Traverse : élément horizontal d\'un cadre ou d\'une structure. Trémie : ouverture dans un plancher (pour un escalier, un ascenseur). Vantail : panneau mobile d\'une porte ou fenêtre. Vasistas : petite fenêtre ouvrante dans un toit ou un mur. Veinage : dessin naturel du bois. Vitrage : panneau de verre. Volige : planche fine (support de toiture ou de parement). Voûte : arc de maçonnerie formant plafond. Zénithale (lumière) : lumière qui vient du plafond/toit (puits de lumière, verrière). Zellige : carreau de céramique artisanal marocain émaillé.'
+            }
+          ],
+          keyPoints: [
+            'Ce lexique est un aide-mémoire rapide — chaque terme est développé dans les autres fiches',
+            'Imprimer ce glossaire et l\'avoir dans son sac pour les chantiers',
+            'Un architecte d\'intérieur qui utilise le bon terme inspire confiance',
+            'Attention aux faux-amis : crédence ≠ desserte, imposte ≠ linteau',
+            'Le vocabulaire s\'apprend en contexte — sur le chantier, pas dans un livre'
+          ],
+          tips: [
+            'Annoter ce lexique avec vos propres notes et exemples rencontrés en projet',
+            'Quand un artisan utilise un terme inconnu, le noter et le chercher immédiatement',
+            'Créer des flashcards (Anki) avec les 50 termes les plus utiles'
+          ],
+          tags: ['vocabulaire', 'lexique', 'glossaire', 'termes', 'définitions', 'mémo']
+        }
+      ]
     }
   ]
 };
