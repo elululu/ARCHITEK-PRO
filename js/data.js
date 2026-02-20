@@ -1476,6 +1476,205 @@ const APP_DATA = {
           ],
           tags: ['rangement', 'placard', 'dressing', 'optimisation', 'petit espace', 'organisation']
         },
+        // --- COTES D'IMPLANTATION PAR PIÈCE ---
+        {
+          id: 'cotes-chambre',
+          category: 'Cotes d\'Implantation',
+          title: 'Distances & Implantation — Chambre',
+          subtitle: 'Du lit aux murs : toutes les cotes',
+          summary: 'La chambre est la pièce où les cotes d\'implantation sont les plus sensibles. Un lit trop serré, un passage trop étroit, une table de nuit qui ne rentre pas — ça se joue au centimètre. Voici toutes les distances à connaître, avec les nuances.',
+          sections: [
+            {
+              title: 'Le lit : distances autour',
+              content: 'CONFIGURATION IDÉALE (lit accessible des deux côtés) : 60 cm minimum entre le lit et le mur de chaque côté. C\'est le passage minimum pour se glisser dans le lit + faire le lit + poser une table de nuit. 70-80 cm = confort. Permet de circuler aisément, de poser une table de nuit de 40-50 cm et de garder un passage. Au pied du lit : 60-70 cm minimum jusqu\'au mur ou au meuble en face. CONFIGURATION LIT COLLÉ AU MUR (un côté) : parfaitement acceptable — surtout en petit espace, chambre d\'enfant, chambre d\'ami, studio. Le côté collé au mur ne nécessite aucun dégagement. L\'autre côté : 60 cm minimum. Avantage : gain de 60-80 cm de largeur de pièce. Inconvénient : faire le lit est moins pratique, une seule personne a un accès direct (couple → à éviter pour le lit principal). CONFIGURATION LIT CENTRÉ (tête de lit contre le mur) : la plus « hôtelière ». 60-80 cm de chaque côté. Nécessite une pièce de minimum 2,80 m de large (lit 140) ou 3 m (lit 160).'
+            },
+            {
+              title: 'Dimensionnement du lit',
+              content: 'Lit 1 personne : 90×190 cm (standard) ou 90×200 cm. Lit 2 personnes : 140×190 cm (le minimum couple). 160×200 cm (le standard confort — « Queen »). 180×200 cm (« King » — luxe, hôtelier, nécessite une chambre > 14 m²). Lit enfant : 70×140 cm (2-6 ans), puis 90×190/200 cm. Matelas : ajouter 2-5 cm au cadre de lit dans chaque dimension (le matelas dépasse légèrement). Tête de lit : prévoir 5-15 cm d\'épaisseur en plus derrière le lit (capitonnée : 10-15 cm, bois : 3-5 cm).'
+            },
+            {
+              title: 'Tables de nuit & dressing',
+              content: 'Table de nuit : 35-50 cm de large, 40-55 cm de profondeur. Hauteur idéale = hauteur du matelas (± 5 cm) soit 50-60 cm. Espace entre le lit et le mur avec table de nuit : minimum 40 cm pour la table + 20 cm de passage résiduel = 60 cm au total. Ou : table de nuit suspendue (murale) si passage très étroit → ne prend pas de place au sol. Dressing face au lit : minimum 60 cm de dégagement devant les portes. Portes coulissantes : 0 cm de dégagement (la meilleure solution en petit espace). Portes battantes : 60 cm de débattement. Commode : 50-55 cm de profondeur + 60 cm devant pour ouvrir les tiroirs = 110-115 cm d\'emprise totale.'
+            },
+            {
+              title: 'Cas particuliers & astuces',
+              content: 'Chambre < 9 m² : lit collé au mur un côté + table de nuit suspendue + dressing à portes coulissantes ou rideau = ça rentre. Chambre enfant (8-10 m²) : lit 90 cm collé au mur + bureau face au mur + rangement en hauteur. Lit mezzanine si HsP > 2,60 m (1,20 m sous la mezzanine = bureau/rangement, 1,20 m au-dessus = couchage). Chambre parentale « suite » (> 14 m²) : lit King centré + 80 cm de chaque côté + bout de lit (banc 120×40 cm) + passage vers dressing/SDB. Lit sous pente (combles) : 1,40 m minimum de hauteur au-dessus du matelas pour s\'asseoir dans le lit. Placer la tête de lit côté le plus haut.'
+            }
+          ],
+          keyPoints: [
+            '60 cm = distance minimum lit-mur pour circuler et faire le lit',
+            'Lit collé au mur un côté = OK en petit espace / enfant / ami — PAS en lit principal couple',
+            'Lit 160×200 (Queen) = le standard confort actuel pour 2 personnes',
+            'Table de nuit suspendue = astuce n°1 en chambre étroite',
+            'Portes de dressing coulissantes = gain de 60 cm de dégagement vs portes battantes'
+          ],
+          tips: [
+            'Toujours dessiner le lit avec les tables de nuit ET le passage sur le plan — c\'est là qu\'on voit si ça rentre vraiment',
+            'Un lit 140 dans une chambre de 10 m² fonctionne très bien — un lit 160 dans la même chambre peut être trop serré',
+            'Penser au passage de l\'aspirateur : si la main ne passe pas entre le lit et le mur, c\'est un nid à poussière'
+          ],
+          tags: ['chambre', 'lit', 'distances', 'implantation', 'cotes', 'dressing', 'table de nuit']
+        },
+        {
+          id: 'cotes-salon-sejour',
+          category: 'Cotes d\'Implantation',
+          title: 'Distances & Implantation — Salon',
+          subtitle: 'Canapé, table basse, TV : le bon placement',
+          summary: 'Le salon est la pièce la plus complexe à agencer : canapé, table basse, TV, bibliothèque, coin repas — tout doit cohabiter avec des distances de confort ET de circulation. Voici les cotes à maîtriser.',
+          sections: [
+            {
+              title: 'Le canapé',
+              content: 'CANAPÉ ET MURS : collé au mur = OK, c\'est la configuration la plus courante en petit/moyen espace. Avantage : gain de place maximum. Canapé « flottant » (décollé du mur) : plus élégant, crée de la profondeur. Laisser 10-30 cm derrière (console, tablette). Possible seulement si la pièce fait > 20 m². PASSAGE DERRIÈRE : si circulation derrière le canapé, minimum 60 cm (80 cm confort). PASSAGE LATÉRAL : 45-60 cm entre l\'accoudoir et le mur ou un meuble. DISTANCE ENTRE DEUX CANAPÉS FACE À FACE : 120-180 cm (conversation confortable). Plus de 250 cm = trop loin, on perd l\'intimité.'
+            },
+            {
+              title: 'La table basse',
+              content: 'DISTANCE CANAPÉ — TABLE BASSE : 35-45 cm. C\'est la distance pour poser/reprendre un verre sans se lever ET pouvoir passer les jambes. Moins de 30 cm = trop serré, on se cogne les tibias. Plus de 50 cm = trop loin, il faut se pencher. PASSAGE AUTOUR : 45-60 cm entre la table basse et les autres meubles/murs pour circuler. HAUTEUR : 35-45 cm (= hauteur de l\'assise du canapé ± 5 cm). Table basse plus basse que l\'assise = plus décontracté. Même hauteur = plus pratique. TAILLE : idéalement les 2/3 de la longueur du canapé. Canapé 200 cm → table basse 120-140 cm.'
+            },
+            {
+              title: 'La télévision',
+              content: 'DISTANCE DE VISIONNAGE : règle simple = 1,5 à 2,5 × la diagonale de l\'écran. TV 55" (140 cm) → distance 2,10-3,50 m. TV 65" (165 cm) → distance 2,50-4 m. TV 75" (190 cm) → distance 2,85-4,75 m. HAUTEUR : le centre de l\'écran à hauteur des yeux en position assise = 100-110 cm du sol (le bas de l\'écran à ~80-85 cm). Erreur fréquente : TV trop haute (au-dessus d\'une cheminée → mal au cou). MEUBLE TV : profondeur 35-45 cm. Le meuble TV ne doit pas être plus large que le mur sur lequel il est posé (proportion). Si TV murale : prévoir le passage des câbles dans le mur (gaine encastrée).'
+            },
+            {
+              title: 'Coin repas dans le salon',
+              content: 'TABLE RONDE : Ø 90 cm (4 personnes), Ø 110 cm (4-6), Ø 130 cm (6-8). Dégagement autour : 80-100 cm pour reculer la chaise + circuler derrière. TABLE RECTANGULAIRE : 80×120 cm (4 pers.), 80×160 cm (6), 80×200 cm (8). Place par convive : 60 cm de largeur minimum. CHAISE RECULÉE : une chaise tirée en arrière prend 75-80 cm depuis le bord de la table. TABLE COLLÉE AU MUR (une extrémité) : gain d\'espace, acceptable si 4 personnes max. TABLE COLLÉE AU MUR (un long côté) = banquette → gain de 40 cm de circulation côté banquette. PASSAGE ENTRE TABLE ET MUR/MEUBLE : 80 cm minimum (sans chaise tirée), 120 cm si on doit circuler derrière une personne assise.'
+            },
+            {
+              title: 'Le coin lecture / fauteuil',
+              content: 'Un fauteuil seul a besoin de : 45-60 cm latéralement (pour un guéridon ou une liseuse). 40-50 cm devant (repose-pieds ou simplement les jambes). Une lampe (liseuse, lampadaire) positionnée à 30 cm derrière et 40-50 cm au-dessus de l\'épaule. Fauteuil dans un angle : laisser 15-20 cm entre le dossier et le mur (le fauteuil ne doit pas toucher le mur, surtout si c\'est un fauteuil pivotant ou inclinable). Bibliothèque face aux assises : 100-120 cm de recul pour lire les titres confortablement.'
+            }
+          ],
+          keyPoints: [
+            '35-45 cm entre canapé et table basse = la distance magique',
+            'Canapé collé au mur = OK et courant — pas besoin de s\'en excuser',
+            'TV : centre de l\'écran à 100-110 cm du sol (hauteur des yeux assis)',
+            'Chaise tirée en arrière = 75-80 cm depuis le bord de la table → à anticiper',
+            '60 cm par convive à table = le minimum à toujours vérifier sur plan'
+          ],
+          tips: [
+            'Avant de choisir un canapé, scotcher ses dimensions au sol avec du ruban de masquage — on visualise immédiatement si c\'est trop gros',
+            'La table ronde est TOUJOURS plus conviviale et plus fluide en circulation qu\'une table rectangulaire à nombre de convives égal',
+            'Un tapis sous le canapé + la table basse unifie le coin salon : il doit dépasser de 30-40 cm de chaque côté du canapé'
+          ],
+          tags: ['salon', 'canapé', 'table basse', 'TV', 'distances', 'implantation', 'coin repas']
+        },
+        {
+          id: 'cotes-cuisine-implantation',
+          category: 'Cotes d\'Implantation',
+          title: 'Distances & Implantation — Cuisine',
+          subtitle: 'Les cotes qui font une cuisine fonctionnelle',
+          summary: 'La cuisine est la pièce la plus normée en termes de distances. Un centimètre en trop ou en moins change tout : une porte de lave-vaisselle qui bute, un passage trop étroit pour deux, un meuble haut inatteignable. Voici le référentiel complet.',
+          sections: [
+            {
+              title: 'Les hauteurs',
+              content: 'Plan de travail : 85-92 cm (standard 87 cm). Adapter à la taille de l\'utilisateur principal : coude à 90° − 15 cm = hauteur idéale. Meubles hauts : bas du meuble haut à 50-55 cm au-dessus du plan de travail (crédence). Haut du meuble haut : 210-220 cm max du sol (accessible sans escabeau). Hotte : 65 cm au-dessus d\'une plaque gaz, 55 cm au-dessus de plaques induction (vérifier notice). Prise plan de travail : 10-15 cm au-dessus du plan de travail. Éclairage sous meuble haut : en retrait de 5 cm du bord (la lumière éclaire le plan de travail, pas les yeux).'
+            },
+            {
+              title: 'Les profondeurs',
+              content: 'Meuble bas : 58-60 cm de profondeur (standard). Plan de travail : 60-65 cm (dépasse de 2-3 cm du meuble bas). Meuble haut : 32-37 cm de profondeur (ne doit PAS dépasser du plan de travail → sinon on se cogne la tête). Îlot : profondeur minimum 90 cm (rangement seul), 120 cm (rangement + cuisson), 150 cm (rangement + cuisson + coin repas). Retour de plan de travail en U : minimum 120 cm de largeur intérieure entre les deux plans parallèles (150 cm idéal si 2 personnes).'
+            },
+            {
+              title: 'Les passages et dégagements',
+              content: 'DEVANT LES MEUBLES : 90 cm minimum pour ouvrir une porte de meuble bas ou un tiroir. 120 cm confort. Si deux rangées face à face (cuisine en parallèle/U) : 120 cm minimum (2 personnes peuvent se croiser + une porte ouverte). LAVE-VAISSELLE ouvert : la porte dépasse de 55-60 cm — vérifier que le passage reste libre (minimum 70 cm à côté pour circuler). FOUR : prévoir 80 cm devant pour sortir un plat, porte ouverte. RÉFRIGÉRATEUR : porte ouverte à 90° + espace pour sortir un bac = 80-100 cm devant. Côté charnière : 5-10 cm du mur pour que la porte s\'ouvre complètement.'
+            },
+            {
+              title: 'L\'îlot : cotes critiques',
+              content: 'Passage entre l\'îlot et le mur de cuisine : 90 cm minimum (120 cm si 2 personnes). Passage entre l\'îlot et le reste du séjour : 100-120 cm (circulation principale). Coin repas sur l\'îlot : 60 cm de largeur par personne, 25-30 cm de profondeur pour les jambes sous le débord. Débord du plan pour les jambes : minimum 25 cm (tabouret), 30-35 cm (chaise haute). Hauteur coin repas : 87 cm (hauteur plan de travail = tabouret 65 cm) OU 75 cm (hauteur table = chaise standard). Prise dans l\'îlot : prévoir alimentation électrique au sol AVANT la chape — 2 à 4 prises minimum.'
+            }
+          ],
+          keyPoints: [
+            '87 cm = hauteur standard du plan de travail (ajuster à l\'utilisateur)',
+            '120 cm entre deux plans de travail parallèles = minimum pour une cuisine fonctionnelle',
+            'Le lave-vaisselle ouvert occupe 55-60 cm — vérifier que ça ne bloque pas le passage',
+            'Meuble haut : 50-55 cm au-dessus du plan de travail (crédence)',
+            '90 cm minimum autour de l\'îlot (120 cm si cuisine active)'
+          ],
+          tips: [
+            'Le test ultime : simuler l\'ouverture de TOUS les éléments (four, lave-vaisselle, frigo, tiroirs) sur le plan et vérifier qu\'ils ne se cognent pas entre eux',
+            'Un retour en U trop étroit (< 120 cm) rend la cuisine invivable — mieux vaut un L qu\'un U serré',
+            'L\'erreur n°1 des cuisinistes : le réfrigérateur collé dans un angle avec la porte qui ne s\'ouvre pas à fond → toujours 5-10 cm de marge côté charnière'
+          ],
+          tags: ['cuisine', 'cotes', 'plan de travail', 'îlot', 'implantation', 'hauteur', 'ergonomie']
+        },
+        {
+          id: 'cotes-sdb-wc',
+          category: 'Cotes d\'Implantation',
+          title: 'Distances & Implantation — SDB & WC',
+          subtitle: 'Les cotes vitales en pièce d\'eau',
+          summary: 'La salle de bain est la pièce où les distances sont les plus critiques : on y est souvent en mouvement (se pencher, se sécher, s\'habiller) dans un espace restreint. Chaque centimètre est stratégique.',
+          sections: [
+            {
+              title: 'La douche',
+              content: 'DIMENSIONS INTÉRIEURES : 80×80 cm = minimum vital (inconfortable). 90×90 cm = standard. 90×120 cm ou 90×140 cm = confort. 100×140 cm ou 120×120 cm = grand confort / PMR. PAROI DE DOUCHE (si non italienne ouverte) : épaisseur du verre 6-8 mm. Porte battante : 55-60 cm de débattement devant la douche → préférer porte pivotante, coulissante, ou pas de porte du tout (douche ouverte walk-in si ≥ 120 cm de large). DÉGAGEMENT DEVANT LA DOUCHE : 60-70 cm minimum pour sortir, se sécher, poser les pieds sur le tapis. Pomme de tête : 200-210 cm du sol minimum (pour une personne de 1,85 m sous la pluie).'
+            },
+            {
+              title: 'Les WC',
+              content: 'EMPRISE AU SOL : WC posé = 40×65-70 cm. WC suspendu = 36×55 cm (le bâti-support fait 50 cm de profondeur dans le mur / coffrage). DÉGAGEMENT FRONTAL : 60 cm minimum devant la cuvette (les genoux + se relever). 80 cm confort. DÉGAGEMENT LATÉRAL : 20 cm minimum entre la cuvette et le mur (ou un meuble). 40 cm si PMR (pour les barres d\'appui). AXE DE LA CUVETTE : 40 cm du mur latéral le plus proche (centre de la cuvette). PORTE : s\'ouvre vers l\'extérieur (obligatoire si pièce < 1,5 m²) ou coulissante. LAVE-MAINS : dans le WC si séparé de la SDB. 25-35 cm de profondeur (compact). Hauteur : 85 cm du sol.'
+            },
+            {
+              title: 'Lavabo & meuble vasque',
+              content: 'HAUTEUR : plan de vasque à 85 cm du sol (standard). 80 cm (enfant, PMR). 90 cm (personne grande — de plus en plus courant). DÉGAGEMENT DEVANT : 60 cm minimum (se pencher pour se laver le visage). 70-80 cm confort. ENTRE DEUX VASQUES : 30 cm minimum entre les bords (60 cm entre les axes). MEUBLE VASQUE : profondeur standard 45-50 cm. Largeur : 60 cm (1 vasque petit), 80-90 cm (1 vasque confort), 120-140 cm (double vasque). MIROIR : largeur = largeur du meuble vasque (ou plus). Bord bas à 105-110 cm du sol (personne debout voit sa tête). Bord haut : 190-200 cm. Éclairage miroir : au-dessus ou sur les côtés (jamais en contre-jour).'
+            },
+            {
+              title: 'La baignoire',
+              content: 'DIMENSIONS STANDARD : 170×70 cm (le classique français). 170×75 cm (un peu plus large — le confort). 180×80 cm (grand confort). Baignoire d\'angle : 120×120 cm à 150×150 cm (attention : très gourmand en espace). Baignoire îlot : prévoir 60-80 cm de passage tout autour. DÉGAGEMENT LATÉRAL : 0 cm possible (baignoire encastrée dans une niche, 3 côtés contre les murs = gain de place maximum). Un côté ouvert : 60 cm minimum de passage pour entrer/sortir. ROBINETTERIE : sur le côté long, centrée ou décalée vers les pieds. Douchette sur flexible de 150-175 cm. TABLIER : amovible ou à trappe pour accès à la plomberie (obligatoire).'
+            },
+            {
+              title: 'Sèche-serviettes & accessoires',
+              content: 'SÈCHE-SERVIETTES : hauteur de l\'appareil : centre à 100-130 cm du sol. Distance du sol : 20 cm minimum en bas (nettoyage). Distance du plafond : 15-20 cm minimum. Dégagement devant : 10-15 cm (serviettes qui pendent). Pas au-dessus des WC ni à portée d\'eau (douche). PORTE-SERVIETTES MURAL : 110-120 cm du sol. 1 barre par personne minimum (46-60 cm de large). PATÈRES : 150-170 cm du sol (peignoir). TABLETTE DE DOUCHE / NICHE : 100-120 cm du sol (à portée de main en position debout). 15×30 cm minimum pour poser shampooing + savon.'
+            }
+          ],
+          keyPoints: [
+            '60 cm devant chaque élément (douche, WC, vasque) = la règle universelle en SDB',
+            'WC : 40 cm d\'axe depuis le mur latéral — la cote la plus souvent oubliée',
+            'Vasque à 85 cm du sol (standard), 90 cm de plus en plus courant',
+            'Douche ouverte walk-in (sans porte) seulement si largeur ≥ 120 cm',
+            'Baignoire 3 côtés encastrés = l\'option la plus compacte'
+          ],
+          tips: [
+            'En SDB de 3-4 m², la douche ouverte (walk-in) sans porte vitrée agrandit visuellement — mais prévoir une bonne pente de sol et un caniveau',
+            'Le WC suspendu (Geberit) gagne 10-15 cm de profondeur par rapport au WC posé — précieux en petit espace',
+            'Avant de positionner les sanitaires sur plan, vérifier : la porte s\'ouvre-t-elle sans taper dans le lavabo ? Le sèche-serviettes ne bloque-t-il pas le passage ?'
+          ],
+          tags: ['salle de bain', 'WC', 'distances', 'douche', 'vasque', 'implantation', 'cotes']
+        },
+        {
+          id: 'cotes-bureau-entree',
+          category: 'Cotes d\'Implantation',
+          title: 'Distances & Implantation — Bureau, Entrée & Couloir',
+          subtitle: 'Les espaces souvent négligés',
+          summary: 'Le bureau (espace de travail), l\'entrée et les couloirs sont les parents pauvres de l\'agencement. Pourtant, des cotes bien pensées ici transforment le quotidien. L\'entrée est la première impression, le bureau est le confort de travail, le couloir est le liant de l\'appartement.',
+          sections: [
+            {
+              title: 'L\'espace de travail / bureau',
+              content: 'PLAN DE TRAVAIL : hauteur 72-75 cm (standard). Profondeur : 60 cm minimum (80 cm confort pour écran + clavier). Largeur : 100 cm minimum (120-150 cm confort). CHAISE DE BUREAU : recul de 70-80 cm entre le bord du bureau et le mur/meuble derrière (chaise reculée + passage). Accoudoirs : vérifier qu\'ils passent sous le bureau (hauteur d\'accoudoir standard 63-70 cm vs hauteur sous bureau 62-68 cm → conflit fréquent). ÉCRAN : distance yeux-écran = 50-70 cm. Bord supérieur de l\'écran à hauteur des yeux ou légèrement en dessous. Pas de fenêtre dans le dos (reflets) ni face à l\'écran (éblouissement) → fenêtre latérale = idéal.'
+            },
+            {
+              title: 'L\'entrée',
+              content: 'L\'ENTRÉE EST UN SAS : elle mérite 2-4 m² même en petit appartement. LARGEUR : 90 cm minimum de passage libre (après les meubles). MEUBLE D\'ENTRÉE : profondeur 30-35 cm (meuble à chaussures/console) ou 50-55 cm (placard avec tringle). Miroir : un grand miroir en pied (40×140 cm minimum) est quasi obligatoire — on se voit avant de sortir + agrandissement visuel. BANC/ASSISE : 35-45 cm de profondeur, 45 cm de hauteur — indispensable pour enfiler ses chaussures. Peut être un coffre (rangement dessous). PATÈRES/CROCHETS : 150-170 cm du sol (adulte), 100-110 cm (enfant). 1 par personne du foyer minimum. La première chose qu\'on voit : ne pas surcharger. Un beau luminaire + un miroir + une console = entrée réussie.'
+            },
+            {
+              title: 'Le couloir',
+              content: 'LARGEUR MINIMUM : 80 cm (toléré en ancien, très étroit). 90 cm (standard). 100-110 cm (confort). 120 cm si portes s\'ouvrent dans le couloir. PORTES DANS LE COULOIR : une porte standard (83 cm) ouverte à 90° dépasse de 83 cm dans le couloir → si le couloir fait 90 cm, la porte occupe presque toute la largeur. Solution : portes coulissantes, pivotantes ou ouverture dans la pièce. ÉCLAIRAGE : un couloir sans fenêtre a besoin d\'un éclairage généreux. Spots encastrés tous les 80-100 cm OU appliques murales alternées. Imposte vitrée au-dessus des portes = apport de lumière naturelle. MEUBLES : bibliothèque étroite (20-25 cm de profondeur) le long d\'un mur de couloir large (> 100 cm). Le couloir-bibliothèque est une solution élégante qui transforme un lieu de passage en lieu de vie.'
+            },
+            {
+              title: 'Le dressing / walk-in',
+              content: 'LARGEUR MINIMUM : 120 cm (penderie un côté + passage). 180 cm (penderie deux côtés — le vrai walk-in). 200-220 cm (penderie deux côtés + îlot central — luxe). PENDERIE : profondeur 55-60 cm (cintres standard). Tringle haute : 170-180 cm du sol (manteaux, robes). Tringle mi-hauteur : 110-120 cm (vestes, chemises). Double tringle : haute à 200 cm + basse à 100 cm (gain de capacité). TIROIRS : profondeur 45-55 cm, hauteur 15-20 cm (pulls, t-shirts). ÉTAGÈRES : profondeur 40-50 cm, espacement 30-35 cm. ÉCLAIRAGE : réglette LED au-dessus de chaque zone. Détecteur de mouvement (la lumière s\'allume à l\'ouverture de la porte) = pur luxe fonctionnel.'
+            }
+          ],
+          keyPoints: [
+            'Bureau : 60 cm de profondeur minimum + 70-80 cm de recul pour la chaise',
+            'Entrée : 90 cm de passage libre + miroir + assise = le minimum vital',
+            'Couloir : attention aux portes qui s\'ouvrent — portes coulissantes si < 100 cm de large',
+            'Dressing : 120 cm de large minimum (une rangée), 180 cm (deux rangées)',
+            'L\'entrée est la première et dernière impression — ne pas la négliger'
+          ],
+          tips: [
+            'Le « couloir-bibliothèque » (étagères 25 cm de profondeur le long du mur) transforme un passage mort en espace utile et esthétique',
+            'En entrée, un éclairage chaleureux (applique + miroir) change complètement la perception : on passe de « couloir sombre » à « accueil »',
+            'Pour le bureau à domicile post-Covid, prévoir une prise Ethernet RJ45 + 4 prises électriques minimum — le WiFi ne suffit pas toujours'
+          ],
+          tags: ['bureau', 'entrée', 'couloir', 'dressing', 'distances', 'implantation', 'cotes']
+        },
         {
           id: 'optimiser-petit-espace',
           title: 'Optimiser un Espace < 50 m²',
