@@ -37,8 +37,13 @@
   <!-- Sidebar -->
   <aside id="sidebar">
     <div class="sidebar-header">
-      <div class="logo">
-        <span class="logo-main">ARCHITEK</span><span class="logo-accent">PRO</span>
+      <div class="sidebar-header-top">
+        <div class="logo">
+          <span class="logo-main">ARCHITEK</span><span class="logo-accent">PRO</span>
+        </div>
+        <button id="dark-mode-toggle" class="dark-mode-toggle" title="Mode sombre / clair" aria-label="Basculer le thème">
+          <span class="dm-icon">🌙</span>
+        </button>
       </div>
       <p class="sidebar-subtitle">Encyclopédie d'Architecture d'Intérieur</p>
     </div>
@@ -96,15 +101,10 @@
   <main id="main">
     <header id="topbar">
       <div id="breadcrumb"></div>
-      <div class="topbar-right">
-        <button id="dark-mode-toggle" class="dark-mode-toggle" title="Mode sombre / clair" aria-label="Basculer le thème">
-          <span class="dm-icon">🌙</span>
-        </button>
-        <div class="search-wrapper">
-          <span class="search-icon">⌕</span>
-          <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
-          <kbd class="search-shortcut">/</kbd>
-        </div>
+      <div class="search-wrapper">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
+        <kbd class="search-shortcut">/</kbd>
       </div>
     </header>
     <div id="content"></div>

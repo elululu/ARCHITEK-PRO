@@ -257,18 +257,12 @@ function renderDashboard(container) {
   container.appendChild(hero);
   container.appendChild(statsRow);
 
-  // Data management row
-  const dataRow = el('div', { className: 'dashboard-data-row' });
-  const exportBtn = el('button', { className: 'btn-data', onClick: exportAllData });
-  exportBtn.innerHTML = '📥 Exporter mes données';
-  const importBtn = el('button', { className: 'btn-data', onClick: importAllData });
-  importBtn.innerHTML = '📤 Importer un backup';
-  dataRow.appendChild(exportBtn);
-  dataRow.appendChild(importBtn);
-  container.appendChild(dataRow);
+  // Action bar: random + data management
+  const actionBar = el('div', { className: 'dashboard-action-bar' });
 
-  // Random fiche button
-  const randomRow = el('div', { className: 'dashboard-random' });
+  const exportBtn = el('button', { className: 'btn-action-secondary', onClick: exportAllData });
+  exportBtn.innerHTML = '📥 Exporter';
+
   const randomBtn = el('button', {
     className: 'btn-random',
     onClick: () => {
@@ -279,8 +273,14 @@ function renderDashboard(container) {
     }
   });
   randomBtn.innerHTML = '✦ Découvrir une fiche au hasard';
-  randomRow.appendChild(randomBtn);
-  container.appendChild(randomRow);
+
+  const importBtn = el('button', { className: 'btn-action-secondary', onClick: importAllData });
+  importBtn.innerHTML = '📤 Importer';
+
+  actionBar.appendChild(exportBtn);
+  actionBar.appendChild(randomBtn);
+  actionBar.appendChild(importBtn);
+  container.appendChild(actionBar);
 
   // Promo — Template ArchiCAD
   const promo = el('div', { className: 'promo-card' });
