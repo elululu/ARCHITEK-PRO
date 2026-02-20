@@ -999,119 +999,73 @@ textarea {
   border-bottom-color: var(--accent);
 }
 
-/* --- Conseils Pratiques --- */
-.conseils-header {
-  margin-bottom: 36px;
+/* --- Mon Atelier (tabs Designers + Projets) --- */
+.atelier-header {
+  margin-bottom: 28px;
 }
 
-.conseils-header h2 {
+.atelier-header h2 {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--text);
 }
 
-.conseils-header p {
+.atelier-header p {
   color: var(--text-secondary);
   font-size: 0.95rem;
   margin-top: 8px;
 }
 
-.conseil-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 32px;
-  margin-bottom: 24px;
-  position: relative;
-  transition: all var(--transition);
-}
-
-.conseil-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.conseil-card-icon {
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-.conseil-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 12px;
-}
-
-.conseil-card p {
-  color: var(--text-secondary);
-  font-size: 0.92rem;
-  line-height: 1.7;
-  margin-bottom: 18px;
-}
-
-.conseil-checklist {
-  background: var(--bg);
-  border-radius: var(--radius-sm);
-  padding: 18px 22px;
-  border: 1px solid var(--border);
-}
-
-.conseil-checklist h4 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  margin-bottom: 10px;
-}
-
-.conseil-checklist ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.conseil-checklist li {
-  padding: 6px 0;
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--border);
-}
-
-.conseil-checklist li:last-child {
-  border-bottom: none;
-}
-
-/* Conseils personnels */
-.conseils-perso-section {
-  margin-top: 48px;
-  padding-top: 36px;
-  border-top: 1px solid var(--border);
-}
-
-.conseils-perso-header h3 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.conseils-perso-header p {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-top: 6px;
-  margin-bottom: 24px;
-}
-
-.conseil-add-form {
+.atelier-tabs {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 4px;
   margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
 }
 
+.atelier-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--transition);
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.atelier-tab:hover { color: var(--text); }
+.atelier-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.atelier-tab-count {
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.atelier-tab.active .atelier-tab-count {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Keep conseil-input/textarea styles used by ref + sourcing forms */
 .conseil-input,
 .conseil-textarea {
   width: 100%;
@@ -1153,66 +1107,6 @@ textarea {
 .btn-conseil-add:hover {
   background: var(--accent-dark, #A07850);
   transform: translateY(-1px);
-}
-
-.conseils-user-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.conseil-user-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 18px 22px;
-  transition: all var(--transition);
-}
-
-.conseil-user-item:hover {
-  box-shadow: var(--shadow-sm);
-}
-
-.conseil-user-content strong {
-  display: block;
-  font-size: 0.95rem;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-
-.conseil-user-content p {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.conseil-user-date {
-  display: block;
-  margin-top: 8px;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.conseil-delete {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  cursor: pointer;
-  padding: 4px 8px;
-  border-radius: 4px;
-  transition: all var(--transition);
-  flex-shrink: 0;
-}
-
-.conseil-delete:hover {
-  color: #e74c3c;
-  background: rgba(231, 76, 60, 0.08);
 }
 
 /* --- Sourcing Matériaux --- */

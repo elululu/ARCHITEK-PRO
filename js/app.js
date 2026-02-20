@@ -172,20 +172,12 @@ function updateBreadcrumb() {
     parts.push({ label: 'Ma Collection', current: true });
   }
 
-  if (state.currentView === 'conseils') {
-    parts.push({ label: 'Conseils Pratiques', current: true });
-  }
-
-  if (state.currentView === 'references') {
-    parts.push({ label: 'Mes réf Archi d\'int', current: true });
+  if (state.currentView === 'atelier') {
+    parts.push({ label: 'Mon Atelier', current: true });
   }
 
   if (state.currentView === 'sourcing') {
     parts.push({ label: 'Sourcing Matériaux', current: true });
-  }
-
-  if (state.currentView === 'etudes') {
-    parts.push({ label: 'Études de Cas', current: true });
   }
 
   if (state.currentView === 'veille') {
@@ -217,10 +209,8 @@ function render() {
     case 'domain': renderDomain(content); break;
     case 'fiche': renderFiche(content); break;
     case 'collection': renderCollection(content); break;
-    case 'conseils': renderConseils(content); break;
-    case 'references': renderReferences(content); break;
+    case 'atelier': renderAtelier(content); break;
     case 'sourcing': renderSourcing(content); break;
-    case 'etudes': renderEtudes(content); break;
     case 'veille': renderVeille(content); break;
     case 'search': renderSearch(content); break;
   }
@@ -315,7 +305,7 @@ function renderDashboard(container) {
     `;
     const etudesRow = el('div', { className: 'dashboard-etudes-row' });
     etudes.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4).forEach(projet => {
-      const card = el('div', { className: 'dashboard-etude-card', onClick: () => { navigate('etudes'); setTimeout(() => openEtudeDetail(projet.id), 50); } });
+      const card = el('div', { className: 'dashboard-etude-card', onClick: () => { state.atelierTab = 'projets'; navigate('atelier'); setTimeout(() => openEtudeDetail(projet.id), 50); } });
       card.innerHTML = `
         <div class="dash-etude-cover" style="background-image: url('${projet.coverUrl || ''}')">
           ${!projet.coverUrl ? '<div class="etude-card-no-cover">🏠</div>' : ''}
@@ -386,7 +376,7 @@ function renderDashboard(container) {
   // Bind dashboard link events
   setTimeout(() => {
     const seeEtudes = $('#dash-see-etudes');
-    if (seeEtudes) seeEtudes.addEventListener('click', (e) => { e.preventDefault(); navigate('etudes'); });
+    if (seeEtudes) seeEtudes.addEventListener('click', (e) => { e.preventDefault(); state.atelierTab = 'projets'; navigate('atelier'); });
     const seeVeille = $('#dash-see-veille');
     if (seeVeille) seeVeille.addEventListener('click', (e) => { e.preventDefault(); navigate('veille'); });
   }, 0);
@@ -815,139 +805,56 @@ function renderCollection(container) {
   renderTabContent();
 }
 
-// -------- Conseils Pratiques --------
-function renderConseils(container) {
-  const header = el('div', { className: 'conseils-header' });
+// -------- Mon Atelier (Designers + Projets) --------
+function renderAtelier(container) {
+  const header = el('div', { className: 'atelier-header' });
   header.innerHTML = `
-    <h2>💡 Conseils Pratiques</h2>
-    <p>Méthodes et rituels pour développer votre œil d'architecte d'intérieur.</p>
+    <h2>📐 Mon Atelier</h2>
+    <p>Vos références par designer et vos études de cas en un seul espace.</p>
   `;
   container.appendChild(header);
 
-  // Pre-filled conseils
-  const conseilsFixes = [
-    {
-      icon: '📁',
-      title: 'Créer un dossier par designer',
-      description: 'Constituez un dossier de référence pour chaque designer/architecte qui vous inspire. Sélectionnez 10 à 20 images clés de leurs projets — pas plus, pour garder uniquement l\'essentiel. Ce travail de curation vous force à identifier ce qui définit vraiment leur signature.',
-      checklist: [
-        'Choisir 5 designers qui vous inspirent',
-        'Créer un dossier par designer (physique ou numérique)',
-        'Sélectionner 10-20 images clés par designer',
-        'Renouveler et affiner votre sélection tous les 6 mois'
-      ]
-    },
-    {
-      icon: '✍️',
-      title: 'Noter POURQUOI un projet vous inspire',
-      description: 'Quand un espace vous arrête, ne vous contentez pas de le sauvegarder. Prenez 2 minutes pour écrire ce qui vous touche. Est-ce les proportions ? La palette de couleurs ? Le choix des matériaux ? Le jeu de lumière ? La tension entre deux éléments ? Ce réflexe transforme une consommation passive d\'images en apprentissage actif.',
-      checklist: [
-        'Les proportions et l\'échelle',
-        'La palette de couleurs et les contrastes',
-        'Le choix et la combinaison des matériaux',
-        'Le travail de la lumière (naturelle et artificielle)',
-        'L\'agencement et la circulation',
-        'Le détail qui fait toute la différence'
-      ]
-    }
+  // Tabs
+  const tabs = el('div', { className: 'atelier-tabs' });
+  let activeTab = state.atelierTab || 'designers';
+
+  const tabDefs = [
+    { id: 'designers', label: '👤 Designers', count: loadRefData().designers.length },
+    { id: 'projets', label: '🏠 Projets', count: loadEtudes().length }
   ];
 
-  // Load user conseils
-  const userConseils = loadConseils();
-
-  // Pre-filled cards
-  conseilsFixes.forEach(c => {
-    const card = el('div', { className: 'conseil-card' });
-    card.innerHTML = `
-      <div class="conseil-card-icon">${c.icon}</div>
-      <h3>${c.title}</h3>
-      <p>${c.description}</p>
-      <div class="conseil-checklist">
-        <h4>Checklist</h4>
-        <ul>${c.checklist.map(item => `<li>☐ ${item}</li>`).join('')}</ul>
-      </div>
-    `;
-    container.appendChild(card);
-  });
-
-  // User personal conseils
-  const persoSection = el('div', { className: 'conseils-perso-section' });
-  persoSection.innerHTML = `
-    <div class="conseils-perso-header">
-      <h3>📝 Mes Conseils Personnels</h3>
-      <p>Ajoutez vos propres méthodes, rituels et rappels.</p>
-    </div>
-  `;
-
-  // Add form
-  const form = el('div', { className: 'conseil-add-form' });
-  form.innerHTML = `
-    <input type="text" id="conseil-title" placeholder="Titre du conseil…" class="conseil-input">
-    <textarea id="conseil-desc" placeholder="Description, détails, méthode…" class="conseil-textarea" rows="3"></textarea>
-    <button id="conseil-add-btn" class="btn-conseil-add">+ Ajouter</button>
-  `;
-  persoSection.appendChild(form);
-
-  // Render existing user conseils
-  const userList = el('div', { className: 'conseils-user-list' });
-  userConseils.forEach((c, i) => {
-    const item = el('div', { className: 'conseil-user-item' });
-    item.innerHTML = `
-      <div class="conseil-user-content">
-        <strong>${c.title}</strong>
-        <p>${c.description}</p>
-        <span class="conseil-user-date">${new Date(c.date).toLocaleDateString('fr-FR')}</span>
-      </div>
-      <button class="conseil-delete" data-index="${i}" title="Supprimer">✕</button>
-    `;
-    userList.appendChild(item);
-  });
-  persoSection.appendChild(userList);
-  container.appendChild(persoSection);
-
-  // Event: add
-  setTimeout(() => {
-    const addBtn = $('#conseil-add-btn');
-    if (addBtn) {
-      addBtn.addEventListener('click', () => {
-        const title = $('#conseil-title').value.trim();
-        const desc = $('#conseil-desc').value.trim();
-        if (!title) { toast('Ajoutez au moins un titre.'); return; }
-        const conseils = loadConseils();
-        conseils.push({ title, description: desc, date: new Date().toISOString() });
-        saveConseils(conseils);
-        toast('Conseil ajouté !');
-        navigate('conseils');
-      });
+  function renderTabContent() {
+    const existing = $('#atelier-content');
+    if (existing) existing.remove();
+    const content = el('div', { id: 'atelier-content' });
+    if (activeTab === 'designers') {
+      renderReferencesTab(content);
+    } else {
+      renderEtudesTab(content);
     }
-    // Event: delete
-    $$('.conseil-delete').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const idx = parseInt(btn.dataset.index);
-        const conseils = loadConseils();
-        conseils.splice(idx, 1);
-        saveConseils(conseils);
-        toast('Conseil supprimé.');
-        navigate('conseils');
-      });
+    container.appendChild(content);
+  }
+
+  tabDefs.forEach(t => {
+    const tabBtn = el('button', {
+      className: `atelier-tab ${t.id === activeTab ? 'active' : ''}`,
+      onClick: () => {
+        activeTab = t.id;
+        state.atelierTab = t.id;
+        $$('.atelier-tab').forEach(tb => tb.classList.remove('active'));
+        tabBtn.classList.add('active');
+        renderTabContent();
+      }
     });
-  }, 0);
+    tabBtn.innerHTML = `${t.label} <span class="atelier-tab-count">${t.count}</span>`;
+    tabs.appendChild(tabBtn);
+  });
+
+  container.appendChild(tabs);
+  renderTabContent();
 }
 
-function loadConseils() {
-  try {
-    const raw = localStorage.getItem('architek-pro-conseils');
-    if (raw) return JSON.parse(raw);
-  } catch (e) { /* ignore */ }
-  return [];
-}
-
-function saveConseils(arr) {
-  localStorage.setItem('architek-pro-conseils', JSON.stringify(arr));
-}
-
-// -------- Mes réf Archi d'int --------
+// -------- Designers Tab (ex Mes réf) --------
 function loadRefData() {
   try {
     const raw = localStorage.getItem('architek-pro-references');
@@ -961,25 +868,8 @@ function saveRefData(data) {
   localStorage.setItem('architek-pro-references', JSON.stringify(data));
 }
 
-function renderReferences(container) {
+function renderReferencesTab(container) {
   const data = loadRefData();
-
-  const header = el('div', { className: 'ref-header' });
-  header.innerHTML = `
-    <h2>📐 Mes réf Archi d'int</h2>
-    <p>Créez un dossier par designer, collectez vos images d'inspiration et notez ce qui vous touche.</p>
-  `;
-  container.appendChild(header);
-
-  // Stats bar
-  const totalImages = data.designers.reduce((acc, d) => acc + d.images.length, 0);
-  const statsBar = el('div', { className: 'ref-stats' });
-  statsBar.innerHTML = `
-    <span class="ref-stat">${data.designers.length} designer${data.designers.length > 1 ? 's' : ''}</span>
-    <span class="ref-stat-sep">·</span>
-    <span class="ref-stat">${totalImages} image${totalImages > 1 ? 's' : ''}</span>
-  `;
-  container.appendChild(statsBar);
 
   // Add designer form
   const addForm = el('div', { className: 'ref-add-designer' });
@@ -1066,7 +956,7 @@ function renderReferences(container) {
         d.designers.push({ id: 'designer-' + Date.now(), name, specialty, images: [] });
         saveRefData(d);
         toast(`Dossier "${name}" créé !`);
-        navigate('references');
+        state.atelierTab = 'designers'; navigate('atelier');
       });
     }
 
@@ -1081,7 +971,7 @@ function renderReferences(container) {
           d.designers.splice(dIdx, 1);
           saveRefData(d);
           toast(`Dossier "${name}" supprimé.`);
-          navigate('references');
+          state.atelierTab = 'designers'; navigate('atelier');
         }
       });
     });
@@ -1115,7 +1005,7 @@ function renderReferences(container) {
         d.designers[dIdx].images.splice(iIdx, 1);
         saveRefData(d);
         toast('Image supprimée.');
-        navigate('references');
+        state.atelierTab = 'designers'; navigate('atelier');
       });
     });
 
@@ -1168,7 +1058,7 @@ function openRefImageModal(dIdx) {
     saveRefData(d);
     closeModal();
     toast('Image ajoutée ✓');
-    navigate('references');
+    state.atelierTab = 'designers'; navigate('atelier');
   };
   overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
   setTimeout(() => { const f = content.querySelector('input'); if (f) f.focus(); }, 100);
@@ -1226,7 +1116,7 @@ function openRefPourquoiModal(dIdx, iIdx) {
     saveRefData(updated);
     closeModal();
     toast('Analyse enregistrée ✓');
-    navigate('references');
+    state.atelierTab = 'designers'; navigate('atelier');
   };
   overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
   setTimeout(() => { const f = content.querySelector('textarea'); if (f) f.focus(); }, 100);
@@ -1636,28 +1526,16 @@ const ETUDES_TYPOLOGIES = ['Appartement', 'Maison', 'Studio', 'Loft', 'Duplex', 
 const ETUDES_STYLES = ['Minimaliste', 'Contemporain', 'Japandi', 'Art Déco', 'Industriel', 'Scandinave', 'Brutaliste', 'Wabi-Sabi', 'Classique revisité', 'Méditerranéen', 'Mid-Century', 'Organique', 'Maximaliste', 'Autre'];
 const ETUDES_BUDGETS = ['< 20k €', '20-50k €', '50-100k €', '100-200k €', '200-500k €', '> 500k €', 'Non renseigné'];
 
-function renderEtudes(container) {
+function renderEtudesTab(container) {
   const etudes = loadEtudes();
 
-  // Header
-  const header = el('div', { className: 'etudes-header' });
-  header.innerHTML = `
-    <div class="etudes-header-top">
-      <div>
-        <h2>🏠 Études de Cas</h2>
-        <p>Documentez et décryptez les projets qui vous inspirent. Votre bibliothèque personnelle de références architecturales.</p>
-      </div>
-      <button class="btn-etude-add" id="etude-add-btn">+ Nouveau projet</button>
-    </div>
-    <div class="etudes-stats-bar">
-      <span class="etude-stat">${etudes.length} projet${etudes.length > 1 ? 's' : ''}</span>
-      <span class="etude-stat-sep">·</span>
-      <span class="etude-stat">${etudes.reduce((a, e) => a + (e.images ? e.images.length : 0), 0)} photos</span>
-      <span class="etude-stat-sep">·</span>
-      <span class="etude-stat">${etudes.filter(e => e.decryptage && (e.decryptage.circulation || e.decryptage.lumiere || e.decryptage.espace || e.decryptage.materiaux || e.decryptage.details || e.decryptage.notes)).length} décryptés</span>
-    </div>
+  // Header row with add button
+  const headerRow = el('div', { className: 'etudes-header-top' });
+  headerRow.innerHTML = `
+    <div></div>
+    <button class="btn-etude-add" id="etude-add-btn">+ Nouveau projet</button>
   `;
-  container.appendChild(header);
+  container.appendChild(headerRow);
 
   // Filter bar
   if (etudes.length > 0) {
@@ -1890,7 +1768,7 @@ function openEtudeModal(existingProjet = null) {
     saveEtudes(etudes);
     closeModal();
     toast(isEdit ? 'Projet mis à jour ✓' : 'Projet créé ! 📐');
-    navigate('etudes');
+    state.atelierTab = 'projets'; navigate('atelier');
   };
 
   overlay.onclick = (e) => { if (e.target === overlay) closeModal(); };
@@ -1908,8 +1786,8 @@ function openEtudeDetail(projetId) {
   const detail = el('div', { className: 'etude-detail' });
 
   // Back button
-  const back = el('button', { className: 'etude-back-btn', onClick: () => navigate('etudes') });
-  back.innerHTML = '← Retour aux études de cas';
+  const back = el('button', { className: 'etude-back-btn', onClick: () => { state.atelierTab = 'projets'; navigate('atelier'); } });
+  back.innerHTML = '← Retour à Mon Atelier';
   detail.appendChild(back);
 
   // Cover hero
@@ -2050,7 +1928,7 @@ function openEtudeDetail(projetId) {
         if (idx >= 0) e.splice(idx, 1);
         saveEtudes(e);
         toast('Projet supprimé.');
-        navigate('etudes');
+        state.atelierTab = 'projets'; navigate('atelier');
       }
     });
 
@@ -2664,28 +2542,16 @@ function initNavEvents() {
     collLink.addEventListener('click', (e) => { e.preventDefault(); navigate('collection'); closeMobileMenu(); });
   }
 
-  // Conseils link
-  const consLink = $('[data-view="conseils"]');
-  if (consLink) {
-    consLink.addEventListener('click', (e) => { e.preventDefault(); navigate('conseils'); closeMobileMenu(); });
-  }
-
-  // References link
-  const refLink = $('[data-view="references"]');
-  if (refLink) {
-    refLink.addEventListener('click', (e) => { e.preventDefault(); navigate('references'); closeMobileMenu(); });
+  // Atelier link
+  const atelierLink = $('[data-view="atelier"]');
+  if (atelierLink) {
+    atelierLink.addEventListener('click', (e) => { e.preventDefault(); navigate('atelier'); closeMobileMenu(); });
   }
 
   // Sourcing link
   const srcLink = $('[data-view="sourcing"]');
   if (srcLink) {
     srcLink.addEventListener('click', (e) => { e.preventDefault(); navigate('sourcing'); closeMobileMenu(); });
-  }
-
-  // Etudes de cas link
-  const etudesLink = $('[data-view="etudes"]');
-  if (etudesLink) {
-    etudesLink.addEventListener('click', (e) => { e.preventDefault(); navigate('etudes'); closeMobileMenu(); });
   }
 
   // Ma Veille link
