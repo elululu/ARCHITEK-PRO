@@ -257,6 +257,16 @@ function renderDashboard(container) {
   container.appendChild(hero);
   container.appendChild(statsRow);
 
+  // Data management row
+  const dataRow = el('div', { className: 'dashboard-data-row' });
+  const exportBtn = el('button', { className: 'btn-data', onClick: exportAllData });
+  exportBtn.innerHTML = '📥 Exporter mes données';
+  const importBtn = el('button', { className: 'btn-data', onClick: importAllData });
+  importBtn.innerHTML = '📤 Importer un backup';
+  dataRow.appendChild(exportBtn);
+  dataRow.appendChild(importBtn);
+  container.appendChild(dataRow);
+
   // Random fiche button
   const randomRow = el('div', { className: 'dashboard-random' });
   const randomBtn = el('button', {
@@ -403,9 +413,9 @@ function renderDomain(container) {
       className: 'domain-filter-input',
       placeholder: `Filtrer dans ${d.name} (${d.fiches.length} fiches)...`,
       onInput: (e) => {
-        const q = e.target.value.toLowerCase().trim();
+        const q = normalize(e.target.value.trim());
         $$('.fiche-card', container).forEach(card => {
-          const text = card.textContent.toLowerCase();
+          const text = normalize(card.textContent);
           card.style.display = q === '' || text.includes(q) ? '' : 'none';
         });
         $$('.category-group', container).forEach(group => {
@@ -723,6 +733,11 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
+}
+
+// Normalize accents for search (décor → decor)
+function normalize(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
 // -------- Collection --------
@@ -2383,17 +2398,23 @@ function openVeilleModal() {
 
 // -------- Search --------
 function renderSearch(container) {
-  const query = state.searchQuery.toLowerCase().trim();
+  const query = normalize(state.searchQuery.trim());
   const results = [];
 
   APP_DATA.domains.forEach(d => {
     d.fiches.forEach(f => {
-      const searchable = [f.title, f.subtitle, f.summary, ...f.tags, ...(f.sections || []).map(s => s.title + ' ' + s.content), ...(f.keyPoints || []), ...(f.tips || [])].join(' ').toLowerCase();
+      const searchable = normalize([f.title, f.subtitle, f.summary, ...f.tags, ...(f.sections || []).map(s => s.title + ' ' + s.content), ...(f.keyPoints || []), ...(f.tips || [])].join(' '));
       if (searchable.includes(query)) {
-        results.push({ domain: d, fiche: f });
+        // Score: title match ranks higher
+        const titleMatch = normalize(f.title).includes(query) ? 2 : 0;
+        const subtitleMatch = normalize(f.subtitle).includes(query) ? 1 : 0;
+        results.push({ domain: d, fiche: f, score: titleMatch + subtitleMatch });
       }
     });
   });
+
+  // Sort by relevance
+  results.sort((a, b) => b.score - a.score);
 
   const header = el('div', { className: 'search-results-header' });
   header.innerHTML = `
@@ -2674,6 +2695,78 @@ function initNavEvents() {
   }
 }
 
+// ============ EXPORT / IMPORT DATA ============
+function exportAllData() {
+  const data = {};
+  const keys = ['architek-pro-data', 'architek-pro-conseils', 'architek-pro-references', 'architek-pro-shopping', 'architek-pro-etudes', 'architek-pro-veille'];
+  keys.forEach(k => {
+    const val = localStorage.getItem(k);
+    if (val) data[k] = JSON.parse(val);
+  });
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `architek-pro-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Backup téléchargé ✓');
+}
+
+function importAllData() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        const validKeys = ['architek-pro-data', 'architek-pro-conseils', 'architek-pro-references', 'architek-pro-shopping', 'architek-pro-etudes', 'architek-pro-veille'];
+        let count = 0;
+        for (const [k, v] of Object.entries(data)) {
+          if (validKeys.includes(k)) {
+            localStorage.setItem(k, JSON.stringify(v));
+            count++;
+          }
+        }
+        state.userData = loadUserData();
+        toast(`${count} jeux de données restaurés ✓`);
+        navigate('dashboard');
+      } catch (err) {
+        toast('Fichier invalide — vérifiez le format JSON.');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+// ============ DARK MODE ============
+function initDarkMode() {
+  const saved = localStorage.getItem('architek-pro-theme');
+  if (saved === 'dark') document.body.classList.add('dark-mode');
+
+  const toggle = $('#dark-mode-toggle');
+  if (!toggle) return;
+
+  updateDarkModeIcon();
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('architek-pro-theme', isDark ? 'dark' : 'light');
+    updateDarkModeIcon();
+  });
+}
+
+function updateDarkModeIcon() {
+  const icon = $('.dm-icon');
+  if (icon) icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+}
+
 // ============ BACK TO TOP ============
 function initBackToTop() {
   const btn = document.createElement('button');
@@ -2713,6 +2806,7 @@ function initCollapsibleSidebar() {
 
 // ============ INIT ============
 function init() {
+  initDarkMode();
   buildSidebar();
   initNavEvents();
   initSearch();

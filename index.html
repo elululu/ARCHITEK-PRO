@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur</title>
+  <meta name="description" content="Encyclopédie personnelle d'architecture d'intérieur : styles, matériaux, couleurs, ergonomie, normes, tendances. Conçu par AtelierLO.">
+  <meta name="theme-color" content="#1A1A1A">
+  <meta name="author" content="AtelierLO — Lucien Oulhen">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur">
+  <meta property="og:description" content="+90 fiches encyclopédiques, outils de gestion de projet, études de cas et veille — l'outil de référence pour architectes d'intérieur.">
+  <meta property="og:url" content="https://elululu.github.io/ARCHITEK-PRO/">
+  <meta property="og:site_name" content="ARCHITEK PRO">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur">
+  <meta name="twitter:description" content="+90 fiches, études de cas, veille — l'outil de référence pour architectes d'intérieur. Par AtelierLO.">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ARCHITEK PRO">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -74,10 +96,15 @@
   <main id="main">
     <header id="topbar">
       <div id="breadcrumb"></div>
-      <div class="search-wrapper">
-        <span class="search-icon">⌕</span>
-        <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
-        <kbd class="search-shortcut">/</kbd>
+      <div class="topbar-right">
+        <button id="dark-mode-toggle" class="dark-mode-toggle" title="Mode sombre / clair" aria-label="Basculer le thème">
+          <span class="dm-icon">🌙</span>
+        </button>
+        <div class="search-wrapper">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
+          <kbd class="search-shortcut">/</kbd>
+        </div>
       </div>
     </header>
     <div id="content"></div>
@@ -93,5 +120,10 @@
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
 </body>
 </html>

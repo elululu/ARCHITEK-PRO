@@ -1,0 +1,19 @@
+{
+  "name": "ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur",
+  "short_name": "ARCHITEK PRO",
+  "description": "+90 fiches encyclopédiques pour architectes d'intérieur. Par AtelierLO.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1A1A1A",
+  "theme_color": "#1A1A1A",
+  "orientation": "any",
+  "categories": ["education", "productivity"],
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

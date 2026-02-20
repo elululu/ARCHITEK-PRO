@@ -3300,6 +3300,143 @@ mark {
 }
 
 /* ========================================
+   DARK MODE TOGGLE BUTTON
+   ======================================== */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dark-mode-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.dark-mode-toggle:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* ========================================
+   DATA EXPORT / IMPORT BUTTONS
+   ======================================== */
+.dashboard-data-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.btn-data {
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.btn-data:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ========================================
+   STAGGERED CARD ANIMATIONS
+   ======================================== */
+.domain-card,
+.fiche-card,
+.stat-card,
+.dashboard-etude-card,
+.dashboard-veille-card {
+  animation: staggerFadeIn 0.4s ease both;
+}
+
+.domain-card:nth-child(1), .fiche-card:nth-child(1), .stat-card:nth-child(1) { animation-delay: 0s; }
+.domain-card:nth-child(2), .fiche-card:nth-child(2), .stat-card:nth-child(2) { animation-delay: 0.04s; }
+.domain-card:nth-child(3), .fiche-card:nth-child(3), .stat-card:nth-child(3) { animation-delay: 0.08s; }
+.domain-card:nth-child(4), .fiche-card:nth-child(4), .stat-card:nth-child(4) { animation-delay: 0.12s; }
+.domain-card:nth-child(5), .fiche-card:nth-child(5), .stat-card:nth-child(5) { animation-delay: 0.16s; }
+.domain-card:nth-child(6), .fiche-card:nth-child(6), .stat-card:nth-child(6) { animation-delay: 0.20s; }
+.domain-card:nth-child(7), .fiche-card:nth-child(7), .stat-card:nth-child(7) { animation-delay: 0.24s; }
+.domain-card:nth-child(8), .fiche-card:nth-child(8) { animation-delay: 0.28s; }
+.domain-card:nth-child(9), .fiche-card:nth-child(9) { animation-delay: 0.32s; }
+.domain-card:nth-child(10), .fiche-card:nth-child(10) { animation-delay: 0.36s; }
+.fiche-card:nth-child(n+11) { animation-delay: 0.40s; }
+
+@keyframes staggerFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   DARK MODE
+   ======================================== */
+body.dark-mode {
+  --bg: #121212;
+  --surface: #1E1E1E;
+  --text: #E8E6E1;
+  --text-secondary: #A0A0A0;
+  --text-tertiary: #6A6A6A;
+  --accent: #C9A87C;
+  --accent-hover: #D4B88E;
+  --accent-light: #2A2318;
+  --border: #2E2E2E;
+  --border-light: #252525;
+  --success: #7DB889;
+  --success-light: #1A2E1F;
+  --warning: #D4A57A;
+  --danger: #D48080;
+  --tag-bg: #252220;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+body.dark-mode #topbar {
+  background: rgba(18, 18, 18, 0.92);
+  border-bottom-color: var(--border);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .promo-card {
+  background: linear-gradient(135deg, #0E0E0E 0%, #1A1508 100%);
+}
+
+body.dark-mode img {
+  opacity: 0.92;
+}
+
+body.dark-mode .search-shortcut {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* ========================================
    PRINT STYLES
    ======================================== */
 @media print {
