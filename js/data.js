@@ -858,7 +858,7 @@ const APP_DATA = {
         },
         {
           id: 'carreaux-ciment',
-          category: 'Enduits & Revêtements minéraux',
+          category: 'Céramique & Carrelage',
           title: 'Carreaux de Ciment',
           subtitle: 'L\'artisanat géométrique',
           summary: 'Carreaux moulés à la main, compressés (non cuits), aux motifs géométriques et floraux. Nés au XIXe siècle, ils reviennent en force comme éléments signature des intérieurs de caractère.',
@@ -1014,11 +1014,11 @@ const APP_DATA = {
         },
 
         // ──────────────────────────────
-        // MATÉRIAUX INNOVANTS
+        // MATÉRIAUX COMPLÉMENTAIRES
         // ──────────────────────────────
         {
           id: 'quartz-composite',
-          category: 'Matériaux innovants',
+          category: 'Matériaux Complémentaires',
           title: 'Quartz Composite',
           subtitle: 'L\'alternative technique',
           summary: 'Matériau composite de quartz broyé (93%) et résine (7%). Le quartz composite (Silestone, Caesarstone, Dekton) est l\'alternative la plus populaire aux pierres naturelles pour les plans de travail.',
@@ -1034,7 +1034,7 @@ const APP_DATA = {
         },
         {
           id: 'liege',
-          category: 'Matériaux innovants',
+          category: 'Matériaux Complémentaires',
           title: 'Liège',
           subtitle: 'L\'isolant décoratif',
           summary: 'Écorce du chêne-liège, récoltée sans abattre l\'arbre. Le liège est un matériau naturel aux propriétés exceptionnelles : isolant thermique, acoustique, hypoallergénique et 100% renouvelable.',
@@ -1050,7 +1050,7 @@ const APP_DATA = {
         },
         {
           id: 'rotin-cannage',
-          category: 'Matériaux innovants',
+          category: 'Matériaux Complémentaires',
           title: 'Rotin & Cannage',
           subtitle: 'Le tressage organique',
           summary: 'Liane tropicale tressée (rotin) ou treillis de lanières végétales (cannage). Ces matériaux naturels apportent chaleur, texture et une touche organique incomparable.',
@@ -1066,7 +1066,7 @@ const APP_DATA = {
         },
         {
           id: 'terre-crue',
-          category: 'Matériaux innovants',
+          category: 'Matériaux Complémentaires',
           title: 'Terre Crue',
           subtitle: 'Le matériau ancestral du futur',
           summary: 'La terre crue — pisé, torchis, adobe, enduit terre — est le matériau de construction le plus ancien au monde et le plus prometteur pour l\'architecture écologique de demain.',
@@ -1299,6 +1299,10 @@ const APP_DATA = {
             {
               title: 'Mise en œuvre & coûts',
               content: 'Le monochrome matière est plus coûteux qu\'une peinture mais l\'impact est incomparable. Travertin sol+mur : 120-250€/m² posé. Zellige : 80-150€/m² posé. Pierre naturelle type Verde Guatemala : 200-500€/m². Béton ciré teinté sol+mur : 100-200€/m². L\'investissement est dans la main d\'œuvre qualifiée — un bon carreleur ou un applicateur béton ciré formé fait toute la différence.'
+            },
+            {
+              title: 'Sourcing & références',
+              content: 'Zellige artisanal : Emery & Cie, Mosaic del Sur, Zelij (Maroc direct). Pierres naturelles : marbriers locaux + carrières (Pierre Bleue de Wallonie, Pierre de Bourgogne ROCAMAT). Travertin : Turquie, Italie, Iran — attention à la qualité (veinage, rebouchage). Terrazzo : Agglomarbre, Huguet, Diespeker (sur mesure). Béton ciré : Marius Aurenti, Mercadier, Rouviere Collection. Tadelakt : artisans spécialisés (Maroc, Provence, Uzès). Toujours commander des échantillons physiques — un matériau-couleur ne se choisit JAMAIS sur écran.'
             }
           ],
           keyPoints: [
@@ -1317,40 +1321,40 @@ const APP_DATA = {
         },
         {
           id: 'eclairage-ambiance',
-          title: 'Éclairage en Couches',
-          subtitle: 'L\'art des 3 strates lumineuses',
-          summary: 'Un éclairage réussi se compose en couches : ambiance, fonctionnel, décoratif. Comprendre cette méthode transforme n\'importe quel espace et fait la différence entre un intérieur « éclairé » et un intérieur « mis en lumière ».',
+          title: 'Éclairage d\'Ambiance',
+          subtitle: 'Mise en lumière & scénarios',
+          summary: 'Au-delà de la technique (voir fiche Éclairage Technique), l\'éclairage d\'ambiance est l\'art de créer des atmosphères par la lumière — gorge lumineuse, scénarios pièce par pièce, et mise en scène du soir.',
           sections: [
             {
-              title: 'Les 3 couches d\'éclairage',
-              content: 'Couche 1 — Ambiance/général : lumière indirecte douce qui remplit l\'espace (rubans LED dans gorge lumineuse, spots encastrés orientables). Couche 2 — Fonctionnel : lumière ciblée pour les activités (liseuse en chambre, éclairage plan de travail en cuisine, spot orientable sur bureau). Couche 3 — Décoratif/accent : lumière qui crée l\'atmosphère et met en valeur (suspension design, lampe à poser, applique murale, bougie). Un espace bien éclairé mixe les 3.'
-            },
-            {
               title: 'La gorge lumineuse : technique star',
-              content: 'La gorge lumineuse est un bandeau de LED dissimulé dans une retombée de plafond, un coffrage ou une corniche. La lumière rebondit sur le plafond ou le mur — jamais de source visible. Résultat : une lumière douce, enveloppante, sans ombre dure. Température recommandée : 2700K (blanc chaud) à 3000K. Intensité réglable via variateur. C\'est devenu un standard dans tout projet haut de gamme.'
-            },
-            {
-              title: 'La température de couleur',
-              content: '2200K : lumière bougie, ultra-chaud (bar, chambre). 2700K : blanc chaud, le standard résidentiel. 3000K : blanc chaud légèrement plus vif (cuisine, salle de bain). 4000K : blanc neutre (bureau, commerce). 5000-6500K : lumière du jour (atelier d\'artiste, dressing). RÈGLE : ne JAMAIS mélanger des températures différentes dans une même pièce. Prévoir un variateur (dimmer) dans chaque pièce.'
+              content: 'La gorge lumineuse est un bandeau de LED dissimulé dans une retombée de plafond, un coffrage ou une corniche. La lumière rebondit sur le plafond ou le mur — jamais de source visible. Résultat : une lumière douce, enveloppante, sans ombre dure. Température recommandée : 2700K (blanc chaud) à 3000K. Intensité réglable via variateur. C\'est devenu un standard dans tout projet haut de gamme. Profondeur de gorge idéale : 12-15 cm. Distance LED/surface de rebond : 8-10 cm minimum pour éviter les « points chauds ».'
             },
             {
               title: 'Plan d\'éclairage par pièce',
               content: 'Salon : gorge lumineuse (ambiance) + lampes à poser (accent) + liseuse (fonctionnel). Cuisine : spots encastrés orientables (général) + LED sous meuble haut (fonctionnel) + suspension au-dessus de l\'îlot (décoratif). Chambre : gorge lumineuse ou appliques indirectes (ambiance) + liseuses (fonctionnel) + lampe de chevet (accent). Salle de bain : spots encastrés IP44 (général) + LED miroir (fonctionnel) + bougie (ambiance). Entrée : applique murale ou spot d\'accent + LED intégrée au meuble.'
+            },
+            {
+              title: 'Scénarios jour/soir',
+              content: 'Un bon projet prévoit au minimum 2 scénarios par pièce de vie. Scénario jour : lumière naturelle + éclairage fonctionnel complémentaire si nécessaire. Scénario soir : éclairage indirect (gorge, appliques) + lampes à poser + bougies. Scénario réception : éclairage tamisé (variateurs à 40%), suspension au-dessus de la table, bougies. Scénario nuit : veilleuses LED intégrées dans le couloir et la salle de bain (détection de mouvement). Le variateur est l\'outil clé : chaque point lumineux doit être dimmable.'
+            },
+            {
+              title: 'Luminaires signatures',
+              content: 'Les luminaires les plus photographiés en archi d\'intérieur : Serge Mouille (appliques, plafonniers — sculptural noir). DCW Éditions (Lampe Gras — industriel raffiné). Flos (IC Lights de Michael Anastassiades — sphères en équilibre). Louis Poulsen (PH5 — lumière nordique parfaite). Isamu Noguchi (Akari — papier washi — poésie lumineuse). Santa & Cole (Cesta — lampe iconique espagnole). Le choix du luminaire est un statement — il résume le style du projet.'
             }
           ],
           keyPoints: [
-            '3 couches minimum par pièce : ambiance + fonctionnel + décoratif',
-            '2700K = la température de référence en résidentiel',
             'La gorge lumineuse = technique star du projet haut de gamme',
             'JAMAIS de plafonnier central seul — c\'est l\'erreur la plus commune',
-            'Variateur dans chaque pièce = passage du jour au soir en douceur'
+            'Variateur dans chaque pièce = passage du jour au soir en douceur',
+            'Prévoir minimum 2 scénarios d\'éclairage par pièce de vie',
+            'Pour les bases techniques (Kelvin, Lumen, 3 couches) → voir fiche Éclairage Technique'
           ],
           tips: [
             'Prévoir les encastrements et passages de câbles AVANT le plâtre — l\'éclairage se pense en phase conception',
             'Un variateur coûte 30-50€ et transforme une pièce — le meilleur rapport investissement/impact',
-            'Les appliques Serge Mouille ou DCW sont les luminaires les plus photographiés en archi d\'intérieur'
+            'Dessiner un plan d\'éclairage avec des cercles de lumière pour visualiser les zones éclairées et les zones d\'ombre'
           ],
-          tags: ['éclairage', 'LED', 'ambiance', 'gorge lumineuse', 'variateur', 'température']
+          tags: ['éclairage', 'ambiance', 'gorge lumineuse', 'variateur', 'luminaires', 'scénarios']
         }
       ]
     },
@@ -1710,7 +1714,7 @@ const APP_DATA = {
             'Toujours démarrer par un plan coté au 1/50 avec le mobilier dessiné à l\'échelle — on voit immédiatement ce qui rentre ou pas',
             'Le miroir pleine hauteur en bout de couloir crée un effet de profondeur spectaculaire'
           ],
-          tags: ['petit espace', 'studio', 'optimisation', 'plan', 'décloisonnement', 'studio']
+          tags: ['petit espace', 'studio', 'optimisation', 'plan', 'décloisonnement', 'mobilier']
         },
         {
           id: 'cuisine-ouverte-ilot',
@@ -2025,17 +2029,18 @@ const APP_DATA = {
     },
 
     // ====================================
-    // 6. OUTILS & LOGICIELS
+    // 6. GESTION DE PROJET
     // ====================================
     {
-      id: 'outils',
-      name: 'Outils & Logiciels',
-      icon: '⊟',
-      color: '#9E6B8B',
-      description: 'Maîtriser les logiciels de conception, rendu 3D, présentation et gestion de projet.',
+      id: 'gestion-projet',
+      name: 'Gestion de Projet',
+      icon: '⊞',
+      color: '#6B7A9E',
+      description: 'De la première rencontre à la livraison : phases de projet, relation client, chiffrage et suivi de chantier.',
       fiches: [
         {
           id: 'sketchup',
+          category: 'Outils & Organisation',
           title: 'SketchUp',
           subtitle: 'Modélisation 3D intuitive',
           summary: 'Le logiciel de modélisation 3D le plus accessible et le plus utilisé par les architectes d\'intérieur. Idéal pour la conception rapide et la communication client.',
@@ -2071,56 +2076,6 @@ const APP_DATA = {
           ],
           tags: ['3D', 'modélisation', 'logiciel', 'design', 'rendu', 'présentation']
         },
-        {
-          id: 'moodboard',
-          title: 'L\'Art du Moodboard',
-          subtitle: 'Communication visuelle',
-          summary: 'Le moodboard est l\'outil de communication n°1 avec le client. Bien réalisé, il aligne les visions et évite les malentendus avant même de dessiner.',
-          sections: [
-            {
-              title: 'Qu\'est-ce qu\'un moodboard professionnel',
-              content: 'Un moodboard (planche d\'ambiance) est une composition visuelle qui communique l\'esprit d\'un projet. Il réunit images d\'inspiration, échantillons de matériaux, palette de couleurs et références de mobilier. C\'est un outil de communication, pas de décoration.'
-            },
-            {
-              title: 'Contenu d\'un moodboard efficace',
-              content: 'Image d\'ambiance principale (1 grande photo qui donne le ton). 3-5 images secondaires (détails, textures, espaces similaires). Palette de couleurs (5-7 couleurs avec références). Échantillons matériaux (bois, tissu, pierre). Sélection de mobilier clé (2-3 pièces). Éclairage de référence. Police/typographie si branding.'
-            },
-            {
-              title: 'Outils de création',
-              content: 'Canva Pro : le plus accessible, templates professionnels. Adobe InDesign : le standard pour les planches haute qualité. Figma : collaboratif, excellent pour les présentations. Milanote : outil dédié aux moodboards créatifs. Pinterest : recherche d\'inspiration (mais pas de création). Physique : carton + échantillons réels = impact maximal en rendez-vous client.'
-            },
-            {
-              title: 'Méthodologie de présentation',
-              content: 'Présenter en personne si possible (l\'écran ne rend pas les textures). Commencer par le concept en mots avant de montrer les images. Hiérarchiser : ambiance globale → matériaux → mobilier → détails. Ne jamais présenter plus de 2 directions différentes (choix cornélien = paralysie du client). Laisser le moodboard imprimé au client après la présentation.'
-            }
-          ],
-          keyPoints: [
-            'Le moodboard aligne la vision — il prévient 80% des malentendus',
-            '1 image d\'ambiance forte > 10 petites images',
-            'Les échantillons physiques sont irremplaçables pour les matériaux',
-            'Maximum 2 propositions de direction — pas plus',
-            'Le moodboard précède tout dessin technique'
-          ],
-          tips: [
-            'Créer un moodboard en 30 min max — si ça prend plus longtemps, le concept n\'est pas clair',
-            'Toujours inclure une image « c\'est exactement pas ça » pour clarifier les limites',
-            'Photographier les échantillons matériaux en lumière naturelle pour le rendu le plus fidèle'
-          ],
-          tags: ['moodboard', 'présentation', 'client', 'ambiance', 'communication', 'outils']
-        }
-      ]
-    },
-
-    // ====================================
-    // 7. GESTION DE PROJET
-    // ====================================
-    {
-      id: 'gestion-projet',
-      name: 'Gestion de Projet',
-      icon: '⊞',
-      color: '#6B7A9E',
-      description: 'De la première rencontre à la livraison : phases de projet, relation client, chiffrage et suivi de chantier.',
-      fiches: [
         {
           id: 'phases-projet',
           category: 'Méthodologie',
@@ -2619,7 +2574,7 @@ const APP_DATA = {
     },
 
     // ====================================
-    // 8. TENDANCES & VEILLE
+    // 7. TENDANCES & VEILLE
     // ====================================
     {
       id: 'tendances',
@@ -2812,49 +2767,12 @@ const APP_DATA = {
             'Anticiper : le réemploi nécessite du temps de sourcing — intégrer cette phase dès le planning projet'
           ],
           tags: ['réemploi', 'récupération', 'durable', 'vintage', 'matériau', 'seconde vie']
-        },
-        {
-          id: 'couleur-matiere-tendance',
-          title: 'La Couleur-Matière',
-          subtitle: 'Quand le matériau EST la couleur',
-          summary: 'La tendance forte 2025 : la couleur ne vient plus d\'une peinture mais du matériau lui-même. Zellige vert, travertin doré, terrazzo graphique, béton pigmenté, marbre veiné. C\'est une approche plus riche, plus profonde et plus durable de la couleur en architecture d\'intérieur.',
-          sections: [
-            {
-              title: 'Comprendre le shift',
-              content: 'Pendant 20 ans, le blanc-gris-noir a dominé (minimalisme). Puis la couleur est revenue via la peinture (accent wall, couleur au plafond). Maintenant, la couleur passe par le matériau : un mur en pierre verte, une douche en zellige bleu, un sol en terrazzo rose. L\'avantage : la couleur est vivante (nuances, irrégularités, jeux de lumière), durable (ne se démode pas comme une peinture tendance) et sensorielle (on la touche, on la sent).'
-            },
-            {
-              title: 'Palette des matériaux-couleurs',
-              content: 'VERTS : Verde Guatemala (marbre), zellige vert émeraude, carrelage vert forêt, tadelakt vert sauge. BLEUS : zellige bleu Majorelle, pierre bleue du Hainaut, carrelage bleu cobalt. ROSES/TERRACOTTA : marbre Rosa Portogallo, brique terracotta, zellige rose, tomette ancienne. BEIGE/DORÉ : travertin, pierre de Bourgogne, tadelakt naturel, bois de chêne clair. NOIR : ardoise, basalte, marbre Nero Marquina, granit Zimbabwe.'
-            },
-            {
-              title: 'Comment l\'intégrer en projet',
-              content: 'La règle du 60-30-10 adaptée à la matière : 60% base neutre (béton ciré blanc, bois clair), 30% matériau-couleur principal (zellige vert en crédence + salle de bain), 10% accent (laiton, détail textile). Ou la méthode « immersion » : une pièce entière dans un seul matériau-couleur (salle de bain tout en travertin, cuisine tout en terrazzo). Ne pas mélanger plus de 2 matériaux-couleurs dans un même espace — la sobriété est clé.'
-            },
-            {
-              title: 'Sourcing & références',
-              content: 'Zellige artisanal : Emery & Cie, Mosaic del Sur, Zelij (Maroc direct). Pierres naturelles : marbriers locaux + carrières (Pierre Bleue de Wallonie, Pierre de Bourgogne ROCAMAT). Travertin : Turquie (Turkey Travertine), Italie, Iran — attention à la qualité (veinage, rebouchage). Terrazzo : Agglomarbre, Huguet, Diespeker (sur mesure). Béton ciré : Marius Aurenti, Mercadier, Rouviere Collection. Tadelakt : artisans spécialisés (Maroc, Provence, Uzès).'
-            }
-          ],
-          keyPoints: [
-            'La couleur-matière remplace la couleur-peinture comme tendance majeure',
-            'La couleur incarnée dans le matériau est plus vivante, durable et sensorielle',
-            'Maximum 2 matériaux-couleurs dans un même espace',
-            'Le zellige et le travertin sont les matériaux-couleurs les plus demandés en 2025',
-            'Règle 60-30-10 : base neutre + matériau principal + accent'
-          ],
-          tips: [
-            'Toujours commander des échantillons PHYSIQUES — un zellige vert ne rend RIEN sur écran',
-            'Visiter un showroom (Emery & Cie à Bruxelles, Stone Gallery à Paris) vaut mille images Pinterest',
-            'Le travertin rebouché (lisse) et le travertin non rebouché (trous ouverts) sont deux esthétiques différentes — montrer les deux au client'
-          ],
-          tags: ['couleur', 'matière', 'zellige', 'travertin', 'terrazzo', 'tendance']
         }
       ]
     },
 
     // ====================================
-    // 9. VOCABULAIRE PRO
+    // 8. VOCABULAIRE PRO
     // ====================================
     {
       id: 'vocabulaire',
@@ -3252,7 +3170,7 @@ const APP_DATA = {
     },
 
     // ====================================
-    // 10. RÉNOVATION & SOLUTIONS TECHNIQUES
+    // 9. RÉNOVATION & SOLUTIONS TECHNIQUES
     // ====================================
     {
       id: 'renovation',
@@ -3505,7 +3423,7 @@ const APP_DATA = {
           id: 'renovation-electrique',
           category: 'Réseaux & Mise aux Normes',
           title: 'Rénovation Électrique',
-          subtitle: 'La norme NF C 15-100 en pratique',
+          subtitle: 'Sécurité, diagnostic & plan électrique',
           summary: 'L\'électricité est le réseau le plus dangereux et le plus réglementé. En rénovation, la mise aux normes est souvent obligatoire et toujours recommandée. L\'architecte d\'intérieur conçoit le plan électrique — il doit connaître les exigences.',
           sections: [
             {
@@ -3513,8 +3431,8 @@ const APP_DATA = {
               content: 'Obligation de mise aux normes : installation avant 1991 (pas de disjoncteur différentiel), fils en tissu, prises sans terre, tableau avec fusibles porcelaine. Recommandé : installation de plus de 25 ans. Signaux d\'alerte : prises qui chauffent, disjoncteur qui saute, fils non gainés visibles, pas de prise de terre, pas de différentiel 30 mA. En copropriété : la rénovation concerne la partie privative (du tableau au logement aux prises). La colonne montante est à la charge de la copropriété.'
             },
             {
-              title: 'La norme NF C 15-100 : les minimums par pièce',
-              content: 'SÉJOUR : 1 point d\'éclairage au plafond, 1 prise par tranche de 4 m² (minimum 5), 1 prise TV, 1 prise RJ45. CHAMBRE : 1 point d\'éclairage, 3 prises minimum, 1 prise RJ45. CUISINE : 1 éclairage, 6 prises dont 4 au-dessus du plan de travail, circuits spécialisés (four, plaques, lave-vaisselle, hotte). SALLE DE BAIN : volumes de sécurité (0, 1, 2, hors volume) — chaque équipement doit respecter son volume. Éclairage IP44 minimum en volume 2. SDB : 1 prise hors volume uniquement. WC : 1 éclairage, 1 prise (si > 4 m²).'
+              title: 'NF C 15-100 en rénovation : l\'essentiel',
+              content: 'La norme NF C 15-100 fixe les minimums par pièce (nombre de prises, points lumineux, circuits spécialisés). Voir la fiche « Normes Électriques NF C 15-100 » pour le détail complet pièce par pièce. En rénovation, les points critiques à vérifier en priorité : les volumes de sécurité en salle de bain (zones 0, 1, 2, hors volume), les circuits spécialisés cuisine (four, plaques, lave-vaisselle), et le différentiel 30 mA au tableau. La mise en conformité totale n\'est exigée qu\'en cas de rénovation lourde — en rénovation partielle, les travaux réalisés doivent respecter la norme en vigueur.'
             },
             {
               title: 'Le tableau électrique',
