@@ -3050,6 +3050,451 @@ const APP_DATA = {
           tags: ['vocabulaire', 'lexique', 'glossaire', 'termes', 'définitions', 'mémo']
         }
       ]
+    },
+
+    // ====================================
+    // 10. RÉNOVATION & SOLUTIONS TECHNIQUES
+    // ====================================
+    {
+      id: 'renovation',
+      name: 'Rénovation & Solutions Techniques',
+      icon: '⚒',
+      color: '#C17F59',
+      description: 'Les problèmes concrets rencontrés en rénovation et leurs solutions : isolation, humidité, ventilation, chauffage, acoustique, électricité, plomberie. Le vrai terrain.',
+      fiches: [
+        // --- ISOLATION & CONFORT THERMIQUE ---
+        {
+          id: 'isolation-sous-toiture',
+          category: 'Isolation & Confort Thermique',
+          title: 'Isolation sous Toiture & Combles',
+          subtitle: 'Trop chaud l\'été, trop froid l\'hiver — la solution',
+          summary: 'C\'est LE problème n°1 en rénovation de combles aménagés : un client qui dort sous les toits souffre de la chaleur en été (le zinc ou les tuiles montent à 60-70°C) et du froid en hiver (la chaleur s\'échappe par le toit). La toiture représente 30% des déperditions thermiques d\'un logement.',
+          sections: [
+            {
+              title: 'Diagnostic : pourquoi ça chauffe / refroidit',
+              content: 'La couverture (tuiles, ardoises, zinc) est la paroi la plus exposée au soleil et au froid. Sans isolation performante, la chaleur entre directement en été et sort en hiver. Les combles d\'avant 2000 ont souvent une isolation insuffisante (4-6 cm de laine de verre tassée, voire rien). Les ponts thermiques aux jonctions mur/toiture et aux fenêtres de toit (Velux) aggravent le problème. Un simple toucher du plafond mansardé révèle tout : s\'il est chaud en été ou froid en hiver, l\'isolation est défaillante.'
+            },
+            {
+              title: 'Les solutions d\'isolation',
+              content: 'SOLUTION 1 — Isolation par l\'intérieur (ITI, la plus courante) : pose de panneaux isolants entre et sous les chevrons. Épaisseur recommandée : 20-30 cm pour atteindre R ≥ 6 m².K/W (exigence RE2020). Matériaux : laine de bois (excellent confort d\'été — déphasage 10-12h), laine de verre/roche (économique), ouate de cellulose (soufflée ou en panneaux). Coût : 40-80 €/m². SOLUTION 2 — Isolation par l\'extérieur (sarking) : panneaux rigides posés sur les chevrons, sous la couverture. Le plus performant (supprime tous les ponts thermiques) mais nécessite de refaire la couverture. Coût : 100-200 €/m². SOLUTION 3 — Isolation soufflée (combles perdus) : ouate de cellulose ou laine soufflée sur le plancher des combles. Rapide, efficace, économique (15-30 €/m²).'
+            },
+            {
+              title: 'Le déphasage thermique : clé du confort d\'été',
+              content: 'Le DÉPHASAGE est le temps que met la chaleur à traverser l\'isolant. C\'est LE critère pour le confort d\'été sous les toits. Laine de verre : déphasage ~4h → la chaleur de 14h arrive à 18h (insuffisant). Laine de bois : déphasage 10-12h → la chaleur de 14h arrive à 2h du matin quand il fait frais dehors (idéal). Ouate de cellulose : déphasage 8-10h (très bon). RÈGLE : sous les toits, toujours privilégier un isolant à fort déphasage (fibre de bois = référence). C\'est plus cher que la laine de verre mais le confort d\'été est incomparable.'
+            },
+            {
+              title: 'Les fenêtres de toit (Velux)',
+              content: 'Les Velux sont souvent le maillon faible de l\'isolation en combles. Solutions : remplacer les anciens Velux par des modèles récents (double vitrage à isolation renforcée, Uw ≤ 1,1 W/m².K). Ajouter un store occultant extérieur (pare-soleil — réduit l\'apport solaire de 70%). Vérifier l\'étanchéité du raccord Velux/toiture (fuite d\'air = pont thermique majeur). Poser un volet roulant extérieur solaire Velux (isole + occultation + pas de câblage).'
+            },
+            {
+              title: 'La ventilation : indissociable de l\'isolation',
+              content: 'Isoler sans ventiler = catastrophe (condensation, moisissures). Toujours prévoir une VMC (Ventilation Mécanique Contrôlée), idéalement double flux en combles aménagés (récupère 80-90% de la chaleur de l\'air extrait). La lame d\'air ventilée entre la couverture et l\'isolant est OBLIGATOIRE (évacuation de l\'humidité). Le pare-vapeur (côté intérieur chaud) empêche la vapeur d\'eau de pénétrer dans l\'isolant. Le pare-pluie (côté extérieur froid) protège l\'isolant de l\'eau tout en laissant respirer.'
+            }
+          ],
+          keyPoints: [
+            'La toiture = 30% des déperditions thermiques — c\'est la priorité n°1',
+            'Sous les toits : LAINE DE BOIS (déphasage 10-12h) et non laine de verre (4h)',
+            'Épaisseur minimum 20-30 cm pour R ≥ 6 m².K/W (RE2020)',
+            'Les Velux anciens sont des passoires thermiques — les remplacer ou ajouter volet extérieur',
+            'Isoler SANS ventiler = moisissures garanties — VMC obligatoire'
+          ],
+          tips: [
+            'Premier réflexe pour un client qui a chaud sous les toits : vérifier le type d\'isolant. Si c\'est de la laine de verre fine, le problème est là',
+            'Le volet roulant solaire Velux (SSL) se pose sans câblage et réduit la chaleur de 94% — c\'est la solution la plus rapide et efficace',
+            'En rénovation de combles, prévoir un surcoût de 10-15% pour une laine de bois vs laine de verre — le client ne regrettera jamais'
+          ],
+          tags: ['isolation', 'toiture', 'combles', 'thermique', 'laine de bois', 'Velux', 'chaleur']
+        },
+        {
+          id: 'humidite-condensation',
+          category: 'Isolation & Confort Thermique',
+          title: 'Humidité, Condensation & Moisissures',
+          subtitle: 'Le fléau silencieux des intérieurs',
+          summary: 'L\'humidité est le problème le plus fréquent en rénovation — et le plus mal diagnostiqué. Condensation sur les fenêtres, moisissures dans les angles, papier peint qui se décolle, odeur de renfermé. Avant tout projet esthétique, il faut traiter la cause.',
+          sections: [
+            {
+              title: 'Les 3 sources d\'humidité',
+              content: 'SOURCE 1 — La condensation (la plus fréquente) : l\'air chaud intérieur contient de la vapeur d\'eau qui se condense sur les parois froides (fenêtres, murs mal isolés, ponts thermiques). C\'est la buée sur les vitres, les moisissures dans les angles. Cause : manque de ventilation + isolation insuffisante. SOURCE 2 — Les infiltrations : l\'eau de pluie entre par la toiture, les murs, les menuiseries, les fissures. Cause : défaut d\'étanchéité. SOURCE 3 — Les remontées capillaires : l\'eau du sol remonte dans les murs par capillarité (bâtiments anciens sans barrière étanche). Signe : taches humides en pied de mur, salpêtre (efflorescences blanches).'
+            },
+            {
+              title: 'Diagnostic : identifier la source',
+              content: 'Test du papier aluminium : coller un carré d\'alu sur le mur humide pendant 48h. Si l\'humidité est côté mur → infiltration ou remontée. Si côté pièce → condensation. Mesure avec un hygromètre : taux d\'humidité relative idéal = 40-60%. Au-dessus de 70% = problème. Observation : humidité en haut du mur = infiltration toiture. En bas du mur = remontées capillaires. Sur les fenêtres et angles de plafond = condensation. Odeur de moisi sans trace visible = problème caché (derrière un doublage, sous un plancher).'
+            },
+            {
+              title: 'Solutions pour la condensation',
+              content: 'Ventilation : installer ou rénover la VMC (simple flux hygroréglable B minimum, double flux idéal). Aérer 10 min/jour fenêtres ouvertes. Isolation : traiter les ponts thermiques (angles mur/plafond, contours de fenêtres, coffres de volets roulants). Isoler les murs par l\'intérieur (ITE ou ITI). Remplacer les fenêtres simple vitrage par du double vitrage. Chauffage : maintenir une température constante (18-20°C) — l\'intermittence crée de la condensation. Ne pas obstruer les radiateurs avec des meubles.'
+            },
+            {
+              title: 'Solutions pour les infiltrations',
+              content: 'Toiture : vérifier tuiles/ardoises cassées, noues, faîtage, raccords cheminée. Faire intervenir un couvreur. Murs extérieurs : ravalement + imperméabilisation (hydrofuge de façade). Reboucher fissures avec un mastic élastique. Menuiseries : remplacer les joints périphériques. Vérifier le calfeutrement (mousse expansive + joint silicone). Gouttières : nettoyage, réparation, vérifier la descente (l\'eau qui déborde ruisselle sur le mur).'
+            },
+            {
+              title: 'Solutions pour les remontées capillaires',
+              content: 'Injection de résine : perçage en pied de mur tous les 15 cm, injection d\'une résine hydrophobe qui crée une barrière étanche. Coût : 50-100 €/ml. Le plus courant. Drainage périphérique : tranchée autour des fondations + drain + membrane. Lourd mais efficace. Cuvelage : dans les sous-sols, application d\'un enduit étanche (type Sika) sur les murs et le sol. Ventilation basse : créer des grilles de ventilation en pied de mur pour laisser le mur respirer (bâtiments anciens en pierre). ATTENTION : ne JAMAIS enduire un mur humide avec un revêtement étanche (ciment, peinture vinylique) — ça emprisonne l\'eau et aggrave le problème.'
+            }
+          ],
+          keyPoints: [
+            'Toujours diagnostiquer la SOURCE avant de traiter (condensation ≠ infiltration ≠ remontée)',
+            'Condensation = 80% des cas → la solution est ventilation + isolation',
+            'Hygromètre : taux d\'humidité idéal 40-60%, au-dessus de 70% = problème',
+            'Ne JAMAIS enduire un mur humide avec un revêtement étanche',
+            'Isoler sans ventiler = déplacer le problème → VMC obligatoire'
+          ],
+          tips: [
+            'Le test du papier alu est le premier geste à faire face à un mur humide — ça prend 2 jours et ça oriente tout le diagnostic',
+            'Un déshumidificateur électrique est un pansement, pas un traitement — il masque le symptôme sans traiter la cause',
+            'En bâtiment ancien (pierre), les murs DOIVENT respirer — utiliser des enduits à la chaux, jamais du ciment'
+          ],
+          tags: ['humidité', 'condensation', 'moisissure', 'ventilation', 'infiltration', 'capillaire']
+        },
+        {
+          id: 'ventilation-vmc',
+          category: 'Isolation & Confort Thermique',
+          title: 'Ventilation & VMC',
+          subtitle: 'L\'air qu\'on ne voit pas mais qu\'on subit',
+          summary: 'Un logement sans ventilation correcte, c\'est des moisissures, des odeurs, un air vicié et des allergies. La VMC est le poumon de l\'habitat — c\'est souvent la grande oubliée des rénovations esthétiques.',
+          sections: [
+            {
+              title: 'Pourquoi ventiler',
+              content: 'Un adulte produit 1 à 2 litres d\'eau par jour (respiration, douche, cuisine, linge). Sans évacuation, cette humidité se condense sur les parois froides → moisissures, odeurs, acariens. La ventilation évacue aussi les polluants intérieurs (COV des meubles, des peintures, du ménage) et le CO2. Un logement rénové avec fenêtres neuves (étanches) et sans VMC = boîte hermétique → les problèmes arrivent en quelques mois.'
+            },
+            {
+              title: 'VMC Simple Flux',
+              content: 'Principe : extraction de l\'air vicié dans les pièces humides (cuisine, SDB, WC) par des bouches d\'extraction reliées à un caisson ventilateur (dans les combles ou un placard). L\'air neuf entre par des entrées d\'air dans les fenêtres des pièces sèches (salon, chambres). HYGRORÉGLABLE B (la référence) : les bouches s\'ouvrent et se ferment en fonction du taux d\'humidité → ventilation intelligente, économe en énergie. Coût installation : 500-1 500 €. Consommation : 15-30 W (très faible). Entretien : nettoyer les bouches 2x/an, changer le caisson tous les 10-15 ans.'
+            },
+            {
+              title: 'VMC Double Flux',
+              content: 'Principe : comme la simple flux MAIS l\'air entrant est préchauffé par un échangeur thermique qui récupère 80-90% de la chaleur de l\'air sortant. Résultat : air neuf, filtré, tempéré — fini les entrées d\'air froid en hiver. Avantages : confort supérieur, économies de chauffage (15-25%), filtration de l\'air (pollens, particules fines). Inconvénients : plus cher (3 000-7 000 € installée), gaines plus volumineuses (Ø 125-160 mm), entretien des filtres (tous les 3-6 mois). Idéal pour : combles aménagés, logements très isolés (passif/BBC), personnes allergiques.'
+            },
+            {
+              title: 'Intégration architecturale',
+              content: 'Le défi en rénovation : passer les gaines. Solutions : faux plafond (perte de 15-25 cm de hauteur — acceptable si HsP > 2,70 m). Coffrage en angle mur/plafond (discret). Passage dans les placards et dressings. Pour la double flux : prévoir un local technique (caisson + échangeur = 60x60x40 cm environ). Le bruit : choisir un caisson silencieux (< 30 dB en vitesse 1). Les bouches d\'extraction design existent : Aldes, Atlantic, Zehnder proposent des modèles esthétiques.'
+            }
+          ],
+          keyPoints: [
+            'Fenêtres neuves SANS VMC = boîte hermétique → moisissures garanties sous 6 mois',
+            'VMC Simple Flux Hygroréglable B = le standard de la rénovation',
+            'VMC Double Flux = confort supérieur mais gaines volumineuses — à anticiper',
+            'Le passage des gaines est LA contrainte en rénovation — y penser dès le plan',
+            'Entretien minimal mais indispensable : nettoyer les bouches 2x/an'
+          ],
+          tips: [
+            'Toujours vérifier la VMC existante AVANT de commencer les travaux : aspirer une feuille de papier devant la bouche — si elle ne colle pas, la VMC est HS',
+            'En rénovation d\'appartement ancien sans VMC : la simple flux hygro B est souvent suffisante et bien plus facile à installer que la double flux',
+            'Prévoir les bouches d\'extraction DANS les faux plafonds de SDB — invisible et efficace'
+          ],
+          tags: ['ventilation', 'VMC', 'air', 'humidité', 'double flux', 'hygroréglable']
+        },
+        // --- ACOUSTIQUE ---
+        {
+          id: 'isolation-phonique',
+          category: 'Acoustique',
+          title: 'Isolation Phonique',
+          subtitle: 'Le confort qu\'on ne voit pas mais qu\'on entend',
+          summary: 'Le bruit est la nuisance n°1 citée par les habitants en ville. Bruits de voisins, de rue, de pas à l\'étage — l\'isolation phonique est un enjeu majeur de la rénovation et un vrai argument de vente pour l\'architecte d\'intérieur.',
+          sections: [
+            {
+              title: 'Comprendre le bruit',
+              content: 'Bruits AÉRIENS : conversations, TV, musique, trafic routier. Se propagent par l\'air et traversent les parois (murs, planchers, fenêtres). Bruits d\'IMPACT (ou solidiens) : pas, chocs, chutes d\'objets, machines à laver. Se propagent par la structure du bâtiment (plancher → mur → plafond). Bruits d\'ÉQUIPEMENTS : chaudière, VMC, ascenseur, canalisations. Transmis par les gaines et la structure. Indice d\'affaiblissement acoustique Rw : plus il est élevé, mieux le mur isole. Un mur en béton de 18 cm = Rw ~55 dB. Une cloison placo BA13 simple = Rw ~28 dB.'
+            },
+            {
+              title: 'Solutions contre les bruits aériens',
+              content: 'Murs mitoyens : doublage acoustique (ossature métallique désolidarisée + laine minérale 45 mm + plaque de plâtre acoustique type Placo Phonique). Gain : 10-20 dB. Épaisseur totale : 5-8 cm. Fenêtres : remplacement par du double vitrage asymétrique (ex: 4/16/10 au lieu de 4/16/4 — l\'asymétrie casse les résonances). Ou triple vitrage. Gain : 5-15 dB. Portes : portes pleines (isoplane) avec joint isophonique périphérique + seuil à joint automatique (type Schlegel). Gain : 5-10 dB. Coffres de volets roulants : les isoler (mousse acoustique intérieure) — c\'est souvent un point faible majeur.'
+            },
+            {
+              title: 'Solutions contre les bruits d\'impact',
+              content: 'Par le SOL (à l\'étage du dessus = la meilleure solution) : sous-couche résiliente sous le revêtement de sol. Liège : 2-5 mm, ΔLw 15-20 dB. Mousse PE : 3-5 mm, ΔLw 18-22 dB. Fibre de bois : 5-22 mm, ΔLw 20-30 dB. Chape flottante sur isolant (la plus performante) : chape béton de 5 cm sur mousse résiliente → ΔLw 25-35 dB. Par le PLAFOND (chez le voisin du dessous) : faux plafond suspendu sur suspentes anti-vibratiles + laine minérale + plaque de plâtre. Gain : 10-15 dB. Moins efficace que par le sol mais la seule solution quand on ne maîtrise pas l\'étage du dessus.'
+            },
+            {
+              title: 'Piéger le son : l\'absorption acoustique',
+              content: 'L\'isolation bloque le son, l\'absorption le piège à l\'intérieur de la pièce (réduit la réverbération). Solutions : rideaux épais (velours, 3 couches). Tapis et moquette épaisse. Panneaux acoustiques muraux (tissu tendu sur laine minérale — design et efficace). Mobilier rembourré (canapé, fauteuils). Bibliothèques remplies de livres. Plafonds acoustiques (dalles absorbantes ou placo perforé). Astuce : plus les surfaces sont dures et lisses (béton, verre, carrelage), plus ça résonne. Le style « loft industriel » est beau mais bruyant — compenser avec des textiles.'
+            }
+          ],
+          keyPoints: [
+            'Bruits aériens → isoler les parois (doublage, fenêtres, portes)',
+            'Bruits d\'impact → traiter PAR LE SOL à la source (sous-couche ou chape flottante)',
+            'Le faux plafond sur suspentes anti-vibratiles = solution quand on ne maîtrise pas l\'étage du dessus',
+            'Les coffres de volets roulants sont souvent le maillon faible acoustique — à isoler systématiquement',
+            'Les matériaux durs (béton, verre) + grandes surfaces = résonance — compenser avec des textiles'
+          ],
+          tips: [
+            'Un client qui se plaint du bruit des voisins : d\'abord identifier si c\'est aérien (voix, TV) ou solidien (pas, chocs) — la solution est radicalement différente',
+            'Le Placo Phonique (plaque bleue) coûte ~2 €/m² de plus que le standard — le surcoût est ridicule pour le gain',
+            'Toujours prévoir une sous-couche acoustique sous le parquet en rénovation — même sans problème apparent, c\'est de la prévention'
+          ],
+          tags: ['acoustique', 'phonique', 'bruit', 'isolation', 'plancher', 'voisin']
+        },
+        // --- CHAUFFAGE & ÉNERGIE ---
+        {
+          id: 'plancher-chauffant-renovation',
+          category: 'Chauffage & Énergie',
+          title: 'Plancher Chauffant en Rénovation',
+          subtitle: 'Le confort invisible — et possible même en rénovation',
+          summary: 'Le plancher chauffant offre le confort thermique le plus homogène et libère les murs (plus de radiateurs). En rénovation, c\'est devenu possible grâce aux systèmes à faible épaisseur (18-30 mm). Le surcoût est vite oublié, le confort jamais.',
+          sections: [
+            {
+              title: 'Plancher chauffant hydraulique vs électrique',
+              content: 'HYDRAULIQUE (eau chaude) : tubes PER ou multicouche noyés dans une chape, alimentés par une chaudière ou PAC. Le plus confortable et économique à l\'usage. Inertie : la chape stocke la chaleur et la diffuse lentement (confort). Réservé aux projets avec accès à un système de chauffage central. ÉLECTRIQUE (trames ou câbles chauffants) : plus fin (< 5 mm), plus facile à poser, mais plus coûteux à l\'usage. Idéal en appoint (salle de bain) ou si pas de système hydraulique. En rénovation : le système hydraulique à faible épaisseur (18-30 mm tout compris) est le meilleur compromis.'
+            },
+            {
+              title: 'Les systèmes à faible épaisseur',
+              content: 'Le problème en rénovation : une chape classique fait 6-8 cm → impossible à ajouter sans rehausser portes, prises, etc. Solutions : plaques à plots (Rehau, Uponor) : tube PER clipsé dans des plots, chape fluide de 3 cm dessus → épaisseur totale 5 cm. Plancher sec (Fermacell) : tube inséré dans des plaques isolantes rainurées + plaque sèche dessus → épaisseur 3-4 cm, pas de temps de séchage. Trame électrique ultra-fine (Warmup, Deleage) : 3-5 mm sous carrelage → parfait pour salle de bain seule. Attention : toujours vérifier la hauteur disponible (sol fini actuel → sous-face porte/fenêtre).'
+            },
+            {
+              title: 'Revêtements de sol compatibles',
+              content: 'IDÉAL : carrelage, pierre naturelle, béton ciré → conductivité thermique maximale, le sol chauffe vite et bien. BON : parquet contrecollé (épaisseur ≤ 15 mm, conductivité compatible — vérifier fiche technique). Le chêne et le noyer conviennent. ATTENTION : parquet massif épais (> 15 mm) = mauvaise conductivité, risque de retrait/gonflement. Moquette épaisse = isolant → annule l\'effet du plancher chauffant. Vinyle/LVT : compatible si mention « compatible plancher chauffant » sur la fiche.'
+            },
+            {
+              title: 'Mise en œuvre et budget',
+              content: 'Hydraulique classique (chape) : 50-80 €/m² fourni posé. Hydraulique faible épaisseur : 70-120 €/m². Plancher sec : 80-130 €/m². Électrique trame (SDB) : 30-50 €/m² fourni posé. Régulation : thermostat par zone (programmable ou connecté) = 100-300 € par zone. Délai chape humide : 21 jours de séchage avant pose du revêtement. Chape sèche : pose du revêtement immédiate. Un bon chauffagiste + un bon carreleur = le duo indispensable.'
+            }
+          ],
+          keyPoints: [
+            'Le plancher chauffant libère les murs (plus de radiateurs) → liberté d\'aménagement totale',
+            'En rénovation : systèmes à faible épaisseur (3-5 cm) — vérifier la hauteur disponible',
+            'Carrelage / pierre = le meilleur revêtement sur plancher chauffant',
+            'Trame électrique en SDB = confort pieds nus pour un surcoût modeste (30-50 €/m²)',
+            'Toujours prévoir une régulation par zone (thermostat par pièce)'
+          ],
+          tips: [
+            'En salle de bain, proposer systématiquement une trame électrique — le client qui sort de la douche pieds nus sur un carrelage chaud ne revient jamais en arrière',
+            'Le plancher sec (Fermacell) est la solution idéale en appartement ancien : pas d\'eau, pas de temps de séchage, faible épaisseur',
+            'Toujours faire un calepinage des tubes AVANT la pose — éviter de passer sous les meubles fixes (cuisine, placard)'
+          ],
+          tags: ['plancher chauffant', 'chauffage', 'rénovation', 'sol', 'confort', 'basse température']
+        },
+        {
+          id: 'chauffage-solutions',
+          category: 'Chauffage & Énergie',
+          title: 'Solutions de Chauffage en Rénovation',
+          subtitle: 'Chaudière, PAC, radiateurs — le bon choix',
+          summary: 'Le chauffage représente 60-70% de la facture énergétique d\'un logement. En rénovation, choisir la bonne solution est un enjeu technique, économique et réglementaire. L\'architecte d\'intérieur doit comprendre les options pour dialoguer avec le chauffagiste et le client.',
+          sections: [
+            {
+              title: 'Les systèmes de production',
+              content: 'Chaudière gaz à condensation : le standard actuel en collectif. Rendement 95-110%. Mais : interdite dans le neuf depuis 2022, fin annoncée du gaz. Pompe à chaleur (PAC) air-eau : capte les calories de l\'air extérieur pour chauffer un circuit d\'eau. COP 3-4 (1 kWh consommé = 3-4 kWh produits). Le système dominant en 2025. Fonctionne aussi en climatisation (réversible). PAC air-air (climatisation réversible) : unités intérieures type split ou gainable. Chauffe et refroidit. Idéal en complément ou sans réseau d\'eau. Poêle à granulés : appoint ou chauffage principal en petit logement. Esthétique, économique (granulés ~6 ct/kWh). Radiateurs électriques à inertie : appoint ou logement très isolé. Pas de tuyauterie.'
+            },
+            {
+              title: 'Les émetteurs de chaleur',
+              content: 'Radiateurs en fonte anciens : beaux (patrimoine), bonne inertie, mais lourds et lents à chauffer. Compatibles avec PAC si basse température (surdimensionner). Radiateurs acier/alu design : légers, réactifs, large choix esthétique (Acova, Zehnder, Runtal, Tubes — modèles architecturaux). Plancher chauffant : voir fiche dédiée — le plus confortable. Sèche-serviettes : indispensable en SDB. Mixte eau chaude + électrique = le meilleur combo. Convecteurs / radiateurs électriques à inertie (fonte, pierre, céramique) : appoint ou logement très isolé. Les modèles sèche-serviettes design (Acova, Cinier) sont de vrais objets déco.'
+            },
+            {
+              title: 'Dimensionnement',
+              content: 'Règle simplifiée : 70-100 W/m² pour un logement moyennement isolé (avant 2000). 40-60 W/m² pour un logement bien isolé (BBC/RE2020). Exemple : chambre de 12 m² mal isolée → 12 × 100 = 1 200 W → radiateur de 1 200 W minimum. Toujours faire une étude thermique (bilan DPE ou étude BET) pour un dimensionnement précis. Sous-dimensionner = inconfort. Surdimensionner = surcoût et cycles courts (usure).'
+            },
+            {
+              title: 'Aides financières',
+              content: 'MaPrimeRénov\' : aide de l\'État pour les travaux d\'économie d\'énergie. PAC air-eau : jusqu\'à 5 000 € d\'aide. Chaudière biomasse : jusqu\'à 7 000 €. Isolation : aide au m² selon l\'isolant et la zone. CEE (Certificats d\'Économie d\'Énergie) : primes des fournisseurs d\'énergie, cumulables avec MaPrimeRénov\'. Éco-PTZ : prêt à taux zéro jusqu\'à 50 000 € pour des bouquets de travaux. TVA réduite 5,5% sur les travaux d\'amélioration énergétique (logement > 2 ans). Toujours vérifier les aides AVANT de signer les devis — certaines sont conditionnées à un artisan RGE.'
+            }
+          ],
+          keyPoints: [
+            'La PAC air-eau est le système dominant en 2025 — elle remplace la chaudière gaz',
+            '70-100 W/m² en logement ancien, 40-60 W/m² en logement bien isolé',
+            'Les radiateurs design (Acova, Tubes, Runtal) sont de vrais objets architecturaux',
+            'Artisan RGE = obligatoire pour les aides financières (MaPrimeRénov\', CEE)',
+            'Toujours coupler rénovation énergétique + rénovation esthétique = un seul chantier'
+          ],
+          tips: [
+            'Garder les radiateurs fonte anciens si possible — les décaper, les repeindre, les brancher sur la PAC : ils sont beaux et efficaces',
+            'Le sèche-serviettes mixte (eau + électrique) permet de chauffer la SDB en mi-saison sans allumer la chaudière/PAC',
+            'Présenter les aides financières au client dès la phase conception — ça débloque souvent le budget pour une meilleure solution'
+          ],
+          tags: ['chauffage', 'PAC', 'radiateur', 'énergie', 'rénovation', 'aide financière']
+        },
+        // --- RÉSEAUX & MISE AUX NORMES ---
+        {
+          id: 'renovation-electrique',
+          category: 'Réseaux & Mise aux Normes',
+          title: 'Rénovation Électrique',
+          subtitle: 'La norme NF C 15-100 en pratique',
+          summary: 'L\'électricité est le réseau le plus dangereux et le plus réglementé. En rénovation, la mise aux normes est souvent obligatoire et toujours recommandée. L\'architecte d\'intérieur conçoit le plan électrique — il doit connaître les exigences.',
+          sections: [
+            {
+              title: 'Quand refaire l\'électricité',
+              content: 'Obligation de mise aux normes : installation avant 1991 (pas de disjoncteur différentiel), fils en tissu, prises sans terre, tableau avec fusibles porcelaine. Recommandé : installation de plus de 25 ans. Signaux d\'alerte : prises qui chauffent, disjoncteur qui saute, fils non gainés visibles, pas de prise de terre, pas de différentiel 30 mA. En copropriété : la rénovation concerne la partie privative (du tableau au logement aux prises). La colonne montante est à la charge de la copropriété.'
+            },
+            {
+              title: 'La norme NF C 15-100 : les minimums par pièce',
+              content: 'SÉJOUR : 1 point d\'éclairage au plafond, 1 prise par tranche de 4 m² (minimum 5), 1 prise TV, 1 prise RJ45. CHAMBRE : 1 point d\'éclairage, 3 prises minimum, 1 prise RJ45. CUISINE : 1 éclairage, 6 prises dont 4 au-dessus du plan de travail, circuits spécialisés (four, plaques, lave-vaisselle, hotte). SALLE DE BAIN : volumes de sécurité (0, 1, 2, hors volume) — chaque équipement doit respecter son volume. Éclairage IP44 minimum en volume 2. SDB : 1 prise hors volume uniquement. WC : 1 éclairage, 1 prise (si > 4 m²).'
+            },
+            {
+              title: 'Le tableau électrique',
+              content: 'Le tableau doit comporter : 1 disjoncteur général (AGCP) calibré par Enedis. Des interrupteurs différentiels 30 mA (1 type A pour plaques/lave-linge + type AC pour le reste). Des disjoncteurs divisionnaires par circuit (10A éclairage, 16A prises, 20A spécialisés, 32A plaques). Un parafoudre (obligatoire en zone à risque foudre). La GTL (Gaine Technique Logement) : espace dédié au tableau + arrivée courant + communication. Prévoir un tableau surdimensionné (30% de réserve pour évolutions futures).'
+            },
+            {
+              title: 'Plan électrique : le rôle de l\'architecte d\'intérieur',
+              content: 'L\'archi d\'intérieur dessine le plan d\'implantation électrique : position de chaque prise, interrupteur, point lumineux, sortie de câble. Penser aux usages : prises au sol (îlot cuisine), prises plan de travail (cuisine, bureau), prises USB intégrées (chambre), sorties de câble pour appliques (1,80-2 m du sol), variateurs (salon, chambre), commandes centralisées (entrée). Ce plan est transmis à l\'électricien qui fait le schéma technique et le dimensionnement. TOUJOURS faire valider le plan par l\'électricien AVANT le passage des gaines.'
+            }
+          ],
+          keyPoints: [
+            'Installation > 25 ans = rénovation recommandée, > 35 ans = quasi obligatoire',
+            'Norme NF C 15-100 = le minimum légal par pièce (nombre de prises, éclairage, circuits)',
+            'Le plan d\'implantation électrique est LE livrable clé de l\'archi d\'intérieur sur ce sujet',
+            'Tableau surdimensionné (30% de réserve) = indispensable pour l\'avenir',
+            'Volumes de sécurité en salle de bain = non négociable'
+          ],
+          tips: [
+            'Imprimer le récapitulatif NF C 15-100 et le garder dans son dossier projet — ça évite les oublis',
+            'Prévoir systématiquement des prises USB-C intégrées dans les chambres et le bureau — en 2025 c\'est un basique',
+            'Toujours demander le Consuel (certificat de conformité) à l\'électricien en fin de chantier'
+          ],
+          tags: ['électricité', 'norme', 'NF C 15-100', 'tableau', 'prise', 'rénovation']
+        },
+        {
+          id: 'plomberie-renovation',
+          category: 'Réseaux & Mise aux Normes',
+          title: 'Plomberie en Rénovation',
+          subtitle: 'Eau chaude, évacuations, pentes et contraintes',
+          summary: 'La plomberie est la contrainte la plus dure en rénovation : on ne déplace pas un WC ou une douche aussi facilement qu\'une cloison. Comprendre les règles (pentes, diamètres, ventilation) évite les mauvaises surprises et les projets irréalisables.',
+          sections: [
+            {
+              title: 'Les contraintes d\'évacuation',
+              content: 'RÈGLE N°1 : l\'eau usée s\'écoule par gravité. Pente minimale : 1 cm/m pour les eaux usées (lavabo, douche), 1 à 3 cm/m pour les eaux vannes (WC). Diamètre : WC = 100 mm, douche/baignoire = 40-50 mm, lavabo = 32-40 mm, cuisine = 40 mm. La colonne de chute (verticale) est FIXE — on ne la déplace pas. Plus on s\'éloigne de la colonne, plus le sol doit être épais (pour la pente). Exemple : déplacer un WC de 3 m = 3-9 cm de rehausse de sol. La douche italienne nécessite un receveur extra-plat ou un décaissage de la dalle pour loger le siphon + la pente.'
+            },
+            {
+              title: 'Alimentations en eau',
+              content: 'Les tuyaux d\'alimentation (eau froide + eau chaude) sont plus faciles à déplacer que les évacuations (pas de pente nécessaire). Matériaux actuels : PER (polyéthylène réticulé) = le standard. Souple, facile à poser, raccords à sertir. Multicouche (PER + alu) = plus rigide, moins de dilatation, raccords à visser ou à sertir. Cuivre : noble, durable, mais plus cher et nécessite soudure ou brasure. Diamètres : 12-16 mm pour lavabo/bidet, 14-16 mm pour douche/baignoire, 16-20 mm pour alimentation générale.'
+            },
+            {
+              title: 'Production d\'eau chaude',
+              content: 'Chauffe-eau électrique (cumulus) : simple, économique à l\'achat (200-600 €). Volume : 50L (1 personne), 100L (2), 150L (3), 200L (4+). Encombrement important — le cacher dans un placard technique. Chauffe-eau thermodynamique : pompe à chaleur intégrée. Consomme 3x moins qu\'un cumulus classique. Éligible aux aides (MaPrimeRénov\'). Nécessite un local ventilé (volume d\'air > 20 m³). Chaudière / PAC : production d\'ECS intégrée (ballon ou micro-accumulation). Chauffe-eau instantané gaz : eau chaude illimitée, compact, mais gaz voué à disparaître.'
+            },
+            {
+              title: 'Ce que l\'archi d\'intérieur doit vérifier',
+              content: 'AVANT de dessiner un plan avec des pièces d\'eau déplacées : repérer la colonne de chute et mesurer la distance (plus on s\'éloigne, plus c\'est contraignant). Vérifier la hauteur disponible dans le sol pour la pente d\'évacuation. Vérifier la faisabilité d\'une douche italienne (épaisseur de chape, décaissage possible ?). Vérifier la pression d\'eau (un manomètre sur le robinet : 2-3 bars minimum). Repérer le compteur d\'eau et le parcours des canalisations existantes. En cas de doute : faire venir le plombier AVANT de finaliser le plan.'
+            }
+          ],
+          keyPoints: [
+            'L\'évacuation (par gravité) est LA contrainte — l\'alimentation est facile à déplacer',
+            'Pente minimum 1 cm/m pour eaux usées, 1-3 cm/m pour WC',
+            'Plus on s\'éloigne de la colonne de chute, plus on rehausse le sol',
+            'Douche italienne = vérifier l\'épaisseur de chape disponible AVANT de promettre',
+            'Toujours faire venir le plombier AVANT de valider un plan avec déplacement de pièces d\'eau'
+          ],
+          tips: [
+            'La question magique avant tout projet de SDB : « Où est la colonne de chute ? » — ça détermine 80% de la faisabilité',
+            'Un WC suspendu avec bâti-support (Geberit) permet de passer l\'évacuation dans l\'épaisseur du bâti — gain de flexibilité',
+            'Le chauffe-eau thermodynamique dans un placard technique = économie + silence + aides financières'
+          ],
+          tags: ['plomberie', 'évacuation', 'eau chaude', 'pente', 'colonne de chute', 'rénovation']
+        },
+        // --- STRUCTURE & GROS ŒUVRE ---
+        {
+          id: 'murs-porteurs-ouvertures',
+          category: 'Structure & Gros Œuvre',
+          title: 'Murs Porteurs & Ouvertures',
+          subtitle: 'Ouvrir sans que ça tombe',
+          summary: 'Créer une ouverture dans un mur porteur est l\'intervention la plus spectaculaire en rénovation — et la plus encadrée. C\'est ce qui transforme un appartement cloisonné en loft lumineux. Mais ça ne s\'improvise pas.',
+          sections: [
+            {
+              title: 'Identifier un mur porteur',
+              content: 'Les indices : épaisseur > 15 cm (un mur porteur en pierre fait 20-60 cm, en béton 15-20 cm, en brique 20-30 cm). Les murs de façade sont TOUJOURS porteurs. Les murs de refend (perpendiculaires aux façades) sont généralement porteurs. Les cloisons de distribution (placo, carreaux de plâtre, briques de 5-7 cm) ne sont PAS porteuses. En cas de doute : frapper le mur (porteur = son plein/sourd, cloison = son creux). Ou percer un petit trou pour voir l\'épaisseur et le matériau. Ou consulter les plans de l\'immeuble (architecte de la copropriété, syndic).'
+            },
+            {
+              title: 'La procédure pour ouvrir un mur porteur',
+              content: 'ÉTAPE 1 : Étude structure par un BET (Bureau d\'Études Techniques). Obligatoire. Coût : 500-2 000 €. Le BET dimensionne la poutre (IPN/HEA/HEB) qui va reprendre les charges au-dessus de l\'ouverture. ÉTAPE 2 : Accord de la copropriété (assemblée générale) si immeuble collectif. Obligatoire même si le mur est « chez vous ». Fournir l\'étude BET + plans. ÉTAPE 3 : Assurance dommages-ouvrage (obligatoire légalement, souvent oubliée). ÉTAPE 4 : Travaux par une entreprise qualifiée. Étaiement provisoire → découpe → pose de la poutre → scellement → dépose de l\'étaiement. ÉTAPE 5 : Constat de conformité après travaux.'
+            },
+            {
+              title: 'Les types d\'ouvertures',
+              content: 'Ouverture complète (mur supprimé) : la plus spectaculaire. Poutre IPN/HEA/HEB + poteaux aux extrémités si nécessaire. La poutre peut être apparente (style industriel) ou noyée dans un coffrage (faux plafond). Ouverture partielle (porte, passe-plat) : linteau acier au-dessus de l\'ouverture. Plus simple et moins cher. Ouverture avec allège conservée : mur coupé à 90-110 cm de hauteur → crée un comptoir/bar. La partie basse reste porteuse → plus simple structurellement. Arche : ouverture cintrée — esthétique dans l\'ancien, reprend les codes architecturaux existants.'
+            },
+            {
+              title: 'Budget et délais',
+              content: 'Étude BET : 500-2 000 €. Ouverture simple (porte dans mur porteur) : 2 000-5 000 €. Ouverture large (3-4 m, cuisine/salon) : 5 000-15 000 €. Suppression complète d\'un mur porteur (5-6 m) : 8 000-20 000 €. Délai travaux : 2-5 jours pour l\'ouverture elle-même. Délai administratif (copropriété) : 2-6 mois (attente AG). C\'est souvent le délai le plus long du projet. Attention : les travaux génèrent beaucoup de poussière et de bruit — prévenir les voisins et protéger le chantier.'
+            }
+          ],
+          keyPoints: [
+            'Un BET est OBLIGATOIRE pour toute ouverture dans un mur porteur — non négociable',
+            'En copropriété : accord en AG obligatoire, même pour un mur « chez soi »',
+            'L\'IPN (poutre acier) reprend les charges — elle peut être apparente (indus) ou cachée',
+            'Le délai d\'AG de copropriété (2-6 mois) est souvent le plus long du projet',
+            'Budget : 5 000-15 000 € pour une ouverture cuisine/salon classique'
+          ],
+          tips: [
+            'Anticiper : demander les plans de l\'immeuble au syndic DÈS la première visite — ça accélère tout',
+            'L\'IPN apparente peinte en noir mat est devenue un élément déco à part entière — la montrer fièrement plutôt que la cacher',
+            'Prévoir un budget « copropriété » dans le devis (honoraires BET + huissier pour constat avant/après travaux)'
+          ],
+          tags: ['mur porteur', 'ouverture', 'IPN', 'structure', 'BET', 'copropriété']
+        },
+        {
+          id: 'fenetres-menuiseries',
+          category: 'Structure & Gros Œuvre',
+          title: 'Fenêtres & Menuiseries Extérieures',
+          subtitle: 'Le maillon thermique et esthétique de la façade',
+          summary: 'Les fenêtres représentent 10-15% des déperditions thermiques d\'un logement. Les remplacer améliore le confort thermique, acoustique, et transforme l\'esthétique de l\'intérieur. En copropriété, c\'est souvent le seul élément de façade que le propriétaire peut changer.',
+          sections: [
+            {
+              title: 'Simple, double ou triple vitrage',
+              content: 'Simple vitrage (verre 4 mm) : Ug ~5,8 W/m².K. Ne devrait plus exister. Remplacer d\'urgence. Double vitrage standard (4/16/4) : Ug ~1,1 W/m².K. Le standard actuel. Double vitrage à isolation renforcée (ITR, avec couche basse émissivité + gaz argon) : Ug ~0,7-1,0 W/m².K. Le meilleur rapport qualité/prix. Triple vitrage (4/12/4/12/4 argon) : Ug ~0,5-0,7 W/m².K. Surtout utile en orientation nord ou en construction passive. Plus lourd, plus épais, plus cher. En rénovation standard : le double vitrage ITR argon est le choix optimal.'
+            },
+            {
+              title: 'Les matériaux de menuiserie',
+              content: 'PVC : le moins cher (300-600 €/fenêtre standard), bon isolant, entretien zéro. Limite : esthétique basique, jaunissement possible, non recyclable facilement. Aluminium : fin (plus de lumière), design contemporain, large palette de couleurs (RAL). Moins isolant que le PVC (pont thermique — choisir à rupture de pont thermique). 500-1 000 €/fenêtre. Bois : le plus noble, excellent isolant naturel, aspect traditionnel (patrimoine haussmannien). Nécessite entretien (lasure/peinture tous les 5-10 ans). 600-1 200 €/fenêtre. Mixte bois-alu : bois intérieur (chaleur) + alu extérieur (protection, zéro entretien). Le haut de gamme. 800-1 500 €/fenêtre.'
+            },
+            {
+              title: 'Pose en rénovation vs dépose totale',
+              content: 'Pose en rénovation (la plus courante) : la nouvelle fenêtre est posée sur le dormant existant (le cadre ancien reste en place). Rapide (1-2h par fenêtre), propre, pas de maçonnerie. Limite : perte de surface vitrée (le nouveau cadre + l\'ancien = plus épais). Dépose totale : le dormant ancien est arraché, la nouvelle fenêtre est posée dans la maçonnerie. Plus de lumière (cadre optimisé), meilleure isolation (joint neuf). Plus long (demi-journée), plus cher, nécessite des reprises de maçonnerie et de finition intérieure (enduit, peinture). Conseil : en rénovation lourde (tout est refait), opter pour la dépose totale. En remplacement simple, la pose en rénovation suffit.'
+            },
+            {
+              title: 'Réglementation et copropriété',
+              content: 'En copropriété : les fenêtres font partie de la façade = parties communes. Remplacement soumis à accord de l\'AG ou du règlement de copropriété. Souvent : obligation de respecter le modèle, la couleur, et les proportions existantes. Urbanisme : en secteur ABF (Architectes des Bâtiments de France), les menuiseries doivent respecter des prescriptions strictes (bois obligatoire, couleur imposée, petits carreaux). Aides : MaPrimeRénov\' pour le remplacement de fenêtres (simple → double/triple vitrage), CEE, TVA 5,5%. Artisan RGE obligatoire.'
+            }
+          ],
+          keyPoints: [
+            'Double vitrage ITR argon = le standard optimal en rénovation (Ug ~1,0)',
+            'Aluminium à rupture de pont thermique = le choix design contemporain',
+            'Bois = le choix patrimonial (haussmannien, ABF) et le meilleur isolant naturel',
+            'Dépose totale > pose en rénovation en termes de performance — à privilégier si rénovation lourde',
+            'En copropriété : respect du modèle de fenêtre imposé — vérifier AVANT de commander'
+          ],
+          tips: [
+            'En immeuble haussmannien avec ABF : menuiseries bois peintes en blanc ou gris (RAL imposé) — anticiper le délai de validation (2-4 mois)',
+            'Remplacer les fenêtres en même temps que l\'isolation = le duo gagnant — et les aides sont plus élevées en « bouquet de travaux »',
+            'Le survitrage (verre ajouté sur fenêtre existante) est une solution provisoire acceptable si le budget ne permet pas le remplacement'
+          ],
+          tags: ['fenêtre', 'vitrage', 'menuiserie', 'isolation', 'thermique', 'acoustique']
+        },
+        // --- PATHOLOGIES DU BÂTI ANCIEN ---
+        {
+          id: 'murs-anciens-pierre',
+          category: 'Pathologies du Bâti Ancien',
+          title: 'Murs Anciens, Pierre & Enduits',
+          subtitle: 'Respecter le bâti pour mieux le rénover',
+          summary: 'Les murs anciens (pierre, brique, terre, pan de bois) ont leur propre logique constructive. Les traiter comme des murs modernes est la pire erreur en rénovation : ciment sur pierre = catastrophe. Comprendre le bâti ancien est indispensable.',
+          sections: [
+            {
+              title: 'Le principe du mur ancien : il respire',
+              content: 'Un mur ancien en pierre, brique ou terre est « perspirant » : l\'humidité du sol remonte par capillarité ET s\'évapore à travers le mur (intérieur + extérieur). C\'est son mode de régulation naturel. Si on bloque cette respiration (enduit ciment, peinture étanche, isolation non perspirante), l\'eau reste piégée dans le mur → dégradations, salpêtre, moisissures, gel/dégel qui fait éclater la pierre. RÈGLE D\'OR : sur un mur ancien, tout doit être perspirant (enduit à la chaux, isolation fibre de bois, peinture minérale).'
+            },
+            {
+              title: 'Les enduits',
+              content: 'CHAUX AÉRIENNE (CL) : la plus fine, la plus noble. Finitions lisses ou brossées. Pour l\'intérieur et les finitions extérieures. CHAUX HYDRAULIQUE (NHL) : plus résistante, pour les zones exposées (soubassements, extérieur). NHL 2 (la plus souple) à NHL 5 (la plus dure). TADELAKT : enduit de chaux marocain, poli et savonné, étanche et lisse. Pour salle de bain, douche, crédence. Magnifique. BADIGEON DE CHAUX : peinture à la chaux (chaux + eau + pigments). Texture vibrante, matière vivante. INTERDIT : enduit ciment sur mur ancien. Le ciment est trop dur, imperméable, et incompatible avec le mouvement du mur. Il piège l\'humidité et fait éclater la pierre autour.'
+            },
+            {
+              title: 'Isolation des murs anciens',
+              content: 'INTERDIT : polystyrène, polyuréthane (non perspirants). RECOMMANDÉ : fibre de bois (perspirant, bon déphasage), liège (perspirant, imputrescible), laine de chanvre/lin (biosourcé, perspirant). Technique : isolation par l\'intérieur avec panneau fibre de bois (6-10 cm) + enduit de finition à la chaux. Ou projection d\'un enduit chaux-chanvre (isolation + finition en un seul produit, épaisseur 6-12 cm). Isolation par l\'extérieur : possible mais attention au patrimoine (modification de l\'aspect de la façade, interdite en secteur ABF). Le mieux : faire appel à un artisan spécialisé « bâti ancien » — c\'est un savoir-faire spécifique.'
+            },
+            {
+              title: 'Pierre apparente : révéler ou enduire',
+              content: 'Mur en pierre apparente : magnifique SI la pierre est de qualité (calcaire, granit, meulière taillée). Déjointoyer au mortier de chaux (NHL 2 ou NHL 3,5). Ne JAMAIS rejointoyer au ciment. Pierre apparente + joints à la chaux = esthétique authentique et performance. Mur en pierre à enduire : quand la pierre est hétérogène ou laide (moellon tout-venant), un enduit à la chaux est préférable. L\'enduit à la chaux est lui-même très beau (texture, teinte naturelle, jeux de lumière). Le choix pierre apparente vs enduit est un choix esthétique ET technique — certains murs ne supportent pas d\'être mis à nu (gel, pluie).'
+            }
+          ],
+          keyPoints: [
+            'RÈGLE D\'OR : sur mur ancien, tout doit être perspirant (chaux, fibre de bois, liège)',
+            'JAMAIS de ciment sur pierre/brique ancienne — c\'est la cause n°1 de dégradation',
+            'Fibre de bois ou chaux-chanvre = les isolants de référence pour le bâti ancien',
+            'Le tadelakt et le badigeon de chaux sont des finitions magnifiques ET techniques',
+            'Pierre apparente → rejointoyer à la chaux NHL, jamais au ciment'
+          ],
+          tips: [
+            'Si un artisan propose du ciment sur un mur en pierre : refuser et changer d\'artisan. C\'est un signal d\'incompétence sur le bâti ancien.',
+            'L\'enduit chaux-chanvre projeté est une solution tout-en-un (isolation + finition) parfaite pour les murs irréguliers — pas besoin d\'ossature',
+            'La formation « Maisons Paysannes de France » ou « Fondation du Patrimoine » forme au bâti ancien — excellent pour se spécialiser'
+          ],
+          tags: ['pierre', 'chaux', 'enduit', 'bâti ancien', 'tadelakt', 'perspirant']
+        }
+      ]
     }
   ]
 };
