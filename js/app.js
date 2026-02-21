@@ -562,13 +562,13 @@ function renderFiche(container) {
 
   const favBtn = el('button', {
     className: `btn ${isFavorited(key) ? 'active' : ''}`,
-    onClick: () => { toggleList(state.userData.favorited, key); toast(isFavorited(key) ? 'Ajouté aux favoris ★' : 'Retiré des favoris'); renderFiche($('#content').innerHTML = '' || $('#content')); }
+    onClick: () => { toggleList(state.userData.favorited, key); toast(isFavorited(key) ? 'Ajouté aux favoris ★' : 'Retiré des favoris'); const c = $('#content'); c.innerHTML = ''; renderFiche(c); }
   });
   favBtn.textContent = isFavorited(key) ? '★ Favori' : '☆ Favoris';
 
   const masterBtn = el('button', {
     className: `btn ${isMastered(key) ? 'active' : ''}`,
-    onClick: () => { toggleList(state.userData.mastered, key); toast(isMastered(key) ? 'Marqué comme maîtrisé ◆' : 'Retiré des maîtrisés'); renderFiche($('#content').innerHTML = '' || $('#content')); }
+    onClick: () => { toggleList(state.userData.mastered, key); toast(isMastered(key) ? 'Marqué comme maîtrisé ◆' : 'Retiré des maîtrisés'); const c = $('#content'); c.innerHTML = ''; renderFiche(c); }
   });
   masterBtn.textContent = isMastered(key) ? '◆ Maîtrisé' : '◇ Maîtriser';
 
