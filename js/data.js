@@ -4098,6 +4098,87 @@ const APP_DATA = {
             'Créer des flashcards (Anki) avec les 50 termes les plus utiles'
           ],
           tags: ['vocabulaire', 'lexique', 'glossaire', 'termes', 'définitions', 'mémo']
+        },
+        // --- ÉCRITURE & STORYTELLING ---
+        {
+          id: 'vocab-phrases-espace-lumiere',
+          category: 'Écriture & Storytelling',
+          title: 'Décrire un Projet — Espace, Lumière & Matière',
+          subtitle: 'Le phrasier du journaliste design (vol. 1)',
+          summary: 'Des phrases prêtes à l\'emploi, à la manière d\'AD, Elle Décoration ou Dezeen, pour raconter un projet d\'architecture d\'intérieur dans un portfolio, un post Instagram, un dossier de presse ou une présentation client.',
+          sections: [
+            {
+              title: 'Décrire les volumes et l\'espace',
+              content: '<ul><li>L\'espace se déploie avec une générosité mesurée, chaque mètre carré ayant été pensé comme une respiration.</li><li>Les volumes s\'enchaînent dans une fluidité presque chorégraphique, du séjour à la cuisine, sans rupture mais sans monotonie.</li><li>La double hauteur confère à l\'ensemble une verticalité presque sacrée — on lève les yeux, on respire.</li><li>En supprimant les cloisons, le projet a libéré un volume inattendu : la lumière circule, le regard file jusqu\'au fond de l\'appartement.</li><li>L\'enfilade classique a été conservée mais réinterprétée : les portes affleurantes disparaissent dans les murs, les seuils s\'effacent.</li><li>Ici, le petit espace n\'est pas subi mais sublimé — chaque recoin devient niche, chaque angle mort devient rangement invisible.</li><li>Le plan en L organise la vie en deux séquences : l\'espace social, ouvert et lumineux, et le cocon intime des chambres, en retrait.</li><li>La circulation n\'est jamais un couloir — c\'est une promenade architecturale jalonnée de cadrages et de découvertes.</li><li>Le plafond mansardé, loin d\'être une contrainte, est devenu la signature du lieu : ses pentes habillées de bois dessinent une géométrie chaleureuse.</li><li>L\'espace dialogue avec la ville : les grandes ouvertures encadrent le paysage urbain comme autant de tableaux vivants.</li></ul>'
+            },
+            {
+              title: 'Raconter la lumière',
+              content: '<ul><li>La lumière naturelle est le premier matériau de ce projet — elle entre par le sud, ricoche sur le béton ciré et baigne l\'espace d\'une clarté douce toute la journée.</li><li>Le jeu d\'ombre et de lumière, orchestré par les persiennes en lames de chêne, dessine sur les murs un motif mouvant qui change d\'heure en heure.</li><li>À la tombée du jour, l\'éclairage indirect prend le relais : les gorges lumineuses découpent les volumes, les appliques créent des halos intimes.</li><li>La verrière zénithale inonde le cœur de l\'appartement — cette lumière venue du ciel transforme un ancien couloir sombre en patio intérieur.</li><li>Les stores en lin filtrent la lumière crue et la transforment en une nappe laiteuse, presque nordique — le bruit de la ville s\'efface avec elle.</li><li>Le choix du 2700K pour l\'ensemble des luminaires enveloppe chaque pièce d\'un halo doré, comme un coucher de soleil permanent.</li><li>L\'architecte a traité la lumière comme un matériau liquide : elle coule le long des murs enduits à la chaux, se réfléchit sur le terrazzo, s\'absorbe dans le velours des assises.</li><li>Pas un seul spot en plein feux : ici, la lumière est toujours indirecte, réfléchie, apprivoisée — on la devine plus qu\'on ne la voit.</li><li>Le miroir en laiton brossé, posé face à la fenêtre, ne décore pas — il double la lumière et agrandit le salon d\'une profondeur fictive.</li><li>La transition jour/nuit est pensée comme une mise en scène : variateurs sur chaque circuit, trois ambiances préprogrammées, du matin énergisant au soir cocooning.</li></ul>'
+            },
+            {
+              title: 'Parler des matériaux et textures',
+              content: '<ul><li>Le dialogue entre le chêne massif et l\'acier bruni donne le ton : chaleur et rigueur, nature et industrie, douceur et caractère.</li><li>Le terrazzo granito, coulé sur place avec des éclats de marbre rose, transforme le sol en œuvre d\'art — chaque pièce a son propre dessin.</li><li>La pierre de Bourgogne, posée en opus incertum, apporte au sol une noblesse tranquille que le temps ne fera qu\'embellir.</li><li>Les murs enduits au tadelakt capturent la lumière dans leur surface satinée et imperceptiblement ondulée — comme une peau vivante.</li><li>Le laiton vieilli des poignées et des appliques ponctue l\'espace de reflets dorés, créant un fil conducteur discret à travers tout l\'appartement.</li><li>Le béton ciré au sol se fait oublier par sa discrétion, mais c\'est lui qui unifie les espaces et leur donne cette continuité fluide.</li><li>Ici, les matériaux ne se juxtaposent pas — ils conversent : le lin brut des rideaux répond à la rugosité de la brique, le cuir pleine fleur fait écho au noyer.</li><li>Le zellige posé à la main dans la salle de bains, avec ses irrégularités assumées, rappelle que le luxe n\'est pas dans la perfection mais dans l\'authenticité.</li><li>Le marbre Calacatta, réservé à la seule crédence de cuisine, crée un moment de luxe inattendu dans un projet par ailleurs volontairement sobre.</li><li>Le bois a été laissé brut, simplement huilé — on voit les nœuds, on sent le grain sous les doigts, on accepte que la matière vive et vieillisse.</li></ul>'
+            },
+            {
+              title: 'Évoquer les détails et la finition',
+              content: '<ul><li>Chaque détail trahit l\'exigence : les plinthes affleurantes au mur, les interrupteurs Meljac en laiton, les joints de carrelage teintés dans la masse.</li><li>Les portes toute hauteur, sans huisserie visible, disparaissent dans les murs — quand elles sont fermées, on ne soupçonne pas leur existence.</li><li>Le meuble-vasque, dessiné sur mesure, flotte au-dessus du sol en terrazzo : pas un tuyau visible, pas un câble apparent.</li><li>La cuisine est un exercice de précision millimétrique : plan de travail filant, façades sans poignée, électroménager totalement intégré.</li><li>Le soin apporté aux jonctions est remarquable — chaque rencontre bois/métal, chaque angle, chaque retour est traité comme un détail d\'orfèvrerie.</li><li>L\'escalier en acier plié, sans limon apparent, semble léviter dans l\'espace — ses marches en chêne massif réchauffent ce geste structurel.</li><li>Les rangements ne se voient pas, et c\'est précisément le projet : tout disparaît derrière des façades lisses, le désordre n\'a aucune place où se montrer.</li><li>La niche creusée dans l\'épaisseur du mur, éclairée par un ruban LED en retrait, transforme un simple recoin en écrin pour une pièce de collection.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'Un bon texte de projet ne DÉCRIT pas — il RACONTE une expérience spatiale',
+            'Toujours commencer par l\'émotion ou l\'intention, jamais par les matériaux',
+            'Les verbes d\'action enrichissent : « la lumière ricoche », « l\'espace se déploie », « le regard file »',
+            'Les oppositions créent du rythme : chaleur/rigueur, brut/raffiné, visible/invisible',
+            'Un paragraphe = une idée. Jamais plus de 3 phrases pour décrire un choix'
+          ],
+          tips: [
+            'Lire les descriptions de projets dans AD France, Elle Décoration, Architectural Digest — noter les tournures qui vous marquent',
+            'Écrire le texte AVANT de choisir les photos — ça oblige à penser le récit du projet',
+            'Tester vos textes à voix haute : si ça sonne faux à l\'oreille, c\'est que c\'est trop forcé'
+          ],
+          tags: ['écriture', 'storytelling', 'portfolio', 'description', 'lumière', 'matériaux', 'espace']
+        },
+        {
+          id: 'vocab-phrases-ambiance-style',
+          category: 'Écriture & Storytelling',
+          title: 'Décrire un Projet — Ambiance, Style & Parti Pris',
+          subtitle: 'Le phrasier du journaliste design (vol. 2)',
+          summary: 'La suite du phrasier : les formules pour décrire l\'atmosphère d\'un lieu, raconter un parti pris stylistique, évoquer le dialogue ancien/contemporain, et conclure un texte de projet avec impact.',
+          sections: [
+            {
+              title: 'Décrire l\'ambiance et l\'atmosphère',
+              content: '<ul><li>On pousse la porte et le temps ralentit : les teintes sourdes, le lin froissé, la lumière tamisée composent un silence visuel apaisant.</li><li>L\'atmosphère oscille entre hôtel particulier et loft new-yorkais — cette tension assumée entre classicisme et décontraction fait toute la personnalité du lieu.</li><li>Le projet cultive un minimalisme chaleureux, loin de l\'austérité : chaque surface est douce, chaque matériau est tactile, chaque lumière est enveloppante.</li><li>Ici, le luxe ne se montre pas — il se ressent. C\'est dans le silence des portes qui se ferment, dans le toucher du cuir, dans l\'odeur du bois huilé.</li><li>L\'ambiance est résolument japonisante sans jamais tomber dans la citation : on retrouve l\'esprit wabi-sabi dans les matériaux bruts et les imperfections assumées.</li><li>Le lieu respire une élégance désinvolte, comme un costume parfaitement coupé porté avec des baskets — rien n\'est forcé, tout est juste.</li><li>La palette chromatique — blanc cassé, grège, bois blond — installe une sérénité nordique que viennent ponctuer des accents de terracotta.</li><li>C\'est un intérieur qui se vit pieds nus : le parquet chêne huilé, les tapis en laine bouclée, les coussins de sol en lin — tout invite au contact.</li><li>L\'espace a la mémoire des lieux qu\'on aime sans pouvoir les nommer : un café à Kyoto, une maison de vacances en Grèce, un atelier d\'artiste à Marrakech.</li><li>Le projet fait le pari du temps long : des matériaux qui patinent, des meubles qui se transmettent, un design qui refuse la tendance pour embrasser la permanence.</li></ul>'
+            },
+            {
+              title: 'Raconter un parti pris stylistique',
+              content: '<ul><li>Le parti pris est radical et assumé : tout en noir, du sol au plafond, avec pour seule respiration la lumière naturelle et le grain du bois.</li><li>L\'architecte a fait le choix du monochrome — un camaïeu de blancs qui, loin d\'être monotone, révèle une infinité de textures et de nuances.</li><li>Le projet joue la carte du contraste maximal : béton brut au sol, velours sur les assises, laiton aux murs — chaque matériau s\'affirme et dialogue.</li><li>Pas de concession au décoratif : ici, chaque objet a une fonction, chaque meuble est dessiné sur mesure, rien n\'est là par hasard.</li><li>Le style se cherche du côté du brutalisme adouci : les structures sont laissées apparentes mais réchauffées par le bois, le cuir et la laine.</li><li>C\'est un intérieur de collectionneur : les pièces vintage chinées — fauteuil Prouvé, lampe Serge Mouille, céramique Jouve — racontent une passion plus qu\'un style.</li><li>Le maximalisme est assumé jusqu\'au bout : papier peint panoramique, lustre monumental, couleurs saturées — on entre dans un décor, presque un théâtre.</li><li>L\'approche est celle du « less but better » de Dieter Rams : peu d\'objets, mais chacun est irréprochable en proportion, en matériau, en finition.</li><li>Le projet revendique une esthétique de chantier sublimée : murs en enduit brut, tuyauterie apparente en cuivre, sol en béton lissé — la beauté de l\'inachevé.</li><li>La signature de ce projet tient en un mot : contraste. Ancien et moderne, brut et précieux, sombre et lumineux — chaque pièce est une tension résolue.</li></ul>'
+            },
+            {
+              title: 'Le dialogue ancien / contemporain',
+              content: '<ul><li>Les moulures XVIIIe ont été conservées et repeintes dans un gris anthracite qui les réveille — elles ne sont plus décoratives, elles sont graphiques.</li><li>Le parquet Versailles d\'origine, poncé et huilé mat, accueille sans conflit un îlot de cuisine en inox brossé et béton — deux siècles cohabitent au centimètre près.</li><li>La cheminée en marbre, intacte, est encadrée par deux bibliothèques en acier noir : l\'ancien encadré par le contemporain, un dialogue respectueux mais sans nostalgie.</li><li>Le projet refuse la restauration muséale : les éléments d\'époque sont conservés mais intégrés dans un langage résolument actuel — on habite le présent dans un écrin du passé.</li><li>Le faux-plafond a été retiré pour révéler les poutres apparentes et la hauteur d\'origine — 3,40 m retrouvés qui transforment un deux-pièces en cathédrale.</li><li>L\'intervention contemporaine ne se cache pas, elle s\'affirme : la verrière acier, la cuisine monobloc, l\'escalier suspendu — chaque ajout est lisible comme un geste d\'aujourd\'hui.</li><li>Les tomettes en terre cuite, usées par deux siècles de pas, n\'ont pas été remplacées — elles racontent l\'histoire du lieu mieux que n\'importe quel matériau neuf.</li><li>Le choix de la couleur sur les boiseries — un bleu profond, presque noir — transforme un salon haussmannien en un espace résolument contemporain sans toucher à un seul ornement.</li></ul>'
+            },
+            {
+              title: 'Conclure un texte de projet',
+              content: '<ul><li>Au final, ce projet est une leçon de justesse : chaque choix est motivé, chaque renoncement est un gain, chaque détail est une intention.</li><li>L\'espace ne ressemble à aucun autre — et c\'est précisément parce qu\'il ne ressemble qu\'à ceux qui l\'habitent.</li><li>Ce n\'est pas un intérieur qu\'on visite — c\'est un intérieur qu\'on habite dès le premier regard.</li><li>Le projet prouve qu\'on peut faire beaucoup avec peu : un budget maîtrisé, des matériaux honnêtes, et un dessin qui ne laisse rien au hasard.</li><li>Ici, l\'architecture d\'intérieur fait ce qu\'elle fait de mieux : elle transforme des mètres carrés en mètres cubes de bien-être.</li><li>Le résultat est à la hauteur de l\'ambition : un lieu qui vieillit bien, qui se bonifie avec le temps, qui accueille la vie sans la contraindre.</li><li>C\'est un projet qui ne se photographie pas entièrement — il faut le traverser, le toucher, y passer une heure pour en saisir toute la subtilité.</li><li>En quelques semaines de chantier et un budget raisonné, l\'architecte a réussi l\'essentiel : rendre un lieu aimable au sens premier du terme — un lieu qu\'on aime.</li></ul>'
+            },
+            {
+              title: 'Phrases pour les réseaux sociaux et légendes courtes',
+              content: '<ul><li>Quand la lumière dessine l\'espace mieux que n\'importe quel plan.</li><li>Le luxe du silence visuel — quand tout est à sa place et que rien ne crie.</li><li>Matière brute, geste précis.</li><li>Ce n\'est pas du minimalisme — c\'est de la précision.</li><li>Là où l\'ancien et le contemporain se tutoient.</li><li>Un intérieur qui se vit pieds nus.</li><li>Le détail qu\'on ne voit pas, mais qu\'on ressent.</li><li>La beauté des choses qui patinent.</li><li>Trois matériaux, une lumière, une intention — le projet en une phrase.</li><li>On entre et on comprend tout — c\'est le signe d\'un bon projet.</li><li>Pas de tendance. Du sens.</li><li>L\'élégance de ce qui ne se montre pas.</li><li>La lumière du matin a toujours le dernier mot.</li><li>Less is more, mais more is more aussi — tout dépend du projet.</li><li>Un lieu qui ressemble à ceux qui l\'habitent, pas à ceux qui l\'ont dessiné.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'Les meilleures descriptions de projet tiennent en 3-4 phrases — pas besoin d\'un roman',
+            'Sur Instagram, la légende courte et percutante bat toujours le pavé de texte',
+            'Les oppositions (ancien/moderne, brut/raffiné) sont le ressort narratif le plus efficace',
+            'Écrire à la première personne (« on entre ») immerge le lecteur dans l\'espace',
+            'Finir par une émotion, jamais par une liste de matériaux'
+          ],
+          tips: [
+            'Se constituer un carnet de phrases — noter celles qui vous marquent dans les magazines',
+            'Adapter le registre au support : poétique pour Instagram, factuel pour un dossier de presse, séduisant pour une présentation client',
+            'Lire les légendes de Vincent Van Duysen, Joseph Dirand et Pierre Yovanovitch — les maîtres du texte de projet'
+          ],
+          tags: ['écriture', 'storytelling', 'ambiance', 'style', 'portfolio', 'Instagram', 'ancien-contemporain']
         }
       ]
     },
