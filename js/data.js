@@ -2478,6 +2478,82 @@ const APP_DATA = {
             'Un plancher en verre (feuilleté trempé) laisse passer la lumière vers le bas — spectaculaire dans un studio sombre'
           ],
           tags: ['mezzanine', 'hauteur', 'studio', 'duplex', 'escalier', 'structure']
+        },
+        {
+          id: 'agencement-sur-mesure',
+          category: 'Agencement Sur-Mesure',
+          title: 'Dressings, Bibliothèques & Placards Sur-Mesure',
+          subtitle: 'Concevoir le rangement comme une architecture dans l\'architecture',
+          summary: 'Le rangement sur-mesure est LA plus-value n°1 d\'un projet d\'architecture d\'intérieur. Un dressing bien conçu change la vie quotidienne. Une bibliothèque murale transforme un mur vide en pièce maîtresse. Un placard intégré fait disparaître le désordre. Le sur-mesure n\'est pas un luxe — c\'est une optimisation rationnelle de chaque centimètre.',
+          sections: [
+            {
+              title: 'Dressing : conception et dimensions',
+              content: 'Types : dressing linéaire (1 mur), en L (2 murs), en U (3 murs), dressing walk-in (pièce dédiée). Largeur minimale pour un dressing walk-in : 1,80 m (penderie 60 cm + passage 60 cm + penderie 60 cm) — idéal : 2,20-2,50 m. Profondeur des penderies : 60 cm (le standard — un cintre fait 45 cm + l\'épaisseur du vêtement). Hauteur de la barre de penderie haute : 170-180 cm (costumes, robes longues, manteaux). Penderie basse (chemises, vestes) : 100-110 cm — permet de mettre 2 niveaux de penderie et DOUBLER la capacité. Étagères : profondeur 40 cm pour les pulls/t-shirts pliés, hauteur entre tablettes : 30-35 cm. Tiroirs : profondeur 50 cm, hauteur 15-20 cm (petits vêtements, accessoires). Prévoir un compartiment chaussures : 15 cm de hauteur par paire (plates), 20 cm (talons), 30 cm (bottes). Éclairage : LED intégré OBLIGATOIRE — un dressing mal éclairé est inutilisable. Détecteur de mouvement (Ikea STÖTTA ou LED encastrées avec capteur) = le luxe quotidien.'
+            },
+            {
+              title: 'Bibliothèques et rangements muraux',
+              content: 'La bibliothèque sur-mesure toute hauteur (sol-plafond) = le geste architectural le plus impactant dans un séjour. Elle habille un mur entier, structure l\'espace, expose les objets, range les livres et crée un DÉCOR en soi. Matériaux : MDF laqué (le plus contemporain — finition parfaite, toutes couleurs), contreplaqué bouleau chants apparents (le plus design — style nordique), chêne massif (le plus noble — style classique revisité), métal + bois (style industriel). Dimensions clés : profondeur 30 cm (livres), 35-40 cm (objets déco + livres), 25 cm (poche uniquement). Hauteur entre tablettes : 25 cm (poches), 30-32 cm (romans, beaux livres), 35 cm (grands formats). Étagères réglables (crémaillères) = obligatoire pour s\'adapter. Portée maximale d\'une étagère sans fléchir : MDF 19mm = 60 cm max. Contreplaqué 18mm = 80 cm. MDF 25mm = 80 cm. Au-delà : ajouter un montant intermédiaire ou utiliser une tablette renforcée (tasseau collé sous la tablette). Niches éclairées par LED : le détail qui transforme une bibliothèque en objet d\'art. 1 spot LED encastré ou 1 ruban LED par niche de mise en valeur.'
+            },
+            {
+              title: 'Placards intégrés',
+              content: 'Le placard intégré (du sol au plafond, de mur à mur) est l\'ennemi du meuble posé. Il maximise le rangement, épure l\'espace, supprime la poussière qui s\'accumule au-dessus et sur les côtés. Règle d\'or : TOUT placard doit aller du sol au plafond. L\'espace perdu au-dessus est un gâchis — c\'est là qu\'on range les valises, les couvertures, les archives. Types de portes : battantes (les plus simples, les moins chères, mais il faut l\'espace d\'ouverture devant), coulissantes (idéales si le passage est étroit — mais on n\'accède qu\'à la moitié du placard à la fois), pliantes (compromis — ouverture totale, encombrement réduit, mais mécanisme plus fragile). Façades : laquées (le plus contemporain), mélaminé décor bois (économique), miroir (agrandit la pièce — classique en entrée et chambre), cannage/rotin (tendance 2023-2026 — ajouter un cadre MDF + panneau de cannage). Intérieur : toujours en mélaminé blanc 16mm (le standard). Modules Ikea PAX = une base excellente à compléter par des façades sur-mesure (le hack le plus malin : caisson PAX + façades artisan = le prix d\'un placard basique pour un résultat haut de gamme).'
+            },
+            {
+              title: 'Fabrication et budget',
+              content: 'Trois filières : IKEA (PAX, BESTÅ, BILLY) + hack = le meilleur rapport qualité/prix. Caissons standardisés de qualité correcte + façades et poignées sur-mesure ou customisées. Budget dressing PAX complet : 1 500-3 000€. Limite : dimensions standards uniquement (largeurs 50/75/100 cm, profondeur 58 cm, hauteur 201/236 cm). Menuisier/agenceur artisan : le vrai sur-mesure. MDF laqué, placage chêne, contreplaqué bouleau — toutes dimensions, tous matériaux. Budget dressing 6m² : 5 000-12 000€. Bibliothèque murale 3m large × 2,5m haut : 3 000-8 000€. Délai : 3-6 semaines de fabrication. Le prix est dans la LAQUE (2-3 couches + ponçage inter-couches = beaucoup de main d\'œuvre). Agenceur industriel : entreprises qui font du sur-mesure en série. Mobalpa, Schmidt, SieMatic (ultra haut de gamme). Relevé de cotes + conception 3D + fabrication usine + pose. Budget intermédiaire entre IKEA et artisan. Conseil : toujours faire 2-3 devis (1 IKEA + hack, 1 artisan local, 1 agenceur) et comparer prix ET qualité.'
+            }
+          ],
+          keyPoints: [
+            'Dressing : profondeur 60 cm, 2 niveaux de penderie = double la capacité (haut 170 cm + bas 100 cm)',
+            'Bibliothèque sol-plafond = le geste déco le plus impactant dans un séjour — structure le mur entier',
+            'TOUT placard doit aller du sol au plafond — l\'espace au-dessus est un gâchis de rangement',
+            'Portée max sans fléchir : MDF 19mm = 60 cm, contreplaqué 18mm = 80 cm — au-delà, montant intermédiaire',
+            'Hack IKEA (caissons PAX + façades sur-mesure) = le meilleur rapport qualité/prix en rangement'
+          ],
+          tips: [
+            'Dressing : 2 barres de penderie superposées (110 cm + 110 cm) au lieu d\'une seule à 180 cm = 2x plus de vêtements rangés. Le tiroir à chaussures incliné sous la penderie basse = le détail pro',
+            'Bibliothèque MDF laqué blanc mat avec niches éclairées LED en fond coloré (bleu nuit, vert sauge, terracotta) = un meuble-tableau vivant. Coût du fond peint : 0€ (juste 1 pot de peinture)',
+            'Façades miroir sur les placards d\'une entrée étroite = la pièce semble 2x plus large ET on se voit en pied avant de sortir. Double fonction, 0 cm d\'emprise supplémentaire'
+          ],
+          tags: ['dressing', 'bibliothèque', 'placard', 'sur-mesure', 'rangement', 'IKEA', 'menuisier']
+        },
+        {
+          id: 'stores-rideaux-fenetres',
+          category: 'Confort & Habillage',
+          title: 'Stores, Rideaux & Habillage de Fenêtres',
+          subtitle: 'Voilages, occultants, stores techniques — cadrer la lumière et l\'intimité',
+          summary: 'L\'habillage de fenêtre est le parent pauvre de l\'architecture d\'intérieur — souvent oublié, traité en dernier, sous-budgété. Pourtant, c\'est lui qui contrôle la lumière, l\'intimité, la thermique et l\'acoustique d\'une pièce. Un bel intérieur avec des rideaux ratés reste un intérieur raté.',
+          sections: [
+            {
+              title: 'Rideaux : types et poses',
+              content: 'Rideau en voilage : tissu translucide qui tamise la lumière sans occulter. Le « vitrage » classique. Lin lavé, polyester froissé, coton mélangé. Le voilage en lin lavé blanc cassé = l\'élégance absolue — lumière douce, mouvement naturel, simplicité chic. Rideau occultant : tissu opaque (doublure occultante ou tissu blackout). Indispensable en chambre. Bloque 95-100% de la lumière. Peut être thermique (doublure aluminium) = isolation supplémentaire. Rideau décoratif : le rideau comme objet textile — velours, lin épais, laine, jacquard. Il habille le mur autant que la fenêtre. Pose : tringle apparente (la plus classique — barre en métal Ø19-28mm, laiton, noir mat, bois), rail au plafond encastré (la plus contemporaine — le rideau tombe du plafond, pas de tringle visible. Gorge technique dans le faux-plafond ou corniche/coffre en placoplâtre). Longueur : TOUJOURS au sol (le rideau qui s\'arrête à 10 cm du sol fait « court » — erreur déco n°1). Soit au ras du sol (1 cm au-dessus), soit cassant sur le sol (5-10 cm de tissu en excès = effet luxe drapé). Hauteur de pose : le plus HAUT possible — idéalement au plafond ou à 15-20 cm au-dessus de la fenêtre. Plus le rideau est posé haut, plus la pièce semble haute.'
+            },
+            {
+              title: 'Stores intérieurs',
+              content: 'Store enrouleur : toile qui s\'enroule sur un tube en tête de fenêtre. Le plus discret quand relevé. Toiles : tamisante (filtre la lumière), occultante (chambre), screen (tissu micro-perforé — bloque le soleil mais garde la vue. Le top pour les bureaux et séjours). Marques : Mermet (screen leader mondial, français), Copahome, Velux (pour les toits). Store vénitien : lamelles horizontales orientables. Aluminium 25mm (le classique — Luxaflex/Hunter Douglas, le n°1 mondial), bois 50mm (le plus chaleureux et le plus esthétique — style colonial revisité). Permet un contrôle FIN de la lumière — chaque lamelle s\'oriente. Le store vénitien bois 50mm couleur blanc cassé = un best-seller intemporel. Store californien (à bandes verticales) : lamelles verticales orientables. Pour les grandes baies vitrées. Le seul store qui accompagne les coulissants sans gêner l\'ouverture. Store bateau (roman blind) : tissu qui se replie en panneaux horizontaux quand on le remonte. Le plus décoratif des stores. En lin, en coton, en voile. Avec ou sans baleines (les baleines font des plis réguliers, sans baleines = plis souples naturels).'
+            },
+            {
+              title: 'Stores extérieurs et protections solaires',
+              content: 'Volet roulant : la protection la plus efficace (isolation thermique + phonique + occultation + sécurité). Intégré au coffre de linteau (neuf) ou en coffre apparent (rénovation). Aluminium (le standard) ou PVC (moins cher, moins résistant). Motorisation : OBLIGATOIRE en 2025 — personne ne veut de manivelle. Somfy = le leader (moteurs IO ou RTS, compatible domotique). BSO (Brise-Soleil Orientable) : le store extérieur premium. Lamelles aluminium orientables (comme un vénitien, mais à l\'extérieur). Bloque le rayonnement solaire AVANT qu\'il ne touche le vitrage — bien plus efficace qu\'un store intérieur. Motorisé, avec capteur solaire/vent automatique. Le must pour les façades sud et ouest. Prix : 500-1 500€ par fenêtre posé. Marques : Warema (allemand, le top), Griesser (suisse), Somfy (motorisation). Store banne : protection solaire des terrasses et balcons. Bras articulés + toile acrylique. Motorisé (Somfy). Toile Dickson (français, leader mondial des toiles acryliques) = la référence. Avancée : 3-4 m standard. Prix : 1 000-4 000€ posé selon largeur et qualité.'
+            },
+            {
+              title: 'Choix et prescription',
+              content: 'Séjour : double rideau (voilage lin + rideau décoratif lourd) sur rail encastré au plafond. OU store screen + rideau décoratif. Le screen garde la vue de jour, le rideau habille le soir. Chambre : store enrouleur occultant (discret, fonctionnel) + rideau décoratif occultant doublé. Double barrière = noir complet. Salle de bain : store enrouleur en toile PVC (résistant à l\'humidité) ou film adhésif dépoli sur le vitrage (le plus simple). Bureau/home office : store screen en priorité (anti-éblouissement écran, garde la vue). Mermet Satiné 5500 = la référence des architectes. Cuisine : store enrouleur tamisante (facile à nettoyer). Pas de rideau long près de la plaque de cuisson (risque incendie !). Grandes baies vitrées : store californien ou panneaux japonais (grands panneaux textiles coulissants sur rails parallèles = le plus contemporain pour les grandes surfaces vitrées). Budget : voilage confectionné = 30-80€/ml. Rideau occultant doublé = 60-150€/ml. Store screen sur-mesure = 150-300€/fenêtre. Rail encastré au plafond = 50-100€/ml.'
+            }
+          ],
+          keyPoints: [
+            'Le rideau TOUJOURS au sol (jamais à 10 cm au-dessus) et posé le plus HAUT possible (plafond idéalement)',
+            'Le store screen = l\'anti-éblouissement qui garde la vue — le choix n°1 pour bureau et séjour sud/ouest',
+            'Le BSO (Brise-Soleil Orientable) = la protection solaire la plus efficace — bloque le soleil AVANT le vitrage',
+            'Le voilage en lin lavé blanc cassé tombant du plafond = l\'élégance absolue, simple et intemporelle',
+            'Rail encastré au plafond (gorge technique) = le rideau semble tomber de nulle part — la pose la plus contemporaine'
+          ],
+          tips: [
+            'Le rideau en lin lavé IKEA (DYTÅG ou SILVERLÖNN) = un rapport qualité/prix imbattable. 25€ le panneau, tombé magnifique, aspect artisanal. Le hack déco le plus répandu chez les architectes',
+            'Poser la tringle à 5 cm du plafond (pas au-dessus de la fenêtre) + rideaux 30 cm plus larges que la fenêtre de chaque côté = la fenêtre semble 2x plus grande. Le tour de magie déco le plus efficace',
+            'En chambre à coucher : store enrouleur occultant DANS l\'embrasure de la fenêtre (noir total) + rideau décoratif en lin sur tringle devant. L\'occultant fait le travail, le rideau fait le décor'
+          ],
+          tags: ['rideau', 'store', 'voilage', 'occultant', 'screen', 'BSO', 'lin', 'Somfy', 'protection solaire']
         }
       ]
     },
@@ -5059,6 +5135,120 @@ const APP_DATA = {
             'Prévoir la réservation de la liaison frigorifique (2 tubes cuivre + câble + gaine de condensats) dans les plans AVANT les finitions — percer un mur fini pour passer les tubes = catastrophe'
           ],
           tags: ['climatisation', 'PAC', 'gainable', 'split', 'réversible', 'confort', 'été']
+        },
+        {
+          id: 'escaliers-types-calcul',
+          category: 'Escaliers & Ouvrages',
+          title: 'Escaliers : Types, Calcul & Matériaux',
+          subtitle: 'Droit, quart tournant, hélicoïdal — la loi de Blondel et l\'art de monter',
+          summary: 'L\'escalier est l\'ouvrage le plus complexe de l\'architecture d\'intérieur — il combine structure, ergonomie, sécurité et esthétique en un seul objet. Un escalier mal calculé est inconfortable (on trébuche), dangereux (on tombe) et laid (proportions disgracieuses). La formule de Blondel est le premier réflexe de tout architecte d\'intérieur.',
+          sections: [
+            {
+              title: 'Formule de Blondel et dimensions',
+              content: 'La formule de Blondel (1675) : 2h + g = 60 à 64 cm, où h = hauteur de marche et g = giron (profondeur de marche). C\'est LA règle d\'or — un escalier qui la respecte est naturellement confortable. Valeurs idéales : hauteur de marche h = 17-18 cm (max 21 cm en ERP, recommandé 17 cm pour un confort optimal), giron g = 25-28 cm (min 24 cm pour un pied complet). Exemple de calcul : hauteur d\'étage 2,70 m ÷ 17 cm = 15,88 → 16 marches de 16,9 cm. Giron : 64 - (2 × 16,9) = 30,2 cm. Vérification Blondel : 2 × 16,9 + 30,2 = 64 cm ✓. Emmarchement (largeur utile) : 80 cm minimum (passage d\'une personne), 90-100 cm pour un confort standard, 120 cm si passage de meubles fréquent. Échappée (hauteur libre sous le plafond au-dessus) : 2,00 m MINIMUM — la tête ne doit jamais toucher. En pratique, prévoir 2,10 m pour le confort. La trémie (ouverture dans le plancher) doit être dimensionnée pour respecter cette échappée — c\'est souvent LA contrainte n°1 en rénovation.'
+            },
+            {
+              title: 'Types d\'escaliers',
+              content: 'Escalier droit : le plus simple, le plus confortable, le plus encombrant. Emprise au sol : 4-5 m de long pour un étage standard. Parfait si la place est disponible. Quart tournant (1/4 tournant) : 1 virage à 90°. Le plus courant en maison individuelle. L\'angle peut être en bas, en haut ou au milieu (avec palier de repos). Avec marches rayonnantes dans l\'angle (les marches sont plus étroites à l\'intérieur — attention au confort). Deux quarts tournants (2/4 ou demi-tournant) : 2 virages de 90° ou un demi-tour à 180°. Compact — idéal quand l\'emprise est limitée. Avec palier intermédiaire = plus confortable. Hélicoïdal (colimaçon) : escalier en spirale autour d\'un noyau central. L\'emprise la plus faible (trémie circulaire Ø140-180 cm). Inconvénient : les marches sont très étroites côté noyau — inconfortable pour descendre, impossible pour monter des meubles. Spectaculaire visuellement (escalier sculptural). Escalier suspendu (autoportant) : les marches sont encastrées dans le mur porteur ou suspendues par des tiges au plafond. Pas de limon visible, pas de contremarche — l\'escalier semble flotter. Le top du design contemporain. Coût : 8 000-25 000€ selon matériaux et complexité.'
+            },
+            {
+              title: 'Matériaux',
+              content: 'Bois massif : le classique — chêne (le n°1), hêtre (bon rapport qualité/prix), frêne (design scandinave). Un escalier sur-mesure en chêne massif : 5 000-12 000€. Le bois peut être lasuré, verni, peint, ou laissé brut huilé. Les escaliers peints en blanc ou en noir mat avec marches en chêne naturel = le combo déco le plus populaire. Métal (acier) : structure en acier (limon, crémaillère ou tube) + marches en bois, verre ou métal. Le style industriel/loft. Acier thermolaqué noir mat = le standard design. Un escalier métal + bois sur-mesure : 6 000-15 000€. Chez des artisans serruriers. Béton : coulé en place ou préfabriqué. Le plus solide, le plus silencieux (masse = pas de vibration). Revêtement : béton ciré, carrelage, bois collé, moquette. En neuf : l\'escalier béton est souvent le choix le plus économique (structure brute 2 000-4 000€, puis habillage). Verre : marches en verre feuilleté trempé (44.4 minimum). Spectaculaire, laisse passer la lumière. Coût élevé : 800-1 500€ la marche. Combinaison : la plupart des escaliers design combinent 2 matériaux — limon acier + marches chêne, structure béton + nez de marche bois, garde-corps verre + main courante inox.'
+            },
+            {
+              title: 'Escaliers préfabriqués et sur-mesure',
+              content: 'Préfabriqué (kit) : escaliers standards vendus par des fabricants spécialisés. Dimensions modulables mais limitées. Qualité correcte à bonne. Prix : 1 500-5 000€. Marques : Lapeyre (le classique français), Fontanot (italien, hélicoïdaux design), Mobirolo (compact). Sur-mesure artisanal : dessiné par l\'architecte, fabriqué par un menuisier ou un serrurier. Liberté totale de formes, matériaux, dimensions. Délai : 4-8 semaines de fabrication. C\'est le seul choix quand les dimensions sont atypiques (hauteur non standard, trémie contrainte). Sur-mesure industriel : entreprises spécialisées qui font du sur-mesure à prix contenu grâce à la production numérique (CNC). Escaliers Décors, Art Escaliers. Limon crémaillère = le limon est découpé en dents de scie, les marches reposent dessus. L\'esthétique la plus légère. Limon à l\'anglaise = les marches sont encastrées dans le limon. Plus massif, plus classique. Limon central = un seul limon au milieu, les marches en porte-à-faux de chaque côté. Le plus sculptural.'
+            }
+          ],
+          keyPoints: [
+            'Formule de Blondel : 2h + g = 60-64 cm — la règle d\'or incontournable pour un escalier confortable',
+            'Hauteur de marche idéale : 17 cm. Giron idéal : 27 cm. Échappée minimum : 2,00 m',
+            'Le quart tournant = le plus courant en maison. L\'hélicoïdal = l\'emprise minimale mais le confort minimal aussi',
+            'L\'escalier suspendu (marches flottantes) = le summum du design contemporain (8 000-25 000€)',
+            'La trémie (trou dans le plancher) est LA contrainte n°1 — elle dicte le type d\'escalier possible'
+          ],
+          tips: [
+            'TOUJOURS vérifier l\'échappée en premier — un bel escalier sous lequel on se cogne la tête est un échec total. Dessiner une coupe longitudinale avec le plafond au-dessus',
+            'Le combo limon acier thermolaqué noir + marches chêne huilé = le best-seller en rénovation contemporaine. Budget : 6 000-10 000€ sur-mesure chez un artisan serrurier local',
+            'Peindre les contremarches en blanc et huiler les marches en chêne naturel = le relooking le plus impactant d\'un escalier existant. Budget : 200€ de peinture + huile + un week-end'
+          ],
+          tags: ['escalier', 'Blondel', 'marche', 'giron', 'quart tournant', 'hélicoïdal', 'limon']
+        },
+        {
+          id: 'garde-corps-balustrades',
+          category: 'Escaliers & Ouvrages',
+          title: 'Garde-corps & Balustrades',
+          subtitle: 'NF P01-012, hauteurs, matériaux — la sécurité qui se voit',
+          summary: 'Le garde-corps est un élément de SÉCURITÉ réglementé par la norme NF P01-012. Hauteur minimale, résistance aux charges, espacement des barreaux — tout est normé. Mais c\'est aussi un élément de design majeur qui caractérise un intérieur. Le défi : respecter la norme tout en créant quelque chose de beau.',
+          sections: [
+            {
+              title: 'Norme NF P01-012 : les règles',
+              content: 'Hauteur minimale du garde-corps : 1,00 m si la hauteur de chute est > 1 m (le cas général — escaliers, mezzanines, balcons). 0,90 m si l\'épaisseur du garde-corps est ≥ 50 cm (allège de fenêtre, muret large). 0,80 m si l\'épaisseur est ≥ 60 cm. ATTENTION : la hauteur se mesure depuis le NEZ DE MARCHE (pas depuis la marche elle-même) pour les escaliers, et depuis le sol fini pour les paliers et balcons. Zone de sécurité : dans les 45 premiers cm au-dessus du sol, le garde-corps ne doit pas comporter d\'élément horizontal permettant l\'escalade par un enfant (pas de barreaux horizontaux dans cette zone !). Les barreaux verticaux doivent avoir un espacement maximum de 11 cm (la tête d\'un enfant ne doit pas pouvoir passer). Si remplissage panneau (verre, tôle, etc.) : pas d\'ouverture > 11 cm. Résistance : le garde-corps doit résister à une charge horizontale de 60 daN/ml (logement) appliquée en tête. En ERP : 100 daN/ml. Le garde-corps est OBLIGATOIRE dès que la hauteur de chute dépasse 1 m.'
+            },
+            {
+              title: 'Types et matériaux',
+              content: 'Barreaudage vertical en métal : le classique universel. Barreaux en acier rond (Ø12-16mm) ou carré (12x12, 16x16mm). Espacement : ≤ 11 cm entre axes. Finition : thermolaqué noir (le standard), acier brut ciré (industriel), laiton (luxe). Fabrication par un serrurier ou achat en kit. Câbles tendus horizontaux (inox) : fils en inox Ø3-4mm tendus horizontalement entre deux montants. Très léger visuellement, quasi transparent. MAIS : les câbles horizontaux créent une « échelle » pour les enfants — interdit dans certaines interprétations strictes de la norme (zone d\'escalade dans les 45 premiers cm). Vérifier avec le contrôleur technique. Verre : feuilleté trempé (44.2 ou 55.2 minimum pour un garde-corps). Fixation par profil U au sol (le plus propre), par pinces/rotules, ou par fixation latérale. Le garde-corps tout verre = la transparence maximale, parfait pour les mezzanines (vue dégagée) et les escaliers design. Coût : 300-600€/ml posé. Main courante seule : si un mur borde l\'escalier, une main courante murale suffit (Ø40-50mm, à 90-100 cm du nez de marche). Bois (chêne, hêtre) ou métal (inox, acier thermolaqué).'
+            },
+            {
+              title: 'Garde-corps de balcon et terrasse',
+              content: 'Le garde-corps extérieur doit résister aux intempéries EN PLUS des charges. Matériaux extérieurs : acier galvanisé à chaud + thermolaquage (le standard — le galva protège de la corrosion, le thermolaquage donne la couleur), aluminium (ne rouille pas, léger, mais plus cher), inox 316L (marine — le top pour le bord de mer mais budget ×3), fer forgé (patrimoine, restauration de l\'ancien — artisanal, 200-500€/ml). Verre extérieur : feuilleté trempé avec fixation inox. Attention au vent (calcul des charges de vent selon l\'exposition et la hauteur du bâtiment — norme NF EN 1991-1-4). En copropriété : le garde-corps de balcon est une partie commune — toute modification (remplacement, ajout de verre) nécessite un vote en AG. Attention : les garde-corps anciens en fonte ou fer forgé sont souvent patrimoniaux — ne pas les remplacer sans vérifier le PLU et les prescriptions ABF si secteur protégé. Solution : doubler le garde-corps existant par un verre feuilleté fixé à l\'intérieur (sécurité + préservation du patrimoine).'
+            },
+            {
+              title: 'Design et tendances',
+              content: 'Minimaliste : verre feuilleté sans montant visible (fixation par profil U encastré dans le sol ou la dalle). L\'escalier semble ne pas avoir de garde-corps — effet spectaculaire. Les marques Sadev (fixations ponctuelles), Q-railing (systèmes complets), CRL offrent des systèmes de fixation très discrets. Industriel : barreaudage acier carré 20x20mm thermolaqué noir, main courante tube rond Ø42mm. Le standard des lofts et des rénovations contemporaines. Classique revisité : barreaux verticaux en métal noir avec main courante en chêne massif. Le mariage parfait entre tradition et modernité. C\'est le garde-corps le plus polyvalent — il fonctionne en haussmannien comme en contemporain. Art déco : motifs géométriques en acier ou laiton (cercles, chevrons, arcs). Le comeback de l\'Art déco en 2024-2026 rend ce style très demandé. Fabrication par un serrurier d\'art — 300-800€/ml mais c\'est de la haute couture. Filin inox + montants bois : le style « bord de mer » ou « montagne contemporaine ». Léger, transparent, chaleureux.'
+            }
+          ],
+          keyPoints: [
+            'NF P01-012 : hauteur 1,00 m minimum, barreaux espacés de ≤ 11 cm, pas d\'élément escaladable dans les 45 premiers cm',
+            'Verre obligatoirement FEUILLETÉ (pas juste trempé) pour les garde-corps — les morceaux doivent rester collés',
+            'Les câbles horizontaux = attention zone d\'escalade — vérifier avec le contrôleur technique si enfants',
+            'Acier galvanisé + thermolaqué = le standard extérieur. Inox 316L pour le bord de mer',
+            'La hauteur se mesure depuis le NEZ DE MARCHE en escalier — pas depuis la marche'
+          ],
+          tips: [
+            'Barreaux carrés 16x16mm acier thermolaqué noir + main courante chêne = le garde-corps d\'escalier le plus élégant et le plus polyvalent. Budget : 150-250€/ml chez un serrurier local',
+            'En mezzanine : privilégier le verre feuilleté pour conserver la vue et la lumière. Un garde-corps opaque en mezzanine = la mezzanine semble être une cage',
+            'Garde-corps haussmannien en fonte à restaurer : un bon ferronnier peut le sabler, traiter antirouille et repeindre pour 100-150€/ml. Le patrimoine vaut toujours mieux que le neuf'
+          ],
+          tags: ['garde-corps', 'balustrade', 'NF P01-012', 'sécurité', 'verre', 'barreaudage', 'main courante']
+        },
+        {
+          id: 'serrurerie-metallerie',
+          category: 'Ouvrages Métalliques',
+          title: 'Serrurerie & Métallerie Décorative',
+          subtitle: 'Acier, fer forgé, laiton, inox — les ouvrages sur-mesure qui signent un intérieur',
+          summary: 'La serrurerie-métallerie, c\'est l\'art de transformer le métal en architecture. Verrières, escaliers, garde-corps, étagères murales, consoles, crédences — ces ouvrages sur-mesure signent un intérieur et le distinguent du tout-venant. L\'architecte d\'intérieur travaille AVEC un serrurier artisan — c\'est un partenariat essentiel.',
+          sections: [
+            {
+              title: 'Matériaux métalliques',
+              content: 'Acier (fer) : le métal de base de la serrurerie. Solide, économique, soudable. DOIT être protégé contre la corrosion (peinture, thermolaquage, galvanisation, ou cirage pour un aspect brut). Acier thermolaqué : poudre époxy cuite au four à 180°C — finition lisse, durable, disponible en toutes couleurs RAL. Le NOIR MAT (RAL 9005 mat) est le standard absolu en design d\'intérieur contemporain. Acier brut ciré : l\'acier est laissé tel quel (gris bleuté avec des traces de meulage) et protégé par une cire ou un vernis mat. Le look industriel authentique. ATTENTION : l\'acier brut non protégé ROUILLE — la cire est un entretien, pas une protection définitive. Acier Corten : acier auto-patinable qui développe une couche de rouille protectrice stable. L\'aspect rouille est volontaire et esthétique. En extérieur (bardage, jardinières) ou en accent intérieur (cheminée habillage, claustra). Ne rouille pas indéfiniment — la patine se stabilise en 6-24 mois.'
+            },
+            {
+              title: 'Inox, laiton, cuivre',
+              content: 'Inox (acier inoxydable) : ne rouille pas (chrome > 10,5%). Inox 304 = intérieur standard. Inox 316L = extérieur, piscine, bord de mer (résiste au sel). Finitions : brossé (le plus courant — effet satiné directionnel), poli miroir (très brillant — luxe/hôtellerie), microbillé (mat uniforme). L\'inox est froid et « hospitalier » — il faut le doser. Laiton : alliage cuivre-zinc. LA tendance 2020-2026 en architecture d\'intérieur. Couleur dorée chaude qui patine naturellement (le laiton non verni se couvre d\'une patine brunâtre avec le temps — c\'est le charme). Laiton brossé = le finish le plus élégant. Laiton poli = le look « bijou ». Usages : poignées, crédences, étagères, luminaires, miroirs encadrés, nez de marche, plinthes. Fabricants : Dauby (poignées artisanales), Buster+Punch (London, design brut), Tom Dixon (luminaires). Cuivre : cousin du laiton, plus rouge/rosé. Patine vert-de-gris avec le temps (comme la Statue de la Liberté). Magnifique en crédence de cuisine (cuivre brut brossé). Plus difficile à entretenir (traces de doigts) — vernir ou accepter la patine.'
+            },
+            {
+              title: 'Ouvrages courants en architecture d\'intérieur',
+              content: 'Verrière d\'atelier : LA star de la serrurerie d\'intérieur. Structure acier (profils 30x30 ou 40x40mm) + vitrage simple ou feuilleté. Finition thermolaquée noir mat. Prix artisan : 600-1 200€/m² posé. Alternatives industrielles moins chères : Lapeyre, Leroy Merlin (300-500€/m²) — qualité correcte mais pas la finesse artisanale. Claustra / séparation ajourée : panneaux en tôle découpée au laser — motifs géométriques, végétaux, abstraits. En acier thermolaqué, laiton ou Corten. Spectaculaire en séparation d\'espace sans cloisonner. Étagères murales : équerres en acier plat (30x6mm) soudées + tablettes bois. Le meuble « sur-mesure » le plus simple et le plus impactant. Budget : 50-100€ l\'équerre chez un serrurier + le bois. Console / table : piètement acier (tube carré 40x40 ou 50x50mm, ou plat 60x8mm) + plateau bois ou marbre. Le meuble signature d\'un intérieur sur-mesure. Encadrement de miroir : cadre en acier plat ou en laiton, soudé et fini à la main. Le miroir passe d\'objet banal à objet d\'art.'
+            },
+            {
+              title: 'Travailler avec un serrurier',
+              content: 'Le serrurier-métallier artisan est LE partenaire clé de l\'architecte d\'intérieur — il fabrique ce qu\'aucun catalogue ne propose. Le processus : 1) Plan de l\'architecte (cotes précises, matériaux, finition). 2) Le serrurier fait un plan d\'atelier et un devis. 3) Fabrication en atelier (2-4 semaines). 4) Pose sur chantier (1-2 jours par ouvrage). Trouver un bon serrurier : les Compagnons du Devoir (formation d\'excellence), les artisans locaux recommandés par d\'autres architectes, les plateformes comme Architectes-France ou Houzz. Budget : un serrurier artisan facture 50-80€/h. Un ouvrage sur-mesure (verrière, garde-corps, escalier) représente 40-60% de main d\'œuvre et 40-60% de matière. Le délai est LE facteur critique — les bons serruriers sont bookés 2-3 mois à l\'avance. COMMANDER DÈS la validation du projet. Erreur classique : attendre la fin du chantier pour commander la verrière → 2 mois de retard. Astuce : demander des échantillons de finition (thermolaqué, acier brut ciré, laiton brossé) pour validation client AVANT la fabrication.'
+            }
+          ],
+          keyPoints: [
+            'Acier thermolaqué noir mat (RAL 9005) = LE standard absolu de la métallerie d\'intérieur contemporaine',
+            'Le laiton brossé patiné = LA tendance 2020-2026 — chaleur, luxe discret, vieillissement noble',
+            'La verrière artisan (600-1 200€/m²) vs industrielle (300-500€/m²) : la finesse des profils fait la différence',
+            'Commander les ouvrages métalliques DÈS la validation — les bons serruriers sont bookés 2-3 mois',
+            'Acier Corten = la rouille volontaire et esthétique — se stabilise en 6-24 mois'
+          ],
+          tips: [
+            'Équerres en acier plat 30x6mm + tablette chêne 30mm = l\'étagère murale la plus élégante qui soit. Un serrurier local en fabrique 6 pour 300-400€. Aucun catalogue ne propose ce ratio beauté/prix',
+            'Pour les petits budgets : les profilés acier bruts de chez un négoce métaux (Descours & Cabaud, Arcelor Profil) coûtent 5-10€/ml. Un bon bricoleur avec une meuleuse et une bombe de peinture noire mate peut faire des miracles',
+            'Demander au serrurier de faire les soudures VISIBLES et meulées proprement (sans les cacher) = l\'esthétique industrielle authentique. Les soudures cachées font "usine", les soudures assumées font "atelier d\'artiste"'
+          ],
+          tags: ['serrurerie', 'métallerie', 'acier', 'laiton', 'inox', 'verrière', 'thermolaquage', 'fer forgé']
         }
       ]
     }
