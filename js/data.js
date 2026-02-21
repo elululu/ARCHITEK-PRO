@@ -3573,6 +3573,120 @@ const APP_DATA = {
             'Anticiper : le réemploi nécessite du temps de sourcing — intégrer cette phase dès le planning projet'
           ],
           tags: ['réemploi', 'récupération', 'durable', 'vintage', 'matériau', 'seconde vie']
+        },
+        {
+          id: 'architectes-francais',
+          category: 'Références & Inspirations',
+          title: 'Architectes d\'Intérieur Français de Référence',
+          subtitle: '16 noms incontournables de la scène française contemporaine',
+          summary: 'La France est probablement le pays le plus influent au monde en architecture d\'intérieur. De Joseph Dirand à Hugo Toro, la scène française couvre tous les registres — du minimalisme monumental au maximalisme joyeux. Connaître ces noms, savoir décrypter leur signature, c\'est affûter son propre regard et se nourrir des meilleurs.',
+          sections: [
+            {
+              title: 'Les figures majeures',
+              content: '<a href="https://www.josephdirand.com" target="_blank">Joseph Dirand</a> — Le minimaliste luxueux. Pierre massive, symétrie monumentale, lumière ciselée. Intérieurs comme des temples. Ses boutiques (Balmain, Chloé, Rick Owens) et ses résidences privées sont des manifestes d\'architecture pure. Le plus influent de sa génération. <a href="https://www.pierreyovanovitch.com" target="_blank">Pierre Yovanovitch</a> — Formes organiques et couleurs audacieuses. Son mobilier (ours, oiseaux) est devenu culte. Des intérieurs joyeux, sculpturaux, profondément originaux. Designer de l\'Année Maison&Objet 2024. <a href="https://www.deniot.com" target="_blank">Jean-Louis Deniot</a> — Le classique parisien réinventé. Hôtels particuliers, appartements du Marais, résidences à New Delhi. Un sens du détail obsessionnel — moulures, dorures, art contemporain. Le « grand décorateur » au sens noble. <a href="https://india-mahdavi.com" target="_blank">India Mahdavi</a> — La couleur comme philosophie. Formes rondes, esprit pop, une joie communicative. Ses restaurants (Sketch à Londres — le pink room !) et son mobilier (Bishop stool) sont iconiques. Le contraire du minimalisme et c\'est magnifique.'
+            },
+            {
+              title: 'La scène parisienne',
+              content: '<a href="https://www.maisonsarahlavoine.com" target="_blank">Sarah Lavoine</a> — Le style parisien accessible. Le « bleu Sarah » (ce bleu profond devenu sa signature) a défini l\'appartement parisien contemporain pour toute une génération. Ses boutiques font office de showroom grandeur nature. <a href="https://www.chzon.com" target="_blank">Dorothée Meilichzon</a> (Studio CHZON) — La reine des hôtels et restaurants parisiens. Mama Shelter, Hôtel Providence, Grand Pigalle, Hôtel des Grands Boulevards. Elle raconte une histoire par le décor — chaque projet est un univers narratif complet. <a href="https://www.lauragonzalez.fr" target="_blank">Laura Gonzalez</a> — L\'exubérance maîtrisée. Motifs, couleurs, Art déco revisité avec une touche d\'Orient. Décorateur de l\'Année AD 2019. La relève du « grand décor » français. <a href="https://www.charleszana.com" target="_blank">Charles Zana</a> — L\'art contemporain intégré dans l\'architecture classique. Ses intérieurs dialoguent avec des œuvres majeures — il conçoit l\'espace POUR l\'art. Des appartements-galeries spectaculaires. <a href="https://www.tristanauer.com" target="_blank">Tristan Auer</a> — Le luxe parisien dans l\'hôtellerie. Hôtel de Crillon, Les Bains. Un raffinement extrême dans les matières et les détails. Le « sur-mesure absolu ».'
+            },
+            {
+              title: 'La nouvelle génération et les signatures fortes',
+              content: '<a href="https://www.hugotoro.com" target="_blank">Hugo Toro</a> — La nouvelle garde. Brutalisme doux, matières brutes (béton, acier, terre crue), formes sculpturales. À 35 ans, il bouscule les codes du luxe avec une approche radicale et sensuelle. À suivre de très près. <a href="https://www.raphaelnavot.com" target="_blank">Raphaël Navot</a> — Les matières primitives. Ses intérieurs évoquent des cavernes organiques — roche, bois brut, lumière tamisée. Le bar du Silencio à Paris est son manifeste. Une approche quasi chamanique du design. <a href="https://www.studioko.fr" target="_blank">Studio KO</a> (Karl Fournier & Olivier Marty) — Le contextualisme radical. Chaque projet est une réponse au lieu — le Musée Yves Saint Laurent à Marrakech est un chef-d\'œuvre d\'intégration. Architecture + intérieur indissociables. <a href="https://www.gillesetboissier.com" target="_blank">Gilles & Boissier</a> (Dorothée Boissier & Patrick Gilles) — Le décor théâtral. Un sens du détail poussé à l\'extrême — chaque poignée de porte, chaque joint de carrelage est pensé. Le Baccarat à New York est leur signature.'
+            },
+            {
+              title: 'Les visionnaires',
+              content: '<a href="https://www.francoischampsaur.com" target="_blank">François Champsaur</a> — Le Méditerranéen contemporain. Lumière du sud, matériaux naturels (pierre, terre cuite, lin), un minimalisme solaire. Ses projets entre Marseille et Saint-Tropez définissent le luxe balnéaire français. <a href="https://www.chahanminassian.com" target="_blank">Chahan Minassian</a> — Le galeriste-décorateur. Il intègre des pièces de design rare (Prouvé, Royère, Perriand) dans des intérieurs sur-mesure. Ses clients collectionnent l\'art AVEC l\'architecture. L\'ultra haut de gamme. <a href="https://www.festenarchitecture.com" target="_blank">Festen Architecture</a> — La rénovation parisienne radicale. Béton brut + bois + lumière zénithale. Des appartements « bruts chics » qui ont défini un style copié partout. Leur Instagram est un cours d\'architecture d\'intérieur à lui seul.'
+            }
+          ],
+          keyPoints: [
+            'Joseph Dirand = minimalisme monumental. Pierre Yovanovitch = formes organiques joyeuses. Les deux pôles de la scène française',
+            'Dorothée Meilichzon (CHZON) a réinventé l\'hôtellerie parisienne — chaque projet est un univers narratif',
+            'Hugo Toro et Raphaël Navot = la nouvelle génération qui bouscule avec des matières brutes et primitives',
+            'Studio KO (Musée YSL Marrakech) = la preuve qu\'architecture et architecture d\'intérieur sont indissociables',
+            'Tous ces noms ont un point commun : une SIGNATURE identifiable. C\'est ce qui fait la différence entre un architecte et un grand architecte'
+          ],
+          tips: [
+            'Suivre ces 16 comptes Instagram = un cours de design quotidien gratuit. Analyser leurs choix de matériaux, de lumière, de proportions',
+            'Visiter leurs projets ouverts au public (hôtels, restaurants, boutiques) = la meilleure formation possible. Un café au Grand Pigalle de Meilichzon vaut 100 heures de Pinterest',
+            'Constituer un « mood board de références » par projet en citant ces architectes — ça structure l\'intention et crédibilise le discours face au client'
+          ],
+          tags: ['architecte', 'Dirand', 'Yovanovitch', 'Deniot', 'Mahdavi', 'Lavoine', 'Meilichzon', 'français']
+        },
+        {
+          id: 'architectes-internationaux',
+          category: 'Références & Inspirations',
+          title: 'Références Internationales',
+          subtitle: '13 noms qui définissent l\'architecture d\'intérieur dans le monde',
+          summary: 'Au-delà de la scène française, le monde regorge de talents qui redéfinissent l\'espace intérieur. Du wabi-sabi belge au maximalisme californien, du soft minimalism danois au luxe asiatique — chaque culture apporte sa vision. Connaître ces références, c\'est élargir son vocabulaire et enrichir sa pratique.',
+          sections: [
+            {
+              title: 'Belgique & Pays-Bas : le berceau du minimalisme émotionnel',
+              content: '<a href="https://www.axelvervoordt.com" target="_blank">Axel Vervoordt</a> 🇧🇪 — Le maître du wabi-sabi occidental. Il a introduit l\'esthétique japonaise de l\'imperfection dans le design européen. Ses intérieurs dépouillés, patinés, quasi spirituels ont inspiré une génération entière — y compris la maison de Kim Kardashian (avec Kanye West). Antiquaire, galeriste, décorateur — un visionnaire total. <a href="https://www.vincentvanduysen.com" target="_blank">Vincent Van Duysen</a> 🇧🇪 — Le minimalisme belge dans toute sa rigueur. Matériaux nobles (pierre bleue, chêne, lin), lignes pures, lumière naturelle. Directeur artistique de Molteni&C. Ses intérieurs ont la sérénité d\'un monastère et l\'élégance d\'un palazzo. L\'architecte-designer le plus complet de sa génération.'
+            },
+            {
+              title: 'Royaume-Uni : du minimalisme radical au design humaniste',
+              content: '<a href="https://www.johnpawson.com" target="_blank">John Pawson</a> 🇬🇧 — Le minimalisme absolu. Ses intérieurs (et son monastère de Nový Dvůr en Tchéquie) sont réduits à l\'essentiel — lumière, proportion, matière. Rien de plus, rien de moins. Un ascétisme qui devient somptueux. <a href="https://www.studioilse.com" target="_blank">Ilse Crawford</a> (Studio Ilse) 🇬🇧 — Le design humaniste. Elle conçoit pour le BIEN-ÊTRE des gens, pas pour les photos. Sa collaboration avec IKEA (collection SINNERLIG) a démocratisé le beau design. Son documentaire Netflix « Abstract » est un must-see. <a href="https://www.fayetoogood.com" target="_blank">Faye Toogood</a> 🇬🇧 — L\'artiste-designer. Ses meubles sont des sculptures (la chaise Roly Poly !), ses intérieurs des installations artistiques. Elle brouille la frontière entre art et design. Radicalement originale.'
+            },
+            {
+              title: 'États-Unis, Italie, Espagne : les autres pôles',
+              content: '<a href="https://www.kellywearstler.com" target="_blank">Kelly Wearstler</a> 🇺🇸 — Le maximalisme californien. Textures explosives, mélanges audacieux (marbre + laiton + velours + néon), une énergie spectaculaire. Ses hôtels (Proper Hotels) et ses résidences sont des feux d\'artifice visuels. L\'anti-minimaliste par excellence — et c\'est fascinant. <a href="https://www.patriciaurquiola.com" target="_blank">Patricia Urquiola</a> 🇪🇸/🇮🇹 — Designer produit ET architecte d\'intérieur. Directrice artistique de Cassina. Elle conçoit des meubles (Bend, Fat) ET les espaces qui les accueillent. Son travail pour les hôtels (Mandarin Oriental Barcelone, Il Sereno Lac de Côme) est une masterclass de design total. <a href="https://www.lissoniassociati.com" target="_blank">Piero Lissoni</a> 🇮🇹 — L\'élégance italienne pure. Minimalisme chaleureux, proportions parfaites, matières nobles. Directeur artistique de B&B Italia, Living Divani, Boffi. Ses intérieurs ont une grâce naturelle — tout semble évident et facile (ce qui est le plus dur à atteindre). <a href="https://www.cristinacelestino.com" target="_blank">Cristina Celestino</a> 🇮🇹 — La couleur italienne joyeuse. Céramique artisanale, motifs géométriques, un héritage du design radical italien revisité avec fraîcheur. La relève féminine du design italien.'
+            },
+            {
+              title: 'Scandinavie & Asie : les autres visions',
+              content: '<a href="https://normarchitects.com" target="_blank">Norm Architects</a> 🇩🇰 — Le « soft minimalism » danois. Matériaux naturels (bois clair, pierre, lin), formes douces, atmosphères enveloppantes. La version chaleureuse du minimalisme. Leur restaurant Audo (ex-Menu Space) à Copenhague est un lieu de pèlerinage design. <a href="https://www.neriandhu.com" target="_blank">Neri & Hu</a> 🇨🇳 — Le dialogue East meets West. Basés à Shanghai, ils réhabilitent des bâtiments industriels chinois avec une sensibilité occidentale — ou l\'inverse. Leur Design Republic à Shanghai est un manifeste. Parmi les architectes les plus influents d\'Asie. <a href="https://www.afso.net" target="_blank">André Fu</a> (AFSO) 🇭🇰 — Le luxe asiatique contemporain. Ses hôtels (Upper House Hong Kong, St. Regis Kuala Lumpur) redéfinissent l\'hospitalité haut de gamme avec une grâce orientale et une rigueur occidentale. L\'architecte le plus demandé d\'Asie. <a href="https://www.yabupushelberg.com" target="_blank">Yabu Pushelberg</a> 🇨🇦 — Le duo canadien de l\'hôtellerie de luxe mondiale. Four Seasons, Park Hyatt, Edition Hotels. Ils ont inventé le « lobby comme living room ». Leur capacité à s\'adapter à chaque culture tout en gardant une signature est remarquable.'
+            }
+          ],
+          keyPoints: [
+            'Axel Vervoordt a introduit le wabi-sabi en Occident — l\'imperfection comme beauté suprême',
+            'Vincent Van Duysen + Piero Lissoni = les deux faces du minimalisme européen (belge austère vs italien chaleureux)',
+            'Kelly Wearstler est la preuve que le maximalisme peut être aussi rigoureux que le minimalisme',
+            'Norm Architects (Danemark) = le « soft minimalism » — la version habitable et douce du minimalisme radical',
+            'Tous dirigent aussi des marques de mobilier (DA de Cassina, Molteni, B&B Italia) — architecture + design = indissociables'
+          ],
+          tips: [
+            'Voyager pour voir ces intérieurs en vrai : un séjour au Upper House (André Fu) ou au Il Sereno (Urquiola) est un investissement professionnel — pas une dépense de vacances',
+            'Analyser les lobbies d\'hôtels design dans chaque ville visitée (Park Hyatt, Edition, Ace Hotels) — c\'est un showroom gratuit d\'idées de matériaux, d\'éclairage et de mobilier',
+            'Regarder le documentaire Netflix « Abstract » épisode Ilse Crawford — la meilleure introduction au design humaniste en 45 minutes'
+          ],
+          tags: ['international', 'Vervoordt', 'Van Duysen', 'Wearstler', 'Pawson', 'Urquiola', 'Neri&Hu', 'minimalisme']
+        },
+        {
+          id: 'ressources-veille-design',
+          category: 'Références & Inspirations',
+          title: 'Ressources & Veille : Magazines, Prix, Médias',
+          subtitle: 'Où s\'informer, que lire, qui suivre — la boîte à outils du veilleur',
+          summary: 'Un architecte d\'intérieur qui ne fait pas de veille est un architecte d\'intérieur qui répète les mêmes recettes. Les tendances évoluent, les matériaux se renouvellent, les talents émergent. Voici les sources essentielles pour rester affûté — magazines papier, sites web, prix professionnels, podcasts et comptes Instagram.',
+          sections: [
+            {
+              title: 'Magazines et médias de référence',
+              content: '<a href="https://www.admagazine.fr" target="_blank">AD Magazine France</a> — LE magazine de référence en décoration et architecture d\'intérieur. Les reportages chez les architectes cités dans les fiches précédentes, les tendances du moment, les adresses. La version US (<a href="https://www.architecturaldigest.com" target="_blank">Architectural Digest US</a>) est plus orientée célébrités mais les projets sont spectaculaires. <a href="https://www.elledecoration.fr" target="_blank">Elle Décoration</a> — Plus accessible qu\'AD, excellent pour les tendances couleurs et mobilier grand public éclairé. <a href="https://www.theworldofinteriors.com" target="_blank">The World of Interiors</a> (UK) — Le magazine le plus exigeant. Pas de tendances éphémères, que du deep design. Les intérieurs les plus extraordinaires de la planète. La bible des connaisseurs. <a href="https://www.dezeen.com" target="_blank">Dezeen</a> — Le site web n°1 mondial de l\'architecture et du design. Gratuit, quotidien, couvre tout : projets, produits, événements, concours. À lire chaque matin avec le café. <a href="https://www.yellowtrace.com.au" target="_blank">Yellowtrace</a> — Blog australien de référence. Sélection pointue, excellent goût, articles de fond. La curatrice Dana Tomic Hughes a un œil infaillible.'
+            },
+            {
+              title: 'Sites, blogs et newsletters',
+              content: '<a href="https://www.yatzer.com" target="_blank">Yatzer</a> — Magazine en ligne gréco-international, photographies somptueuses, focus sur le croisement art/design/architecture. <a href="https://www.ignant.com" target="_blank">Ignant</a> — Magazine berlinois en ligne, esthétique minimaliste, photographie + design + voyage. Un feed Instagram devenu un média de référence. <a href="https://www.trendland.com" target="_blank">Trendland</a> — Veille tendances mode + design + art. Les croisements entre disciplines sont toujours les plus inspirants. <a href="https://www.wallpaper.com" target="_blank">Wallpaper*</a> — Le magazine UK du design global (architecture, mode, art, voyage, technologie). Leur numéro « Handmade » annuel est un événement. <a href="https://www.frameweb.com" target="_blank">Frame Magazine</a> — Néerlandais, spécialisé dans les INTÉRIEURS commerciaux (hôtels, restaurants, bureaux, retail). La référence absolue pour le design d\'espaces publics. <a href="https://www.platforme-magazine.com" target="_blank">Platforme</a> — Magazine français en ligne émergent, focus architecture d\'intérieur et jeune scène française. Newsletter : Dezeen Daily (gratuite, quotidienne) = le minimum vital. The Modern House Journal (UK, immobilier + architecture) = inspirer le client.'
+            },
+            {
+              title: 'Prix et événements professionnels',
+              content: '<a href="https://www.maison-objet.com" target="_blank">Maison&Objet</a> — LE salon professionnel français (Paris, janvier + septembre). Designer de l\'Année, Talents à la Carte, What\'s New. C\'est là que se font les tendances et que se nouent les contacts professionnels. Incontournable. <a href="https://www.salonemilano.it" target="_blank">Salone del Mobile</a> (Milan, avril) — Le plus grand salon de mobilier au monde. Le Fuorisalone (off) dans toute la ville est encore plus inspirant que le salon lui-même. Le pèlerinage annuel de tout designer. INSIDE World Festival of Interiors (dans le cadre du WAF - World Architecture Festival) — Le prix mondial d\'architecture d\'intérieur. Les projets primés = la crème mondiale. <a href="https://www.archidesignclub.com" target="_blank">ArchiDesignClub</a> — Prix français qui récompense les meilleurs projets d\'architecture et de design d\'intérieur en France. Excellent panorama de la production nationale. Dezeen Awards — Catégorie interiors. Les projets shortlistés = un panorama mondial annuel de l\'excellence. <a href="https://www.restaurantandbardesignawards.com" target="_blank">Restaurant & Bar Design Awards</a> — Le prix mondial du design de restaurants et bars. Inspiration pure pour tout ce qui touche à l\'hôtellerie-restauration.'
+            },
+            {
+              title: 'Comptes Instagram & podcasts essentiels',
+              content: 'Instagram est devenu la première source d\'inspiration visuelle pour les architectes d\'intérieur. Les comptes à suivre absolument : @josephdirand (projets et process), @pierre.yovanovitch (mobilier sculptural), @indiamahdavi (couleur pure), @studio_ko (contextualisme), @hugotoro.studio (brutalisme doux), @festenarchitecture (rénovation parisienne), @normarchitects (soft minimalism). Comptes de curation : @yellowtrace, @dezeen, @ignant, @themodernhouse (immobilier design UK), @ad_france, @frame_magazine. Comptes matériaux/détails : @detailsofarchitecture (détails constructifs), @materialdriven (innovation matériaux), @surfacemag (surfaces et textures). Podcasts : « Design Matters » de Debbie Millman (anglais — interviews de designers), « Entre nous » par Sarah Poniatowski (français — conversations décoration), « Dezeen In Depth » (anglais — enjeux du design contemporain). Livres essentiels : « The Kinfolk Home » (Nathan Williams), « Axel Vervoordt: Wabi Inspirations », « Joseph Dirand: Interior » (Rizzoli), « Living In » collection Phaidon (par pays), « Atmosphères » de Pierre Yovanovitch.'
+            }
+          ],
+          keyPoints: [
+            'Dezeen.com = lecture quotidienne obligatoire — le site web n°1 mondial du design et de l\'architecture',
+            'Maison&Objet (Paris) + Salone del Mobile (Milan) = les 2 événements pro incontournables de l\'année',
+            'The World of Interiors (UK) = le magazine le plus exigeant — pas de tendances, que de l\'excellence intemporelle',
+            'Instagram est la première source d\'inspiration — suivre les 15 comptes essentiels vaut tous les magazines',
+            'Les prix (INSIDE, ArchiDesignClub, Dezeen Awards) = un panorama annuel sélectionné des meilleurs projets'
+          ],
+          tips: [
+            'Créer un compte Instagram « veille pro » séparé du perso — suivre UNIQUEMENT les comptes design. Le feed devient un mood board permanent et gratuit',
+            'S\'abonner à la newsletter Dezeen Daily = 5 minutes par jour pour être au courant de TOUT ce qui se passe dans le monde du design. C\'est gratuit et c\'est le minimum vital',
+            'Aller au Fuorisalone de Milan au moins une fois dans sa carrière — ce n\'est pas un salon, c\'est une immersion totale dans le design pendant une semaine. La ville entière devient un showroom'
+          ],
+          tags: ['veille', 'magazine', 'AD', 'Dezeen', 'Instagram', 'Maison&Objet', 'Salone', 'podcast', 'inspiration']
         }
       ]
     },
