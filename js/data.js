@@ -3387,84 +3387,45 @@ const APP_DATA = {
       name: 'Tendances & Veille',
       icon: '◉',
       color: '#9E8B6B',
-      description: 'Salons, designers influents, tendances émergentes et culture architecturale contemporaine.',
+      description: 'Salons, designers influents, tendances émergentes, lieux à visiter et culture architecturale contemporaine.',
       fiches: [
         {
           id: 'salons-incontournables',
+          category: 'Tendances',
           title: 'Salons Incontournables',
-          subtitle: 'Le calendrier du design',
+          subtitle: 'Le calendrier du design — quand, où, pourquoi',
           summary: 'Les salons internationaux sont les lieux où naissent les tendances, où se font les contacts et où s\'enrichit la culture du design. Les connaître est indispensable.',
           sections: [
             {
               title: 'Maison & Objet — Paris',
-              content: 'Janvier et septembre au Parc des Expositions de Villepinte. LE salon français de la décoration et du design. 3000 exposants, 80000 visiteurs. Découverte des tendances, nouvelles marques et matériaux. Le « Designer of the Year » et les « Rising Talents » sont des indicateurs de tendance majeurs.'
+              content: 'Janvier et septembre au Parc des Expositions de Villepinte. LE salon français de la décoration et du design. 3 000 exposants, 80 000 visiteurs. Découverte des tendances, nouvelles marques et matériaux. Le « Designer of the Year » et les « Rising Talents » sont des indicateurs de tendance majeurs. Le hall 7 (Scènes d\'Intérieur) est le plus pertinent pour les architectes d\'intérieur.'
             },
             {
               title: 'Salone del Mobile — Milan',
-              content: 'Avril, à la Fiera Milano Rho. Le plus grand et le plus prestigieux salon de design au monde. 2000 exposants, 350000 visiteurs. La Design Week s\'étend dans tout Milan (Fuorisalone) avec des installations dans les cours des palais. C\'est ici que les grandes marques (B&B Italia, Molteni, Cassina) dévoilent leurs nouveautés.'
+              content: 'Avril, à la Fiera Milano Rho. Le plus grand et le plus prestigieux salon de design au monde. 2 000 exposants, 350 000 visiteurs. La Design Week s\'étend dans tout Milan (Fuorisalone) avec des installations dans les cours des palais. C\'est ici que les grandes marques (B&B Italia, Molteni, Cassina) dévoilent leurs nouveautés. Le Fuorisalone (off) dans les quartiers Brera, Tortona, Isola est souvent plus inspirant que le salon lui-même.'
             },
             {
               title: 'Autres salons majeurs',
-              content: 'Stockholm Furniture Fair (février) : design scandinave. IMM Cologne (janvier) : mobilier allemand et international. London Design Festival (septembre) : design britannique et international. Cersaie Bologne (septembre) : carrelage et céramique — incontournable pour les matériaux. Architect@Work : format speed-meeting architectes/fournisseurs.'
-            },
-            {
-              title: 'Veille au quotidien',
-              content: 'Magazines : AD (Architectural Digest), Elle Décoration, The World of Interiors, Dezeen. Instagram : @dezeen, @yellowtrace, @leibal, @thedesignfiles. Podcasts : Design Matters, 99% Invisible. Livres : Phaidon, Gestalten, Taschen. Sites : Dezeen.com, Yellowtrace.com.au, Yatzer.com, ArchDaily.com.'
+              content: 'Stockholm Furniture Fair (février) : design scandinave, la source du « soft minimalism ». IMM Cologne (janvier) : mobilier allemand et international, très orienté industrie. London Design Festival (septembre) : design britannique et international, installations dans toute la ville. Cersaie Bologne (septembre) : LE salon mondial du carrelage et de la céramique — incontournable pour les matériaux. Architect@Work : format speed-meeting architectes/fournisseurs, efficace et ciblé. BATIMAT Paris (biennal) : construction et rénovation, plus technique que design.'
             }
           ],
           keyPoints: [
-            'Milan en avril = le rendez-vous annuel n°1 du design mondial',
-            'Maison & Objet = l\'écosystème français/européen',
-            'Cersaie = le salon matériaux le plus important',
-            'La veille quotidienne (Instagram, Dezeen) est aussi importante que les salons',
-            'Les salons sont des lieux de networking autant que d\'inspiration'
+            'Milan en avril = le rendez-vous annuel n°1 du design mondial (salon + Fuorisalone dans toute la ville)',
+            'Maison & Objet Paris = l\'écosystème français/européen — 2 sessions par an (janvier + septembre)',
+            'Cersaie Bologne = le salon matériaux le plus important (carrelage, céramique)',
+            'Les salons sont des lieux de networking autant que d\'inspiration — préparer ses rendez-vous',
+            'Le Fuorisalone de Milan (off) est souvent plus inspirant que le salon officiel'
           ],
           tips: [
-            'Prévoir 3 jours minimum pour Milan — 1 jour ne suffit pas',
-            'Photographier systématiquement les finitions et matériaux, pas seulement les meubles',
+            'Prévoir 3 jours minimum pour Milan — 1 jour ne suffit pas. Quartiers clés : Brera (luxe), Tortona (émergent), Isola (expérimental)',
+            'Photographier systématiquement les finitions et matériaux, pas seulement les meubles — c\'est le détail qui fait la différence en projet',
             'Créer un système de classement des inspirations (Pinterest boards par projet/thème) dès maintenant'
           ],
-          tags: ['salons', 'Milan', 'Paris', 'tendances', 'veille', 'networking']
-        },
-        {
-          id: 'designers-contemporains',
-          title: 'Designers Contemporains',
-          subtitle: 'Les voix actuelles du design',
-          summary: 'Les architectes d\'intérieur et designers qui façonnent l\'esthétique contemporaine. Les connaître nourrit la culture et l\'inspiration.',
-          sections: [
-            {
-              title: 'Architecture d\'intérieur française',
-              content: 'Joseph Dirand : minimalisme français luxueux, maître des proportions et de la pierre. Sarah Lavoine : couleur audacieuse (bleu Sarah), style parisien chic et accessible. Jean-Louis Deniot : classicisme réinventé, l\'un des plus influents au monde. Studio KO : brutalisme chic, Musée Yves Saint Laurent Marrakech. Charles Zana : sophistication et mélange des époques.'
-            },
-            {
-              title: 'Scène internationale',
-              content: 'Ilse Crawford (UK/Suède) : design centré sur l\'humain, directrice artistique Ikea. Vincenzo De Cotiis (Italie) : brutalisme poétique, récupération et patine. Axel Vervoordt (Belgique) : wabi-sabi occidental, maître de la sérénité. Kelly Wearstler (USA) : maximalisme sculptural, références Art Déco. India Mahdavi (France/Iran) : couleur et douceur, créatrice de la « Pink Room » de The Gallery at Sketch.'
-            },
-            {
-              title: 'Nouvelles voix à suivre',
-              content: 'Emmanuelle Simon (FR) : matériaux bruts et poésie. Fabrizio Casiraghi (IT/FR) : néo-classicisme parisien. Guillaume Alan (FR) : minimalisme chaleureux. Faye Toogood (UK) : mobilier sculptural, frontière art/design. Sabine Marcelis (NL) : design expérimental, résine et lumière.'
-            },
-            {
-              title: 'Apprendre de leur travail',
-              content: 'Analyser un projet d\'un designer : décomposer les proportions, identifier les matériaux, comprendre la palette, noter les détails. Acheter leurs livres monographiques (Joseph Dirand « Spaces », Axel Vervoordt « Wabi Inspirations »). Visiter leurs réalisations (hôtels, restaurants ouverts au public).'
-            }
-          ],
-          keyPoints: [
-            'Joseph Dirand et Axel Vervoordt sont deux pôles opposés mais essentiels à connaître',
-            'La scène française est parmi les plus influentes au monde en design d\'intérieur',
-            'Suivre les « nouvelles voix » anticipe les tendances de demain',
-            'Les livres monographiques sont le meilleur investissement culturel',
-            'Visiter physiquement les lieux conçus par ces designers est irremplaçable'
-          ],
-          tips: [
-            'Créer un dossier par designer avec 10-20 images clés de leurs projets',
-            'Quand un projet vous inspire, noter POURQUOI (proportions ? palette ? matériaux ? lumière ?)',
-            'Les hôtels design sont les meilleurs showrooms — y séjourner ou au moins y prendre un café'
-          ],
-          tags: ['designers', 'contemporain', 'français', 'inspiration', 'culture', 'portfolio']
+          tags: ['salons', 'Milan', 'Paris', 'Cersaie', 'Maison&Objet', 'Salone', 'networking']
         },
         {
           id: 'tendances-2025-2026',
+          category: 'Tendances',
           title: 'Tendances 2025-2026',
           subtitle: 'Directions majeures',
           summary: 'Les grandes directions du design d\'intérieur pour 2025-2026, identifiées à travers les salons, les publications et l\'analyse de marché.',
@@ -3502,6 +3463,7 @@ const APP_DATA = {
         },
         {
           id: 'hospitalite-residentielle',
+          category: 'Tendances',
           title: 'Hospitalité Résidentielle',
           subtitle: 'L\'hôtel à la maison',
           summary: 'La tendance « hospitalité résidentielle » transpose les codes de l\'hôtellerie de luxe dans l\'habitat privé : literie premium, salle de bain d\'hôtel, minibar intégré, éclairage d\'ambiance, textiles haut de gamme. Le client veut vivre chez lui comme dans un boutique-hôtel.',
@@ -3539,6 +3501,7 @@ const APP_DATA = {
         },
         {
           id: 'reemploi-seconde-vie',
+          category: 'Tendances',
           title: 'Réemploi & Seconde Vie',
           subtitle: 'Quand la durabilité devient un style',
           summary: 'Le réemploi n\'est plus un compromis esthétique — c\'est devenu un parti pris de projet, une démarche valorisée par les magazines et les clients les plus exigeants. Utiliser un matériau de récupération, c\'est raconter une histoire.',
@@ -3687,6 +3650,56 @@ const APP_DATA = {
             'Aller au Fuorisalone de Milan au moins une fois dans sa carrière — ce n\'est pas un salon, c\'est une immersion totale dans le design pendant une semaine. La ville entière devient un showroom'
           ],
           tags: ['veille', 'magazine', 'AD', 'Dezeen', 'Instagram', 'Maison&Objet', 'Salone', 'podcast', 'inspiration']
+        },
+        {
+          id: 'lieux-a-visiter',
+          category: 'Lieux à Visiter',
+          title: 'Lieux d\'Architecture d\'Intérieur à Visiter',
+          subtitle: 'Hôtels, restaurants, boutiques, musées — classés par ville avec liens Maps',
+          summary: 'Rien ne remplace l\'expérience physique d\'un espace conçu par un grand architecte d\'intérieur. Voici une sélection de lieux ouverts au public — hôtels, restaurants, boutiques, musées — classés par ville. Chaque lieu est une leçon vivante de matériaux, de lumière, de proportions et de détails. Prenez un café, observez, photographiez, analysez.',
+          sections: [
+            {
+              title: '🇫🇷 Paris',
+              content: '<ul><li><a href="https://maps.app.goo.gl/YT3xRy4x7AxNM38r7" target="_blank">Restaurant Girafe</a> — Joseph Dirand. Face à la Tour Eiffel, intérieur Art déco monumental, marbre, laiton, miroirs fumés. Le grand style Dirand.</li><li><a href="https://maps.app.goo.gl/6j8pQVzCRfZqxVbK8" target="_blank">Hôtel des Grands Boulevards</a> — Dorothée Meilichzon (CHZON). Décor XVIIIe revisité, terrasse sur les toits, chaque chambre raconte une histoire.</li><li><a href="https://maps.app.goo.gl/5WgZKQT2VfXwxMfj8" target="_blank">Grand Pigalle Hôtel</a> — Dorothée Meilichzon. Le boutique-hôtel parisien par excellence — bar à cocktails, vinyles, ambiance Pigalle chic.</li><li><a href="https://maps.app.goo.gl/Ey6Y4UdWdmB6VxJj6" target="_blank">Le Silencio</a> — Raphaël Navot (rénovation) / David Lynch (original). Club privé ouvert au public certains soirs. Caverne organique, matières primitives.</li><li><a href="https://maps.app.goo.gl/Lx7djyywf47K6RcG9" target="_blank">Hôtel National des Arts et Métiers</a> — Raphaël Navot. Lobby spectaculaire — pierre brute, bois massif, lumière tamisée.</li><li><a href="https://maps.app.goo.gl/7b8nj3BHZQ3LjhRZ7" target="_blank">The Hoxton Paris</a> — Humbert & Poyet. Cour intérieure, restaurant, lobby comme un salon. Le cool parisien incarné.</li><li><a href="https://maps.app.goo.gl/SZP2Aq1vuQKXfVYX8" target="_blank">Hôtel Brach</a> — Philippe Starck. Brutalisme luxueux dans le 16e — piscine sur le toit, rooftop avec vue Tour Eiffel.</li><li><a href="https://maps.app.goo.gl/C8JRZW3e7w9PbRLn9" target="_blank">Boutique Celine Montaigne</a> — Hedi Slimane. Minimalisme radical, marbre, bois clair, proportions parfaites.</li><li><a href="https://maps.app.goo.gl/7Q2aT4qXzBwE3c6g8" target="_blank">Boutique Aesop Le Marais</a> — Studio KO. Chaque boutique Aesop est conçue par un architecte différent — celle du Marais est signée Studio KO.</li><li><a href="https://maps.app.goo.gl/QFuR6oXgUKW9Pbsb8" target="_blank">Galerie Chahan Minassian</a> — Chahan Minassian. Galerie + showroom — mobilier Prouvé, Royère, Perriand dans un écrin architectural.</li><li><a href="https://maps.app.goo.gl/vPQ1jGkUh7tT5aGj7" target="_blank">Boutique Sarah Lavoine Saint-Germain</a> — Sarah Lavoine. Son showroom grandeur nature — le « bleu Sarah », les mélanges de matières.</li><li><a href="https://maps.app.goo.gl/TQfqiRV7q1RKqRDP9" target="_blank">Fondation Louis Vuitton</a> — Frank Gehry (architecture) + scénographie intérieure remarquable. Le bâtiment lui-même est un chef-d\'œuvre.</li><li><a href="https://maps.app.goo.gl/c6Ke6oxxBzjjEXBU7" target="_blank">Musée des Arts Décoratifs</a> — Collections permanentes d\'arts décoratifs du Moyen Âge à nos jours. Le temple de la discipline.</li></ul>'
+            },
+            {
+              title: '🇫🇷 Sud de la France & Lyon',
+              content: '<ul><li><a href="https://maps.app.goo.gl/RrBEn3dQmP2C5LHx9" target="_blank">Hôtel Les Roches Rouges, Saint-Raphaël</a> — Festen Architecture. Brutalisme méditerranéen face à la mer — béton, pierre rouge, pins parasols. Un manifeste architectural.</li><li><a href="https://maps.app.goo.gl/8tLxr7jPnkKcvq8u5" target="_blank">Hôtel C2, Marseille</a> — Hôtel design dans un hôtel particulier du XIXe. Intérieurs contemporains radicaux dans un écrin classique.</li><li><a href="https://maps.app.goo.gl/cY1gTg7Kgg3cmPrj8" target="_blank">InterContinental Lyon — Hôtel-Dieu</a> — Jean-Philippe Nuel. Réhabilitation spectaculaire d\'un monument du XVIIe. Grand dôme, verrières, mélange historique/contemporain.</li><li><a href="https://maps.app.goo.gl/eeq7BAvhZ3yE8ZZw7" target="_blank">Villa Noailles, Hyères</a> — Robert Mallet-Stevens (1923). Villa moderniste visitable — expositions de design, mode, architecture. Le berceau du modernisme français.</li><li><a href="https://maps.app.goo.gl/VDyJABHqnqk3GVHHA" target="_blank">Le Corbusier — Cité Radieuse, Marseille</a> — Unité d\'habitation + hôtel (Hôtel Le Corbusier) + MAMO rooftop. Visiter un appartement témoin = comprendre le Modulor.</li></ul>'
+            },
+            {
+              title: '🇮🇹 Milan & Italie',
+              content: '<ul><li><a href="https://maps.app.goo.gl/NkuCBjJjV6vhh2DV8" target="_blank">Fondazione Prada, Milan</a> — OMA / Rem Koolhaas. Complexe art contemporain dans une ancienne distillerie. Architecture + scénographie d\'exposition magistrale. Le bar Luce (conçu par Wes Anderson) est un bijou.</li><li><a href="https://maps.app.goo.gl/U4H5yLiRYs3kZqBH8" target="_blank">10 Corso Como, Milan</a> — Kris Ruhs / Carla Sozzani. Concept store mythique — galerie, librairie, café, boutique. L\'invention du concept store.</li><li><a href="https://maps.app.goo.gl/pM9VW7c84aZJXhTq7" target="_blank">Roommate Hotel Giulia, Milan</a> — Patricia Urquiola. Couleurs, motifs, carrelages artisanaux. L\'Italie joyeuse et design à prix accessible.</li><li><a href="https://maps.app.goo.gl/4MgqTk4bgL8XR2Wf6" target="_blank">Showroom B&B Italia, Milan</a> — Antonio Citterio. Le temple du mobilier italien. Entrée libre — toucher les canapés, s\'asseoir, comprendre les finitions.</li><li><a href="https://maps.app.goo.gl/3D9sMXfQVeL6ZBWB9" target="_blank">Il Sereno, Lac de Côme</a> — Patricia Urquiola. Le plus bel hôtel du lac de Côme. Chaque détail est dessiné — du mobilier aux poignées de porte. Masterclass de design total.</li><li><a href="https://maps.app.goo.gl/MmLTy9iyxHGUpcjL6" target="_blank">Triennale di Milano</a> — Musée du design italien. Expositions temporaires exceptionnelles. Pendant le Salone, c\'est un passage obligé.</li></ul>'
+            },
+            {
+              title: '🇬🇧 Londres',
+              content: '<ul><li><a href="https://maps.app.goo.gl/oX2S7oMb7BjbqLtR8" target="_blank">Sketch — The Gallery, Londres</a> — India Mahdavi. La Pink Room iconique — 200 couverts dans un écrin rose millénial. L\'espace le plus Instagrammé au monde.</li><li><a href="https://maps.app.goo.gl/LGCjVnhcJ5kVxQhUA" target="_blank">The Ned, Londres</a> — Soho House & Membership Collective. Ancienne banque Midland transformée en hôtel — colonnes monumentales, plafonds peints, piscine dans le vault.</li><li><a href="https://maps.app.goo.gl/aBc5tHnJn3KcAxU37" target="_blank">Design Museum, Londres</a> — John Pawson (rénovation intérieure). Le musée du design par excellence. Expositions temporaires de niveau mondial.</li><li><a href="https://maps.app.goo.gl/sV2PbR1y7FKBsgNr5" target="_blank">V&A Museum, Londres</a> — Galeries d\'arts décoratifs, mobilier, textile, céramique. Les British Galleries = une leçon d\'histoire du design sur 5 siècles.</li><li><a href="https://maps.app.goo.gl/NjMSdMtPjjRbWN7HA" target="_blank">Ace Hotel Shoreditch, Londres</a> — Universal Design Studio. Le lobby comme co-working — le concept qui a défini l\'hôtellerie milléniale.</li><li><a href="https://maps.app.goo.gl/8PQFC5J8bKFsZ4JR7" target="_blank">Serpentine Pavilion, Hyde Park</a> — Chaque été, un architecte différent (Gehry, Koolhaas, Hadid, Diébédo Francis Kéré). Structure temporaire à visiter gratuitement.</li></ul>'
+            },
+            {
+              title: '🇧🇪 Belgique & 🇩🇰 Copenhague',
+              content: '<ul><li><a href="https://maps.app.goo.gl/NN6t8HpNqoQPuFkZ6" target="_blank">Kanaal, Anvers</a> — Axel Vervoordt. Son QG — ancienne malterie reconvertie en galeries, showrooms et appartements. Le wabi-sabi à l\'échelle d\'un quartier. Visite indispensable.</li><li><a href="https://maps.app.goo.gl/JHwQLFmwQKYM5W8DA" target="_blank">Showroom Vincent Van Duysen, Anvers</a> — Son studio et showroom dans un bâtiment historique. Le minimalisme belge dans son essence.</li><li><a href="https://maps.app.goo.gl/WUgDTK2WyuqnNWKq8" target="_blank">Audo, Copenhague</a> — Norm Architects / Menu. Hôtel + restaurant + showroom + co-working dans un ancien entrepôt. Le « soft minimalism » danois incarné. LE lieu de pèlerinage design à Copenhague.</li><li><a href="https://maps.app.goo.gl/3BNxVwNyP7hfgPkJ9" target="_blank">Noma, Copenhague</a> — BIG / Bjarke Ingels (architecture). Le meilleur restaurant du monde dans un ancien entrepôt militaire. L\'espace intérieur est aussi radical que la cuisine.</li><li><a href="https://maps.app.goo.gl/xZ2RTXJPmmJUGxRn6" target="_blank">Louisiana Museum, Humlebæk (Copenhague)</a> — Musée d\'art moderne intégré dans un paysage côtier. Architecture + nature + art = l\'un des plus beaux musées du monde.</li></ul>'
+            },
+            {
+              title: '🇺🇸 New York & 🇯🇵 Tokyo',
+              content: '<ul><li><a href="https://maps.app.goo.gl/3RMfuT2HfJQK5cNS9" target="_blank">Baccarat Hotel, New York</a> — Gilles & Boissier. Cristal, velours, or — le luxe français exporté à Manhattan. Le bar est ouvert au public.</li><li><a href="https://maps.app.goo.gl/pn5kkKBGshdbCXgQ6" target="_blank">The Noguchi Museum, New York</a> — Isamu Noguchi. Atelier-musée du sculpteur-designer. Jardin de sculptures + intérieurs bruts. La poésie des matières.</li><li><a href="https://maps.app.goo.gl/2gLZVQXkPpMoZptj6" target="_blank">1 Hotel Brooklyn Bridge, New York</a> — Design biophilique poussé à l\'extrême — bois de récupération, plantes, matériaux bruts. La référence du green luxury.</li><li><a href="https://maps.app.goo.gl/TBSLpgJEKPBfz89s6" target="_blank">Ace Hotel New York (NoMad)</a> — Roman and Williams. Le lobby-bibliothèque qui a lancé la tendance « lobby comme salon ». Ouvert à tous.</li><li><a href="https://maps.app.goo.gl/pB2t4gA2BCJVH2KAA" target="_blank">21_21 Design Sight, Tokyo</a> — Tadao Ando. Musée du design par Issey Miyake + Tadao Ando. Architecture souterraine en béton brut + expositions de design japonais.</li><li><a href="https://maps.app.goo.gl/WMxAUCj4hqYbRWn46" target="_blank">Aman Tokyo</a> — Kerry Hill Architects. Le wabi-sabi ultime — papier washi, bois sombre, proportions zen. Le plus bel hôtel de Tokyo.</li><li><a href="https://maps.app.goo.gl/yTqHSH5JcKMYjDwM8" target="_blank">teamLab Borderless, Tokyo</a> — teamLab. Art numérique immersif — les murs, sols et plafonds disparaissent dans la lumière. L\'expérience spatiale la plus radicale qui existe.</li></ul>'
+            },
+            {
+              title: '🇵🇹 Lisbonne & 🇲🇦 Marrakech & autres',
+              content: '<ul><li><a href="https://maps.app.goo.gl/U1vQdAfBqYC8W3bv5" target="_blank">MAAT, Lisbonne</a> — Amanda Levete (AL_A). Musée d\'art et de technologie au bord du Tage. Toiture praticable en céramique blanche. Architecture spectaculaire + expositions.</li><li><a href="https://maps.app.goo.gl/6DQ2T5zE7Y8eV2NUA" target="_blank">Hôtel Santiago de Alfama, Lisbonne</a> — Dans le quartier historique d\'Alfama. Réhabilitation d\'un palais — pierre, azulejos, minimalisme portugais.</li><li><a href="https://maps.app.goo.gl/TdPZaWnXFY2X4VFJ9" target="_blank">Musée Yves Saint Laurent, Marrakech</a> — Studio KO. Chef-d\'œuvre d\'intégration — briques de terre, dentelle de béton, lumière marocaine. Le projet signature de Studio KO.</li><li><a href="https://maps.app.goo.gl/c9k9F42vZ7CghWKz7" target="_blank">Royal Mansour, Marrakech</a> — Artisanat marocain d\'exception (zellige, tadelakt, bois sculpté) dans une architecture palatiale. Le summum du savoir-faire artisanal.</li><li><a href="https://maps.app.goo.gl/Y6eStbAbUvPtRrZD6" target="_blank">Vitra Campus, Weil am Rhein 🇩🇪</a> — Gehry, Zaha Hadid, Tadao Ando, Herzog & de Meuron, SANAA — tous sur un seul site. Le musée du design Vitra + showroom + pavillons d\'architectes. LE pèlerinage architectural européen.</li><li><a href="https://maps.app.goo.gl/4qXCbBqpNJzj9ux66" target="_blank">Therme Vals, Suisse 🇨🇭</a> — Peter Zumthor. Pierre locale, lumière filtrée, eau. L\'architecture sensorielle la plus pure qui existe. Réserver longtemps à l\'avance.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'Visiter un lieu conçu par un grand architecte = la meilleure formation qui existe — mieux que 100h de Pinterest',
+            'Les hôtels design sont les meilleurs showrooms — le lobby est ouvert à tous, même sans y séjourner',
+            'Paris concentre une densité exceptionnelle de lieux visitables — Meilichzon, Navot, Dirand, Starck en quelques stations de métro',
+            'Le Fuorisalone de Milan + Fondazione Prada + Triennale = 3 jours qui valent un semestre de formation',
+            'Kanaal (Vervoordt, Anvers) et Audo (Norm, Copenhague) sont deux pèlerinages design incontournables'
+          ],
+          tips: [
+            'Prendre un café au bar d\'un grand hôtel design (Brach, The Hoxton, Baccarat) = accéder à l\'intérieur pour le prix d\'un espresso. TOUJOURS entrer, JAMAIS être intimidé',
+            'Photographier les DÉTAILS : poignées, plinthes, joints de carrelage, luminaires encastrés, switch plates. C\'est là que se cache la vraie excellence — pas dans la vue d\'ensemble',
+            'Créer un carnet de voyage design (Notion, Google Keep, carnet papier) avec photos + notes + croquis de chaque lieu visité. Ce carnet deviendra votre bibliothèque de références personnelle'
+          ],
+          tags: ['visite', 'hôtel', 'musée', 'restaurant', 'Paris', 'Milan', 'Londres', 'Tokyo', 'New York', 'Maps']
         }
       ]
     },
