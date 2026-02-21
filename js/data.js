@@ -4671,6 +4671,196 @@ const APP_DATA = {
             'Pour le confort d\'été sans climatisation : BSO côté sud/ouest + vitrage contrôle solaire + ventilation nocturne = la trilogie anti-surchauffe'
           ],
           tags: ['fenêtre', 'vitrage', 'Uw', 'aluminium', 'PVC', 'bois', 'volet', 'isolation', 'RE2020']
+        },
+        {
+          id: 'vmc-ventilation',
+          category: 'CVC & Ventilation',
+          title: 'VMC : Ventilation Mécanique Contrôlée',
+          subtitle: 'Simple flux, double flux, hygro A/B — l\'air qu\'on respire',
+          summary: 'La VMC est OBLIGATOIRE dans tout logement depuis 1982. C\'est le poumon de la maison — elle évacue l\'air vicié (humidité, CO2, polluants) et assure le renouvellement d\'air. Une VMC absente ou défaillante = condensation, moisissures, problèmes de santé. L\'architecte d\'intérieur qui déplace une cuisine ou une salle de bain DOIT repenser la ventilation.',
+          sections: [
+            {
+              title: 'VMC simple flux',
+              content: 'Principe : l\'air neuf entre par des entrées d\'air (EA) situées dans les pièces de vie (séjour, chambres) — généralement dans les coffres de volets roulants ou les menuiseries. L\'air vicié est extrait par des bouches d\'extraction dans les pièces humides (cuisine, SDB, WC) et évacué par un groupe d\'extraction (caisson motorisé) via des gaines en toiture ou en façade. Le flux d\'air circule des pièces sèches vers les pièces humides en passant sous les portes (détalonnage de 1cm obligatoire sous chaque porte). VMC autoréglable : débit constant quelle que soit l\'occupation. Simple, peu chère. 150-300€ le caisson. VMC hygroréglable type B (hygro B) : les bouches d\'extraction ET les entrées d\'air sont à débit variable en fonction de l\'hygrométrie (humidité relative). Plus l\'air est humide, plus le débit augmente. ÉCONOMISE 15-25% de chauffage par rapport à l\'autoréglable. C\'est le STANDARD actuel en résidentiel. Caisson : 300-600€. VMC hygroréglable type A (hygro A) : seules les bouches d\'extraction sont hygroréglables, les entrées d\'air sont autoréglables. Moins performante que l\'hygro B. Débits réglementaires : cuisine 75 m³/h (135 en boost), SDB 30 m³/h, WC 15 m³/h.'
+            },
+            {
+              title: 'VMC double flux (DF)',
+              content: 'Principe : un échangeur thermique récupère la chaleur de l\'air extrait pour préchauffer l\'air neuf entrant. Rendement : 70-95% de récupération de chaleur selon le modèle. L\'air neuf est filtré (pollen, particules fines — essentiel en ville polluée et pour les allergiques). PAS d\'entrées d\'air dans les fenêtres — l\'air neuf arrive par un réseau de gaines depuis le caisson central. Avantages : économies de chauffage (30-50% sur le poste ventilation), air filtré et préchauffé, confort acoustique (pas d\'ouverture en façade). Inconvénients : installation COMPLEXE (réseau de gaines insufflation + extraction = double réseau), encombrement du caisson (60x60x100cm en moyenne), faux-plafonds nécessaires pour passer les gaines (Ø125-160mm), coût (3 000-8 000€ installé), entretien obligatoire (filtres tous les 3-6 mois, échangeur 1x/an). Pertinente en : construction neuve (RE2020 — quasi obligatoire pour atteindre les seuils), rénovation lourde si la hauteur sous plafond le permet, bâtiments passifs. Fabricants : Zehnder (suisse, le top), Aldes (français), Atlantic, Helios, Brink.'
+            },
+            {
+              title: 'Impact en rénovation',
+              content: 'Quand l\'architecte d\'intérieur déplace une cuisine ou une SDB, il DOIT prolonger ou créer des gaines de ventilation vers la nouvelle pièce humide. Les gaines VMC sont en Ø80mm (WC), Ø125mm (SDB), Ø150mm (cuisine). Elles doivent avoir une pente de 1% vers l\'extérieur (évacuation des condensats). NE JAMAIS écraser, cintrer ou réduire une gaine VMC — le débit chute drastiquement. En appartement : la VMC est collective (un caisson en toiture pour tout l\'immeuble). Le déplacement d\'une bouche d\'extraction nécessite l\'accord de la copropriété si la gaine principale est touchée. En pratique : prolonger une gaine secondaire est souvent possible sans toucher à la colonne principale. Problème fréquent en rénovation : les fenêtres sont remplacées par du double vitrage étanche, les entrées d\'air sont supprimées (esthétique !) → plus d\'air neuf → condensation → moisissures. TOUJOURS maintenir les entrées d\'air dans les menuiseries neuves.'
+            },
+            {
+              title: 'Choix et prescription',
+              content: 'Rénovation d\'appartement (copro) : VMC simple flux hygro B. Vérifier que le caisson collectif fonctionne (syndicat de copro). Ajouter des bouches hygro sur les pièces humides déplacées. S\'assurer que les entrées d\'air sont présentes dans TOUTES les pièces de vie. Maison individuelle rénovation : VMC hygro B si budget limité, VMC double flux si rénovation lourde + isolation performante. Construction neuve (RE2020) : VMC double flux quasi obligatoire pour atteindre les seuils de consommation. Prévoir les réservations de gaines dès la conception. Budget : caisson simple flux hygro B = 300-600€. Installation complète maison = 1 500-3 000€. VMC DF complète installée = 5 000-10 000€. Entretien : nettoyer les bouches d\'extraction 2x/an (graisse cuisine !), remplacer les filtres DF tous les 3-6 mois, vérifier le débit avec un anémomètre (10-15€).'
+            }
+          ],
+          keyPoints: [
+            'La VMC hygro B est le STANDARD actuel — entrées d\'air ET extraction hygroréglables',
+            'TOUJOURS maintenir les entrées d\'air dans les fenêtres neuves — les supprimer = moisissures garanties',
+            'Déplacer une cuisine/SDB = prolonger les gaines VMC vers la nouvelle pièce humide',
+            'La VMC double flux récupère 70-95% de la chaleur mais nécessite un réseau de gaines encombrant',
+            'Détalonnage de 1cm sous chaque porte intérieure = obligatoire pour la circulation de l\'air'
+          ],
+          tips: [
+            'Premier réflexe en visite d\'un appartement à rénover : mettre la main devant les bouches d\'extraction SDB et cuisine. Si rien n\'aspire → VMC en panne ou bouchée. Signaler au client',
+            'Les bouches d\'extraction cuisine se bouchent de graisse en 6 mois — intégrer le nettoyage dans les recommandations d\'entretien au client',
+            'En loft ou grande pièce ouverte : une bouche d\'extraction cuisine de 135 m³/h boost est indispensable pour éviter que les odeurs de cuisson envahissent tout l\'espace'
+          ],
+          tags: ['VMC', 'ventilation', 'double flux', 'hygro', 'air', 'humidité', 'RE2020']
+        },
+        {
+          id: 'chauffage-radiateurs',
+          category: 'CVC & Ventilation',
+          title: 'Chauffage & Radiateurs',
+          subtitle: 'Eau chaude, électrique, plancher chauffant, sèche-serviettes',
+          summary: 'Le choix du système de chauffage impacte le confort, le budget, l\'esthétique et l\'intégration architecturale. L\'architecte d\'intérieur doit savoir ce qui est possible, ce qui est performant et ce qui est beau — les trois à la fois, idéalement.',
+          sections: [
+            {
+              title: 'Radiateurs à eau chaude',
+              content: 'Connectés à une chaudière (gaz, fioul) ou une pompe à chaleur (PAC) via un réseau de tuyaux. Le système le plus confortable et le plus économique à l\'usage. Types : radiateur en fonte (le classique haussmannien — inertie exceptionnelle, chauffe longtemps après extinction, très lourd 40-80kg, cher 300-800€/unité. Les radiateurs fonte anciens se conservent et se rénovent — NE PAS les jeter !). Radiateur acier (panneaux — le plus courant actuellement, léger, montée en température rapide, design épuré ou décoratif, 100-400€/unité. Marques : Acova, Zehnder, Purmo, Finimetal). Radiateur aluminium (montée en température très rapide, léger, bon rendement, mais corrosion possible si l\'eau du circuit n\'est pas traitée, 80-250€/unité). Radiateur design (Tubes, Caleido, Runtal — véritables sculptures murales, 500-3000€). Dimensionnement : en moyenne 100W/m² en logement bien isolé, 130W/m² en ancien mal isolé. Un séjour de 30m² dans un appartement ancien = ~3 900W = 2-3 radiateurs.'
+            },
+            {
+              title: 'Radiateurs électriques',
+              content: 'Convecteur (« grille-pain ») : résistance qui chauffe l\'air directement. Pas cher (30-80€), sèche l\'air, crée des mouvements de poussière, inconfortable. À PROSCRIRE dans tout projet de qualité. Panneau rayonnant : résistance derrière une façade qui rayonne la chaleur. Meilleur confort que le convecteur. 80-200€. Acceptable en budget très serré. Radiateur à inertie : le haut de gamme électrique. Cœur de chauffe en fonte, céramique, pierre de lave ou fluide caloporteur. Accumule la chaleur et la restitue progressivement. Confort proche du chauffage central. 200-800€/unité. Marques : Campa (français, haut de gamme), Noirot, Thermor, Acova. Radiateur à inertie sèche pierre naturelle : façade en marbre, granit ou pierre de lave. Le PLUS beau radiateur électrique. Campa Naturay (marbre blanc de Carrare) = l\'icône. 600-1500€. Sèche-serviettes : OBLIGATOIRE dans chaque salle de bain. Mixte (eau + résistance électrique) = le plus polyvalent. Soufflant intégré pour un boost rapide. Dimensions : prévoir 50cm de large minimum, hauteur 120-180cm. Marques : Acova, Zehnder, Cinier (design sculptural).'
+            },
+            {
+              title: 'Plancher chauffant',
+              content: 'Le plancher chauffant basse température (PCBT) est le système de chauffage le plus confortable qui existe — chaleur douce et uniforme, pas de radiateurs visibles, pieds au chaud. Types : hydraulique (tubes PER/PB noyés dans la chape, alimentés par chaudière ou PAC — le standard), électrique (trame chauffante ou câble sous carrelage — rénovation uniquement, pièces isolées). Le PCBT hydraulique fonctionne à 28-30°C de surface maximum (réglementation) — c\'est une chaleur DOUCE, pas un sol brûlant. Avantages : confort inégalé, libère les murs (pas de radiateurs), compatible tous revêtements (carrelage, pierre, bois si Rth ≤ 0,15 m².K/W — éviter les parquets épais et les moquettes). Inconvénients : surélévation de 8-12cm (isolant + tubes + chape + revêtement) — problème n°1 en rénovation, réactivité lente (ne pas l\'utiliser en appoint), coût (50-100€/m² fourni-posé hydraulique). Plancher chauffant/rafraîchissant (PCR) : le même système peut rafraîchir en été (eau à 18-20°C). Apporte 3-5°C de fraîcheur. Pas de courant d\'air (contrairement à la clim). Le top du confort été/hiver.'
+            },
+            {
+              title: 'Intégration et choix',
+              content: 'Rénovation appartement ancien (chauffage central existant) : conserver les radiateurs fonte (patrimoine + performance), ou remplacer par des radiateurs acier design (Zehnder Charleston = le remake contemporain du radiateur fonte). NE PAS passer en tout électrique dans un appartement avec chauffage central — c\'est une régression énergétique. Rénovation avec plancher accessible : plancher chauffant électrique sous carrelage en SDB (confort pieds nus), sinon radiateurs. Construction neuve : PAC + plancher chauffant hydraulique = le combo RE2020 idéal. Esthétique : le radiateur est un objet de design. Tubes Radiatori (colonnes verticales colorées), Caleido (formes sculpturales), Scirocco H (minimaliste). Un radiateur design à 800€ est moins cher qu\'un meuble et décore le mur H24. Sèche-serviettes : prévoir 750W minimum par SDB (500W corps + 250W soufflant). L\'oublier est l\'erreur de confort n°1 en salle de bain.'
+            }
+          ],
+          keyPoints: [
+            'Le radiateur à inertie est le seul électrique acceptable dans un projet de qualité',
+            'Le plancher chauffant basse température = le système le plus confortable (28-30°C max en surface)',
+            'CONSERVER les radiateurs fonte anciens — patrimoine + inertie exceptionnelle',
+            'Sèche-serviettes OBLIGATOIRE dans chaque SDB — 750W minimum (corps + soufflant)',
+            'NE JAMAIS passer en tout électrique quand un chauffage central eau chaude existe'
+          ],
+          tips: [
+            'Les anciens radiateurs fonte nettoyés et repeints en noir mat ou en couleur vive = un objet de décoration spectaculaire. Décapage 200-400€/radiateur, mais résultat incomparable',
+            'Radiateur Zehnder Charleston vertical en couleur (RAL sur-mesure) = le radiateur design le plus élégant pour les petits espaces — prend 20cm de mur au lieu de 100cm',
+            'Plancher chauffant en SDB sous carrelage grand format = le luxe absolu des pieds nus le matin. Trame électrique 100-150€ pour 4m² — investissement ridicule pour un confort royal'
+          ],
+          tags: ['chauffage', 'radiateur', 'plancher chauffant', 'fonte', 'inertie', 'sèche-serviettes', 'PAC']
+        },
+        {
+          id: 'plomberie-sanitaire',
+          category: 'Réseaux Techniques',
+          title: 'Plomberie & Réseaux Sanitaires',
+          subtitle: 'Alimentation, évacuation, production d\'eau chaude',
+          summary: 'La plomberie est le réseau sanguin de l\'habitat. L\'architecte d\'intérieur qui déplace une cuisine, une salle de bain ou un WC doit comprendre les contraintes d\'alimentation ET d\'évacuation — ce sont elles qui dictent ce qui est possible ou non.',
+          sections: [
+            {
+              title: 'Alimentation en eau',
+              content: 'L\'eau arrive sous pression (2-5 bars) depuis le compteur et doit être distribuée à chaque point d\'eau (robinet, WC, lave-linge, lave-vaisselle). Matériaux : PER (polyéthylène réticulé) : le standard actuel. Tuyau flexible rouge (chaud) et bleu (froid). Raccords à sertir ou à compression. Ne se corrode pas, pas d\'entartrage, pose facile. Diamètres : Ø12 (lavabo), Ø16 (douche, baignoire, cuisine), Ø20 (colonne principale). Cuivre : le classique noble. Soudure ou raccords à compression. Résistant, durable (50+ ans), bactériostatique. Plus cher et plus long à poser. Ø10-12 (lavabo), Ø14-16 (douche), Ø18-22 (colonne). Multicouche (PER-Alu-PER) : combine la flexibilité du PER et la rigidité du cuivre. Se cintre et garde sa forme. Raccords à sertir. Le meilleur compromis en rénovation. Distribution : en pieuvre (depuis un collecteur/nourrice centrale — chaque point a son circuit dédié, facile à couper individuellement) ou en repiquage (en série — plus ancien, moins flexible). La pieuvre depuis un collecteur est le standard moderne.'
+            },
+            {
+              title: 'Évacuation des eaux usées',
+              content: 'L\'évacuation fonctionne par GRAVITÉ — c\'est LA contrainte n°1 en rénovation. Les tuyaux doivent avoir une pente de 1-3% (1 à 3cm par mètre) vers la descente d\'eaux usées (colonne de chute). Matériaux : PVC (le standard), diamètres Ø32 (lavabo), Ø40 (douche, baignoire, évier cuisine), Ø50 (machine à laver), Ø100 (WC — non négociable). Le WC nécessite un Ø100mm — c\'est le tuyau le plus gros et le plus contraignant à passer. Déplacer un WC loin de la colonne de chute = surélever le sol (pour la pente) ou installer un sanibroyeur (pompe de relevage — bruit, entretien, pannes). Les eaux usées de la cuisine (graisses) doivent être séparées des eaux vannes (WC) si possible. Siphon : OBLIGATOIRE sur chaque appareil — empêche les remontées d\'odeurs. Le siphon de sol (douche à l\'italienne) a un débit limité : choisir un caniveau ou un siphon de Ø90mm minimum pour un confort d\'écoulement correct.'
+            },
+            {
+              title: 'Production d\'eau chaude sanitaire (ECS)',
+              content: 'Chauffe-eau électrique (cumulus) : ballon de 100-300L, résistance électrique. Simple, fiable, pas cher (200-500€). Fonctionne en heures creuses (tarif réduit). Encombrant (prévoir un placard technique). Durée de vie : 10-15 ans. Chauffe-eau thermodynamique (CET) : ballon + mini pompe à chaleur qui capte les calories de l\'air ambiant. COP 2,5-3,5 (produit 2,5-3,5 kWh de chaleur pour 1 kWh d\'électricité). Économise 50-70% par rapport au cumulus électrique. Bruit (~45 dB — ne pas l\'installer dans une chambre). Prix : 1 500-3 000€ installé. Aides financières (MaPrimeRénov\'). Le choix RE2020. Chaudière gaz instantanée ou accumulation : production d\'ECS intégrée à la chaudière. Le plus confortable (eau chaude illimitée en instantané). En copro parisienne : souvent un ballon collectif — vérifier le débit disponible avant de rajouter une douche. Dimensionnement : 50L/personne/jour en moyenne. Couple sans enfant = 100-150L. Famille 4 personnes = 200-250L.'
+            },
+            {
+              title: 'Contraintes en rénovation',
+              content: 'Le déplacement d\'une salle de bain est le projet le plus complexe en plomberie : il faut amener l\'alimentation (facile — petits tuyaux flexibles) ET créer l\'évacuation (difficile — gros tuyaux en pente vers la colonne). Plus on s\'éloigne de la colonne, plus il faut surélever le sol. Règle : distance max de 3-4m de la colonne sans surélévation majeure. Au-delà : pompe de relevage ou surélévation de 8-12cm. Le WC est l\'élément le plus contraignant à déplacer (Ø100mm + pente). Solutions : WC suspendu avec bâti-support (Geberit Duofix) — la chasse et l\'évacuation sont dans le bâti mural. Le TOP en design ET en praticité (sol dégagé, nettoyage facile). L\'alimentation d\'un îlot de cuisine = passage dans le sol (sous chape ou dans une gorge technique). Prévoir AVANT le ragréage. Ne pas oublier l\'alimentation en eau froide pour le réfrigérateur américain et le lave-vaisselle. Collecteur/nourrice : le placer dans un placard technique accessible — il permet de couper individuellement chaque circuit.'
+            }
+          ],
+          keyPoints: [
+            'L\'évacuation fonctionne par GRAVITÉ — pente de 1-3% obligatoire. C\'est la contrainte n°1',
+            'Le WC nécessite un Ø100mm — le plus gros tuyau et le plus dur à déplacer',
+            'Le PER en distribution pieuvre (depuis collecteur) = le standard moderne d\'alimentation',
+            'Le chauffe-eau thermodynamique = 50-70% d\'économie vs cumulus électrique — choix RE2020',
+            'Distance max ~3-4m de la colonne de chute sans surélévation — au-delà, pompe ou rehausse'
+          ],
+          tips: [
+            'En visite de chantier : repérer la colonne de chute (tuyau Ø100 vertical dans un angle ou une gaine). TOUT le plan de la SDB et des WC en dépend',
+            'Le WC suspendu Geberit Duofix = le standard pro. Le bâti fait 12cm d\'épaisseur — prévoir un doublage de mur qui crée un rebord pratique (niche, étagère)',
+            'Toujours prévoir une vanne d\'arrêt accessible sous chaque lavabo et WC — en cas de fuite, le client peut couper l\'eau sans couper tout l\'appartement'
+          ],
+          tags: ['plomberie', 'évacuation', 'alimentation', 'PER', 'eau chaude', 'WC suspendu', 'Geberit']
+        },
+        {
+          id: 'electricite-nfc15100',
+          category: 'Réseaux Techniques',
+          title: 'Électricité : NF C 15-100 & Installation',
+          subtitle: 'Circuits, prises, tableau, éclairage — la norme qui régit tout',
+          summary: 'La norme NF C 15-100 fixe TOUTES les règles d\'installation électrique en logement. Nombre de prises par pièce, circuits dédiés, protection des circuits, volumes de sécurité en SDB — l\'architecte d\'intérieur doit connaître ces règles pour concevoir des plans cohérents avec l\'installation électrique.',
+          sections: [
+            {
+              title: 'Tableau et protection',
+              content: 'Le tableau électrique (TGBT) est le cœur de l\'installation. Il est dans la GTL (Gaine Technique de Logement) qui regroupe aussi le compteur et le tableau de communication. Protection : disjoncteur de branchement (500mA, 15-45A — fourni par Enedis), interrupteurs différentiels 30mA (protection des personnes — obligatoire sur TOUS les circuits, type AC pour l\'éclairage et les prises, type A pour les circuits spécialisés : plaque de cuisson, lave-linge, etc.), disjoncteurs divisionnaires (protection des circuits : 10A éclairage, 16A prises, 20A circuits spécialisés, 32A plaque de cuisson). Un tableau standard T3 : 2 rangées de 13 modules. T4-T5 : 3-4 rangées. Toujours prévoir 20% de réserve pour les ajouts futurs. Marques : Legrand (n°1 France), Schneider (Resi9), Hager, ABB.'
+            },
+            {
+              title: 'Nombre minimum de prises (NF C 15-100)',
+              content: 'Séjour (>28m²) : 7 prises 16A minimum (dont 1 prise à côté de chaque prise TV). Séjour (<28m²) : 5 prises. Chambre : 3 prises minimum (dont 1 à proximité de l\'interrupteur d\'entrée). Cuisine : 6 prises 16A minimum (dont 4 au-dessus du plan de travail en crédence), + circuits spécialisés : 1 circuit 32A pour la plaque/cuisinière, 1 circuit 20A pour le four, 1 circuit 20A pour le lave-vaisselle, 1 circuit 20A pour le lave-linge (si en cuisine). SDB : dépend des volumes (voir ci-dessous). WC : 1 prise minimum. Couloir/entrée : 1 prise par 4m² (1 minimum). Chaque prise TV doit être accompagnée de 2 prises 16A + 1 prise RJ45 (réseau). Prises plan de travail cuisine : à 8cm minimum au-dessus du plan de travail, hors volume d\'eau (pas au-dessus de l\'évier).'
+            },
+            {
+              title: 'Volumes de sécurité en salle de bain',
+              content: 'La SDB est divisée en 3 volumes de sécurité (+ hors volume) qui déterminent ce qu\'on peut installer à chaque endroit. Volume 0 (intérieur de la baignoire/douche) : RIEN sauf alimentation 12V TBTS. Volume 1 (au-dessus de la baignoire/douche, jusqu\'à 2,25m de hauteur) : chauffe-eau (si pas d\'autre emplacement), luminaire 12V IPX4 minimum. PAS de prise, PAS d\'interrupteur. Volume 2 (60cm autour de la baignoire/douche, même hauteur) : luminaire classe II IPX4, sèche-serviettes classe I si protégé par un DDR 30mA, rasoir 20/44V (transformateur de séparation). PAS de prise classique. Hors volume (au-delà de 60cm) : tout est autorisé sous protection DDR 30mA. Les prises classiques, les interrupteurs, le sèche-cheveux. La douche à l\'italienne sans paroi fixe : le volume 1 s\'étend à 1,20m autour de la pomme de douche. Impact DIRECT sur le plan électrique — toujours dessiner les volumes sur le plan avant de placer les prises et les luminaires.'
+            },
+            {
+              title: 'Éclairage et commandes',
+              content: 'Chaque pièce doit avoir un point d\'éclairage commandé depuis l\'entrée. Le point lumineux au plafond (DCL — Dispositif de Connexion Luminaire) est la référence — mais un point lumineux mural ou en applique est accepté. Va-et-vient : OBLIGATOIRE si la pièce a 2 accès (2 interrupteurs commandent la même lumière). Télérupteur : pour 3 accès ou plus (couloir, grand séjour). Variateur : non obligatoire mais fortement recommandé pour le confort — en séjour et chambre au minimum. Circuits d\'éclairage : 8 points lumineux maximum par circuit (protection 10A). Circuits prises : 8 prises maximum par circuit (protection 16A). Circuits spécialisés : 1 circuit dédié par gros appareil (four, plaque, lave-linge, sèche-linge, lave-vaisselle, chauffe-eau, VMC, PAC, volets roulants). La domotique (KNX, Legrand Céliane with Netatmo, Schneider Wiser) se prévoit DÈS la conception — les câblages supplémentaires (bus, neutre aux interrupteurs) doivent être tirés avant les finitions.'
+            }
+          ],
+          keyPoints: [
+            'NF C 15-100 : 6 prises minimum en cuisine dont 4 en crédence + circuits spécialisés pour chaque gros appareil',
+            'Les volumes de sécurité en SDB dictent TOUT le plan électrique — les dessiner AVANT de placer prises et luminaires',
+            'Interrupteur différentiel 30mA OBLIGATOIRE sur tous les circuits — type A pour les circuits spécialisés',
+            'Toujours prévoir 20% de réserve dans le tableau électrique pour les évolutions futures',
+            'La domotique se prévoit à la conception — impossible à rajouter proprement après les finitions'
+          ],
+          tips: [
+            'Dessiner les 3 volumes de sécurité SDB sur le plan d\'implantation AVANT de choisir les emplacements de prises et spots. Donner ce plan à l\'électricien — ça évite 90% des erreurs',
+            'En rénovation d\'appartement ancien : le tableau électrique est souvent sous-dimensionné (4-6 disjoncteurs pour un T3). Prévoir un remplacement complet du tableau = 800-1 500€ mais indispensable',
+            'Toujours tirer un neutre aux interrupteurs (même si pas de domotique aujourd\'hui) — les interrupteurs connectés en auront besoin demain. Coût supplémentaire : quasi nul si fait à la construction'
+          ],
+          tags: ['électricité', 'NF C 15-100', 'prise', 'tableau', 'volumes SDB', 'éclairage', 'norme']
+        },
+        {
+          id: 'climatisation',
+          category: 'CVC & Ventilation',
+          title: 'Climatisation & Pompes à Chaleur Air-Air',
+          subtitle: 'Split, gainable, réversible — rafraîchir sans enlaidir',
+          summary: 'Avec le changement climatique, la climatisation n\'est plus un luxe mais une nécessité dans une grande partie de la France. L\'architecte d\'intérieur doit savoir l\'intégrer sans compromettre l\'esthétique — car l\'unité intérieure mal placée est le cauchemar visuel n°1 des beaux intérieurs.',
+          sections: [
+            {
+              title: 'Types de systèmes',
+              content: 'Split mural : unité intérieure murale + unité extérieure. Le plus courant, le moins cher (800-2 500€ posé). Inconvénient : l\'unité intérieure est VISIBLE — boîtier blanc de ~80x30cm sur le mur. Difficile à intégrer esthétiquement. Multisplit : 1 unité extérieure alimente 2-5 unités intérieures (différentes pièces). Économise l\'espace extérieur (1 seul groupe au lieu de 3-4). Gainable (ducted) : l\'unité intérieure est cachée dans un faux-plafond et l\'air climatisé est distribué par des gaines vers des grilles ou diffuseurs encastrés au plafond. TOTALEMENT INVISIBLE depuis la pièce. Le top en intégration. Prix : 5 000-15 000€ installé pour un T3-T4. Nécessite un faux-plafond de 25-35cm dans au moins une zone (couloir, SDB, dressing). Console : unité intérieure posée au sol (comme un radiateur). Discret, bonne distribution de l\'air. Cassette : encastrée dans le faux-plafond (carré 60x60). Pour les bureaux et commerces. Toutes ces unités peuvent être RÉVERSIBLES = chauffage en hiver + clim en été. C\'est une pompe à chaleur air-air (PAC air-air).'
+            },
+            {
+              title: 'Performance et dimensionnement',
+              content: 'COP (Coefficient de Performance) : en mode chaud, une PAC avec un COP de 4 produit 4 kWh de chaleur pour 1 kWh d\'électricité. Plus le COP est élevé, plus c\'est économique. EER (Energy Efficiency Ratio) : même chose en mode froid. SEER/SCOP : versions saisonnières (moyennes annuelles). Un bon split : SEER ≥ 6, SCOP ≥ 4. Dimensionnement : en moyenne 100W/m² de puissance froid en logement bien isolé, 130-150W/m² en ancien mal isolé. Un séjour de 30m² = ~3 000-4 500W. ATTENTION au surdimensionnement : un split trop puissant fait du « court-cyclage » (démarre/arrête en permanence) = inconfort + usure prématurée + surconsommation. Le dimensionnement doit être fait par un professionnel (bilan thermique). Niveau sonore : l\'unité intérieure doit être ≤ 25 dB(A) en vitesse basse pour une chambre. Les splits premium (Daikin Stylish, Mitsubishi Zen) descendent à 19-21 dB(A). L\'unité extérieure fait 45-55 dB(A) — attention aux voisins et à la réglementation (émergence limitée à +5dB le jour, +3dB la nuit).'
+            },
+            {
+              title: 'Intégration architecturale',
+              content: 'Le gainable est LA solution pour les intérieurs design — aucune unité visible. L\'air sort par des grilles linéaires encastrées dans le faux-plafond (type « slot diffuser »). Grilles linéaires : les plus élégantes, quasi invisibles (Madel, Trox, fournisseurs CVC). 2-3cm de large, peintes de la couleur du plafond. Le gainable peut passer dans : un faux-plafond de couloir (le plus courant — le couloir est toujours faux-plafonné), un faux-plafond de SDB ou de dressing, au-dessus des placards de cuisine. Si le gainable est impossible (pas assez de hauteur) : le split mural peut être intégré dans une niche de placard avec une grille de reprise et de soufflage — l\'air est canalisé, le split est invisible. Certains fabricants proposent des splits « design » : Daikin Stylish (profil ultra-fin, noir ou argent), Samsung Wind-Free (pas de flux d\'air direct — micro-perforations), LG Artcool Gallery (façade interchangeable comme un tableau). L\'unité extérieure : toujours sur balcon, terrasse ou façade arrière. Cache-clim en aluminium ou bois (Deco-clim, Amazon) pour l\'esthétique et la protection.'
+            },
+            {
+              title: 'Réglementation et copropriété',
+              content: 'En copropriété : l\'installation d\'une unité extérieure en façade nécessite l\'AUTORISATION de l\'assemblée générale des copropriétaires (vote à la majorité absolue article 25). Certaines copros l\'interdisent totalement (façade classée, ABF). Solution si copro refuse : PAC air-eau (avec unité intérieure uniquement — pas d\'unité extérieure visible, mais groupe sur balcon ou en toiture). Ou clim réversible sans unité extérieure (type Unico, Innova — tout-en-un mural avec double flux par le mur — performance limitée mais pas de groupe extérieur). Réglementation bruit : l\'unité extérieure doit respecter le code de la santé publique (émergence maximale : +5 dB jour, +3 dB nuit par rapport au bruit ambiant). Faire un constat d\'huissier du niveau sonore ambiant AVANT installation en cas de voisinage sensible. Fluide frigorigène : les installateurs doivent être certifiés pour la manipulation des fluides (attestation de capacité). R32 = le fluide standard actuel (GWP 675, meilleur que l\'ancien R410A).'
+            }
+          ],
+          keyPoints: [
+            'Le gainable = climatisation INVISIBLE — la seule solution qui respecte l\'esthétique d\'un bel intérieur',
+            'En copropriété : l\'unité extérieure nécessite un VOTE en AG — anticiper dès le projet',
+            'Dimensionner correctement (100-130W/m²) — le surdimensionnement est pire que le sous-dimensionnement',
+            'Niveau sonore ≤ 25 dB(A) pour une chambre — exiger les splits premium',
+            'PAC réversible = chauffage + clim — le système 2 en 1 le plus économique'
+          ],
+          tips: [
+            'Le gainable dans le faux-plafond du couloir avec grilles linéaires Madel = la solution invisible parfaite. Le couloir est toujours faux-plafonné de toute façon (passage de VMC, spots)',
+            'Si le client refuse le gainable pour raisons de budget : le Daikin Stylish noir en applique haute dans le séjour est le split le plus discret du marché (15cm de profondeur)',
+            'Prévoir la réservation de la liaison frigorifique (2 tubes cuivre + câble + gaine de condensats) dans les plans AVANT les finitions — percer un mur fini pour passer les tubes = catastrophe'
+          ],
+          tags: ['climatisation', 'PAC', 'gainable', 'split', 'réversible', 'confort', 'été']
         }
       ]
     }
