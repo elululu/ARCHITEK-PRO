@@ -3375,6 +3375,125 @@ const APP_DATA = {
             'Apprendre SketchUp + un moteur de rendu rapide = le combo le plus rentable en temps/qualité'
           ],
           tags: ['plans', 'livrables', 'dessins', 'technique', 'rendus', '3D', 'organisation']
+        },
+        // --- JURIDIQUE & ASSURANCES ---
+        {
+          id: 'statut-juridique-archi-interieur',
+          category: 'Juridique & Assurances',
+          title: 'Statut Juridique de l\'Architecte d\'Intérieur',
+          subtitle: 'Titre, diplôme, cadre légal et obligations',
+          summary: 'Contrairement à l\'architecte DPLG/HMONP, l\'architecte d\'intérieur n\'est pas une profession réglementée en France — mais le titre est protégé. Comprendre le cadre juridique est indispensable pour exercer légalement et crédiblement.',
+          sections: [
+            {
+              title: 'Titre protégé vs. profession réglementée',
+              content: '<ul><li>L\'architecte d\'intérieur N\'EST PAS une profession réglementée — contrairement à l\'architecte (DPLG/HMONP) inscrit à l\'Ordre.</li><li>Le TITRE « architecte d\'intérieur » est en revanche protégé par le CFAI (Conseil Français des Architectes d\'Intérieur).</li><li>Pour porter le titre, il faut : un diplôme reconnu par le CFAI + une inscription au répertoire du CFAI.</li><li>Les diplômes reconnus : DSAA Design (Bac+5), DNSEP (Beaux-Arts), diplômes d\'écoles privées reconnues (Camondo, Boulle, Penninghen, Académie Charpentier, ESAIL, etc.).</li><li>Sans diplôme reconnu : on peut exercer mais on doit utiliser « designer d\'espace », « décorateur », « concepteur d\'espace » — jamais « architecte d\'intérieur ».</li><li>La différence clé avec l\'architecte DPLG : l\'architecte d\'intérieur ne peut PAS signer de permis de construire ni toucher à la structure porteuse sans ingénieur.</li><li>En pratique : l\'architecte d\'intérieur intervient sur tout ce qui est non structurel — cloisons, revêtements, agencement, éclairage, mobilier.</li><li>Pour les travaux touchant à la structure (ouverture mur porteur, extension) : collaboration obligatoire avec un architecte DPLG et un ingénieur structure.</li></ul>'
+            },
+            {
+              title: 'Les structures juridiques pour exercer',
+              content: '<ul><li>Micro-entreprise (auto-entrepreneur) : le plus simple pour démarrer. Plafond 77 700€/an (prestations de service). Pas de TVA sous le seuil. Cotisations ~22%. Inconvénient : pas de déduction des charges, responsabilité personnelle illimitée.</li><li>EURL (Entreprise Unipersonnelle à Responsabilité Limitée) : responsabilité limitée au capital social. Déduction des charges. Régime IS ou IR. Plus crédible face aux clients et fournisseurs.</li><li>SASU (Société par Actions Simplifiée Unipersonnelle) : le président est assimilé salarié (meilleure protection sociale). Souplesse statutaire. Dividendes sans cotisations sociales. Idéal si CA > 50 000€.</li><li>SAS : si vous vous associez (2+ personnes). Même avantages que SASU mais à plusieurs.</li><li>Profession libérale BNC : rattachement URSSAF + CIPAV. Code APE 74.10Z « activités spécialisées de design ».</li><li>Conseil : commencer en micro pour tester, puis passer en SASU dès que le CA dépasse 40-50 000€/an.</li><li>IMPORTANT : quel que soit le statut, l\'assurance RC Pro est OBLIGATOIRE dès le premier projet.</li></ul>'
+            },
+            {
+              title: 'Obligations légales de l\'exercice',
+              content: '<ul><li>Immatriculation : inscription au registre du commerce (RCS) ou au répertoire des métiers selon le statut.</li><li>Assurance RC Professionnelle : OBLIGATOIRE — couvre les dommages causés aux tiers dans le cadre de votre activité.</li><li>Mentions légales obligatoires sur les devis et factures : numéro SIRET, forme juridique, capital social, assurance RC Pro (nom + numéro de police + couverture géographique).</li><li>CGV (Conditions Générales de Vente) : obligatoires pour les clients professionnels, fortement recommandées pour les particuliers.</li><li>Médiation de la consommation : obligatoire si vous travaillez avec des particuliers — vous devez nommer un médiateur et l\'indiquer sur vos documents.</li><li>RGPD : si vous collectez des données clients (nom, adresse, photos de leur intérieur), vous devez respecter le RGPD — registre de traitement, information des clients, droit à l\'effacement.</li><li>Droit de rétractation : 14 jours pour les contrats conclus à distance ou hors établissement avec des particuliers.</li><li>Formation continue : pas obligatoire légalement mais indispensable pour rester compétitif et à jour des normes.</li></ul>'
+            },
+            {
+              title: 'Les organismes à connaître',
+              content: '<ul><li>CFAI (Conseil Français des Architectes d\'Intérieur) : protège le titre, tient le répertoire des professionnels qualifiés — cfai.fr.</li><li>UNAID (Union Nationale des Architectes d\'Intérieur Designers) : syndicat professionnel, défend les intérêts de la profession — unaid.fr.</li><li>FNSAI (Fédération Nationale des Syndicats d\'Architectes d\'Intérieur) : autre syndicat historique.</li><li>URSSAF : organisme de collecte des cotisations sociales — votre interlocuteur principal en micro-entreprise.</li><li>CIPAV : caisse de retraite des professions libérales (si BNC).</li><li>INPI : pour déposer votre marque et protéger votre identité visuelle.</li><li>Ordre des Architectes : vous n\'y êtes PAS inscrit (c\'est l\'Ordre des architectes DPLG) — mais il faut connaître son existence et la distinction.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'Le titre « architecte d\'intérieur » est PROTÉGÉ par le CFAI — ne l\'utilisez pas sans diplôme reconnu',
+            'L\'architecte d\'intérieur ne peut PAS signer de permis de construire',
+            'RC Pro obligatoire dès le premier projet — sans assurance, vous exercez illégalement',
+            'Micro-entreprise pour démarrer, SASU dès que le CA dépasse 40-50k€',
+            'Se faire inscrire au CFAI dès que possible — c\'est un gage de crédibilité'
+          ],
+          tips: [
+            'Vérifier si votre diplôme est reconnu par le CFAI avant d\'utiliser le titre — cfai.fr/formation',
+            'Consulter un expert-comptable AVANT de choisir son statut — un mauvais choix coûte cher à corriger',
+            'Faire rédiger ses CGV et son contrat type par un avocat spécialisé — investissement ~800-1500€ qui protège pendant des années'
+          ],
+          tags: ['juridique', 'statut', 'CFAI', 'titre', 'micro-entreprise', 'SASU', 'réglementation']
+        },
+        {
+          id: 'assurances-archi-interieur',
+          category: 'Juridique & Assurances',
+          title: 'Les Assurances Indispensables',
+          subtitle: 'RC Pro, décennale, PJ et protection du pro',
+          summary: 'Une erreur de prescription, un sinistre sur chantier, un client mécontent qui vous assigne — sans les bonnes assurances, votre activité et votre patrimoine personnel sont en danger. Tour d\'horizon complet des assurances obligatoires et recommandées.',
+          sections: [
+            {
+              title: 'La RC Professionnelle — OBLIGATOIRE',
+              content: '<ul><li>RC Pro = Responsabilité Civile Professionnelle. Elle couvre les dommages que vous causez à autrui dans le cadre de votre activité.</li><li>Exemples couverts : erreur de prescription de matériau qui cause un dommage, mauvais conseil d\'implantation, retard de livraison qui entraîne un préjudice financier pour le client.</li><li>La RC Pro est OBLIGATOIRE pour tout architecte d\'intérieur — exercer sans est une faute grave.</li><li>Coût indicatif : 400-1 200€/an en fonction du CA, de l\'expérience et du périmètre d\'intervention.</li><li>Assureurs spécialisés : MAF (Mutuelle des Architectes Français), MMA, AXA, Hiscox, Allianz.</li><li>Vérifier les exclusions : certaines polices excluent les sinistres liés à la structure, aux travaux que vous avez dirigés mais pas conçus, ou aux projets à l\'étranger.</li><li>Mention OBLIGATOIRE sur vos devis et factures : nom de l\'assureur + numéro de police + couverture géographique.</li></ul>'
+            },
+            {
+              title: 'La garantie décennale — selon votre activité',
+              content: '<ul><li>La décennale couvre les dommages qui compromettent la solidité de l\'ouvrage ou le rendent impropre à sa destination pendant 10 ans après réception.</li><li>Elle est OBLIGATOIRE pour les constructeurs (loi Spinetta 1978) : architectes, entreprises, artisans qui participent à la construction.</li><li>L\'architecte d\'intérieur : en théorie, si vous ne touchez pas à la structure et ne dirigez pas les travaux (simple prescripteur), la décennale n\'est pas obligatoire.</li><li>ATTENTION : si vous faites de la maîtrise d\'œuvre (direction des travaux, coordination des entreprises), vous devenez « constructeur » au sens de la loi et la décennale DEVIENT obligatoire.</li><li>En pratique : de plus en plus de clients et de banques exigent une attestation décennale. Mieux vaut l\'avoir.</li><li>Coût indicatif : 1 500-4 000€/an selon le CA et la nature des travaux suivis.</li><li>La MAF (Mutuelle des Architectes Français) propose des contrats couplés RC Pro + décennale adaptés aux architectes d\'intérieur.</li><li>Piège fréquent : signer un contrat de « maîtrise d\'œuvre d\'exécution » sans avoir la décennale = faute grave, exclusion de garantie, responsabilité sur vos biens personnels.</li></ul>'
+            },
+            {
+              title: 'Les autres assurances recommandées',
+              content: '<ul><li>Protection Juridique Professionnelle (PJ Pro) : couvre les frais d\'avocat en cas de litige avec un client, un fournisseur ou une entreprise. Coût : 200-500€/an. INDISPENSABLE.</li><li>Assurance locaux professionnels (multirisque bureau) : si vous avez un atelier ou un showroom — incendie, vol, dégât des eaux.</li><li>Prévoyance (arrêt de travail, invalidité) : en libéral, aucune protection par défaut. Un accident = plus de revenu. La prévoyance couvre le maintien de revenu. Coût : 50-150€/mois.</li><li>Mutuelle santé : obligatoire si salarié, fortement recommandée en indépendant (loi Madelin permet la déduction fiscale).</li><li>Assurance véhicule professionnel : si vous utilisez votre véhicule pour les RDV clients et visites de chantier, vérifier que votre contrat auto couvre l\'usage professionnel.</li><li>Cyber-assurance : si vous stockez des données clients (plans, photos d\'intérieur) — de plus en plus pertinent.</li><li>Assurance perte d\'exploitation : couvre votre CA si un sinistre vous empêche de travailler (incendie du bureau, par exemple).</li></ul>'
+            },
+            {
+              title: 'Les garanties post-chantier à connaître',
+              content: '<ul><li>Garantie de parfait achèvement (GPA) : 1 an après réception. L\'entreprise doit réparer TOUS les désordres signalés (réserves ou apparition dans l\'année). C\'est la garantie la plus large.</li><li>Garantie de bon fonctionnement (biennale) : 2 ans. Couvre les équipements dissociables : robinetterie, volets roulants, portes, radiateurs, appareillage électrique.</li><li>Garantie décennale : 10 ans. Couvre les dommages qui affectent la solidité ou rendent l\'ouvrage impropre à sa destination : fissures structurelles, infiltrations, isolation défaillante.</li><li>PV de réception : le document qui déclenche TOUTES les garanties. Sans réception formelle = pas de garantie. Toujours faire un PV de réception signé avec liste de réserves.</li><li>Réserves : les défauts constatés à la réception. L\'entreprise a un délai pour les lever (souvent 60 jours). Tant que les réserves ne sont pas levées, retenir 5% du montant (retenue de garantie).</li><li>Dommages-Ouvrage (DO) : assurance du maître d\'ouvrage (le client) qui permet un préfinancement rapide des réparations décennales sans attendre le jugement de responsabilité. Obligatoire pour le client, pas pour vous — mais conseillez-la systématiquement.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'RC Pro = OBLIGATOIRE, sans exception, dès le premier projet',
+            'Décennale = obligatoire si vous faites de la maîtrise d\'œuvre (direction de travaux)',
+            'Protection Juridique Pro = la meilleure assurance rapport qualité/prix contre les litiges',
+            'Le PV de réception déclenche TOUTES les garanties — ne jamais le négliger',
+            'Conseiller la Dommages-Ouvrage au client — c\'est aussi vous protéger'
+          ],
+          tips: [
+            'Comparer les devis MAF, Hiscox et MMA — les écarts peuvent aller du simple au triple pour la même couverture',
+            'Relire les exclusions de votre police RC Pro chaque année — les conditions changent',
+            'Garder une copie de TOUTES les attestations d\'assurance des entreprises intervenant sur vos chantiers — c\'est votre protection en cas de sinistre'
+          ],
+          tags: ['assurance', 'RC Pro', 'décennale', 'garantie', 'protection', 'juridique', 'risques']
+        },
+        {
+          id: 'contrat-responsabilites',
+          category: 'Juridique & Assurances',
+          title: 'Contrats, Responsabilités & Litiges',
+          subtitle: 'Se protéger juridiquement à chaque étape',
+          summary: 'Le contrat est votre meilleur allié. Mal rédigé, il vous expose. Bien ficelé, il vous protège de 95% des litiges. Tour d\'horizon des responsabilités de l\'architecte d\'intérieur, des clauses essentielles et de la gestion des conflits.',
+          sections: [
+            {
+              title: 'Le contrat de mission — structure type',
+              content: '<ul><li>Objet de la mission : description PRÉCISE du périmètre (conception seule ? + suivi de chantier ? + mobilier ?). Ce qui n\'est PAS écrit n\'est PAS inclus.</li><li>Phases de mission : esquisse / avant-projet sommaire (APS) / avant-projet définitif (APD) / plans d\'exécution / suivi de chantier / réception. Préciser lesquelles sont incluses.</li><li>Honoraires et modalités de paiement : montant (forfait ou %), échéancier, conditions de règlement (30 jours), pénalités de retard.</li><li>Délais : planning prévisionnel de chaque phase. Préciser que les retards du client (validation, accès au site) décalent le planning d\'autant.</li><li>Obligations du client : fournir les diagnostics, donner accès au site, valider dans les délais, payer selon l\'échéancier.</li><li>Propriété intellectuelle : vos plans et dessins vous appartiennent jusqu\'au paiement intégral. Le client obtient un droit d\'usage, pas la propriété.</li><li>Clause de résiliation : conditions de sortie pour les deux parties (préavis, indemnités, paiement du travail réalisé).</li><li>Clause de médiation : en cas de litige, recours à un médiateur avant toute procédure judiciaire. Obligatoire pour les clients particuliers.</li><li>Tribunal compétent : indiquer le tribunal de votre domicile professionnel.</li></ul>'
+            },
+            {
+              title: 'Les responsabilités de l\'architecte d\'intérieur',
+              content: '<ul><li>Obligation de CONSEIL : vous devez informer le client des risques, des contraintes, des coûts réels. Un client qui perd de l\'argent parce que vous n\'avez pas signalé un problème = votre responsabilité.</li><li>Obligation de MOYENS (pas de résultat) : vous devez mettre en œuvre toutes les compétences nécessaires, mais vous ne garantissez pas un résultat précis (sauf engagement contractuel).</li><li>Responsabilité civile contractuelle : si vous ne respectez pas le contrat (retard, erreur de conception, non-respect du budget annoncé), le client peut demander réparation.</li><li>Responsabilité civile délictuelle : si vous causez un dommage à un tiers (voisin, copropriété) pendant le chantier.</li><li>Responsabilité pénale : en cas de mise en danger d\'autrui — amiante non diagnostiquée, non-respect des normes de sécurité, accessibilité bâclée en ERP.</li><li>Responsabilité du fait des entreprises : si vous faites de la maîtrise d\'œuvre, vous avez un devoir de contrôle sur les entreprises. Un artisan qui bâcle un travail que vous auriez dû vérifier = responsabilité partagée.</li><li>Prescription : l\'action en responsabilité civile se prescrit par 5 ans à compter de la découverte du dommage (hors décennale qui court 10 ans après réception).</li></ul>'
+            },
+            {
+              title: 'Propriété intellectuelle & droits d\'auteur',
+              content: '<ul><li>Vos plans, dessins, rendus 3D, moodboards et concepts sont protégés par le droit d\'auteur dès leur création — sans formalité, sans dépôt.</li><li>Le client ne peut PAS réutiliser vos plans pour un autre projet ou les confier à un autre professionnel sans votre accord — même s\'il les a payés.</li><li>Ce qui est payé = un droit d\'USAGE pour le projet défini au contrat. La propriété intellectuelle reste la vôtre.</li><li>Clause à intégrer au contrat : « Les plans et documents de conception restent la propriété intellectuelle de [votre nom/société]. Le client acquiert un droit d\'usage non exclusif, non cessible, limité au projet objet du présent contrat. »</li><li>Si le client veut la cession COMPLÈTE des droits : c\'est possible mais ça se négocie et ça se facture (en général +20-30% des honoraires).</li><li>Preuve de paternité : dater vos fichiers, vous envoyer un courrier recommandé avec les plans, utiliser une plateforme de dépôt (e-Soleau via INPI = 15€). En cas de litige, la preuve d\'antériorité est cruciale.</li><li>Utilisation en portfolio : vous avez le droit de publier des photos de vos réalisations (droit moral de l\'auteur) SAUF si le contrat l\'interdit explicitement. Prévoir une clause « droit de publication ».</li><li>Attention au « copier-coller » : reproduire le design d\'un confrère = contrefaçon. S\'inspirer est légal, copier est illégal.</li></ul>'
+            },
+            {
+              title: 'Gérer un litige client',
+              content: '<ul><li>RÈGLE N°1 : ne jamais réagir à chaud. Un client mécontent qui reçoit une réponse émotionnelle devient un client procédurier.</li><li>Étape 1 — Accusez réception par écrit : « J\'ai bien noté votre insatisfaction concernant [X]. Je reviens vers vous sous 48h après analyse. »</li><li>Étape 2 — Relisez le contrat : vérifiez ce qui était prévu, ce qui a été livré, ce qui a été validé. Les PV de validation signés sont votre meilleure preuve.</li><li>Étape 3 — Proposez une solution amiable : corriger le défaut, accorder une remise, offrir une prestation complémentaire. 90% des litiges se règlent à l\'amiable.</li><li>Étape 4 — Médiation : si pas d\'accord amiable, proposer un médiateur (obligatoire pour les clients particuliers). Coût partagé ou gratuit pour le consommateur.</li><li>Étape 5 — Procédure judiciaire : en dernier recours. Tribunal judiciaire pour les particuliers, tribunal de commerce entre pros. Faites-vous assister par un avocat (c\'est là que la PJ Pro est précieuse).</li><li>PRÉVENTION : le meilleur moyen d\'éviter les litiges = faire signer un PV de validation à CHAQUE étape (esquisse, APS, APD, choix matériaux). Un client qui a signé ne peut plus dire qu\'il n\'était pas d\'accord.</li><li>Les traces écrites (mails, comptes rendus de réunion signés) ont valeur de preuve — les échanges oraux non.</li></ul>'
+            },
+            {
+              title: 'La facturation et les impayés',
+              content: '<ul><li>Mentions obligatoires sur une facture : date, n° de facture, identité complète (SIRET, forme juridique), description de la prestation, montant HT/TTC, TVA, conditions de paiement, pénalités de retard.</li><li>Acompte à la signature : 30% minimum. Un client qui refuse de verser un acompte est un signal d\'alarme. L\'acompte engage les deux parties.</li><li>En cas d\'impayé : 1) Relance amiable par mail (J+7). 2) Relance formelle par courrier recommandé AR (J+15). 3) Mise en demeure (J+30). 4) Injonction de payer au tribunal (procédure rapide, ~40€).</li><li>Pénalités de retard légales : 3 x le taux d\'intérêt légal + indemnité forfaitaire de 40€ pour frais de recouvrement.</li><li>Clause de réserve de propriété : les plans ne sont livrés qu\'après paiement intégral. Le client ne peut pas utiliser vos documents tant qu\'il n\'a pas tout payé.</li><li>ASTUCE : ne jamais envoyer les fichiers source (DWG, SKP) avant le paiement final — ne livrer que des PDF ou exports image.</li></ul>'
+            }
+          ],
+          keyPoints: [
+            'Le contrat ÉCRIT est votre seule protection — un accord verbal ne vaut rien en cas de litige',
+            'Obligation de conseil = devoir d\'ALERTE. Si vous voyez un problème et ne dites rien, c\'est votre faute',
+            'Vos plans vous appartiennent — le client achète un droit d\'usage, pas la propriété',
+            'Faire signer un PV de validation à chaque étape = prévention anti-litige n°1',
+            'Ne jamais livrer les fichiers source avant le paiement intégral'
+          ],
+          tips: [
+            'Investir 800-1 500€ dans un contrat type rédigé par un avocat spécialisé — c\'est l\'achat le plus rentable de votre carrière',
+            'Envoyer un compte-rendu écrit après chaque réunion avec le client (même par mail) — « suite à notre échange, voici ce qui a été décidé… »',
+            'Déposer vos concepts sur e-Soleau (INPI, 15€) pour les projets importants — c\'est la preuve d\'antériorité la plus solide'
+          ],
+          tags: ['contrat', 'responsabilité', 'propriété intellectuelle', 'litiges', 'facture', 'impayés', 'juridique']
         }
       ]
     },

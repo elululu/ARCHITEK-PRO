@@ -1,7 +1,7 @@
 {
   "name": "ARCHITEK PRO — Encyclopédie d'Architecture d'Intérieur",
   "short_name": "ARCHITEK PRO",
-  "description": "153 fiches encyclopédiques pour architectes d'intérieur. Par AtelierLO.",
+  "description": "156 fiches encyclopédiques pour architectes d'intérieur. Par AtelierLO.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#1A1A1A",
