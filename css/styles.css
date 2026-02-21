@@ -3460,9 +3460,6 @@ body.dark-mode .search-shortcut {
 
 .quiz-card-front,
 .quiz-card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   min-height: 320px;
   backface-visibility: hidden;
@@ -3476,17 +3473,32 @@ body.dark-mode .search-shortcut {
 }
 
 .quiz-card-front {
+  position: relative;
+}
+
+.quiz-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.quiz-card-front {
   background: var(--surface);
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .quiz-card-back {
   background: var(--surface);
   transform: rotateY(180deg);
   overflow-y: auto;
-  max-height: 480px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .quiz-card-domain {
