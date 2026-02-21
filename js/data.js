@@ -1459,6 +1459,204 @@ const APP_DATA = {
             'Carrelage métro blanc posé verticalement avec joint gris anthracite = version contemporaine et chic du classique'
           ],
           tags: ['carrelage', 'mur', 'zellige', 'faïence', 'mosaïque', 'métro', 'céramique', 'crédence']
+        },
+        {
+          id: 'essences-bois-detail',
+          category: 'Bois Approfondi',
+          title: 'Essences de Bois : Guide Complet',
+          subtitle: 'Chêne, noyer, frêne, hêtre, résineux, exotiques — tout savoir pour bien prescrire',
+          summary: 'Le choix d\'une essence de bois engage le projet sur 50 ans. Dureté, couleur, veinure, stabilité, prix — chaque essence a un profil unique. L\'architecte d\'intérieur qui dit « du bois » sans préciser l\'essence, c\'est comme un chef qui dit « de la viande » sans préciser le morceau.',
+          sections: [
+            {
+              title: 'Chêne (Quercus)',
+              content: 'LE bois de référence en France et en Europe. Dureté Brinell : 3,7-3,9 — résistant mais travaillable. Couleur : brun doré à brun miel (fonçe avec le temps). Veinure marquée, fil droit avec des mailles argentées caractéristiques en débit sur quartier. Stabilité : bonne (retrait faible — classe 2-3 selon traitement). Usages : parquet (le n°1 absolu — 80% des parquets massifs en France sont en chêne), menuiserie intérieure (portes, escaliers, meubles), charpente, bardage. Classes : chêne premier choix (nœuds rares, aubier absent, couleur homogène — CHER), chêne rustique (nœuds acceptés, veines marquées — le plus courant et le plus beau en déco contemporaine), chêne campagne (gros nœuds, fentes, variations — style brut/industriel). Chêne français vs chêne européen : le chêne français (Quercus petraea/robur) est le plus réputé — grain fin, belles mailles, il sert aussi pour les tonneaux de grands crus. Prix parquet massif chêne premier choix : 60-120€/m². Chêne rustique : 40-80€/m².'
+            },
+            {
+              title: 'Noyer (Juglans)',
+              content: 'Le bois noble par excellence — le plus prisé en ébénisterie depuis le XVIIe siècle. Dureté Brinell : 3,4 — mi-dur. Couleur : brun chocolat profond avec nuances violacées, aubier clair contrastant. Veinure somptueuse, souvent ondulée ou flammée. Noyer français (Juglans regia) : le roi — couleur riche, grain fin, raréfié et très cher (placage : 40-80€/m², massif : 150-300€/m²). Noyer américain (Juglans nigra / Black Walnut) : plus sombre, violacé, très tendance en design contemporain, plus disponible que le français. Prix : 80-150€/m² massif. Le noyer est LE bois des cuisines haut de gamme (façades placage), des bureaux de direction, des tables sculpturales. Sa couleur foncée « réchauffe » les intérieurs blancs et minimalistes — c\'est le mariage parfait du contemporain et du noble. Stabilité moyenne — sensible à l\'humidité. À utiliser en intérieur exclusivement. Peut être huilé (aspect mat naturel) ou verni (brillant, plus protecteur).'
+            },
+            {
+              title: 'Frêne, Hêtre, Érable',
+              content: 'Frêne (Fraxinus) : bois clair, presque blanc avec des nuances olivâtres. Dureté Brinell : 4,0 — DUR, excellent pour les parquets très sollicités. Fil droit, veinure longue et régulière. Le bois « blond scandinave » par excellence. Très utilisé en mobilier danois (Ercol, Carl Hansen). Peut être thermo-traité (frêne rétifié) → devient brun foncé, imputrescible, utilisable en extérieur. Prix parquet : 50-90€/m². Hêtre (Fagus) : bois rosé clair, grain très fin et homogène, dureté 3,8. Le bois le plus utilisé en France après le chêne. Très apprécié en mobilier (chaises bistrot Thonet !), plans de travail, escaliers. Inconvénient : sensible à l\'humidité et aux variations dimensionnelles — PAS pour les pièces humides. Prix : 30-60€/m². Érable (Acer) : bois blanc nacré, grain ultra-fin, dureté 3,5. Le bois le plus clair qui existe naturellement. Érable sycomore (Europe) : reflets nacrés, prisé en lutherie et marqueterie. Érable à sucre (Amérique) : « hard maple », très dur (4,8 Brinell), parquets sportifs (NBA !). Le bois des intérieurs ultra-lumineux.'
+            },
+            {
+              title: 'Résineux',
+              content: 'Pin sylvestre : le plus courant, peu cher (15-30€/m²), nœuds fréquents, couleur jaune miel. Usage : lambris, étagères, structure. Pin Douglas : plus résistant, rougeâtre, adapté à l\'extérieur. Épicéa (Sapin blanc) : blanc crème, léger, peu de nœuds dans les premiers choix. Le bois du sapin de Noël… mais aussi des lambris scandinaves et des chalets haut de gamme. Mélèze : le roi des résineux — brun rougeâtre, très résistant naturellement (classe 3 sans traitement), imputrescible. Le bois de bardage par excellence. Prix : 40-70€/m². Cèdre rouge (Western Red Cedar) : rougeâtre, odorant, imputrescible naturel. Le bardage premium (50-80€/m²). En résumé : les résineux sont MOINS chers mais MOINS nobles que les feuillus. En architecture d\'intérieur, on les utilise pour : les lambris (épicéa), les structures (pin Douglas), le style « chalet chic » (mélèze, épicéa 1er choix), les bardages extérieurs (mélèze, cèdre). Attention : les résineux « jaunissent » avec le temps et la lumière UV — traiter avec une lasure ou un vernis anti-UV.'
+            },
+            {
+              title: 'Bois exotiques',
+              content: 'Teck (Tectona grandis) : LE bois tropical de référence. Brun doré, huileux naturellement (imputrescible), dureté 3,5. Le bois des ponts de bateau, des terrasses, du mobilier de jardin. Origine : Birmanie, Indonésie. Attention : exiger la certification FSC (forêts gérées durablement). Prix : 80-150€/m². Iroko : l\'alternative africaine au teck, moins chère (50-80€/m²). Brun jaune, résistant, stable. Plan de travail cuisine, salle de bain. Wengé : brun très foncé, presque noir. Dureté extrême (4,5). Spectaculaire en parquet ou en placage — mais il écrase les espaces sombres. Très tendance 2000-2010, moins demandé aujourd\'hui. Padouk : rouge vif à l\'état brut (fonce au brun avec le temps). Spectaculaire en détails décoratifs (inserts, nez de marche). Bambou : techniquement une graminée, pas un bois. Très dur en version « strand woven » (4,5 Brinell !), écologique (pousse en 5 ans vs 80 ans pour un chêne). Parquet bambou : 30-60€/m². L\'alternative crédible au bois tropical. ATTENTION : les bois exotiques posent des questions éthiques (déforestation). Toujours exiger FSC ou PEFC. Privilégier les essences françaises/européennes quand c\'est possible.'
+            }
+          ],
+          keyPoints: [
+            'Le chêne = 80% des parquets massifs en France — la référence absolue, 3 classes de tri (premier choix, rustique, campagne)',
+            'Le noyer = le bois noble par excellence — brun chocolat, le roi des cuisines haut de gamme et des meubles sculptés',
+            'Le frêne = le blond scandinave, le plus dur des feuillus courants (Brinell 4,0)',
+            'Mélèze = le roi des résineux, naturellement imputrescible (classe 3), idéal en bardage',
+            'Toujours exiger FSC ou PEFC pour les bois exotiques — question éthique incontournable'
+          ],
+          tips: [
+            'Chêne rustique + huile blanche = le parquet scandinave qui fait 80% des projets Pinterest. Simple, beau, intemporel, 50-70€/m² posé',
+            'Noyer américain en placage sur MDF pour les façades de cuisine = le look luxe à prix raisonnable (80-120€/m² vs 200-300€/m² en massif)',
+            'Le frêne thermo-traité (rétifié) est une alternative française et écologique au teck pour les terrasses et salles de bain — même résistance, sans déforestation tropicale'
+          ],
+          tags: ['bois', 'essence', 'chêne', 'noyer', 'frêne', 'hêtre', 'teck', 'parquet', 'massif']
+        },
+        {
+          id: 'panneaux-derives-bois',
+          category: 'Bois Approfondi',
+          title: 'Panneaux Dérivés du Bois',
+          subtitle: 'MDF, OSB, contreplaqué, mélaminé, stratifié HPL — le vrai cœur de l\'agencement',
+          summary: 'En réalité, 90% de l\'agencement intérieur n\'est PAS en bois massif — c\'est en panneaux dérivés. MDF, mélaminé, stratifié, contreplaqué : ces matériaux sont le squelette invisible de toute cuisine, tout placard, tout meuble sur-mesure. Les connaître est essentiel pour prescrire intelligemment.',
+          sections: [
+            {
+              title: 'MDF (Medium Density Fibreboard)',
+              content: 'Panneau de fibres de bois agglomérées sous pression avec résine synthétique. Surface ultra-lisse, homogène, pas de fil ni de nœuds — parfait pour la peinture et le laquage. Épaisseurs : 3-30mm (standard : 16, 19, 22mm). Usages : façades de meubles laquées, portes intérieures peintes (âme MDF), plinthes, moulures, bibliothèques. Le MDF est LE support du laqué — il se ponce et se peint comme un rêve. La majorité des cuisines « laquées blanches » sont en MDF laqué. MDF hydrofuge (vert) : résiste à l\'humidité — pour les SDB et cuisines. MDF ignifugé (rouge) : classement M1 — pour les ERP. Inconvénients : LOURD (750 kg/m³), gonfle irréversiblement au contact de l\'eau (sauf hydrofuge), poussière fine au sciage (masque FFP2 obligatoire — le formaldéhyde est cancérigène en exposition prolongée). Choisir du MDF classé E1 (faible émission de formaldéhyde) ou E0,5. Prix : 8-15€/m² en 19mm.'
+            },
+            {
+              title: 'Contreplaqué (Multiplis)',
+              content: 'Feuilles de bois (plis) croisées et collées — chaque pli est perpendiculaire au précédent. C\'est le panneau le PLUS résistant mécaniquement à épaisseur égale. Structure croisée = stabilité exceptionnelle (ne se déforme quasiment pas). Épaisseurs : 3-30mm (standard : 12, 15, 18, 24mm). Essences : bouleau (le plus fin et le plus beau — le « contreplaqué de Finlande »), peuplier (léger, moins cher), okoumé (marin — résistant à l\'eau). Contreplaqué bouleau : la STAR du design contemporain. Ses chants (tranches) montrent les plis alternés — un graphisme naturel qui est devenu un signe esthétique à part entière. Plywood = le matériau des designers (Eames, Aalto). Usages : meubles sur-mesure, étagères, plan de travail (25mm bouleau huilé = magnifique), tête de lit, habillage mural. Contreplaqué marine okoumé : collage classe 3, résistant à l\'eau. Pour les SDB, les meubles de bateau, les cuisines. Prix : bouleau 12mm = 20-35€/m². Okoumé marine 18mm = 25-45€/m².'
+            },
+            {
+              title: 'OSB (Oriented Strand Board)',
+              content: 'Panneau de grandes lamelles de bois orientées et pressées. L\'aspect « brut industriel » avec ses copeaux visibles est devenu un CODE ESTHÉTIQUE du style loft/industriel/brutaliste. OSB/1 : usage intérieur sec, non structurel. OSB/2 : structurel, sec. OSB/3 : structurel, milieu humide (le plus courant). OSB/4 : haute performance, milieu humide. Épaisseurs : 9-22mm. Usages décoratifs : habillage mural, fond de meuble apparent, tête de lit, mobilier éphémère (événementiel), cloison de séparation brute. L\'OSB poncé et verni mat = un matériau noble et contemporain quand il est bien mis en œuvre. Inconvénients : surface irrégulière (pas de peinture lisse possible sauf 2 couches d\'apprêt), échardes en chants bruts, formaldéhyde (exiger E1). Prix : le moins cher de tous — 5-10€/m² en 18mm. L\'OSB est aussi excellent en sous-couche de parquet (plancher support) — robuste et bon marché.'
+            },
+            {
+              title: 'Mélaminé & Stratifié HPL',
+              content: 'Mélaminé : panneau de particules (aggloméré) ou MDF recouvert d\'une feuille de papier décor imprégnée de résine mélamine, pressée à chaud. C\'est le matériau des cuisines et dressings IKEA et de 80% des meubles de grande distribution. Décors : des centaines de références — imitation chêne, noyer, béton, marbre, uni blanc, noir, couleurs... Avantages : résistant aux rayures et à l\'humidité (en surface), pas d\'entretien, peu cher. Inconvénients : les chants sont le point faible (le panneau de particules dessous est visible — il faut un chant thermocollant ou ABS). Si l\'eau pénètre par un chant mal protégé → gonflement irréversible. Épaisseurs : 16, 18, 19, 25mm. Prix : 10-25€/m². Marques de décors : Egger (leader européen), Kronospan, Cleaf (textures ultra-réalistes). Stratifié HPL (High Pressure Laminate) : feuille décorative + kraft imprégné, pressée à haute pression. Beaucoup plus résistant que le mélaminé (chocs, rayures, chaleur, chimie). Le standard des plans de travail cuisine (épaisseur 0,8-1,2mm collé sur panneau). Marques : Formica (l\'inventeur !), Abet Laminati (italien, couleurs spectaculaires), Polyrey, Arpa. Le HPL compact (10-13mm, autoportant) = plans de travail, cloisons WC, mobilier extérieur.'
+            },
+            {
+              title: 'Choisir le bon panneau',
+              content: 'Façades de cuisine laquées : MDF 19mm + laque polyuréthane 2 composants. Façades de cuisine décor bois : mélaminé 19mm (Egger) ou placage bois sur MDF. Caissons de cuisine/dressing : mélaminé 16-18mm (blanc, le standard). Plans de travail : stratifié HPL sur aggloméré 38mm (le standard), ou compact HPL 13mm (plus fin, contemporain), ou bois massif/contreplaqué bouleau huilé (plus noble). Étagères sur-mesure : contreplaqué bouleau 18-24mm (le plus beau et le plus solide), ou MDF 22mm si peint. Bibliothèque murale : contreplaqué 18mm — la rigidité du croisé évite la flexion sur de grandes portées. Fond de meuble : MDF 3mm ou HDF 3mm (le fond invisible qu\'on oublie toujours de spécifier !). Mobilier design brut : contreplaqué bouleau chant apparent, ou OSB verni. Budget serré : aggloméré mélaminé 16mm = l\'ossature de base. Budget confort : MDF 19mm ou contreplaqué bouleau. Budget premium : placage bois sur MDF ou contreplaqué.'
+            }
+          ],
+          keyPoints: [
+            'Le MDF = LE support du laqué — surface parfaitement lisse, idéal pour les façades de cuisine peintes',
+            'Le contreplaqué bouleau = le matériau des designers — chants croisés visibles comme signature esthétique',
+            'Le mélaminé = 80% des meubles — peu cher mais attention aux chants (point faible par où l\'eau rentre)',
+            'Le HPL (Formica, Abet Laminati) = le standard des plans de travail — plus résistant que le mélaminé',
+            'Exiger du classement E1 ou E0,5 pour le formaldéhyde — surtout MDF et aggloméré en espace fermé'
+          ],
+          tips: [
+            'Contreplaqué bouleau 24mm huilé = un plan de travail cuisine magnifique et original à 50€/m² — contre 200€/m² pour un bois massif. Le look est différent (plis visibles sur la tranche) mais très design',
+            'IKEA utilise du mélaminé 18mm pour ses caissons — parfaitement acceptable. Le secret : changer les façades par du MDF laqué sur-mesure = la qualité d\'une cuisine à 15 000€ pour 5 000€',
+            'L\'OSB 18mm poncé + 2 couches de vernis mat = un habillage mural spectaculaire à 10€/m². Le client voit un mur texturé « brut chic », pas un panneau de chantier'
+          ],
+          tags: ['MDF', 'OSB', 'contreplaqué', 'mélaminé', 'stratifié', 'HPL', 'panneau', 'agencement', 'Formica']
+        },
+        {
+          id: 'traitement-finition-bois',
+          category: 'Bois Approfondi',
+          title: 'Traitement & Finition du Bois',
+          subtitle: 'Huile, vernis, lasure, cire, saturateur — protéger et sublimer',
+          summary: 'Un bois non traité grise, se tache, se dégrade. Le choix de la finition détermine l\'aspect (mat, satiné, brillant), la protection (eau, UV, usure) et l\'entretien. C\'est le dernier geste mais c\'est lui qui fait TOUTE la différence entre un projet amateur et un projet professionnel.',
+          sections: [
+            {
+              title: 'Huile',
+              content: 'L\'huile pénètre dans les fibres du bois et le nourrit en profondeur. Elle ne forme PAS de film en surface — le bois reste « vivant », on sent la matière au toucher. C\'est la finition la plus naturelle et la plus tendance en décoration contemporaine. Huile dure (Osmo, Rubio Monocoat, Blanchon) : la référence pour les parquets et les meubles. 1-2 couches suffisent. Séchage 24-48h. Aspect mat à satiné. Rubio Monocoat = 1 seule couche (révolutionnaire — gain de temps énorme sur chantier). Huile-cire : huile + cire naturelle combinées. Protection renforcée, aspect légèrement plus satiné. Blanchon Solid\'Oil, Bona Craft Oil. Huile teintée : permet de colorer le bois tout en gardant l\'aspect huilé. Rubio Monocoat propose 40+ teintes (du blanc pur au noir charbon). Huile blanche = le parquet « scandinave » qui fait rêver. Entretien : réparation locale possible (poncer la zone + réhuiler — impossible avec un vernis). Rafraîchir 1x/an dans les zones de passage. La seule finition qui vieillit BIEN — elle patine au lieu de s\'écailler.'
+            },
+            {
+              title: 'Vernis',
+              content: 'Le vernis forme un FILM transparent et dur en surface du bois. Il protège mécaniquement contre les rayures, les taches et l\'eau. Vernis polyuréthane (PU) : le plus résistant. Mono-composant (grand public) ou bi-composant (pro — le top). Aspect mat, satiné ou brillant. Le standard des parquets vitrifiés (on dit « vitrifier » en parquet). 2-3 couches + ponçage inter-couches. Vernis acrylique (phase aqueuse) : moins de COV (odeurs), séchage rapide, aspect plus naturel que le PU. Moins résistant — pour les meubles et les boiseries, pas les parquets très sollicités. Vernis mat contemporain vs vernis brillant classique : le mat est la norme en 2025 — le brillant fait « années 80 ». Mais attention : le vrai mat PU de qualité (Bona Traffic HD Extra Mat) est CHER. Inconvénients du vernis : ne se répare PAS localement — si le film est rayé/écaillé, il faut poncer TOUT le parquet et revitrifier (500-1 000€ pour un T3). Le bois perd son toucher naturel (on touche du plastique). L\'entretien est facile au quotidien mais la rénovation est lourde.'
+            },
+            {
+              title: 'Lasure, saturateur, cire',
+              content: 'Lasure : finition semi-pénétrante qui protège le bois des UV et de l\'humidité tout en laissant voir le veinage. C\'est LA finition pour le bois EXTÉRIEUR (volets, bardage, fenêtres bois). Lasure opacifiante = presque comme une peinture mais on voit le relief du bois. Lasure teintée transparente = couleur + protection sans masquer la veinure. Entretien : tous les 3-5 ans en extérieur. Marques : Sikkens (le top pro), Bondex, V33. Saturateur : huile très fluide pour les terrasses et bardages. Sature les fibres en profondeur, ne forme aucun film, n\'écaille pas. L\'alternative moderne à la lasure pour les terrasses. S\'entretient sans poncer (juste nettoyer et repasser une couche). Owatrol, Saturateur Blanchon. Cire : la finition traditionnelle (cire d\'abeille, carnauba). Aspect soyeux, toucher incomparable, odeur délicieuse. MAIS : très fragile (sensible à l\'eau, aux taches, à la chaleur), entretien exigeant (cirage régulier). Réservée au mobilier ancien, aux meubles de prestige, aux boiseries classiques. La cire sur un parquet = un cauchemar d\'entretien (glissant, marqué par chaque goutte d\'eau).'
+            },
+            {
+              title: 'Traitement préventif et curatif',
+              content: 'Traitement autoclave : imprégnation sous pression de sels de cuivre (classe 3 ou 4). Rend le bois imputrescible et résistant aux insectes. OBLIGATOIRE pour le bois en contact avec le sol ou l\'humidité permanente (poteaux, terrasses, structures). Le bois autoclave est verdâtre à l\'état neuf (pigments de cuivre) puis grise naturellement. Traitement thermique (rétification) : chauffage du bois à 200-250°C sous atmosphère contrôlée. Le bois devient brun foncé, stable, imputrescible — SANS produit chimique. Le frêne, le peuplier et le pin deviennent aussi résistants que le teck. Alternative écologique à l\'autoclave et aux bois exotiques. Traitement insecticide/fongicide : pour les bois anciens attaqués (vrillettes, capricornes, mérule). Injection sous pression par un professionnel certifié (CTB-A+). Garantie décennale. Obligatoire dans le diagnostic termites. Traitement anti-bleuissement : pour les résineux stockés (le bleu est un champignon esthétique, pas structurel, mais invendable).'
+            }
+          ],
+          keyPoints: [
+            'L\'huile = la finition la plus naturelle et tendance — se répare localement, vieillit en patinant',
+            'Le vernis = la protection la plus résistante mais irréparable localement (ponçage total si abîmé)',
+            'Rubio Monocoat = 1 seule couche d\'huile — la révolution en pose de parquet (gain de temps, résultat mat magnifique)',
+            'La lasure = pour l\'EXTÉRIEUR uniquement (volets, bardage) — protège des UV et de l\'humidité',
+            'Le traitement thermique (rétification) = l\'alternative écologique aux bois exotiques tropicaux'
+          ],
+          tips: [
+            'Parquet chêne rustique + Rubio Monocoat teinte « Cotton White » = le parquet scandinave du Pinterest — 1 couche, 30 minutes de travail, résultat de magazine. TOUJOURS faire un échantillon sur une chute avant validation client',
+            'En rénovation d\'un parquet ancien verni : PROPOSER le passage à l\'huile. Le client découvre le toucher naturel du bois et ne revient jamais au vernis. Ponçage + huile Osmo = 30-40€/m² fourni-posé',
+            'Ne JAMAIS cirer un parquet en rez-de-chaussée ou en pièce de vie familiale — les taches d\'eau sont indélébiles et le cirage mensuel, personne ne le fait'
+          ],
+          tags: ['huile', 'vernis', 'lasure', 'cire', 'traitement', 'finition', 'Rubio Monocoat', 'vitrification']
+        },
+        {
+          id: 'quincaillerie-ferronnerie',
+          category: 'Quincaillerie & Ferrures',
+          title: 'Quincaillerie & Ferronnerie d\'Agencement',
+          subtitle: 'Charnières, coulisses, poignées, systèmes coulissants — les mécanismes invisibles',
+          summary: 'La quincaillerie, c\'est l\'invisible qui fait tout. Un tiroir qui se ferme en silence, une porte qui s\'ouvre d\'un effleurement, un placard qui coulisse sans effort — ce confort quotidien repose sur des mécanismes de précision dont le coût est dérisoire par rapport à l\'impact sur l\'expérience utilisateur.',
+          sections: [
+            {
+              title: 'Charnières (paumelles)',
+              content: 'Charnière invisible à encastrer (charnière « de meuble ») : le standard pour TOUS les meubles de cuisine, dressing, salle de bain. 95% du marché = Blum et Hettich. Blum CLIP top BLUMOTION : la référence absolue. Ouverture 110° standard (95° pour angle), fermeture amortie intégrée (BLUMOTION = le « soft close »), réglable en 3 dimensions sans outil. Existe en version « tip-on » (ouverture par pression — pas de poignée = façade lisse). Hettich Sensys : concurrent direct de Blum, même qualité. Le choix entre les deux est souvent une guerre de religion entre menuisiers. Charnière à 170° (Blum CLIP top bi-fold) : pour les meubles d\'angle — la porte s\'ouvre à plat contre le caisson adjacent. Paumelle de porte (charnière d\'huisserie) : pour les portes intérieures. 3 paumelles par porte standard. Paumelle à larder (invisible quand fermée) = le top en design. Simonswerk Tectus = la paumelle invisible la plus connue (80-150€ la paire — cher, mais la porte semble flotter).'
+            },
+            {
+              title: 'Coulisses de tiroir',
+              content: 'Coulisse à galets (le bas de gamme — le tiroir qui déraille et grince) : à PROSCRIRE dans tout projet de qualité. Coulisse à billes (sortie partielle ou totale) : correcte, silencieuse, 5-15€/paire. Acceptable pour un budget serré. Coulisse BLUM Tandembox/Legrabox : LE système premium. Sortie totale (le tiroir sort complètement), charge 30-65kg, fermeture BLUMOTION intégrée (le tiroir se referme tout seul en douceur). Le Legrabox = version ultra-fine avec flancs en acier fin — le tiroir le plus élégant du marché. C\'est ce qui fait la différence entre une cuisine à 5 000€ et une cuisine à 15 000€. Hettich ArciTech : l\'alternative — flancs fins en acier, fermeture Silent System. Grass Nova Pro : troisième acteur, très présent chez les cuisinistes allemands. Système Blum SPACE TOWER : pour les colonnes de rangement (grand tiroir vertical avec organisation intérieure). Blum SERVO-DRIVE : ouverture électrique au toucher — le tiroir s\'ouvre quand on pousse la façade. Indispensable pour les façades sans poignée (cuisine minimaliste).'
+            },
+            {
+              title: 'Systèmes coulissants',
+              content: 'Porte coulissante en applique (type « grange ») : rail apparent en acier sur le mur. Le look industriel/farmhouse. Rail + roulettes + guide = 100-400€ le kit. Hauteur max 2,40m standard. Porte coulissante à galandage (dans la cloison) : la porte disparaît DANS le mur. Le système le plus élégant — aucun encombrement quand ouvert. Marques : Eclisse (n°1 mondial), Scrigno, Doortech. Le châssis s\'installe AVANT le plâtrage — à prévoir dès la conception. Épaisseur de cloison minimum : 100mm (simple) ou 125mm (double). Prix : châssis seul 200-600€. Porte coulissante de placard : rail haut + guide bas. Classique en dressing. 2-3 vantaux. Profils alu (Sogal, Coulidoor). Système pivotant (porte pivot) : la porte tourne sur un axe décentré. Spectaculaire pour les grandes portes (2,40-3m de haut). Système FritsJurgens = la référence (pivot invisible dans le sol, la porte semble flotter). 800-2 000€ le système — le luxe absolu.'
+            },
+            {
+              title: 'Poignées et accessoires',
+              content: 'Poignée : le bijou de la façade. C\'est le premier contact physique avec le meuble. 4 familles : barre (profil en T ou en U, longueur 128-1200mm — la plus contemporaine), bouton (rond, carré, conique — plus classique ou vintage), coquille (encastrée dans la façade — flush, minimaliste), intégrée (gorge fraisée dans la façade elle-même = la plus invisible). Matériaux : acier inox brossé (le classique moderne), laiton brossé/patiné (la tendance 2024-2026 — chaleureux, luxe discret), noir mat (le standard design actuel), cuir (Turnstyle Designs = le top — poignée en cuir sur tige métal), bois (scandinave). Marques premium : Dauby (belge, laiton patiné artisanal), FSB (allemand, design Bauhaus), Formani (néerlandais, architectes), Turnstyle (anglais, cuir). Grande distribution qualité : Ikea (rapport qualité/prix imbattable), Entraxe standard : 128mm (le plus courant), 160mm, 192mm. TOUJOURS vérifier l\'entraxe avant de commander. Serrure de porte intérieure : cylindre européen, béquille (poignée de porte), rosace (plaque ronde autour). Marques : Vachette, Bricard, Fichet (haut de gamme).'
+            }
+          ],
+          keyPoints: [
+            'Blum et Hettich = 95% de la quincaillerie de meubles. Le soft-close (BLUMOTION) est devenu le MINIMUM attendu',
+            'Le Legrabox Blum = le tiroir premium — flancs fins en acier, fermeture amortie, charge 65kg',
+            'Le galandage (Eclisse) = la porte qui disparaît dans le mur — à prévoir DÈS la conception',
+            'Le laiton brossé/patiné = LA tendance poignées 2024-2026 — chaleur + luxe discret',
+            'L\'entraxe 128mm est le plus courant — TOUJOURS le vérifier avant de commander des poignées'
+          ],
+          tips: [
+            'Changer les poignées d\'une cuisine existante = le relooking le plus impactant au coût le plus faible. 15 poignées Dauby en laiton = ~600€ mais la cuisine semble neuve',
+            'Blum tip-on + façade sans poignée = la cuisine la plus épurée possible. Le client pousse la façade, elle s\'ouvre. MAIS : les traces de doigts sur les façades mates sont un vrai problème — prévenir le client',
+            'Pour une porte coulissante en applique « style industriel » : le rail en acier brut + roulettes apparentes est spectaculaire, mais le joint entre le mur et la porte ne sera JAMAIS étanche au bruit et à la lumière'
+          ],
+          tags: ['quincaillerie', 'charnière', 'Blum', 'tiroir', 'coulissant', 'poignée', 'galandage', 'ferrure']
+        },
+        {
+          id: 'verre-vitrages-deco',
+          category: 'Verre & Transparences',
+          title: 'Verre : Types, Usages & Intégration',
+          subtitle: 'Feuilleté, trempé, dépoli, laqué Lacobel, miroir — la matière de lumière',
+          summary: 'Le verre est le matériau de la lumière, de la transparence et de l\'agrandissement visuel. En architecture d\'intérieur, il sert de cloison, de crédence, de garde-corps, de plan de travail, de douche, de miroir. Connaître ses types et ses propriétés est indispensable pour prescrire correctement — un verre mal choisi peut être dangereux.',
+          sections: [
+            {
+              title: 'Verre trempé',
+              content: 'Le verre trempé (ou securit) est chauffé à ~620°C puis refroidi brutalement. Il est 5x plus résistant qu\'un verre ordinaire et, s\'il casse, il se fragmente en petits morceaux peu coupants (au lieu de grands éclats tranchants). C\'est un VERRE DE SÉCURITÉ — obligatoire dans certains usages. Usages : parois de douche (le standard — 8mm trempé), garde-corps vitré (si feuillage non requis), table basse en verre, étagères vitrées, crédence de cuisine. Le verre trempé ne peut PAS être retaillé après trempe — il doit être commandé aux dimensions finales avec toutes les découpes (trous, encoches) AVANT la trempe. ATTENTION : le verre trempé a un défaut rare mais réel — l\'explosion spontanée due aux inclusions de sulfure de nickel (NiS). 1 verre sur 10 000 peut exploser sans raison. La parade : le verre trempé-trempé (heat-soak test) passe un test de chauffe qui élimine 95% des verres à risque. Le spécifier pour les grandes surfaces vitrées en hauteur.'
+            },
+            {
+              title: 'Verre feuilleté (Stadip)',
+              content: 'Le verre feuilleté = 2 feuilles de verre collées sur un ou plusieurs films PVB (polyvinyl butyral) intercalaires. Si le verre casse, les morceaux restent collés au film — pas d\'effondrement, pas de projection de fragments. C\'est LE verre de sécurité pour les garde-corps, les toitures vitrées, les verrières et les planchers de verre. Nomenclature : 44.2 = 2 verres de 4mm + 2 films PVB (épaisseur totale ~8,8mm). 55.2 = 2x5mm + 2 PVB. 66.2 = 2x6mm + 2 PVB (garde-corps). Le feuilleté peut être trempé (trempé-feuilleté = la double sécurité — obligatoire en garde-corps toute hauteur et plancher de verre). PVB acoustique : le film PVB peut être « acoustique » (type Silence de Saint-Gobain) — réduit la transmission du bruit de 3-5 dB. Idéal pour les verrières d\'atelier donnant sur un espace bruyant. PVB coloré ou décoratif : le film peut être blanc, coloré, imprimé — verrière semi-opaque, cloison colorée. Prix : verre feuilleté 44.2 clair = 50-80€/m². 66.2 = 80-120€/m².'
+            },
+            {
+              title: 'Verres décoratifs',
+              content: 'Verre dépoli (sablé ou acide) : surface translucide (laisse passer la lumière mais pas la vue). Obtenu par sablage mécanique ou attaque à l\'acide fluorhydrique. L\'acide donne un toucher plus soyeux et se salit moins. Usages : porte de douche, cloison de bureau, vitrage de porte intérieure, imposte. On peut créer des motifs en masquant des zones avant le sablage. Verre laqué (Lacobel / Matelac) : verre peint sur la face arrière. La surface est brillante, lisse, réfléchissante. Lacobel (Saint-Gobain) : gamme de couleurs RAL + couleurs tendance. Le blanc Lacobel en crédence de cuisine = le look ultra-contemporain (brillant, facile à nettoyer, résistant à la chaleur si trempé). Noir Lacobel = la crédence luxe. Prix : 60-120€/m² posé. Miroir vieilli/antiqué : miroir dont le tain est volontairement dégradé pour un effet patiné, oxydé, vintage. Spectaculaire en tête de lit, en fond de niche, en crédence de bar. Miroir fumé (teinté gris ou bronze) : élégant, moins « clinique » qu\'un miroir clair. Très tendance. Miroir espion (sans tain) : réfléchissant d\'un côté, transparent de l\'autre (si l\'éclairage est correct). Pour les espaces de vente, les studios d\'enregistrement.'
+            },
+            {
+              title: 'Verre structurel et usages techniques',
+              content: 'Crédence de cuisine : verre trempé 6mm laqué (Lacobel) = le standard. Résiste à la chaleur (sauf flamme directe — ÉLOIGNER du gaz !). Alternative au carrelage : pas de joints, nettoyage d\'un coup d\'éponge, couleur uniforme. Pose collée ou avec fixations ponctuelles. Garde-corps : OBLIGATOIREMENT en verre feuilleté (trempé-feuilleté 10+10mm pour les garde-corps toute hauteur). Norme NF P01-012. Fixation : par pinces (type « rotofix »), profil U en pied, ou fixation ponctuelle (boutons spider). Le garde-corps verre = la transparence totale, mais coût élevé (300-600€/ml posé). Verrière d\'atelier : structure acier + simple vitrage (traditionnel) ou double vitrage (si séparation thermique). Verre feuilleté 44.2 recommandé pour la sécurité et l\'acoustique. Paroi de douche : verre trempé 8mm (le minimum — 10mm pour un feeling premium). Traitement anti-calcaire (type « Timeless » de Saint-Gobain ou ClearShield) INDISPENSABLE — sinon le calcaire s\'incruste en 6 mois et ne part plus jamais. Plancher de verre : feuilleté trempé antidérapant, épaisseur calculée par un BET. 44.6 minimum (6 PVB). Spectaculaire en mezzanine ou en puits de lumière.'
+            }
+          ],
+          keyPoints: [
+            'Verre trempé = 5x plus résistant, se fragmente en petits morceaux. OBLIGATOIRE pour parois de douche et crédences',
+            'Verre feuilleté = les morceaux restent collés au film PVB. OBLIGATOIRE pour garde-corps et planchers',
+            'Lacobel (verre laqué) en crédence de cuisine = le look ultra-contemporain, zéro joints, nettoyage facile',
+            'Traitement anti-calcaire INDISPENSABLE sur les parois de douche — sinon calcaire irréversible en 6 mois',
+            'Le verre trempé se commande aux DIMENSIONS FINALES — impossible de le retailler après trempe'
+          ],
+          tips: [
+            'Miroir fumé bronze en fond de niche éclairée par LED = un effet de profondeur et de luxe spectaculaire pour 30€ de miroir + 20€ de ruban LED. Le ratio impact/coût est imbattable',
+            'Crédence Lacobel blanc brillant du plan de travail au plafond = la cuisine semble 2x plus grande (effet de réflexion). TOUJOURS tremper le verre près de la plaque de cuisson',
+            'En copropriété haussmannienne : remplacer les impostes opaques des portes par du verre feuilleté dépoli = inonder le couloir de lumière naturelle sans perdre l\'intimité'
+          ],
+          tags: ['verre', 'trempé', 'feuilleté', 'Lacobel', 'miroir', 'crédence', 'douche', 'garde-corps']
         }
       ]
     },
