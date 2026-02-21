@@ -2286,33 +2286,33 @@ const APP_DATA = {
           summary: 'Les petites surfaces sont le cœur de métier de l\'architecte d\'intérieur en milieu urbain. Chaque mètre carré compte, chaque centimètre se négocie. C\'est dans la contrainte que naissent les projets les plus ingénieux.',
           sections: [
             {
-              title: 'Les principes fondamentaux',
-              content: 'Décloisonner : supprimer les murs non porteurs pour créer un espace fluide (cuisine/séjour/entrée en un seul volume). Unifier le sol : un même revêtement d\'un bout à l\'autre de l\'appartement agrandit visuellement. Maximiser la lumière : verrière, imposte, cloisons vitrées, miroirs stratégiques. Exploiter la hauteur : mezzanine de couchage (si HsP > 3,40 m), rangements en partie haute, bibliothèques pleine hauteur. Minimiser la circulation : supprimer les couloirs, regrouper les pièces d\'eau.'
+              title: 'Principes fondamentaux',
+              content: '<ul><li><strong>Décloisonner</strong> — supprimer les murs non porteurs pour créer un espace fluide (cuisine/séjour/entrée en un seul volume). Vérifier la nature du mur AVANT (porteur ou non → BET si doute)</li><li><strong>Unifier le sol</strong> — un même revêtement d\'un bout à l\'autre de l\'appartement agrandit visuellement. Zéro barre de seuil = continuité maximale</li><li><strong>Maximiser la lumière</strong> — verrière, imposte vitrée, cloisons vitrées, miroirs stratégiques. Le second jour transforme un espace sombre en lieu vivable</li><li><strong>Exploiter la hauteur</strong> — mezzanine de couchage (si HsP > 3,40 m), rangements en partie haute, bibliothèques pleine hauteur, étagères au-dessus des portes</li><li><strong>Minimiser la circulation</strong> — supprimer les couloirs, regrouper les pièces d\'eau. Chaque m² de couloir = 1 m² perdu pour vivre</li><li><strong>Règle des 10 %</strong> — minimum 10 % de la surface en rangement, même dans un petit espace. 30 m² = 3 m² de placards minimum</li></ul>'
             },
             {
-              title: 'Le plan : 3 typologies qui marchent',
-              content: 'Le studio-loft : tout est ouvert, le lit est intégré (escamotable, mezzanine ou alcôve). La fonctionnalité est dans le mobilier, pas dans les murs. Le T2 optimisé : séjour-cuisine ouvert + chambre fermée (mais avec verrière pour la lumière). La division en zones : utiliser le mobilier (bibliothèque, meuble bas, banquette) comme séparateur visuel sans cloisonner. Astuce : placer le coin nuit côté rue (on y passe moins de temps) et le séjour côté cour.'
+              title: 'Le plan — 3 typologies qui marchent',
+              content: '<ul><li><strong>Le studio-loft</strong> — tout est ouvert, le lit est intégré (escamotable, mezzanine ou alcôve). La fonctionnalité est dans le mobilier, pas dans les murs. Surface type : 18-35 m²</li><li><strong>Le T2 optimisé</strong> — séjour-cuisine ouvert + chambre fermée (mais avec verrière pour la lumière). La cloison séparative = verrière + porte coulissante. Surface type : 30-50 m²</li><li><strong>La division en zones</strong> — utiliser le mobilier comme séparateur visuel : bibliothèque traversante, meuble bas, banquette, changement de niveau de plafond (faux-plafond localisé)</li><li><strong>Astuce orientation</strong> — coin nuit côté rue (on y passe moins de temps éveillé) et séjour côté cour/jardin (lumière, calme)</li><li><strong>Entrée</strong> — ne jamais la sacrifier. C\'est la première impression + souvent 2-3 m² de rangement potentiel (placard toute hauteur, banc coffre, miroir)</li></ul>'
             },
             {
-              title: 'Mobilier malin',
-              content: 'Le lit escamotable (Espace Loggia, Griffon) : libère 4-6 m² en journée. La table extensible (console → table 6 personnes). Le plan de travail prolongé en table à manger. La banquette dînatoire (gain de 40 cm vs chaises). Le meuble sur mesure multifonction (entrée + rangement + assise). Les portes coulissantes (gain de 1 m² par porte vs porte battante). Le dressing dans l\'entrée (souvent 2-3 m² inexploités).'
+              title: 'Mobilier malin — Dimensions & Astuces',
+              content: '<ul><li><strong>Lit escamotable (Espace Loggia, Griffon, Boone)</strong> — libère 4-6 m² en journée. Largeur : 140-160 cm. Profondeur du caisson fermé : 35-45 cm. Budget : 2 500-6 000 €</li><li><strong>Table extensible</strong> — console 40-50 cm de profondeur → table 6 personnes (120-180 cm). Mécanisme coulissant ou rabattable. Gain : la table disparaît entre les repas</li><li><strong>Plan de travail prolongé en table</strong> — prolonger le plan de cuisine de 60-80 cm en débord = coin repas 2-3 personnes. Épaisseur du plan en porte-à-faux : 40 mm mini. Support : équerre invisible ou pied en retrait</li><li><strong>Banquette dînatoire</strong> — gain de 30-40 cm vs chaises (assise 40 cm contre le mur vs chaise + recul 70-80 cm). Coffre sous l\'assise = rangement bonus</li><li><strong>Portes coulissantes</strong> — gain de 0,5-1 m² par porte vs battante. Galandage (dans le mur) : le top mais nécessite un doublage de 8-10 cm. En applique (rail apparent) : plus simple à installer en rénovation</li><li><strong>Dressing dans l\'entrée</strong> — souvent 2-3 m² inexploités. Placard coulissant toute hauteur : 60 cm de profondeur, porte miroir (double effet agrandissant)</li><li><strong>Meubles multifonction</strong> — bureau/coiffeuse rabattable, pouf coffre, clic-clac haut de gamme (Innovation Living), lit coffre avec tête de lit rangement</li></ul>'
             },
             {
               title: 'Les erreurs à ne pas commettre',
-              content: 'Trop de petites pièces fermées : mieux vaut 1 grand espace que 3 placards. Du mobilier trop gros : le canapé d\'angle XXL dans 35 m² → c\'est non. Négliger l\'entrée : c\'est la première impression + souvent 2-3 m² de rangement potentiel. Oublier les rangements : dans un petit espace, il faut PLUS de rangement qu\'ailleurs (minimum 10% de la surface). Multiplier les matériaux et couleurs : en petit espace, la sobriété agrandit.'
+              content: '<ul><li><strong>Trop de petites pièces fermées</strong> — mieux vaut 1 grand espace fluide que 3 placards avec couloir. Le décloisonnement est toujours la première piste</li><li><strong>Mobilier surdimensionné</strong> — le canapé d\'angle XXL dans 35 m² → NON. Canapé 2 places (150 cm) + fauteuil = plus polyvalent et plus aéré. Toujours dessiner le mobilier À L\'ÉCHELLE sur le plan</li><li><strong>Négliger l\'entrée</strong> — première impression + potentiel rangement gaspillé. Placard + miroir + patère = 3 fonctions en 0,5 m²</li><li><strong>Oublier les rangements</strong> — dans un petit espace, il faut PLUS de rangement qu\'ailleurs (sinon le désordre envahit tout). Placards toute hauteur, tiroirs sous lit, étagères au-dessus des portes</li><li><strong>Multiplier matériaux et couleurs</strong> — en petit espace, la sobriété agrandit. 2-3 matériaux maximum, palette neutre + 1 accent. Trop de couleurs = agitation visuelle = espace perçu plus petit</li><li><strong>Éclairage unique (plafonnier)</strong> — lumière plate = espace plat. Multiplier les sources : suspensions, appliques, liseuses, LED indirectes. La lumière crée les volumes</li></ul>'
             }
           ],
           keyPoints: [
             'Décloisonner + unifier le sol + maximiser la lumière = le triptyque de base',
-            'Minimum 10% de la surface en rangement, même dans un petit espace',
-            'Le lit escamotable libère 4-6 m² en journée — game changer en studio',
-            'Portes coulissantes = gain immédiat de 1 m² par porte',
-            'Un seul sol d\'un bout à l\'autre de l\'appartement = agrandissement visuel garanti'
+            'Minimum 10 % de la surface en rangement — dans un petit espace, le rangement est vital',
+            'Lit escamotable : libère 4-6 m² en journée — game changer en studio',
+            'Portes coulissantes = gain immédiat de 0,5-1 m² par porte',
+            'Un seul sol d\'un bout à l\'autre + 2-3 matériaux max = agrandissement visuel garanti'
           ],
           tips: [
             'Projets référence Sloft : 23 m² à Montreuil (cocon minimaliste), 36 m² garage métamorphosé (Paris), 48 m² restructuré par la lumière (Sacha Ekert)',
             'Toujours démarrer par un plan coté au 1/50 avec le mobilier dessiné à l\'échelle — on voit immédiatement ce qui rentre ou pas',
-            'Le miroir pleine hauteur en bout de couloir crée un effet de profondeur spectaculaire'
+            'Le miroir pleine hauteur en bout de couloir ou dans l\'entrée crée un effet de profondeur spectaculaire — 0 m² d\'emprise, 100 % d\'impact'
           ],
           tags: ['petit espace', 'studio', 'optimisation', 'plan', 'décloisonnement', 'mobilier']
         },
@@ -2324,33 +2324,37 @@ const APP_DATA = {
           summary: 'La cuisine ouverte avec îlot est devenue la pièce maîtresse de l\'habitat contemporain. C\'est le lieu de vie, de convivialité et de représentation. Bien la concevoir demande rigueur et méthode.',
           sections: [
             {
-              title: 'Le triangle d\'activité',
-              content: 'Le plan d\'une cuisine s\'organise autour du triangle d\'activité : froid (réfrigérateur) — lavage (évier) — cuisson (plaques/four). La somme des 3 côtés du triangle doit être comprise entre 3,60 m et 6,60 m. Au-delà : trop de pas. En deçà : trop serré. L\'évier est idéalement face à la lumière naturelle. Les plaques sont proches du plan de travail (préparation → cuisson). Le réfrigérateur est accessible sans traverser la zone de travail.'
+              title: 'Le triangle d\'activité & principes de plan',
+              content: '<ul><li><strong>Triangle d\'activité</strong> — Froid (réfrigérateur) → Lavage (évier) → Cuisson (plaques/four). La somme des 3 côtés : entre 3,60 m et 6,60 m. Au-delà : trop de pas. En deçà : trop serré</li><li><strong>Évier</strong> — idéalement face à la lumière naturelle. Cuve : largeur 40 cm (simple) ou 80 cm (double / égouttoir intégré)</li><li><strong>Plaques de cuisson</strong> — emprise : 60 cm (3 feux) ou 75-90 cm (4-5 feux). Distance au mur latéral : 15 cm minimum. Plan de travail de chaque côté : 40 cm mini</li><li><strong>Réfrigérateur</strong> — accessible sans traverser la zone de travail. Largeur : 60 cm (standard), 70 cm (américain) ou 90 cm (side by side). Aération : 5 cm derrière et au-dessus</li><li><strong>Four</strong> — en colonne à hauteur d\'yeux : top du plan = 80-90 cm du sol. Encastré sous le plan : ouverture battante → 80 cm de dégagement devant</li><li><strong>Lave-vaisselle</strong> — à côté de l\'évier (circuit court eau sale → lave-vaisselle → rangement). Porte ouverte : 60 cm de projection. Encastré en hauteur (tiroir à 40 cm du sol) = moins de mal de dos</li><li><strong>Hotte aspirante</strong> — hauteur au-dessus des plaques : 65 cm (gaz) ou 55 cm (induction). Débit : 350-600 m³/h selon la surface. Hotte intégrée au plan (Bora, Novy, Elica) = libère visuellement l\'espace</li></ul>'
             },
             {
-              title: 'L\'îlot central : fonctions et dimensions',
-              content: 'Fonction repas : hauteur 75 cm (table) ou 90 cm (bar) ou 110 cm (mange-debout). Prévoir 60 cm de largeur par convive. Fonction cuisson : hotte intégrée dans le plan (type Bora, Novy, Elica) ou hotte suspendue. Prévoir une amenée de gaz et/ou électricité dans le sol. Fonction rangement : tiroirs côté cuisine + façade lisse côté salon. Dimensions minimales : largeur 90 cm pour un îlot avec rangement seul, 120 cm avec cuisson, 150 cm avec cuisson + coin repas. Passage autour : minimum 90 cm (120 cm idéal).'
+              title: 'L\'îlot central — Fonctions & Dimensions',
+              content: '<ul><li><strong>Largeur minimale de l\'îlot :</strong><ul><li>Rangement seul : 90 cm</li><li>Avec cuisson : 120 cm</li><li>Avec cuisson + coin repas : 150 cm</li></ul></li><li><strong>Longueur</strong> — 120 cm minimum (2 places assises), 180-240 cm pour 4-6 places</li><li><strong>Passage autour de l\'îlot</strong> — 90 cm minimum, 120 cm idéal (ouverture lave-vaisselle/four sans bloquer le passage)</li><li><strong>Fonction repas — hauteurs :</strong><ul><li>Hauteur table : 75 cm → tabouret 45 cm</li><li>Hauteur bar : 90 cm → tabouret 65 cm</li><li>Hauteur mange-debout : 110 cm → tabouret 80 cm</li></ul></li><li><strong>Largeur par convive</strong> — 60 cm minimum par personne assise</li><li><strong>Fonction cuisson sur l\'îlot</strong> — prévoir amenée électricité et/ou gaz dans le sol (à anticiper AVANT la chape). Hotte intégrée au plan ou hotte suspendue</li><li><strong>Fonction rangement</strong> — côté cuisine : tiroirs + casserolier + poubelle tri. Côté salon : façade lisse fermée (le désordre est invisible du canapé)</li><li><strong>Prises électriques</strong> — prises escamotables dans l\'îlot (type bloc prise rétractable). Minimum 2, idéal 4</li></ul>'
             },
             {
-              title: 'Matériaux de plan de travail',
-              content: 'Pierre naturelle (granit, marbre, quartzite) : noble, résistant (granit), sensible aux acides (marbre). Quartz reconstitué (Silestone, Caesarstone) : très résistant, large choix de couleurs. Céramique grand format (Sapienstone, Dekton) : ultra-résistant, imite tous les matériaux. Bois massif (hêtre, chêne) : chaleureux, s\'entretient (huile). Inox : professionnel, inrayable. Béton ciré : tendance mais sensible. Terrazzo : retour en force. Le Corian (résine) : réparable, thermoformable, sans joint.'
+              title: 'Plans de travail — Dimensions & Matériaux',
+              content: '<ul><li><strong>Hauteur du plan de travail</strong> — standard : 85-90 cm (adapté à une taille de 160-175 cm). Astuce : coude plié à 90° - 10 à 15 cm = hauteur idéale personnalisée</li><li><strong>Profondeur</strong> — 60 cm (standard crédence) ou 65-70 cm (îlot avec coin repas intégré)</li><li><strong>Épaisseur</strong> — 20 mm (quartz, céramique), 30 mm (granit, marbre), 40 mm (bois massif), 12 mm (céramique fine type Dekton)</li><li><strong>Pierre naturelle (granit, marbre, quartzite)</strong> — noble et résistant (granit). Marbre : sensible aux acides (citron, vinaigre). Quartzite : la plus résistante des pierres. Prix : 200-500 €/ml posé</li><li><strong>Quartz reconstitué (Silestone, Caesarstone)</strong> — ultra résistant, large choix de couleurs, sans entretien. Prix : 150-350 €/ml</li><li><strong>Céramique grand format (Dekton, Sapienstone)</strong> — résiste à tout (chaleur, rayures, UV, acides). Prix : 200-400 €/ml</li><li><strong>Bois massif (chêne, hêtre)</strong> — chaleureux, vivant. Entretien : huile 2×/an. Sensible à l\'eau stagnante. Prix : 100-250 €/ml</li><li><strong>Inox</strong> — professionnel, hygiénique, inrayable. Prix : 300-500 €/ml</li><li><strong>Corian (résine acrylique)</strong> — thermoformable, réparable, sans joint. Vasque intégrée possible. Prix : 250-450 €/ml</li></ul>'
             },
             {
-              title: 'L\'intégration séjour-cuisine',
-              content: 'L\'îlot fait la transition : côté cuisine = fonctionnel (tiroirs, prises, évier). Côté séjour = esthétique (façade lisse, matériau noble, espace repas). Alignement des finitions : la cuisine doit « disparaître » quand on regarde depuis le canapé. Façades lisses, poignées intégrées (gorge ou push-to-open), électroménager intégré. L\'éclairage de l\'îlot (3 suspensions alignées ou rampe LED) crée un point focal.'
+              title: 'Meubles, rangements & électroménager',
+              content: '<ul><li><strong>Meubles bas</strong> — hauteur : 72 cm (caisson), profondeur : 56-58 cm (caisson) + 2-4 cm de façade. Tiroirs > portes (accès à 100 % du contenu vs 50 %)</li><li><strong>Meubles hauts</strong> — hauteur : 70-90 cm, profondeur : 30-35 cm. Bas du meuble haut : à 55-60 cm au-dessus du plan de travail (= 140-150 cm du sol)</li><li><strong>Colonnes</strong> — hauteur : 200-220 cm, profondeur : 58-60 cm. Pour four, micro-ondes, réfrigérateur encastré, cellier</li><li><strong>Crédence</strong> — hauteur : 55-60 cm (entre plan de travail et meubles hauts). Matériaux : carrelage, verre laqué, inox, pierre, HPL. Derrière la plaque de cuisson : matériau résistant à la chaleur obligatoire</li><li><strong>Éclairage sous meubles hauts</strong> — réglette LED encastrée à l\'avant du meuble haut. Température : 3 000 K (blanc chaud) pour la cuisine. Minimum 300 lux sur le plan de travail</li><li><strong>Poubelle tri sélectif intégrée</strong> — dans un tiroir sous l\'évier. 2 bacs (30 L + 15 L) minimum. Système coulissant type Blanco ou Franke</li><li><strong>3 suspensions alignées au-dessus de l\'îlot</strong> — hauteur : 70-80 cm au-dessus du plan. Espacement : 50-70 cm entre chaque. LE geste déco le plus efficace en cuisine</li></ul>'
+            },
+            {
+              title: 'Intégration séjour-cuisine & finitions',
+              content: '<ul><li><strong>Principe</strong> — côté cuisine = fonctionnel (tiroirs, prises, évier). Côté séjour = esthétique (façade lisse, matériau noble, coin repas)</li><li><strong>Façades</strong> — lisses et sans poignées (gorge, push-to-open ou poignée profil) pour que la cuisine « disparaisse » vue du canapé</li><li><strong>Électroménager intégré</strong> — tout doit être habillé de façades assorties : réfrigérateur, lave-vaisselle, micro-ondes. Seule exception : la hotte (si suspendue = objet déco)</li><li><strong>Alignement des hauteurs</strong> — îlot, plan de travail, table de repas : harmoniser les niveaux pour une lecture visuelle fluide</li><li><strong>Sol</strong> — même sol séjour et cuisine (= continuité visuelle, espace perçu plus grand). Si sols différents : barre de seuil ou joint laiton encastré</li><li><strong>Raccordements à anticiper</strong> — évacuation EU dans l\'îlot (pente 1-2 %, diamètre 40 mm mini), arrivées d\'eau, gaz éventuel, électricité (gaine dans la chape). TOUT vérifier avant de dessiner le plan définitif</li></ul>'
             }
           ],
           keyPoints: [
-            'Triangle d\'activité : périmètre entre 3,60 m et 6,60 m',
-            'Passage minimum 90 cm autour de l\'îlot (120 cm idéal)',
-            'L\'îlot central = la pièce architecturale de l\'appartement moderne',
-            'Côté cuisine fonctionnel, côté salon esthétique — toujours',
-            '3 suspensions au-dessus de l\'îlot = le geste déco le plus efficace en cuisine'
+            'Triangle d\'activité : périmètre 3,60 à 6,60 m — la règle de base de toute cuisine',
+            'Passage autour de l\'îlot : 90 cm minimum, 120 cm idéal',
+            'Hauteur plan de travail : 85-90 cm · hauteur bar : 90 cm · mange-debout : 110 cm',
+            'Tout l\'électroménager intégré + façades lisses = la cuisine disparaît vue du séjour',
+            '3 suspensions à 70-80 cm au-dessus de l\'îlot = le geste déco n°1 en cuisine'
           ],
           tips: [
             'Toujours vérifier que l\'évacuation des eaux usées est possible dans l\'îlot AVANT de dessiner — c\'est la contrainte n°1',
             'La hotte aspirante intégrée au plan (Bora, Novy) libère visuellement l\'espace — investissement mais résultat spectaculaire',
-            'Prévoir des prises intégrées dans l\'îlot (type prises escamotables) — on n\'en met jamais assez'
+            'Prévoir des prises escamotables dans l\'îlot — on n\'en met JAMAIS assez. Minimum 4 (robots, blender, téléphone, laptop)'
           ],
           tags: ['cuisine', 'îlot', 'plan de travail', 'ergonomie', 'triangle activité', 'ouvert']
         },
@@ -2362,33 +2366,45 @@ const APP_DATA = {
           summary: 'La salle de bain est la pièce la plus technique d\'un projet. En petit espace, chaque centimètre est stratégique. C\'est aussi là que le client attend le plus de « wow effect » — un projet réussi commence souvent ici.',
           sections: [
             {
-              title: 'Les dimensions incompressibles',
-              content: 'Douche à l\'italienne : minimum 80x80 cm (confort : 90x120 cm ou 90x140 cm). WC : emprise 60x40 cm + dégagement 60 cm devant. Lavabo : vasque posée (Ø 40-45 cm) ou meuble vasque (60-120 cm de large) + 60 cm de dégagement devant. Passage : 60 cm minimum entre deux éléments. Baignoire : si possible, 170x70 cm minimum. Attention : les portes battantes mangent de l\'espace — préférer porte coulissante ou battante inversée.'
+              title: 'Dimensions incompressibles — Douche',
+              content: '<ul><li><strong>Douche à l\'italienne (receveur extra-plat ou chape)</strong> — minimum : 80 × 80 cm · confort : 90 × 120 cm · grand confort : 90 × 140 cm ou 100 × 140 cm</li><li><strong>Pente d\'évacuation</strong> — 1 à 2 % vers la bonde (1 cm/m minimum). Épaisseur de chape : 5-7 cm mini pour intégrer la pente + la bonde</li><li><strong>Caniveau de douche (linéaire)</strong> — largeur 7-10 cm, longueur = largeur de la douche. Position : contre le mur (le plus discret) ou central</li><li><strong>Paroi de douche fixe</strong> — verre trempé 8 mm mini, hauteur 200 cm, largeur 80-120 cm. Dégagement pour entrer : 50 cm mini</li><li><strong>Seuil / Ressaut</strong> — 2 cm maximum pour l\'accessibilité PMR. Idéal = 0 (plain-pied total)</li></ul>'
             },
             {
-              title: 'Optimisations en petit espace',
-              content: 'La douche à l\'italienne (sans receveur) unifie le sol et agrandit visuellement. Les WC suspendus libèrent le sol (nettoyage + perception d\'espace). Le meuble vasque suspendu idem. La niche encastrée dans le mur (étagère dans la douche, niche à cosmétiques) = rangement qui ne prend pas de place. Le grand miroir (pleine largeur au-dessus du meuble vasque) double visuellement la pièce. Le carrelage grand format (60x60 ou 60x120) réduit les joints = plus de sérénité visuelle.'
+              title: 'Dimensions incompressibles — WC',
+              content: '<ul><li><strong>WC à poser classique</strong> — emprise au sol : L 65-70 cm × l 35-40 cm. Hauteur de cuvette : 40 cm (standard) ou 45-48 cm (confort / PMR)</li><li><strong>WC suspendu</strong> — cuvette : L 50-55 cm × l 35-36 cm. Bâti-support : épaisseur 15-20 cm (Geberit Duofix = référence) + habillage = 20-25 cm d\'emprise au mur</li><li><strong>WC compact / court</strong> — cuvette raccourcie : L 48-50 cm. Idéal pour les SDB < 4 m²</li><li><strong>Dégagements obligatoires autour du WC :</strong><ul><li>Devant la cuvette : 60 cm minimum (PMR : 80 cm)</li><li>Latéralement : 15 cm minimum de chaque côté entre la cuvette et un mur ou un meuble (PMR : 25 cm côté transfert)</li><li>Axe de la cuvette : à 40-45 cm du mur latéral le plus proche</li></ul></li><li><strong>Porte-rouleau</strong> — hauteur : 60-70 cm du sol, à 20-30 cm devant l\'axe de la cuvette</li><li><strong>Réservoir apparent vs encastré</strong> — apparent : ajouter 18-20 cm de profondeur. Encastré (bâti-support) : plus propre mais impose un coffrage de 20-25 cm</li><li><strong>WC lave-mains intégré</strong> — réservoir + lave-mains sur le dessus (type Wici Concept). Emprise identique, zéro espace supplémentaire pour le lavage des mains</li></ul>'
             },
             {
-              title: 'Le carrelage : choix stratégique',
-              content: 'Sol : grès cérame antidérapant (R10 ou R11), grand format. Murs : tout carrelé (sol au plafond) = effet « bain turc » luxueux. Matériaux stars : zellige (artisanal, lumineux), travertin (warm luxe), terrazzo (graphique), marbre (classique luxe). Format : le grand format (30x60 minimum) agrandit l\'espace. Le zellige 10x10 en quinconce donne du caractère à une douche. Calepinage : poser les carreaux à joint continu mur-sol = impression de continuité.'
+              title: 'Dimensions incompressibles — Lavabo & Meuble vasque',
+              content: '<ul><li><strong>Vasque à poser</strong> — Ø 35-45 cm (ronde) ou 40 × 40 cm à 50 × 40 cm (rectangulaire). Hauteur totale plan + vasque : 85-90 cm (le standard)</li><li><strong>Vasque à encastrer / sous-plan</strong> — largeur 50-60 cm, profondeur 40-45 cm. Le plan de toilette dépasse de 5 cm minimum sur les côtés</li><li><strong>Meuble vasque suspendu</strong> — largeurs standard : 60 / 80 / 100 / 120 cm. Profondeur : 45-50 cm. Hauteur : 45-50 cm (le meuble seul, hors plan)</li><li><strong>Dégagement devant le lavabo</strong> — 60 cm minimum (pour se pencher et se laver les mains). 70 cm confortable</li><li><strong>Miroir</strong> — largeur = largeur du meuble vasque minimum. Hauteur : 70-90 cm. Bas du miroir : 110-120 cm du sol</li><li><strong>Appliques</strong> — de chaque côté du miroir à 170 cm du sol. OU bandeau LED intégré au miroir (éclairage de face = le plus flatteur)</li><li><strong>Double vasque</strong> — largeur mini : 120 cm (2 × 60 cm). Confort : 140 cm. Entre-axe des vasques : 60-70 cm minimum</li></ul>'
             },
             {
-              title: 'La robinetterie encastrée',
-              content: 'La robinetterie encastrée (mitigeur + douchette intégrés au mur) libère 15-20 cm de profondeur dans la douche. Elle donne un rendu épuré et haut de gamme. Marques de référence : Fantini, Cea Design, Axor (Hansgrohe), Dornbracht, RVB (français). Prévoir l\'encastrement AVANT le plâtre — un boîtier d\'encastrement est nécessaire. La pomme de tête encastrée au plafond = le luxe ultime de la douche.'
+              title: 'Dimensions incompressibles — Baignoire',
+              content: '<ul><li><strong>Baignoire standard</strong> — 170 × 70 cm (classique) ou 170 × 75 cm (confort). Mini : 140 × 70 cm (baignoire sabot / assise)</li><li><strong>Baignoire îlot</strong> — emprise : 170-180 × 80 cm + dégagement de 60 cm tout autour (= pièce de 8 m² mini)</li><li><strong>Dégagement latéral</strong> — 60 cm minimum sur un côté pour entrer / sortir. Si 2 côtés accessibles : 40 cm mini côté mur</li><li><strong>Robinetterie baignoire</strong> — mitigeur bain/douche mural : à 70-80 cm du fond de la baignoire et 20-25 cm au-dessus du bord. Sur pied (baignoire îlot) : sortie de sol à 80-85 cm du sol fini</li><li><strong>Combo douche-baignoire</strong> — baignoire + paroi fixe ou rideau. Douchette sur barre coulissante : barre à 110-190 cm du fond de baignoire</li></ul>'
+            },
+            {
+              title: 'Passages, circulations & accessoires',
+              content: '<ul><li><strong>Passage entre deux éléments</strong> — 60 cm minimum (75 cm confortable). Entre meuble vasque et mur opposé : 70 cm mini</li><li><strong>Porte de SDB</strong> — 73 cm de passage libre minimum. Porte coulissante = gain de 0,5 m² vs battante. Si battante : ouverture vers l\'extérieur (ou inversée) obligatoire si SDB < 4 m²</li><li><strong>Porte-serviettes</strong> — barre à 120-140 cm du sol. Radiateur sèche-serviettes : largeur 40-60 cm, hauteur 120-180 cm, à 60 cm minimum du point d\'eau (zone 2 électrique)</li><li><strong>Niche encastrée (douche)</strong> — hauteur : 30 cm. Largeur : 30-60 cm. Profondeur : 10-15 cm (= l\'épaisseur du doublage). À prévoir DÈS le calepinage carrelage</li><li><strong>Barres de maintien</strong> — hauteur : 70-80 cm dans la douche (horizontale), 80-110 cm verticale à l\'entrée. PMR : obligatoire, charge 100 kg minimum</li><li><strong>Prise électrique</strong> — zone 3 uniquement (> 60 cm du point d\'eau). Hauteur : 110-120 cm du sol, à côté du miroir</li><li><strong>VMC / Extraction</strong> — obligatoire en SDB sans fenêtre. Débit : 30 m³/h (SDB) et 15 m³/h (WC). Bouche en partie haute (max 20 cm du plafond)</li></ul>'
+            },
+            {
+              title: 'Optimisations & effets visuels',
+              content: '<ul><li><strong>Tout suspendre</strong> — WC suspendu + meuble vasque suspendu = sol entièrement visible = pièce perçue plus grande + nettoyage facile</li><li><strong>Douche à l\'italienne</strong> — supprime la marche du receveur, unifie le sol. Le standard absolu du projet contemporain</li><li><strong>Grand format de carrelage</strong> — 60 × 60 cm ou 60 × 120 cm. Moins de joints = lecture visuelle apaisée = pièce perçue plus grande</li><li><strong>Sol au plafond en carrelage</strong> — tout carrelé = effet « bain turc » luxueux. Le zellige, le travertin ou le marbre sol/plafond = salle de bain de magazine</li><li><strong>Grand miroir pleine largeur</strong> — au-dessus du meuble vasque, de mur à mur = double visuellement la profondeur</li><li><strong>Robinetterie encastrée</strong> — mitigeur + douchette intégrés au mur = libère 15-20 cm de profondeur dans la douche. Boîtier d\'encastrement à prévoir AVANT le plâtre</li><li><strong>Niche encastrée dans la douche</strong> — rangement qui ne prend zéro place au sol. À penser dès le plan</li><li><strong>Éclairage</strong> — LED en gorge au plafond (lumière indirecte) + miroir rétroéclairé + spot orientable douche (IP65 obligatoire). Éviter le plafonnier unique = plat et triste</li></ul>'
+            },
+            {
+              title: 'Matériaux stars & robinetterie',
+              content: '<ul><li><strong>Zellige 10 × 10 cm</strong> — artisanal, lumineux, irrégulier. En quinconce dans la douche = maximum de caractère. Vert d\'eau + laiton = le combo le plus photographié</li><li><strong>Travertin</strong> — warm luxe, effet pierre naturelle. En 60 × 60 ou en opus romain. Boucher les trous ou laisser brut (2 esthétiques différentes)</li><li><strong>Terrazzo</strong> — graphique, coloré ou neutre. En grands carreaux 60 × 60 ou en plan de vasque coulé</li><li><strong>Grès cérame antidérapant</strong> — R10 minimum au sol (R11 recommandé en douche). Imite tout : bois, pierre, marbre, béton</li><li><strong>Robinetterie de référence</strong> — Haut de gamme : Fantini, Cea Design, Dornbracht. Premium : Axor (Hansgrohe). Rapport qualité/prix : Grohe, RVB (français). Design : Ritmonio, Zucchetti</li><li><strong>Pomme de tête encastrée au plafond</strong> — Ø 25-40 cm, le luxe ultime de la douche. Débit : 12-15 L/min. Prévoir l\'alimentation dans le faux-plafond</li></ul>'
             }
           ],
           keyPoints: [
-            'Douche à l\'italienne = standard absolu du projet contemporain',
-            'WC + meuble vasque suspendus = espace visuel et propreté',
-            'Grand format de carrelage = moins de joints = plus grand visuellement',
-            'La robinetterie encastrée libère 15-20 cm — indispensable en petit espace',
-            'Sol au plafond en carrelage = salle de bain de magazine'
+            'WC suspendu : cuvette 50-55 × 35 cm + bâti 20 cm + 60 cm devant + 15 cm de chaque côté minimum',
+            'Douche italienne mini 80 × 80 cm, confort 90 × 120 cm — pente 1-2 % vers la bonde',
+            'Meuble vasque suspendu + grand miroir pleine largeur = la combinaison gagnante en petit espace',
+            'Grand format carrelage (60 × 120) + sol au plafond = effet magazine garanti',
+            'La robinetterie encastrée libère 15-20 cm — indispensable quand chaque cm compte'
           ],
           tips: [
             'Vérifier l\'épaisseur de la chape et la faisabilité de la pente pour la douche italienne AVANT de promettre au client',
-            'La niche encastrée dans la douche se fait en même temps que le carrelage — la penser dès le plan',
-            'Zellige 10x10 vert d\'eau dans la douche + robinetterie laiton = combinaison la plus photographiée sur Instagram'
+            'Le WC compact (cuvette 48-50 cm) existe chez Villeroy & Boch, Duravit, Geberit — il gagne 15-20 cm précieux',
+            'Zellige 10 × 10 vert d\'eau + robinetterie laiton brossé + niche encastrée = la SDB la plus instagrammable avec un budget raisonnable'
           ],
           tags: ['salle de bain', 'douche', 'carrelage', 'compact', 'robinetterie', 'zellige']
         },
@@ -2400,33 +2416,33 @@ const APP_DATA = {
           summary: 'La verrière est devenue l\'élément signature de la rénovation contemporaine. Elle sépare les espaces tout en laissant passer la lumière et les regards — c\'est le compromis parfait entre ouverture et intimité.',
           sections: [
             {
-              title: 'Les typologies de verrière',
-              content: 'Verrière d\'atelier (la classique) : structure acier noir + verre clair, style industriel. La plus demandée. Verrière en aluminium : plus fine, plus contemporaine, teinte au choix (noir, blanc, laiton). Verrière bois : plus chaleureuse, esprit scandinave ou japonais (shoji). Verrière avec porte intégrée (coulissante ou battante). Verrière imposte : juste un bandeau vitré au-dessus d\'une porte ou d\'un mur bas — discret mais efficace. Verrière toiture : pour les combles et rez-de-jardin.'
+              title: 'Typologies de verrière',
+              content: '<ul><li><strong>Verrière d\'atelier (la classique)</strong> — structure acier noir + verre clair, style industriel. La plus demandée. Montants fins (25-40 mm), petits carreaux</li><li><strong>Verrière aluminium</strong> — profils plus fins (20-30 mm), plus contemporaine. Teintes au choix : noir, blanc, gris, laiton. Plus légère que l\'acier</li><li><strong>Verrière bois</strong> — plus chaleureuse, esprit scandinave ou japonais (shoji). Montants 30-50 mm. Bois peint ou lasuré</li><li><strong>Verrière avec porte intégrée</strong> — porte coulissante (gain de place) ou battante (+ classique). Largeur de porte : 73-83 cm de passage libre</li><li><strong>Verrière imposte</strong> — bandeau vitré au-dessus d\'une porte ou d\'un mur bas. Hauteur : 40-80 cm. Discret mais efficace pour le second jour</li><li><strong>Verrière toiture / zénithale</strong> — pour les combles, rez-de-jardin, extensions. Verre feuilleté + traitement anti-UV obligatoire</li><li><strong>Paroi vitrée fixe (type douche/SDB)</strong> — verre trempé 8-10 mm, profilé minimal. Donne un style « loft » à la salle de bain</li></ul>'
             },
             {
-              title: 'Dimensionnement et pose',
-              content: 'Largeur des montants : 25-40 mm (acier) à 20-30 mm (aluminium). Verre : clair (4-6 mm), feuilleté (sécurité obligatoire si grande surface), sablé ou flûté (intimité partielle). Hauteur standard : du sol au plafond OU sur allège (muret de 90-110 cm + verrière au-dessus). Fixation : sur rail haut et bas, ou scellée dans le mur. Épaisseur totale : 4-6 cm. Poids : 15-25 kg/m² — vérifier que le support peut recevoir la charge. Attention acoustique : le verre simple isole peu — le feuilleté acoustique (type 33.1) améliore de 3-5 dB.'
+              title: 'Dimensions & Spécifications techniques',
+              content: '<ul><li><strong>Hauteur</strong> — sol au plafond (le plus impactant) OU sur allège (muret de 90-110 cm + verrière au-dessus)</li><li><strong>Largeur des montants</strong> — acier : 25-40 mm · aluminium : 20-30 mm · bois : 30-50 mm</li><li><strong>Épaisseur totale de la verrière</strong> — 4-6 cm (montants + verre)</li><li><strong>Verre :</strong><ul><li>Clair : 4-6 mm (standard)</li><li>Feuilleté : 33.1 ou 44.2 (obligatoire si grande surface → sécurité)</li><li>Feuilleté acoustique : 33.1 silence — améliore de 3-5 dB</li><li>Sablé ou dépoli : intimité partielle (chambre, bureau)</li><li>Flûté / cannelé : tendance 2024-2026, laisse passer la lumière, floute les formes</li></ul></li><li><strong>Poids</strong> — 15-25 kg/m². Vérifier que le support (sol et mur) peut recevoir la charge</li><li><strong>Fixation</strong> — sur rail haut et bas (le plus courant) ou scellée dans le mur (rénovation). Chevilles chimiques si mur ancien</li><li><strong>Acoustique</strong> — verre simple 4 mm : Rw 25-28 dB (faible). Feuilleté 33.1 : Rw 30-33 dB (correct). Double vitrage : Rw 35-38 dB (si besoin d\'isolation phonique réelle)</li></ul>'
             },
             {
-              title: 'Applications les plus courantes',
-              content: 'Séparation cuisine / salon : la plus classique, permet de fermer la cuisine (fumées, bruit) tout en gardant la lumière. Séparation chambre / séjour : dans un studio ou T2, avec verre sablé pour l\'intimité. Séparation entrée / pièce de vie : crée un sas d\'entrée lumineux. Douche / salle de bain : verrière ou paroi vitrée de type industriel comme paroi de douche. Bureau dans le séjour : créer un espace de travail fermé visuellement mais ouvert lumineusement.'
+              title: 'Applications & Implantation',
+              content: '<ul><li><strong>Cuisine / salon</strong> — l\'application n°1. Ferme la cuisine (fumées, bruit, odeurs) tout en gardant lumière et visuel. Verrière avec porte coulissante = le top</li><li><strong>Chambre / séjour</strong> — dans un studio ou T2. Verre sablé ou flûté pour l\'intimité. Sur allège (muret 100 cm) = la tête de lit côté séjour est masquée</li><li><strong>Entrée / pièce de vie</strong> — crée un sas d\'entrée lumineux. Impose + verrière latérale = effet spectaculaire</li><li><strong>Douche / salle de bain</strong> — paroi vitrée style industriel comme paroi de douche. Verre trempé 8 mm minimum + traitement anti-calcaire</li><li><strong>Bureau dans le séjour</strong> — espace de travail fermé visuellement mais ouvert à la lumière. Verrière 2-3 carreaux + porte = micro-bureau de 3-5 m²</li><li><strong>Verrière + mur d\'accent</strong> — peindre le mur derrière la verrière en couleur sombre (bleu nuit, vert sauge, terracotta) = profondeur et caractère</li></ul>'
             },
             {
-              title: 'Fabricants et budget',
-              content: 'Sur mesure artisan métallier : 800-1 500 €/m² (le plus beau, délai 4-8 semaines). Industriel haut de gamme : GoodHome (Castorama), Lapeyre, Leroy Merlin — 300-600 €/m² (standard, pose rapide). Fabricants pros : Atelier du Métal, Art Métal Concept, Turpin-Longueville. Budget : verrière 2x2,5 m (cuisine/salon) = 2 000-5 000 € selon la solution. La pose représente 30-50% du budget total.'
+              title: 'Fabricants, pose & Budget',
+              content: '<ul><li><strong>Sur mesure artisan métallier</strong> — 800-1 500 €/m². Le plus beau, personnalisable à 100 %. Délai : 4-8 semaines de fabrication + 1 jour de pose</li><li><strong>Industriel haut de gamme</strong> — GoodHome (Castorama), Lapeyre, Leroy Merlin, Atelier du Métal — 300-600 €/m². Standards et sur mesure limité. Pose rapide (1/2 journée)</li><li><strong>Fabricants professionnels</strong> — Art Métal Concept, Turpin-Longueville, Atelier 46. Budget intermédiaire, qualité supérieure aux GSB</li><li><strong>Budget type — verrière cuisine/salon 2 × 2,5 m :</strong><ul><li>GSB (kit) : 1 200-1 800 € pose comprise</li><li>Artisan standard : 2 500-3 500 € pose comprise</li><li>Artisan haut de gamme (laiton, grande hauteur) : 4 000-6 000 €</li></ul></li><li><strong>La pose</strong> — représente 30-50 % du budget total. Inclut : scellement, calage, joints silicone souple (obligatoire en bâtiment ancien — les murs bougent)</li><li><strong>Entretien</strong> — acier : cire ou vernis pour conserver le noir profond, ou laisser patiner. Verre : produit vitres classique. Le verre flûté marque plus les traces de doigts</li></ul>'
             }
           ],
           keyPoints: [
-            'La verrière = la solution n°1 pour apporter de la lumière en second jour',
-            'Acier = industriel, alu = contemporain, bois = chaleureux',
-            'Verre feuilleté obligatoire en grande surface (sécurité)',
-            'Verrière sur allège (muret) = séparation visuelle tout en laissant passer la lumière en haut',
-            'Budget : 300 €/m² (GSB) à 1 500 €/m² (sur mesure artisan)'
+            'La verrière = solution n°1 pour apporter de la lumière en second jour',
+            'Acier = industriel · alu = contemporain · bois = chaleureux — choisir selon le style du projet',
+            'Verre feuilleté obligatoire en grande surface (sécurité) — feuilleté acoustique si séparation chambre',
+            'Sur allège (muret 90-110 cm) = séparation visuelle en bas + lumière en haut',
+            'Budget : 300 €/m² (GSB) à 1 500 €/m² (artisan sur mesure)'
           ],
           tips: [
-            'L\'ajout d\'un verre flûté (cannelé) dans certains panneaux apporte du caractère tout en préservant l\'intimité',
-            'Toujours prévoir un joint silicone souple entre la verrière et le mur — les bâtiments anciens bougent',
-            'La verrière acier se patine naturellement — appliquer une cire pour conserver le noir profond ou laisser vieillir'
+            'Le verre flûté (cannelé) dans certains panneaux apporte du caractère tout en préservant l\'intimité — la grosse tendance actuelle',
+            'Toujours un joint silicone souple entre verrière et mur — les bâtiments anciens bougent',
+            'Pour un effet maximal : verrière sol-plafond + porte coulissante intégrée + mur d\'accent de couleur derrière'
           ],
           tags: ['verrière', 'cloison', 'vitré', 'lumière', 'séparation', 'acier']
         },
@@ -2438,33 +2454,33 @@ const APP_DATA = {
           summary: 'La banquette intégrée est la solution la plus élégante pour gagner de la place dans un coin repas, une entrée ou un salon. C\'est aussi un geste architectural fort — un élément construit qui donne du caractère à un espace.',
           sections: [
             {
-              title: 'Pourquoi la banquette',
-              content: 'Gain de place : une banquette contre un mur prend 40-50 cm de profondeur (vs 60-80 cm pour des chaises). Rangement caché : assise relevable ou tiroirs sous l\'assise. Confort : avec de bons coussins, c\'est plus confortable et convivial qu\'une chaise. Esthétique : un élément construit « intégré » qui donne un effet sur-mesure et architecturé. Multifonction : coin repas le jour, espace lecture le soir, lit d\'appoint avec coussins.'
+              title: 'Pourquoi la banquette — Avantages',
+              content: '<ul><li><strong>Gain de place</strong> — une banquette contre un mur : 40-50 cm de profondeur (vs 60-80 cm pour des chaises + recul). Gain net : 20-30 cm de circulation</li><li><strong>Rangement caché</strong> — assise relevable sur vérin (coffre) ou tiroirs frontaux sous l\'assise. Volume de stockage : 50-100 L par mètre linéaire</li><li><strong>Confort</strong> — avec de bons coussins (mousse HR35 minimum), plus confortable et convivial qu\'une chaise</li><li><strong>Signature architecturale</strong> — un élément construit « intégré » qui donne un effet sur-mesure et architecturé au lieu d\'un simple meuble posé</li><li><strong>Multifonction</strong> — coin repas le jour, espace lecture le soir, lit d\'appoint avec matelas d\'appoint 8 cm</li></ul>'
             },
             {
-              title: 'Dimensions',
-              content: 'Profondeur d\'assise : 40-50 cm (sans dossier contre le mur) ou 55-65 cm (avec coussins de dossier). Hauteur d\'assise : 43-47 cm (standard table 75 cm). Pour un coin repas en hauteur bar : 60-65 cm (table 90 cm). Espace sous l\'assise pour le rangement : 25-35 cm de hauteur utile. Le dossier : soit le mur directement (avec coussins rapportés), soit un dossier construit à 15-20° d\'inclinaison.'
+              title: 'Dimensions de référence',
+              content: '<ul><li><strong>Profondeur d\'assise :</strong><ul><li>Sans dossier (contre le mur) : 40-50 cm</li><li>Avec coussins de dossier rapportés : 55-65 cm (assise 40 cm + dossier 15-25 cm)</li><li>Avec dossier intégré construit : 50-55 cm</li></ul></li><li><strong>Hauteur d\'assise :</strong><ul><li>Coin repas (table 75 cm) : 43-47 cm</li><li>Bar / plan surélevé (table 90 cm) : 60-65 cm</li><li>Banquette basse / lecture : 35-40 cm</li></ul></li><li><strong>Espace sous l\'assise (rangement)</strong> — hauteur utile : 25-35 cm. Profondeur utile : 35-45 cm</li><li><strong>Dossier :</strong><ul><li>Coussins rapportés contre le mur : épaisseur 10-15 cm, hauteur 40-50 cm</li><li>Dossier construit : inclinaison 10-15° en arrière pour le confort</li><li>Hauteur du dossier : 40-50 cm au-dessus de l\'assise</li></ul></li><li><strong>Longueur par convive</strong> — 55-60 cm par personne assise (vs 50-55 cm sur chaise)</li><li><strong>Table associée</strong> — débord de la table par rapport à l\'assise : 25-30 cm minimum (pour les jambes). Pied de table à 10-15 cm du bord côté banquette (sinon on ne peut pas s\'asseoir)</li></ul>'
             },
             {
               title: 'Types de construction',
-              content: 'Maçonnée : en béton ou brique, recouverte d\'un habillage (bois, tissu). Solide, définitive. En bois (menuiserie) : la plus courante. Contreplaqué de bouleau ou MDF, avec assise relevable sur vérin. Sur mesure intégrée : la banquette fait partie du mobilier de cuisine ou d\'un meuble bas qui court le long du mur. En L ou en U : autour d\'une table dans un angle — optimise les coins souvent perdus.'
+              content: '<ul><li><strong>Menuiserie bois (la plus courante)</strong> — contreplaqué de bouleau 18 mm ou MDF 19 mm. Assise relevable sur vérin à gaz (2 vérins pour une longueur > 80 cm). Finition : laque, placage chêne, mélaminé</li><li><strong>Maçonnée</strong> — en béton, brique ou carreaux de plâtre. Recouverte d\'un habillage (bois, mousse + tissu, tadelakt). Solide et définitive. Idéale en extérieur (terrasse) ou pour un effet brutaliste</li><li><strong>Banquette en L ou en U</strong> — autour d\'une table dans un angle. Optimise les coins souvent perdus. Capacité : 4-6 personnes en L, 6-8 en U</li><li><strong>Sur mesure intégrée</strong> — la banquette fait partie du mobilier de cuisine ou d\'un meuble bas qui court le long du mur. Même matériau, mêmes façades = continuité visuelle</li><li><strong>Mousse d\'assise</strong> — HR35 minimum (haute résilience, densité 35 kg/m³) pour un confort durable. Épaisseur : 8-12 cm. Housse déhoussable et lavable obligatoire (surtout coin repas + enfants)</li></ul>'
             },
             {
-              title: 'Les finitions',
-              content: 'Bois apparent (chêne, bouleau, noyer) : esprit scandinave ou japonais. Tissu tendu (bouclette, velours, lin) : confort et chaleur. Cuir ou simili : entretien facile, esprit bistrot. Coussins rapportés : le plus simple et le plus modulable. Wabi-sabi : banquette en béton brut ou tadelakt + coussins en lin — signature contemporaine. Associer la banquette au même bois que le sol ou la cuisine = continuité matière.'
+              title: 'Finitions & Styles',
+              content: '<ul><li><strong>Bois apparent</strong> — chêne, bouleau, noyer. Esprit scandinave ou japonais. Finition huile ou vernis mat. La plus intemporelle</li><li><strong>Tissu tendu sur mousse</strong> — bouclette (tendance 2024-2026), velours (luxe), lin (naturel). Agrafé ou avec housse zippée. La plus confortable</li><li><strong>Cuir ou simili</strong> — entretien facile, esprit bistrot / brasserie. Le simili de qualité (skaï Casal, Kvadrat) vieillit bien</li><li><strong>Coussins rapportés</strong> — le plus simple et le plus modulable. On change les housses selon les saisons. Mousse HR + housse lin = le classique</li><li><strong>Wabi-sabi / brutaliste</strong> — banquette en béton brut ou tadelakt + coussins en lin brut. Signature contemporaine très forte</li><li><strong>Continuité matière</strong> — même bois que le sol (parquet) ou que les meubles de cuisine = l\'élément semble « faire partie de l\'architecture »</li><li><strong>Budget</strong> — banquette menuiserie sur mesure 150 cm : 800-2 000 € (hors coussins). Coussins sur mesure : 200-500 €. Banquette maçonnée + habillage : 500-1 200 €</li></ul>'
             }
           ],
           keyPoints: [
-            '40 cm de profondeur suffisent pour une banquette (vs 80 cm chaises + recul)',
-            'Assise relevable = coffre de rangement dissimulé',
-            'La banquette dînatoire autour d\'une table = gain de 40 cm de circulation',
-            'Élément construit = signature architecturale qui valorise l\'espace',
-            'Budget : 500-2000 € sur mesure selon les finitions'
+            '40-50 cm de profondeur suffisent pour une banquette (vs 60-80 cm chaises + recul)',
+            'Hauteur d\'assise : 43-47 cm pour table 75 cm · 60-65 cm pour table 90 cm',
+            'Assise relevable = coffre de rangement caché (50-100 L par mètre linéaire)',
+            'Mousse HR35 densité 35 kg/m³ minimum — épaisseur 8-12 cm pour un vrai confort',
+            'Banquette en L dans un angle = « nid » convivial + optimisation des coins perdus'
           ],
           tips: [
-            'Prévoir un tissu déhoussable et lavable pour l\'assise — surtout en coin repas avec enfants',
-            'La mousse HR35 (haute résilience, densité 35 kg/m³) est le minimum pour un confort durable',
-            'La banquette en L dans un angle crée un « nid » — c\'est souvent l\'endroit préféré du client'
+            'Toujours prévoir un tissu déhoussable et lavable pour l\'assise — surtout en coin repas avec enfants',
+            'La banquette en L dans un angle crée un « nid » — c\'est souvent l\'endroit préféré du client. Ajouter un éclairage suspendu au-dessus = coin lecture magique',
+            'Même bois que le plancher (chêne) + même laque que la cuisine + coussins lin brut = intégration parfaite, zéro faute'
           ],
           tags: ['banquette', 'assise', 'rangement', 'sur mesure', 'coin repas', 'intégré']
         },
@@ -2476,33 +2492,33 @@ const APP_DATA = {
           summary: 'Dans les petits espaces avec belle hauteur sous plafond, la mezzanine transforme un studio en duplex. C\'est l\'intervention la plus spectaculaire en rénovation — un gain de surface net de 30 à 50%.',
           sections: [
             {
-              title: 'Faisabilité : la hauteur minimale',
-              content: 'Hauteur sous plafond minimale : 3,60 m pour une mezzanine de couchage confortable (1,40 m en dessous + 1,80 m au-dessus + épaisseur plancher 20-30 cm). Si HsP < 3,60 m : mezzanine de couchage en « cocon » (on n\'est pas debout — c\'est un lit surélevé). Si HsP > 4 m : mezzanine à vivre (bureau, bibliothèque, salon). Si HsP > 5 m : vrai demi-étage avec circulation debout dessus et dessous. Réglementation : en dessous de 1,80 m de hauteur, la surface ne compte pas en surface habitable (mais reste utilisable).'
+              title: 'Faisabilité — Hauteur minimale & Réglementation',
+              content: '<ul><li><strong>HsP 3,30-3,60 m</strong> — mezzanine de couchage « cocon ». On n\'est pas debout dessus (hauteur libre ~1,20-1,40 m). En dessous : 1,80-2,00 m (on passe debout)</li><li><strong>HsP 3,60-4,00 m</strong> — mezzanine de couchage confortable. Dessus : 1,40-1,60 m (assis ok). Dessous : 1,80-2,20 m (circulation aisée). Épaisseur plancher : 20-30 cm</li><li><strong>HsP 4,00-5,00 m</strong> — mezzanine à vivre (bureau, bibliothèque, salon). On peut être debout dessus (1,80 m+) ET dessous</li><li><strong>HsP > 5,00 m</strong> — vrai demi-étage avec circulation debout partout. Plancher structurel (BET obligatoire)</li><li><strong>Surface habitable</strong> — en dessous de 1,80 m de hauteur libre, la surface ne compte PAS en surface habitable (Loi Carrez). Mais elle reste utilisable et valorisable</li><li><strong>Déclaration</strong> — si la mezzanine crée + de 5 m² de plancher : déclaration préalable en mairie. Si + de 20 m² : permis de construire</li><li><strong>Garde-corps</strong> — obligatoire si hauteur de chute > 1 m. Hauteur minimale : 1,00 m (1,10 m si l\'escalier donne directement dessus). Espacement barreaux : 11 cm max (anti-passage tête enfant)</li></ul>'
             },
             {
-              title: 'Structure : les solutions techniques',
-              content: 'Acier (IPN/IPE) : le plus courant en rénovation. Poutre acier scellée dans les murs porteurs + plancher bois ou métal dessus. Bois (solives apparentes) : plus chaleureux, esprit loft scandinave. En portée, compter des solives de 200-300 mm. Mixte acier-bois : poutre acier pour la portée + plancher bois pour la chaleur. Verre (plancher en verre feuilleté trempé) : spectaculaire, laisse passer la lumière. Portée maximum sans poteau intermédiaire : 3-4 m en bois, 5-6 m en acier (au-delà, prévoir un poteau).'
+              title: 'Structure — Solutions techniques',
+              content: '<ul><li><strong>Acier (IPN / IPE)</strong> — la solution n°1 en rénovation. Poutres scellées dans les murs porteurs + plancher dessus. Portée : 5-6 m sans poteau. Section courante : IPN 180 à 240 selon la portée. BET obligatoire pour le dimensionnement et le plan de scellement</li><li><strong>Bois (solives)</strong> — plus chaleureux, esprit loft scandinave. Solives 200-300 mm de hauteur (selon portée). Portée max : 3-4 m sans poteau intermédiaire. Entraxe solives : 40-50 cm</li><li><strong>Mixte acier + bois</strong> — poutre maîtresse acier (pour la portée) + solives bois dessus (pour la chaleur). Le compromis le plus courant</li><li><strong>Plancher verre</strong> — verre feuilleté trempé (VSG). Spectaculaire : laisse passer la lumière vers le bas. Épaisseur : 30-40 mm. Prix : 400-800 €/m². Entretien : se raye et se salit → prévoir un accès pour nettoyage</li><li><strong>Plancher</strong> — OSB 18 mm (économique, esprit loft), contreplaqué bouleau 21 mm (le plus design), parquet sur lambourdes (si hauteur le permet). Chape béton sur bac acier : pour les portées importantes (loft industriel)</li><li><strong>Charge d\'exploitation</strong> — 150 kg/m² minimum (usage habitation). 250 kg/m² si bibliothèque ou rangement lourd</li></ul>'
             },
             {
-              title: 'L\'accès : escalier ou échelle',
-              content: 'Escalier droit : emprise au sol 2-3 m², le plus confortable mais le plus gourmand en place. Escalier à pas japonais (ou pas alternés) : emprise 1-1,5 m², compact et design. Escalier hélicoïdal (colimaçon) : emprise Ø 130-160 cm, élégant mais moins pratique au quotidien. Échelle de meunier : emprise < 1 m², la plus compacte. Échelle coulissante ou rabattable : emprise 0, fixée au mur ou au plancher. Escalier-rangement : chaque marche est un tiroir — double fonction.'
+              title: 'Accès — Escalier ou Échelle',
+              content: '<ul><li><strong>Escalier droit</strong> — emprise au sol : 2-3 m². Le plus confortable et le plus sûr. Giron (profondeur de marche) : 24-28 cm. Hauteur de marche : 17-20 cm. Formule de Blondel : 2h + g = 60-64 cm</li><li><strong>Escalier à pas japonais (pas alternés)</strong> — emprise : 1-1,5 m². Compact et design. Profondeur utile alternée gauche/droite. Pente plus raide (~60°). Marches décalées = confortable malgré l\'encombrement réduit</li><li><strong>Escalier hélicoïdal (colimaçon)</strong> — emprise : Ø 130-160 cm. Élégant mais moins pratique au quotidien (meubles, courses…). Diamètre minimum utile : 130 cm (passage 60 cm autour du fût central)</li><li><strong>Échelle de meunier</strong> — emprise : < 1 m² au sol. La plus compacte. Pente 60-70°. Largeur : 50-70 cm. Confort limité mais suffisant pour un accès occasionnel (couchage)</li><li><strong>Échelle coulissante ou rabattable</strong> — emprise : 0 quand rangée. Fixée au mur ou au plancher de la mezzanine. Solution pour les très petits espaces</li><li><strong>Escalier-rangement</strong> — chaque marche = un tiroir ou un coffre. Double fonction : accès + stockage. Les Japonais maîtrisent cet art (tansu). Budget : 3 000-8 000 € sur mesure</li><li><strong>Matériaux escalier</strong> — acier noir (industriel), bois massif chêne (classique), métal + bois (mixte), béton (brutaliste). Marches en chêne massif 40 mm = le standard noble</li></ul>'
             },
             {
-              title: 'Aménagement de la mezzanine',
-              content: 'Couchage : le plus courant. Matelas posé sur le plancher, éclairage indirect (ruban LED), prises tête de lit. Rangement intégré en périphérie (tiroirs sous pente si comble). Bureau / espace de travail : calme, en retrait, vue plongeante sur le séjour. Bibliothèque / lecture : mezzanine-nid avec coussins et étagères. Dressing : exploiter la hauteur réduite pour penderies et étagères. Garde-corps : câbles inox (discret), verre (lumineux), barreaux métal (industriel) ou mur bas (intimité). Hauteur minimale : 1 m (1,10 m si escalier donne directement dessus).'
+              title: 'Aménagement & Confort de la mezzanine',
+              content: '<ul><li><strong>Couchage (le plus courant)</strong> — matelas posé directement sur le plancher ou sur sommier à lattes bas (5 cm). Éclairage indirect (ruban LED en corniche ou gorge). Prises tête de lit (2 minimum + 1 USB). Rangement intégré en périphérie (tiroirs sous pente si comble)</li><li><strong>Bureau / espace de travail</strong> — calme, en retrait, vue plongeante sur le séjour. Plan de travail : 120 × 60 cm minimum. Prévoir prises RJ45 + 4 prises électriques + éclairage de bureau</li><li><strong>Bibliothèque / lecture</strong> — mezzanine-nid avec coussins et étagères. L\'endroit le plus cosy de l\'appartement. Éclairage : liseuse murale articulée (Flos, DCW, Muuto)</li><li><strong>Dressing</strong> — exploiter la hauteur réduite pour penderies (penderie basse 100-110 cm) et étagères. Tringle coulissante si profondeur limitée</li><li><strong>Garde-corps — options esthétiques :</strong><ul><li>Câbles inox tendus : le plus discret, aérien</li><li>Verre trempé (feuilleté) : lumineux, contemporain</li><li>Barreaux métal : industriel, graphique</li><li>Mur bas (allège 100 cm) : intimité, rangements intégrables côté mezzanine</li><li>Filet (type filet de catamaran) : ludique, tendance — espace jeu enfants</li></ul></li><li><strong>Ventilation</strong> — la chaleur monte : prévoir un ventilateur de plafond (Ø 90-140 cm) ou une VMC adaptée. Température en mezzanine = 2-4 °C de plus qu\'en bas</li></ul>'
             }
           ],
           keyPoints: [
-            'HsP minimale 3,60 m pour une mezzanine de couchage confortable',
-            'Gain de surface net : 30 à 50% — l\'intervention la plus rentable au m²',
-            'L\'escalier à pas japonais = le meilleur compromis emprise/confort',
-            'Acier (IPN) scellé = la solution structurelle standard en rénovation',
-            'La mezzanine ne compte pas en surface habitable si h < 1,80 m — pas de taxe mais surface utile'
+            'HsP minimale 3,60 m pour une mezzanine couchage confortable — 4 m+ pour un espace à vivre',
+            'Gain de surface net : 30-50 % — l\'intervention la plus rentable au m²',
+            'Escalier à pas japonais = le meilleur compromis emprise/confort (1-1,5 m²)',
+            'Acier (IPN) scellé = la solution structurelle standard en rénovation (BET obligatoire)',
+            'Mezzanine ne compte pas en Loi Carrez si h < 1,80 m — pas de taxe mais surface utile'
           ],
           tips: [
-            'Faire valider la structure par un BET (Bureau d\'Études Techniques) — obligatoire pour le scellement des IPN',
-            'Prévoir l\'éclairage sous la mezzanine dès la conception — les spots encastrés dans le plancher de la mezzanine sont du plus bel effet',
-            'Un plancher en verre (feuilleté trempé) laisse passer la lumière vers le bas — spectaculaire dans un studio sombre'
+            'BET (Bureau d\'Études Techniques) obligatoire pour le scellement des IPN — budget BET : 500-1 500 €',
+            'Spots encastrés dans le plancher de la mezzanine = éclairage spectaculaire en dessous. Plancher verre = lumière naturelle redistribuée vers le bas',
+            'La chaleur monte : prévoir un ventilateur de plafond réversible (mode été + hiver) sinon la mezzanine sera étouffante en été'
           ],
           tags: ['mezzanine', 'hauteur', 'studio', 'duplex', 'escalier', 'structure']
         },
