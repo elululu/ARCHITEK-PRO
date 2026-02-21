@@ -153,12 +153,16 @@ function navigate(view, domainId = null, ficheId = null) {
 function updateNav() {
   $$('.nav-item').forEach(item => {
     item.classList.remove('active');
-    if (item.dataset.view === state.currentView) item.classList.add('active');
-    if (item.dataset.view === 'domain' && item.dataset.domain === state.currentDomain && state.currentView !== 'dashboard') {
-      item.classList.add('active');
-    }
-    if (state.currentView === 'fiche' && item.dataset.domain === state.currentDomain) {
-      item.classList.add('active');
+    const view = item.dataset.view;
+    const domain = item.dataset.domain;
+    // Domaine ou fiche : activer seulement le bon domaine
+    if (view === 'domain') {
+      if ((state.currentView === 'domain' || state.currentView === 'fiche') && domain === state.currentDomain) {
+        item.classList.add('active');
+      }
+    } else {
+      // Autres items (dashboard, collection, atelier, sourcing)
+      if (view === state.currentView) item.classList.add('active');
     }
   });
 }
