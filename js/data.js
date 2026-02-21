@@ -1079,6 +1079,44 @@ const APP_DATA = {
           keyPoints: ['Le meilleur régulateur d\'humidité existant — confort intérieur incomparable', 'Bilan carbone quasi nul — le matériau le plus écologique qui existe', 'L\'enduit terre est l\'application la plus accessible (rénovation)', 'Le mur en pisé apparent est devenu un objet de luxe et de design', 'Compatible et même moteur de la RE2020'],
           tips: ['Proposer un mur d\'accent en enduit terre argileuse (Tierrafino, Akterre) — texture et régulation d\'humidité', 'Le pisé + béton + verre = la trinité de l\'architecture contemporaine durable', 'Visiter un chantier terre (Craterre organise des formations) pour maîtriser le sujet — c\'est transformateur'],
           tags: ['naturel', 'écologique', 'terre', 'pisé', 'RE2020', 'artisanal']
+        },
+        {
+          id: 'sols-souples',
+          category: 'Revêtements de Sol',
+          title: 'Sols Souples : LVT, Linoléum, Moquette',
+          subtitle: 'Le guide complet des revêtements résilients',
+          summary: 'Les sols souples représentent une part majeure des projets d\'aménagement — résidentiels comme tertiaires. LVT (Luxury Vinyl Tile), linoléum, moquette : chaque famille a ses avantages, ses pièges et ses usages spécifiques. Savoir les distinguer est essentiel pour prescrire juste.',
+          sections: [
+            {
+              title: 'LVT — Luxury Vinyl Tile',
+              content: 'La LVT est un revêtement PVC multicouche imitant le bois, la pierre ou le béton avec un réalisme saisissant. Composition : couche d\'usure transparente (0,2 à 0,7mm) + décor imprimé HD + âme en PVC ou SPC (Stone Polymer Composite). Types : LVT collée (2-3mm, la plus stable, idéale rénovation car faible épaisseur). LVT clipsable rigide / SPC (4-6mm, pose flottante, adapté aux pièces humides si SPC). LVT WPC (Wood Polymer Composite, plus souple et confortable sous le pied). Classement : UPEC (U2sP2E1C0 minimum en résidentiel, U3P3E2C2 pour un restaurant). Avantages : étanche (salle de bain, cuisine), acoustique intégrée (sous-couche), très fin (idéal rénovation sans raboter les portes), large choix de décors, prix modéré (20-60€/m² posé). Inconvénients : PVC = pétrochimie (pas écologique), sensible aux charges ponctuelles (pieds de meuble → patins), jaunissement possible au soleil (choisir un UV coating). Marques pro : Forbo Allura, Tarkett iD Inspiration, Gerflor Creation.'
+            },
+            {
+              title: 'Linoléum véritable',
+              content: 'Le VRAI linoléum (à ne PAS confondre avec le PVC/vinyl !) est un revêtement 100% naturel inventé en 1860. Composition : huile de lin oxydée + résines naturelles + farine de bois + charges minérales + pigments, sur une trame en jute. Marques : Forbo Marmoleum (quasi monopole mondial), DLW (Gerflor). Propriétés : naturellement bactériostatique (l\'huile de lin oxydée empêche le développement bactérien), antistatique, résistant aux produits chimiques. Durée de vie : 25-40 ans en usage intensif. Bilan écologique excellent (matières premières renouvelables, biodégradable). Épaisseur : 2-4mm. Pose collée uniquement (colle acrylique). Odeur caractéristique d\'huile de lin à la pose (disparaît en 2-3 semaines). Coloris : palette très riche (Marmoleum propose plus de 300 teintes, dont des marbré spectaculaires). Prix : 30-70€/m² posé. Défaut : sensible à l\'eau stagnante (les joints doivent être soudés à chaud pour les pièces humides). Nécessite un ragréage parfait (le moindre défaut du support se voit). Usage : hôpitaux, écoles, crèches, bureaux, résidentiel haut de gamme écologique.'
+            },
+            {
+              title: 'Moquette',
+              content: 'Loin d\'être démodée, la moquette connaît un retour en grâce — notamment en hôtellerie, bureaux et chambres haut de gamme. Types de fabrication : tuftée (la plus courante — fils piqués dans un dossier), tissée (Axminster, Wilton — haut de gamme, motifs complexes), aiguilletée (entrée de gamme, aspect feutre — halls, expos). Types de velours : bouclé (résistant, aspect texturé — bureaux), coupé (doux, luxueux — chambres), coupé-bouclé (motifs en relief). Matières : laine (la reine — confort, résilience, isolant, anti-feu naturel), polyamide/nylon (résistant à l\'usure et aux taches — contract), polypropylène (entrée de gamme), mélanges laine/polyamide (le meilleur rapport qualité/usage). Pose : tendue sur thibaude (le plus confortable, pose traditionnelle avec gripper), collée en plein (bureaux, hôtels), dalles de moquette plombantes 50x50 (bureaux — remplacement facile). Acoustique : la moquette est le MEILLEUR revêtement acoustique — réduction du bruit d\'impact de 25-35 dB. Allergie : contrairement aux idées reçues, la moquette piège les allergènes au sol (au lieu de les laisser voler dans l\'air) — à condition d\'aspirer régulièrement. Prix : 15-40€/m² (tuftée), 80-300€/m² (tissée laine haut de gamme). Marques : Bolon (vinyl tressé, design scandinave), Ege, Interface (dalles), Balsan, Tai Ping (ultra luxe).'
+            },
+            {
+              title: 'Comment choisir',
+              content: 'Pièce humide (SDB, cuisine) → LVT SPC ou grès cérame (PAS de linoléum ni moquette). Bureau / open space → dalles de moquette plombantes (acoustique + remplacement facile) ou LVT. Chambre haut de gamme → moquette laine épaisse ou linoléum uni (Marmoleum Walton). Hall d\'hôtel → moquette tissée Axminster (motifs sur-mesure) ou linoléum. Crèche / école → linoléum (naturel, bactériostatique, résistant). Commerce → LVT collée haute résistance (U3/U4). Résidentiel éco-responsable → linoléum véritable. Résidentiel budget → LVT clipsable SPC. Le classement UPEC (Usure, Poinçonnement, Eau, Chimie) est votre boussole — vérifier que le classement du produit correspond au local.'
+            }
+          ],
+          keyPoints: [
+            'LVT ≠ Linoléum. Le linoléum est 100% naturel (huile de lin), la LVT est en PVC',
+            'Le classement UPEC est OBLIGATOIRE pour vérifier la compatibilité usage/produit',
+            'La moquette est le meilleur isolant acoustique — irremplaçable dans les chambres et bureaux',
+            'LVT SPC = la solution la plus polyvalente en rénovation (fine, étanche, pose rapide)',
+            'Le linoléum véritable (Marmoleum) dure 25-40 ans — investissement à long terme'
+          ],
+          tips: [
+            'Le client dit « lino » mais pense « PVC » — toujours clarifier. Le vrai linoléum coûte plus cher mais dure 3x plus longtemps',
+            'En pose LVT sur ancien carrelage : ragréage fibré obligatoire pour lisser les joints — sinon ils se marquent dans la LVT en quelques mois',
+            'Les dalles de moquette Bolon (vinyl tressé) sont le produit parfait pour un bureau design : acoustiques, lavables, esthétiques, posées en une journée'
+          ],
+          tags: ['sol', 'LVT', 'linoléum', 'moquette', 'vinyle', 'revêtement', 'UPEC']
         }
       ]
     },
@@ -2024,6 +2062,158 @@ const APP_DATA = {
             'Les enduits à la chaux (tadelakt, stuc) sont RE2020-compatibles et magnifiques'
           ],
           tags: ['thermique', 'RE2020', 'isolation', 'énergie', 'biosourcé', 'réglementation']
+        },
+        {
+          id: 'amiante-diagnostic',
+          category: 'Diagnostics Obligatoires',
+          title: 'Amiante — Diagnostic & Gestion',
+          subtitle: 'Le risque invisible des bâtiments pré-1997',
+          summary: 'L\'amiante a été massivement utilisé dans le bâtiment jusqu\'à son interdiction en 1997. Il est potentiellement présent dans TOUT bâtiment construit avant cette date : flocages, dalles de sol, colles, canalisations, toitures. Le diagnostic est OBLIGATOIRE avant travaux. L\'inhaler provoque des maladies mortelles (mésothéliome, asbestose).',
+          sections: [
+            {
+              title: 'Où trouver de l\'amiante',
+              content: 'Flocages (plafonds, gaines techniques) : le plus dangereux car friable — les fibres se libèrent naturellement dans l\'air. Faux-plafonds : dalles contenant de l\'amiante (très courant dans les bureaux des années 60-80). Dalles de sol vinyl (type « dalami ») 30x30cm : extrêmement courantes dans les logements des années 50-80. La colle sous les dalles est AUSSI amiantée. Calorifugeages : isolation des tuyaux de chauffage (enrobage plâtreux autour des canalisations). Toiture en fibrociment (Eternit). Conduits de cheminée en fibrociment. Colles de carrelage et de faïence. Enduits et crépis. Joints de fenêtre et de porte coupe-feu. Amiante-ciment (gaines, plaques). Plaquettes de frein d\'ascenseur.'
+            },
+            {
+              title: 'Obligations réglementaires',
+              content: 'DTA (Dossier Technique Amiante) : obligatoire pour tous les immeubles dont le permis de construire est antérieur au 1er juillet 1997. Doit être réalisé par un diagnostiqueur certifié. Le propriétaire doit le mettre à disposition de tout intervenant. DAPP (Diagnostic Amiante Avant Vente) : obligatoire pour la vente. Repérage avant travaux (RAT) : obligatoire avant TOUS travaux, même mineurs (percer un mur, déposer un carrelage). Réalisé par un diagnostiqueur certifié selon la norme NF X46-020. Il identifie TOUS les matériaux amiantés susceptibles d\'être impactés par les travaux. Code du travail : l\'employeur (y compris l\'architecte qui prescrit les travaux) a une obligation de sécurité.'
+            },
+            {
+              title: 'Procédure en cas d\'amiante',
+              content: 'Si le diagnostic révèle de l\'amiante dans la zone de travaux : Sous-section 3 (SS3) : retrait ou encapsulage par une entreprise certifiée (habilitation SS3). Plan de retrait à soumettre à l\'inspection du travail 1 mois avant. Zone confinée + extraction d\'air + sas de décontamination + combinaisons jetables + masques P3. Sous-section 4 (SS4) : intervention sur des matériaux amiantés SANS les retirer (percer à travers, découper). Formation spécifique obligatoire pour les ouvriers. Élimination : les déchets amiantés sont des déchets dangereux (classe 1) — filière de traitement spécialisée, bordereaux de suivi. Coût : le désamiantage multiplie le budget par 3 à 10 selon la surface. Les dalles vinyl amiantées coûtent 50-150€/m² à déposer (vs 5-10€/m² pour des dalles classiques).'
+            },
+            {
+              title: 'Responsabilité de l\'architecte d\'intérieur',
+              content: 'Vous êtes le prescripteur des travaux. Si vous faites déposer un carrelage sans vérifier la présence d\'amiante dans la colle, et qu\'un ouvrier est exposé : VOTRE responsabilité pénale est engagée. Le repérage avant travaux (RAT) n\'est pas une option — c\'est une obligation LÉGALE dont le maître d\'ouvrage et ses mandataires (vous) sont garants. Réflexe systématique : bâtiment pré-1997 → exiger le DTA ET un repérage avant travaux ciblé sur votre zone d\'intervention. Si le client refuse le diagnostic pour raisons budgétaires → refuser la mission par écrit. L\'amiante tue — 3 000 décès/an en France liés à une exposition passée.'
+            }
+          ],
+          keyPoints: [
+            'TOUT bâtiment construit avant le 1er juillet 1997 est susceptible de contenir de l\'amiante',
+            'Le repérage avant travaux est OBLIGATOIRE avant le moindre percement, le moindre retrait de sol',
+            'Les dalles vinyl 30x30 et leur colle sont le piège n°1 en rénovation d\'appartement',
+            'Votre responsabilité PÉNALE est engagée si vous prescrivez des travaux sans diagnostic',
+            'Le désamiantage multiplie le budget par 3 à 10 — à anticiper AVANT le chiffrage'
+          ],
+          tips: [
+            'Premier réflexe sur tout projet de rénovation : date du permis de construire. Avant 1997 → demander le DTA immédiatement',
+            'Les dalles vinyl carrées 30x30cm collées au bitume = amiante quasi certain. NE JAMAIS les casser, les poncer ou les percer. Les recouvrir (ragréage par-dessus) est souvent la solution la moins chère et la plus sûre',
+            'Intégrer la ligne « diagnostic amiante avant travaux » dans chaque devis de rénovation pré-1997 — c\'est votre protection juridique'
+          ],
+          tags: ['amiante', 'diagnostic', 'sécurité', 'réglementation', 'rénovation', 'santé']
+        },
+        {
+          id: 'plomb-crep',
+          category: 'Diagnostics Obligatoires',
+          title: 'Plomb — CREP & Peintures Anciennes',
+          subtitle: 'Le danger caché des immeubles pré-1949',
+          summary: 'Le plomb a été utilisé dans les peintures (céruse) jusqu\'à son interdiction en 1949. Il est omniprésent dans les immeubles haussmanniens, les boiseries anciennes, les garde-corps en fonte. Le CREP (Constat de Risque d\'Exposition au Plomb) est obligatoire à la vente et à la location pour tout logement pré-1949. L\'ingestion ou l\'inhalation de plomb provoque le saturnisme.',
+          sections: [
+            {
+              title: 'Où trouver du plomb',
+              content: 'Peintures au plomb (céruse, minium) : sous les couches de peinture récentes, sur les boiseries (fenêtres, portes, plinthes, volets), murs et plafonds plâtrés, garde-corps et rampes en fonte/fer (minium = antirouille au plomb). Canalisations en plomb : alimentations en eau potable dans les immeubles anciens. L\'eau stagnante dans ces tuyaux accumule du plomb. Remplacement obligatoire (devait être fait avant 2013). Soudures à l\'étain-plomb : sur les canalisations en cuivre anciennes. Vitraux : les baguettes de plomb. Diagnostic : le CREP utilise un appareil à fluorescence X qui détecte le plomb à travers les couches de peinture sans les altérer.'
+            },
+            {
+              title: 'Obligations réglementaires',
+              content: 'CREP (Constat de Risque d\'Exposition au Plomb) : obligatoire pour la vente et la location de tout logement construit AVANT le 1er janvier 1949. Durée de validité : 1 an (vente), 6 ans (location), illimitée si absence de plomb. Seuil réglementaire : 1 mg/cm² de plomb. Si dépassé ET peinture dégradée (écaillée, cloquée) : travaux de suppression du risque obligatoires. Le préfet peut imposer des travaux en cas de risque d\'exposition (notamment avec enfants <6 ans — saturnisme infantile). En cas de travaux sur des surfaces plombées : obligation de mesures de protection similaires à l\'amiante (confinement, aspiration, EPI).'
+            },
+            {
+              title: 'Gestion en rénovation',
+              content: 'Ponçage/grattage de peinture au plomb : INTERDIT sans protection (crée des poussières de plomb toxiques). Le ponçage à sec est la pire méthode — les poussières sont ultrafines et se dispersent dans tout le logement. Solutions sûres : décapage chimique (pâte qui ramollit la peinture, on la retire sans poussière), décapage thermique à basse température (<450°C sinon le plomb se vaporise), encapsulage (recouvrir d\'un revêtement étanche — enduit, toile de verre, peinture épaisse). Remplacement des menuiseries : si les fenêtres anciennes sont plombées et dégradées, le remplacement est souvent plus simple et sûr que le décapage. Canalisations : remplacement par du PER ou du cuivre. Les canalisations en plomb sont grises et molles (marque de l\'ongle).'
+            },
+            {
+              title: 'Saturnisme et responsabilité',
+              content: 'Le saturnisme est l\'intoxication au plomb. Particulièrement dangereux pour les enfants <6 ans (développement neurologique), les femmes enceintes, et les ouvriers exposés. Contamination : ingestion d\'écailles de peinture (enfants), inhalation de poussières de ponçage/décapage, ingestion d\'eau contaminée. Symptômes : troubles du comportement, retard de développement, douleurs abdominales, anémie. C\'est une maladie à déclaration obligatoire. L\'architecte d\'intérieur qui prescrit un ponçage de boiseries dans un immeuble pré-1949 sans vérifier la présence de plomb engage sa responsabilité civile et pénale.'
+            }
+          ],
+          keyPoints: [
+            'CREP obligatoire pour tout logement construit avant le 1er janvier 1949 (vente et location)',
+            'Le plomb se cache SOUS les couches de peinture récentes — invisible à l\'œil nu',
+            'JAMAIS de ponçage à sec sur des peintures anciennes sans diagnostic plomb préalable',
+            'Les boiseries (fenêtres, portes, plinthes) sont les supports les plus fréquemment plombés',
+            'L\'encapsulage (recouvrement) est souvent plus sûr et moins cher que le décapage'
+          ],
+          tips: [
+            'Appartement haussmannien + boiseries d\'origine = plomb quasi certain. Exiger le CREP avant toute intervention sur les menuiseries',
+            'Quand un client veut « décaper les boiseries pour retrouver le bois brut » dans un immeuble pré-1949 : STOP — vérifier le plomb d\'abord',
+            'Prévoir 1 500-3 000€ pour le décapage sécurisé d\'un lot de fenêtres plombées — l\'intégrer au budget dès le chiffrage'
+          ],
+          tags: ['plomb', 'CREP', 'diagnostic', 'sécurité', 'peinture', 'santé', 'haussmannien']
+        },
+        {
+          id: 'securite-incendie',
+          category: 'Sécurité',
+          title: 'Sécurité Incendie & Classement au Feu',
+          subtitle: 'Euroclasses, M0-M4, ERP, logement',
+          summary: 'L\'architecte d\'intérieur choisit les matériaux, les revêtements, le mobilier — il est directement responsable du comportement au feu de l\'espace qu\'il conçoit. En ERP (Établissement Recevant du Public), une erreur de classement au feu peut coûter des vies et fermer un établissement.',
+          sections: [
+            {
+              title: 'Classement au feu des matériaux',
+              content: 'Ancien classement français (M) : M0 = incombustible (pierre, béton, plâtre, acier, verre). M1 = non inflammable (certains bois traités, PVC M1, tissus ignifugés). M2 = difficilement inflammable (moquette traitée, bois massif >14mm). M3 = moyennement inflammable (bois résineux, certains textiles). M4 = facilement inflammable (papier, textile non traité, polystyrène). Nouveau classement européen (Euroclasses) : A1/A2 = incombustible. B = contribution très limitée au feu. C/D = contribution limitée/moyenne. E = contribution importante. F = non déterminé. Les Euroclasses ajoutent des indices : s1/s2/s3 (production de fumée) et d0/d1/d2 (gouttes enflammées). Exemple : « Bs1d0 » = faible contribution au feu, peu de fumée, pas de gouttes.'
+            },
+            {
+              title: 'Exigences en ERP (restaurants, hôtels, boutiques)',
+              content: 'L\'arrêté du 25 juin 1980 fixe les règles. Revêtements muraux : M2 minimum dans les circulations et dégagements, M3 dans les locaux. Revêtements de sol : M4 dans les locaux, M3 dans les circulations. Plafonds : M1 dans les circulations, M2 dans les locaux. Rideaux, voilages, tentures : M1 (ignifugés). Sièges rembourrés : NF EN 1021-1 et 1021-2 (résistance à la cigarette et à l\'allumette). Portes coupe-feu : CF30 ou CF60 selon le type d\'ERP — fermeture automatique obligatoire. BAES (Blocs Autonomes d\'Éclairage de Sécurité) : balisage de sortie obligatoire. Désenfumage : obligatoire dans les grandes salles et circulations. Plan d\'évacuation affiché.'
+            },
+            {
+              title: 'Exigences en logement',
+              content: 'Logement individuel : moins contraignant mais le DAAF (Détecteur Avertisseur Autonome de Fumée) est OBLIGATOIRE depuis 2015. Un par étage minimum, dans les circulations menant aux chambres. Logement collectif (copropriété) : parties communes = quasi-ERP. Portes palières CF30 ou CF60 (coupe-feu 30 ou 60 minutes) obligatoires dans les immeubles de plus de 3 étages. Circulations communes : revêtements M2 minimum. Gaines techniques : coupe-feu (les gaines relient tous les étages et propagent le feu). Traversées de plancher (canalisations) : rebouchage coupe-feu obligatoire.'
+            },
+            {
+              title: 'Impact sur les choix de l\'architecte',
+              content: 'Bois massif >14mm : naturellement M3 (acceptable en murs de locaux ERP). Bois traité ou ignifugé : peut atteindre M1. Le traitement par imprégnation est plus durable que la peinture intumescente. Acier : M0 mais perd sa résistance mécanique à 500°C — protection par peinture intumescente, flocage, ou encoffrement. Textiles : doivent être ignifugés en ERP. Demander le PV (Procès-Verbal) de classement au feu au fournisseur. Polystyrène, mousse PU : M4 et très dangereux (gaz toxiques) — JAMAIS en apparent dans un ERP. Papier peint : M3 à M1 selon le support et le traitement. Rideau séparateur de salle : M1 obligatoire. TOUJOURS demander le PV de classement feu ou l\'attestation d\'ignifugation avant de spécifier un matériau en ERP.'
+            }
+          ],
+          keyPoints: [
+            'En ERP : TOUJOURS vérifier le classement au feu de chaque matériau AVANT de le spécifier',
+            'M0 = incombustible. M1 = non inflammable. Murs en ERP = M2 minimum en circulation',
+            'Les Euroclasses remplacent le classement M — « Bs1d0 » est l\'équivalent de M1',
+            'DAAF obligatoire en logement depuis 2015 — un par étage, dans les circulations',
+            'Demander le PV de classement feu ou l\'attestation d\'ignifugation à chaque fournisseur'
+          ],
+          tips: [
+            'Créer un tableau « matériaux / classement feu » pour chaque projet ERP — le commissaire de sécurité le demandera',
+            'Les tissus d\'éditeurs (Kvadrat, Pierre Frey) ont des gammes « contract » déjà ignifugées — plus simple que de faire traiter après',
+            'Le flocage coupe-feu sur acier est moche — proposer de l\'habiller (faux-plafond, coffrage bois M1) plutôt que de le laisser visible'
+          ],
+          tags: ['incendie', 'feu', 'ERP', 'Euroclasses', 'M0', 'sécurité', 'réglementation']
+        },
+        {
+          id: 'diagnostics-avant-renovation',
+          category: 'Diagnostics Obligatoires',
+          title: 'Diagnostics Techniques avant Rénovation',
+          subtitle: 'La checklist complète',
+          summary: 'Avant toute rénovation, une série de diagnostics techniques est obligatoire ou fortement recommandée. Les oublier, c\'est risquer des surcoûts astronomiques, des arrêts de chantier, et des poursuites judiciaires. Cette fiche est votre checklist systématique.',
+          sections: [
+            {
+              title: 'Diagnostics obligatoires à la vente',
+              content: 'DDT (Dossier de Diagnostics Techniques) — le vendeur doit fournir : DPE (Diagnostic de Performance Énergétique) : classement A-G, obligatoire vente ET location. Validité 10 ans. Le nouveau DPE (2021) est opposable = engage la responsabilité du diagnostiqueur. Amiante (DAPP) : obligatoire si permis de construire avant le 1er juillet 1997. Validité illimitée si négatif. Plomb (CREP) : obligatoire si construction avant le 1er janvier 1949. Validité 1 an (vente) si positif. Termites : obligatoire dans les zones classées par arrêté préfectoral. Validité 6 mois. Gaz : obligatoire si installation de plus de 15 ans. Validité 3 ans (vente). Électricité : obligatoire si installation de plus de 15 ans. Validité 3 ans (vente). ERP/ERNMT : état des risques naturels, miniers, technologiques. Validité 6 mois. Assainissement : obligatoire si assainissement non collectif (fosses septiques).'
+            },
+            {
+              title: 'Diagnostics obligatoires avant travaux',
+              content: 'Repérage amiante avant travaux (RAT) : obligatoire AVANT TOUS TRAVAUX dans un bâtiment pré-1997. Plus approfondi que le DAPP (qui ne couvre que les parties visibles). Le RAT cible spécifiquement les matériaux qui seront impactés par vos travaux. Coût : 500-2 000€ selon la surface. Diagnostic plomb avant travaux : si bâtiment pré-1949 et intervention sur des revêtements peints. Diagnostic termites : dans les zones classées, si travaux sur la structure bois. Diagnostic structure : si ouverture de mur porteur ou modification de la structure — étude par un ingénieur structure (bureau d\'études type Arcadis, Socotec, BET local). Coût : 800-3 000€ pour une note de calcul IPN.'
+            },
+            {
+              title: 'Diagnostics recommandés (non obligatoires)',
+              content: 'Diagnostic humidité : si traces de moisissures, salpêtre, remontées capillaires. Fait par un expert humidité indépendant (pas un vendeur de traitement). Coût : 300-800€. Diagnostic acoustique : si immeuble ancien bruyant ou projet en ERP. Mesure du RT60, de l\'isolement DnT,A. Diagnostic mérule : recommandé dans les zones à risque (Bretagne, Nord, Normandie). Diagnostic thermique : bilan thermique complet avec caméra infrarouge. Identifie les ponts thermiques et les déperditions. Coût : 200-500€. Diagnostic structure approfondi : si fissures inquiétantes, déformation des planchers, doute sur la capacité portante. Fait par un ingénieur structure avec sondages.'
+            },
+            {
+              title: 'Votre rôle en tant qu\'architecte d\'intérieur',
+              content: 'Demander le DDT complet au client dès le premier rendez-vous. Vérifier les dates de validité de chaque diagnostic. Si pré-1997 : exiger le RAT amiante avant de concevoir (les résultats peuvent changer tout le projet). Si pré-1949 : vérifier le CREP et anticiper le plomb. Si modification structurelle prévue (ouverture, mezzanine) : commander l\'étude structure dès l\'APS, pas en phase chantier. Intégrer le coût des diagnostics dans l\'estimation budgétaire dès le premier chiffrage. Refuser par ÉCRIT toute demande de travaux sans diagnostics préalables. Archiver tous les rapports de diagnostic dans le dossier projet. La check-list avant de commencer à dessiner : date de construction, DDT complet, diagnostics complémentaires nécessaires. Si un seul manque, le réclamer avant de poursuivre.'
+            }
+          ],
+          keyPoints: [
+            'Date de construction → diagnostics obligatoires : pré-1997 = amiante, pré-1949 = amiante + plomb',
+            'Le RAT (repérage amiante avant travaux) est plus approfondi que le DAPP de vente — le demander SYSTÉMATIQUEMENT',
+            'Le diagnostic structure est obligatoire dès qu\'on touche à un mur porteur — budget 800-3 000€',
+            'TOUJOURS demander le DDT complet au premier RDV client — c\'est le document n°1',
+            'Refuser par ÉCRIT de travailler sans diagnostics = votre protection juridique'
+          ],
+          tips: [
+            'Créer un template de mail « demande de diagnostics » à envoyer à chaque nouveau client dès la signature du contrat',
+            'Le DPE classe F ou G = passoire thermique = obligations de travaux à venir (interdiction de location). Prévenir le client des implications',
+            'En cas de doute sur la structure : 800€ de diagnostic maintenant vs 50 000€ de sinistre après — le choix est vite fait'
+          ],
+          tags: ['diagnostic', 'amiante', 'plomb', 'DPE', 'structure', 'rénovation', 'checklist']
         }
       ]
     },
@@ -3610,6 +3800,273 @@ const APP_DATA = {
             'La formation « Maisons Paysannes de France » ou « Fondation du Patrimoine » forme au bâti ancien — excellent pour se spécialiser'
           ],
           tags: ['pierre', 'chaux', 'enduit', 'bâti ancien', 'tadelakt', 'perspirant']
+        },
+        // --- PATHOLOGIES ---
+        {
+          id: 'merule-champignons-bois',
+          category: 'Pathologies',
+          title: 'Mérule & Champignons du Bois',
+          subtitle: 'Identifier et traiter la pourriture',
+          summary: 'La mérule (Serpula lacrymans) est le champignon le plus destructeur du bâti en France. Capable de traverser les murs et de détruire une charpente en quelques mois, sa présence est une obligation légale de déclaration en mairie. Tout architecte d\'intérieur intervenant en rénovation DOIT savoir la reconnaître.',
+          sections: [
+            {
+              title: 'La mérule pleureuse (Serpula lacrymans)',
+              content: 'Le « cancer du bâtiment ». Champignon lignivore qui se nourrit de la cellulose du bois et le transforme en matière friable. Conditions d\'apparition : humidité >20% dans le bois + obscurité + température 20-26°C + confinement (pas de ventilation). Signes visuels : mycélium blanc cotonneux, filaments gris (syrrotes) capables de traverser la maçonnerie, fructification brune en forme de galette avec bord blanc. Le bois attaqué se casse en cubes (pourriture cubique). Odeur de champignon forte et caractéristique. Déclaration obligatoire en mairie (loi Alur, art. L133-7 du CCH). Zones les plus touchées : Bretagne, Nord, Normandie, Île-de-France.'
+            },
+            {
+              title: 'Autres champignons lignivores',
+              content: 'Coniophore des caves (Coniophora puteana) : très fréquent, bois en contact avec la maçonnerie humide. Pourriture brune cubique, moins destructeur que la mérule mais courant. Lenzite des poutres (Gloeophyllum sepiarium) : attaque les bois extérieurs et les bois de charpente mal ventilés. Fibroporia vaillantii : filaments blancs ressemblant à la mérule mais moins agressif. Chaetomium globosum : champignon de surface (moisissure noire) sur bois très humide — signe avant-coureur. Polypores : champignons en « étagère » sur les poutres — signe de pourriture avancée. TOUS se développent uniquement si le bois est humide >20%. La solution est TOUJOURS de traiter la CAUSE de l\'humidité avant de traiter le champignon.'
+            },
+            {
+              title: 'Diagnostic et détection',
+              content: 'Signes d\'alerte : bois qui sonne creux au toucher, parquet qui s\'enfonce, plinthes qui se décollent, odeur de moisi/champignon, taches brunes sur les murs, mycélium visible (blanc, gris). Outils : hygromètre à pointes pour mesurer le taux d\'humidité du bois (>20% = risque). Inspection visuelle : caves, vides sanitaires, derrière les doublages, sous les baignoires, autour des fuites. Diagnostic professionnel obligatoire avant vente dans certaines communes (zones à risque définies par arrêté préfectoral). Le diagnostic coûte 200-500€. En cas de doute, ne JAMAIS recouvrir — ouvrir et vérifier.'
+            },
+            {
+              title: 'Traitement et prévention',
+              content: 'Traitement curatif mérule : supprimer la source d\'humidité + enlever tous les bois atteints + brûler les bois contaminés + décroûter les enduits sur 1m autour du foyer + traitement fongicide par injection dans la maçonnerie + ventilation renforcée. Coût : 5 000 à 50 000€ selon l\'étendue. Traitement curatif autres champignons : supprimer la cause d\'humidité + remplacer les bois atteints + traitement fongicide préventif. Prévention : ventilation correcte (VMC), pas de bois en contact direct avec la maçonnerie humide (cales, membrane), traitement préventif des bois de classe 1-2, entretien des toitures et évacuations. JAMAIS isoler un mur par l\'intérieur sans vérifier l\'état du bois derrière.'
+            }
+          ],
+          keyPoints: [
+            'La mérule est une OBLIGATION DE DÉCLARATION en mairie — ne pas la signaler est un délit',
+            'Humidité >20% dans le bois = danger. Supprimer la CAUSE de l\'humidité AVANT de traiter',
+            'Le mycélium de la mérule traverse les murs — elle se propage d\'un logement à l\'autre',
+            'Coût de traitement : 5 000 à 50 000€ — c\'est le risque le plus cher en rénovation',
+            'En visite d\'état des lieux : vérifier caves, derrière les doublages, sous les baignoires'
+          ],
+          tips: [
+            'Acheter un hygromètre à pointes (30€) et mesurer systématiquement le taux d\'humidité des bois lors du relevé d\'existant',
+            'En zone à risque mérule (Bretagne, Nord) : exiger un diagnostic avant tout projet de rénovation',
+            'Quand un client dit « ça sent le moisi dans la cave » — TOUJOURS aller vérifier, c\'est votre responsabilité professionnelle'
+          ],
+          tags: ['mérule', 'champignon', 'bois', 'pathologie', 'humidité', 'diagnostic']
+        },
+        {
+          id: 'insectes-xylophages',
+          category: 'Pathologies',
+          title: 'Insectes Xylophages',
+          subtitle: 'Termites, vrillettes, capricornes',
+          summary: 'Les insectes xylophages (« mangeurs de bois ») sont présents dans toute la France. Termites au sud, vrillettes et capricornes partout. Un diagnostic est obligatoire à la vente dans les zones classées. Savoir reconnaître les dégâts évite des catastrophes structurelles.',
+          sections: [
+            {
+              title: 'Termites',
+              content: 'Les plus destructeurs. Vivent en colonies souterraines (des centaines de milliers d\'individus). Remontent dans le bâti par les fondations. Mangent le bois de l\'intérieur sans trace extérieure visible — quand on voit les dégâts, c\'est souvent trop tard. Le bois sonne creux, les galeries sont parallèles au fil du bois, remplies de concrétions (terre + excréments). Zones les plus touchées : Sud-Ouest, façade atlantique, pourtour méditerranéen, Île-de-France. Diagnostic termites obligatoire à la vente dans les communes classées par arrêté préfectoral. Déclaration en mairie obligatoire si infestation détectée. Traitement : barrière chimique dans le sol + pièges/appâts + remplacement des bois. Coût : 2 000-10 000€.'
+            },
+            {
+              title: 'Vrillettes (petites et grosses)',
+              content: 'Petite vrillette (Anobium punctatum) : l\'insecte le plus courant en France. Trous de sortie ronds de 1-3mm (les petits trous dans les vieux meubles). Larves dans le bois pendant 2-4 ans. Attaque les bois résineux ET feuillus. Sciure fine en petites billes. Grosse vrillette (Xestobium rufovillosum) : trous de 3-4mm, sciure en petites lentilles. Préfère les bois déjà attaqués par un champignon. Plus destructrice. Signe spécifique : bruit de « horloge de la mort » (le mâle tape sa tête contre le bois pour attirer la femelle — audible la nuit dans les charpentes). La vermoulure (sciure) fraîche = infestation active. Sciure grise et sèche = ancienne infestation potentiellement inactive.'
+            },
+            {
+              title: 'Capricornes et lyctus',
+              content: 'Capricorne des maisons (Hylotrupes bajulus) : le plus gros dégât après les termites. Attaque uniquement les résineux (charpentes, solives en sapin/pin). Larves de 20mm qui creusent des galeries ovales pendant 3-10 ANS. Trous de sortie ovales 6-10mm. Sciure en petits tonneaux. On entend les larves grignoter dans la nuit (bruit de grattement). Peut réduire une poutre à une coquille vide en quelques années. Lyctus : attaque uniquement les feuillus (parquet chêne, meubles). Trous ronds 1-2mm, sciure très fine comme de la farine. Détectable au tas de sciure fraîche sous le meuble/parquet.'
+            },
+            {
+              title: 'Traitement et prévention',
+              content: 'Traitement curatif bois : injection sous pression de produit insecticide + fongicide dans les bois (par un professionnel certifié CTB-A+). Bûchage : retirer les parties trop endommagées et remplacer (consolidation par résine + armatures si poutre porteuse). Traitement préventif : tous les bois de construction doivent être traités classe 2 minimum. En rénovation, traiter préventivement toutes les boiseries lors du chantier. Garantie décennale obligatoire sur le traitement. Coût traitement charpente complète : 1 500-5 000€. Le CTB-A+ est le seul label qui garantit la qualité du traitement. Attention aux « diagnostiqueurs-traiteurs » : conflit d\'intérêts possible — faire diagnostiquer par un indépendant.'
+            }
+          ],
+          keyPoints: [
+            'Diagnostic termites obligatoire à la vente dans toutes les zones classées par arrêté préfectoral',
+            'Vermoulure (sciure) FRAÎCHE = infestation active. Sciure grise et ancienne ≠ danger immédiat',
+            'Les termites mangent le bois de l\'intérieur — quand c\'est visible, c\'est souvent grave',
+            'Le capricorne attaque les résineux (charpentes), le lyctus attaque les feuillus (parquets chêne)',
+            'Toujours exiger un traitement CTB-A+ avec garantie décennale'
+          ],
+          tips: [
+            'Lors du relevé d\'existant : sonder les bois au poinçon (outil simple) — s\'il s\'enfonce anormalement, il y a un problème',
+            'Vermoulure fraîche sur le parquet chêne du client = lyctus actif. Ne pas paniquer, c\'est traitable, mais ne pas poser un nouveau sol dessus sans traitement',
+            'En zone termites : exiger le diagnostic à chaque projet, même si le client ne le mentionne pas'
+          ],
+          tags: ['insectes', 'termites', 'vrillettes', 'capricorne', 'bois', 'pathologie', 'diagnostic']
+        },
+        {
+          id: 'pathologies-pierre',
+          category: 'Pathologies',
+          title: 'Pathologies de la Pierre',
+          subtitle: 'Gel, sels, crypto, érosion',
+          summary: 'La pierre naturelle — calcaire, grès, granit — est sujette à des pathologies spécifiques qui doivent être identifiées AVANT toute intervention. Un mauvais diagnostic mène à un mauvais traitement, qui aggrave souvent le problème.',
+          sections: [
+            {
+              title: 'Altérations dues à l\'eau',
+              content: 'Remontées capillaires : l\'eau du sol remonte dans les murs par capillarité. Crée des auréoles à la base des murs (0-1,5m), des efflorescences blanches (sels), et un environnement propice aux champignons. Traitement : drainage extérieur + injection de résine hydrophobe en pied de mur + enduit de cuvelage perspirant. JAMAIS d\'enduit ciment qui bloque l\'eau et aggrave la situation. Infiltrations : pénétration d\'eau par la toiture, les joints, les fissures. Créent des taches, des dépôts calcaires, des décollements d\'enduit. Gel/dégel : l\'eau dans la pierre gèle en hiver, augmente de volume de 9%, fait éclater la pierre. Cause des desquamations (écailles), des épaufrures (éclats), des délitements.'
+            },
+            {
+              title: 'Altérations par les sels',
+              content: 'Efflorescences : dépôts blancs cristallins en surface — les sels solubles contenus dans la pierre ou amenés par l\'eau se déposent en séchant. Souvent inoffensives en surface, mais signe d\'un problème d\'humidité sous-jacent. Cryptoflorescences : les sels cristallisent DANS la pierre (sous la surface) — beaucoup plus dangereux car ils font éclater la pierre de l\'intérieur. Causes : sels du sol (remontées capillaires), ciment (incompatible avec la pierre ancienne — le ciment est riche en sels), sels de déverglaçage, pollution atmosphérique. Traitement : identifier et supprimer la source de sels + compresses de dessalement (cataplasme de papier + eau distillée qui attire les sels).'
+            },
+            {
+              title: 'Altérations biologiques',
+              content: 'Algues et mousses : colonisation verte en surface dans les zones humides et ombragées. Retiennent l\'humidité et accélèrent la dégradation. Traitement : brossage + biocide (attention à la concentration pour ne pas tacher). Lichens : croûtes grises/jaunes adhérentes — parfois protectrices (avis divisé). Plantes supérieures : racines qui s\'infiltrent dans les joints et font éclater la maçonnerie. Lierre : la tige principale peut faire 10cm de diamètre et désorganiser un mur entier. Croûtes noires (sulfatation) : en milieu urbain, le SO₂ de la pollution réagit avec le calcaire et forme du gypse noir. Irréversible — il faut remplacer la pierre ou laser-nettoyer.'
+            },
+            {
+              title: 'Diagnostic et intervention',
+              content: 'Avant toute intervention sur de la pierre : identifier la nature exacte de la pierre (calcaire tendre, calcaire dur, grès, granit). Chaque pierre a ses pathologies spécifiques. Cartographie des désordres : dresser un relevé précis des pathologies sur un plan/photo. Mesurer l\'humidité (hygromètre), la profondeur des altérations, l\'état des joints. Principe fondamental : la pierre doit RESPIRER. Tout traitement imperméabilisant en surface est une erreur qui piège l\'humidité et accélère la dégradation. Nettoyage : JAMAIS de nettoyeur haute pression sur de la pierre tendre (détruit la calcin, la couche protectrice). Méthodes douces : nébulisation, gommage, laser, micro-sablage. Consolidation : injection de chaux dans les fissures, ragréage en pierre reconstituée (mortier pierre), remplacement des pierres éclatées à l\'identique.'
+            }
+          ],
+          keyPoints: [
+            'JAMAIS de ciment sur pierre ancienne — le ciment apporte des sels et empêche la pierre de respirer',
+            'JAMAIS de nettoyeur haute pression sur pierre tendre — il détruit la calcin protectrice',
+            'L\'eau est l\'ennemi n°1 : supprimer la source d\'humidité AVANT de traiter la pathologie',
+            'Efflorescences blanches = signe d\'humidité sous-jacente, pas juste un problème esthétique',
+            'Toujours identifier la nature exacte de la pierre avant intervention'
+          ],
+          tips: [
+            'Prendre un échantillon de pierre et le montrer à un tailleur de pierre ou au LRMH (Laboratoire de Recherche des Monuments Historiques) pour identification',
+            'Les remontées capillaires créent une « ligne de marée » visible à 0,5-1,5m du sol — la repérer systématiquement lors du relevé',
+            'En copropriété haussmannienne, les pierres de façade sont souvent du calcaire lutétien — fragile au gel, sensible à la pollution'
+          ],
+          tags: ['pierre', 'pathologie', 'humidité', 'sels', 'diagnostic', 'restauration']
+        },
+        {
+          id: 'etancheite-pieces-humides',
+          category: 'Étanchéité',
+          title: 'Étanchéité Pièces Humides (SPEC)',
+          subtitle: 'Le système qui évite les dégâts des eaux',
+          summary: 'Le SPEC (Système de Protection à l\'Eau sous Carrelage) est OBLIGATOIRE dans les pièces humides selon le DTU 65.10. C\'est la membrane d\'étanchéité appliquée SOUS le carrelage qui empêche l\'eau de pénétrer dans la structure. Son absence est la cause n°1 des dégâts des eaux en salle de bain.',
+          sections: [
+            {
+              title: 'Pourquoi le SPEC est obligatoire',
+              content: 'Le carrelage et ses joints ne sont PAS étanches. L\'eau finit toujours par passer au travers (micro-fissures, joints poreux, jonctions). Sans membrane d\'étanchéité sous le carrelage, l\'eau pénètre dans la chape, le plancher, et ruine la structure ou le plafond du voisin du dessous. Le DTU 65.10 (pose de carrelage) et le classement UPEC imposent une protection à l\'eau dans toutes les pièces humides : salle de bain, salle d\'eau, WC avec lave-mains, buanderie, cuisine professionnelle. En copropriété, l\'absence de SPEC engage votre responsabilité civile et décennale en cas de sinistre.'
+            },
+            {
+              title: 'Zones de classement (EB+p et EC)',
+              content: 'EB+privatif : salle de bain et douche en logement. Nécessite un SPEC sur TOUTE la surface du sol + remontées en plinthe (minimum 10cm, 200cm en zone douche). EB+collectif : douche collective, vestiaire. SPEC renforcé. EC : cuisine pro, local technique. SPEC + siphon de sol + pentes d\'écoulement. Les murs en zone de projection d\'eau (zone douche sur 200cm de haut, zone baignoire sur 60cm au-dessus du rebord) doivent AUSSI recevoir un SPEC. Zone sèche (zone 0 des murs) : pas de SPEC obligatoire mais recommandé en sol.'
+            },
+            {
+              title: 'Types de SPEC',
+              content: 'SEL (Système d\'Étanchéité Liquide) : résine liquide appliquée au rouleau en 2 couches avec bande de pontage aux angles et jonctions. Le plus courant en rénovation. Marques : Mapei Mapelastic, Weber.tec Superflex, Sika. Séchage : 4-24h entre couches. SPEC en feuille : membrane préfabriquée (natte de découplage type Schlüter DITRA ou Wedi) collée sur le support. Plus épaisse mais plus fiable. Panneaux prêts à carreler : Wedi, Lazer, Jackoboard. Support + isolant + étanchéité en un seul produit. Idéal pour les douches à l\'italienne (receveur intégré). Bande d\'étanchéité : OBLIGATOIRE à chaque angle rentrant, jonction sol/mur, passage de canalisation. C\'est le point faible n°1 — ne JAMAIS l\'oublier.'
+            },
+            {
+              title: 'Mise en œuvre et erreurs courantes',
+              content: 'Ordre : support propre et sec → primaire d\'accrochage → 1ère couche SEL → bandes de pontage aux angles → 2ème couche SEL (perpendiculaire à la 1ère) → séchage complet → pose du carrelage. Épaisseur minimale : 1mm sec (vérifier avec les fiches techniques). Erreurs fatales : oublier les bandes aux angles, appliquer en une seule couche, ne pas remonter sur les murs (10cm minimum, 200cm en zone douche), ne pas traiter les traversées de canalisations (manchons d\'étanchéité), carreler avant séchage complet. Pente : 1-2% vers le siphon pour les douches à l\'italienne. La pente se fait DANS la chape, pas avec le carrelage. Coût : matériaux SEL 15-30€/m², pose 20-40€/m² en plus du carrelage.'
+            }
+          ],
+          keyPoints: [
+            'Le SPEC est OBLIGATOIRE dans toute pièce humide — son absence est un défaut de construction',
+            'Le carrelage et ses joints NE SONT PAS étanches — seule la membrane protège',
+            'Les angles et jonctions sont les points faibles — TOUJOURS poser des bandes de pontage',
+            'Remonter le SPEC de 200cm en zone douche, pas juste 10cm',
+            'En copropriété, votre responsabilité est engagée si dégât des eaux par défaut d\'étanchéité'
+          ],
+          tips: [
+            'Demander au carreleur une PHOTO de chaque étape d\'étanchéité (SEL + bandes) AVANT qu\'il pose le carrelage — c\'est votre preuve en cas de sinistre',
+            'Les panneaux Wedi/Lazer sont plus chers mais éliminent le risque humain — à recommander pour les douches à l\'italienne',
+            'Prévoir le SPEC dans le budget dès le chiffrage initial — les clients le considèrent comme « invisible » mais c\'est indispensable'
+          ],
+          tags: ['étanchéité', 'SPEC', 'salle de bain', 'douche', 'DTU', 'carrelage']
+        },
+        {
+          id: 'preparation-supports-sol',
+          category: 'Sols',
+          title: 'Préparation des Supports de Sol',
+          subtitle: 'Ragréage, chapes, sous-couches',
+          summary: 'Un beau sol commence par un support parfait. Ragréage, chape, primaire, sous-couche acoustique — chaque couche a un rôle précis. Les confondre ou les oublier, c\'est garantir des problèmes dans les mois qui suivent la livraison.',
+          sections: [
+            {
+              title: 'La chape',
+              content: 'Couche de mortier (ciment + sable + eau) coulée sur la dalle brute pour la mettre de niveau et enrober les réseaux (chauffage au sol, gaines électriques). Épaisseur : 5-10cm. Types : chape traditionnelle (manuelle, séchage 3 semaines), chape fluide autonivelante (pompée, séchage 1-2 semaines, planéité parfaite ±3mm). La chape fluide est le standard actuel en rénovation. Séchage : CRITIQUE. Taux d\'humidité résiduelle <2% pour un carrelage, <0,5% pour un parquet. Mesurer avec un hygromètre à carbure (pas un hygromètre de surface qui est imprécis). Poser un sol sur une chape humide = décollement, cloquage, moisissures garantis.'
+            },
+            {
+              title: 'Le ragréage',
+              content: 'Enduit autolissant fin (3-10mm) appliqué sur la chape ou l\'ancien sol pour rattraper les petites imperfections. Ce n\'est PAS une chape — il ne peut pas combler plus de 10mm. Primaire d\'accrochage OBLIGATOIRE avant ragréage (sinon il se décolle). Types : ragréage P3 (usage courant, séchage 24-48h), ragréage fibré (pour supports fragiles ou fissurés), ragréage extérieur (terrasses). Coût : matériau 5-15€/m² + pose 10-20€/m². Avant ragréage : reboucher les trous/saignées au mortier de réparation, retirer les anciens colles et ragréages non adhérents, aspirer toute la poussière. Sur plancher bois : utiliser un ragréage FIBRÉ et poser un treillis anti-fissures.'
+            },
+            {
+              title: 'Sous-couches et interpositions',
+              content: 'Sous-couche acoustique : obligatoire en copropriété pour les sols flottants (parquet, LVT). Réduit les bruits d\'impact (ΔLw 15-20dB). Matériaux : mousse PE (basique), liège (excellent), fibre de bois (premium), caoutchouc recyclé. Épaisseur 2-5mm. Film pare-vapeur (polyane) : obligatoire sous tout sol flottant sur chape béton. Empêche l\'humidité résiduelle de remonter. Bande de désolidarisation périphérique : mousse compressible en tour de pièce qui permet au sol flottant de se dilater. Sans elle : le parquet gondole. Natte de découplage (type Schlüter DITRA) : membrane interposée entre le support et le carrelage. Absorbe les micro-mouvements du support et protège le carrelage des fissures. Indispensable sur plancher chauffant et supports fissurés.'
+            },
+            {
+              title: 'Compatibilités et erreurs fréquentes',
+              content: 'Parquet massif collé : chape + ragréage P3 + colle MS polymère. Taux d\'humidité chape <2%. JAMAIS sur plancher chauffant >28°C en surface. Parquet contrecollé flottant : chape + ragréage + pare-vapeur + sous-couche acoustique. Carrelage : chape + ragréage si nécessaire + SPEC en pièce humide + mortier-colle. LVT clipsé : chape + ragréage P3 (planéité parfaite requise — la moindre bosse se voit). Moquette : chape + ragréage + colle. Béton ciré : chape + primaire + 2 couches béton ciré + vernis. Erreurs fatales : poser sur une chape humide, oublier le primaire avant ragréage, oublier le pare-vapeur sous sol flottant, ne pas laisser de jeu périphérique pour le parquet, poser du parquet massif sur plancher chauffant haute température.'
+            }
+          ],
+          keyPoints: [
+            'Chape ≠ ragréage : la chape nivelle (5-10cm), le ragréage lisse (3-10mm)',
+            'TOUJOURS mesurer l\'humidité de la chape avant pose : <2% carrelage, <0,5% parquet',
+            'Le primaire d\'accrochage n\'est pas optionnel — sans lui le ragréage se décolle',
+            'En copropriété, la sous-couche acoustique est OBLIGATOIRE sous tout sol flottant',
+            'Film pare-vapeur OBLIGATOIRE sous sol flottant sur chape béton'
+          ],
+          tips: [
+            'Prévoir 2-3 semaines de séchage de chape dans le planning — c\'est la cause n°1 de retard de chantier',
+            'Demander un test d\'humidité au carbure le jour de la pose du sol — le carreleur/parqueteur doit refuser de poser si c\'est trop humide',
+            'Sur ancien carrelage : poser par-dessus avec ragréage fibré plutôt que déposer (moins de bruit, moins de poussière, moins cher)'
+          ],
+          tags: ['sol', 'ragréage', 'chape', 'sous-couche', 'acoustique', 'préparation']
+        },
+        {
+          id: 'isolation-murs-iti-ite',
+          category: 'Isolation',
+          title: 'Isolation des Murs (ITI / ITE)',
+          subtitle: 'Par l\'intérieur ou par l\'extérieur',
+          summary: 'L\'isolation des murs représente jusqu\'à 25% des déperditions thermiques d\'un bâtiment. Le choix entre ITI (Isolation Thermique par l\'Intérieur) et ITE (par l\'Extérieur) impacte directement la surface habitable, l\'esthétique, le budget et le confort.',
+          sections: [
+            {
+              title: 'ITI — Isolation Thermique par l\'Intérieur',
+              content: 'Principe : poser l\'isolant côté intérieur du mur, derrière un parement (placo). Techniques : doublage collé (polystyrène + placo, le plus fin, 4-10cm), doublage sur ossature métallique (laine de verre/roche entre montants, 7-15cm, plus performant), contre-cloison maçonnée (brique + isolant, ancien système). Avantages : coût modéré (30-80€/m² posé), pas besoin d\'autorisation d\'urbanisme, réalisable pièce par pièce, compatible copropriété (chaque lot peut isoler indépendamment). Inconvénients : PERTE DE SURFACE HABITABLE (5-15cm d\'épaisseur sur chaque mur extérieur), ponts thermiques non traités (planchers, refends), suppression de l\'inertie thermique du mur, risque de condensation si pare-vapeur mal posé.'
+            },
+            {
+              title: 'ITE — Isolation Thermique par l\'Extérieur',
+              content: 'Principe : envelopper le bâtiment d\'un manteau isolant à l\'extérieur. Techniques : enduit sur isolant (ETICS — polystyrène ou fibre de bois collé + enduit), bardage ventilé (isolant + lame d\'air + parement bois/métal/composite), vêture (panneaux isolants préfabriqués avec finition intégrée). Avantages : traitement des ponts thermiques (le manteau est continu), conservation de l\'inertie thermique intérieure, AUCUNE perte de surface habitable, pas de travaux intérieurs. Inconvénients : coût élevé (120-250€/m² posé), modification de la façade (autorisation d\'urbanisme nécessaire, PLU, ABF en zone protégée), compliqué en copropriété (vote AG), traitement délicat des ouvertures (fenêtres).'
+            },
+            {
+              title: 'Choix de l\'isolant',
+              content: 'Laine de verre (λ=0.032) : la plus utilisée, bon rapport performance/prix, 5-15€/m². Laine de roche (λ=0.035) : meilleure résistance au feu, bon affaiblissement acoustique. Polystyrène expansé PSE (λ=0.032) : léger, résistant à l\'humidité, le plus utilisé en ITE, mais non perspirant. Polystyrène extrudé XPS (λ=0.029) : très performant, résistant à la compression (sols), imperméable. Fibre de bois (λ=0.038) : excellent déphasage thermique (confort d\'été ++), perspirant, biosourcé — l\'isolant le plus adapté au bâti ancien et à la RE2020. Ouate de cellulose (λ=0.039) : insufflée dans les cloisons, bon rapport écologique, très bon déphasage. Liège (λ=0.040) : le premium — isolant + acoustique + étanche + imputrescible + esthétique. PIR/PUR (λ=0.022) : les plus performants au cm (épaisseur minimale), cher.'
+            },
+            {
+              title: 'Ponts thermiques et précautions',
+              content: 'Un pont thermique est une zone de l\'enveloppe où l\'isolation est interrompue : jonction mur/plancher (le plus critique — le plancher traverse le mur isolé), pourtour des fenêtres (tableaux, appuis), jonction mur/toiture, balcons (dalles en porte-à-faux). L\'ITI ne traite PAS les ponts thermiques linéaires (mur/plancher) — ils restent des voies de déperdition. L\'ITE les traite naturellement (le manteau est continu). Solutions en ITI : retours d\'isolation sur les planchers (bande isolante de 60cm), rupteurs de ponts thermiques (Schöck Rutherma en neuf). Pare-vapeur : côté chaud (intérieur) OBLIGATOIRE avec l\'ITI en climat froid. Frein-vapeur hygrovariable (Intello Plus) : s\'adapte aux saisons — la solution la plus sûre.'
+            }
+          ],
+          keyPoints: [
+            'ITI = perte de surface mais faisable en copropriété. ITE = performance optimale mais lourde à mettre en place',
+            'L\'ITI ne traite PAS les ponts thermiques mur/plancher — prévoir des retours d\'isolation',
+            'Fibre de bois = l\'isolant le plus polyvalent (thermique + acoustique + déphasage + perspirant + RE2020)',
+            'Le pare-vapeur côté chaud est VITAL en ITI — sans lui, condensation dans le mur = moisissures',
+            'Sur mur ancien en pierre : ITI en fibre de bois ou chaux-chanvre (perspirant). JAMAIS de polystyrène'
+          ],
+          tips: [
+            'En rénovation d\'appartement : toujours informer le client de la perte de surface liée à l\'ITI — 10cm sur chaque mur = 1-2m² perdus dans un studio parisien',
+            'Proposer un doublage en liège expansé dans les pièces où l\'espace est compté — 4cm de liège = R de 1.0 + acoustique + esthétique brut',
+            'Vérifier le PLU et la zone ABF avant de proposer une ITE — en centre-ville ancien c\'est souvent interdit'
+          ],
+          tags: ['isolation', 'ITI', 'ITE', 'thermique', 'ponts thermiques', 'RE2020']
+        },
+        {
+          id: 'acoustique-correction',
+          category: 'Acoustique',
+          title: 'Acoustique Intérieure & Correction',
+          subtitle: 'RT60, absorption, confort sonore',
+          summary: 'L\'isolation phonique bloque le son entre deux espaces. La correction acoustique améliore le confort sonore À L\'INTÉRIEUR d\'un espace : réverbération, écho, intelligibilité de la parole. C\'est ce qui fait qu\'un restaurant est agréable ou insupportable, qu\'un open-space fonctionne ou pas.',
+          sections: [
+            {
+              title: 'Comprendre la réverbération',
+              content: 'Le son se propage dans une pièce en se réfléchissant sur les surfaces dures (murs, plafond, sol, vitrage). Chaque réflexion perd un peu d\'énergie. Le temps de réverbération (RT60) mesure le temps que met un son pour décroître de 60dB après l\'arrêt de la source. RT60 trop long = écho, brouhaha, fatigue auditive (restaurant bruyant, open-space invivable). RT60 trop court = son mat, étouffé, impression de « boîte ouatée ». Valeurs cibles : salon/chambre 0,4-0,6s, bureau/salle de réunion 0,5-0,8s, restaurant 0,6-0,9s, salle de classe 0,4-0,6s. Un loft tout béton/verre/métal peut avoir un RT60 >2s — c\'est invivable pour une conversation.'
+            },
+            {
+              title: 'Coefficient d\'absorption (αw)',
+              content: 'Chaque matériau absorbe plus ou moins le son. αw = 0 : réfléchit tout (béton, verre, carrelage). αw = 1 : absorbe tout (laine minérale épaisse). Surfaces réfléchissantes (αw <0.15) : béton, plâtre lisse, verre, carrelage, marbre, métal. Surfaces moyennement absorbantes (αw 0.15-0.5) : bois, moquette fine, rideau léger, enduit texturé. Surfaces très absorbantes (αw >0.5) : laine minérale apparente, mousse acoustique, panneaux perforés + absorbant, rideau lourd, moquette épaisse, feutre acoustique. Le bois est un DIFFUSEUR (renvoie le son de manière homogène) — idéal pour une bonne acoustique.'
+            },
+            {
+              title: 'Solutions de correction acoustique',
+              content: 'Plafond : le levier n°1. Faux-plafond acoustique (dalles minérales perforées : Ecophon, Armstrong, OWA). Îlots acoustiques suspendus (design + performance). Baffles suspendus (lames verticales, très tendance). Panneaux de feutre acoustique découpés (BuzziSpace, De Vorm). Murs : panneaux acoustiques muraux (tissu tendu sur absorbant — Akustar, Offecct). Tasseaux bois espacés sur absorbant (le combo acoustique + déco le plus populaire). Claustra en feutre. Bibliothèques remplies (les livres sont d\'excellents absorbants). Sol : moquette (le meilleur absorbant de sol, αw 0.3-0.5). LVT acoustique (sous-couche intégrée). Tapis grand format. Mobilier : canapés en tissu, rideaux épais, coussins — chaque élément textile absorbe du son.'
+            },
+            {
+              title: 'Applications par type d\'espace',
+              content: 'Restaurant : LE cas le plus fréquent. Sol dur (hygiène) + plafond haut + murs durs = catastrophe. Solutions : faux-plafond acoustique ou baffles + banquettes en tissu + rideaux séparateurs + traitement mural partiel. Budget : 30-80€/m² de plafond acoustique. Open-space / coworking : cloisonnettes acoustiques (phone booths), baffles plafond, moquette, mobilier absorbant. Salon/séjour avec double hauteur : le son monte et revient — traiter le plafond (panneaux suspendus) et les murs hauts (panneau textile). Home cinéma : traitement de 50-70% des surfaces en absorbant + diffuseurs aux points de réflexion latérale. Escalier béton : cage très réverbérante — moquette sur marches + panneau absorbant mural.'
+            }
+          ],
+          keyPoints: [
+            'RT60 = le chiffre clé. Salon : 0,4-0,6s. Restaurant : 0,6-0,9s. Au-dessus = brouhaha',
+            'Le plafond est le levier acoustique n°1 — c\'est la plus grande surface réfléchissante',
+            'Les surfaces dures RÉFLÉCHISSENT le son, les surfaces molles/poreuses l\'ABSORBENT',
+            'Le bois est un DIFFUSEUR, pas un absorbant — il homogénéise le son sans l\'étouffer',
+            'La moquette reste le meilleur traitement de sol acoustique — ne pas la dénigrer systématiquement'
+          ],
+          tips: [
+            'Test du claquement de mains : dans une pièce vide, claquer des mains. Si le son résonne longtemps et de manière métallique = problème de réverbération',
+            'Proposer des tasseaux bois sur feutre acoustique noir en fond de mur — le client voit du design, vous apportez de la correction acoustique',
+            'En restaurant, convaincre le client d\'investir 30-50€/m² en plafond acoustique — c\'est ce qui fait la différence entre un lieu « ambiance » et un lieu « trop bruyant »'
+          ],
+          tags: ['acoustique', 'réverbération', 'absorption', 'RT60', 'confort', 'restaurant']
         }
       ]
     }
