@@ -18,6 +18,7 @@ const APP_DATA = {
       fiches: [
         {
           id: 'art-deco',
+          category: 'Classiques & Historiques',
           title: 'Art Déco',
           subtitle: '1920–1940',
           summary: 'Mouvement né dans les années 1920 à Paris, l\'Art Déco célèbre le luxe, la géométrie et l\'artisanat d\'excellence. Il fusionne modernité industrielle et raffinement décoratif.',
@@ -55,6 +56,7 @@ const APP_DATA = {
         },
         {
           id: 'bauhaus',
+          category: 'Classiques & Historiques',
           title: 'Bauhaus',
           subtitle: '1919–1933',
           summary: 'École fondatrice du design moderne. Le Bauhaus prône l\'union de l\'art et de l\'industrie, la fonctionnalité absolue et l\'absence d\'ornement superflu.',
@@ -92,6 +94,7 @@ const APP_DATA = {
         },
         {
           id: 'minimalisme-japonais',
+          category: 'Contemporains & Fusion',
           title: 'Minimalisme Japonais',
           subtitle: 'Wabi-Sabi & Ma',
           summary: 'L\'art de l\'espace vide et de la beauté imparfaite. Le minimalisme japonais va au-delà de l\'esthétique — c\'est une philosophie de vie appliquée à l\'habitat.',
@@ -130,6 +133,7 @@ const APP_DATA = {
         {
           id: 'mid-century-modern',
           title: 'Mid-Century Modern',
+          category: 'Classiques & Historiques',
           subtitle: '1945–1970',
           summary: 'L\'âge d\'or du design américain et scandinave. Formes organiques, couleurs vives et un optimisme contagieux qui définit encore notre vision du « bon design ».',
           sections: [
@@ -166,6 +170,7 @@ const APP_DATA = {
         },
         {
           id: 'brutalisme',
+          category: 'Classiques & Historiques',
           title: 'Brutalisme',
           subtitle: '1950–1975 & revival 2020s',
           summary: 'L\'honnêteté brute des matériaux. Le Brutalisme, longtemps décrié, connaît un revival puissant en design d\'intérieur avec ses textures béton et sa force sculpturale.',
@@ -204,6 +209,7 @@ const APP_DATA = {
         {
           id: 'style-scandinave',
           title: 'Style Scandinave',
+          category: 'Contemporains & Fusion',
           subtitle: 'Hygge & fonctionnalité',
           summary: 'La chaleur nordique incarnée en design. Le style scandinave allie fonctionnalité, matériaux naturels et atmosphère « hygge » — confortable et accueillante.',
           sections: [
@@ -240,6 +246,7 @@ const APP_DATA = {
         },
         {
           id: 'japandi',
+          category: 'Contemporains & Fusion',
           title: 'Japandi',
           subtitle: 'Fusion Japon × Scandinavie',
           summary: 'Le mariage harmonieux du minimalisme japonais et de la chaleur scandinave. Un style contemporain majeur qui combine le meilleur des deux mondes.',
@@ -277,6 +284,7 @@ const APP_DATA = {
         },
         {
           id: 'maximalisme',
+          category: 'Expressifs & Éclectiques',
           title: 'Maximalisme',
           subtitle: 'L\'excès maîtrisé',
           summary: 'L\'antithèse du minimalisme. Le maximalisme célèbre l\'accumulation, la couleur, les motifs et l\'expression personnelle sans retenue — mais avec méthode.',
@@ -314,6 +322,7 @@ const APP_DATA = {
         },
         {
           id: 'retro-contemporain',
+          category: 'Expressifs & Éclectiques',
           title: 'Rétro-Contemporain',
           subtitle: 'La mémoire réinventée',
           summary: 'Mêler le charme des éléments anciens (moulures, parquet, cheminées) à une écriture contemporaine épurée. Le style roi de la rénovation parisienne, omniprésent dans les reportages Sloft.',
@@ -352,6 +361,7 @@ const APP_DATA = {
         {
           id: 'style-mediterraneen',
           title: 'Style Méditerranéen',
+          category: 'Expressifs & Éclectiques',
           subtitle: 'Lumière, pierre & chaux',
           summary: 'L\'art de vivre du Sud : enduits à la chaux, pierre naturelle, voûtes, terre cuite et lumière écrasante. Un style authentique et intemporel qui séduit bien au-delà de la Méditerranée.',
           sections: [
@@ -389,6 +399,7 @@ const APP_DATA = {
         {
           id: 'style-parisien',
           title: 'Le Style Parisien',
+          category: 'Contemporains & Fusion',
           subtitle: 'L\'appartement haussmannien réinventé',
           summary: 'Le style parisien tel que documenté par Sloft : l\'art de sublimer l\'haussmannien avec des interventions contemporaines. Moulures + verrière + parquet + pièces de design = la formule magique.',
           sections: [
@@ -1584,7 +1595,7 @@ const APP_DATA = {
         },
         {
           id: 'quincaillerie-ferronnerie',
-          category: 'Quincaillerie & Ferrures',
+          category: 'Matériaux Complémentaires',
           title: 'Quincaillerie & Ferronnerie d\'Agencement',
           subtitle: 'Charnières, coulisses, poignées, systèmes coulissants — les mécanismes invisibles',
           summary: 'La quincaillerie, c\'est l\'invisible qui fait tout. Un tiroir qui se ferme en silence, une porte qui s\'ouvre d\'un effleurement, un placard qui coulisse sans effort — ce confort quotidien repose sur des mécanismes de précision dont le coût est dérisoire par rapport à l\'impact sur l\'expérience utilisateur.',
@@ -1622,7 +1633,7 @@ const APP_DATA = {
         },
         {
           id: 'verre-vitrages-deco',
-          category: 'Verre & Transparences',
+          category: 'Matériaux Complémentaires',
           title: 'Verre : Types, Usages & Intégration',
           subtitle: 'Feuilleté, trempé, dépoli, laqué Lacobel, miroir — la matière de lumière',
           summary: 'Le verre est le matériau de la lumière, de la transparence et de l\'agrandissement visuel. En architecture d\'intérieur, il sert de cloison, de crédence, de garde-corps, de plan de travail, de douche, de miroir. Connaître ses types et ses propriétés est indispensable pour prescrire correctement — un verre mal choisi peut être dangereux.',
@@ -1673,6 +1684,7 @@ const APP_DATA = {
       fiches: [
         {
           id: 'theorie-couleurs',
+          category: 'Couleur',
           title: 'Théorie des Couleurs',
           subtitle: 'Fondamentaux chromatiques',
           summary: 'Maîtriser la couleur est un superpouvoir en architecture d\'intérieur. Comprendre le cercle chromatique, les harmonies et la psychologie des couleurs change tout.',
@@ -1710,6 +1722,7 @@ const APP_DATA = {
         },
         {
           id: 'eclairage-technique',
+          category: 'Lumière',
           title: 'Éclairage Technique',
           subtitle: 'Kelvin, Lumen & Lux',
           summary: 'L\'éclairage fait ou défait un intérieur. Comprendre les unités, les types de sources et les techniques d\'implantation est fondamental.',
@@ -1748,6 +1761,7 @@ const APP_DATA = {
         {
           id: 'palettes-tendance',
           title: 'Palettes Tendance 2025-2026',
+          category: 'Couleur',
           subtitle: 'Les harmonies du moment',
           summary: 'Les directions chromatiques majeures pour les projets actuels, des neutres apaisants aux accents audacieux.',
           sections: [
@@ -1785,6 +1799,7 @@ const APP_DATA = {
         {
           id: 'lumiere-naturelle-second-jour',
           title: 'Lumière Naturelle & Second Jour',
+          category: 'Lumière',
           subtitle: 'L\'or de l\'architecte d\'intérieur',
           summary: 'La lumière naturelle est le matériau le plus précieux d\'un projet. Savoir l\'analyser, la capter et la redistribuer dans les pièces aveugles est une compétence clé — c\'est le cœur de chaque reportage Sloft.',
           sections: [
@@ -1822,6 +1837,7 @@ const APP_DATA = {
         {
           id: 'role-du-blanc',
           title: 'Le Blanc comme Matériau',
+          category: 'Couleur',
           subtitle: 'Pas un seul blanc — des centaines',
           summary: 'Le blanc est le fond de scène de 80% des projets d\'intérieur. Mais il n\'existe pas UN blanc — il en existe des centaines, et choisir le bon change tout.',
           sections: [
@@ -1858,6 +1874,7 @@ const APP_DATA = {
         },
         {
           id: 'monochrome-matiere',
+          category: 'Couleur',
           title: 'Le Monochrome Matière',
           subtitle: 'Quand la couleur vient du matériau',
           summary: 'La tendance forte de 2025-2026 : la couleur n\'est plus appliquée (peinture) mais incarnée dans la matière même (pierre verte, bois teinté, béton pigmenté, zellige coloré). Un espace monochrome entièrement en pierre ou en terre — signature des projets les plus publiés.',
@@ -1899,6 +1916,7 @@ const APP_DATA = {
         },
         {
           id: 'eclairage-ambiance',
+          category: 'Lumière',
           title: 'Éclairage d\'Ambiance',
           subtitle: 'Mise en lumière & scénarios',
           summary: 'Au-delà de la technique (voir fiche Éclairage Technique), l\'éclairage d\'ambiance est l\'art de créer des atmosphères par la lumière — gorge lumineuse, scénarios pièce par pièce, et mise en scène du soir.',
@@ -1949,6 +1967,7 @@ const APP_DATA = {
       fiches: [
         {
           id: 'regles-circulation',
+          category: 'Principes Fondamentaux',
           title: 'Règles de Circulation',
           subtitle: 'Flux & passages',
           summary: 'Un intérieur réussi se vit par le mouvement. Les règles de circulation déterminent le confort quotidien et la fluidité d\'un espace.',
@@ -1986,6 +2005,7 @@ const APP_DATA = {
         },
         {
           id: 'anthropometrie',
+          category: 'Principes Fondamentaux',
           title: 'Anthropométrie',
           subtitle: 'Dimensions du corps humain',
           summary: 'Toutes les cotes essentielles du corps humain appliquées au mobilier et à l\'agencement intérieur. La base de tout projet fonctionnel.',
@@ -2023,6 +2043,7 @@ const APP_DATA = {
         },
         {
           id: 'rangement',
+          category: 'Principes Fondamentaux',
           title: 'L\'Art du Rangement',
           subtitle: 'Storage design',
           summary: 'Le rangement est le nerf de la guerre en architecture d\'intérieur. Un espace magnifique sans rangement suffisant deviendra vite chaotique.',
@@ -2259,6 +2280,7 @@ const APP_DATA = {
         },
         {
           id: 'optimiser-petit-espace',
+          category: 'Espaces & Pièces',
           title: 'Optimiser un Espace < 50 m²',
           subtitle: 'L\'art de vivre grand dans petit',
           summary: 'Les petites surfaces sont le cœur de métier de l\'architecte d\'intérieur en milieu urbain. Chaque mètre carré compte, chaque centimètre se négocie. C\'est dans la contrainte que naissent les projets les plus ingénieux.',
@@ -2297,6 +2319,7 @@ const APP_DATA = {
         {
           id: 'cuisine-ouverte-ilot',
           title: 'La Cuisine Ouverte & l\'Îlot Central',
+          category: 'Espaces & Pièces',
           subtitle: 'Le cœur battant de l\'appartement',
           summary: 'La cuisine ouverte avec îlot est devenue la pièce maîtresse de l\'habitat contemporain. C\'est le lieu de vie, de convivialité et de représentation. Bien la concevoir demande rigueur et méthode.',
           sections: [
@@ -2334,6 +2357,7 @@ const APP_DATA = {
         {
           id: 'salle-de-bain-compacte',
           title: 'La Salle de Bain Compacte',
+          category: 'Espaces & Pièces',
           subtitle: 'Luxe et fonctionnalité en 3-6 m²',
           summary: 'La salle de bain est la pièce la plus technique d\'un projet. En petit espace, chaque centimètre est stratégique. C\'est aussi là que le client attend le plus de « wow effect » — un projet réussi commence souvent ici.',
           sections: [
@@ -2371,6 +2395,7 @@ const APP_DATA = {
         {
           id: 'verriere-cloison-vitree',
           title: 'Verrière & Cloison Vitrée',
+          category: 'Espaces & Pièces',
           subtitle: 'Séparer sans cloisonner',
           summary: 'La verrière est devenue l\'élément signature de la rénovation contemporaine. Elle sépare les espaces tout en laissant passer la lumière et les regards — c\'est le compromis parfait entre ouverture et intimité.',
           sections: [
@@ -2408,6 +2433,7 @@ const APP_DATA = {
         {
           id: 'banquette-integree',
           title: 'La Banquette Intégrée',
+          category: 'Agencement Sur-Mesure',
           subtitle: 'Assise + rangement + signature',
           summary: 'La banquette intégrée est la solution la plus élégante pour gagner de la place dans un coin repas, une entrée ou un salon. C\'est aussi un geste architectural fort — un élément construit qui donne du caractère à un espace.',
           sections: [
@@ -2445,6 +2471,7 @@ const APP_DATA = {
         {
           id: 'mezzanine-hauteur',
           title: 'Mezzanine & Exploitation de la Hauteur',
+          category: 'Espaces & Pièces',
           subtitle: 'Quand le m² se gagne en altitude',
           summary: 'Dans les petits espaces avec belle hauteur sous plafond, la mezzanine transforme un studio en duplex. C\'est l\'intervention la plus spectaculaire en rénovation — un gain de surface net de 30 à 50%.',
           sections: [
@@ -2519,7 +2546,7 @@ const APP_DATA = {
         },
         {
           id: 'stores-rideaux-fenetres',
-          category: 'Confort & Habillage',
+          category: 'Agencement Sur-Mesure',
           title: 'Stores, Rideaux & Habillage de Fenêtres',
           subtitle: 'Voilages, occultants, stores techniques — cadrer la lumière et l\'intimité',
           summary: 'L\'habillage de fenêtre est le parent pauvre de l\'architecture d\'intérieur — souvent oublié, traité en dernier, sous-budgété. Pourtant, c\'est lui qui contrôle la lumière, l\'intimité, la thermique et l\'acoustique d\'une pièce. Un bel intérieur avec des rideaux ratés reste un intérieur raté.',
@@ -2570,6 +2597,7 @@ const APP_DATA = {
       fiches: [
         {
           id: 'accessibilite-pmr',
+          category: 'Normes & Réglementations',
           title: 'Accessibilité PMR',
           subtitle: 'Personnes à Mobilité Réduite',
           summary: 'L\'accessibilité n\'est pas une option — c\'est une obligation légale et un impératif éthique. Maîtriser les normes PMR est indispensable pour tout architecte d\'intérieur.',
@@ -2607,6 +2635,7 @@ const APP_DATA = {
         },
         {
           id: 'normes-electriques',
+          category: 'Normes & Réglementations',
           title: 'Normes Électriques NF C 15-100',
           subtitle: 'Installation électrique',
           summary: 'La norme NF C 15-100 régit toutes les installations électriques dans les logements en France. Connaître ses exigences minimales est indispensable pour tout projet.',
@@ -2645,6 +2674,7 @@ const APP_DATA = {
         {
           id: 'reglementation-thermique',
           title: 'Réglementation Thermique RE2020',
+          category: 'Normes & Réglementations',
           subtitle: 'Performance énergétique',
           summary: 'La RE2020 (Réglementation Environnementale 2020) impose des exigences de performance énergétique et environnementale qui impactent directement les choix en intérieur.',
           sections: [
@@ -2757,7 +2787,7 @@ const APP_DATA = {
         },
         {
           id: 'securite-incendie',
-          category: 'Sécurité',
+          category: 'Normes & Réglementations',
           title: 'Sécurité Incendie & Classement au Feu',
           subtitle: 'Euroclasses, M0-M4, ERP, logement',
           summary: 'L\'architecte d\'intérieur choisit les matériaux, les revêtements, le mobilier — il est directement responsable du comportement au feu de l\'espace qu\'il conçoit. En ERP (Établissement Recevant du Public), une erreur de classement au feu peut coûter des vies et fermer un établissement.',
@@ -3112,7 +3142,7 @@ const APP_DATA = {
         },
         {
           id: 'contrat-juridique',
-          category: 'Business',
+          category: 'Juridique & Assurances',
           title: 'Contrat & Aspects Juridiques',
           subtitle: 'Se protéger légalement',
           summary: 'Un contrat solide protège votre travail, votre rémunération et vos droits d\'auteur. Ne commencez JAMAIS un projet sans contrat signé.',
@@ -3150,7 +3180,7 @@ const APP_DATA = {
         },
         {
           id: 'relation-client',
-          category: 'Relation Client',
+          category: 'Méthodologie',
           title: 'Gérer la Relation Client',
           subtitle: 'Communication, attentes & conflits',
           summary: 'La relation client est un art en soi. Un client bien géré = un projet fluide + des recommandations. Un client mal géré = cauchemar garanti, même sur un beau projet.',
@@ -3772,7 +3802,7 @@ const APP_DATA = {
         },
         {
           id: 'lieux-a-visiter',
-          category: 'Lieux à Visiter',
+          category: 'Références & Inspirations',
           title: 'Lieux d\'Architecture d\'Intérieur à Visiter',
           subtitle: 'Hôtels, restaurants, boutiques, musées — classés par ville avec liens Maps',
           summary: 'Rien ne remplace l\'expérience physique d\'un espace conçu par un grand architecte d\'intérieur. Voici une sélection de lieux ouverts au public — hôtels, restaurants, boutiques, musées — classés par ville. Chaque lieu est une leçon vivante de matériaux, de lumière, de proportions et de détails. Prenez un café, observez, photographiez, analysez.',
@@ -4143,7 +4173,7 @@ const APP_DATA = {
         // --- ADMINISTRATIF & NORMES ---
         {
           id: 'vocab-normes-reglementation',
-          category: 'Administratif & Normes',
+          category: 'Références & Outils',
           title: 'Vocabulaire Réglementaire',
           subtitle: 'PLU, ERP, DTU, PMR…',
           summary: 'Les acronymes et termes réglementaires que vous devez connaître pour être en conformité et comprendre ce que les administrations vous demandent.',
@@ -4182,7 +4212,7 @@ const APP_DATA = {
         // --- LEXIQUE RAPIDE ---
         {
           id: 'vocab-lexique-express',
-          category: 'Lexique Express',
+          category: 'Références & Outils',
           title: 'Lexique Express A→Z',
           subtitle: '100+ termes en un coup d\'œil',
           summary: 'Le glossaire de poche de l\'architecte d\'intérieur. Les termes les plus fréquents classés alphabétiquement, avec leur définition en une phrase.',
@@ -4708,7 +4738,7 @@ const APP_DATA = {
         // --- PATHOLOGIES DU BÂTI ANCIEN ---
         {
           id: 'murs-anciens-pierre',
-          category: 'Pathologies du Bâti Ancien',
+          category: 'Pathologies',
           title: 'Murs Anciens, Pierre & Enduits',
           subtitle: 'Respecter le bâti pour mieux le rénover',
           summary: 'Les murs anciens (pierre, brique, terre, pan de bois) ont leur propre logique constructive. Les traiter comme des murs modernes est la pire erreur en rénovation : ciment sur pierre = catastrophe. Comprendre le bâti ancien est indispensable.',
@@ -4861,7 +4891,7 @@ const APP_DATA = {
         },
         {
           id: 'etancheite-pieces-humides',
-          category: 'Étanchéité',
+          category: 'Sols & Finitions',
           title: 'Étanchéité Pièces Humides (SPEC)',
           subtitle: 'Le système qui évite les dégâts des eaux',
           summary: 'Le SPEC (Système de Protection à l\'Eau sous Carrelage) est OBLIGATOIRE dans les pièces humides selon le DTU 65.10. C\'est la membrane d\'étanchéité appliquée SOUS le carrelage qui empêche l\'eau de pénétrer dans la structure. Son absence est la cause n°1 des dégâts des eaux en salle de bain.',
@@ -4899,7 +4929,7 @@ const APP_DATA = {
         },
         {
           id: 'preparation-supports-sol',
-          category: 'Sols',
+          category: 'Sols & Finitions',
           title: 'Préparation des Supports de Sol',
           subtitle: 'Ragréage, chapes, sous-couches',
           summary: 'Un beau sol commence par un support parfait. Ragréage, chape, primaire, sous-couche acoustique — chaque couche a un rôle précis. Les confondre ou les oublier, c\'est garantir des problèmes dans les mois qui suivent la livraison.',
@@ -4937,7 +4967,7 @@ const APP_DATA = {
         },
         {
           id: 'isolation-murs-iti-ite',
-          category: 'Isolation',
+          category: 'Isolation & Confort Thermique',
           title: 'Isolation des Murs (ITI / ITE)',
           subtitle: 'Par l\'intérieur ou par l\'extérieur',
           summary: 'L\'isolation des murs représente jusqu\'à 25% des déperditions thermiques d\'un bâtiment. Le choix entre ITI (Isolation Thermique par l\'Intérieur) et ITE (par l\'Extérieur) impacte directement la surface habitable, l\'esthétique, le budget et le confort.',
@@ -5161,7 +5191,7 @@ const APP_DATA = {
         },
         {
           id: 'faux-plafonds',
-          category: 'Plafonds',
+          category: 'Cloisons & Distribution',
           title: 'Faux-Plafonds : BA13, Tendu, Acoustique',
           subtitle: 'Tout ce qui se passe au-dessus de nos têtes',
           summary: 'Le plafond est la « cinquième paroi » — trop souvent négligée. Le faux-plafond est un outil technique (passage de gaines, acoustique, éclairage) ET un outil de design (volumes, matières, jeux de hauteur).',
@@ -5541,7 +5571,7 @@ const APP_DATA = {
         },
         {
           id: 'serrurerie-metallerie',
-          category: 'Ouvrages Métalliques',
+          category: 'Escaliers & Ouvrages',
           title: 'Serrurerie & Métallerie Décorative',
           subtitle: 'Acier, fer forgé, laiton, inox — les ouvrages sur-mesure qui signent un intérieur',
           summary: 'La serrurerie-métallerie, c\'est l\'art de transformer le métal en architecture. Verrières, escaliers, garde-corps, étagères murales, consoles, crédences — ces ouvrages sur-mesure signent un intérieur et le distinguent du tout-venant. L\'architecte d\'intérieur travaille AVEC un serrurier artisan — c\'est un partenariat essentiel.',
