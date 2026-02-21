@@ -628,6 +628,13 @@ textarea {
   margin-bottom: 10px;
 }
 
+.fiche-card-domain {
+  font-size: 0.72rem;
+  font-weight: 500;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
 .fiche-card-summary {
   font-size: 0.82rem;
   color: var(--text-secondary);
@@ -1983,7 +1990,14 @@ mark {
   .search-wrapper { max-width: 100%; }
   .search-shortcut { display: none; }
 
-  #breadcrumb { display: none; }
+  #breadcrumb {
+    font-size: 0.72rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70vw;
+  }
+  #breadcrumb .breadcrumb-sep { margin: 0 3px; }
 
   .etudes-grid { grid-template-columns: 1fr; }
   .etudes-filters { flex-wrap: wrap; }
@@ -2084,7 +2098,7 @@ mark {
   padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--surface);
   color: var(--text);
   cursor: pointer;
   min-width: 160px;
@@ -2101,7 +2115,7 @@ mark {
   padding: 8px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--surface);
   color: var(--text);
   flex: 1;
   min-width: 200px;
@@ -2542,7 +2556,7 @@ mark {
   padding: 10px 14px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--surface);
   color: var(--text);
   width: 100%;
 }
@@ -3131,7 +3145,7 @@ mark {
 }
 
 .sidebar-footer-role {
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   color: rgba(255,255,255,0.22);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -3829,4 +3843,98 @@ body.dark-mode .search-shortcut {
     font-size: 9pt;
     color: #777;
   }
+}
+
+/* ========================================
+   AUTO DARK MODE (system preference)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-forced) {
+    --bg: #121212;
+    --surface: #1E1E1E;
+    --text: #E8E6E1;
+    --text-secondary: #A0A0A0;
+    --text-tertiary: #6A6A6A;
+    --accent: #C9A87C;
+    --accent-hover: #D4B88E;
+    --accent-light: #2A2318;
+    --border: #2E2E2E;
+    --border-light: #252525;
+    --success: #7DB889;
+    --success-light: #1A2E1F;
+    --warning: #D4A57A;
+    --danger: #D48080;
+    --tag-bg: #252220;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+  }
+  body:not(.light-forced) #topbar {
+    background: rgba(18, 18, 18, 0.92);
+    border-bottom-color: var(--border);
+  }
+  body:not(.light-forced) .dark-mode-toggle {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.15);
+  }
+  body:not(.light-forced) .promo-card {
+    background: linear-gradient(135deg, #0E0E0E 0%, #1A1508 100%);
+  }
+  body:not(.light-forced) img { opacity: 0.92; }
+  body:not(.light-forced) .search-shortcut {
+    background: var(--surface);
+    border-color: var(--border);
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   FOCUS VISIBLE (keyboard accessibility)
+   ======================================== */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   SKIP TO CONTENT
+   ======================================== */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-to-content:focus {
+  top: 16px;
 }

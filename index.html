@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARCHITEK PRO — Encyclopédie Architecture d'Intérieur | Fiches, Matériaux, Styles</title>
-  <meta name="description" content="+100 fiches encyclopédiques en architecture d'intérieur : styles déco, matériaux, couleurs, éclairage, ergonomie, normes, gestion de projet. Ressource gratuite pour étudiants et professionnels. Par AtelierLO.">
+  <meta name="description" content="151 fiches encyclopédiques en architecture d'intérieur : styles déco, matériaux, couleurs, éclairage, ergonomie, normes, gestion de projet. Ressource gratuite pour étudiants et professionnels. Par AtelierLO.">
   <meta name="keywords" content="architecture intérieur, design intérieur, fiches architecture, matériaux décoration, styles architecturaux, éclairage intérieur, ergonomie habitat, normes construction, tendances déco, vocabulaire architecture, rénovation intérieure, aménagement espace, cours architecture intérieur, encyclopédie design, couleurs intérieur, gestion projet archi">
   <meta name="theme-color" content="#1A1A1A">
   <meta name="author" content="AtelierLO — Lucien Oulhen">
@@ -15,7 +15,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="ARCHITEK PRO — Encyclopédie Architecture d'Intérieur">
-  <meta property="og:description" content="+100 fiches encyclopédiques gratuites : styles, matériaux, couleurs, éclairage, ergonomie, normes, tendances. L'outil de référence pour étudiants et architectes d'intérieur.">
+  <meta property="og:description" content="151 fiches encyclopédiques gratuites : styles, matériaux, couleurs, éclairage, ergonomie, normes, tendances. L'outil de référence pour étudiants et architectes d'intérieur.">
   <meta property="og:url" content="https://elululu.github.io/ARCHITEK-PRO/">
   <meta property="og:site_name" content="ARCHITEK PRO">
   <meta property="og:locale" content="fr_FR">
@@ -27,7 +27,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ARCHITEK PRO — Encyclopédie Architecture d'Intérieur">
-  <meta name="twitter:description" content="+100 fiches gratuites en archi d'intérieur : styles, matériaux, couleurs, ergonomie, normes, tendances. Pour étudiants et pros.">
+  <meta name="twitter:description" content="151 fiches gratuites en archi d'intérieur : styles, matériaux, couleurs, ergonomie, normes, tendances. Pour étudiants et pros.">
   <meta name="twitter:image" content="https://elululu.github.io/ARCHITEK-PRO/og-image.png">
 
   <!-- Structured Data JSON-LD -->
@@ -40,7 +40,7 @@
         "@id": "https://elululu.github.io/ARCHITEK-PRO/#website",
         "url": "https://elululu.github.io/ARCHITEK-PRO/",
         "name": "ARCHITEK PRO",
-        "description": "Encyclopédie d'architecture d'intérieur : +100 fiches, études de cas, veille et outils de gestion de projet.",
+        "description": "Encyclopédie d'architecture d'intérieur : 151 fiches, études de cas, veille et outils de gestion de projet.",
         "inLanguage": "fr",
         "publisher": {
           "@type": "Organization",
@@ -107,6 +107,9 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
 </head>
 <body>
+
+  <!-- Skip to content (accessibility) -->
+  <a href="#content" class="skip-to-content">Aller au contenu principal</a>
 
   <!-- Sidebar -->
   <aside id="sidebar">
@@ -184,7 +187,7 @@
       <div class="search-wrapper">
         <span class="search-icon">⌕</span>
         <input type="text" id="search-input" placeholder="Rechercher une fiche, un matériau, un style..." autocomplete="off">
-        <kbd class="search-shortcut">/</kbd>
+        <kbd class="search-shortcut">⌘K</kbd>
       </div>
     </header>
     <div id="content"></div>
@@ -241,8 +244,8 @@
     </div>
   </noscript>
 
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});

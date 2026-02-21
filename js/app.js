@@ -135,8 +135,13 @@ function navigate(view, domainId = null, ficheId = null) {
     const key = ficheKey(domainId, ficheId);
     if (!isRead(key)) {
       state.userData.read.push(key);
-      saveUserData();
     }
+    // Track recently viewed (max 10)
+    if (!state.userData.recentlyViewed) state.userData.recentlyViewed = [];
+    state.userData.recentlyViewed = state.userData.recentlyViewed.filter(k => k !== key);
+    state.userData.recentlyViewed.unshift(key);
+    if (state.userData.recentlyViewed.length > 10) state.userData.recentlyViewed.length = 10;
+    saveUserData();
   }
 
   updateNav();
@@ -288,6 +293,34 @@ function renderDashboard(container) {
   actionBar.appendChild(randomBtn);
   actionBar.appendChild(importBtn);
   container.appendChild(actionBar);
+
+  // Recently viewed fiches
+  const recent = state.userData.recentlyViewed || [];
+  if (recent.length > 0) {
+    const recentSection = el('div', { className: 'dashboard-section' });
+    recentSection.innerHTML = `<div class="dashboard-section-header"><h2>🕐 Consultées récemment</h2></div>`;
+    const recentGrid = el('div', { className: 'fiches-grid' });
+    recent.slice(0, 6).forEach(key => {
+      const [dId, fId] = key.split('::');
+      const d = getDomain(dId);
+      const f = d ? d.fiches.find(x => x.id === fId) : null;
+      if (!d || !f) return;
+      let statusHTML = '';
+      if (isFavorited(key)) statusHTML += '<div class="status-badge favorited" title="Favori"></div>';
+      if (isMastered(key)) statusHTML += '<div class="status-badge mastered" title="Maîtrisé"></div>';
+      const card = el('div', { className: 'fiche-card', onClick: () => navigate('fiche', dId, fId) });
+      card.style.borderLeftColor = d.color;
+      card.innerHTML = `
+        ${statusHTML}
+        <div class="fiche-card-title">${f.title}</div>
+        <div class="fiche-card-subtitle">${f.subtitle}</div>
+        <div class="fiche-card-domain" style="color:${d.color}">${d.icon} ${d.name}</div>
+      `;
+      recentGrid.appendChild(card);
+    });
+    recentSection.appendChild(recentGrid);
+    container.appendChild(recentSection);
+  }
 
   // Promo — Template ArchiCAD
   const promo = el('div', { className: 'promo-card' });
@@ -2581,17 +2614,27 @@ function initSearch() {
     }
   });
 
-  // Keyboard shortcut /
+  // Keyboard shortcut / and Cmd+K
   document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && document.activeElement !== input && !$('#modal-overlay').classList.contains('hidden') === false) {
-      // Only focus if modal is not open
-      if ($('#modal-overlay').classList.contains('hidden')) {
-        e.preventDefault();
-        input.focus();
-      }
+    const modalOpen = !$('#modal-overlay').classList.contains('hidden');
+    // Cmd+K or Ctrl+K
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      if (!modalOpen) input.focus();
+      return;
     }
+    // / shortcut
+    if (e.key === '/' && document.activeElement !== input && !modalOpen) {
+      e.preventDefault();
+      input.focus();
+    }
+    // Escape: close modal OR close mobile menu
     if (e.key === 'Escape') {
-      closeModal();
+      if (!modalOpen) {
+        closeMobileMenu();
+      } else {
+        closeModal();
+      }
     }
   });
 }
@@ -2703,7 +2746,14 @@ function importAllData() {
 // ============ DARK MODE ============
 function initDarkMode() {
   const saved = localStorage.getItem('architek-pro-theme');
-  if (saved === 'dark') document.body.classList.add('dark-mode');
+  if (saved === 'dark') {
+    document.body.classList.add('dark-mode');
+  } else if (saved === 'light') {
+    document.body.classList.add('light-forced');
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // No saved preference — follow system
+    document.body.classList.add('dark-mode');
+  }
 
   const toggle = $('#dark-mode-toggle');
   if (!toggle) return;
@@ -2714,6 +2764,8 @@ function initDarkMode() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('architek-pro-theme', isDark ? 'dark' : 'light');
+    // If user explicitly chooses light, mark it so prefers-color-scheme CSS doesn't override
+    document.body.classList.toggle('light-forced', !isDark);
     updateDarkModeIcon();
   });
 }

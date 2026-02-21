@@ -1,5 +1,5 @@
 // ARCHITEK PRO — Service Worker (Offline Cache)
-const CACHE_NAME = 'architek-pro-v1';
+const CACHE_NAME = 'architek-pro-v2';
 const ASSETS = [
   './',
   './index.html',
