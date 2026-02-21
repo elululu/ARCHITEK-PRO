@@ -4409,6 +4409,268 @@ const APP_DATA = {
             'En restaurant, convaincre le client d\'investir 30-50€/m² en plafond acoustique — c\'est ce qui fait la différence entre un lieu « ambiance » et un lieu « trop bruyant »'
           ],
           tags: ['acoustique', 'réverbération', 'absorption', 'RT60', 'confort', 'restaurant']
+        },
+        {
+          id: 'cloisons-placo',
+          category: 'Cloisons & Distribution',
+          title: 'Cloisons Placo (Plaques de Plâtre)',
+          subtitle: 'BA13, BA15, hydro, feu — le standard du second œuvre',
+          summary: 'La cloison en plaques de plâtre sur ossature métallique est la technique n°1 de distribution intérieure. Simple, rapide, performante — mais encore faut-il savoir prescrire le bon système pour le bon usage.',
+          sections: [
+            {
+              title: 'Types de plaques',
+              content: 'BA13 standard : plaque de plâtre de 12,5mm d\'épaisseur. Le classique universel. Bords amincis (BA) pour faciliter le jointement. BA15 : 15mm d\'épaisseur — meilleure performance acoustique et mécanique. Peu utilisée en résidentiel. Plaque hydrofuge (H1) : cartonnage vert. Résistante à l\'humidité. OBLIGATOIRE en salle de bain, cuisine, WC, buanderie. NE PAS utiliser de BA13 standard en pièce humide. Plaque coupe-feu (PPF) : rose. Résistante au feu (EI30 à EI120 selon le système). Obligatoire autour des gaines techniques, en ERP, et dans les parois séparatives. Plaque acoustique (Placo Phonique) : âme renforcée haute densité — gain de 3 dB par rapport à une BA13 standard. Plaque 4PRO (Placo) : combine hydro + phonique + solidité + haute dureté. Le haut de gamme résidentiel. Fabricants : Placo (Saint-Gobain) domine le marché français. Siniat (Etex), Knauf.'
+            },
+            {
+              title: 'Ossature métallique',
+              content: 'Rails (au sol et au plafond) : R48, R70, R90 (largeur en mm). Le rail se fixe au sol et au plafond pour guider les montants. Montants (verticaux) : M48, M70, M90. Insérés dans les rails, espacés de 60cm (entre-axe). La largeur du montant détermine l\'épaisseur de la cloison ET la possibilité d\'isolation. M48 = cloison fine (72mm finie avec 1 BA13 de chaque côté). Isolation limitée à 45mm. M70 = le standard (98mm finie). Isolant de 70mm. Le plus courant en résidentiel. M90 = pour forte isolation acoustique ou thermique (120mm finie). Isolant de 80-90mm. Système à double ossature : deux ossatures M48 séparées par un vide → meilleure performance acoustique (désolidarisation totale). Épaisseur ~170mm. Utilisé entre logements ou pour les exigences acoustiques élevées.'
+            },
+            {
+              title: 'Performance acoustique',
+              content: 'L\'affaiblissement acoustique (Rw en dB) dépend du système complet : Simple peau (1 BA13 / montant M70 + laine 70mm / 1 BA13) = Rw ~42 dB. Le MINIMUM acceptable entre deux pièces. Double peau (2 BA13 / montant M70 + laine 70mm / 2 BA13) = Rw ~50 dB. Le standard de qualité en résidentiel. Double ossature désolidarisée + double peau = Rw ~58-62 dB. Le niveau « mur mitoyen ». Pour atteindre un bon confort : séjour/chambre = Rw 45 dB minimum, chambre/chambre = Rw 50 dB, logement/logement = Rw 53 dB (NRA). La laine minérale dans l\'ossature est ESSENTIELLE — sans elle on perd 8-10 dB. TOUJOURS prescrire de la laine dans les cloisons, même si le client pense que « c\'est juste une cloison ».'
+            },
+            {
+              title: 'Mise en œuvre et pièges',
+              content: 'Les rails sont fixés au sol et au plafond avec une bande résiliente dessous (désolidarisation phonique — souvent oubliée par les plaquistes → pont phonique garanti). Les montants sont coupés 1cm plus courts que la hauteur et insérés dans les rails. Les plaques sont vissées aux montants (vis autoperceuses 25mm, tous les 30cm max). Les joints sont traités avec bande à joint + enduit (calicot). L\'enduit de finition (lissage) dépend de la finition voulue : Q1 = enduit de base (pas de finition visible — derrière un carrelage). Q2 = standard (revêtement épais — papier peint, enduit texturé). Q3 = soigné (peinture mate). Q4 = très soigné (peinture satinée/brillante, laque). Q5 = exceptionnel (laque tendue sous éclairage rasant). Demander du Q3 minimum pour de la peinture — le Q2 se voit systématiquement sous éclairage rasant. Le finisseur (plâtrier-enduiseur) est aussi important que le plaquiste — ne pas négliger ce poste.'
+            }
+          ],
+          keyPoints: [
+            'BA13 hydrofuge (H1) OBLIGATOIRE en pièce humide — jamais de BA13 standard en salle de bain',
+            'Montant M70 + laine 70mm + double peau = le standard de qualité (Rw ~50 dB)',
+            'La bande résiliente sous les rails est essentielle pour l\'acoustique — vérifier sur chantier',
+            'Qualité de finition Q3 minimum pour de la peinture — préciser dans le CCTP',
+            'TOUJOURS mettre de la laine minérale dans les cloisons — même les simples séparations'
+          ],
+          tips: [
+            'Pour une salle de bain : plaque H1 + bande d\'étanchéité périphérique + SPEC derrière le carrelage = le trio gagnant',
+            'La Placo Phonique (ou Siniat Prégyplac dB) coûte 2-3€/m² de plus que la BA13 standard — un surcoût ridicule pour un gain réel de confort',
+            'Intégrer des renforts bois ou métal (Prégymétal) dans l\'ossature à l\'emplacement des meubles suspendus — sinon le client ne pourra rien accrocher'
+          ],
+          tags: ['cloison', 'placo', 'BA13', 'ossature', 'acoustique', 'plâtre', 'distribution']
+        },
+        {
+          id: 'cloisons-carreaux-platre',
+          category: 'Cloisons & Distribution',
+          title: 'Carreaux de Plâtre & Briques',
+          subtitle: 'Les cloisons maçonnées traditionnelles',
+          summary: 'Avant le placo, il y avait les carreaux de plâtre et les briques plâtrières. Ces cloisons maçonnées restent pertinentes dans certains contextes — solidité, inertie, sensation de « vrai mur ». Mais elles sont plus lourdes, plus longues à poser et moins performantes acoustiquement.',
+          sections: [
+            {
+              title: 'Carreaux de plâtre',
+              content: 'Blocs de plâtre moulé de 66x50cm, épaisseur 5, 7 ou 10cm. Assemblage par emboîtement (rainure-languette) et colle-plâtre. Pleins : lourds (environ 80kg/m² en 7cm), bonne inertie, sensation de mur massif. Alvéolés : allégés (~50kg/m²), moins bonne acoustique. Hydrofuges : teintés en bleu, pour les pièces humides. Avantages : pas de finition joints (surface lisse — directement enduisible ou peignable), solidité mécanique (on peut visser directement dedans sans chevilles), bonne résistance au feu. Inconvénients : lourds (vérifier la charge sur le plancher — surtout dans l\'ancien), pose lente (maçonnerie traditionnelle), performance acoustique médiocre en faible épaisseur (Rw ~34 dB en 5cm, ~40 dB en 7cm, ~46 dB en 10cm). Prix : 8-15€/m² matière + pose 25-40€/m². Marques : Placoplatre (Caroplatre), Siniat (Prégy).'
+            },
+            {
+              title: 'Briques plâtrières',
+              content: 'Briques creuses en terre cuite de 3,5 à 7cm d\'épaisseur, montées au plâtre ou à la colle. C\'est la cloison traditionnelle des immeubles haussmanniens et des constructions pré-1970. Avantages : bonne inertie thermique, solidité, « son » de vrai mur (pas creux comme le placo), se découpe et se reprend facilement en rénovation. Inconvénients : très lourdes (~100kg/m² en 7cm), performance acoustique moyenne, nécessitent un enduit plâtre de finition (10-15mm — ajoute du poids et du temps). En rénovation d\'appartement ancien : les cloisons existantes sont souvent en briques plâtrières. NE PAS systématiquement les remplacer par du placo — elles sont souvent plus performantes acoustiquement que prévu (masse + enduit épais). Les conserver et les reprendre quand possible.'
+            },
+            {
+              title: 'Béton cellulaire',
+              content: 'Blocs de béton cellulaire autoclavé (Ytong, Siporex). Très léger (~17kg/bloc de 62,5x25x7cm), excellent isolant thermique (λ ~0,10-0,16 W/m.K), résistant au feu, hydrofuge dans la masse. Collé à la colle-ciment. Épaisseurs : 7, 10, 15, 20cm. Avantages : le plus léger des matériaux de cloison maçonnée, bon isolant thermique, se coupe facilement à la scie égoïne. Inconvénients : friable (difficile de fixer des objets lourds — chevilles spéciales), acoustique médiocre (trop léger), aspect poreux (nécessite un enduit ou un primaire épais avant peinture). Usage : cloisons dans les combles (plancher à faible portance), contre-cloisons isolantes, construction neuve. Moins pertinent en rénovation résidentielle que le placo ou les carreaux de plâtre.'
+            },
+            {
+              title: 'Comparatif et choix',
+              content: 'Budget serré + rapidité → placo BA13 M70. Meilleure acoustique → placo double peau + laine. Solidité + « vrai mur » → carreaux de plâtre 10cm. Légèreté (plancher fragile) → placo ou béton cellulaire. Pièce humide → placo H1 ou carreaux de plâtre hydrofuges. Rénovation haussmannien → conserver les briques existantes quand possible. ERP / coupe-feu → placo PPF (plaques coupe-feu) sur ossature. Le placo est supérieur en acoustique (grâce au système masse-ressort-masse) et en rapidité. Les carreaux de plâtre sont supérieurs en solidité et en « sensation de vrai mur ». Le choix dépend du contexte — aucune solution n\'est universellement meilleure.'
+            }
+          ],
+          keyPoints: [
+            'Carreaux de plâtre = solidité + finition directe, mais lourds et acoustique limitée',
+            'Briques plâtrières haussmanniennes : les conserver quand possible — souvent meilleures que prévu',
+            'Béton cellulaire = très léger et isolant, mais friable et mauvais en acoustique',
+            'Le placo est supérieur en acoustique grâce au principe masse-ressort-masse',
+            'TOUJOURS vérifier la charge sur le plancher avant de monter une cloison maçonnée dans l\'ancien'
+          ],
+          tips: [
+            'En rénovation haussmannien : conserver les briques existantes + doublage Placo Phonique côté chambre = la meilleure solution acoustique sans tout casser',
+            'Les carreaux de plâtre 10cm pleins sont parfaits pour les cloisons de dressing — on peut visser les étagères directement dedans sans chevilles',
+            'Le béton cellulaire 7cm dans un comble aménagé = le seul choix quand le plancher ne supporte pas plus de 50kg/m²'
+          ],
+          tags: ['cloison', 'carreaux de plâtre', 'brique', 'béton cellulaire', 'maçonnerie', 'distribution']
+        },
+        {
+          id: 'cloisons-vitrees',
+          category: 'Cloisons & Distribution',
+          title: 'Cloisons Vitrées & Verrières Atelier',
+          subtitle: 'La lumière traverse, l\'espace respire',
+          summary: 'La verrière d\'atelier type « Crittall » est devenue l\'élément architectural le plus demandé en rénovation d\'appartement. Mais au-delà de la tendance, les cloisons vitrées sont un vrai outil de conception — séparation sans cloisonnement, lumière sans compromis.',
+          sections: [
+            {
+              title: 'Verrière atelier (style Crittall)',
+              content: 'La verrière d\'atelier est une structure en acier ou aluminium à profils fins, avec des vitrages divisés en carreaux rectangulaires par des petits-bois. Le style vient des ateliers d\'artistes du XIXe siècle et des usines Crittall (Angleterre, 1889). Structure acier thermolaqué noir (RAL 9005) : le classique. Profils fins (~30-40mm de face), très graphique. L\'acier est le plus noble mais le plus cher et le plus lourd. Structure aluminium : plus léger, moins cher, profils un peu plus épais (~40-50mm). Le compromis le plus courant. Existe en kit (Lapeyre, Leroy Merlin) ou sur-mesure (artisan serrurier). Verre : simple vitrage 6mm (suffisant pour une cloison intérieure sans exigence acoustique), double vitrage 4/16/4 (si séparation acoustique nécessaire — cuisine ouverte bruyante), verre feuilleté (sécurité — si verrière basse ou accessible aux enfants). Dimensions : hauteur standard 1,05m à 2,50m (allège + verrière), largeur jusqu\'à 4-5m en multi-vantaux. Avec porte intégrée (tirant ou coulissante).'
+            },
+            {
+              title: 'Cloisons vitrées toute hauteur',
+              content: 'Les cloisons vitrées sol-plafond (toute hauteur) sont le niveau au-dessus de la verrière d\'atelier. Elles séparent complètement l\'espace tout en laissant passer la lumière. Profilés aluminium : les plus courants en tertiaire (bureaux). Systèmes démontables et reconfigurables. Marques : Hoyez, Clestra, Nantaise des Cloisons. Profilés acier : plus fin, plus élégant. Pour le résidentiel haut de gamme et l\'hôtellerie. Artisans serruriers. Vitrage : clair (transparent), sablé/dépoli (intimité), Switchable / Smart Glass (verre électrochrome — transparent ou opaque à la demande, 500-1000€/m²). Film occultant partiel : bande sablée à hauteur d\'yeux pour l\'intimité. Le système coulissant (porte galandage vitrée) est spectaculaire — la cloison disparaît dans le mur. Applications : séparation cuisine/séjour, bureau dans le salon, chambre parentale/dressing, salle de réunion.'
+            },
+            {
+              title: 'Conception et mise en œuvre',
+              content: 'La verrière d\'atelier standard (sur allège 1,05m, acier, simple vitrage) coûte 400-800€/ml sur-mesure posée par un serrurier. Les kits (aluminium, dimensions standard) : 200-500€ le module de 1m, pose DIY possible. Une verrière en acier sur-mesure de 3m de large avec porte = 3 000-6 000€ posée. C\'est un investissement mais la plus-value immobilière est IMMÉDIATE. Fixation : la verrière se fixe sur une allège (muret en placo, carreaux de plâtre, ou brique). L\'allège doit être suffisamment solide pour supporter le poids de la verrière (~30-50kg/ml pour de l\'acier). Renforcer l\'ossature si placo (montants renforcés, traverse intermédiaire). Acoustique : un simple vitrage 6mm offre un affaiblissement de ~28 dB. C\'est INSUFFISANT pour une vraie séparation acoustique (cuisine/chambre). Pour de l\'acoustique : double vitrage 10/12/6 = Rw ~38 dB. Le film occultant ou le store intégré peut compléter pour l\'intimité visuelle.'
+            },
+            {
+              title: 'Erreurs fréquentes',
+              content: 'Erreur n°1 : verrière avec porte battante qui s\'ouvre du mauvais côté → toujours vérifier le sens d\'ouverture par rapport à la circulation. Erreur n°2 : oublier le passage des câbles électriques dans l\'allège → prévoir les gaines AVANT le montage. Erreur n°3 : sous-estimer l\'acoustique → si la cuisine est ouverte via verrière sur le séjour et que le client cuisine beaucoup, le bruit passe. Prévenir. Erreur n°4 : profils trop épais (aluminium entrée de gamme) → l\'élégance d\'une verrière tient dans la finesse des profils. Viser 30-40mm maximum de face. Erreur n°5 : oublier le nettoyage → des deux côtés ! Prévoir un accès. Erreur n°6 : kit standard mal adapté → les kits font des dimensions standard. Si le mur n\'est pas d\'équerre ou la hauteur n\'est pas standard, le sur-mesure est obligatoire.'
+            }
+          ],
+          keyPoints: [
+            'Verrière acier profils fins (30-40mm) = le rendu le plus élégant. L\'aluminium est le compromis',
+            'Simple vitrage 6mm = suffisant en intérieur SAUF si besoin d\'isolation acoustique',
+            'Budget : 400-800€/ml sur-mesure acier. 200-500€/module en kit aluminium',
+            'L\'allège doit être renforcée en placo (montants doublés) pour supporter la verrière',
+            'La plus-value immobilière d\'une verrière est IMMÉDIATE — c\'est un investissement rentable'
+          ],
+          tips: [
+            'Verrière acier noir mat + allège carreaux de métro blanc = le combo parisien iconique qui ne se démode pas',
+            'Pour les petits budgets : verrière en kit aluminium IKEA ou Lapeyre + peinture noir mat = 80% de l\'effet pour 30% du prix',
+            'Prévoir une imposte vitrée au-dessus de la porte d\'entrée de l\'appartement (si copro autorise) — apporte de la lumière naturelle dans l\'entrée sombre'
+          ],
+          tags: ['verrière', 'cloison vitrée', 'atelier', 'Crittall', 'acier', 'lumière', 'séparation']
+        },
+        {
+          id: 'cloisons-amovibles',
+          category: 'Cloisons & Distribution',
+          title: 'Cloisons Amovibles & Modulaires',
+          subtitle: 'Flexibilité, réversibilité, reconfiguration',
+          summary: 'Les cloisons amovibles permettent de reconfigurer l\'espace sans travaux lourds. Essentielles en tertiaire (bureaux), elles gagnent du terrain en résidentiel — surtout dans les petits espaces où la flexibilité est reine.',
+          sections: [
+            {
+              title: 'Cloisons amovibles de bureau',
+              content: 'Les cloisons amovibles sont des systèmes industrialisés, démontables et reconfigurables, montés sur ossature indépendante (pas de fixation destructive au sol/plafond). Types : pleine (panneaux mélaminé, stratifié, tissu acoustique), vitrée (simple ou double vitrage), mixte (partie basse pleine + partie haute vitrée). L\'avantage fiscal : en tertiaire, les cloisons amovibles sont classées en MOBILIER (pas en immobilier) — amortissement sur 7 ans au lieu de 20-30 ans. C\'est un argument décisif pour les entreprises. Fabricants leaders : Hoyez (français, n°1), Clestra (français, haut de gamme), Lindner, Faram. Acoustique : Rw 35-50 dB selon le système (comparable au placo). Prix : 150-400€/m² posé (hors vitrage). Mobilité : démontage en 1 jour, remontage dans une nouvelle configuration. Pas de déchet de démolition.'
+            },
+            {
+              title: 'Solutions résidentielles',
+              content: 'En résidentiel, la « cloison amovible » prend des formes plus créatives : Claustras et claustra-étagères : structures ajourées (bois, métal, MDF) qui séparent visuellement sans cloisonner acoustiquement. Le claustra à tasseaux verticaux est très tendance. Portes coulissantes en galandage : la cloison disparaît dans le mur. Ouverte = espace ouvert. Fermée = pièce séparée. Le meilleur compromis flexibilité/acoustique. Rideaux architecturaux : tissu épais (velours, lin lourd) sur rail au plafond. Séparation douce et théâtrale. Bibliothèques traversantes : meuble double face séparant deux espaces — rangement + séparation. Panneaux coulissants : panneaux sur rails supérieurs (type shoji japonais). Très élégants, acoustique limitée. Cloison pivotante : panneau qui pivote à 180° — ouvert ou fermé. Spectaculaire mais nécessite de la place.'
+            },
+            {
+              title: 'Conception d\'espaces flexibles',
+              content: 'La flexibilité spatiale est l\'avenir du logement — surtout dans les petites surfaces (studios, T2). Principes de conception : 1) Identifier les usages qui varient dans la journée (jour/nuit, travail/repos, invités/intime). 2) Choisir le niveau de séparation : visuel seul (claustra), visuel + acoustique partiel (porte coulissante), total (cloison amovible). 3) Penser les rangements comme des séparations (dressing traversant = mur + rangement). 4) Utiliser le plafond (rails encastrés, rideaux, panneaux suspendus). Le studio parisien idéal : lit escamotable + porte coulissante galandage + claustra = 3 configurations dans 25m². L\'espace de coworking idéal : cloisons vitrées amovibles + rideaux acoustiques + mobilier sur roulettes = 5 configurations dans 100m².'
+            }
+          ],
+          keyPoints: [
+            'En tertiaire : les cloisons amovibles = mobilier (amortissement 7 ans vs 20-30 ans)',
+            'La porte coulissante galandage = le meilleur compromis flexibilité/acoustique en résidentiel',
+            'Le claustra à tasseaux sépare visuellement sans cloisonner — idéal pour les petits espaces',
+            'Penser les meubles comme des cloisons (bibliothèque traversante, dressing séparatif)',
+            'Un rail au plafond pour rideau = la séparation la plus simple et la moins chère'
+          ],
+          tips: [
+            'Dans un studio : porte coulissante galandage entre le coin nuit et le séjour = le geste qui transforme 25m² en vrai T1bis',
+            'Le claustra en tasseaux chêne espacés de 3cm, du sol au plafond, entre entrée et séjour = le premier geste à proposer dans TOUT appartement sans entrée',
+            'En bureau open space : un rideau acoustique Kvadrat sur rail motorisé = séparation instantanée pour les réunions confidentielles'
+          ],
+          tags: ['cloison amovible', 'modulaire', 'claustra', 'galandage', 'flexible', 'bureau', 'tertiaire']
+        },
+        {
+          id: 'faux-plafonds',
+          category: 'Plafonds',
+          title: 'Faux-Plafonds : BA13, Tendu, Acoustique',
+          subtitle: 'Tout ce qui se passe au-dessus de nos têtes',
+          summary: 'Le plafond est la « cinquième paroi » — trop souvent négligée. Le faux-plafond est un outil technique (passage de gaines, acoustique, éclairage) ET un outil de design (volumes, matières, jeux de hauteur).',
+          sections: [
+            {
+              title: 'Faux-plafond BA13 suspendu',
+              content: 'Le classique : plaques de plâtre BA13 vissées sur une ossature métallique suspendue au plafond structurel par des suspentes. Ossature : fourrures F47 (profilés en oméga) fixées sur des suspentes à tiges filetées ou à ressort. Entre-axe des fourrures : 50cm (norme DTU 25.41). Permet de passer : câbles électriques, gaines VMC, spots encastrés, sprinklers, conduits de climatisation. Hauteur de plénum : 5cm minimum (juste les câbles) à 30-50cm (gaines VMC/clim). ATTENTION : chaque cm de faux-plafond est un cm de hauteur perdue. En appartement ancien avec 2,50m de hauteur, le faux-plafond partiel (uniquement dans la salle de bain/cuisine/couloir) est préférable au faux-plafond total. Finition : identique aux cloisons (Q1 à Q5). Spots encastrés : prévoir les emplacements AVANT la pose — déplacer un spot dans du BA13 = refaire le plafond. Prix : 35-55€/m² posé (finition Q3).'
+            },
+            {
+              title: 'Plafond tendu',
+              content: 'Toile en PVC ou polyester tendue à chaud sur des profilés périphériques (harpons fixés dans des lisses en aluminium). Très fin : seulement 3-5cm de plénum nécessaire — idéal quand on ne peut pas perdre de hauteur. Finitions : mat (le plus demandé — ressemble à un plafond peint parfait), satiné (léger reflet), laqué/miroir (effet réflexion — agrandit visuellement la pièce mais visible en éclairage direct), imprimé (photo, motif, sur-mesure). Avantages : pose rapide (1 jour pour un appartement), surface PARFAITE (cache toutes les imperfections sans enduit), étanche (retient jusqu\'à 100L/m² en cas de fuite d\'eau du dessus — le plafond fait « poche » et l\'eau ne coule pas). Spots encastrés : renforts thermiques obligatoires autour de chaque spot (anneau de renfort). Inconvénients : son légèrement « creux » quand on tapote, non peignable (si le client veut changer de couleur → changer la toile), odeur de PVC à la pose (disparaît en 24-48h). Prix : 40-80€/m² posé. Le tendu mat blanc est INDISCERNABLE d\'un BA13 peint — et beaucoup plus rapide. Fabricants : Barrisol (français, leader mondial), Newmat, Clipso (polyester sans PVC — plus écologique).'
+            },
+            {
+              title: 'Plafond acoustique',
+              content: 'Les plafonds acoustiques absorbent le son et réduisent la réverbération. Essentiels en bureau, restaurant, hôtel, crèche — et de plus en plus en résidentiel (open-plan). Dalles acoustiques sur ossature apparente : le système « grille » classique des bureaux. Ossature en T inversé visible (blanche ou noire). Dalles 60x60cm en laine minérale, fibre ou plâtre perforé. αw 0,70-0,95 (très absorbant). Prix : 25-45€/m² posé. Pas glamour mais ultra-performant. Plafond acoustique en BA13 perforé : plaques Knauf Cleaneo ou Placo Absoline — perforées de micro-trous qui absorbent le son. Esthétique « plafond lisse » avec performance acoustique. Idéal en résidentiel. Baffles et îlots suspendus : panneaux acoustiques suspendus horizontalement ou verticalement sous le plafond structurel. TRÈS design (feutre, bois, tissu). Parfaits pour les espaces type loft avec hauteur sous plafond. Marques : Rockfon, Armstrong, Ecophon (leader haut de gamme), Baux.'
+            },
+            {
+              title: 'Staff, moulures et plafonds décoratifs',
+              content: 'Le staff est un plâtre renforcé de fibres (filasse ou fibre de verre) utilisé pour les moulures, corniches, rosaces et caissons de plafond. Corniches : jonction mur-plafond. Du simple quart-de-rond à la corniche à denticules haussmannienne. Tailles : 5cm (discrète) à 30cm (monumentale). Rosaces : médaillon décoratif central (autour du lustre). Diamètre 30-80cm. Caissons : structure en creux ou en relief créant un quadrillage au plafond. Effet architectural puissant — anoblit une pièce instantanément. Fabricants : Orac Decor (polyuréthane léger — le plus accessible, 5-30€/ml), NMC (polystyrène HD), Gypsum Art (staff véritable artisanal, 30-100€/ml). Le retour du caisson de plafond : un caisson simple en baguettes de MDF peintes, collées au plafond, crée un effet architectural spectaculaire pour 20-40€/m². C\'est le « hack » déco le plus rentable sur un plafond. Gorge lumineuse (corniche éclairée) : corniche creuse avec ruban LED intégré — éclairage indirect chaud qui fait « flotter » le plafond. 15-30€/ml. L\'éclairage indirect par gorge est le geste lumineux le plus élégant qui existe.'
+            }
+          ],
+          keyPoints: [
+            'Le plafond tendu ne prend que 3-5cm de hauteur — idéal quand la hauteur est limitée',
+            'Le tendu mat blanc est INDISCERNABLE d\'un BA13 peint, et beaucoup plus rapide à poser',
+            'Le BA13 perforé acoustique offre un aspect lisse avec performance acoustique — idéal en résidentiel',
+            'La gorge lumineuse LED dans une corniche = l\'éclairage indirect le plus élégant',
+            'Prévoir les spots AVANT la pose du faux-plafond BA13 — impossible à déplacer après'
+          ],
+          tips: [
+            'En rénovation d\'appartement ancien (moulures existantes) : NE PAS mettre de faux-plafond dans le séjour si les moulures sont belles. Faux-plafond seulement dans les pièces techniques (SDB, cuisine, couloir)',
+            'Le caisson en baguettes MDF peintes (20€/m²) sur un plafond blanc = l\'astuce qui transforme un salon basique en pièce architecturale',
+            'Plafond tendu Barrisol laqué noir dans une salle de bain = effet miroir + étoiles (spots) spectaculaire. Le geste audacieux qui marque les esprits'
+          ],
+          tags: ['plafond', 'faux-plafond', 'BA13', 'tendu', 'acoustique', 'moulures', 'éclairage']
+        },
+        {
+          id: 'menuiseries-interieures',
+          category: 'Menuiseries',
+          title: 'Menuiseries Intérieures : Portes & Quincaillerie',
+          subtitle: 'Portes, huisseries, poignées — le détail qui fait la différence',
+          summary: 'La porte est l\'élément qu\'on touche le plus dans une maison — et pourtant c\'est souvent le poste le plus négligé. Le choix du type de porte, de l\'âme, de l\'huisserie et de la quincaillerie fait la différence entre un intérieur « standard » et un intérieur « conçu ».',
+          sections: [
+            {
+              title: 'Types de portes',
+              content: 'Porte battante (à la française) : le classique — pivote sur des paumelles. Simple, fiable, bonne acoustique. Nécessite un débattement (l\'espace que la porte occupe en s\'ouvrant). Porte coulissante en applique : la porte glisse sur un rail visible fixé au-dessus du mur. Style industriel/loft. Rail apparent noir mat très tendance. Inconvénient : acoustique médiocre (jours entre porte et mur), le rail prend de la place en saillie. Porte coulissante à galandage : la porte disparaît DANS le mur (châssis escamotable — Eclisse, Scrigno). Le top en gain de place. Nécessite un mur creux de l\'épaisseur de la porte + ossature (minimum 10cm). À PRÉVOIR dès la conception — impossible à rajouter après. Porte pivotante : pivot central ou déporté — la porte tourne sur elle-même. Spectaculaire pour les grandes portes (2,50m+). Pivot FritsJurgens (invisible, fermeture amortie) = le top absolu. Porte à galandage double : deux vantaux qui disparaissent de chaque côté. Ouvre une baie de 1,80-2,40m. L\'espace ouvert/fermé le plus élégant.'
+            },
+            {
+              title: 'Âmes et fabrication',
+              content: 'Porte âme alvéolaire : carton nid d\'abeille entre deux panneaux. La moins chère (50-100€), la plus légère, la moins acoustique. Reconnaissable au son creux quand on frappe dessus. Isoplane basique. Porte âme pleine (aggloméré ou MDF) : panneau massif ou particules compressées. Meilleure acoustique (Rw 25-30 dB), plus lourde, sensation de qualité. 150-300€. Porte postformée : MDF usiné avec moulures rapportées (3-5 panneaux). Le classique « porte à panneaux ». 100-250€. Porte plane affleurante : la surface de la porte est DANS le même plan que le mur — pas de cadre visible. L\'esthétique la plus épurée et contemporaine. Nécessite un bloc-porte spécial (Xinnix, Eclisse Syntesis). 400-800€. Le « must » du design intérieur contemporain. Porte vitrée : vitrage partiel ou total. Apporte de la lumière. Verre clair, dépoli, texturé. Porte miroir : miroir intégré (face intérieure de dressing, SDB). Double fonction. Porte acoustique : Rw 35-42 dB. Joints périphériques + seuil automatique (la plinthe descend quand la porte se ferme). Pour studios de musique, bureaux, chambres d\'hôtel.'
+            },
+            {
+              title: 'Huisseries et cadres',
+              content: 'L\'huisserie (dormant + ouvrant) est aussi importante que la porte elle-même. Bloc-porte (huisserie + porte assemblés en usine) : le plus courant. Dimensions standard : 73, 83, 93cm de passage (attention : la cote de passage est inférieure à la largeur de la porte). Huisserie bois (sapin, MDF, chêne) : la plus courante en résidentiel. En rénovation, l\'huisserie existante peut être conservée et la porte remplacée seule. Huisserie métallique : acier laqué ou alu. Plus fine, plus contemporaine. Obligatoire en ERP (coupe-feu). Huisserie invisible (Xinnix, Eclisse Syntesis, Portapivot) : aucun cadre visible — la porte semble découpée dans le mur. Le fin du fin en design contemporain. 300-600€ pour l\'huisserie seule. Dimensions non-standard : les portes sur-mesure en hauteur 2,50m (toute hauteur, alignées avec le faux-plafond) donnent un effet monumental et élèvent le standing de l\'appartement. Surcoût : 30-50% par rapport au standard.'
+            },
+            {
+              title: 'Quincaillerie',
+              content: 'La quincaillerie est le « bijou » de la menuiserie — ce que le client touche et voit tous les jours. Poignées (béquilles) : rosace (la plus épurée — disque autour de la béquille) ou plaque (rectangulaire, classique). Finitions : inox brossé (le standard), noir mat (très tendance), laiton brossé (luxe chaleureux), chrome (classique, froid), cuir (Turnstyle — ultra-luxe). Marques : Olivari (design italien), FSB (design allemand — Franz Schneider Brakel), Turnstyle (anglais, poignées cuir et métal), Valli & Valli, Colombo. Paumelles (charnières) : invisibles (Simonswerk TECTUS — la référence, 80-150€/paire) = le choix contemporain. Les paumelles apparentes classiques sont acceptables si elles sont assorties à la poignée. Ferme-porte : obligatoire en ERP. En résidentiel, le frein de porte (amortisseur intégré dans la paumelle) est le luxe silencieux ultime. Serrure : à condamnation (SDB, WC — bouton poussoir/tournant), à clé (chambre, bureau), magnétique (Bonaiti B-One — ultra-silencieuse, pas de pêne visible). La poignée + paumelles + serrure forment un trio — les 3 doivent être dans la MÊME finition.'
+            }
+          ],
+          keyPoints: [
+            'La porte à galandage = le meilleur gain de place — à prévoir DÈS la conception (pas ajoutée après)',
+            'La porte affleurante (plane dans le mur) = l\'esthétique contemporaine ultime',
+            'Les portes toute hauteur (2,50m) élèvent instantanément le standing d\'un intérieur',
+            'Poignée + paumelles + serrure = MÊME finition obligatoirement (cohérence)',
+            'Les paumelles invisibles Simonswerk TECTUS = le standard du haut de gamme'
+          ],
+          tips: [
+            'Remplacer toutes les portes isoplane d\'un appartement par des portes à panneaux MDF peintes + poignées Olivari noir mat = transformation spectaculaire pour 200-300€/porte',
+            'La porte pivotante FritsJurgens de 2,50m en chêne = le geste WOW d\'un projet haut de gamme. 2 000-4 000€ la porte complète mais c\'est une sculpture',
+            'En rénovation budget : conserver les portes existantes, les poncer, les peindre en noir mat ou en couleur vive, changer les poignées. 80€/porte pour un résultat pro'
+          ],
+          tags: ['porte', 'menuiserie', 'galandage', 'quincaillerie', 'huisserie', 'poignée', 'Simonswerk']
+        },
+        {
+          id: 'menuiseries-exterieures',
+          category: 'Menuiseries',
+          title: 'Menuiseries Extérieures : Fenêtres & Vitrages',
+          subtitle: 'Uw, facteur solaire, PVC, alu, bois — le guide complet',
+          summary: 'Les fenêtres sont le poste le plus stratégique d\'une rénovation énergétique — et le plus technique à prescrire. Type de châssis, performance thermique (Uw), facteur solaire (Sw), classement AEV, type de vitrage : chaque paramètre impacte le confort, la facture d\'énergie et l\'esthétique.',
+          sections: [
+            {
+              title: 'Types de châssis',
+              content: 'PVC : le plus isolant (Uf ~1,3 W/m².K), le moins cher, le plus vendu (60% du marché). Entretien quasi nul. Inconvénient : profils épais (~70mm de face visible), choix de couleurs limité (blanc, gris, faux bois), aspect « plastique ». Ne convient pas au bâti patrimonial (ABF refusera). Prix : 200-500€/fenêtre standard. Aluminium : profils fins (~55mm de face — le plus élégant), choix de couleurs illimité (laquage RAL), très résistant et durable. Inconvénient : moins isolant (Uf ~3-4 W/m².K, compensé par la rupture de pont thermique RPT — Uf ~1,8-2,5 avec RPT). Plus cher. Prix : 400-900€/fenêtre. Bois : le plus noble, le plus isolant naturellement (Uf ~1,4-1,6), régulation hygrométrique. Le classique du bâti ancien et du haut de gamme contemporain. Inconvénient : entretien (peinture/lasure tous les 5-10 ans). Prix : 500-1200€/fenêtre. Mixte bois-alu : bois à l\'intérieur (esthétique et confort), aluminium à l\'extérieur (protection et couleur). Le meilleur des deux mondes mais le plus cher. Prix : 600-1500€/fenêtre. Marques pro : K-Line (alu français, design), Internorm (bois-alu autrichien), Tryba (PVC), Velux (toiture).'
+            },
+            {
+              title: 'Vitrages',
+              content: 'Double vitrage standard : 4/16/4 (verre 4mm / lame d\'air ou argon 16mm / verre 4mm). Ug ~1,1 W/m².K avec argon. Le minimum actuel. Double vitrage ITR (Isolation Thermique Renforcée) : couche basse émissivité (Low-E) sur une face interne. Ug ~1,0-1,1 avec argon. Le standard de la RE2020. Triple vitrage : 4/12/4/12/4. Ug ~0,5-0,7. Pertinent dans le Nord, en altitude, ou en façade nord exposée. Ajoute du poids et du coût (~30-50% de plus que le double). Peu pertinent dans le Sud. Facteur solaire (Sw) : capacité du vitrage à laisser passer l\'énergie solaire. Sw élevé (0,5-0,65) = apport solaire maximal — souhaitable en façade sud en hiver. Sw faible (0,25-0,35) = protection solaire — nécessaire en façade ouest/sud en climat chaud. Vitrage de contrôle solaire (Sw faible, Tl élevé) : laisse passer la lumière mais bloque la chaleur. Guardian Sun, Saint-Gobain Cool-Lite. Vitrage acoustique : asymétrique (10/12/6 ou 44.2/12/4) — les épaisseurs différentes bloquent des fréquences différentes. Rw ~38-42 dB. Indispensable en ville.'
+            },
+            {
+              title: 'Performance et classement',
+              content: 'Uw (coefficient thermique de la fenêtre complète) : intègre le vitrage (Ug) + le châssis (Uf) + les intercalaires. Exigences RE2020 : Uw ≤ 1,3 W/m².K pour les fenêtres. Plus Uw est bas, plus la fenêtre est isolante. AEV (classement Air-Eau-Vent) : A*1-A*4 (perméabilité à l\'air, 4 = le plus étanche), E*1A-E*9A (étanchéité à l\'eau, 9A = le plus résistant), V*A1-V*A4 (résistance au vent, A4 = le plus résistant). En bord de mer exposé : exiger A*4 E*7A V*A3 minimum. TLw (Transmission Lumineuse) : pourcentage de lumière visible qui traverse. TLw 70% = standard. TLw > 75% = très lumineux. Choisir un vitrage à TLw élevé pour les pièces de vie. Retrait thermique (Ψ — psi) des intercalaires : les « warm edge » (Swisspacer, TGI) réduisent le pont thermique au bord du vitrage. Exiger des warm edge dans le CCTP.'
+            },
+            {
+              title: 'Volets et protections solaires',
+              content: 'Volets roulants : le plus courant. Coffre intégré (invisible) ou extérieur (rénovation). Aluminium (le plus courant), PVC (économique). Motorisation Somfy = la référence. Isolant (mousse PU injectée dans les lames). Volets battants : le classique du bâti patrimonial. Bois, aluminium ou PVC. Obligatoires en zone ABF si les façades sont protégées. Brise-soleil orientable (BSO) : lames horizontales orientables qui bloquent le soleil direct tout en laissant passer la lumière diffuse. Le MEILLEUR système de protection solaire pour les bureaux et le résidentiel contemporain. Warema, Griesser. Store banne : protection solaire de terrasse/balcon. Ne protège pas les vitrages eux-mêmes. Film solaire : film collé sur le vitrage existant. Solution économique en rénovation si le remplacement des fenêtres n\'est pas possible. 3M, Solar Screen. Pergola bioclimatique : lames orientables alu. Le top pour les terrasses. Biossun, Renson, Solisystème.'
+            }
+          ],
+          keyPoints: [
+            'Uw ≤ 1,3 W/m².K = exigence RE2020 pour les fenêtres',
+            'L\'aluminium à rupture de pont thermique (RPT) = profils fins + bonne isolation',
+            'Le double vitrage argon ITR (4/16/4 Low-E) est le standard minimum actuel',
+            'Le triple vitrage n\'est pertinent que dans le Nord, en altitude ou en façade nord exposée',
+            'Le BSO (brise-soleil orientable) est la meilleure protection solaire pour l\'architecture contemporaine'
+          ],
+          tips: [
+            'En rénovation d\'appartement haussmannien : alu fin noir (K-Line) à l\'intérieur + habillage bois côté rue (si ABF) = le compromis performance/patrimoine',
+            'Fenêtre Uw 1.3 + volet roulant = Ujn (nuit) de 0.7-0.8 W/m².K — le volet roulant est le MEILLEUR isolant supplémentaire et le moins cher',
+            'Pour le confort d\'été sans climatisation : BSO côté sud/ouest + vitrage contrôle solaire + ventilation nocturne = la trilogie anti-surchauffe'
+          ],
+          tags: ['fenêtre', 'vitrage', 'Uw', 'aluminium', 'PVC', 'bois', 'volet', 'isolation', 'RE2020']
         }
       ]
     }
