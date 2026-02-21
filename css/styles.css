@@ -606,6 +606,8 @@ textarea {
   cursor: pointer;
   transition: all var(--transition);
   position: relative;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .fiche-card:hover {
