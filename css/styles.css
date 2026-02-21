@@ -521,6 +521,51 @@ textarea {
   gap: 18px;
 }
 
+/* Category tab pills */
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.category-tab {
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.category-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(184, 149, 106, 0.06);
+}
+
+.category-tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.category-tab .tab-count {
+  font-size: 0.72rem;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.category-tab.active .tab-count {
+  opacity: 0.9;
+}
+
 /* Category grouping */
 .category-group {
   margin-bottom: 36px;

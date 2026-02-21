@@ -412,36 +412,13 @@ function renderDomain(container) {
   `;
   container.appendChild(header);
 
-  // Quick filter
-  if (d.fiches.length > 6) {
-    const filterBar = el('div', { className: 'domain-filter-bar' });
-    const filterInput = el('input', {
-      type: 'text',
-      className: 'domain-filter-input',
-      placeholder: `Filtrer dans ${d.name} (${d.fiches.length} fiches)...`,
-      onInput: (e) => {
-        const q = normalize(e.target.value.trim());
-        $$('.fiche-card', container).forEach(card => {
-          const text = normalize(card.textContent);
-          card.style.display = q === '' || text.includes(q) ? '' : 'none';
-        });
-        $$('.category-group', container).forEach(group => {
-          const visibleCards = $$('.fiche-card', group).filter(c => c.style.display !== 'none');
-          group.style.display = visibleCards.length === 0 && q !== '' ? 'none' : '';
-        });
-      }
-    });
-    filterBar.appendChild(filterInput);
-    container.appendChild(filterBar);
-  }
-
   // Check if fiches have categories
   const hasCategories = d.fiches.some(f => f.category);
 
+  // Build category map (needed for tabs + rendering)
+  const categoryOrder = [];
+  const categoryMap = {};
   if (hasCategories) {
-    // Group fiches by category, preserving order of first appearance
-    const categoryOrder = [];
-    const categoryMap = {};
     d.fiches.forEach(f => {
       const cat = f.category || 'Autres';
       if (!categoryMap[cat]) {
@@ -450,9 +427,54 @@ function renderDomain(container) {
       }
       categoryMap[cat].push(f);
     });
+  }
+
+  // Active category filter state
+  let activeCategory = 'all';
+
+  // Category tab pills (if 2+ categories)
+  let tabsBar = null;
+  if (hasCategories && categoryOrder.length >= 2) {
+    tabsBar = el('div', { className: 'category-tabs' });
+    const allTab = el('button', {
+      className: 'category-tab active',
+      onClick: () => filterByCategory('all')
+    });
+    allTab.innerHTML = `Tous <span class="tab-count">${d.fiches.length}</span>`;
+    allTab.dataset.cat = 'all';
+    tabsBar.appendChild(allTab);
 
     categoryOrder.forEach(cat => {
+      const tab = el('button', {
+        className: 'category-tab',
+        onClick: () => filterByCategory(cat)
+      });
+      tab.innerHTML = `${cat} <span class="tab-count">${categoryMap[cat].length}</span>`;
+      tab.dataset.cat = cat;
+      tabsBar.appendChild(tab);
+    });
+    container.appendChild(tabsBar);
+  }
+
+  // Quick text filter
+  let filterInput = null;
+  if (d.fiches.length > 6) {
+    const filterBar = el('div', { className: 'domain-filter-bar' });
+    filterInput = el('input', {
+      type: 'text',
+      className: 'domain-filter-input',
+      placeholder: `Rechercher dans ${d.name} (${d.fiches.length} fiches)...`,
+      onInput: () => applyFilters()
+    });
+    filterBar.appendChild(filterInput);
+    container.appendChild(filterBar);
+  }
+
+  // Render fiches
+  if (hasCategories) {
+    categoryOrder.forEach(cat => {
       const group = el('div', { className: 'category-group' });
+      group.dataset.category = cat;
       const catHeader = el('div', { className: 'category-header' });
       catHeader.innerHTML = `<span class="category-header-label">${cat}</span><span class="category-header-count">${categoryMap[cat].length} fiches</span>`;
       group.appendChild(catHeader);
@@ -470,6 +492,37 @@ function renderDomain(container) {
       grid.appendChild(buildFicheCard(d, f));
     });
     container.appendChild(grid);
+  }
+
+  // Filter logic
+  function filterByCategory(cat) {
+    activeCategory = cat;
+    if (tabsBar) {
+      $$('.category-tab', tabsBar).forEach(t => t.classList.toggle('active', t.dataset.cat === cat));
+    }
+    if (filterInput) filterInput.value = '';
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const q = filterInput ? normalize(filterInput.value.trim()) : '';
+    $$('.category-group', container).forEach(group => {
+      const cat = group.dataset.category;
+      const catMatch = activeCategory === 'all' || cat === activeCategory;
+      if (!catMatch) { group.style.display = 'none'; return; }
+      let hasVisible = false;
+      $$('.fiche-card', group).forEach(card => {
+        const textMatch = q === '' || normalize(card.textContent).includes(q);
+        card.style.display = textMatch ? '' : 'none';
+        if (textMatch) hasVisible = true;
+      });
+      group.style.display = hasVisible ? '' : 'none';
+    });
+    // For domains without categories
+    $$('.fiches-grid > .fiche-card', container).forEach(card => {
+      const textMatch = q === '' || normalize(card.textContent).includes(q);
+      card.style.display = textMatch ? '' : 'none';
+    });
   }
 }
 

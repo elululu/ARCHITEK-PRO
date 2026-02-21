@@ -1117,6 +1117,348 @@ const APP_DATA = {
             'Les dalles de moquette Bolon (vinyl tressé) sont le produit parfait pour un bureau design : acoustiques, lavables, esthétiques, posées en une journée'
           ],
           tags: ['sol', 'LVT', 'linoléum', 'moquette', 'vinyle', 'revêtement', 'UPEC']
+        },
+        {
+          id: 'parquet',
+          category: 'Revêtements de Sol',
+          title: 'Parquet : Massif, Contrecollé, Stratifié',
+          subtitle: 'Le guide complet du bois au sol',
+          summary: 'Le parquet est le revêtement noble par excellence. Mais derrière le mot « parquet » se cachent trois produits radicalement différents — seuls les deux premiers méritent réellement ce nom.',
+          sections: [
+            {
+              title: 'Parquet massif',
+              content: 'Le parquet massif est constitué d\'une seule essence de bois sur toute son épaisseur (14 à 23mm). C\'est le « vrai » parquet au sens noble. Essences courantes : chêne (80% du marché — robuste, tannique, se patine magnifiquement), noyer (sombre, luxueux, 120-200€/m²), frêne (clair, nervuré, bon rapport qualité-prix), châtaignier (rustique, tannique), hêtre (clair, dur mais instable dimensionnellement), exotiques : teck (imputrescible), merbau (rouge-brun), wengé (très sombre). Pose : clouée sur lambourdes (traditionnelle, surélevée de 4-6cm — attention à la hauteur !), collée en plein (la plus stable, sur chape ragréée). Finition : huilé (aspect naturel mat, entretien régulier à l\'huile), vitrifié/verni (brillant ou satiné, résistant, moins naturel), ciré (patine exceptionnelle mais fragile — réservé au patrimoine). Épaisseur de la couche d\'usure : le massif peut être poncé 5 à 7 fois dans sa vie → durée de vie 80-100 ans. Prix : chêne massif 50-120€/m² fourni-posé. Point de bois 23mm rustique : ~35€/m² hors pose. C\'est un INVESTISSEMENT patrimonial.'
+            },
+            {
+              title: 'Parquet contrecollé (flottant ou collé)',
+              content: 'Le contrecollé est un sandwich : couche d\'usure en bois noble (2,5 à 6mm) + âme en latté/HDF/contreplaqué + contre-balancement. C\'est un vrai parquet (la surface est du vrai bois) mais plus fin et plus stable que le massif. Avantages : plus stable dimensionnellement (moins de jeu avec l\'humidité), compatible plancher chauffant (épaisseur réduite = meilleure conductivité), pose flottante possible (clipsable — rapide, pas de colle), moins cher que le massif (30-90€/m² posé). Inconvénient : couche d\'usure fine → ponçable 1 à 3 fois seulement (selon épaisseur). Durée de vie : 30-50 ans. Choisir une couche d\'usure ≥ 3,5mm pour un usage résidentiel durable (≥ 4mm idéalement). Marques : Boen (scandinave, excellente qualité), Panaget (français), Bauwerk, Quick-Step Palazzo. Le contrecollé en pose collée sur chape = le meilleur compromis esthétique/technique en rénovation.'
+            },
+            {
+              title: 'Stratifié — ce n\'est PAS du parquet',
+              content: 'Le stratifié est un panneau HDF (fibre haute densité) recouvert d\'un décor photographique sous une couche de résine mélamine. Il n\'y a AUCUN bois noble en surface — c\'est une photo de bois. Classement AC (Abrasion Class) : AC3 = résidentiel modéré, AC4 = résidentiel intense / commercial léger, AC5 = commercial intense. Avantages : très résistant aux rayures et taches, prix imbattable (8-25€/m² posé), pose flottante rapide, large choix de décors. Inconvénients : ne peut JAMAIS être poncé, sonorité creuse sous le pied (nécessite une sous-couche acoustique épaisse), les chants gonflent au contact de l\'eau (pas de pose en pièce humide), aspect « plastique » perceptible de près. Durée de vie : 10-20 ans. Marques : Quick-Step (Impressive, Majestic), Pergo, Egger, Kronotex. Le stratifié a sa place (budget serré, location, chambre d\'enfant) mais NE PAS l\'appeler « parquet » — c\'est un sol stratifié.'
+            },
+            {
+              title: 'Calepinages et poses',
+              content: 'Pose à l\'anglaise à coupe perdue : lames parallèles, coupes aléatoires — la plus courante, la plus économique (peu de chutes). Pose à l\'anglaise à coupe de pierre : joints décalés d\'1/2 lame régulièrement — plus structuré. Pose en point de Hongrie (chevron) : lames coupées à 45° ou 60° formant un V continu — très élégant, classique parisien. Surcoût de ~20% (coupes + chutes). Pose en bâtons rompus : lames posées à 90° les unes des autres — le motif iconique des appartements haussmanniens. Pose en damier : carrés alternés, très graphique. Pose à la française (Versailles, Chantilly) : panneaux complexes de parquet assemblés — patrimoine et ultra-luxe. Direction de pose : toujours dans le sens de la lumière principale (perpendiculaire à la fenêtre) pour minimiser la visibilité des joints. En couloir : toujours dans le sens de la longueur.'
+            }
+          ],
+          keyPoints: [
+            'Parquet massif = bois plein, ponçable 5-7 fois, dure 80-100 ans',
+            'Contrecollé = vrai bois en surface mais sur support composite — le meilleur compromis en rénovation',
+            'Stratifié = photo de bois sur HDF — ce n\'est PAS un parquet, ne peut pas être poncé',
+            'Toujours poser dans le sens de la lumière (perpendiculaire aux fenêtres)',
+            'Point de Hongrie et bâtons rompus = les deux motifs nobles parisiens'
+          ],
+          tips: [
+            'Client avec budget limité mais exigeant : contrecollé chêne 4mm d\'usure, pose collée en bâtons rompus = aspect massif pour 2x moins cher',
+            'Imposer une hygrométrie entre 45% et 65% dans le CCTP — le bois vit, et un chauffage trop sec = joints ouverts garantis',
+            'Point de Hongrie 60° = plus dynamique et contemporain que le 45° classique — subtilité qui fait la différence'
+          ],
+          tags: ['parquet', 'bois', 'sol', 'massif', 'contrecollé', 'stratifié', 'chêne']
+        },
+        {
+          id: 'carrelage-gres-cerame',
+          category: 'Revêtements de Sol',
+          title: 'Carrelage & Grès Cérame',
+          subtitle: 'Le matériau technique roi des sols',
+          summary: 'Le grès cérame est devenu le revêtement de sol le plus polyvalent du marché. Imitation bois, marbre, béton, métal — ses capacités techniques et esthétiques sont quasi illimitées. Mais le prescrire correctement exige de maîtriser formats, classements et contraintes de pose.',
+          sections: [
+            {
+              title: 'Grès cérame technique',
+              content: 'Composition : argile pressée à 400kg/cm² et cuite à 1200-1300°C. Résultat : un matériau extrêmement dur (Mohs 7-8), quasi imperméable (absorption d\'eau <0,5%), résistant au gel, aux acides, aux UV. Grès cérame pleine masse : coloré dans la masse — si on le casse, la couleur est uniforme. Le plus résistant (terrasses, commerces). Grès cérame émaillé : couche décorative en surface — plus de choix esthétiques mais la puce se voit si éclat. Grès cérame rectifié : bords découpés au diamant → joints ultra-fins (2mm) → aspect dalle monolithique. INDISPENSABLE pour un rendu contemporain.'
+            },
+            {
+              title: 'Formats et tendances',
+              content: 'Les grands formats dominent le marché : 60x60cm (standard contemporain), 60x120cm (très populaire — allonge visuellement les pièces), 80x80cm, 120x120cm (spectaculaire), 120x260cm (dalles XXL — imite une table de marbre, nécessite un poseur spécialisé et une ventouse). Épaisseurs : 6mm (ultra-fin sur trame pour rénovation — Kerlite, Laminam), 9-10mm (standard), 14mm (fort trafic), 20mm (terrasse extérieure sur plots). L\'imitation bois en grès cérame est devenue bluffante — format lame 20x120cm ou 30x120cm, texture antidérapante. L\'imitation marbre (Calacatta, Statuario, Marquina) en grand format rectifié est le best-seller de l\'architecture commerciale.'
+            },
+            {
+              title: 'Classements et normes',
+              content: 'PEI (résistance à l\'abrasion) : PEI III = résidentiel modéré (chambre), PEI IV = résidentiel intense (cuisine, entrée), PEI V = commercial intense (boutiques, restaurants). UPEC : U3P3E2C1 minimum pour un séjour, U4P4sE3C2 pour un commerce. R (antidérapance pieds chaussés) : R9 = intérieur standard, R10 = cuisine/salle de bain, R11 = douche à l\'italienne / extérieur, R12-R13 = industriel (piscines). A+B+C (antidérapance pieds nus) : A = sec, B = humide (obligatoire autour des piscines), C = très humide (douches collectives). Le classement DCOF (Dynamic Coefficient of Friction ≥ 0,42) est la norme américaine — de plus en plus demandé.'
+            },
+            {
+              title: 'Pose et joints',
+              content: 'Pose collée sur chape ragréée (simple encollage <30x30, double encollage ≥30x30 OBLIGATOIRE). Pose sur plots (terrasse — pas de colle, hauteur réglable, drainage naturel). Joint minimum : 2mm pour rectifié, 3-5mm pour non-rectifié. Joint de dilatation périphérique OBLIGATOIRE (5-8mm sous les plinthes). Joints de fractionnement : tous les 40m² ou 8ml en intérieur (DTU 52.2). Le ragréage doit être parfait : planéité SL1 (3mm sous règle de 2m) pour les grands formats ≥60cm. Coût de pose : 30-50€/m² hors fourniture (standard), 50-80€/m² pour grand format/motif complexe. Calepinage : TOUJOURS faire un plan de calepinage pour les grands formats — centrer les coupes, éviter les lames de moins de 1/3 de carreau.'
+            }
+          ],
+          keyPoints: [
+            'Grès cérame rectifié = joint 2mm = rendu monolithique contemporain',
+            'Double encollage OBLIGATOIRE pour tout format ≥ 30x30cm',
+            'R10 minimum en salle de bain, R11 en douche à l\'italienne',
+            'Grand format (120x120+) = ragréage parfait + poseur spécialisé + ventouse',
+            'L\'imitation bois en grès cérame est l\'alternative idéale en pièce humide'
+          ],
+          tips: [
+            'Préférer un 60x120 rectifié en imitation marbre plutôt qu\'un 60x60 — le rendu est incomparablement plus luxueux et on voit moins de joints',
+            'Exiger du double encollage dans le CCTP — c\'est la première cause de décollement et la première malfaçon en carrelage',
+            'Le calepinage centré (coupes symétriques de chaque côté) fait la différence entre un carrelage « posé » et un carrelage « conçu »'
+          ],
+          tags: ['carrelage', 'grès cérame', 'sol', 'grand format', 'imitation', 'pose', 'PEI']
+        },
+        {
+          id: 'beton-cire-resines',
+          category: 'Revêtements de Sol',
+          title: 'Béton Ciré & Résines de Sol',
+          subtitle: 'Les revêtements coulés : béton ciré, microtopping, résine époxy, polyuréthane',
+          summary: 'Les sols coulés (béton ciré, micro-ciment, résines) offrent un rendu monolithique sans joint — le rêve du design contemporain. Mais ce sont des produits TRÈS techniques, coûteux, et piégeux si mal prescrits.',
+          sections: [
+            {
+              title: 'Béton ciré véritable',
+              content: 'Le vrai béton ciré est un mortier fin à base de ciment, appliqué en 2-3 passes de 1-2mm sur un support préparé (primaire d\'accroche + ragréage). Il est ensuite poncé, puis protégé par un vernis ou une cire. Aspect : minéral, mat ou satiné, légèrement nuancé (le charme vient des variations). Épaisseur totale : 3-5mm. Compatible rénovation (faible épaisseur). Marques/fabricants : Marius Aurenti, Mercadier, Rouviere Collection. Contraintes : le béton ciré FISSURE. C\'est sa nature — le ciment fissure. Les micro-fissures sont « normales » et font partie du caractère du produit. Si le client veut un sol PARFAIT sans la moindre marque : déconseiller le béton ciré. Le béton ciré est poreux : sans protection (vernis/cire), il tache instantanément. Réappliquer la cire ou le vernis tous les 2-5 ans. Prix : 100-180€/m² posé (artisan spécialisé). Ne JAMAIS confier du béton ciré à un carreleur classique.'
+            },
+            {
+              title: 'Micro-ciment / Microtopping',
+              content: 'Le micro-ciment est l\'évolution du béton ciré : formulation améliorée avec résines polymères qui réduisent la fissuration. Plus fin (1-3mm), plus souple, plus résistant à l\'eau. Certaines formulations sont étanches (applicables en douche à l\'italienne avec système SPEC en dessous). Marques : Ideal Work (Microtopping), Topciment, Festool Deco. Avantage vs béton ciré : moins de fissuration, applicable sur carrelage existant (gain de temps), gamme de couleurs plus large. Inconvénient : aspect plus « plastique » que le vrai béton ciré, moins de caractère minéral. Prix : 80-150€/m² posé. C\'est souvent le meilleur choix en rénovation.'
+            },
+            {
+              title: 'Résines (époxy, polyuréthane, PMMA)',
+              content: 'Résine époxy : ultra-résistante (chimique, mécanique), brillante, lisse. Usage : garages, ateliers, commerces, lofts industriels. L\'époxy jaunit aux UV → uniquement en intérieur sans soleil direct. Effet miroir spectaculaire. Épaisseur : 2-5mm. Prix : 80-200€/m². Résine polyuréthane (PU) : plus souple que l\'époxy, résistante aux UV, confortable sous le pied. Finition mate ou satinée. Usage : résidentiel, bureaux, hôtellerie. Le choix haut de gamme pour un sol souple et silencieux. Prix : 100-250€/m². Résine PMMA (méthacrylate) : polymérisation ultra-rapide (2-4h) — idéal pour les commerces qui ne peuvent pas fermer longtemps. Moins esthétique. La résine de sol est un métier à part — applicateur spécialisé obligatoire (pas un peintre, pas un carreleur).'
+            },
+            {
+              title: 'Comment choisir',
+              content: 'Le client veut du « caractère minéral » avec des variations → béton ciré véritable. Le client veut un sol lisse sans joint en rénovation → micro-ciment (le plus polyvalent). Le client veut un sol ultra-résistant pour un commerce / loft → résine époxy. Le client veut un sol souple et silencieux en résidentiel haut de gamme → résine PU. Le client veut du sans joint en salle de bain → micro-ciment sur SPEC. ATTENTION : tous ces produits nécessitent un support PARFAIT — le moindre défaut du support se voit à travers. Budget ragréage à prévoir en plus. Et dans TOUS les cas : faire un échantillon test de 50x50cm sur site avant de valider la teinte et la finition — les rendus varient énormément selon la lumière et le support.'
+            }
+          ],
+          keyPoints: [
+            'Le béton ciré fissure — c\'est NORMAL. Prévenir le client AVANT, par écrit',
+            'Le micro-ciment est plus fiable que le béton ciré en rénovation (moins de fissuration)',
+            'L\'époxy jaunit au soleil — uniquement en intérieur sans exposition directe',
+            'TOUS ces produits nécessitent un applicateur spécialisé — jamais un carreleur classique',
+            'Toujours faire un échantillon test 50x50cm sur site avant validation'
+          ],
+          tips: [
+            'La teinte « gris béton brut » (RAL 7035 approchant) est le best-seller absolu en béton ciré — indémodable',
+            'En douche à l\'italienne : micro-ciment sur système SPEC complet — le béton ciré classique n\'est PAS étanche sans traitement',
+            'Intégrer dans le devis une clause « micro-fissuration inhérente au matériau » pour le béton ciré — ça évite 90% des litiges'
+          ],
+          tags: ['béton ciré', 'résine', 'époxy', 'microtopping', 'sol', 'sans joint', 'contemporain']
+        },
+        {
+          id: 'terrazzo-granito',
+          category: 'Revêtements de Sol',
+          title: 'Terrazzo & Granito',
+          subtitle: 'Le revêtement vénitien revenu au sommet',
+          summary: 'Le terrazzo (ou granito) est un revêtement composé de fragments de marbre, de pierre, de verre ou de quartz noyés dans un liant (ciment ou résine), puis poncé et poli. Né à Venise au XVe siècle, il connaît un retour spectaculaire depuis 2018.',
+          sections: [
+            {
+              title: 'Composition et types',
+              content: 'Terrazzo in situ (coulé sur place) : mortier de ciment + granulats de marbre, coulé sur 15-25mm d\'épaisseur, poncé et poli sur place. C\'est le terrazzo original vénitien — le plus beau, le plus cher. Carreaux de terrazzo préfabriqués : dalles de 30x30 à 60x60cm, fabriquées en usine, polies, prêtes à poser comme un carrelage. Plus accessible (50-120€/m²). Terrazzo résine : liant en résine époxy au lieu du ciment — plus souple, moins de risque de fissuration, mais moins « authentique ». Granulats : marbre blanc de Carrare (le classique), marbres colorés (vert, rose, noir), verre recyclé (contemporain), coquillages, nacre, laiton (ultra-luxe). Taille des granulats : petit grain (2-5mm) = rendu fin et délicat. Gros grain (15-30mm) = spectaculaire et graphique.'
+            },
+            {
+              title: 'Le revival contemporain',
+              content: 'Le terrazzo est revenu massivement dans le design contemporain depuis 2018-2019. Il est passé d\'un matériau « rétro » à un élément de design ultra-tendance. Applications actuelles : sols (son usage premier), plans de travail et vasques, crédences de cuisine, mobilier (tables, pieds de lampe), objets décoratifs (plateaux, vases). Le terrazzo contemporain joue sur les contrastes : fond noir + éclats blancs et dorés, fond terracotta + éclats de marbre, fond blanc + éclats multicolores. L\'imitation terrazzo en grès cérame existe (beaucoup moins cher) mais n\'a pas la profondeur ni le toucher du vrai.'
+            },
+            {
+              title: 'Mise en œuvre et contraintes',
+              content: 'Terrazzo in situ : application par un terrazzier spécialisé (métier rare — peu d\'artisans en France). Coulé en 15-25mm, séchage 7-14 jours, ponçage en 3-4 passes (diamant grain 50 → 200 → 400 → 800), polissage final. Joints de dilatation en laiton tous les 3-4m² (deviennent un élément décoratif). Le sol fini est imperméable après traitement hydro-oléofuge. Carreaux préfabriqués : pose classique comme un carrelage (double encollage, joint fin). Entretien : savon neutre, pas de produit acide (le marbre est sensible aux acides — vinaigre, citron attaquent le poli). Cristallisation possible pour raviver le poli (comme le marbre). Prix : in situ 150-400€/m², carreaux 50-120€/m², imitation grès cérame 25-60€/m².'
+            },
+            {
+              title: 'Fournisseurs et références',
+              content: 'Carreaux préfabriqués : Huguet (Majorque — artisanal haut de gamme), Diespeker (Londres), Concrete Collaborative. Terrazzo in situ : Entreprise Granito (Paris), artisans terrazziers locaux (réseau rare). Imitation grès cérame : Marazzi (Ghiara), Fioranese (Schegge), Codicer. Le vrai terrazzo in situ avec joints laiton dans un hall d\'entrée = le sol le plus spectaculaire qu\'un architecte d\'intérieur puisse spécifier. C\'est un investissement (200-400€/m²) mais il dure un siècle et ne se démode jamais.'
+            }
+          ],
+          keyPoints: [
+            'Terrazzo = fragments de marbre/pierre dans un liant ciment ou résine, poncé et poli',
+            'Le terrazzo in situ est le plus beau mais nécessite un terrazzier spécialisé (métier rare)',
+            'Les carreaux préfabriqués sont le compromis le plus accessible (50-120€/m²)',
+            'Les joints laiton ne sont pas un défaut — ils font partie intégrante du design',
+            'Le terrazzo ne se démode JAMAIS — c\'est un classique depuis le XVe siècle'
+          ],
+          tips: [
+            'Un terrazzo fond blanc + éclats de vert et rose = la palette la plus tendance et la plus intemporelle',
+            'Pour un plan de travail terrazzo : les préfabriqués résine sont plus faciles à mettre en œuvre que les ciment',
+            'En budget limité : un carrelage imitation terrazzo en 120x120 rectifié rend très bien — 10x moins cher que le vrai'
+          ],
+          tags: ['terrazzo', 'granito', 'marbre', 'sol', 'vénitien', 'tendance', 'artisanal']
+        },
+        {
+          id: 'peintures',
+          category: 'Revêtements Muraux',
+          title: 'Peintures : Types, Finitions & Prescription',
+          subtitle: 'Mat, satin, brillant — acrylique, glycéro, alkyde, biosourcée',
+          summary: 'La peinture est le revêtement mural le plus utilisé au monde. C\'est aussi celui qu\'on prescrit le plus mal : mauvais choix de finition, mauvaise préparation du support, produit inadapté à la pièce. Cette fiche couvre tout ce qu\'un architecte d\'intérieur doit savoir pour prescrire juste.',
+          sections: [
+            {
+              title: 'Types de peinture',
+              content: 'Acrylique (phase aqueuse) : la plus courante (80% du marché). Diluable à l\'eau, séchage rapide (1-2h au toucher), quasi inodore, nettoyage à l\'eau. Excellente pour les murs et plafonds en résidentiel. Faible en COV (Composés Organiques Volatils). Inconvénient : moins résistante que la glycéro dans les pièces humides. Glycéro (phase solvant) : à base de résines alkydes en solvant pétrolier. Ultra-résistante (lessivable, anti-humidité), finition tendue et laquée irréprochable. MAIS : forte odeur, séchage lent (6-12h), COV élevés, nettoyage au White Spirit. De plus en plus remplacée par l\'alkyde émulsion. Alkyde émulsion (alkyde en phase aqueuse) : le meilleur des deux mondes — résistance de la glycéro + facilité de l\'acrylique. Faible COV. Le choix PRO pour les boiseries, les pièces humides et les laques tendues. Marques : Tollens Idrotop, Sikkens Rubbol. Peinture biosourcée : résines végétales (lin, ricin, colza), pigments naturels. Labels : Ecolabel, NF Environnement, Ange Bleu. Marques : Algo (algues), Pure & Paint, Colibri. Pour les clients éco-sensibles.'
+            },
+            {
+              title: 'Finitions',
+              content: 'Mat : pas de reflet (brillance 0-5%). Cache les défauts du support. Ambiance feutrée et contemporaine. Inconvénient : tache facilement, difficile à nettoyer. Usage : plafonds (TOUJOURS mat), murs de salon/chambre si support bien préparé. Mat profond / mat velours / mat poudré : variantes ultra-mates très tendance (Farrow & Ball, Ressource). Rendu « craie » luxueux. Satiné : léger reflet (10-30%). Le meilleur compromis — lessivable, résistant, polyvalent. Usage : TOUTE pièce, surtout cuisine, SDB, couloir, chambre d\'enfant. C\'est le choix par défaut du professionnel. Brillant / Laqué : reflet miroir (70-100%). Effet spectaculaire sur les boiseries, les portes, les meubles. Amplifie les couleurs. MAIS : montre TOUS les défauts du support (nécessite un ponçage parfait entre chaque couche). Usage : boiseries, portes, plafonds design (effet laqué japonais). Velours : entre mat et satiné (~10% de brillance). Toucher soyeux. Le chic parisien par excellence.'
+            },
+            {
+              title: 'Couleurs et nuanciers pro',
+              content: 'Nuanciers professionnels : RAL (industriel, 213 teintes standard + 1625 en RAL Design), NCS (Natural Color System — le plus utilisé en architecture, notation scientifique S 1050-Y90R), Pantone (design/graphisme, pas adapté à la peinture bâtiment). Nuanciers éditeurs : Farrow & Ball (132 teintes exclusives, gamme « moderne country » anglaise), Little Greene (144 teintes, patrimoine anglais), Ressource (Paris, palette raffinée), Flamant (belge, teintes profondes), Tollens (gamme Inspired by Pantone). TOUJOURS commander un échantillon pot test ou un aplat A4 — la couleur change RADICALEMENT entre le nuancier papier, l\'écran et le mur réel (métamérisme, lumière du jour vs artificielle). Appliquer l\'échantillon sur le mur RÉEL, observer à différentes heures de la journée.'
+            },
+            {
+              title: 'Préparation et application',
+              content: 'La préparation du support représente 70% de la réussite d\'une peinture. Mur neuf (placo BA13) : 1 couche d\'impression (fixe le plâtre, uniformise l\'absorption) + 2 couches de finition. Mur ancien en bon état : lessivage, ponçage léger (grain 120), dépoussiérage, 1 sous-couche + 2 couches. Mur ancien dégradé : rebouchage (enduit de rebouchage Toupret ou Semin), ponçage, impression, 2-3 couches de finition. FISSURES : les reboucher avec un enduit fibré (souple) — un enduit classique refissurera. Temps de séchage entre couches : 4-6h acrylique, 12-24h glycéro. Application rouleau : le plus courant. Rouleau laqueur (velours ras) pour les finitions satinées/brillantes. Rouleau à poil moyen pour les mats. Le pistolet airless est réservé aux grandes surfaces (chantier neuf) — rendu plus tendu mais nécessite de protéger TOUT le chantier.'
+            }
+          ],
+          keyPoints: [
+            'Plafond = TOUJOURS mat. Mur = satiné par défaut (lessivable). Boiseries = alkyde satiné ou brillant',
+            'L\'alkyde émulsion remplace la glycéro — résistance équivalente, sans l\'odeur ni les COV',
+            'TOUJOURS tester la couleur sur le mur réel à différentes heures — le nuancier papier ment',
+            'La préparation du support = 70% de la réussite. Pas de raccourci possible',
+            'Farrow & Ball, Little Greene, Ressource = les 3 marques premium qui font la différence en prescription'
+          ],
+          tips: [
+            'La teinte Farrow & Ball « Hague Blue » (n°30) est le bleu profond le plus demandé en architecture d\'intérieur — il fonctionne dans TOUTES les lumières',
+            'Pour un mur parfaitement lisse en laque brillante : 2 couches d\'enduit + ponçage 180 + impression + ponçage 240 + 2 couches laque avec ponçage 320 entre les deux. C\'est 3x plus de travail mais le résultat est un miroir',
+            'Inscrire « peinture finition velours » dans le CCTP plutôt que « mat » = le peintre appliquera un produit légèrement plus résistant et le résultat sera plus raffiné'
+          ],
+          tags: ['peinture', 'mur', 'finition', 'mat', 'satiné', 'couleur', 'RAL', 'Farrow & Ball']
+        },
+        {
+          id: 'papier-peint',
+          category: 'Revêtements Muraux',
+          title: 'Papier Peint & Revêtements Muraux Collés',
+          subtitle: 'Intissé, vinyle, panoramique, toile de verre',
+          summary: 'Le papier peint est bien plus qu\'un « papier » — c\'est une famille de revêtements muraux aux propriétés très variées. Du panoramique d\'auteur à la toile de verre technique, chaque type a son usage précis.',
+          sections: [
+            {
+              title: 'Types de papier peint',
+              content: 'Intissé (non-tissé) : support en fibres synthétiques et cellulose. LE standard actuel — indéchirable, pose facile (colle sur le mur, pas sur le lé), cache les micro-fissures. Le choix par défaut en résidentiel. Vinyle sur intissé : couche de PVC sur support intissé. Lessivable, résistant à l\'humidité. Idéal cuisine, SDB (hors zone de projection directe), couloir, chambre d\'enfant. Vinyle expansé : relief en PVC — cache les défauts du support. Papier peint traditionnel (simplex/duplex) : papier classique. Fragile, pose délicate (colle sur le lé, trempage), se déchire facilement. De plus en plus rare. Toile de verre : tissu en fibre de verre à peindre. Ultra-résistant (classé M1 — quasi incombustible). Cache les fissures. Usage : locatif, hôtellerie, ERP. Aspect texturé (maille, chevron, crépi). Flizeline (Vlies) : non-tissé premium, rendu textile mat très élégant. Marques haut de gamme : Rasch, Elitis.'
+            },
+            {
+              title: 'Papier peint d\'éditeur & panoramique',
+              content: 'Les éditeurs de papier peint haut de gamme sont de véritables maisons de création. Éditeurs français : Élitis (textures luxueuses, effet matière — le plus spécifié par les architectes), Pierre Frey (classique raffiné, palmettes, toiles de Jouy), Casamance (contemporain accessible), Nobilis (textures, soieries), Zuber (panoramiques historiques peints à la main — patrimoine mondial, 5 000-30 000€). Éditeurs internationaux : Cole & Son (Londres, motifs iconiques — Fornasetti, Palm Jungle), William Morris (Arts & Crafts, motifs floraux intemporels), Wall&Decò (Italie, papiers peints outdoor, designs contemporains). Le panoramique est LE produit star du moment : un seul mur recouvert d\'une scène à grande échelle (paysage, jungle, abstrait). Rendu spectaculaire. Un panoramique sur-mesure coûte 80-300€/m² (Élitis, Wall&Decò) mais transforme une pièce entière.'
+            },
+            {
+              title: 'Pose et contraintes techniques',
+              content: 'Préparation du support : le mur DOIT être lisse, sec, propre, absorbant uniformément. Appliquer une sous-couche de préparation (Zinsser Gardz, Toupret) sur les murs poreux. Le raccord : droit (les motifs se raccordent horizontalement — simple), sauté (décalé d\'1/2 motif — plus de chutes, ~10-15% de perte), libre (motif aléatoire — le plus économique). TOUJOURS calculer la quantité avec le raccord — erreur classique = pas assez de rouleaux et le bain de fabrication a changé entre deux commandes. Sens de pose : toujours du même côté (commencer par la fenêtre, tourner dans le même sens) — sinon différence de nuance visible entre les lés (effet « shading »). Un poseur professionnel spécialisé papier peint est INDISPENSABLE pour les produits haut de gamme — un peintre classique n\'a pas le savoir-faire.'
+            },
+            {
+              title: 'Usage en projet',
+              content: 'Le mur d\'accent en papier peint panoramique = le geste le plus impactant et le plus rentable en décoration d\'intérieur. 1 mur suffit. Un mur Élitis ou Cole & Son à 150€/m² sur 8m² = 1 200€ — et il transforme la pièce davantage que 10 000€ de mobilier. Usage par pièce : salon = panoramique ou papier texturé (1 mur), chambre = motif doux ou panoramique paysage (mur tête de lit), SDB = vinyle résistant à l\'humidité (mur vasque), entrée = papier graphique (première impression). NE PAS mettre de papier peint : plafond bas + papier sombre = effet étouffant. Petite pièce + gros motif = effet papier cadeau. Partout = effet « boîte ». La règle d\'or : UN mur d\'accent + les autres en peinture unie coordonnée.'
+            }
+          ],
+          keyPoints: [
+            'Intissé = le standard moderne. Colle sur le mur, pas sur le lé. Indéchirable.',
+            'Un mur d\'accent en panoramique = le geste déco le plus impactant au rapport qualité/prix',
+            'TOUJOURS calculer les rouleaux avec le raccord + commander au même bain de fabrication',
+            'Élitis, Cole & Son, Pierre Frey = les 3 éditeurs incontournables en prescription pro',
+            'La toile de verre est le revêtement le plus résistant (M1) — idéal en ERP et locatif'
+          ],
+          tips: [
+            'Le papier peint Élitis gamme « Anguille Big Croco » (faux cuir texturé) en tête de lit = effet WOW garanti chez chaque client',
+            'Pour les budgets serrés : le panoramique Rebel Walls (suédois, impression numérique) offre des panoramiques sur-mesure à partir de 40€/m²',
+            'En rénovation locative : toile de verre + peinture = le combo le plus solide et le plus pérenne — les locataires ne l\'abîment pas'
+          ],
+          tags: ['papier peint', 'mur', 'panoramique', 'intissé', 'Élitis', 'décoration', 'éditeur']
+        },
+        {
+          id: 'enduits-decoratifs',
+          category: 'Revêtements Muraux',
+          title: 'Enduits Décoratifs : Tadelakt, Stuc, Chaux',
+          subtitle: 'Les finitions minérales artisanales',
+          summary: 'Les enduits décoratifs minéraux (tadelakt, stuc vénitien, chaux, terre) sont les finitions les plus nobles et les plus tactiles qui existent. Ils transforment un mur en surface vivante, vibrante de lumière. Mais ce sont des produits d\'artisan — pas de bricoleur.',
+          sections: [
+            {
+              title: 'Tadelakt',
+              content: 'Enduit traditionnel marocain à base de chaux de Marrakech (chaux hydraulique naturelle cuite à basse température). Application : 2 couches de 3-5mm, lissé à la taloche puis poli à la pierre d\'agate ou au galet. Imperméabilisé au savon noir (saponification de la chaux = surface brillante et imperméable). Le tadelakt est NATURELLEMENT ÉTANCHE — c\'est l\'un des seuls enduits directement utilisable en douche et en vasque. Aspect : surface lisse, brillante, avec des nuances de profondeur. Rappelle le marbre poli. Couleurs : pigments naturels (terres, ocres). Palette chaude : terracotta, sable, blanc cassé, rose poudré. Contrainte : artisan spécialisé tadelakt (pas un plâtrier classique). Application longue (1 mur/jour). Prix : 120-250€/m² posé. Entretien : savon noir 1-2x/an. Pas de produits acides (comme le marbre).'
+            },
+            {
+              title: 'Stuc vénitien (Stucco lustro)',
+              content: 'Enduit à base de chaux aérienne et de poudre de marbre. Inventé à Venise à la Renaissance pour imiter le marbre à moindre coût. Application : 3 à 7 couches ultrafines (0,5mm chacune), appliquées à la spatule inox, chaque couche poncée et lissée. La dernière couche est ferrée (passage à la spatule chaude) pour créer un poli miroir. L\'effet de profondeur vient des couches superposées — la lumière pénètre et se réfracte comme dans le marbre véritable. C\'est la finition murale la plus LUXUEUSE qui existe. Aspect : effet marbre veiné, poli miroir, profondeur visuelle extraordinaire. Le stuc vénitien bien exécuté est INDISCERNABLE du vrai marbre. Prix : 150-400€/m² posé (selon le nombre de couches et la finition). Marques de matières premières : Viero (Italie), Novacolor (Italie), San Marco.'
+            },
+            {
+              title: 'Enduit à la chaux',
+              content: 'La chaux est le liant minéral le plus ancien et le plus sain du bâtiment. Chaux aérienne (CL90) : la plus fine, la plus noble. Prise lente à l\'air (carbonatation). Pour les enduits décoratifs et les badigeons. Chaux hydraulique naturelle (NHL) : prise à l\'eau. Plus résistante mécaniquement. Pour les enduits de corps et les pièces humides. Le badigeon de chaux : chaux diluée dans l\'eau, appliquée en passes croisées à la brosse. Aspect : velouté, irrégulier, lumineux. Coût très faible (10-20€/m² en matière). Le « patinem » : mélange de chaux, de pigments et d\'huile de lin. Crée un effet patiné vieilli — parfait pour le style provençal/toscan. L\'enduit chaux est PERSPIRABLE — il laisse passer la vapeur d\'eau. Idéal en rénovation de bâti ancien (pierre, pisé, torchis) où le ciment est INTERDIT.'
+            },
+            {
+              title: 'Comment prescrire',
+              content: 'Le client veut un mur « effet béton » → stuc gris ou micro-ciment. Le client veut un mur lumineux et vivant → badigeon de chaux blanche (effet capri/méditerranéen). Le client veut un mur de douche spectaculaire → tadelakt (le seul enduit naturellement étanche). Le client veut un mur ultra-luxe « effet marbre » → stuc vénitien poli (le sommet de l\'art). Le client veut rénover un mur ancien en pierre → enduit chaux NHL (jamais de ciment !). Budget serré : badigeon de chaux (20-40€/m² posé) = le meilleur rapport effet/prix. Le badigeon est même faisable en DIY si le client est motivé. Budget illimité : stuc vénitien 7 couches (400€/m²) = une œuvre d\'art murale. Dans TOUS les cas : faire un panneau test de 60x60cm minimum avant de lancer le mur entier — les enduits décoratifs sont imprévisibles.'
+            }
+          ],
+          keyPoints: [
+            'Le tadelakt est le seul enduit naturellement étanche — utilisable en douche',
+            'Le stuc vénitien est la finition murale la plus luxueuse — indiscernable du marbre si bien exécuté',
+            'La chaux est PERSPIRABLE — obligatoire en bâti ancien (pierre, pisé, torchis)',
+            'Tous ces enduits nécessitent un artisan spécialisé — pas un peintre/plâtrier classique',
+            'Toujours faire un panneau test 60x60cm avant de valider'
+          ],
+          tips: [
+            'Un mur d\'accent en tadelakt terracotta dans une salle de bain blanche = le geste signature qui rend un projet mémorable',
+            'Le badigeon de chaux blanc sur pierre apparente = le combo provençal parfait, 20€/m² de matière, effet « maison de vacances en Grèce »',
+            'Le stuc Novacolor « Marmorino » est le produit le plus accessible pour découvrir le stuc vénitien sans artisan ultra-spécialisé'
+          ],
+          tags: ['enduit', 'tadelakt', 'stuc', 'chaux', 'mur', 'artisanal', 'minéral', 'vénitien']
+        },
+        {
+          id: 'lambris-tasseaux',
+          category: 'Revêtements Muraux',
+          title: 'Lambris, Tasseaux & Habillages Bois',
+          subtitle: 'Du lambris classique au mur de tasseaux contemporain',
+          summary: 'Le bois au mur connaît un retour massif — mais pas sous la forme du lambris PVC des années 90. Tasseaux verticaux, panneaux cannelés, lambris peints, MDF rainuré : l\'habillage bois mural est devenu un geste architectural majeur.',
+          sections: [
+            {
+              title: 'Lambris bois massif',
+              content: 'Le lambris classique : lames de bois massif (pin, sapin, chêne, châtaignier) assemblées par rainure-languette, fixées sur tasseaux ou collées. Épaisseur : 10-22mm. Largeurs : 70-150mm. Pose : horizontale (allonge visuellement la pièce), verticale (agrandit la hauteur — le choix contemporain), diagonale ou en chevron (graphique). Le lambris massif est un excellent isolant acoustique et un régulateur d\'humidité naturel. Finitions : brut (à peindre ou lasurer), brossé (texture accentuée), raboté (lisse), vieilli/brossé-blanchi (style bord de mer). Le lambris peint en blanc mat ou en couleur pastel est redevenu très chic — effet « New England » ou « cottage scandinave ». Prix : lambris pin raboté 10-25€/m², chêne massif 40-80€/m². NE PAS confondre avec le lambris PVC (imitation bois plastique — cheap et non écologique).'
+            },
+            {
+              title: 'Tasseaux — le geste contemporain',
+              content: 'Le mur de tasseaux verticaux est LE geste déco le plus tendance en 2024-2026. Des lattes de bois régulièrement espacées créent un rythme visuel puissant et une profondeur remarquable. Dimensions courantes : tasseaux 20x40mm, 30x30mm, 20x50mm, espacés de 20-40mm. Essences : chêne (le plus noble), pin (le plus accessible — à teinter), MDF (le plus régulier — à peindre). Fixation : collage au mastic polymère (Sika, Bostik) sur mur plan + clouage en finition (clous sans tête). Ou sur tasseau horizontal de support. Applications : mur d\'accent salon ou chambre, tête de lit, claustra/séparation de pièce, habillage de meuble TV, crédence (derrière verre pour la cuisine). Avantage caché : les tasseaux cachent les câbles et les imperfections du mur. Le jeu de lumière rasante sur les tasseaux crée un effet d\'ombre spectaculaire. Prix : DIY 30-60€/m², posé par artisan 80-150€/m².'
+            },
+            {
+              title: 'Panneaux décoratifs (MDF, cannelé, 3D)',
+              content: 'Panneaux MDF rainurés (cannelés) : plaques de MDF avec rainures régulières en V ou en U. Effet « tasseaux » prêt à poser — beaucoup plus rapide et régulier que les vrais tasseaux. Marques : Decospan, Marotte (français). Se peignent dans n\'importe quelle couleur. Panneaux 3D : MDF ou plâtre avec des motifs en relief (vagues, diamants, hexagones, organiques). Effet sculptural spectaculaire. Marques : WallArt, NMC, Orac Decor. Prix : 30-80€/m². Panneaux acoustiques décoratifs : feutre, mousse ou bois perforé. Combinent esthétique et absorption acoustique. Marques : Baux (suédois, feutre de laine pressée), Offecct, Woven Image. Le panneau MDF cannelé peint en noir mat ou vert forêt = le fond de meuble TV le plus instagrammable du moment.'
+            },
+            {
+              title: 'Mise en œuvre et conception',
+              content: 'Mur de tasseaux — étapes : 1) Préparer le mur (peinture de fond de la même couleur que les tasseaux pour que les interstices soient invisibles). 2) Tracer les verticales au niveau laser. 3) Couper les tasseaux à la bonne longueur (scie à onglet pour la précision). 4) Coller au mastic PU + clouer (clous sans tête). 5) Retouche de peinture si nécessaire. Erreur classique n°1 : ne pas peindre le mur de fond → on voit le mur blanc dans les intervalles. Erreur classique n°2 : tasseaux trop fins (<20mm) → pas assez de profondeur, effet « store vénitien ». Erreur classique n°3 : ne pas calculer la répartition → les coupes tombent mal aux extrémités. TOUJOURS dessiner le calepinage avant et centrer le motif sur le mur.'
+            }
+          ],
+          keyPoints: [
+            'Les tasseaux verticaux = LE geste tendance. 20x40mm espacés de 30mm est la proportion parfaite',
+            'TOUJOURS peindre le mur de fond de la même couleur que les tasseaux AVANT de les poser',
+            'Le panneau MDF cannelé est l\'alternative rapide et régulière aux vrais tasseaux',
+            'Le lambris bois peint en blanc ou en couleur est redevenu très chic (≠ lambris PVC)',
+            'La lumière rasante latérale est ESSENTIELLE — elle crée les ombres qui font tout l\'effet'
+          ],
+          tips: [
+            'Tasseaux chêne naturel sur fond noir mat = la version la plus contemporaine et luxueuse',
+            'Les tasseaux en tête de lit, prolongés au plafond (2-3 lames qui remontent) = effet architectural spectaculaire',
+            'Panneau MDF cannelé Decospan en vert sauge (Little Greene Sage Green) derrière le canapé = le mur d\'accent Pinterest-proof'
+          ],
+          tags: ['lambris', 'tasseaux', 'bois', 'mur', 'MDF', 'cannelé', 'tendance', '3D']
+        },
+        {
+          id: 'carrelage-mural',
+          category: 'Revêtements Muraux',
+          title: 'Carrelage Mural : Faïence, Zellige, Mosaïque',
+          subtitle: 'Les revêtements céramiques muraux',
+          summary: 'Le carrelage mural va bien au-delà du simple « carrelage blanc de salle de bain ». Zellige artisanal, faïence émaillée, mosaïque, grès cérame mural — chaque type crée une atmosphère radicalement différente.',
+          sections: [
+            {
+              title: 'Faïence',
+              content: 'La faïence est un carreau de céramique à pâte poreuse recouverte d\'un émail. C\'est le carrelage mural le plus courant. Différence avec le grès cérame : la faïence est plus tendre, plus poreuse, plus légère — elle ne convient qu\'au MUR (trop fragile pour le sol). L\'émail peut être brillant (classique), mat (contemporain), craquelé (effet artisanal vieilli), ondulé/biseauté (carreaux « métro »). Le carreau métro (7,5x15cm ou 10x20cm) : inventé pour le métro parisien en 1900. Le format le plus iconique du design intérieur. Biseauté (bords chanfreinés) = le classique. Plat = le contemporain. Pose : à joints décalés (classique), en chevron, en bâtons rompus, verticale (tendance). Le carrelage métro blanc brillant est INTEMPOREL — il fonctionne dans absolument toutes les cuisines et salles de bain du monde. Prix : carrelage métro basique 10-25€/m², éditeur 30-60€/m². Marques : Equipe (espagnol, excellent rapport qualité/prix), Mutina (italien, design), Made a Mano.'
+            },
+            {
+              title: 'Zellige',
+              content: 'Le zellige est un carreau de terre cuite émaillé, fabriqué artisanalement au Maroc (principalement à Fès). Chaque carreau est unique — irrégulier en forme, en épaisseur et en teinte. C\'est cette imperfection qui fait son charme et sa valeur. Format traditionnel : 10x10cm (le plus courant), 5x5cm (très graphique), losanges, étoiles (motifs géométriques islamiques). L\'émail est cuit au feu de bois — les variations de couleur sont naturelles et intentionnelles. Un mur en zellige vibre et capte la lumière de manière vivante — aucun matériau industriel ne peut reproduire cet effet. Couleurs iconiques : vert de Fès, bleu cobalt, blanc ivoire, terracotta, rose poudré. Pose : les irrégularités des carreaux nécessitent un joint plus large (3-5mm) et un poseur expérimenté. Chaque carreau se taille à la main à la marteline. Prix : 60-150€/m² fourni (artisanal marocain authentique), 30-60€/m² (imitation industrielle — perd 80% du charme). NE PAS commander du zellige en ligne sans voir un échantillon — les teintes varient énormément d\'un lot à l\'autre.'
+            },
+            {
+              title: 'Mosaïque',
+              content: 'La mosaïque est composée de petits éléments (tesselles) de 10x10mm à 50x50mm, montés sur trame (filet en fibre de verre ou papier). Matériaux : grès cérame (le plus courant, résistant), pâte de verre (translucide, coloris intenses — piscines, douches), émaux de Briare (français, semi-opaques, haut de gamme), pierre naturelle (marbre, travertin — mosaïques de sol antiques), miroir (effet brillant, agrandit l\'espace), métal (inox, laiton — accent contemporain). La mosaïque est le seul revêtement qui s\'adapte PARFAITEMENT aux surfaces courbes (colonnes, niches, vasques). Pose : double encollage sur trame, joints ciment (fin). Applications : douche à l\'italienne (sol + murs — antidérapante naturellement), niche de douche (l\'accent parfait), crédence cuisine, revêtement de vasque, frise décorative. Une bande de mosaïque dorée dans une douche en faïence blanche = le détail luxe accessible. Prix : 30-80€/m² (grès/pâte de verre standard), 100-300€/m² (émaux de Briare, pâte de verre Bisazza). Marques : Bisazza (ultra-luxe italien), Onix (espagnol), Hisbalit, Sicis.'
+            },
+            {
+              title: 'Tendances et prescriptions',
+              content: 'Le zellige vert d\'eau en crédence de cuisine blanche = le combo le plus demandé en 2024-2026. Le carrelage grand format mural (60x120cm grès cérame fin 6mm) remplace la faïence classique en salle de bain haut de gamme — moins de joints, rendu épuré. La pose verticale du carreau métro (debout au lieu de couché) est la version contemporaine du classique. Le mélange zellige + faïence + bois dans une même salle de bain crée une richesse de textures incomparable. Le grès cérame imitation zellige (Equipe, Wow) offre 70% de l\'effet pour 30% du prix — compromis acceptable. La niche de douche habillée d\'un matériau différent du reste (mosaïque dans une douche en grès, zellige dans une douche en béton ciré) = le geste signature. Calepinage mural : faire un plan en élévation AVANT le chantier — le positionnement des coupes et des joints est visible (contrairement au sol).'
+            }
+          ],
+          keyPoints: [
+            'Faïence = mur uniquement (trop fragile pour le sol). Grès cérame = sol ET mur',
+            'Le zellige est artisanal et UNIQUE — ses imperfections sont sa valeur, pas un défaut',
+            'Le carreau métro biseauté blanc = le revêtement mural le plus intemporel qui existe',
+            'La mosaïque est le seul revêtement adapté aux surfaces courbes',
+            'TOUJOURS faire une élévation de calepinage mural — les coupes se voient au mur'
+          ],
+          tips: [
+            'Zellige 10x10 vert de Fès en crédence de cuisine = le geste déco qui rend n\'importe quelle cuisine « magazine »',
+            'Une niche de douche en mosaïque dorée dans un mur de grès gris = le détail luxe qui coûte 50€ mais vaut 5 000€ visuellement',
+            'Carrelage métro blanc posé verticalement avec joint gris anthracite = version contemporaine et chic du classique'
+          ],
+          tags: ['carrelage', 'mur', 'zellige', 'faïence', 'mosaïque', 'métro', 'céramique', 'crédence']
         }
       ]
     },
